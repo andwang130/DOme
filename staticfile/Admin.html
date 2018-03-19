@@ -10,6 +10,8 @@
 	<link rel="shortcut icon" href="./resource/images/favicon.ico" />
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/common.css" rel="stylesheet">
+      	<link rel="stylesheet" href="css/demo.css">
+  	<link rel="stylesheet" href="src/css/dialog.css">
 	<script>var require = { urlArgs: 'v=20170915' };</script>
 	<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="./resource/js/lib/bootstrap.min.js"></script>
@@ -17,7 +19,6 @@
 	<script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
 	<script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
     <script type="text/javascript" src="js/umit.js"></script>
-	<script type="text/javascript" src="addauto_click.js"></script>
 </head>
 <body>
 	<div class="loader" style="display:none">
@@ -69,7 +70,7 @@
 									</li>
                                     <li class="list-group-item ">
 										<a href="#" class="text-over" >
-                                            <i class='wi wi-reply'></i> 自动调票		</a>
+                                            <i class='wi wi-reply'></i> 自动调票</a>
 									</li>
 
                                             <li class="list-group-item ">
@@ -109,69 +110,24 @@
     cursor: pointer;
 }
 </style>
-<div class="we7-page-title">编辑／新增投票用户</div>
+<div class="we7-page-title"></div>
 <ul class="we7-page-tab">
-	<li class="active"><a href="#" id="add" >添加自动点击任务</a></li>
+	<li class="active"><a href="#" id="add" >个人中心</a></li>
 </ul>
 <div class="we7-form">
-	<form >
-		<div class="panel-body" id="step1">
+	<div class="form-group">
+		<label class="control-label col-sm-4 control-label" id="name">用户名:WWWW</label>
+        	<label class="control-label col-sm-2 control-label" id="money">总额:WWWW</label>
+        <a class="btn btn-primary">修改密码</a>
+	</div>
 
-			<div class="panel-body">
-  			<div class="form-group">
-					<label class="control-label col-sm-2 control-label"><span class="text-danger">*</span> 活动ID</label>
-					<div class="col-sm-8 col-xs-12">
-						<input type="text" class="form-control" name="name" id="uuid" value=""/>
-						<span class="help-block"></span>
+     <div class="form-group">
+		<label class="control-label col-sm-2 control-label">视频文件</label>
+         <div class="col-sm-8 col-xs-12">
+						<input type="file" class="form-control" name="video" id="name" value="">
+						<a id="videopath">查看</a>
 					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-2 control-label"><span class="text-danger">*</span>间隔时间</label>
-					<div class="col-sm-4">
-						<input type="number" class="form-control" name="name" id="tiems" value=""/>
-						<span class="help-block">间隔执行的时间，每隔这个时间增加点击量</span>
-					</div>
-				</div>
-              <div class="form-group">
-					<label class="control-label col-sm-2 control-label">增加的点击数</label>
-					<div class="col-sm-4">
-			            <div class="input-group">
-			              <span class="input-group-addon">起始， +</span>
-			              <input class="form-control" type="number" value="0" id="start" name="addvotenum">
-			              <span class="input-group-addon">个</span>
-			            </div>
-					  <div class="input-group">
-			              <span class="input-group-addon">结束， +</span>
-			              <input class="form-control" type="number" value="0" id="end" name="addvotenum">
-			              <span class="input-group-addon">个</span>
-			            </div>
-			          </div>
-				</div>
-
-
-				<div class="form-group">
-					<label class="control-label col-sm-2 control-label">是否启动</label>
-					<div class="col-sm-8 col-xs-12">
-						<label class="radio-inline">
-						<input type="radio" name="status" value="0"  />否
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="status" value="1" checked="checked"  />是
-					</label>
-
-					</div>
-				</div>
-
-			</div>
-          </div>
-
-
-
-		<div class="form-group col-sm-12">
-			<input  id="submit"  value="提交" class="btn btn-primary col-lg-1">
-			<input type="hidden" name="token" value="70b61464" />
-		</div>
-	</form>
+	</div>
 </div>
 
 			</div>
@@ -187,5 +143,86 @@
 
 		</div>
 </body>
-<input type="file" id="filse"  style="display:none">
+
+<script>
+    function get_admininfp() {
+        data={"action":'get_info'}
+         $.ajax({
+             url: '/user',
+             type: 'POST',
+             data: data,
+             success: function (arg) {
+                 arg = JSON.parse(arg);
+                if (arg["code"]==0)
+                {
+                    data=arg["data"]
+                    $("#name").text("用户名："+data["name"])
+                    $("#money").text("总金额："+data["money"])
+                    $("#video").val(data["videoname"])
+                     $("#videopath").attr("href",data["videourl"])
+                }
+                else{
+
+                }
+
+             }
+         })
+
+    }
+      $('#confirmWithCustom').click(function() {
+      $.sendConfirm({
+        title: '修改密码',
+        content: '<div id="addIpBox">' + '<div class="frm-item">' + '<div class="frm-label"><span class="requireIcon">*</span> 原密码:</div>' + '<input type="text" class="frm-input" id="oldpswd" placeholder="">' + '<div class="msg-box j_msgIp hide"></div>' + '</div>' + '<div class="frm-item">' + '<div class="frm-label"><span class="requireIcon">*</span> 重复原密码:</div>' + '<input type="text" class="frm-input" name="newpswd1" placeholder="">' + '<div class="msg-box j_msgDesc hide"></div>' + '</div>' + '<div class="frm-item">' + '<div class="frm-label"><span class="requireIcon">*</span> 新密码:</div>' + '<input type="text" class="frm-input" name="newpswd" placeholder="">' + '<div class="msg-box j_msgOperator hide"></div>' + '</div>' + '</div>',
+        button: {
+          confirm: '确认',
+          cancel: '取消'
+        },
+        width: 260,
+        onBeforeConfirm: function() {
+          // onBeforeConfirm返回false，将阻止onConfirm的执行
+          return false;
+        },
+        onConfirm: function() {
+         var oldpswd=$("#oldpswd").val()
+        var newpsdw1=$("#newpswd1").val()
+        var newpswd=$("#newpswd").val()
+            if(newpsdw1!=newpswd){
+               $.sendWarningToTop('两次密码不一致', 3000, function() {
+                   console.log('sendWarningToTop closed');
+               })
+            }
+            $.ajax({
+                url:user,
+                  type: 'POST',
+                 data: data,
+                 success: function (arg)
+                 {
+                     arg = JSON.parse(arg);
+                if (arg["code"]==0){
+
+
+                       $.sendSuccessToTop('修改成功,3秒后返回登录界面', 3000, function() {
+                     location.href="login.html"
+                     });
+                }
+                else
+                {
+                        $.sendWarningToTop('密码错误', 3000, function() {
+                   console.log('sendWarningToTop closed');
+               })
+                }
+                 }
+                }
+            )
+
+        },
+        onCancel: function() {
+          console.log('点击取消！');
+        },
+        onClose: function() {
+          console.log('点击关闭！');
+        }
+      });
+    });
+</script>
 </html>
