@@ -101,6 +101,9 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     if time.mktime(time.strptime(pojectcoures["voteend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
                         self.write(json.dumps({"status": 0, "msg": "投票已结束"}))
                         return
+                    if pojectcoures["rangenum"]<=0:
+                        self.write(json.dumps({"status": 0, "msg": "不可投票"}))
+                        return
                     num=myreids.get(openid+couers["uuid"])
                     if not num:
                         order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
