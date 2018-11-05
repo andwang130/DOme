@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="./resource/images/favicon.ico" />
+	<link href="./resource/css/bootstrap.min.css?v=20170915" rel="stylesheet">
+	<link href="./resource/css/common.css?v=20170915" rel="stylesheet">
+
+	<script>var require = { urlArgs: 'v=20170915' };</script>
+	<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./resource/js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./resource/js/app/util.js?v=20170915"></script>
+	<script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
+	<script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
+    <script type="text/javascript" src="js/umit.js"></script>
+    <script type="text/javascript" src="TPuser.js"></script>
+</head>
+<body>
+	<div class="loader" style="display:none">
+		<div class="la-ball-clip-rotate">
+			<div></div>
+		</div>
+	</div>
+<div data-skin="default" class="skin-default  main-lg-body ">
+<div class="head">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container ">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://jiadll8.zhaojingl.com/">
+					<img src="http://jiadll8.zhaojingl.com/attachment/images/global/ohQr0ksRr0IxQVE2eSiiQqTxVs3EH0.png" class="pull-left" width="110px" height="35px">
+					<span class="version hidden">1.6.2</span>
+				</a>
+			</div>
+						<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-left">
+															<li><a href="./index.php?c=home&a=welcome&do=platform&" >公众号</a></li>
+										<li><a href="./index.php?c=module&a=display&" >应用</a></li>
+										<li><a href="./index.php?c=home&a=welcome&do=system&" >系统管理</a></li>
+									</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="wi wi-user color-gray"></i>darang <span class="caret"></span></a>
+						<ul class="dropdown-menu color-gray" role="menu">
+							<li>
+								<a href="./index.php?c=user&a=profile&" target="_blank"><i class="wi wi-account color-gray"></i> 我的账号</a>
+							</li>
+														<li>
+								<a href="./index.php?c=user&a=logout&"><i class="fa fa-sign-out color-gray"></i> 退出系统</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+					</div>
+	</nav>
+</div>
+
+<div class="main">
+<div class="container">
+	<a href="javascript:;" class="js-big-main button-to-big color-gray" title="加宽">正常</a>
+		<div class="panel panel-content main-panel-content ">
+		<div class="content-head panel-heading main-panel-heading">
+							<img src="http://jiadll8.zhaojingl.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo" onerror="this.src='./resource/images/gw-wx.gif'">
+<span class="font-lg">钻石投票</span>
+
+<div class="pull-right related-info module-related-info">
+</div>
+<script>
+	$.post('./index.php?c=module&a=display&do=accounts_dropdown_menu', {'module_name': "tyzm_diamondvote", 'version_id': ""}, function(data){
+		$('.module-related-info').html(data);
+	}, 'html');
+</script>
+<!-- 兼容历史性问题：模块内获取不到模块信息$module的问题-start -->
+<!-- end -->					</div>
+	<div class="panel-body clearfix main-panel-body ">
+		<div class="left-menu">
+						<div class="left-menu-content">
+																<div class="panel panel-menu">
+										<ul class="list-group">
+																																						<li class="list-group-item ">
+										<a href="./index.php?c=platform&a=reply&m=tyzm_diamondvote&version_id=0" class="text-over" >
+																				<i class='wi wi-reply'></i> 应用入口										</a>
+									</li>
+																																																														<li class="list-group-item ">
+										<a href="./index.php?c=module&a=manage-account&do=setting&m=tyzm_diamondvote&version_id=0" class="text-over" >
+																				<i class='fa fa-cog'></i> 参数设置										</a>
+									</li>
+																																			</ul>
+				</div>
+																				<div class="panel panel-menu">
+										<div class="panel-heading">
+						<span class="no-collapse">业务菜单<i class="wi wi-appsetting pull-right setting"></i></span>
+					</div>
+										<ul class="list-group">
+																																						<li class="list-group-item ">
+										<a href="./index.html" class="text-over" >
+																				<i class='wi wi-appsetting'></i> 活动管理										</a>
+									</li>
+																																																														<li class="list-group-item ">
+										<a href="./index.php?c=site&a=entry&eid=2&version_id=0" class="text-over" >
+																				<i class='wi wi-appsetting'></i> 黑名单										</a>
+									</li>
+																																			</ul>
+				</div>
+											</div>
+					</div>
+		<div class="right-content">
+	<style>
+
+.audit,.lock,.clearposter{cursor:pointer;}
+.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+white-space: normal;
+word-wrap: break-word;
+word-break: normal;
+}
+.label {
+    line-height: 1.8;
+}
+.MagicThumb img,.MagicThumb-container img{margin:2px;padding:1px;border:1px solid #ccc;}
+.label{margin:3px 0;}
+.we7-margin-right{margin-right: 10px;}
+</style>
+<script src="http://jiadll8.zhaojingl.com/addons/tyzm_diamondvote//template/static/js/mzp-packed-me.js"></script>
+<div class="main1">
+
+    <div class="we7-page-title">投票管理 </div>
+    <div class="we7-page-title">活动标题： </div>
+    <ul class="we7-page-tab">
+    <li class="active"><a href="" id="tpindex">全部投票</a></li>
+	<li><a href="#" id="order">全部订单</a></li>
+	<li><a href="" id="add">添加投票用户</a></li>
+    </ul>
+    <div class="we7-padding-bottom clearfix">
+        <form action="./index.php" method="get" role="form" >
+            <div class="input-group pull-left col-sm-4">
+            <input type="hidden" name="c" value="site" />
+			<input type="hidden" name="a" value="entry" />
+        	<input type="hidden" name="m" value="tyzm_diamondvote" />
+        	<input type="hidden" name="do" value="votelist" />
+			<input type="hidden" name="rid" value="3319" />
+
+            <input type="text" name="keyword" value="" class="form-control" placeholder="输入姓名，手机号或ID"/>
+            <span class="input-group-btn"><button class="btn btn-default"><i class="fa fa-search"></i></button></span>
+            </div>
+        </form>
+        <div class="pull-right">
+        <a href="./addTuouselist.html?action=create_list&uuid=" id="addthlist" class="btn btn-primary  we7-margin-left">+批量导入用户</a>
+            <a href="./addTpuser.html?action=create&uuid="  id="addbth" class="btn btn-primary  we7-margin-left">+添加投票用户</a>
+            <a href="./index.php?c=site&a=entry&rid=3319&do=download&m=tyzm_diamondvote" class="btn btn-primary  we7-margin-left">导出用户数据</a>
+        </div>
+    </div>
+        <table class="table we7-table table-hover">
+            <thead class="navbar-inner">
+                <tr>
+				<th style="width:30px;"><a class="color-default" href="./index.php?c=site&a=entry&rid=3319&do=votelist&m=tyzm_diamondvote">编号</a></th>
+				<th>姓名</th>
+                <th width="80">浏览量</th>
+                <th width="80">分享量</th>
+				<th width="80"><a class="color-default" href="#" onclick="sort_func('votenum')">票数</a></th>
+                <th width="80"><a class="color-default" href="#" onclick="sort_func('liwu')">礼物</a></th>
+                <th width="170">参加时间</th>
+				<th width="200">状态</th>
+				<th width="350">操作</th>
+                </tr>
+            </thead>
+            <tbody id="userlist">
+
+
+                            </tbody>
+        </table>
+      <div class="pull-right">
+        <div><ul id="page_active" class="pagination pagination-centered"></ul></div>    </div>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="container-fluid footer text-center" role="footer">
+		<div class="friend-link">
+								</div>
+		<div class="copyright"></div>
+	</div>
+
+
+		</div></body>
+</html>

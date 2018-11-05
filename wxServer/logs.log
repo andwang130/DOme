@@ -1,0 +1,1472 @@
+[W 181030 17:17:34 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.54ms
+[W 181030 17:17:34 web:2162] 404 GET /favicon.ico (127.0.0.1) 23.92ms
+[W 181030 17:17:55 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.41ms
+[W 181030 17:17:57 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.39ms
+[W 181030 17:18:30 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.56ms
+[W 181030 17:18:31 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.36ms
+[W 181030 17:19:07 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.42ms
+[W 181030 17:20:38 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.63ms
+[W 181030 17:20:38 web:2162] 404 GET /favicon.ico (127.0.0.1) 2.84ms
+[W 181030 17:21:47 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.74ms
+[W 181030 17:22:02 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.40ms
+[W 181030 17:22:09 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.54ms
+[W 181030 17:22:49 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.36ms
+[W 181030 17:22:49 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.39ms
+[W 181030 17:22:50 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.47ms
+[W 181030 17:22:50 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.38ms
+[W 181030 17:22:50 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.40ms
+[W 181030 17:22:50 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.42ms
+[W 181030 17:22:50 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.44ms
+[W 181030 17:24:01 web:2162] 404 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.61ms
+[E 181030 17:24:31 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 14, in get
+        data["endtimes"]=time.mktime(time.strptime(coures["voteend"], '%Y-%m-%d %H:%M:%S'))-time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M:%S'))
+      File "/usr/lib/python2.7/_strptime.py", line 478, in _strptime_time
+        return _strptime(data_string, format)[0]
+      File "/usr/lib/python2.7/_strptime.py", line 332, in _strptime
+        (data_string, format))
+    ValueError: time data u'2018-10-15 16:28' does not match format '%Y-%m-%d %H:%M:%S'
+[E 181030 17:24:31 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 54.79ms
+[E 181030 17:24:58 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:24:58 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 42.82ms
+[E 181030 17:29:08 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:29:08 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 36.93ms
+[E 181030 17:29:09 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:29:09 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 16.78ms
+[E 181030 17:29:19 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:29:19 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 34.52ms
+[E 181030 17:29:46 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("templates/index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:29:46 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.88ms
+[E 181030 17:29:47 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("templates/index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:29:47 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 42.51ms
+[E 181030 17:29:47 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("templates/index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181030 17:29:47 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.64ms
+[I 181030 17:30:15 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[W 181031 17:04:41 web:2162] 404 GET / (127.0.0.1) 58.21ms
+[W 181031 17:04:41 web:2162] 404 GET /favicon.ico (127.0.0.1) 81.03ms
+[W 181031 17:05:10 web:2162] 404 GET /wxinde?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.42ms
+[W 181031 17:05:10 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.62ms
+[W 181031 17:05:16 web:2162] 404 GET /wxinde?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.41ms
+[W 181031 17:05:16 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.75ms
+[E 181031 17:05:37 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181031 17:05:37 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 124.02ms
+[W 181031 17:05:37 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.64ms
+[I 181031 17:06:30 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[E 181031 17:06:38 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html")
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    NameError: global name 'data' is not defined
+[E 181031 17:06:38 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 150.55ms
+[W 181031 17:06:38 web:2162] 404 GET /favicon.ico (127.0.0.1) 1.63ms
+[E 181031 17:06:39 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html")
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    NameError: global name 'data' is not defined
+[E 181031 17:06:39 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 55.82ms
+[W 181031 17:06:39 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.92ms
+[E 181031 17:06:40 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html")
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    NameError: global name 'data' is not defined
+[E 181031 17:06:40 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 41.33ms
+[W 181031 17:06:40 web:2162] 404 GET /favicon.ico (127.0.0.1) 1.07ms
+[E 181031 17:06:40 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html")
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    NameError: global name 'data' is not defined
+[E 181031 17:06:40 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 26.30ms
+[W 181031 17:06:40 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.89ms
+[I 181031 17:06:47 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[E 181031 17:06:55 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181031 17:06:55 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.26ms
+[W 181031 17:06:55 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.95ms
+[E 181031 17:06:56 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181031 17:06:56 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.30ms
+[W 181031 17:06:56 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.60ms
+[E 181031 17:06:56 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data)
+    TypeError: render() takes exactly 2 arguments (3 given)
+[E 181031 17:06:56 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 5.97ms
+[W 181031 17:06:56 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.61ms
+[I 181031 17:07:41 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[E 181031 17:07:45 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    KeyError: 'title'
+[E 181031 17:07:45 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.72ms
+[W 181031 17:07:45 web:2162] 404 GET /favicon.ico (127.0.0.1) 1.15ms
+[E 181031 17:07:46 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    KeyError: 'title'
+[E 181031 17:07:46 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 11.40ms
+[W 181031 17:07:46 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.87ms
+[E 181031 17:07:46 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        self.render("index.html",data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["title"]  # index.html:6
+    KeyError: 'title'
+[E 181031 17:07:46 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 39.93ms
+[W 181031 17:07:46 web:2162] 404 GET /favicon.ico (127.0.0.1) 1.06ms
+[I 181031 17:08:24 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[E 181031 17:08:27 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        data["title"]=coures["title"]
+    KeyError: 'title'
+[E 181031 17:08:27 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.70ms
+[W 181031 17:08:27 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.97ms
+[E 181031 17:08:29 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 21, in get
+        data["title"]=coures["title"]
+    KeyError: 'title'
+[E 181031 17:08:29 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 4.74ms
+[W 181031 17:08:29 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.60ms
+[I 181031 17:09:11 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[E 181031 17:09:13 web:1670] Uncaught exception GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='GET', uri='/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 22, in get
+        self.render("index.html",data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 17, in _tt_execute
+        _tt_tmp = data.count  # index.html:172
+    AttributeError: 'dict' object has no attribute 'count'
+[E 181031 17:09:13 web:2162] 500 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 81.99ms
+[W 181031 17:09:13 web:2162] 404 GET /favicon.ico (127.0.0.1) 1.05ms
+[I 181031 17:09:59 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 179.21ms
+[W 181031 17:10:01 web:2162] 404 POST /index.php?i=25&c=entry&rid=3319&do=Index&m=tyzm_diamondvote (127.0.0.1) 1.38ms
+[W 181031 17:10:01 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.51ms
+[W 181031 17:10:02 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.06ms
+[W 181031 17:10:02 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.75ms
+[I 181031 17:10:26 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 48.21ms
+[W 181031 17:10:27 web:2162] 404 POST /index.php?i=25&c=entry&rid=3319&do=Index&m=tyzm_diamondvote (127.0.0.1) 1.05ms
+[W 181031 17:10:27 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.63ms
+[W 181031 17:10:27 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.49ms
+[W 181031 17:10:27 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 3.38ms
+[W 181031 17:10:34 web:2162] 404 GET /index.php?i=25&c=entry&rid=3319&do=join&m=tyzm_diamondvote (127.0.0.1) 0.45ms
+[W 181031 17:10:34 web:2162] 404 GET /favicon.ico (127.0.0.1) 1.09ms
+[W 181031 17:10:35 web:2162] 404 POST /index.php?i=25&c=entry&rid=3319&do=Index&m=tyzm_diamondvote (127.0.0.1) 0.66ms
+[W 181031 17:10:40 web:2162] 404 GET /index.php?i=25&c=entry&rid=3319&do=index&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[W 181031 17:10:40 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.64ms
+[W 181031 17:10:41 web:2162] 404 POST /index.php?i=25&c=entry&rid=3319&do=Index&m=tyzm_diamondvote (127.0.0.1) 0.74ms
+[I 181031 17:12:31 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181031 17:12:34 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 47.70ms
+[W 181031 17:12:34 web:2162] 404 POST /index.php?i=25&c=entry&rid=3319&do=Index&m=tyzm_diamondvote (127.0.0.1) 1.06ms
+[W 181031 17:12:34 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.54ms
+[W 181031 17:12:34 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.45ms
+[W 181031 17:12:34 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.55ms
+[I 181031 17:17:03 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181031 17:32:53 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 532.63ms
+[W 181031 17:33:04 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 186.13ms
+[W 181031 17:33:04 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.44ms
+[W 181031 17:33:04 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.43ms
+[I 181031 17:33:14 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 196.93ms
+[W 181031 17:33:16 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.86ms
+[W 181031 17:33:16 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.53ms
+[W 181031 17:33:16 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.55ms
+[I 181031 17:34:40 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 1170.72ms
+[I 181031 17:34:40 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 37.39ms
+[W 181031 17:34:41 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 210.95ms
+[W 181031 17:34:41 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.50ms
+[W 181031 17:34:41 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.58ms
+[I 181101 17:15:54 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 838.63ms
+[W 181101 17:15:55 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 49.71ms
+[W 181101 17:15:55 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.52ms
+[W 181101 17:15:55 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 1.08ms
+[I 181101 17:16:20 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 76.01ms
+[W 181101 17:16:20 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.22ms
+[W 181101 17:16:21 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.60ms
+[W 181101 17:16:21 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.59ms
+[I 181101 17:17:58 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 39.93ms
+[W 181101 17:17:59 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.04ms
+[W 181101 17:18:00 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.66ms
+[W 181101 17:18:00 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.67ms
+[I 181101 17:18:07 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 50.15ms
+[W 181101 17:18:07 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.12ms
+[W 181101 17:18:07 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.52ms
+[W 181101 17:18:07 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.51ms
+[I 181101 17:18:54 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 119.46ms
+[W 181101 17:18:56 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 3.64ms
+[W 181101 17:18:56 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 2.92ms
+[W 181101 17:18:56 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 4.58ms
+[I 181101 17:20:45 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 45.27ms
+[W 181101 17:20:46 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.12ms
+[W 181101 17:20:46 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.66ms
+[W 181101 17:20:46 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.90ms
+[I 181101 17:22:17 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 18.60ms
+[I 181101 17:22:25 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 43.71ms
+[I 181101 17:22:26 web:2162] 200 POST /getlist (127.0.0.1) 0.60ms
+[W 181101 17:22:26 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.13ms
+[W 181101 17:22:26 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.47ms
+[W 181101 17:22:26 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.70ms
+[I 181101 17:27:00 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 80.67ms
+[E 181101 17:27:02 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 36, in post
+        coures=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(25).skip(25*(page-1))
+    AttributeError: 'Getlist' object has no attribute 'Mongodb'
+[E 181101 17:27:02 web:2162] 500 POST /getlist (127.0.0.1) 1.83ms
+[W 181101 17:27:02 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.53ms
+[W 181101 17:27:02 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.47ms
+[W 181101 17:27:02 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.62ms
+[I 181101 17:27:32 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 29.89ms
+[I 181101 17:27:33 web:2162] 200 POST /getlist (127.0.0.1) 6.68ms
+[W 181101 17:27:33 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.26ms
+[W 181101 17:27:33 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.60ms
+[W 181101 17:27:33 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[I 181101 17:28:23 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 52.98ms
+[I 181101 17:28:25 web:2162] 200 POST /getlist (127.0.0.1) 23.21ms
+[W 181101 17:28:25 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.44ms
+[W 181101 17:28:25 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.01ms
+[W 181101 17:28:25 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.56ms
+[I 181101 17:28:32 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 16.21ms
+[I 181101 17:28:33 web:2162] 200 POST /getlist (127.0.0.1) 34.68ms
+[W 181101 17:28:33 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 1.11ms
+[W 181101 17:28:33 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.49ms
+[W 181101 17:28:33 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.58ms
+[I 181101 17:28:44 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 39.84ms
+[I 181101 17:28:45 web:2162] 200 POST /getlist (127.0.0.1) 6.02ms
+[W 181101 17:28:45 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 1.11ms
+[W 181101 17:28:45 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 4.00ms
+[W 181101 17:28:45 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.54ms
+[I 181101 17:30:33 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 3554.95ms
+[I 181101 17:30:37 web:2162] 200 POST /getlist (127.0.0.1) 495.38ms
+[W 181101 17:30:38 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 692.69ms
+[W 181101 17:30:40 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.44ms
+[W 181101 17:30:40 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.41ms
+[I 181101 17:31:31 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 28.83ms
+[I 181101 17:31:32 web:2162] 200 POST /getlist (127.0.0.1) 8.21ms
+[W 181101 17:31:32 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.02ms
+[W 181101 17:31:32 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.53ms
+[W 181101 17:31:33 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.61ms
+[I 181101 17:32:26 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 86.09ms
+[I 181101 17:32:27 web:2162] 200 POST /getlist (127.0.0.1) 9.45ms
+[W 181101 17:32:28 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 1.06ms
+[W 181101 17:32:28 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.44ms
+[W 181101 17:32:28 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.83ms
+[I 181101 17:33:27 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 61.26ms
+[I 181101 17:33:27 web:2162] 200 POST /getlist (127.0.0.1) 3.94ms
+[W 181101 17:33:28 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 1.16ms
+[W 181101 17:33:28 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.63ms
+[W 181101 17:33:28 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.62ms
+[I 181101 17:33:32 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.94ms
+[I 181101 17:33:33 web:2162] 200 POST /getlist (127.0.0.1) 26.35ms
+[W 181101 17:33:33 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=17 (127.0.0.1) 0.91ms
+[W 181101 17:33:33 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=17 (127.0.0.1) 0.60ms
+[W 181101 17:33:33 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.63ms
+[I 181102 08:21:59 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 144.51ms
+[I 181102 08:22:00 web:2162] 200 POST /getlist (127.0.0.1) 10.43ms
+[W 181102 08:22:00 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 36.09ms
+[W 181102 08:22:00 web:2162] 404 GET /undefined (127.0.0.1) 0.45ms
+[W 181102 08:22:00 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.49ms
+[W 181102 08:22:00 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.47ms
+[I 181102 08:22:04 web:2162] 200 POST /getlist (127.0.0.1) 3.21ms
+[I 181102 08:22:13 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.53ms
+[I 181102 08:22:14 web:2162] 200 POST /getlist (127.0.0.1) 3.79ms
+[W 181102 08:22:14 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.04ms
+[W 181102 08:22:14 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.63ms
+[W 181102 08:22:14 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.50ms
+[W 181102 08:22:14 web:2162] 404 GET /undefined (127.0.0.1) 0.58ms
+[I 181102 08:22:23 web:2162] 200 POST /getlist (127.0.0.1) 3.90ms
+[E 181102 08:22:38 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 39, in post
+        for i in coures:
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1189, in next
+        if len(self.__data) or self._refresh():
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+        self.__send_message(q)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 978, in __send_message
+        codec_options=self.__codec_options)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1067, in _unpack_response
+        return response.unpack_response(cursor_id, codec_options)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/message.py", line 1418, in unpack_response
+        self.raw_response(cursor_id)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/message.py", line 1398, in raw_response
+        error_object)
+    OperationFailure: database error: Can't canonicalize query: BadValue unknown operator: $regex:
+[E 181102 08:22:38 web:2162] 500 POST /getlist (127.0.0.1) 38.78ms
+[I 181102 08:22:46 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.39ms
+[I 181102 08:22:46 web:2162] 200 POST /getlist (127.0.0.1) 5.97ms
+[W 181102 08:22:46 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.43ms
+[W 181102 08:22:46 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.53ms
+[W 181102 08:22:46 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.52ms
+[W 181102 08:22:46 web:2162] 404 GET /undefined (127.0.0.1) 0.50ms
+[E 181102 08:22:52 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 39, in post
+        for i in coures:
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1189, in next
+        if len(self.__data) or self._refresh():
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+        self.__send_message(q)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 978, in __send_message
+        codec_options=self.__codec_options)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1067, in _unpack_response
+        return response.unpack_response(cursor_id, codec_options)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/message.py", line 1418, in unpack_response
+        self.raw_response(cursor_id)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/message.py", line 1398, in raw_response
+        error_object)
+    OperationFailure: database error: Can't canonicalize query: BadValue unknown operator: $regex:
+[E 181102 08:22:52 web:2162] 500 POST /getlist (127.0.0.1) 5.30ms
+[I 181102 08:24:26 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 08:24:32 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 20.77ms
+[I 181102 08:24:34 web:2162] 200 POST /getlist (127.0.0.1) 4.14ms
+[W 181102 08:24:34 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[W 181102 08:24:34 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.55ms
+[W 181102 08:24:34 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.49ms
+[W 181102 08:24:34 web:2162] 404 GET /undefined (127.0.0.1) 0.49ms
+[I 181102 08:24:39 web:2162] 200 POST /getlist (127.0.0.1) 4.46ms
+[I 181102 08:26:18 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 08:26:54 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 29.76ms
+[I 181102 08:26:55 web:2162] 200 POST /getlist (127.0.0.1) 6.27ms
+[W 181102 08:26:55 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 1.04ms
+[W 181102 08:26:55 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.52ms
+[W 181102 08:26:55 web:2162] 404 GET /undefined (127.0.0.1) 0.53ms
+[W 181102 08:26:55 web:2162] 404 GET /undefined (127.0.0.1) 0.41ms
+[W 181102 08:26:55 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.53ms
+[I 181102 08:27:00 web:2162] 200 POST /getlist (127.0.0.1) 3.22ms
+[I 181102 08:27:05 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.44ms
+[I 181102 08:27:05 web:2162] 200 POST /getlist (127.0.0.1) 6.86ms
+[W 181102 08:27:05 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.97ms
+[W 181102 08:27:05 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.57ms
+[W 181102 08:27:05 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[W 181102 08:27:05 web:2162] 404 GET /undefined (127.0.0.1) 0.47ms
+[I 181102 08:27:11 web:2162] 200 POST /getlist (127.0.0.1) 3.65ms
+[I 181102 08:27:54 web:2162] 200 POST /getlist (127.0.0.1) 3.41ms
+[I 181102 08:30:06 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 23.33ms
+[I 181102 08:30:08 web:2162] 200 POST /getlist (127.0.0.1) 4.56ms
+[W 181102 08:30:08 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.09ms
+[W 181102 08:30:08 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[W 181102 08:30:08 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.54ms
+[W 181102 08:30:08 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 1.08ms
+[E 181102 08:30:11 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 39, in post
+        for i in coures:
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1189, in next
+        if len(self.__data) or self._refresh():
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1104, in _refresh
+        self.__send_message(q)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 978, in __send_message
+        codec_options=self.__codec_options)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 1067, in _unpack_response
+        return response.unpack_response(cursor_id, codec_options)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/message.py", line 1418, in unpack_response
+        self.raw_response(cursor_id)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/message.py", line 1398, in raw_response
+        error_object)
+    OperationFailure: database error: Can't canonicalize query: BadValue $in needs an array
+[E 181102 08:30:11 web:2162] 500 POST /getlist (127.0.0.1) 4.86ms
+[I 181102 08:31:40 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 08:32:16 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 20.06ms
+[I 181102 08:32:16 web:2162] 200 POST /getlist (127.0.0.1) 4.27ms
+[W 181102 08:32:16 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.10ms
+[W 181102 08:32:16 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.49ms
+[W 181102 08:32:16 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.51ms
+[W 181102 08:32:16 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[I 181102 08:33:12 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 08:33:12 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.81ms
+[I 181102 08:33:12 web:2162] 200 POST /getlist (127.0.0.1) 6.02ms
+[W 181102 08:33:12 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 1.20ms
+[W 181102 08:33:12 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.53ms
+[W 181102 08:33:12 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[W 181102 08:33:12 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.54ms
+[W 181102 08:33:13 web:2162] 404 GET /undefined (127.0.0.1) 0.43ms
+[I 181102 08:33:34 web:2162] 200 POST /getlist (127.0.0.1) 3.99ms
+[I 181102 08:33:35 web:2162] 200 POST /getlist (127.0.0.1) 4.07ms
+[I 181102 08:35:52 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 19.58ms
+[I 181102 08:35:52 web:2162] 200 POST /getlist (127.0.0.1) 6.15ms
+[W 181102 08:35:52 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.07ms
+[W 181102 08:35:52 web:2162] 404 GET /undefined (127.0.0.1) 0.43ms
+[W 181102 08:35:53 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.50ms
+[W 181102 08:35:53 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.51ms
+[I 181102 08:35:55 web:2162] 200 POST /getlist (127.0.0.1) 4.05ms
+[I 181102 08:36:33 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 26.08ms
+[I 181102 08:36:33 web:2162] 200 POST /getlist (127.0.0.1) 6.15ms
+[W 181102 08:36:33 web:2162] 404 GET /undefined (127.0.0.1) 2.65ms
+[W 181102 08:36:33 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.50ms
+[W 181102 08:36:33 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.50ms
+[W 181102 08:36:33 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.58ms
+[W 181102 08:36:34 web:2162] 404 GET /undefined (127.0.0.1) 0.66ms
+[I 181102 08:36:34 web:2162] 200 POST /getlist (127.0.0.1) 3.76ms
+[I 181102 08:36:39 web:2162] 200 POST /getlist (127.0.0.1) 3.53ms
+[I 181102 08:36:42 web:2162] 200 POST /getlist (127.0.0.1) 4.09ms
+[I 181102 08:36:44 web:2162] 200 POST /getlist (127.0.0.1) 4.23ms
+[I 181102 08:36:45 web:2162] 200 POST /getlist (127.0.0.1) 3.53ms
+[I 181102 08:36:47 web:2162] 200 POST /getlist (127.0.0.1) 4.73ms
+[I 181102 08:38:24 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.20ms
+[I 181102 08:38:25 web:2162] 200 POST /getlist (127.0.0.1) 3.97ms
+[W 181102 08:38:25 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.05ms
+[W 181102 08:38:25 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=8 (127.0.0.1) 0.51ms
+[W 181102 08:38:25 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=8 (127.0.0.1) 0.48ms
+[W 181102 08:38:25 web:2162] 404 GET /undefined (127.0.0.1) 0.53ms
+[I 181102 08:38:26 web:2162] 200 POST /getlist (127.0.0.1) 5.57ms
+[I 181102 09:43:29 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 25.61ms
+[I 181102 09:43:31 web:2162] 200 POST /getlist (127.0.0.1) 6.17ms
+[W 181102 09:43:31 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.16ms
+[W 181102 09:43:31 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.52ms
+[W 181102 09:43:31 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.52ms
+[W 181102 09:43:31 web:2162] 404 GET /undefined (127.0.0.1) 0.43ms
+[I 181102 09:43:35 web:2162] 200 POST /getlist (127.0.0.1) 4.57ms
+[I 181102 09:43:57 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 21.55ms
+[I 181102 09:43:58 web:2162] 200 POST /getlist (127.0.0.1) 3.74ms
+[W 181102 09:43:58 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.14ms
+[W 181102 09:43:58 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 1.51ms
+[W 181102 09:43:58 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.52ms
+[W 181102 09:43:58 web:2162] 404 GET /undefined (127.0.0.1) 0.74ms
+[I 181102 09:44:03 web:2162] 200 POST /getlist (127.0.0.1) 5.20ms
+[I 181102 09:45:14 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.82ms
+[I 181102 09:45:14 web:2162] 200 POST /getlist (127.0.0.1) 5.98ms
+[W 181102 09:45:14 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.09ms
+[W 181102 09:45:14 web:2162] 404 GET /undefined (127.0.0.1) 0.52ms
+[W 181102 09:45:14 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.48ms
+[W 181102 09:45:14 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.52ms
+[I 181102 09:45:15 web:2162] 200 POST /getlist (127.0.0.1) 4.65ms
+[I 181102 09:45:16 web:2162] 200 POST /getlist (127.0.0.1) 3.55ms
+[I 181102 09:45:16 web:2162] 200 POST /getlist (127.0.0.1) 3.86ms
+[I 181102 09:45:24 web:2162] 200 POST /getlist (127.0.0.1) 4.75ms
+[I 181102 09:45:24 web:2162] 200 POST /getlist (127.0.0.1) 5.83ms
+[I 181102 09:45:24 web:2162] 200 POST /getlist (127.0.0.1) 3.75ms
+[I 181102 09:46:49 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.26ms
+[I 181102 09:46:49 web:2162] 200 POST /getlist (127.0.0.1) 6.00ms
+[W 181102 09:46:49 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.17ms
+[W 181102 09:46:49 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.46ms
+[W 181102 09:46:49 web:2162] 404 GET /undefined (127.0.0.1) 0.49ms
+[W 181102 09:46:49 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.51ms
+[I 181102 09:46:52 web:2162] 200 POST /getlist (127.0.0.1) 3.63ms
+[I 181102 09:46:57 web:2162] 200 POST /getlist (127.0.0.1) 3.90ms
+[I 181102 09:47:25 web:2162] 200 POST /getlist (127.0.0.1) 4.11ms
+[I 181102 09:47:26 web:2162] 200 POST /getlist (127.0.0.1) 8.46ms
+[I 181102 09:48:18 web:2162] 200 POST /getlist (127.0.0.1) 4.25ms
+[I 181102 09:48:26 web:2162] 200 POST /getlist (127.0.0.1) 4.13ms
+[I 181102 09:48:40 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 09:48:54 web:2162] 200 POST /getlist (127.0.0.1) 4.72ms
+[I 181102 09:48:57 web:2162] 200 POST /getlist (127.0.0.1) 3.42ms
+[I 181102 09:48:58 web:2162] 200 POST /getlist (127.0.0.1) 3.77ms
+[I 181102 09:49:53 web:2162] 200 POST /getlist (127.0.0.1) 4.36ms
+[I 181102 09:50:33 web:2162] 200 POST /getlist (127.0.0.1) 4.55ms
+[I 181102 09:50:37 web:2162] 200 POST /getlist (127.0.0.1) 3.75ms
+[I 181102 09:50:37 web:2162] 200 POST /getlist (127.0.0.1) 5.43ms
+[I 181102 09:50:37 web:2162] 200 POST /getlist (127.0.0.1) 6.15ms
+[I 181102 09:50:38 web:2162] 200 POST /getlist (127.0.0.1) 4.78ms
+[I 181102 09:50:38 web:2162] 200 POST /getlist (127.0.0.1) 3.47ms
+[I 181102 09:51:39 web:2162] 200 POST /getlist (127.0.0.1) 3.25ms
+[I 181102 09:51:46 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 18.76ms
+[I 181102 09:51:47 web:2162] 200 POST /getlist (127.0.0.1) 4.73ms
+[W 181102 09:51:47 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[W 181102 09:51:48 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.45ms
+[W 181102 09:51:48 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.43ms
+[W 181102 09:51:48 web:2162] 404 GET /undefined (127.0.0.1) 0.41ms
+[I 181102 09:51:58 web:2162] 200 POST /getlist (127.0.0.1) 4.33ms
+[I 181102 09:52:08 web:2162] 200 POST /getlist (127.0.0.1) 3.21ms
+[I 181102 09:52:09 web:2162] 200 POST /getlist (127.0.0.1) 3.35ms
+[I 181102 09:52:09 web:2162] 200 POST /getlist (127.0.0.1) 3.26ms
+[I 181102 09:52:10 web:2162] 200 POST /getlist (127.0.0.1) 3.39ms
+[I 181102 09:52:13 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.57ms
+[I 181102 09:52:13 web:2162] 200 POST /getlist (127.0.0.1) 5.22ms
+[W 181102 09:52:13 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.00ms
+[W 181102 09:52:13 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.51ms
+[W 181102 09:52:13 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.60ms
+[W 181102 09:52:13 web:2162] 404 GET /undefined (127.0.0.1) 0.55ms
+[I 181102 09:52:25 web:2162] 200 POST /getlist (127.0.0.1) 3.79ms
+[I 181102 09:52:50 web:2162] 200 POST /getlist (127.0.0.1) 3.53ms
+[I 181102 09:52:59 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 8.52ms
+[I 181102 09:52:59 web:2162] 200 POST /getlist (127.0.0.1) 5.98ms
+[W 181102 09:53:00 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.90ms
+[W 181102 09:53:00 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.47ms
+[W 181102 09:53:00 web:2162] 404 GET /undefined (127.0.0.1) 0.42ms
+[W 181102 09:53:00 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.55ms
+[W 181102 09:53:00 web:2162] 404 GET /undefined (127.0.0.1) 0.58ms
+[I 181102 09:53:01 web:2162] 200 POST /getlist (127.0.0.1) 3.55ms
+[I 181102 09:53:06 web:2162] 200 POST /getlist (127.0.0.1) 4.95ms
+[I 181102 09:53:25 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 30.47ms
+[I 181102 09:53:25 web:2162] 200 POST /getlist (127.0.0.1) 3.33ms
+[W 181102 09:53:25 web:2162] 404 GET /undefined (127.0.0.1) 1.12ms
+[W 181102 09:53:25 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.50ms
+[W 181102 09:53:25 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.50ms
+[W 181102 09:53:25 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.53ms
+[W 181102 09:53:25 web:2162] 404 GET /undefined (127.0.0.1) 0.44ms
+[I 181102 09:53:28 web:2162] 200 POST /getlist (127.0.0.1) 3.72ms
+[I 181102 09:55:09 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.59ms
+[I 181102 09:55:09 web:2162] 200 POST /getlist (127.0.0.1) 3.90ms
+[W 181102 09:55:09 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.16ms
+[W 181102 09:55:09 web:2162] 404 GET /undefined (127.0.0.1) 0.50ms
+[W 181102 09:55:09 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.50ms
+[W 181102 09:55:09 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.50ms
+[I 181102 09:55:10 web:2162] 200 POST /getlist (127.0.0.1) 13.21ms
+[I 181102 09:55:15 web:2162] 200 POST /getlist (127.0.0.1) 4.24ms
+[I 181102 09:55:19 web:2162] 200 POST /getlist (127.0.0.1) 3.46ms
+[I 181102 09:56:04 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 21.82ms
+[I 181102 09:56:04 web:2162] 200 POST /getlist (127.0.0.1) 4.14ms
+[W 181102 09:56:04 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 1.07ms
+[W 181102 09:56:04 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.51ms
+[W 181102 09:56:04 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.58ms
+[W 181102 09:56:04 web:2162] 404 GET /undefined (127.0.0.1) 0.48ms
+[I 181102 09:56:06 web:2162] 200 POST /getlist (127.0.0.1) 5.83ms
+[W 181102 09:56:06 web:2162] 404 GET /undefined (127.0.0.1) 0.52ms
+[W 181102 09:56:06 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[I 181102 09:57:14 web:2162] 200 POST /getlist (127.0.0.1) 5.35ms
+[I 181102 09:57:16 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.42ms
+[I 181102 09:57:16 web:2162] 200 POST /getlist (127.0.0.1) 4.34ms
+[W 181102 09:57:16 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.07ms
+[W 181102 09:57:16 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.51ms
+[W 181102 09:57:16 web:2162] 404 GET /undefined (127.0.0.1) 0.49ms
+[W 181102 09:57:16 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.59ms
+[I 181102 09:57:18 web:2162] 200 POST /getlist (127.0.0.1) 3.48ms
+[W 181102 09:57:18 web:2162] 404 GET /undefined (127.0.0.1) 0.41ms
+[W 181102 09:57:18 web:2162] 404 GET /undefined (127.0.0.1) 0.42ms
+[I 181102 09:57:33 web:2162] 200 POST /getlist (127.0.0.1) 3.27ms
+[I 181102 09:59:32 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 23.87ms
+[I 181102 09:59:32 web:2162] 200 POST /getlist (127.0.0.1) 4.79ms
+[W 181102 09:59:32 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.10ms
+[W 181102 09:59:32 web:2162] 404 GET /undefined (127.0.0.1) 0.46ms
+[W 181102 09:59:33 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.54ms
+[W 181102 09:59:33 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.54ms
+[E 181102 09:59:37 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 40, in post
+        coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":key}]}).limit(10).skip(10*(page-2))
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 491, in skip
+        raise ValueError("skip must be >= 0")
+    ValueError: skip must be >= 0
+[E 181102 09:59:37 web:2162] 500 POST /getlist (127.0.0.1) 13.71ms
+[I 181102 09:59:43 web:2162] 200 POST /getlist (127.0.0.1) 3.60ms
+[W 181102 09:59:43 web:2162] 404 GET /undefined (127.0.0.1) 0.41ms
+[I 181102 09:59:45 web:2162] 200 POST /getlist (127.0.0.1) 5.66ms
+[I 181102 09:59:51 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 8.00ms
+[I 181102 09:59:52 web:2162] 200 POST /getlist (127.0.0.1) 4.77ms
+[W 181102 09:59:52 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.99ms
+[W 181102 09:59:52 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=9 (127.0.0.1) 0.58ms
+[W 181102 09:59:52 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[W 181102 09:59:52 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=9 (127.0.0.1) 0.47ms
+[E 181102 10:00:10 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 40, in post
+        coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":key}]}).limit(10).skip(10*(page-2))
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 491, in skip
+        raise ValueError("skip must be >= 0")
+    ValueError: skip must be >= 0
+[E 181102 10:00:10 web:2162] 500 POST /getlist (127.0.0.1) 2.14ms
+[E 181102 10:00:11 web:1670] Uncaught exception POST /getlist (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8088', method='POST', uri='/getlist', version='HTTP/1.1', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 40, in post
+        coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":key}]}).limit(10).skip(10*(page-2))
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 491, in skip
+        raise ValueError("skip must be >= 0")
+    ValueError: skip must be >= 0
+[E 181102 10:00:11 web:2162] 500 POST /getlist (127.0.0.1) 2.02ms
+[I 181102 10:00:32 web:2162] 200 POST /getlist (127.0.0.1) 6.63ms
+[W 181102 10:00:32 web:2162] 404 GET /undefined (127.0.0.1) 1.14ms
+[W 181102 10:00:32 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.43ms
+[W 181102 10:00:32 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.37ms
+[W 181102 10:00:32 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.57ms
+[I 181102 10:00:33 web:2162] 200 POST /getlist (127.0.0.1) 7.53ms
+[I 181102 10:01:23 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.40ms
+[I 181102 10:01:23 web:2162] 200 POST /getlist (127.0.0.1) 4.28ms
+[W 181102 10:01:23 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.03ms
+[W 181102 10:01:23 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.51ms
+[W 181102 10:01:23 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.46ms
+[W 181102 10:01:23 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[I 181102 10:01:30 web:2162] 200 POST /getlist (127.0.0.1) 6.48ms
+[W 181102 10:01:39 web:2162] 404 GET /index.php?i=25&c=entry&rid=3319&do=report&m=tyzm_diamondvote (127.0.0.1) 0.47ms
+[W 181102 10:01:40 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.91ms
+[I 181102 10:01:43 web:2162] 200 POST /getlist (127.0.0.1) 3.82ms
+[W 181102 10:01:43 web:2162] 404 GET /undefined (127.0.0.1) 0.48ms
+[W 181102 10:01:43 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.61ms
+[W 181102 10:01:43 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.49ms
+[W 181102 10:01:43 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.82ms
+[W 181102 10:01:47 web:2162] 405 GET /baoming?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.46ms
+[W 181102 10:01:47 web:2162] 404 GET /favicon.ico (127.0.0.1) 0.61ms
+[I 181102 10:01:48 web:2162] 200 POST /getlist (127.0.0.1) 4.44ms
+[I 181102 10:02:24 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 26.79ms
+[I 181102 10:02:24 web:2162] 200 POST /getlist (127.0.0.1) 15.80ms
+[W 181102 10:02:24 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.38ms
+[W 181102 10:02:24 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.54ms
+[W 181102 10:02:24 web:2162] 404 GET /undefined (127.0.0.1) 0.54ms
+[W 181102 10:02:24 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.69ms
+[I 181102 10:02:26 web:2162] 200 POST /getlist (127.0.0.1) 4.18ms
+[I 181102 10:02:27 web:2162] 200 POST /getlist (127.0.0.1) 3.31ms
+[I 181102 10:02:35 web:2162] 200 POST /getlist (127.0.0.1) 3.76ms
+[I 181102 10:02:56 web:2162] 200 POST /getlist (127.0.0.1) 4.23ms
+[I 181102 10:03:16 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 18.92ms
+[I 181102 10:03:16 web:2162] 200 POST /getlist (127.0.0.1) 4.27ms
+[W 181102 10:03:17 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.96ms
+[W 181102 10:03:17 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 1.01ms
+[W 181102 10:03:17 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[W 181102 10:03:17 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.54ms
+[W 181102 10:03:17 web:2162] 404 GET /undefined (127.0.0.1) 0.78ms
+[I 181102 10:03:18 web:2162] 200 POST /getlist (127.0.0.1) 4.42ms
+[I 181102 10:03:35 web:2162] 200 POST /getlist (127.0.0.1) 3.94ms
+[I 181102 10:04:36 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 10:04:44 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 20.78ms
+[I 181102 10:04:44 web:2162] 200 POST /getlist (127.0.0.1) 4.13ms
+[W 181102 10:04:44 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.05ms
+[W 181102 10:04:44 web:2162] 404 GET /undefined (127.0.0.1) 0.51ms
+[W 181102 10:04:44 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.42ms
+[W 181102 10:04:44 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.39ms
+[I 181102 10:04:48 web:2162] 200 POST /getlist (127.0.0.1) 3.56ms
+[I 181102 10:05:30 web:2162] 200 POST /getlist (127.0.0.1) 3.43ms
+[I 181102 10:05:34 web:2162] 200 POST /getlist (127.0.0.1) 3.68ms
+[W 181102 10:05:34 web:2162] 404 GET /undefined (127.0.0.1) 0.50ms
+[I 181102 10:05:52 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.08ms
+[I 181102 10:05:53 web:2162] 200 POST /getlist (127.0.0.1) 3.15ms
+[W 181102 10:05:53 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.34ms
+[W 181102 10:05:53 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.56ms
+[W 181102 10:05:53 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.49ms
+[W 181102 10:05:53 web:2162] 404 GET /undefined (127.0.0.1) 0.48ms
+[I 181102 10:08:08 web:2162] 200 GET /wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.17ms
+[I 181102 10:08:08 web:2162] 200 POST /getlist (127.0.0.1) 4.41ms
+[W 181102 10:08:08 web:2162] 404 GET /index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.99ms
+[W 181102 10:08:08 web:2162] 404 GET /resource/js/lib/hammer.min.js?v=10 (127.0.0.1) 0.48ms
+[W 181102 10:08:08 web:2162] 404 GET /web/resource/js/lib/bootstrap.min.js?v=10 (127.0.0.1) 0.47ms
+[W 181102 10:08:08 web:2162] 404 GET /undefined (127.0.0.1) 0.50ms
+[W 181102 10:08:25 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.53ms
+[W 181102 10:08:54 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.55ms
+[W 181102 10:09:08 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.52ms
+[W 181102 10:09:11 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.51ms
+[W 181102 10:09:12 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.52ms
+[W 181102 10:09:15 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.55ms
+[W 181102 10:09:16 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.65ms
+[W 181102 10:09:17 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.52ms
+[W 181102 10:10:02 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.52ms
+[W 181102 10:10:03 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.54ms
+[W 181102 10:10:25 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.53ms
+[W 181102 10:10:31 web:2162] 404 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 0.54ms
+[I 181102 10:11:51 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 19.72ms
+[W 181102 10:11:53 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.16ms
+[I 181102 10:12:06 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 8.80ms
+[W 181102 10:12:07 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.19ms
+[I 181102 10:12:24 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 45.06ms
+[W 181102 10:12:24 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.99ms
+[I 181102 10:13:46 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 26.52ms
+[I 181102 10:13:47 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.28ms
+[W 181102 10:13:47 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.15ms
+[W 181102 10:13:47 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.60ms
+[I 181102 10:14:31 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 10:15:16 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 55.62ms
+[I 181102 10:15:17 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.22ms
+[W 181102 10:15:17 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 2.50ms
+[W 181102 10:15:17 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.60ms
+[I 181102 10:15:44 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 19.06ms
+[I 181102 10:15:45 web:2162] 200 POST /wx/getlist (127.0.0.1) 30.44ms
+[W 181102 10:15:46 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.11ms
+[W 181102 10:15:51 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.56ms
+[I 181102 10:15:54 web:2162] 200 POST /wx/getlist (127.0.0.1) 93.52ms
+[I 181102 10:16:01 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 33.43ms
+[I 181102 10:16:02 web:2162] 200 POST /wx/getlist (127.0.0.1) 14.09ms
+[W 181102 10:16:02 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 4.71ms
+[I 181102 10:17:11 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 31.98ms
+[I 181102 10:17:11 web:2162] 200 POST /wx/getlist (127.0.0.1) 11.10ms
+[W 181102 10:17:11 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.12ms
+[I 181102 10:17:25 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 23.80ms
+[I 181102 10:17:26 web:2162] 200 POST /wx/getlist (127.0.0.1) 24.04ms
+[W 181102 10:17:26 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 4.21ms
+[I 181102 10:17:38 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.18ms
+[I 181102 10:17:40 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.29ms
+[I 181102 10:17:42 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.70ms
+[I 181102 10:17:45 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.00ms
+[W 181102 10:17:46 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.51ms
+[I 181102 10:17:47 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.92ms
+[W 181102 10:17:49 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.45ms
+[I 181102 10:17:50 web:2162] 200 POST /wx/getlist (127.0.0.1) 10.21ms
+[I 181102 10:17:53 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.63ms
+[I 181102 10:17:56 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.56ms
+[I 181102 10:27:42 autoreload:199] /home/wj/DOme/wxServer/urls.py modified; restarting server
+[I 181102 10:37:51 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 47.86ms
+[I 181102 10:37:52 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.14ms
+[W 181102 10:37:52 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.17ms
+[I 181102 10:37:59 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.40ms
+[I 181102 10:39:47 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 47.30ms
+[I 181102 10:39:48 web:2162] 200 POST /wx/getlist (127.0.0.1) 11.30ms
+[W 181102 10:39:48 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.58ms
+[I 181102 10:46:43 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 39.02ms
+[I 181102 10:46:45 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.15ms
+[W 181102 10:46:45 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.97ms
+[I 181102 10:46:59 web:2162] 200 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 22.07ms
+[W 181102 10:46:59 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.06ms
+[I 181102 10:48:04 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 32.16ms
+[W 181102 10:48:05 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[I 181102 11:08:15 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 11.60ms
+[W 181102 11:08:17 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.07ms
+[I 181102 11:08:58 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.53ms
+[W 181102 11:08:59 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.10ms
+[W 181102 11:18:21 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote (127.0.0.1) 0.61ms
+[I 181102 11:18:25 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 11.90ms
+[I 181102 11:18:26 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.82ms
+[W 181102 11:18:26 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.06ms
+[I 181102 11:19:20 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.25ms
+[I 181102 11:19:23 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.24ms
+[W 181102 11:19:23 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.91ms
+[W 181102 11:19:39 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[I 181102 11:19:45 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.52ms
+[W 181102 11:19:46 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.49ms
+[I 181102 11:19:48 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.35ms
+[W 181102 11:19:57 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=report&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[I 181102 11:20:00 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.69ms
+[I 181102 11:20:01 web:2162] 200 POST /wx/getlist (127.0.0.1) 34.76ms
+[W 181102 11:20:01 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.91ms
+[W 181102 11:20:05 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=report&m=tyzm_diamondvote (127.0.0.1) 0.47ms
+[I 181102 11:20:06 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.42ms
+[I 181102 11:20:53 web:2162] 200 POST /wx/getlist (127.0.0.1) 23.95ms
+[I 181102 11:20:56 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.28ms
+[I 181102 11:21:14 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.76ms
+[I 181102 11:21:15 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.86ms
+[W 181102 11:21:15 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.20ms
+[W 181102 11:21:31 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[W 181102 11:21:57 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.57ms
+[I 181102 11:21:59 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.41ms
+[W 181102 11:21:59 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.61ms
+[I 181102 11:22:58 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 11:23:13 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 25.03ms
+[I 181102 11:23:13 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.73ms
+[W 181102 11:23:14 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.31ms
+[I 181102 11:23:18 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.89ms
+[I 181102 11:23:18 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.71ms
+[W 181102 11:23:19 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.14ms
+[I 181102 11:23:36 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 28.09ms
+[I 181102 11:23:37 web:2162] 200 POST /wx/getlist (127.0.0.1) 17.44ms
+[W 181102 11:23:37 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 6.61ms
+[I 181102 11:23:46 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 38.33ms
+[I 181102 11:23:46 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.27ms
+[W 181102 11:23:46 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.88ms
+[I 181102 11:23:56 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.78ms
+[I 181102 11:23:58 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.37ms
+[W 181102 11:23:58 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.93ms
+[W 181102 11:24:33 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote (127.0.0.1) 0.49ms
+[I 181102 11:24:35 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.27ms
+[W 181102 11:24:36 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[I 181102 11:24:37 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.61ms
+[I 181102 11:25:29 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 25.02ms
+[I 181102 11:25:30 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.85ms
+[W 181102 11:25:30 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.31ms
+[I 181102 11:25:37 web:2162] 200 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.36ms
+[W 181102 11:25:37 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.05ms
+[I 181102 11:32:05 autoreload:199] /home/wj/DOme/wxServer/urls.py modified; restarting server
+[I 181102 11:51:23 web:2162] 200 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 54.55ms
+[W 181102 11:51:25 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 12.61ms
+[I 181102 11:51:26 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.89ms
+[I 181102 11:51:54 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 11:51:54 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 38.53ms
+[W 181102 11:51:55 web:2162] 404 POST /wx/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote (127.0.0.1) 1.32ms
+[W 181102 11:51:55 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.45ms
+[I 181102 11:52:00 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 37.46ms
+[W 181102 11:52:01 web:2162] 404 POST /wx/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote (127.0.0.1) 1.17ms
+[W 181102 11:52:01 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.06ms
+[I 181102 11:52:32 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.55ms
+[W 181102 11:52:34 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.85ms
+[I 181102 11:52:59 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 11.28ms
+[W 181102 11:53:00 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 2.18ms
+[I 181102 11:53:17 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.05ms
+[W 181102 11:53:19 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.07ms
+[I 181102 11:53:42 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 27.71ms
+[E 181102 11:53:44 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 8, in post
+        coures = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(10).skip(10 * (page - 1)).sort(["votenum",-1])
+    AttributeError: 'SortHanderl' object has no attribute 'Mongodb'
+[E 181102 11:53:44 web:2162] 500 POST /wx/sort (127.0.0.1) 1.60ms
+[W 181102 11:53:44 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.62ms
+[I 181102 11:54:13 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.74ms
+[E 181102 11:54:13 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 9, in post
+        coures = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(10).skip(10 * (page - 1)).sort(["votenum",-1])
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 709, in sort
+        self.__ordering = helpers._index_document(keys)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/helpers.py", line 90, in _index_document
+        for (key, value) in index_list:
+    ValueError: too many values to unpack
+[E 181102 11:54:13 web:2162] 500 POST /wx/sort (127.0.0.1) 20.58ms
+[W 181102 11:54:13 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 2.03ms
+[I 181102 11:55:17 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 11:55:18 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.92ms
+[E 181102 11:55:18 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 9, in post
+        coures = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(10).skip(10 * (page - 1)).sort(["votenum",-1])
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 709, in sort
+        self.__ordering = helpers._index_document(keys)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/helpers.py", line 90, in _index_document
+        for (key, value) in index_list:
+    ValueError: too many values to unpack
+[E 181102 11:55:18 web:2162] 500 POST /wx/sort (127.0.0.1) 4.76ms
+[W 181102 11:55:18 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.60ms
+[I 181102 11:55:23 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.55ms
+[E 181102 11:55:24 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 9, in post
+        coures = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(10).skip(10 * (page - 1)).sort(["votenum",-1])
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 709, in sort
+        self.__ordering = helpers._index_document(keys)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/helpers.py", line 90, in _index_document
+        for (key, value) in index_list:
+    ValueError: too many values to unpack
+[E 181102 11:55:24 web:2162] 500 POST /wx/sort (127.0.0.1) 5.71ms
+[W 181102 11:55:24 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.46ms
+[I 181102 11:55:38 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.81ms
+[E 181102 11:55:39 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 9, in post
+        coures = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(10).skip(10 * (page - 1)).sort(["votenum",-1])
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/cursor.py", line 709, in sort
+        self.__ordering = helpers._index_document(keys)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/pymongo/helpers.py", line 90, in _index_document
+        for (key, value) in index_list:
+    ValueError: too many values to unpack
+[E 181102 11:55:39 web:2162] 500 POST /wx/sort (127.0.0.1) 5.55ms
+[W 181102 11:55:39 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.51ms
+[I 181102 11:56:29 web:2162] 304 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 36.28ms
+[I 181102 11:56:30 web:2162] 200 POST /wx/sort (127.0.0.1) 141.91ms
+[W 181102 11:56:30 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.27ms
+[I 181102 11:57:44 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 11:58:21 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 20.29ms
+[W 181102 11:58:21 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.20ms
+[E 181102 11:58:23 web:1670] Uncaught exception GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 30, in get
+        data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
+    NameError: global name 'time' is not defined
+[E 181102 11:58:23 web:2162] 500 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 5.17ms
+[I 181102 11:58:25 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 25.14ms
+[I 181102 11:58:25 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.02ms
+[W 181102 11:58:26 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.94ms
+[E 181102 11:58:27 web:1670] Uncaught exception GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 30, in get
+        data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
+    NameError: global name 'time' is not defined
+[E 181102 11:58:27 web:2162] 500 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 5.10ms
+[I 181102 11:58:38 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 11:58:39 web:2162] 200 POST /wx/getlist (127.0.0.1) 8.72ms
+[I 181102 11:58:42 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 16.22ms
+[I 181102 11:58:42 web:2162] 200 POST /wx/sort (127.0.0.1) 5.69ms
+[W 181102 11:58:42 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.38ms
+[W 181102 11:59:09 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 1.14ms
+[I 181102 11:59:10 web:2162] 200 POST /wx/sort (127.0.0.1) 39.82ms
+[W 181102 11:59:12 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=index&m=tyzm_diamondvote (127.0.0.1) 0.49ms
+[W 181102 13:58:01 web:2162] 404 GET /wxindex (127.0.0.1) 0.44ms
+[I 181102 13:58:04 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 8.59ms
+[I 181102 13:58:05 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.92ms
+[W 181102 13:58:05 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.92ms
+[I 181102 13:58:12 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.63ms
+[I 181102 13:58:28 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 5.86ms
+[W 181102 13:58:29 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.12ms
+[I 181102 13:58:30 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.31ms
+[I 181102 13:58:32 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.20ms
+[I 181102 13:58:32 web:2162] 200 POST /wx/sort (127.0.0.1) 6.38ms
+[W 181102 13:58:32 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.27ms
+[W 181102 14:04:17 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.46ms
+[I 181102 14:04:19 web:2162] 200 POST /wx/sort (127.0.0.1) 3.98ms
+[I 181102 14:35:10 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 14:35:25 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 14:35:39 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 14:35:41 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 32.83ms
+[I 181102 14:35:59 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.09ms
+[I 181102 14:35:59 web:2162] 200 POST /wx/sort (127.0.0.1) 64.48ms
+[W 181102 14:35:59 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 89.72ms
+[I 181102 14:36:29 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.42ms
+[I 181102 14:36:30 web:2162] 200 POST /wx/sort (127.0.0.1) 4.42ms
+[W 181102 14:36:30 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.34ms
+[I 181102 14:37:03 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 16.41ms
+[I 181102 14:37:03 web:2162] 200 POST /wx/sort (127.0.0.1) 4.43ms
+[W 181102 14:37:03 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.20ms
+[I 181102 14:37:32 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.65ms
+[E 181102 14:37:33 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 24, in post
+        i+=1
+    TypeError: unsupported operand type(s) for +=: 'dict' and 'int'
+[E 181102 14:37:33 web:2162] 500 POST /wx/sort (127.0.0.1) 7.08ms
+[W 181102 14:37:33 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.64ms
+[I 181102 14:38:00 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.29ms
+[E 181102 14:38:01 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 24, in post
+        i+=1
+    TypeError: unsupported operand type(s) for +=: 'dict' and 'int'
+[E 181102 14:38:01 web:2162] 500 POST /wx/sort (127.0.0.1) 27.31ms
+[W 181102 14:38:01 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[I 181102 14:38:09 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.98ms
+[E 181102 14:38:09 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 24, in post
+        i=i+1
+    TypeError: unsupported operand type(s) for +: 'dict' and 'int'
+[E 181102 14:38:09 web:2162] 500 POST /wx/sort (127.0.0.1) 6.00ms
+[W 181102 14:38:10 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.60ms
+[I 181102 14:38:11 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.12ms
+[E 181102 14:38:11 web:1670] Uncaught exception POST /wx/sort (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/wx/sort', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/SortHanderl.py", line 24, in post
+        i=i+1
+    TypeError: unsupported operand type(s) for +: 'dict' and 'int'
+[E 181102 14:38:11 web:2162] 500 POST /wx/sort (127.0.0.1) 6.30ms
+[W 181102 14:38:11 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.61ms
+[I 181102 14:38:29 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.06ms
+[I 181102 14:38:29 web:2162] 200 POST /wx/sort (127.0.0.1) 5.11ms
+[W 181102 14:38:29 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[I 181102 14:38:49 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.04ms
+[I 181102 14:38:50 web:2162] 200 POST /wx/sort (127.0.0.1) 37.76ms
+[W 181102 14:38:50 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.58ms
+[I 181102 14:41:16 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 23.11ms
+[I 181102 14:41:16 web:2162] 200 POST /wx/sort (127.0.0.1) 6.40ms
+[W 181102 14:41:16 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 2.96ms
+[I 181102 14:41:35 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 28.60ms
+[I 181102 14:41:35 web:2162] 200 POST /wx/sort (127.0.0.1) 21.50ms
+[W 181102 14:41:35 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.89ms
+[I 181102 14:41:51 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.28ms
+[I 181102 14:41:51 web:2162] 200 POST /wx/sort (127.0.0.1) 41.40ms
+[W 181102 14:41:51 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.07ms
+[W 181102 14:44:43 web:2162] 404 GET /wx/undefined (127.0.0.1) 0.54ms
+[I 181102 14:44:44 web:2162] 200 POST /wx/sort (127.0.0.1) 26.41ms
+[I 181102 14:46:25 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 20.16ms
+[I 181102 14:46:44 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.56ms
+[I 181102 14:46:53 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.98ms
+[I 181102 14:46:54 web:2162] 200 POST /wx/sort (127.0.0.1) 5.82ms
+[W 181102 14:46:54 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.09ms
+[W 181102 14:47:16 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.51ms
+[I 181102 14:49:14 autoreload:199] /home/wj/DOme/wxServer/Handerls/SortHanderl.py modified; restarting server
+[I 181102 14:49:16 web:2162] 200 POST /wx/sort (127.0.0.1) 5.59ms
+[W 181102 14:49:16 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.34ms
+[I 181102 14:49:29 web:2162] 200 POST /wx/sort (127.0.0.1) 5.66ms
+[I 181102 14:49:31 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.34ms
+[I 181102 14:49:31 web:2162] 200 POST /wx/sort (127.0.0.1) 4.61ms
+[W 181102 14:49:31 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.29ms
+[I 181102 14:53:14 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[W 181102 14:53:31 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=index&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[I 181102 14:53:33 web:2162] 200 POST /wx/sort (127.0.0.1) 6.76ms
+[E 181102 14:53:38 web:1670] Uncaught exception GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 11, in get
+        self.Mongodb["poject"].update_one({{"uuid":uuid},{"$inc": {"participants": 1}}})
+    TypeError: unhashable type: 'dict'
+[E 181102 14:53:38 web:2162] 500 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 5.68ms
+[E 181102 14:53:42 web:1670] Uncaught exception GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 11, in get
+        self.Mongodb["poject"].update_one({{"uuid":uuid},{"$inc": {"participants": 1}}})
+    TypeError: unhashable type: 'dict'
+[E 181102 14:53:42 web:2162] 500 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 5.13ms
+[E 181102 14:54:22 web:1670] Uncaught exception GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 26, in get
+        self.render("index.html",data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 17, in _tt_execute
+        _tt_tmp = data["topimgV"]  # index.html:97
+    KeyError: 'topimgV'
+[E 181102 14:54:22 web:2162] 500 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 221.04ms
+[I 181102 14:54:33 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 14:54:39 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 14:54:39 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 17.42ms
+[I 181102 14:54:39 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.93ms
+[W 181102 14:54:39 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.16ms
+[I 181102 14:55:17 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 23.77ms
+[I 181102 14:55:17 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.96ms
+[W 181102 14:55:17 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.18ms
+[I 181102 14:55:20 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.18ms
+[I 181102 14:55:21 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.02ms
+[W 181102 14:55:21 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.09ms
+[I 181102 14:55:22 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 16.18ms
+[I 181102 14:55:22 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.75ms
+[W 181102 14:55:22 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.19ms
+[I 181102 14:55:24 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.96ms
+[I 181102 14:55:24 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.47ms
+[W 181102 14:55:24 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.19ms
+[I 181102 14:55:26 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.05ms
+[I 181102 14:55:26 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.10ms
+[W 181102 14:55:26 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.82ms
+[I 181102 14:55:27 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.65ms
+[I 181102 14:55:51 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.10ms
+[I 181102 14:55:51 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.11ms
+[W 181102 14:55:51 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.18ms
+[I 181102 14:59:24 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.82ms
+[I 181102 14:59:25 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.06ms
+[W 181102 14:59:25 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.38ms
+[I 181102 14:59:27 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.44ms
+[I 181102 14:59:27 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.85ms
+[W 181102 14:59:27 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.16ms
+[I 181102 14:59:29 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.24ms
+[I 181102 14:59:35 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.82ms
+[I 181102 14:59:36 web:2162] 200 POST /wx/getlist (127.0.0.1) 10.36ms
+[W 181102 14:59:36 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[I 181102 14:59:39 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.90ms
+[I 181102 14:59:40 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.32ms
+[W 181102 14:59:40 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.05ms
+[I 181102 14:59:42 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.87ms
+[I 181102 14:59:42 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.07ms
+[W 181102 14:59:43 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.91ms
+[I 181102 14:59:45 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.08ms
+[I 181102 14:59:45 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.13ms
+[W 181102 14:59:45 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.07ms
+[I 181102 14:59:47 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.35ms
+[I 181102 14:59:47 web:2162] 200 POST /wx/getlist (127.0.0.1) 10.63ms
+[W 181102 14:59:47 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.08ms
+[I 181102 14:59:49 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 16.82ms
+[I 181102 14:59:50 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.45ms
+[W 181102 14:59:50 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.09ms
+[I 181102 14:59:51 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 11.90ms
+[I 181102 14:59:52 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.43ms
+[W 181102 14:59:52 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.63ms
+[I 181102 14:59:54 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.13ms
+[I 181102 14:59:54 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.56ms
+[W 181102 14:59:54 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.12ms
+[I 181102 15:02:42 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.41ms
+[I 181102 15:02:43 web:2162] 200 POST /wx/getlist (127.0.0.1) 17.42ms
+[W 181102 15:02:43 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.31ms
+[I 181102 15:03:06 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.17ms
+[I 181102 15:03:06 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.52ms
+[W 181102 15:03:06 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.69ms
+[I 181102 15:03:14 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.31ms
+[I 181102 15:03:14 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.79ms
+[W 181102 15:03:14 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.93ms
+[I 181102 15:04:06 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.98ms
+[I 181102 15:04:07 web:2162] 200 POST /wx/getlist (127.0.0.1) 9.74ms
+[W 181102 15:04:07 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 3.72ms
+[I 181102 15:04:13 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 26.41ms
+[I 181102 15:04:14 web:2162] 200 POST /wx/getlist (127.0.0.1) 25.06ms
+[W 181102 15:04:14 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.23ms
+[I 181102 15:05:53 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 18.77ms
+[I 181102 15:05:54 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.61ms
+[W 181102 15:05:54 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.10ms
+[I 181102 15:08:22 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.72ms
+[I 181102 15:08:22 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.39ms
+[W 181102 15:08:22 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.43ms
+[I 181102 15:09:07 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.41ms
+[I 181102 15:09:08 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.47ms
+[W 181102 15:09:08 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.13ms
+[I 181102 15:09:15 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.25ms
+[I 181102 15:09:16 web:2162] 200 POST /wx/getlist (127.0.0.1) 6.36ms
+[W 181102 15:09:16 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 2.42ms
+[I 181102 15:09:18 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 13.35ms
+[I 181102 15:09:19 web:2162] 200 POST /wx/getlist (127.0.0.1) 5.96ms
+[W 181102 15:09:19 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.27ms
+[I 181102 15:11:04 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 26.40ms
+[I 181102 15:11:05 web:2162] 200 POST /wx/getlist (127.0.0.1) 12.28ms
+[W 181102 15:11:05 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 8.56ms
+[I 181102 15:11:13 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 15.19ms
+[I 181102 15:11:13 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.88ms
+[W 181102 15:11:13 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.91ms
+[I 181102 15:13:17 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 36.62ms
+[I 181102 15:13:18 web:2162] 200 POST /wx/getlist (127.0.0.1) 10.01ms
+[W 181102 15:13:18 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.45ms
+[I 181102 15:14:23 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 23.93ms
+[I 181102 15:14:24 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.33ms
+[W 181102 15:14:24 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.15ms
+[I 181102 15:14:31 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 71.96ms
+[I 181102 15:14:31 web:2162] 200 POST /wx/getlist (127.0.0.1) 11.39ms
+[W 181102 15:14:31 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.17ms
+[I 181102 15:14:35 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.31ms
+[I 181102 15:14:36 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.54ms
+[W 181102 15:14:36 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 3.27ms
+[I 181102 15:14:44 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.63ms
+[I 181102 15:14:44 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.67ms
+[W 181102 15:14:44 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 2.38ms
+[I 181102 15:18:08 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 33.46ms
+[I 181102 15:18:10 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.05ms
+[W 181102 15:18:10 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.12ms
+[I 181102 15:19:58 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.01ms
+[I 181102 15:19:59 web:2162] 200 POST /wx/getlist (127.0.0.1) 7.62ms
+[W 181102 15:19:59 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.16ms
+[I 181102 15:20:05 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.93ms
+[I 181102 15:20:07 web:2162] 200 POST /wx/sort (127.0.0.1) 196.80ms
+[W 181102 15:20:07 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.69ms
+[I 181102 15:21:21 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.92ms
+[I 181102 15:21:21 web:2162] 200 POST /wx/sort (127.0.0.1) 5.43ms
+[W 181102 15:21:21 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.22ms
+[I 181102 15:24:34 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.49ms
+[I 181102 15:24:35 web:2162] 200 POST /wx/sort (127.0.0.1) 8.44ms
+[W 181102 15:24:35 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.06ms
+[W 181102 15:24:36 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=index&m=tyzm_diamondvote (127.0.0.1) 0.52ms
+[I 181102 15:26:12 web:2162] 200 POST /wx/sort (127.0.0.1) 5.99ms
+[W 181102 15:26:14 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.49ms
+[I 181102 15:26:16 web:2162] 200 POST /wx/sort (127.0.0.1) 4.25ms
+[W 181102 15:26:20 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=prize&m=tyzm_diamondvote (127.0.0.1) 0.48ms
+[I 181102 15:26:21 web:2162] 200 POST /wx/sort (127.0.0.1) 4.65ms
+[W 181102 15:26:22 web:2162] 404 GET /wx/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote (127.0.0.1) 0.54ms
+[I 181102 15:26:23 web:2162] 200 POST /wx/sort (127.0.0.1) 3.86ms
+[I 181102 15:26:24 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.87ms
+[I 181102 15:26:24 web:2162] 200 POST /wx/sort (127.0.0.1) 21.41ms
+[W 181102 15:26:24 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.93ms
+[I 181102 15:26:25 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 8.42ms
+[I 181102 15:26:25 web:2162] 200 POST /wx/sort (127.0.0.1) 7.45ms
+[W 181102 15:26:25 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 3.15ms
+[I 181102 15:26:27 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.13ms
+[I 181102 15:26:27 web:2162] 200 POST /wx/sort (127.0.0.1) 8.52ms
+[W 181102 15:26:27 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.97ms
+[I 181102 15:26:29 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba} (127.0.0.1) 6.22ms
+[I 181102 15:26:40 web:2162] 304 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba} (127.0.0.1) 3.85ms
+[I 181102 15:26:50 web:2162] 304 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba} (127.0.0.1) 14.64ms
+[I 181102 15:26:51 web:2162] 304 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba} (127.0.0.1) 14.42ms
+[I 181102 15:26:51 web:2162] 304 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba} (127.0.0.1) 10.34ms
+[I 181102 15:26:53 web:2162] 200 POST /wx/sort (127.0.0.1) 6.07ms
+[E 181102 15:26:54 web:1670] Uncaught exception GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/JpHanderl.py", line 20, in get
+        self.render("jp.html", data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "jp_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["titile"]  # jp.html:6
+    KeyError: 'titile'
+[E 181102 15:26:54 web:2162] 500 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 68.23ms
+[I 181102 15:26:57 web:2162] 200 POST /wx/sort (127.0.0.1) 4.49ms
+[I 181102 15:27:28 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.19ms
+[I 181102 15:27:28 web:2162] 200 POST /wx/sort (127.0.0.1) 34.12ms
+[W 181102 15:27:28 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.34ms
+[E 181102 15:27:29 web:1670] Uncaught exception GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/JpHanderl.py", line 20, in get
+        self.render("jp.html", data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "jp_html.generated.py", line 5, in _tt_execute
+        _tt_tmp = data["titile"]  # jp.html:6
+    KeyError: 'titile'
+[E 181102 15:27:29 web:2162] 500 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.81ms
+[I 181102 15:28:14 autoreload:199] /home/wj/DOme/wxServer/Handerls/JpHanderl.py modified; restarting server
+[E 181102 15:28:25 web:1670] Uncaught exception GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/JpHanderl.py", line 21, in get
+        self.render("jp.html", data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "jp_html.generated.py", line 17, in _tt_execute
+        _tt_tmp = data["topimgV"]  # jp.html:97
+    KeyError: 'topimgV'
+[E 181102 15:28:25 web:2162] 500 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 30.33ms
+[E 181102 15:28:26 web:1670] Uncaught exception GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/JpHanderl.py", line 21, in get
+        self.render("jp.html", data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "jp_html.generated.py", line 17, in _tt_execute
+        _tt_tmp = data["topimgV"]  # jp.html:97
+    KeyError: 'topimgV'
+[E 181102 15:28:26 web:2162] 500 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.86ms
+[I 181102 15:28:45 autoreload:199] /home/wj/DOme/wxServer/Handerls/JpHanderl.py modified; restarting server
+[I 181102 15:28:48 web:2162] 200 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 14.64ms
+[W 181102 15:28:48 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.22ms
+[I 181102 15:28:55 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.29ms
+[W 181102 15:28:55 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.11ms
+[I 181102 15:28:56 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.64ms
+[I 181102 15:28:56 web:2162] 200 POST /wx/sort (127.0.0.1) 28.06ms
+[W 181102 15:28:56 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.30ms
+[E 181102 15:28:57 web:1670] Uncaught exception GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/wxServer/Handerls/indexHanderl.py", line 27, in get
+        self.render("index.html",data=data)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 766, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 907, in render_string
+        return t.generate(**namespace)
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/template.py", line 346, in generate
+        return execute()
+      File "index_html.generated.py", line 47, in _tt_execute
+        _tt_tmp = data["customized"]  # index.html:246
+    KeyError: 'customized'
+[E 181102 15:28:57 web:2162] 500 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 63.10ms
+[I 181102 15:29:19 autoreload:199] /home/wj/DOme/wxServer/Handerls/indexHanderl.py modified; restarting server
+[I 181102 15:29:21 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 18.82ms
+[I 181102 15:29:21 web:2162] 200 POST /wx/getlist (127.0.0.1) 4.52ms
+[W 181102 15:29:21 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.56ms
+[I 181102 15:29:27 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 6.85ms
+[I 181102 15:29:27 web:2162] 200 POST /wx/sort (127.0.0.1) 5.94ms
+[W 181102 15:29:27 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.09ms
+[I 181102 16:01:42 web:2162] 200 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.74ms
+[W 181102 16:01:42 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.15ms
+[I 181102 16:01:44 web:2162] 304 GET /wx/jp?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 10.65ms
+[W 181102 16:01:44 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.19ms
+[I 181102 16:01:47 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 9.32ms
+[I 181102 16:01:47 web:2162] 200 POST /wx/getlist (127.0.0.1) 3.91ms
+[W 181102 16:01:47 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.02ms
+[I 181102 16:01:50 web:2162] 200 GET /wx/sort?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 7.93ms
+[I 181102 16:01:50 web:2162] 200 POST /wx/sort (127.0.0.1) 4.69ms
+[W 181102 16:01:50 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 1.19ms
+[I 181102 16:01:52 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 12.11ms
+[I 181102 16:01:52 web:2162] 200 POST /wx/getlist (127.0.0.1) 8.36ms
+[W 181102 16:01:52 web:2162] 404 GET /wx/index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote (127.0.0.1) 0.96ms
+[I 181105 09:06:45 web:2162] 200 GET /wx/wxindex?uuid=19eee48e3e585ffe86925ba7f835afba (127.0.0.1) 277.34ms
+[I 181105 09:35:12 autoreload:199] /home/wj/DOme/wxServer/urls.py modified; restarting server
+[I 181105 10:35:42 autoreload:199] /home/wj/DOme/wxServer/urls.py modified; restarting server
+[I 181105 10:39:19 autoreload:199] /home/wj/DOme/wxServer/Handerls/toupiaoHanderl.py modified; restarting server
+[I 181105 11:32:59 autoreload:199] /home/wj/DOme/wxServer/urls.py modified; restarting server

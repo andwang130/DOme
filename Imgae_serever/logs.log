@@ -1,0 +1,751 @@
+[W 180930 17:41:49 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.55ms
+[W 180930 17:41:49 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.46ms
+[W 180930 17:42:11 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 17:42:11 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 180930 17:44:12 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.43ms
+[W 180930 17:44:12 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[E 180930 17:44:14 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 6, in post
+        files=self.request.files()
+    TypeError: 'dict' object is not callable
+[E 180930 17:44:14 web:2162] 500 POST /uploadfile (127.0.0.1) 90.50ms
+[W 180930 17:45:45 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.63ms
+[W 180930 17:45:45 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[E 180930 17:45:46 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 8, in post
+        print(i["filename"])
+    TypeError: string indices must be integers, not str
+[E 180930 17:45:46 web:2162] 500 POST /uploadfile (127.0.0.1) 3.75ms
+[E 180930 17:46:36 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 10, in post
+        print(i["filename"])
+    TypeError: string indices must be integers, not str
+[E 180930 17:46:36 web:2162] 500 POST /uploadfile (127.0.0.1) 5.68ms
+[W 180930 17:47:22 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.66ms
+[W 180930 17:47:22 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[I 180930 17:47:24 web:2162] 200 POST /uploadfile (127.0.0.1) 1.22ms
+[I 180930 17:48:13 web:2162] 200 POST /uploadfile (127.0.0.1) 45.46ms
+[W 180930 17:49:27 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 17:49:27 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.45ms
+[I 180930 17:49:28 web:2162] 200 POST /uploadfile (127.0.0.1) 44.10ms
+[E 180930 18:04:06 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 16, in post
+        new_uuid=str(uuid.uuid5("10101",filename))+"."+str(content_type)
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:04:06 web:2162] 500 POST /uploadfile (127.0.0.1) 69.52ms
+[E 180930 18:04:56 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 16, in post
+        new_uuid=uuid.uuid5("10101",filename)+"."+content_type
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:04:56 web:2162] 500 POST /uploadfile (127.0.0.1) 25.99ms
+[W 180930 18:06:31 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.55ms
+[W 180930 18:06:31 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[E 180930 18:06:32 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 16, in post
+        new_uuid=str(uuid.uuid5("10101",filename))+"."+content_type
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:06:32 web:2162] 500 POST /uploadfile (127.0.0.1) 30.43ms
+[W 180930 18:06:58 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.58ms
+[W 180930 18:06:58 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[E 180930 18:06:59 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 16, in post
+        new_uuid=str(uuid.uuid5("10101",filename).bytes)+"."+content_type
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:06:59 web:2162] 500 POST /uploadfile (127.0.0.1) 26.62ms
+[E 180930 18:10:39 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 16, in post
+        print(uuid.uuid5("10101",filename))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:10:39 web:2162] 500 POST /uploadfile (127.0.0.1) 48.04ms
+[E 180930 18:11:01 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 16, in post
+        print(uuid.uuid5("10101",filename))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:11:01 web:2162] 500 POST /uploadfile (127.0.0.1) 29.40ms
+[W 180930 18:11:39 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.53ms
+[W 180930 18:11:39 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[E 180930 18:11:40 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 13, in post
+        print(uuid.uuid5("10101",filename))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:11:40 web:2162] 500 POST /uploadfile (127.0.0.1) 8.70ms
+[E 180930 18:11:58 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 14, in post
+        print(uuid.uuid5("10101",filename))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:11:58 web:2162] 500 POST /uploadfile (127.0.0.1) 9.55ms
+[E 180930 18:12:43 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 13, in post
+        print(uuid.uuid5(0x001,filename))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'int' object has no attribute 'bytes'
+[E 180930 18:12:43 web:2162] 500 POST /uploadfile (127.0.0.1) 2.00ms
+[E 180930 18:13:16 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 13, in post
+        print(uuid.uuid5(bytes("sdssd"),filename))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:13:16 web:2162] 500 POST /uploadfile (127.0.0.1) 5.53ms
+[W 180930 18:13:47 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.53ms
+[W 180930 18:13:47 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[E 180930 18:13:49 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 13, in post
+        print(uuid.uuid5(bytes("sdssd"),bytes(filename)))
+      File "/usr/lib/python2.7/uuid.py", line 603, in uuid5
+        hash = sha1(namespace.bytes + name).digest()
+    AttributeError: 'str' object has no attribute 'bytes'
+[E 180930 18:13:49 web:2162] 500 POST /uploadfile (127.0.0.1) 5.77ms
+[W 180930 18:14:56 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.59ms
+[W 180930 18:14:56 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[E 180930 18:14:57 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 14, in post
+        new_uuid=uuid.uuid5(uuid.NAMESPACE_DNS,bytes(filename))+"."+content_type
+    TypeError: unsupported operand type(s) for +: 'UUID' and 'str'
+[E 180930 18:14:57 web:2162] 500 POST /uploadfile (127.0.0.1) 6.51ms
+[W 180930 18:16:18 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.57ms
+[W 180930 18:16:18 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.31ms
+[E 180930 18:16:19 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj_de/下载/www/imgserver/Filehandelr.py", line 19, in post
+        self.write(fileurl)
+      File "/home/wj_de/.local/lib/python2.7/site-packages/tornado/web.py", line 744, in write
+        raise TypeError(message)
+    TypeError: write() only accepts bytes, unicode, and dict objects. Lists not accepted for security reasons; see http://www.tornadoweb.org/en/stable/web.html#tornado.web.RequestHandler.write
+[E 180930 18:16:19 web:2162] 500 POST /uploadfile (127.0.0.1) 9.76ms
+[W 180930 18:17:20 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.58ms
+[W 180930 18:17:20 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[I 180930 18:17:22 web:2162] 200 POST /uploadfile (127.0.0.1) 4.11ms
+[I 180930 19:29:48 web:2162] 200 POST /uploadfile (127.0.0.1) 1.87ms
+[W 180930 19:31:31 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.48ms
+[W 180930 19:31:31 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[I 180930 19:31:33 web:2162] 200 POST /uploadfile (127.0.0.1) 0.72ms
+[W 180930 19:31:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 19:31:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.42ms
+[I 180930 19:31:44 web:2162] 200 POST /uploadfile (127.0.0.1) 2.74ms
+[W 180930 19:33:56 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 19:33:56 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[I 180930 19:33:57 web:2162] 200 POST /uploadfile (127.0.0.1) 2.78ms
+[W 180930 19:34:02 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 19:34:02 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 180930 19:34:04 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 19:34:04 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 180930 19:34:06 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 180930 19:34:06 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.43ms
+[W 180930 19:34:17 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.43ms
+[W 180930 19:34:17 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.42ms
+[I 180930 19:34:18 web:2162] 200 POST /uploadfile (127.0.0.1) 2.00ms
+[W 180930 19:34:39 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 19:34:39 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.40ms
+[I 180930 19:34:42 web:2162] 200 POST /uploadfile (127.0.0.1) 4.63ms
+[W 180930 19:35:34 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 19:35:34 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[I 180930 19:35:35 web:2162] 200 POST /uploadfile (127.0.0.1) 2.36ms
+[W 180930 19:35:48 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 19:35:48 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.44ms
+[I 180930 19:35:49 web:2162] 200 POST /uploadfile (127.0.0.1) 3.44ms
+[W 180930 19:35:57 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 19:35:57 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[I 180930 19:35:59 web:2162] 200 POST /uploadfile (127.0.0.1) 6.94ms
+[W 180930 19:37:59 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 19:37:59 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[W 180930 19:40:26 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 19:40:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 180930 19:41:05 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 19:41:05 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[I 180930 19:41:06 web:2162] 200 POST /uploadfile (127.0.0.1) 2.82ms
+[W 180930 19:42:04 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.46ms
+[W 180930 19:42:04 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[I 180930 19:42:05 web:2162] 200 POST /uploadfile (127.0.0.1) 2.04ms
+[W 180930 19:42:28 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 19:42:28 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[I 180930 19:42:30 web:2162] 200 POST /uploadfile (127.0.0.1) 2.05ms
+[I 180930 19:42:49 web:2162] 200 POST /uploadfile (127.0.0.1) 1.13ms
+[W 180930 19:44:30 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 19:44:30 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[I 180930 20:02:32 web:2162] 200 POST /uploadfile (127.0.0.1) 2.85ms
+[I 180930 20:02:33 web:2162] 200 POST /uploadfile (127.0.0.1) 3.81ms
+[I 180930 20:04:08 web:2162] 200 POST /uploadfile (127.0.0.1) 2.71ms
+[I 180930 20:04:13 web:2162] 200 POST /uploadfile (127.0.0.1) 3.56ms
+[W 180930 20:06:57 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 20:06:57 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[I 180930 20:07:00 web:2162] 200 POST /uploadfile (127.0.0.1) 4.61ms
+[W 180930 20:07:50 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.66ms
+[W 180930 20:07:50 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.53ms
+[I 180930 20:07:51 web:2162] 200 POST /uploadfile (127.0.0.1) 3.14ms
+[W 180930 20:08:22 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 20:08:23 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[I 180930 20:08:24 web:2162] 200 POST /uploadfile (127.0.0.1) 7.62ms
+[W 180930 20:08:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 20:08:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[I 180930 20:08:43 web:2162] 200 POST /uploadfile (127.0.0.1) 2.00ms
+[W 180930 20:08:57 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 20:08:57 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[I 180930 20:08:58 web:2162] 200 POST /uploadfile (127.0.0.1) 3.96ms
+[W 180930 20:09:57 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 20:09:57 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.31ms
+[I 180930 20:09:58 web:2162] 200 POST /uploadfile (127.0.0.1) 2.06ms
+[W 180930 20:10:28 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 20:10:28 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.45ms
+[I 180930 20:10:31 web:2162] 200 POST /uploadfile (127.0.0.1) 2.31ms
+[W 180930 20:10:56 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.48ms
+[W 180930 20:10:56 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.43ms
+[I 180930 20:10:58 web:2162] 200 POST /uploadfile (127.0.0.1) 2.06ms
+[W 180930 20:11:37 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 20:11:37 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[I 180930 20:11:38 web:2162] 200 POST /uploadfile (127.0.0.1) 2.71ms
+[I 180930 20:11:44 web:2162] 200 POST /uploadfile (127.0.0.1) 3.02ms
+[W 180930 20:13:38 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 20:13:38 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[I 180930 20:13:39 web:2162] 200 POST /uploadfile (127.0.0.1) 2.47ms
+[W 180930 20:14:30 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 20:14:30 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[I 180930 20:14:32 web:2162] 200 POST /uploadfile (127.0.0.1) 3.43ms
+[W 180930 20:14:38 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 20:14:38 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[I 180930 20:14:39 web:2162] 200 POST /uploadfile (127.0.0.1) 2.36ms
+[W 180930 20:16:13 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 20:16:13 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[I 180930 20:16:16 web:2162] 200 POST /uploadfile (127.0.0.1) 4.60ms
+[W 180930 20:16:37 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.48ms
+[W 180930 20:16:37 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[I 180930 20:16:38 web:2162] 200 POST /uploadfile (127.0.0.1) 3.78ms
+[W 180930 20:17:45 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.44ms
+[W 180930 20:17:45 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[I 180930 20:17:47 web:2162] 200 POST /uploadfile (127.0.0.1) 6.15ms
+[I 180930 20:17:51 web:2162] 200 POST /uploadfile (127.0.0.1) 2.57ms
+[W 180930 20:19:01 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 20:19:01 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.64ms
+[I 180930 20:19:02 web:2162] 200 POST /uploadfile (127.0.0.1) 3.00ms
+[W 180930 20:20:00 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.33ms
+[W 180930 20:20:00 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[I 180930 20:20:01 web:2162] 200 POST /uploadfile (127.0.0.1) 1.84ms
+[I 180930 20:20:07 web:2162] 200 POST /uploadfile (127.0.0.1) 3.49ms
+[W 180930 20:22:29 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.55ms
+[W 180930 20:22:29 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[I 180930 20:22:30 web:2162] 200 POST /uploadfile (127.0.0.1) 5.45ms
+[W 180930 20:22:53 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 180930 20:22:53 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[I 180930 20:22:54 web:2162] 200 POST /uploadfile (127.0.0.1) 3.49ms
+[W 180930 20:23:47 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 20:23:47 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[I 180930 20:23:48 web:2162] 200 POST /uploadfile (127.0.0.1) 2.92ms
+[I 180930 20:23:50 web:2162] 200 POST /uploadfile (127.0.0.1) 2.01ms
+[W 180930 20:26:28 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 180930 20:26:28 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[I 180930 20:26:29 web:2162] 200 POST /uploadfile (127.0.0.1) 1.37ms
+[W 180930 20:27:02 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 20:27:02 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[I 180930 20:27:06 web:2162] 200 POST /uploadfile (127.0.0.1) 1.99ms
+[W 180930 20:27:18 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 20:27:18 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[I 180930 20:27:21 web:2162] 200 POST /uploadfile (127.0.0.1) 3.85ms
+[W 180930 20:29:03 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 20:29:03 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[I 180930 20:29:05 web:2162] 200 POST /uploadfile (127.0.0.1) 1.41ms
+[W 180930 20:30:25 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.46ms
+[W 180930 20:30:25 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.40ms
+[I 180930 20:30:26 web:2162] 200 POST /uploadfile (127.0.0.1) 0.80ms
+[W 180930 20:30:37 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 20:30:37 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[W 180930 20:30:43 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 20:30:43 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.45ms
+[W 180930 20:33:49 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.51ms
+[W 180930 20:33:49 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.38ms
+[W 180930 20:33:53 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.50ms
+[W 180930 20:33:53 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.36ms
+[W 180930 20:33:55 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.41ms
+[W 180930 20:33:55 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.33ms
+[W 180930 20:35:38 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.45ms
+[W 180930 20:35:38 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[I 180930 20:35:42 web:2162] 200 POST /uploadfile (127.0.0.1) 1.08ms
+[I 180930 20:35:45 web:2162] 200 POST /uploadfile (127.0.0.1) 2.00ms
+[I 180930 20:35:48 web:2162] 200 POST /uploadfile (127.0.0.1) 1.02ms
+[W 180930 20:55:33 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.47ms
+[W 180930 20:55:33 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.35ms
+[W 180930 20:55:37 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.43ms
+[W 180930 20:55:37 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.34ms
+[W 180930 20:55:53 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.49ms
+[W 180930 20:55:53 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.36ms
+[W 180930 20:55:56 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.08ms
+[W 180930 20:55:56 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.88ms
+[W 180930 20:55:57 web:2162] 404 POST /ddc/index.php?c=utility&a=file&do=add_group&local=local (127.0.0.1) 1.18ms
+[W 180930 20:55:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=wx&year=0&month=6&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.40ms
+[W 180930 20:55:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=wx (127.0.0.1) 0.34ms
+[W 180930 20:55:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=6&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.09ms
+[W 180930 20:55:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.87ms
+[W 180930 20:56:01 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=6&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.03ms
+[W 180930 20:56:01 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.32ms
+[W 180930 20:56:01 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=wx&year=0&month=6&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.09ms
+[W 180930 20:56:01 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=wx (127.0.0.1) 0.89ms
+[W 180930 20:56:02 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=6&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.04ms
+[W 180930 20:56:02 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.82ms
+[W 180930 20:56:04 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.41ms
+[W 180930 20:56:04 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.33ms
+[W 180930 20:56:07 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.40ms
+[W 180930 20:56:07 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.33ms
+[W 180930 20:56:09 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.44ms
+[W 180930 20:56:09 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.37ms
+[W 180930 20:56:14 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.54ms
+[W 180930 20:56:14 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.35ms
+[W 180930 20:57:03 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.40ms
+[W 180930 20:57:03 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.37ms
+[W 180930 20:57:28 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.45ms
+[W 180930 20:57:28 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.32ms
+[W 180930 21:00:27 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.46ms
+[W 180930 21:00:27 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.43ms
+[W 180930 21:00:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 21:00:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.42ms
+[W 180930 21:01:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 21:01:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.44ms
+[W 180930 21:02:07 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 21:02:07 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.46ms
+[W 180930 21:02:26 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 21:02:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.46ms
+[W 180930 21:02:27 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.43ms
+[W 180930 21:02:27 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[W 180930 21:02:36 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 21:02:36 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.47ms
+[W 180930 21:02:49 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.49ms
+[W 180930 21:02:49 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.56ms
+[W 180930 21:03:11 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.61ms
+[W 180930 21:03:11 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.49ms
+[W 180930 21:03:35 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.57ms
+[W 180930 21:03:35 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.37ms
+[W 180930 21:03:38 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.38ms
+[W 180930 21:03:38 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.33ms
+[W 180930 21:03:49 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.60ms
+[W 180930 21:03:49 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.48ms
+[W 180930 21:03:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.45ms
+[W 180930 21:03:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.37ms
+[W 180930 21:04:02 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.40ms
+[W 180930 21:04:02 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.35ms
+[W 180930 21:04:05 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.43ms
+[W 180930 21:04:05 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.39ms
+[W 180930 21:05:23 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 21:05:23 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 180930 21:06:36 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.47ms
+[W 180930 21:06:36 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.42ms
+[W 180930 21:06:54 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.43ms
+[W 180930 21:06:54 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.32ms
+[W 180930 21:08:03 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 21:08:03 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 180930 21:08:31 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 21:08:31 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.28ms
+[W 180930 21:08:32 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.34ms
+[W 180930 21:08:32 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.46ms
+[W 180930 21:08:34 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.53ms
+[W 180930 21:08:34 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.41ms
+[W 180930 21:10:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 21:10:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 180930 21:11:09 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 21:11:09 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[W 180930 21:11:32 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 21:11:32 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[W 180930 21:12:30 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 21:12:30 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[W 180930 21:12:32 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.56ms
+[W 180930 21:12:32 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.42ms
+[W 180930 21:12:34 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.39ms
+[W 180930 21:12:34 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.33ms
+[W 180930 21:12:36 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.43ms
+[W 180930 21:12:36 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.35ms
+[W 180930 21:12:42 web:2162] 404 POST /ddc/index.php?c=utility&a=file&do=upload&upload_type=image&global=&dest_dir=&uniacid=-1&quality=0&group_id=-1 (127.0.0.1) 3.14ms
+[W 180930 21:12:51 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 21:12:51 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 180930 21:12:54 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.44ms
+[W 180930 21:12:54 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.37ms
+[W 180930 21:12:59 web:2162] 404 POST /ddc/index.php?c=utility&a=file&do=upload&upload_type=image&global=&dest_dir=&uniacid=-1&quality=0&group_id=-1 (127.0.0.1) 6.41ms
+[W 180930 21:13:13 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.44ms
+[W 180930 21:13:13 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.34ms
+[W 180930 21:13:15 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=wx&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.03ms
+[W 180930 21:13:15 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=wx (127.0.0.1) 0.91ms
+[W 180930 21:13:15 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 1.03ms
+[W 180930 21:13:15 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.86ms
+[I 180930 22:31:03 web:2162] 200 POST /uploadfile (127.0.0.1) 3.65ms
+[I 180930 22:31:09 web:2162] 200 POST /uploadfile (127.0.0.1) 1.28ms
+[W 180930 22:32:49 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 22:32:49 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[I 180930 22:32:55 web:2162] 200 POST /uploadfile (127.0.0.1) 3.79ms
+[W 180930 22:33:26 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 22:33:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[I 180930 22:33:33 web:2162] 200 POST /uploadfile (127.0.0.1) 4.89ms
+[W 180930 22:34:55 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 180930 22:34:55 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[I 180930 22:35:00 web:2162] 200 POST /uploadfile (127.0.0.1) 4.03ms
+[W 180930 22:44:52 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.44ms
+[W 180930 22:44:52 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.40ms
+[I 180930 22:44:57 web:2162] 200 POST /uploadfile (127.0.0.1) 2.65ms
+[W 180930 22:45:51 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 22:45:51 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[I 180930 22:45:55 web:2162] 200 POST /uploadfile (127.0.0.1) 2.07ms
+[I 180930 22:45:57 web:2162] 200 POST /uploadfile (127.0.0.1) 6.93ms
+[I 180930 22:45:59 web:2162] 200 POST /uploadfile (127.0.0.1) 3.13ms
+[W 180930 22:47:45 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 2.45ms
+[W 180930 22:47:45 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 1.80ms
+[W 180930 22:48:20 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 22:48:20 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[W 180930 22:50:43 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 22:50:43 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 1.98ms
+[I 180930 22:54:27 web:2162] 200 POST /uploadfile (127.0.0.1) 1.95ms
+[W 180930 23:01:52 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 23:01:52 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 180930 23:02:03 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.35ms
+[W 180930 23:02:03 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.45ms
+[W 180930 23:03:07 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 23:03:07 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[W 180930 23:03:54 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 23:03:54 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 180930 23:05:55 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:05:55 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.29ms
+[W 180930 23:08:57 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 23:08:57 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 180930 23:09:10 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.43ms
+[W 180930 23:09:10 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.47ms
+[W 180930 23:11:36 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:11:36 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.42ms
+[W 180930 23:12:45 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:12:45 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 180930 23:13:12 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 23:13:12 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[W 180930 23:13:30 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 23:13:30 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.45ms
+[W 180930 23:13:46 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 23:13:46 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[W 180930 23:14:12 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:14:12 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 180930 23:15:26 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.44ms
+[W 180930 23:15:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.43ms
+[W 180930 23:16:01 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 1.71ms
+[W 180930 23:16:01 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 180930 23:27:14 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.43ms
+[W 180930 23:27:14 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.36ms
+[W 180930 23:27:19 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.46ms
+[W 180930 23:27:19 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.40ms
+[W 180930 23:27:36 web:2162] 404 GET /article?token=&action=list&page=1 (127.0.0.1) 0.39ms
+[W 180930 23:27:36 web:2162] 404 GET /classlist?action=list&token= (127.0.0.1) 0.35ms
+[W 180930 23:27:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 23:27:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 180930 23:27:57 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.47ms
+[W 180930 23:27:57 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.30ms
+[W 180930 23:27:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.48ms
+[W 180930 23:27:59 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.37ms
+[W 180930 23:28:00 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.41ms
+[W 180930 23:28:00 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.31ms
+[W 180930 23:28:57 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=image&page=1&local=local&year=0&month=0&uniacid=-1&dest_dir=&global=&groupid=-1 (127.0.0.1) 0.42ms
+[W 180930 23:28:57 web:2162] 404 GET /ddc/index.php?c=utility&a=file&do=group_list&local=local (127.0.0.1) 0.32ms
+[W 180930 23:29:02 web:2162] 404 POST /ddc/index.php?c=utility&a=file&do=upload&upload_type=image&global=&dest_dir=&uniacid=-1&quality=0&group_id=-1 (127.0.0.1) 1.94ms
+[W 180930 23:29:59 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 180930 23:29:59 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.61ms
+[W 180930 23:30:15 web:2162] 404 GET /article?token=&action=list&page=1 (127.0.0.1) 0.36ms
+[W 180930 23:30:15 web:2162] 404 GET /classlist?action=list&token= (127.0.0.1) 0.35ms
+[W 180930 23:30:19 web:2162] 404 POST /Login (127.0.0.1) 0.40ms
+[W 180930 23:30:19 web:2162] 404 POST /Login (127.0.0.1) 1.12ms
+[W 180930 23:32:36 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:32:36 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[W 180930 23:34:34 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.34ms
+[W 180930 23:34:34 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[W 180930 23:34:34 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 23:34:34 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 180930 23:34:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 23:34:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[W 180930 23:34:46 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 23:34:46 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.31ms
+[W 180930 23:35:24 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 23:35:24 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.38ms
+[W 180930 23:35:53 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:35:53 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.39ms
+[W 180930 23:36:04 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 23:36:04 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 180930 23:36:14 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 180930 23:36:14 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 180930 23:36:21 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 180930 23:36:21 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.44ms
+[W 180930 23:37:21 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 180930 23:37:21 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.50ms
+[W 180930 23:37:26 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 180930 23:37:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 180930 23:48:45 web:2162] 404 GET /article?token=&action=list&page=1 (127.0.0.1) 0.40ms
+[W 180930 23:48:45 web:2162] 404 GET /classlist?action=list&token= (127.0.0.1) 0.38ms
+[W 180930 23:49:03 web:2162] 404 GET /ddc/index.php?c=cloud&a=upgrade& (127.0.0.1) 0.87ms
+[W 180930 23:59:15 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 180930 23:59:15 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 181001 00:00:03 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 181001 00:00:03 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[W 181001 00:00:52 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.53ms
+[W 181001 00:00:52 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.45ms
+[W 181001 00:01:17 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=setting&m=tyzm_diamondvote&version_id=0 (127.0.0.1) 0.96ms
+[W 181001 00:02:06 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.46ms
+[W 181001 00:02:06 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 181001 00:02:33 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 181001 00:02:33 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 181001 00:02:55 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 181001 00:02:55 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 181001 00:03:35 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 181001 00:03:35 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.49ms
+[W 181001 00:12:46 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.49ms
+[W 181001 00:12:46 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[W 181001 00:12:53 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 181001 00:12:53 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 181001 00:13:24 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=setting&m=tyzm_diamondvote&version_id=0 (127.0.0.1) 0.91ms
+[W 181001 00:13:27 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 181001 00:13:27 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 181001 00:14:26 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.43ms
+[W 181001 00:14:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.44ms
+[W 181001 00:15:36 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.43ms
+[W 181001 00:15:36 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.40ms
+[W 181001 00:16:19 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 181001 00:16:19 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 181001 00:16:41 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.45ms
+[W 181001 00:16:41 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.41ms
+[W 181001 00:16:52 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.33ms
+[W 181001 00:16:52 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.34ms
+[W 181001 00:16:52 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 181001 00:16:52 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 181001 00:18:54 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 181001 00:18:54 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[W 181001 00:19:32 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.34ms
+[W 181001 00:19:32 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.44ms
+[W 181001 00:19:53 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.36ms
+[W 181001 00:19:53 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 181001 00:20:08 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.39ms
+[W 181001 00:20:08 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.28ms
+[W 181001 00:20:35 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 181001 00:20:35 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[W 181001 00:20:49 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.41ms
+[W 181001 00:20:49 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[W 181001 00:21:57 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 181001 00:21:57 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.55ms
+[W 181001 00:22:42 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 181001 00:22:42 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 181001 00:23:42 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.42ms
+[W 181001 00:23:42 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 181001 00:25:04 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 181001 00:25:04 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.40ms
+[W 181001 00:25:46 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 181001 00:25:46 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.31ms
+[W 181001 00:26:04 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.58ms
+[W 181001 00:26:21 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.90ms
+[W 181001 00:26:26 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.91ms
+[W 181001 00:28:27 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.45ms
+[W 181001 00:28:27 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.32ms
+[W 181001 00:29:16 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 181001 00:29:16 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 181001 00:29:20 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 181001 00:29:20 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.35ms
+[W 181001 00:29:47 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.40ms
+[W 181001 00:29:47 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.37ms
+[W 181001 00:29:48 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.37ms
+[W 181001 00:29:48 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.33ms
+[W 181001 00:29:49 web:2162] 404 GET /ddc/index.php?c=module&a=manage-account&do=check_status&module=tyzm_diamondvote (127.0.0.1) 0.38ms
+[W 181001 00:29:49 web:2162] 404 GET /ddc/index.php?c=message&a=notice&do=event_notice (127.0.0.1) 0.36ms
+[W 181001 16:54:43 web:2162] 404 POST /poject (127.0.0.1) 0.58ms
+[W 181001 16:54:46 web:2162] 404 POST /poject (127.0.0.1) 0.40ms
+[W 181001 16:54:47 web:2162] 404 POST /poject (127.0.0.1) 0.39ms
+[W 181001 16:55:22 web:2162] 404 POST /poject (127.0.0.1) 0.42ms
+[W 181001 16:55:26 web:2162] 404 POST /poject (127.0.0.1) 0.39ms
+[W 181001 16:55:34 web:2162] 404 POST /poject (127.0.0.1) 0.40ms
+[W 181001 16:55:37 web:2162] 404 POST /poject (127.0.0.1) 0.40ms
+[I 181001 18:59:05 web:2162] 200 POST /uploadfile (127.0.0.1) 2.02ms
+[I 181001 18:59:15 web:2162] 200 POST /uploadfile (127.0.0.1) 1.33ms
+[I 181001 19:01:00 web:2162] 200 POST /uploadfile (127.0.0.1) 1.50ms
+[I 181001 19:01:21 web:2162] 200 POST /uploadfile (127.0.0.1) 1.46ms
+[I 181001 19:02:57 web:2162] 200 POST /uploadfile (127.0.0.1) 2.22ms
+[I 181001 19:03:01 web:2162] 200 POST /uploadfile (127.0.0.1) 1.95ms
+[I 181001 20:38:30 web:2162] 200 POST /uploadfile (127.0.0.1) 2.00ms
+[I 181001 20:55:42 web:2162] 200 POST /uploadfile (127.0.0.1) 15.38ms
+[I 181001 21:01:53 web:2162] 200 POST /uploadfile (127.0.0.1) 6.26ms
+[I 181001 21:02:57 web:2162] 200 POST /uploadfile (127.0.0.1) 6.15ms
+[I 181001 21:06:27 web:2162] 200 POST /uploadfile (127.0.0.1) 11.07ms
+[I 181001 21:23:41 web:2162] 200 POST /uploadfile (127.0.0.1) 6.43ms
+[I 181001 21:25:38 web:2162] 200 POST /uploadfile (127.0.0.1) 6.33ms
+[I 181001 21:26:28 web:2162] 200 POST /uploadfile (127.0.0.1) 134.40ms
+[I 181001 21:27:31 web:2162] 200 POST /uploadfile (127.0.0.1) 20.04ms
+[I 181001 21:49:36 web:2162] 200 POST /uploadfile (127.0.0.1) 15.18ms
+[I 181001 21:52:37 web:2162] 200 POST /uploadfile (127.0.0.1) 11.33ms
+[E 181011 15:42:55 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/Imgae_serever/Filehandelr.py", line 17, in post
+        with open(IMAGE_PATH+new_path,"wb") as f:
+    IOError: [Errno 2] No such file or directory: '/home/wj/imgs/2b63a66df2b1560790a729bb57bd06c7.jpg'
+[E 181011 15:42:55 web:2162] 500 POST /uploadfile (127.0.0.1) 32.24ms
+[E 181011 15:43:01 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/Imgae_serever/Filehandelr.py", line 17, in post
+        with open(IMAGE_PATH+new_path,"wb") as f:
+    IOError: [Errno 2] No such file or directory: '/home/wj/imgs/b13873ffb350598e9af92c52665a631d.jpg'
+[E 181011 15:43:01 web:2162] 500 POST /uploadfile (127.0.0.1) 1.31ms
+[E 181011 15:44:45 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/Imgae_serever/Filehandelr.py", line 17, in post
+        with open(IMAGE_PATH+new_path,"wb") as f:
+    IOError: [Errno 2] No such file or directory: '/home/wj/DOme/staticfile/imgs/f60c74ca1819578ab5c8d873f94f13e5.jpg'
+[E 181011 15:44:45 web:2162] 500 POST /uploadfile (127.0.0.1) 4.65ms
+[E 181011 15:46:25 web:1670] Uncaught exception POST /uploadfile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='POST', uri='/uploadfile', version='HTTP/1.0', remote_ip='127.0.0.1')
+    Traceback (most recent call last):
+      File "/home/wj/PycharmProjects/web/venv/local/lib/python2.7/site-packages/tornado/web.py", line 1590, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/wj/DOme/Imgae_serever/Filehandelr.py", line 17, in post
+        with open(IMAGE_PATH+new_path,"wb") as f:
+    IOError: [Errno 2] No such file or directory: '/home/wj/DOme/staticfile/imgs/b13873ffb350598e9af92c52665a631d.jpg'
+[E 181011 15:46:25 web:2162] 500 POST /uploadfile (127.0.0.1) 2.22ms
+[I 181011 15:47:11 web:2162] 200 POST /uploadfile (127.0.0.1) 59.07ms
+[I 181011 15:48:11 web:2162] 200 POST /uploadfile (127.0.0.1) 1.16ms
+[I 181011 15:48:31 web:2162] 200 POST /uploadfile (127.0.0.1) 1.20ms
+[I 181011 16:27:34 web:2162] 200 POST /uploadfile (127.0.0.1) 22.23ms
+[I 181011 16:33:18 web:2162] 200 POST /uploadfile (127.0.0.1) 0.97ms
+[I 181011 16:36:30 web:2162] 200 POST /uploadfile (127.0.0.1) 1.20ms
+[I 181011 16:38:26 web:2162] 200 POST /uploadfile (127.0.0.1) 1.19ms
+[I 181011 16:40:28 web:2162] 200 POST /uploadfile (127.0.0.1) 0.86ms
+[I 181011 16:42:42 web:2162] 200 POST /uploadfile (127.0.0.1) 0.81ms
+[I 181015 16:28:30 web:2162] 200 POST /uploadfile (127.0.0.1) 1.41ms
+[I 181015 16:30:23 web:2162] 200 POST /uploadfile (127.0.0.1) 1.69ms
+[I 181015 17:05:40 web:2162] 200 POST /uploadfile (127.0.0.1) 9.27ms
+[I 181015 17:08:28 web:2162] 200 POST /uploadfile (127.0.0.1) 32.87ms
+[I 181024 15:04:24 web:2162] 200 POST /uploadfile (127.0.0.1) 75.52ms
+[I 181024 15:35:58 web:2162] 200 POST /uploadfile (127.0.0.1) 29.60ms
+[I 181024 15:36:42 web:2162] 200 POST /uploadfile (127.0.0.1) 52.40ms
+[I 181024 15:37:41 web:2162] 200 POST /uploadfile (127.0.0.1) 48.20ms
+[I 181024 15:38:42 web:2162] 200 POST /uploadfile (127.0.0.1) 4.28ms
+[I 181024 16:01:38 web:2162] 200 POST /uploadfile (127.0.0.1) 11.47ms
+[I 181024 16:02:12 web:2162] 200 POST /uploadfile (127.0.0.1) 12.70ms
+[I 181024 16:02:26 web:2162] 200 POST /uploadfile (127.0.0.1) 9.25ms
+[I 181024 16:03:06 web:2162] 200 POST /uploadfile (127.0.0.1) 5.01ms
+[I 181024 16:03:45 web:2162] 200 POST /uploadfile (127.0.0.1) 6.55ms
+[I 181024 16:11:31 web:2162] 200 POST /uploadfile (127.0.0.1) 21.61ms
+[I 181024 16:11:43 web:2162] 200 POST /uploadfile (127.0.0.1) 8.02ms
+[I 181024 16:11:59 web:2162] 200 POST /uploadfile (127.0.0.1) 10.40ms
+[I 181024 16:36:00 web:2162] 200 POST /uploadfile (127.0.0.1) 93.63ms
+[I 181024 16:58:25 web:2162] 200 POST /uploadfile (127.0.0.1) 25.39ms
+[I 181024 16:58:32 web:2162] 200 POST /uploadfile (127.0.0.1) 1.12ms
+[I 181024 16:59:23 web:2162] 200 POST /uploadfile (127.0.0.1) 1.06ms
+[I 181024 17:01:13 web:2162] 200 POST /uploadfile (127.0.0.1) 128.99ms
+[I 181024 17:01:15 web:2162] 200 POST /uploadfile (127.0.0.1) 1.18ms
+[I 181024 17:01:17 web:2162] 200 POST /uploadfile (127.0.0.1) 2.76ms
+[I 181024 17:01:19 web:2162] 200 POST /uploadfile (127.0.0.1) 1.10ms
+[I 181024 17:01:21 web:2162] 200 POST /uploadfile (127.0.0.1) 1.26ms
+[I 181024 17:10:41 web:2162] 200 POST /uploadfile (127.0.0.1) 0.90ms
+[I 181024 17:10:42 web:2162] 200 POST /uploadfile (127.0.0.1) 10.21ms
+[I 181024 17:10:44 web:2162] 200 POST /uploadfile (127.0.0.1) 1.67ms
+[I 181024 17:10:46 web:2162] 200 POST /uploadfile (127.0.0.1) 0.90ms
+[I 181024 17:10:48 web:2162] 200 POST /uploadfile (127.0.0.1) 1.13ms
+[I 181024 17:11:11 web:2162] 200 POST /uploadfile (127.0.0.1) 1.01ms
+[I 181024 17:11:12 web:2162] 200 POST /uploadfile (127.0.0.1) 0.90ms
+[I 181024 17:11:14 web:2162] 200 POST /uploadfile (127.0.0.1) 2.07ms
+[I 181024 17:11:16 web:2162] 200 POST /uploadfile (127.0.0.1) 1.12ms
+[I 181024 17:11:17 web:2162] 200 POST /uploadfile (127.0.0.1) 28.30ms
+[I 181024 17:13:45 web:2162] 200 POST /uploadfile (127.0.0.1) 2.72ms
+[I 181024 17:13:46 web:2162] 200 POST /uploadfile (127.0.0.1) 2.61ms
+[I 181024 17:18:03 web:2162] 200 POST /uploadfile (127.0.0.1) 1.30ms
+[I 181024 17:18:24 web:2162] 200 POST /uploadfile (127.0.0.1) 0.83ms
+[I 181024 17:26:27 web:2162] 200 POST /uploadfile (127.0.0.1) 2.64ms
+[I 181025 14:53:46 web:2162] 200 POST /uploadfile (127.0.0.1) 860.99ms
+[I 181025 14:54:14 web:2162] 200 POST /uploadfile (127.0.0.1) 12.27ms
+[I 181025 15:57:49 web:2162] 200 POST /uploadfile (127.0.0.1) 107.98ms
+[I 181025 16:05:03 web:2162] 200 POST /uploadfile (127.0.0.1) 1.04ms
+[I 181025 16:05:04 web:2162] 200 POST /uploadfile (127.0.0.1) 0.83ms
+[I 181025 16:07:52 web:2162] 200 POST /uploadfile (127.0.0.1) 6.27ms
+[I 181025 16:07:53 web:2162] 200 POST /uploadfile (127.0.0.1) 2.29ms
+[I 181025 16:10:20 web:2162] 200 POST /uploadfile (127.0.0.1) 4.61ms
+[I 181025 16:10:21 web:2162] 200 POST /uploadfile (127.0.0.1) 1.11ms
+[I 181102 16:00:56 web:2162] 200 POST /uploadfile (127.0.0.1) 1.58ms
+[I 181102 16:17:57 web:2162] 200 POST /uploadfile (127.0.0.1) 19.46ms
+[I 181105 08:48:25 web:2162] 200 POST /uploadfile (127.0.0.1) 15.24ms
+[I 181105 08:48:30 web:2162] 200 POST /uploadfile (127.0.0.1) 1.17ms
+[I 181105 08:48:37 web:2162] 200 POST /uploadfile (127.0.0.1) 1.16ms
+[I 181105 08:53:58 web:2162] 200 POST /uploadfile (127.0.0.1) 1.25ms
+[I 181105 08:54:02 web:2162] 200 POST /uploadfile (127.0.0.1) 1.05ms
+[I 181105 08:54:04 web:2162] 200 POST /uploadfile (127.0.0.1) 1.05ms
+[I 181105 08:56:24 web:2162] 200 POST /uploadfile (127.0.0.1) 1.02ms
+[I 181105 08:56:27 web:2162] 200 POST /uploadfile (127.0.0.1) 0.76ms
+[I 181105 08:56:37 web:2162] 200 POST /uploadfile (127.0.0.1) 0.86ms

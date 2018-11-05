@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>{{data["titile"]}}</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="http://jadl8.zhaojingl.com/attachment/images/global/wechat.jpg" />
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script type="text/javascript" src="/resource/js/app/util.js"></script>
+	<script src="resource/js/require.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/mui/3.7.1/js/mui.min.js"></script>
+	<script type="text/javascript" src="/resource/js/app/common.js?v=20160906"></script>
+  	<script type="text/javascript" src="/resource/js/verify.min.js"></script>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/resource/css/common.min.css?v=20160906" rel="stylesheet">
+	<link href="https://libs.cdnjs.net/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+	<link href="/resource/css/index.css?a=11" rel="stylesheet">
+ 	<link href="/resource/css/verify.css" rel="stylesheet">
+	<script type="text/javascript">
+	if(navigator.appName == 'Microsoft Internet Explorer'){
+		if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
+			alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+		}
+	}
+	window.sysinfo = {
+		'uniacid': '25',		'acid': '25','openid': 'oiPqq0Xn1BxjHI9QUQ08VXS_NNls',				'siteroot': 'http://jadl8.zhaojingl.com/',
+		'siteurl': 'http://jadl8.zhaojingl.com/app/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote',
+		'attachurl': 'http://tp-dl3.xcx2.top/',
+		'attachurl_local': 'http://jadl8.zhaojingl.com/attachment/',
+		'attachurl_remote': 'http://tp-dl3.xcx2.top/',
+		'MODULE_URL': 'http://jadl8.zhaojingl.com/addons/tyzm_diamondvote/',		'cookie' : {'pre': 'd193_'}
+	};
+	// jssdk config 对象
+	jssdkconfig = {"appId":"wxbe44dd7a1101e9c8","nonceStr":"zPY40nrtXtZ0qpTp","timestamp":"1538223009","signature":"bb3eca202d61db1f86317f0554dd898b0eaf63b8"} || {};
+	// 是否启用调试
+	jssdkconfig.debug = false;
+	jssdkconfig.jsApiList = [
+		'checkJsApi',
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage',
+		'onMenuShareQQ',
+		'onMenuShareWeibo',
+		'hideMenuItems',
+		'showMenuItems',
+		'hideAllNonBaseMenuItem',
+		'showAllNonBaseMenuItem',
+		'translateVoice',
+		'startRecord',
+		'stopRecord',
+		'onRecordEnd',
+		'playVoice',
+		'pauseVoice',
+		'stopVoice',
+		'uploadVoice',
+		'downloadVoice',
+		'chooseImage',
+		'previewImage',
+		'uploadImage',
+		'downloadImage',
+		'getNetworkType',
+		'openLocation',
+		'getLocation',
+		'hideOptionMenu',
+		'showOptionMenu',
+		'closeWindow',
+		'scanQRCode',
+		'chooseWXPay',
+		'openProductSpecificView',
+		'addCard',
+		'chooseCard',
+		'openCard'
+	];
+	</script>
+</head>
+<body>
+<div class="container container-fill"  style="padding-top:36px;" >
+<div class="notice"><marquee style="WIDTH: 100%; HEIGHT: 18px" scrollamount="6" Align="Middle"  hspace="0" direction="Left" >{{data["description"]}}</marquee></div>
+
+
+<div id="carousel-container" class="carousel slide">
+	<ol class="carousel-indicators">
+						<li data-target="#carousel-container" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-container" data-slide-to="1"></li>
+					</ol>
+
+	<div class="carousel-inner" role="listbox">
+				<div class="item active">
+			<a href="javascript:;">
+			
+					<img src="{{data["topimgV"]}}" title="" style="width:100%; vertical-align:middle;">
+
+			
+						</a>
+			<div class="carousel-caption">
+							</div>
+		</div>
+				<div class="item">
+			<a href="javascript:;">
+			
+					<img src="http://tp-dl3.xcx2.top/images/25/2018/09/MeFEfc2f2eKpi6FeexFdD2K6Dloi6f.jpg" title="" style="width:100%; vertical-align:middle;">
+
+			
+						</a>
+			<div class="carousel-caption">
+							</div>
+		</div>
+			</div>
+</div>
+<script>
+    function v_play(e){
+        var e=e||'#carousel-example-generic';
+        $(e).carousel('pause');
+    }
+    function v_pause(e){
+        var e=e||'#carousel-example-generic';
+        $(e).carousel('cycle');
+    }
+	require(['bootstrap', 'hammer'], function($, Hammer){
+		$('#carousel-container').carousel();
+		var mc = new Hammer($('#carousel-container').get(0));
+		mc.on("panleft", function(ev) {
+			$('#carousel-container').carousel('next');
+		});
+		mc.on("panright", function(ev) {
+			$('#carousel-container').carousel('prev');
+		});
+	});
+</script>
+<style>
+.slide { position: relative; }
+.carousel-indicators { position: absolute; left: 50%; z-index: 1; bottom: 2px; width: 60%; padding-left: 0; margin-left: -30%; text-align: center; list-style: none; }
+.carousel-indicators li { display: inline-block; width: 5px; height: 5px; margin: 1px; text-indent: -999px; cursor: pointer; background-color: #000 \9; background-color: rgba(0,0,0,0); border: 1px solid #fff; border-radius: 10px; }
+.carousel-indicators .active { width: 6px; height: 6px; margin: 0; background-color: #fff; }
+.carousel-inner { position: relative; width: 100%; overflow: hidden; }
+.carousel-inner>.item { position: relative; display: none; -webkit-transition: .6s ease-in-out left; -o-transition: .6s ease-in-out left; transition: .6s ease-in-out left; }
+.carousel-inner>.active.left { left: -100%; }
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev { display: block; }
+.carousel-inner { position: relative; width: 100%; overflow: hidden }
+.carousel-inner>.item { position: relative; display: none; -webkit-transition: .6s ease-in-out left; -o-transition: .6s ease-in-out left; transition: .6s ease-in-out left }
+.carousel-inner>.item>img, .carousel-inner>.item>a>img { line-height: 1 }
+.carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev { display: block }
+.carousel-inner>.active { left: 0 }
+.carousel-inner>.next, .carousel-inner>.prev { position: absolute; top: 0; width: 100% }
+.carousel-inner>.next { left: 100% }
+.carousel-inner>.prev { left: -100% }
+.carousel-inner>.next.left, .carousel-inner>.prev.right { left: 0 }
+.carousel-inner>.active.left { left: -100% }
+.carousel-inner>.active.right { left: 100% }
+. .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+ line-height: 1;
+}
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img { display: block; width: 100% \9; max-width: 100%; height: auto; }
+.carousel-caption { position: absolute; right: 15%; left: 15%; z-index: 1; color: #fff; text-align: center; text-shadow: 0 1px 2px rgba(0,0,0,.6); bottom: 15px; font-size: 0.8em; padding-top: 0px; padding-bottom: 0px; }
+</style> 
+<script type="text/javascript">
+var intDiff = parseInt({{data["endtimes"]}});//倒计时总秒数量
+function timer(intDiff){
+	window.setInterval(function(){
+	var day=0,
+		hour=0,
+		minute=0,
+		second=0;//时间默认值		
+	if(intDiff > 0){
+		day = Math.floor(intDiff / (60 * 60 * 24));
+		hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+		minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+		second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+	}
+	if (minute <= 9) minute = '0' + minute;
+	if (second <= 9) second = '0' + second;
+	$('#day_show').html(day+"天");
+	$('#hour_show').html('<s id="h"></s>'+hour+'时');
+	$('#minute_show').html('<s></s>'+minute+'分');
+	$('#second_show').html('<s></s>'+second+'秒');
+	intDiff--;
+	}, 1000);
+} 
+
+$(function(){
+	timer(intDiff);
+});	
+</script>
+
+
+
+
+<div class="time-item">
+    <div class="day">活动结束倒计时</div>
+	<strong id="day_show">0天</strong>
+	<strong id="hour_show">0时</strong>
+	<strong id="minute_show">0分</strong>
+	<strong id="second_show">0秒</strong>
+</div>
+<div class="divviewg"><script>(function(){var s="_"+Math.random().toString(36).slice(2);document.write('<div id="'+s+'"></div>');(window.slotbydup=window.slotbydup||[]).push({id:'4305533',container:s,size:'20,3',display:'inlay-fix'})})();</script></div>
+<div class="paihang2">
+
+
+  </div>
+  <div id="list_more" class="box" style="margin-top: 16px; text-align: center;margin-bottom: 40px;"><span class="am-text-secondary" onclick="get_list();">点击加载数据</span></div>
+  <script> 
+var limit = 1;
+function get_list(){	
+	$("#list_more").html('<div class="am-text-secondary"><span class="am-icon-spinner am-icon-spin"></span> 卖命加载中...</div>');
+	$.ajax({
+	    type : "post",
+	    url : "/wx/sort",
+	    data : {
+	        "uuid":"{{data["uuid"]}}",
+	    	"page":limit,
+	    },
+        dataType : "json",		
+	    success : function(data) {
+	    	if(data.status==200){
+						var list = data.content;
+						var content = '';
+						$(".paihang2").append(list);
+						for(var i=0; i<list.length; i++){
+							  content = '<div class="datalist" '+list[i]['color']+'>'
+								+'<a href="'+list[i]['url']+'">'
+								+'<div class="tops">'
+								+'<div class="itemhg"><img src="/images/'+list[i]['hp']+'"></div>'
+								+'<div class="item1"><img src="'+list[i]['avatar']+'"></div>'
+								+'<div class="item2"><font style="font-size:15px;font-weight:bold">'+list[i]['name'].replace(/~~.*/,"")+'&nbsp;&nbsp;'+list[i]['index']+'号</font><br />'
+								+'<font style="font-size:11px;">'+list[i]['votenum']+'人气&nbsp;&nbsp;  '
+																+'<br/>'
+								+'</font></div>'
+								+'<div class="item3" '+list[i]['item3color']+'>'+(i+1)+'</div>'
+								+'</div></a><div class="bottoms"></div></div>';
+							$(".paihang2").append(content);
+						}
+
+						if(list.length==10){
+							$("#list_more").html('<span class="am-text-secondary" onclick="get_list();">查看更多</span>');
+						}else{
+							$("#list_more").html('<span></span>');
+						}
+
+						$("#list_more").html('<span></span>');
+						limit++;		
+		    }else if(data.status==-103){
+	    		$("#list_more").html('<span>没有更多记录！</span>');
+	    	}else{
+			    $("#list_more").html('<span>没有更多记录！</span>');
+			}    	
+	    },
+	    error : function(xhr, type) {
+
+	    }
+	});
+}
+get_list();
+</script>
+<style>
+
+.datalist .item3:nth-child(3) {color:#444}
+
+</style>
+<div style="height:50px;"></div>
+<div class="footer">
+<ul>
+
+<li><a href="/wx/wxindex?uuid={{data["uuid"]}}" class="on"><div class='nav'><div class='ih ispr'></div><p>首页</p></div></a></li>
+
+<li><a href="javascript:;"  onclick="get_ap();"><div class='nav'><div class='ib ispr'></div><p>报名</p></div></a></li>
+
+<li><a href="/wx/jp?uuid={{data["uuid"]}}" ><div class='nav'><div class='is ispr'></div><p>奖品</p></div></a></li>
+<li><a href="/wx/sort?uuid={{data["uuid"]}}"  ><div class='nav'><div class='if ispr'></div><p>榜单</p></div></a></li>
+<!-- 自定义菜单start 
+图标大小建议 48*48，地址为 addons/tyzm_diamondvote/template/static/images/shield30.png
+-->
+
+<!-- 自定义菜单end  -->
+</ul>
+</div>
+<script type="text/javascript">
+function get_ap(){
+     {% if data["aptimes"]<0 %}
+	dialog2("未开始报名！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}} ");
+	  return false;
+	{% end%}
+
+    location.href="/wx/Baoming?uuid={{data["uuid"]}}";
+}
+}
+</script>
+
+
+					<div class="text-center footer" style="display:none;">
+									
+								&nbsp;&nbsp;			</div>
+			
+		
+	</div>
+	<!-- 提示弹窗start -->
+
+
+
+<div id="dialog2" style="opacity: 1;display:none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">返回错误！</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:hidemod('dialog2');" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+</div> 
+
+<div id="toast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">已完成</p>
+        </div>
+</div>
+<div id="loadingToast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">数据加载中</p>
+        </div>
+</div>
+<!-- 提示弹窗start -->
+
+	<script type="text/javascript">
+
+
+$.getJSON("./index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote", function(result) {
+	});
+	wx.config(jssdkconfig);
+	
+	var $_share = {"title":"\u6211\u5728\u53c2\u52a02018\u5e74\u5ea6\u5e7f\u4e1c\u6c55\u5c3e\u5e02P\u201c\u91d1\u724c\u5546\u5bb6\u201d\u8bc4\u9009\u6d3b\u52a8\uff0c\u8bf7\u4e3a\u6211\u6295\u7968","imgUrl":"http:\/\/tp-dl3.xcx2.top\/images\/25\/2018\/09\/m3Z3q16sz2stOCTSQ10suTc32TPo32.jpg","desc":"\u514d\u8d39\u62a5\u540d\uff0c\u514d\u8d39\u5ba3\u4f20\uff0c\u514d\u8d39\u63a8\u5e7f\uff0c\u6240\u6709\u672c\u5730\u7684\u5546\u5bb6\u5747\u53ef\u53c2\u52a0\uff0c\u70b9\u51fb\u53c2\u4e0e\uff01","link":"http:\/\/jadl8.zhaojingl.com\/app\/index.php?i=25&c=entry&rid=3319&do=ranking&m=tyzm_diamondvote&u=1405991"};
+	
+	if(typeof sharedata == 'undefined'){
+		sharedata = $_share;
+	} else {
+		sharedata['title'] = sharedata['title'] || $_share['title'];
+		sharedata['desc'] = sharedata['desc'] || $_share['desc'];
+		sharedata['link'] = sharedata['link'] || $_share['link'];
+		sharedata['imgUrl'] = sharedata['imgUrl'] || $_share['imgUrl'];
+	}
+
+	function tomedia(src) {
+		if(typeof src != 'string')
+			return '';
+		if(src.indexOf('http://') == 0 || src.indexOf('https://') == 0) {
+			return src;
+		} else if(src.indexOf('../addons') == 0 || src.indexOf('../attachment') == 0) {
+			src=src.substr(3);
+			return window.sysinfo.siteroot + src;
+		} else if(src.indexOf('./resource') == 0) {
+			src=src.substr(2);
+			return window.sysinfo.siteroot + 'app/' + src;
+		} else if(src.indexOf('images/') == 0) {
+			return window.sysinfo.attachurl+ src;
+		}
+	} 
+	
+
+	
+	if(sharedata.desc == ''){
+		var _share_content = _removeHTMLTag($('body').html());
+		if(typeof _share_content == 'string'){
+			sharedata.desc = _share_content.replace($_share['title'], '')
+		}
+	}
+	wx.ready(function () {
+		wx.onMenuShareAppMessage(sharedata);
+		wx.onMenuShareTimeline(sharedata);
+		wx.onMenuShareQQ(sharedata);
+		wx.onMenuShareWeibo(sharedata);
+	});
+	sharedata.success = function(){
+			var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
+			$.post(url, function(dat){});
+	}
+	$(function(){
+		if($('.js-quickmenu')!=null && $('.js-quickmenu')!=''){
+			var h = $('.js-quickmenu').height()+'px';
+			$('body').css("padding-bottom",h);
+		}else{
+			$('body').css("padding-bottom", "0");
+		}
+		
+		if($('.js-quickmenu')!=null && $('.js-quickmenu')!=''){
+			var h = $('.js-quickmenu').height()+'px';
+			$('body').css("padding-bottom",h);
+		}
+	});
+
+	
+	
+	</script>
+	
+<script>
+function dialog2(msg){$("#dialog2 .weui-dialog__bd").html(msg);$("#dialog2").show()}function hidemod(boxid){$("#"+boxid).hide()}function loadingToast(msg){$("#loadingToast .weui-toast__content").html(msg);$("#loadingToast").show()}function toast(msg){$("#toast .weui-toast__content").html(msg);$("#toast").show();setTimeout("hidemod('toast')",3000)}var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?08c6f5e17c0761a968c5658ccf6ff5ad";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+
+<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script></body>
+</html>
