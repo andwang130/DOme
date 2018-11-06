@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>2018年度安徽界首市F &quot;美丽传说&quot;评选活动</title>
+    <title>{{data["titile"]}}</title>
     <meta name="format-detection" content="telephone=no, address=no">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-touch-fullscreen" content="yes"/>
@@ -58,7 +58,7 @@
 <div class="container container-fill" style="padding-top:36px;">
     <div class="notice">
         <marquee style="WIDTH: 100%; HEIGHT: 18px" scrollamount="6" Align="Middle" hspace="0" direction="Left">
-            2018年度安徽界首市F“美丽传说”评选活动大赛，这是一个商家联合宣传推广的活动，这是一个微友们点评心中诚信商家的活动，这是商家与商家、商家与客户的互动
+           {{data["titile"]}}
         </marquee>
     </div>
     <link rel="stylesheet"
@@ -109,7 +109,7 @@
     border: 1px solid #ffffff;box-shadow: 0px 1px 16px #c7c7c7;">
                 </div>
                 <div class="weui-media-box__bd">
-                    <h4 class="weui-media-box__title">好形象烫染精致店</h4>
+                    <h4 class="weui-media-box__title">{{data["name"]}}</h4>
                     <p class="weui-media-box__desc">给Ta送上一份礼物吧</p>
                 </div>
                 <span class="weui-cell__ft"></span>
@@ -118,42 +118,29 @@
         <div class="divbottommenu" style="border-top: 1px dashed #d5d5d5;">
             <div class="divitem">
                 <span><i class="fa fa-user fa-fw"></i>编号</span>
-                <span>28</span>
+                <span>{{data["index"]}}</span>
             </div>
             <div class="divitem">
                 <span><i class="fa fa-ticket fa-fw"></i>票数</span>
-                <span>537</span>
+                <span>{{data["votenum"]}}</span>
             </div>
         </div>
         <div class="donate_money_p_p">
             <div class="donate_money_choose_p">
                 <div style="display:flex;justify-content:center;margin-bottom:20px">
-                    <div id="zval" style="font-weight:500;font-size:130%;" class="donate_money_edit_text">为28号 好形象烫染精致店
-                        送 0钻=0票
+                    <div id="zval" style="font-weight:500;font-size:130%;" class="donate_money_edit_text">为{{data["index"]}}号 {{data["name"]}}
+                        送 1钻=3票
                     </div>
                 </div>
-                <div class="donate_money_choose donate_money_choose1">
-                    <div class="donate_money" dada-key="0" dada-tip="为28号 好形象烫染精致店 送 1钻=3票">
-                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">1</span>钻
+
+            <div class="donate_money_choose donate_money_choose1">
+               {% for i in data["liwulist"] %}
+                    <div class="donate_money" dada-key="0" dada-tip="为{{data["index"]}}号 {{data["name"]}} 送 {{i["giftprice"]}}钻={{i["giftprice"]}}票">
+                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">{{i["giftprice"]}}</span>钻
                     </div>
-                    <div class="donate_money" dada-key="1" dada-tip="为28号 好形象烫染精致店 送 66钻=198票">
-                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">66</span>钻
-                    </div>
-                    <div class="donate_money" dada-key="2" dada-tip="为28号 好形象烫染精致店 送 168钻=504票">
-                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">168</span>钻
-                    </div>
+
                 </div>
-                <div class="donate_money_choose donate_money_choose1">
-                    <div class="donate_money" dada-key="3" dada-tip="为28号 好形象烫染精致店 送 888钻=2664票">
-                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">888</span>钻
-                    </div>
-                    <div class="donate_money" dada-key="4" dada-tip="为28号 好形象烫染精致店 送 1888钻=5664票">
-                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">1888</span>钻
-                    </div>
-                    <div class="donate_money" dada-key="5" dada-tip="为28号 好形象烫染精致店 送 2999钻=8997票">
-                        送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">2999</span>钻
-                    </div>
-                </div>
+                {% end %}
                 <div class="donate_money_choose donate_money_choose1">
                     <div class="donate_money" dada-key="0" dada-tip="0">
                         <p class="donate_money_icon"></p>
@@ -239,7 +226,7 @@
             document.getElementById('weixin').style.backgroundColor = '#44b549';
             pay = true;
         }
-        document.getElementById("zval").innerHTML = "为28号 好形象烫染精致店 送 " + val + "钻=" + val * zuan_rate + "票";
+        document.getElementById("zval").innerHTML = "为{{data["index"]}}号 {{data["name"]}} 送 " + val + "钻=" + val * zuan_rate + "票";
     }
 
     function check(v) {

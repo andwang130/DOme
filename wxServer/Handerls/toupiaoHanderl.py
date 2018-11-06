@@ -15,6 +15,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             data["index"]=usercoures["index"]
             data["votenum"]=usercoures["votenum"]
             data["userid"]=userid
+            data["uuid"]=uuid
             data["description"]=usercoures["description"]
             self.render("toupiao.html",data=data)
 
