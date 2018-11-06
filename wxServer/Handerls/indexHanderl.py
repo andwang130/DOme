@@ -5,48 +5,43 @@ import pojcetm
 import re
 import tornado
 import tornado.httpclient
+import json
 class indexHanderl(Basehanderl.Basehandelr):
-    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code")
         if code:
-            url ='https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(pojcetm.wxcongif["appId"],pojcetm.wxcongif["secret"],code)
-            print(url)
-            http_client = tornado.httpclient.AsyncHTTPClient()
-            req=yield http_client.fetch(url)
-            print(req.body)
-        else :
-            return
-        if uuid:
-            self.db_linck()
+            self.set_openid(code)
+            if uuid:
+                self.db_linck()
+                coures=self.Mongodb["poject"].find_one({"uuid":uuid})
+                self.Mongodb["poject"].update_one({"uuid":uuid},{"$inc": {"volume": 1}})
+                count=self.Mongodb["tpUser"].find({"uuid":uuid}).count()
+                if coures:
+                    data={}
+                    data["count"]=count
+                    data["endtimes"]=time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M'))-time.time()
+                    data["aptimes"]=time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M'))-time.time()
+                    data["aptimestart"]=coures["aptimestart"]
+                    data["aptimeend"]=coures["aptimeend"]
+                    data["notice"]=coures["titile"]
+                    data["volume"]=coures["volume"]
+                    data["votes"]=coures["votes"]
+                    data["titile"]=coures["titile"]
+                    data["uuid"]=coures["uuid"]
+                    data["topimgV"]=coures["topimgV"]
+                    data["customized"]=coures["customized"]
+                    shares={}
+                    shares["sharetitle"]=coures["sharetitle"]
+                    shares["shareimgV"]=coures["shareimgV"]
+                    shares["sharedesc"]=coures["sharedesc"]
+                    shares["url"]=pojcetm.www+"wx/wxindex?uuid="+coures["uuid"]
 
-            coures=self.Mongodb["poject"].find_one({"uuid":uuid})
-            self.Mongodb["poject"].update_one({"uuid":uuid},{"$inc": {"volume": 1}})
-            count=self.Mongodb["tpUser"].find({"uuid":uuid}).count()
-            if coures:
-                data={}
-                data["count"]=count
-                data["endtimes"]=time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M'))-time.time()
-                data["aptimes"]=time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M'))-time.time()
-                data["aptimestart"]=coures["aptimestart"]
-                data["aptimeend"]=coures["aptimeend"]
-                data["notice"]=coures["titile"]
-                data["volume"]=coures["volume"]
-                data["votes"]=coures["votes"]
-                data["titile"]=coures["titile"]
-                data["uuid"]=coures["uuid"]
-                data["topimgV"]=coures["topimgV"]
-                data["customized"]=coures["customized"]
-                shares={}
-                shares["sharetitle"]=coures["sharetitle"]
-                shares["shareimgV"]=coures["shareimgV"]
-                shares["sharedesc"]=coures["sharedesc"]
-                shares["url"]=pojcetm.www+"wx/wxindex?uuid="+coures["uuid"]
+                    aseedata=pojcetm.get_wxcongif(pojcetm.www+self.request.uri)
 
-                aseedata=pojcetm.get_wxcongif(pojcetm.www+self.request.uri)
-
-                self.render("index.html",data=data,aseedata=aseedata,share=shares)
+                    self.render("index.html",data=data,aseedata=aseedata,share=shares)
+            else:
+                self.auto()
     def on_callback(self):
         pass
 class Getlist(Basehanderl.Basehandelr):
