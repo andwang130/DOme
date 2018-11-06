@@ -16,7 +16,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                 liwudata=i
                 liwudata["index"]=x
                 row_list.append(liwudata)
-                if x%3:
+                if x%3==0:
                     liwulist.append(row_list)
                     row_list=[]
             print(liwulist)
