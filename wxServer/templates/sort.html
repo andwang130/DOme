@@ -442,8 +442,7 @@
     </div>
     <script type="text/javascript">
         function get_ap() {
-            {%
-                if data["aptimes"] < 0 %}
+            {%if data["aptimes"] < 0 %}
             dialog2("未开始报名！报名时间为：</br> {{data["
             aptimestart
             "]}} 至 {{data["
@@ -452,13 +451,9 @@
         )
             ;
             return false;
-            {%
-                end %
-            }
+            {%end %}
 
-            location.href = "/wx/Baoming?uuid={{data["
-            uuid
-            "]}}";
+            location.href = "/wx/Baoming?uuid={{data["uuid"]}}";
         }
         }
     </script>
