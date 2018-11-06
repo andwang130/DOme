@@ -97,13 +97,13 @@ def get_signature(data):
     singstr=""
     for i in sort_dict:
         singstr+=i[0]+"="+i[1]+"&"
-    singstr.rstrip("&","")
-    newsingstr=hashlib.sha1(singstr).hexdigest()
+    singstr=singstr.rstrip("&")
+    newsingstr=hashlib.sha1(singstr.encode("utf-8")).hexdigest()
     return newsingstr
 def get_wxcongif(url):
     data={}
     data["appId"]=wxcongif["appId"]
-    data["timestamp"]=time.time()
+    data["timestamp"]=str(int(time.time()))
     data["nonceStr"]="ASFgsesdsaw"
     data["url"]=url
     # if ticket["times"]==0 or time.time()-ticket["times"]>7000:
@@ -111,3 +111,6 @@ def get_wxcongif(url):
     signa=get_signature(data)
     data["signature"]=signa
     return  data
+
+if __name__ == '__main__':
+    print(get_wxcongif("sdsdsd"))
