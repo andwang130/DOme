@@ -43,9 +43,9 @@ class indexHanderl(Basehanderl.Basehandelr):
                     aseedata=pojcetm.get_wxcongif(pojcetm.www+self.request.uri)
 
                     self.render("index.html",data=data,aseedata=aseedata,share=shares)
-            else:
-                print("auto")
-                self.auto()
+        else:
+            print("auto")
+            self.auto()
     def on_callback(self):
         pass
 class Getlist(Basehanderl.Basehandelr):
