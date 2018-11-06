@@ -32,4 +32,4 @@ class Basehandelr(RequestHandler):
         rq_json = json.loads(req.body)
         openid = rq_json["openid"]
         print(openid)
-        self.set_cookie("openid", openid)
+        self.set_secure_cookie("openid", openid,)

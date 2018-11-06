@@ -8,10 +8,9 @@ import tornado.httpclient
 import json
 class indexHanderl(Basehanderl.Basehandelr):
     def get(self):
-        uuid=self.get_argument("uuid")
-        code = self.get_argument("code")
+        uuid=self.get_argument("uuid","")
+        code = self.get_argument("code","")
         openid=self.get_cookie("openid")
-        print(openid)
         if code:
             self.set_openid(code)
             if uuid:
