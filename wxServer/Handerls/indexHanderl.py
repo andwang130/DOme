@@ -43,6 +43,7 @@ class indexHanderl(Basehanderl.Basehandelr):
 
                     self.render("index.html",data=data,aseedata=aseedata,share=shares)
             else:
+                print("auto")
                 self.auto()
     def on_callback(self):
         pass
