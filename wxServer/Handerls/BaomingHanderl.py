@@ -15,6 +15,7 @@ class baoming(Basehanderl.Basehandelr):
                 newopenid = yield self.get_openid(code)
                 self.set_secure_cookie("openid", newopenid)
             if uuid:
+                self.db_linck()
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
                 data={}
                 data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
