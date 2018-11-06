@@ -8,7 +8,6 @@ class auoth(Basehandelr):
         link =  urllib.quote(values)
         #link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url="https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(wxcongif["appId"],link)
-        print(url)
         self.redirect(url)
 
 

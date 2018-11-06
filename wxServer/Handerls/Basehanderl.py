@@ -26,9 +26,10 @@ class Basehandelr(RequestHandler):
     def set_openid(self,code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
             pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
-        print(url)
         http_client = tornado.httpclient.AsyncHTTPClient()
         req = yield http_client.fetch(url)
+
         rq_json = json.loads(req.body)
         openid = rq_json["openid"]
+        print(openid)
         self.set_cookie("openid", openid)
