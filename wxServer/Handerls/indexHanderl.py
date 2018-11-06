@@ -12,12 +12,12 @@ class indexHanderl(Basehanderl.Basehandelr):
         uuid=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
         openid=self.get_cookie("openid")
-
+        print(openid)
         if code:
             if not openid:
                 newopenid=yield self.get_openid(code)
-
                 self.set_secure_cookie("openid",newopenid)
+
             if uuid:
                 self.db_linck()
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
