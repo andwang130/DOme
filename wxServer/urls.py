@@ -7,5 +7,6 @@ path=[
     ("/wx/sort",SortHanderl.SortHanderl),
     ("/wx/toupiao",toupiaoHanderl.toupiaoHanderl),
     ("/wx/paly",palyHanderl.palyHanderl),
-    ("/wx",Handle.Handle)
+    ("/wx",Handle.Handle),
+    ("/wx/toushu",)
       ]
