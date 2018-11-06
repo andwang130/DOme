@@ -19,7 +19,6 @@ class palyHanderl(Basehanderl.Basehandelr):
                 if x%3==0:
                     liwulist.append(row_list)
                     row_list=[]
-            print(liwulist)
             data["liwulist"]=liwulist
             data["name"] = usercoures["name"]
             data["index"] = usercoures["index"]

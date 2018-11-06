@@ -1,4 +1,4 @@
-from Handerls import indexHanderl,Basehanderl,JpHanderl,SortHanderl,toupiaoHanderl,Handle,palyHanderl
+from Handerls import indexHanderl,Basehanderl,JpHanderl,SortHanderl,toupiaoHanderl,Handle,palyHanderl,toushuHanderl
 path=[
       ("/wx/wxindex",indexHanderl.indexHanderl),
     ("/wx/Baoming",Basehanderl.Basehandelr),
@@ -8,5 +8,5 @@ path=[
     ("/wx/toupiao",toupiaoHanderl.toupiaoHanderl),
     ("/wx/paly",palyHanderl.palyHanderl),
     ("/wx",Handle.Handle),
-    ("/wx/toushu",)
+    ("/wx/toushu",toushuHanderl.toushuHanderl),
       ]
