@@ -11,9 +11,8 @@ class indexHanderl(Basehanderl.Basehandelr):
     def get(self):
         uuid=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
-        openid=self.get_cookie("openid")
-        print(openid)
         if code:
+            openid = self.get_cookie("openid")
             if not openid:
                 newopenid=yield self.get_openid(code)
                 self.set_secure_cookie("openid",newopenid)

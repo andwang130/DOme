@@ -17,7 +17,6 @@ class Basehandelr(RequestHandler):
         uuid = self.get_argument("uuid")
         values = www + self.request.uri
         link = urllib.quote(values)
-        print(link)
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
             wxcongif["appId"], link)
@@ -27,7 +26,9 @@ class Basehandelr(RequestHandler):
     def get_openid(self,code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
             pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
+
         http_client = tornado.httpclient.AsyncHTTPClient()
+
         req = yield http_client.fetch(url)
 
         rq_json = json.loads(req.body)
