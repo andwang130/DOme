@@ -1,7 +1,7 @@
-from Handerls import indexHanderl,Basehanderl,JpHanderl,SortHanderl,toupiaoHanderl,Handle,palyHanderl,toushuHanderl,auoth
+from Handerls import indexHanderl,Basehanderl,JpHanderl,SortHanderl,toupiaoHanderl,Handle,palyHanderl,toushuHanderl,auoth,BaomingHanderl
 path=[
       ("/wx/wxindex",indexHanderl.indexHanderl),
-    ("/wx/Baoming",Basehanderl.Basehandelr),
+    ("/wx/Baoming",BaomingHanderl.baoming),
     ("/wx/getlist",indexHanderl.Getlist),
     ("/wx/jp",JpHanderl.jphanderl),
     ("/wx/sort",SortHanderl.SortHanderl),
