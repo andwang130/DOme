@@ -27,7 +27,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data["customized"]=coures["customized"]
                 shares={}
                 shares["sharetitle"]=coures["sharetitle"]
-                shaers["shareimgV"]=coures["shareimgV"]
+                shares["shareimgV"]=coures["shareimgV"]
                 shares["sharedesc"]=coures["sharedesc"]
                 shares["url"]=pojcetm.www+"wx/wxindex?uuid="+coures["uuid"]
 
