@@ -11,7 +11,7 @@ class indexHanderl(Basehanderl.Basehandelr):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code")
         if code:
-            url = ' https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(pojcetm.wxcongif["appId"],pojcetm.wxcongif["secret"],code)
+            url ='https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(pojcetm.wxcongif["appId"],pojcetm.wxcongif["secret"],code)
             print(url)
             http_client = tornado.httpclient.AsyncHTTPClient()
             req=yield http_client.fetch(url)
