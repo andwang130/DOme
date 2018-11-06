@@ -9,7 +9,17 @@ class palyHanderl(Basehanderl.Basehandelr):
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
             data = {}
             data["titile"] = coures["titile"]
-            data["liwulist"]=coures["liwulist"]
+            i=1
+            row_list=[]
+            liwulist=[]
+            for i in coures["liwulist"]:
+                liwudata=i
+                liwudata["index"]=i
+                row_list.append(liwudata)
+                if i%3:
+                    liwulist.append(row_list)
+                    row_list=[]
+            data["liwulist"]=liwulist
             data["name"] = usercoures["name"]
             data["index"] = usercoures["index"]
             data["votenum"] = usercoures["votenum"]

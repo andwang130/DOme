@@ -133,15 +133,18 @@
                     </div>
                 </div>
 
-            <div class="donate_money_choose donate_money_choose1">
-                {% set i=0 %}
-               {% for i in data["liwulist"] %}
+
+
+               {% for row in data["liwulist"] %}
+                  <div class="donate_money_choose donate_money_choose1">
+                      {{% i in row}}
                     <div class="donate_money" dada-key={{i}} dada-tip="为{{data["index"]}}号 {{data["name"]}} 送 {{i["giftprice"]}}钻={{i["giftprice"]}}票">
                         送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">{{i["giftprice"]}}</span>钻
                     </div>
-                {% set i=i+1 %}
+                {% end %}
+                 </div>}
               {% end %}
-                </div>
+
 
                 <div class="donate_money_choose donate_money_choose1">
                     <div class="donate_money" dada-key="0" dada-tip="0">
