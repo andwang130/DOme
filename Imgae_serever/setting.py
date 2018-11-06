@@ -14,7 +14,7 @@ conf_redis={
 }
 url="http://127.0.0.1"
 path="/Imgs/"
-IMAGE_PATH="/home/wj/DOme/staticfile/Imgs/"
+IMAGE_PATH="/home/DOme/staticfile/Imgs/"
 SESSION_EXPIRES_SECONDS=86400             #Session的过期时间秒\
 CACHE_EXPIRES_SECONDS=3600              #缓存的过期时间
 logg_file=os.path.join(os.path.dirname(__file__),'logs.log')

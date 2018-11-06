@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Imgae_serever/.idea/Imgae_serever.iml" filepath="$PROJECT_DIR$/../Imgae_serever/.idea/Imgae_serever.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/wxServer.iml" filepath="$PROJECT_DIR$/.idea/wxServer.iml" />
     </modules>
   </component>
