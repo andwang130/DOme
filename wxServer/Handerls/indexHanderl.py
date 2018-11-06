@@ -15,7 +15,7 @@ class indexHanderl(Basehanderl.Basehandelr):
             print(url)
             http_client = tornado.httpclient.AsyncHTTPClient()
             req=yield http_client.fetch(url)
-            print(req.code)
+            print(req.body)
         else :
             return
         if uuid:
