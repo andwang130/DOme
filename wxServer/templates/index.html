@@ -326,7 +326,7 @@ function get_list(ty){
 							+'<i class="number">'+list[i]['index']+'号，'+list[i]['name'].replace(/~~.*/,"")+'</i>'
 							+'<a href="'+list[i]['avatar']+'" class="img"><img height="272" width="388" src="'+list[i]['avatar']+'"></a>'
 							+'<div class="clearfix" ><p style="color:red;">'+list[i]['votenum']+'票</p>'
-							+'<a href="/toupiao?uuid={{data["uuid"]}}&userid='+list[i]['userid']+'class="vote">投票</a></div>'
+							+'<a href="/toupiao?uuid={{data["uuid"]}}&userid='+list[i]['userid']+'" class="vote">投票</a></div>'
 							+'</div></li>';
 							
 						}
