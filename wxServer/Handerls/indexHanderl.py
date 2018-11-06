@@ -13,7 +13,7 @@ class indexHanderl(Basehanderl.Basehandelr):
         openid=self.get_cookie("openid")
 
         if code:
-            print(code)
+            print(openid)
             self.set_openid(code)
             if uuid:
                 self.db_linck()
@@ -44,7 +44,6 @@ class indexHanderl(Basehanderl.Basehandelr):
 
                     self.render("index.html",data=data,aseedata=aseedata,share=shares)
         else:
-            print("auto")
             self.auto()
     def on_callback(self):
         pass
