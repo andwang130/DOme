@@ -6,6 +6,6 @@ path=[
     ("/wx/jp",JpHanderl.jphanderl),
     ("/wx/sort",SortHanderl.SortHanderl),
     ("/wx/toupiao",toupiaoHanderl.toupiaoHanderl),
-    ("/wx/paly",palyHanderl.palyHanderl)
+    ("/wx/paly",palyHanderl.palyHanderl),
     ("/wx",Handle.Handle)
       ]
