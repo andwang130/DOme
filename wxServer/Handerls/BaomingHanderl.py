@@ -4,23 +4,33 @@ import time
 import uuid
 import pojcetm
 class baoming(Basehanderl.Basehandelr):
+    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid","")
-        if uuid:
-            coures=self.Mongodb["poject"].find_one({"uuid":uuid})
-            data={}
-            data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
-            data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
-            data["aptimestart"] = coures["aptimestart"]
-            data["aptimeend"] = coures["aptimeend"]
-            data["notice"] = coures["titile"]
-            data["volume"] = coures["volume"]
-            data["votes"] = coures["votes"]
-            data["titile"] = coures["titile"]
-            data["uuid"] = coures["uuid"]
-            data["topimgV"] = coures["topimgV"]
-            data["customized"] = coures["customized"]
-            self.render("Baoming.html", data=data)
+        code = self.get_argument("code", None)
+        if code:
+            openid = self.get_cookie("openid")
+            print(openid)
+            if not openid:
+                newopenid = yield self.get_openid(code)
+                self.set_secure_cookie("openid", newopenid)
+            if uuid:
+                coures=self.Mongodb["poject"].find_one({"uuid":uuid})
+                data={}
+                data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
+                data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
+                data["aptimestart"] = coures["aptimestart"]
+                data["aptimeend"] = coures["aptimeend"]
+                data["notice"] = coures["titile"]
+                data["volume"] = coures["volume"]
+                data["votes"] = coures["votes"]
+                data["titile"] = coures["titile"]
+                data["uuid"] = coures["uuid"]
+                data["topimgV"] = coures["topimgV"]
+                data["customized"] = coures["customized"]
+                self.render("Baoming.html", data=data)
+        else:
+            self.auto()
     def post(self):
 
         data = {}

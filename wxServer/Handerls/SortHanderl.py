@@ -27,6 +27,8 @@ class SortHanderl(Basehanderl.Basehandelr):
                 self.write(json.dumps({"status": 200, "content": datalist}))
             else:
                 self.write(json.dumps({"status": 301}))
+
+    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code", None)

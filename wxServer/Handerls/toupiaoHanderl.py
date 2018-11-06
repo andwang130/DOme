@@ -2,6 +2,7 @@ import Basehanderl
 import json
 import time
 class toupiaoHanderl(Basehanderl.Basehandelr):
+    @tornado.gen.coroutine
     def get(self):
 
         userid=self.get_argument("userid")

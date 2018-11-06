@@ -3,6 +3,8 @@ import time
 class jphanderl(Basehanderl.Basehandelr):
     def post(self):
         pass
+
+    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code", None)

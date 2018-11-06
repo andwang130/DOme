@@ -1,5 +1,6 @@
 import Basehanderl
 class palyHanderl(Basehanderl.Basehandelr):
+    @tornado.gen.coroutine
     def get(self):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
