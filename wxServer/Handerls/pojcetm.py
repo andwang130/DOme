@@ -101,6 +101,7 @@ def get_signature(data):
     newsingstr=hashlib.sha1(singstr.encode("utf-8")).hexdigest()
     return newsingstr
 def get_wxcongif(url):
+    print (url)
     data={}
     data["appId"]=wxcongif["appId"]
     data["timestamp"]=str(int(time.time()))
