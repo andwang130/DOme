@@ -32,5 +32,4 @@ class Basehandelr(RequestHandler):
 
         rq_json = json.loads(req.body)
         openid = rq_json["openid"]
-        tornado.gen.Runtur
         self.set_secure_cookie("openid", openid,)

@@ -19,6 +19,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="auoth.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/auoth.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,8 +54,8 @@
       <file leaf-file-name="indexHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="92">
+              <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -63,28 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sort.html">
+      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="442" column="6" lean-forward="false" selection-start-line="442" selection-start-column="6" selection-end-line="442" selection-end-column="6" />
-              <folding>
-                <marker date="1541534259877" expanded="true" signature="12785:12816" ph="..." />
-                <marker date="1541534259877" expanded="true" signature="12861:12867" ph=" " />
-                <marker date="1541534259877" expanded="true" signature="12867:12873" ph=" " />
-                <marker date="1541534259877" expanded="true" signature="12961:12976" ph="..." />
-                <marker date="1541534259877" expanded="true" signature="13006:13012" ph=" " />
-                <marker date="1541534259877" expanded="true" signature="13012:13018" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Userhanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dome_server/handel/Userhanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="138">
+              <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -127,8 +120,8 @@
       <file leaf-file-name="Basehanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/Basehanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="417">
+              <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="49" />
               <folding>
                 <element signature="e#24#62#0" expanded="true" />
               </folding>
@@ -626,14 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -694,14 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -775,14 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/JpHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -793,18 +762,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/Basehanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="417">
+          <caret line="34" column="8" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="49" />
           <folding>
             <element signature="e#24#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="83" column="11" lean-forward="false" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/JpHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="92">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

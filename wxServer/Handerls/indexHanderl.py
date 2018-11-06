@@ -14,6 +14,7 @@ class indexHanderl(Basehanderl.Basehandelr):
 
         if code:
             print(openid)
+            self.set_secure_cookie("openid", openid)
             self.set_openid(code)
             if uuid:
                 self.db_linck()
