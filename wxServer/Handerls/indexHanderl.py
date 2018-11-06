@@ -6,6 +6,7 @@ import re
 import tornado
 import tornado.httpclient
 class indexHanderl(Basehanderl.Basehandelr):
+    @tornado.web.asynchronous
     @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid")
