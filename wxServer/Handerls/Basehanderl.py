@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 from tornado.web import RequestHandler
 from pymongo import MongoClient
-import tornado.gen
+import tornado
 class Basehandelr(RequestHandler):
     def set_default_headers(self):  # 设置headers
         pass
