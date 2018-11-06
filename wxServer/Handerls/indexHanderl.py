@@ -33,7 +33,7 @@ class indexHanderl(Basehanderl.Basehandelr):
 
                 aseedata=pojcetm.get_signature(self.request.uri)
 
-                self.render("index.html",data=data,aseedata=aseedata)
+                self.render("index.html",data=data,aseedata=aseedata,shaer=share)
     def post(self):
         pass
 class Getlist(Basehanderl.Basehandelr):
