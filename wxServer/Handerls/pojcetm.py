@@ -2,6 +2,7 @@
 import time
 import hashlib
 import requests
+import redis
 pojectarg = ["titile",#标题
              "himgV", #回复图片
              "description",#描述
@@ -85,14 +86,28 @@ wxcongif={
 
 }
 www="http://www.carzy.wang"
-ticket={
-    "ticket":"",
-    "times":0,
+
+conf_redis={
+    'host':'127.0.0.1',
+    'port':6379
 }
 def get_ticket():
-    url="https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=&type=jsapi"
-    requests.get("https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=ACCESS_TOKEN&type=jsapi")
+    mredis = redis.StrictRedis(**conf_redis)
+    ticket=mredis.get("ticket")
+    if not ticket:
+        access_token=mredis.get("access_token")
+        if not access_token:
+            url="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}".format(wxcongif["appId"],wxcongif["secret"])
+            req=requests.get(url).json()
+            access_token=req["access_token"]
+            mredis = redis.StrictRedis(**conf_redis)
+            mredis.set("access_token",access_token,ex=7000)
+        tickurl="https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token={}&type=jsapi".format(access_token.decode("utf-8"))
+        req = requests.get(tickurl).json()
 
+        ticket=req["ticket"]
+        mredis.set("ticket", ticket, ex=7000)
+    return ticket.decode("utf-8")
 def get_signature(data):
     sort_dict=sorted(data.items(), key=lambda x: x[1], reverse=True)
     singstr=""
@@ -104,7 +119,7 @@ def get_signature(data):
 def get_wxcongif(url):
     print (url)
     data={}
-    data["appId"]=wxcongif["appId"]
+    data["jsapi_ticket"]=get_ticket()
     data["timestamp"]=str(int(time.time()))
     data["nonceStr"]="ASFgsesdsaw"
     data["url"]=url
@@ -112,7 +127,8 @@ def get_wxcongif(url):
     #     get_ticket()
     signa=get_signature(data)
     data["signature"]=signa
+    data["appId"] = wxcongif["appId"]
     return  data
 
 if __name__ == '__main__':
-    print(get_wxcongif("sdsdsd"))
+    print(get_ticket())
