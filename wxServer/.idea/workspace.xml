@@ -54,8 +54,8 @@
       <file leaf-file-name="indexHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="-483">
+              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -120,8 +120,8 @@
       <file leaf-file-name="Basehanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/Basehanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="141">
+              <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#24#62#0" expanded="true" />
               </folding>
@@ -155,6 +155,7 @@
       <find>投</find>
       <find>data</find>
       <find>auto</find>
+      <find>get_openid</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -786,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/Basehanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="141">
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#24#62#0" expanded="true" />
           </folding>
@@ -796,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        <state relative-caret-position="-483">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

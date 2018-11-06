@@ -7,6 +7,7 @@ import tornado
 import tornado.httpclient
 import json
 class indexHanderl(Basehanderl.Basehandelr):
+    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
