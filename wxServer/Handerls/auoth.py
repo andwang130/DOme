@@ -1,6 +1,6 @@
 from Handerls.Basehanderl import Basehandelr
 from Handerls.pojcetm  import wxcongif,www
-import urllib.urlparse.quote
+import urllib.urlparse
 class auoth(Basehandelr):
     def get(self):
         uuid=self.get_argument("uuid")
