@@ -66,15 +66,15 @@
       <file leaf-file-name="sort.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/sort.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="20" />
+            <state relative-caret-position="69">
+              <caret line="288" column="52" lean-forward="false" selection-start-line="288" selection-start-column="52" selection-end-line="288" selection-end-column="52" />
               <folding>
-                <marker date="1541533998346" expanded="true" signature="12834:12865" ph="..." />
-                <marker date="1541533998346" expanded="true" signature="12910:12916" ph=" " />
-                <marker date="1541533998346" expanded="true" signature="12916:12922" ph=" " />
-                <marker date="1541533998346" expanded="true" signature="13010:13025" ph="..." />
-                <marker date="1541533998346" expanded="true" signature="13055:13061" ph=" " />
-                <marker date="1541533998346" expanded="true" signature="13061:13067" ph=" " />
+                <marker date="1541534112010" expanded="true" signature="12785:12816" ph="..." />
+                <marker date="1541534112010" expanded="true" signature="12861:12867" ph=" " />
+                <marker date="1541534112010" expanded="true" signature="12867:12873" ph=" " />
+                <marker date="1541534112010" expanded="true" signature="12961:12976" ph="..." />
+                <marker date="1541534112010" expanded="true" signature="13006:13012" ph=" " />
+                <marker date="1541534112010" expanded="true" signature="13012:13018" ph=" " />
               </folding>
             </state>
           </provider>
@@ -346,7 +346,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18937768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -788,15 +788,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sort.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="20" />
+        <state relative-caret-position="69">
+          <caret line="288" column="52" lean-forward="false" selection-start-line="288" selection-start-column="52" selection-end-line="288" selection-end-column="52" />
           <folding>
-            <marker date="1541533998346" expanded="true" signature="12834:12865" ph="..." />
-            <marker date="1541533998346" expanded="true" signature="12910:12916" ph=" " />
-            <marker date="1541533998346" expanded="true" signature="12916:12922" ph=" " />
-            <marker date="1541533998346" expanded="true" signature="13010:13025" ph="..." />
-            <marker date="1541533998346" expanded="true" signature="13055:13061" ph=" " />
-            <marker date="1541533998346" expanded="true" signature="13061:13067" ph=" " />
+            <marker date="1541534112010" expanded="true" signature="12785:12816" ph="..." />
+            <marker date="1541534112010" expanded="true" signature="12861:12867" ph=" " />
+            <marker date="1541534112010" expanded="true" signature="12867:12873" ph=" " />
+            <marker date="1541534112010" expanded="true" signature="12961:12976" ph="..." />
+            <marker date="1541534112010" expanded="true" signature="13006:13012" ph=" " />
+            <marker date="1541534112010" expanded="true" signature="13012:13018" ph=" " />
           </folding>
         </state>
       </provider>
