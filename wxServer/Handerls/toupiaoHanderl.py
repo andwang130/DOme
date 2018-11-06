@@ -6,6 +6,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         if userid and uuid:
+            self.db_linck()
             coures=self.Mongodb["poject"].find_one({"uuid":uuid})
             usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
             data={}
