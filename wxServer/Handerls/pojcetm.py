@@ -83,6 +83,7 @@ wxcongif={
     "appId":"wx9ea23fdc52965768"
 
 }
+www="http://carzy.wang/"
 ticket={
     "ticket":"",
     "times":0,

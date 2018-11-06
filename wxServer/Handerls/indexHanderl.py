@@ -25,6 +25,11 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data["uuid"]=coures["uuid"]
                 data["topimgV"]=coures["topimgV"]
                 data["customized"]=coures["customized"]
+                share={}
+                share["sharetitle"]=coures["sharetitle"]
+                shaer["shareimgV"]=coures["shareimgV"]
+                share["sharedesc"]=coures["sharedesc"]
+                share["url"]=pojcetm.www+"wx/wxindex?uuid="+coures["uuid"]
 
                 aseedata=pojcetm.get_signature(self.request.uri)
 
