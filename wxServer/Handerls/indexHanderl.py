@@ -7,7 +7,6 @@ import tornado
 import tornado.httpclient
 import json
 class indexHanderl(Basehanderl.Basehandelr):
-    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
@@ -15,7 +14,7 @@ class indexHanderl(Basehanderl.Basehandelr):
 
         if code:
             if not openid:
-                newopenid=yield self.get_openid(code)
+                newopenid=self.get_openid(code)
                 self.set_secure_cookie("openid",openid)
             if uuid:
                 self.db_linck()

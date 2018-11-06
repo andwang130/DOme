@@ -29,10 +29,9 @@ class Basehandelr(RequestHandler):
             pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
         http_client = tornado.httpclient.AsyncHTTPClient()
         req = yield http_client.fetch(url)
-        print(dir(req))
+
         rq_json = json.loads(req.body)
-        print(rq_json)
+
         openid = rq_json["openid"]
-
-
-        raise tornado.gen.Return(openid)
+        print(openid)
+        # raise tornado.gen.Return(openid)
