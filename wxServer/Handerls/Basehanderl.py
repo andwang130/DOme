@@ -33,5 +33,4 @@ class Basehandelr(RequestHandler):
         rq_json = json.loads(req.body)
 
         openid = rq_json["openid"]
-        print(openid)
-        # raise tornado.gen.Return(openid)
+        raise tornado.gen.Return(openid)
