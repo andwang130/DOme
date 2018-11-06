@@ -49,7 +49,7 @@ var tr="  <tr>\n" +
     "               href=\"./addpoje.html?action=update&uuid={setuuid}\"\n" +
     "               title=\"编辑\"><i class=\"fa fa-edit\"></i> 编辑</a><br/>\n" +
     "            <a class=\"color-default we7-margin-right\" rel=\"tooltip\" href=\"#\"\n" +
-    "               onclick=\"drop_confirm('您确定要删除吗?删除不可恢复。', '/poject?action=delete&uuid={uuid}');\"\n" +
+    "               onclick=\"drop_confirm('您确定要删除吗?删除不可恢复。', '/poject?action=delete&uuid={delteuuid}');\"\n" +
     "               title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a>\n" +
     "            <br/>\n" +
     "            <a class=\"color-default we7-margin-right\" rel=\"tooltip\"\n" +
@@ -90,7 +90,7 @@ function get_list(page) {
 
                    var new_tr=tr.replace(/{编号}/,i).replace(/{TITLE}/,datalist[i]["titile"]).replace(/{开始时间}/,datalist[i]["tiemstatr"])
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
-                       .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"]).replace(/{ordel_uuid}/,datalist[i]["uuid"])
+                       .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"]).replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"])
                    $("#pojectlist").append(new_tr)
 
                }

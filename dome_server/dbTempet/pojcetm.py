@@ -22,6 +22,7 @@ pojiceTeptle = [
                 "votes",  # 投票数
                 "volume",  # 浏览量
                 "Share",  # 分享量
+                "participants",
                 ]
 # 参与人数]
 get_listTeptle = [

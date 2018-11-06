@@ -8,5 +8,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Imgae_serever" />
     <orderEntry type="module" module-name="staticfile" />
+    <orderEntry type="module" module-name="dome_server" />
   </component>
 </module>
