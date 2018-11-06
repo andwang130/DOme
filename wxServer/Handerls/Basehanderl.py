@@ -24,7 +24,7 @@ class Basehandelr(RequestHandler):
         self.redirect(url)
 
     @tornado.gen.coroutine
-    def set_openid(self,code):
+    def get_openid(self,code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
             pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
         http_client = tornado.httpclient.AsyncHTTPClient()
@@ -32,4 +32,5 @@ class Basehandelr(RequestHandler):
 
         rq_json = json.loads(req.body)
         openid = rq_json["openid"]
-        self.set_secure_cookie("openid", openid,)
+
+        raise tornado.gen.Return(openid)
