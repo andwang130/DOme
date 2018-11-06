@@ -6,8 +6,11 @@ import re
 class indexHanderl(Basehanderl.Basehandelr):
     def get(self):
         uuid=self.get_argument("uuid")
+        code = self.get_argument("code")
+        print(code)
         if uuid:
             self.db_linck()
+
             coures=self.Mongodb["poject"].find_one({"uuid":uuid})
             self.Mongodb["poject"].update_one({"uuid":uuid},{"$inc": {"volume": 1}})
             count=self.Mongodb["tpUser"].find({"uuid":uuid}).count()
