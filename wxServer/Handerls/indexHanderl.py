@@ -31,9 +31,9 @@ class indexHanderl(Basehanderl.Basehandelr):
                 shares["sharedesc"]=coures["sharedesc"]
                 shares["url"]=pojcetm.www+"wx/wxindex?uuid="+coures["uuid"]
 
-                aseedata=pojcetm.get_wxcongif(self.request.uri)
+                aseedata=pojcetm.get_wxcongif(pojcetm.www+self.request.uri)
 
-                self.render("index.html",data=data,aseedata=aseedata,shaer=shares)
+                self.render("index.html",data=data,aseedata=aseedata,share=shares)
     def post(self):
         pass
 class Getlist(Basehanderl.Basehandelr):
