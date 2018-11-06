@@ -12,7 +12,7 @@ conf_redis={
     'host':'127.0.0.1',
     'port':6379
 }
-url="http://127.0.0.1"
+url="http://carzy.wang"
 path="/Imgs/"
 IMAGE_PATH="/home/DOme/staticfile/Imgs/"
 SESSION_EXPIRES_SECONDS=86400             #Session的过期时间秒\
