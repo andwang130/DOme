@@ -25,13 +25,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filehandelr.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Filehandelr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Imgae_serever/Filehandelr.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="85" column="94" lean-forward="false" selection-start-line="85" selection-start-column="94" selection-end-line="85" selection-end-column="94" />
+              <folding>
+                <marker date="1541469163648" expanded="true" signature="24505:24523" ph="..." />
+                <marker date="1541469163648" expanded="true" signature="24555:24573" ph="..." />
+                <marker date="1541469163648" expanded="true" signature="25923:25933" ph="..." />
+                <marker date="1541469163648" expanded="true" signature="26112:26123" ph="..." />
+                <marker date="1541469163648" expanded="true" signature="26302:26316" ph="..." />
+                <marker date="1541469163648" expanded="true" signature="32026:32059" ph="..." />
               </folding>
             </state>
           </provider>
@@ -65,26 +92,6 @@
               <folding>
                 <marker date="1541465774597" expanded="true" signature="12433:12443" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handle.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/Handle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2323">
-              <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -137,6 +144,7 @@
         <option value="$PROJECT_DIR$/Handerls/indexHanderl.py" />
         <option value="$PROJECT_DIR$/Handerls/pojcetm.py" />
         <option value="$PROJECT_DIR$/../Imgae_serever/setting.py" />
+        <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
       </list>
     </option>
   </component>
@@ -174,6 +182,10 @@
               <item name="wxServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Imgae_serever" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wxServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -186,7 +198,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Imgae_serever" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../staticfile" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -581,9 +593,32 @@
     <entry file="file://$PROJECT_DIR$/../Imgae_serever/Filehandelr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="85" column="94" lean-forward="false" selection-start-line="85" selection-start-column="94" selection-end-line="85" selection-end-column="94" />
+          <folding>
+            <marker date="1541469163648" expanded="true" signature="24505:24523" ph="..." />
+            <marker date="1541469163648" expanded="true" signature="24555:24573" ph="..." />
+            <marker date="1541469163648" expanded="true" signature="25923:25933" ph="..." />
+            <marker date="1541469163648" expanded="true" signature="26112:26123" ph="..." />
+            <marker date="1541469163648" expanded="true" signature="26302:26316" ph="..." />
+            <marker date="1541469163648" expanded="true" signature="32026:32059" ph="..." />
           </folding>
         </state>
       </provider>

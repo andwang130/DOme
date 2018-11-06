@@ -7,5 +7,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Imgae_serever" />
+    <orderEntry type="module" module-name="staticfile" />
   </component>
 </module>
