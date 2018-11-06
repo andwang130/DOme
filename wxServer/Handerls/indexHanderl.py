@@ -3,11 +3,19 @@ import time
 import json
 import pojcetm
 import re
+
 class indexHanderl(Basehanderl.Basehandelr):
+    @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code")
-        print(code)
+        if code:
+            url = ' https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(pojcetm.wxcongif["appId"],pojcetm.wxcongif["secret"],code)
+            http_client = tornado.httpclient.AsyncHTTPClient()
+            response = yield tornado.gen.Task(http_client.fetch, url)
+            print(response)
+        else :
+            return
         if uuid:
             self.db_linck()
 

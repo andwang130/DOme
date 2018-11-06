@@ -80,7 +80,8 @@ Tpuser_temptle={
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start"]
 
 wxcongif={
-    "appId":"wx9ea23fdc52965768"
+    "appId":"wx9ea23fdc52965768",
+    "secret":"d56808daf6c09985629def889ea3b8c3"
 
 }
 www="http://www.carzy.wang/"
