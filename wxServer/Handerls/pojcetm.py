@@ -84,7 +84,7 @@ wxcongif={
     "secret":"d56808daf6c09985629def889ea3b8c3"
 
 }
-www="http://www.carzy.wang/"
+www="http://www.carzy.wang"
 ticket={
     "ticket":"",
     "times":0,
