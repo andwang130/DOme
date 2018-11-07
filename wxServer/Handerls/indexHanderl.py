@@ -10,7 +10,6 @@ class indexHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid",None)
-        print(uuid)
         code = self.get_argument("code",None)
         if code:
             openid = self.get_cookie("openid")
