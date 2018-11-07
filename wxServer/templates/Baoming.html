@@ -223,7 +223,7 @@
   // },10000);
  $(document).ready(function()
  {
-     $("#files").change(files_oninpit)
+     $("#files").change(files_oninpit);
      $('.mpanell-shade').height($(window).height()).hide().click(function (e) {
          if (!$(e.target).parents('#mpanel1').length) $(this).hide();
      });
@@ -312,7 +312,7 @@ function files_oninpit() {
         })
 }
 
-  
+
 
 	$(".btn_bg_green").click(function(){
             var upimages=[];
