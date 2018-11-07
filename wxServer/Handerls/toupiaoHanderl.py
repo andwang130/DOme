@@ -28,7 +28,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     if i["userid"]==userid:
                         if x!=0:
                             data["index"]=x+1
-                            data["subvotenum"]=coureslist[i-1]["votenum"]-usercoures["votenum"]
+                            data["subvotenum"]=coureslist[x-1]["votenum"]-usercoures["votenum"]
                         else:
                             data["index"] = 1
                             data["subvotenum"] =0
