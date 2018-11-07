@@ -10,13 +10,13 @@ class indexHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid",None)
+        print(uuid)
         code = self.get_argument("code",None)
         if code:
             openid = self.get_cookie("openid")
             if not openid:
                 newopenid=yield self.get_openid(code)
                 self.set_secure_cookie("openid",newopenid)
-
             if uuid:
                 self.db_linck()
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
