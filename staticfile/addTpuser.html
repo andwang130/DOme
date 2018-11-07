@@ -194,15 +194,12 @@
 				$(elm).parent().prev().find("input").val("");
 			}
 		</script>
-		<div class="input-group ">
-			<input type="text" name="avatar" value="" class="form-control" autocomplete="off">
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="button" onclick="showImageDialog(this);">选择图片</button>
-			</span>
-		</div>
+
 		<div class="input-group " style="margin-top:.5em;">
+			<a href="javascript:;"  class="thumbnail imgbox0">
 			<img id="avatar"  src="./resource/images/nopic.jpg" onerror="this.src='./resource/images/nopic.jpg'; this.title='图片未找到.'" class="img-responsive img-thumbnail"  width="150" />
-			<em class="close" style="position:absolute; top: 0px; right: -14px;" title="删除这张图片" onclick="deleteImage(this)">×</em>
+			</a>
+				<em class="close" style="position:absolute; top: 0px; right: -14px;" title="删除这张图片" onclick="deleteImage(this)">×</em>
 		</div>					<div class="help-block">投票显示头像，建议80*80</div>
 				  </div>
 				</div>
