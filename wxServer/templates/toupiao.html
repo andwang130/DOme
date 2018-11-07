@@ -212,7 +212,7 @@
         padding-top: 0px;
         padding-bottom: 0px;
     }</style>
-    <img src="http://tp-dl3.xcx2.top/images/25/2018/10/mUW00H2yHszUU2huSzuyyY4Luu00h4.jpg" alt="shareImg" width="0px"
+    <img src="#" alt="shareImg" width="0px"
          height="0px" style="display: block;"/>
     <div id="focus" class="focus focus2" style="">
         <div class="hd">
@@ -420,7 +420,7 @@
     }</style>
     <div class="divbotuser">
         <h2>
-            <img src="http://tp-dl3.xcx2.top/images/25/2018/10/mUW00H2yHszUU2huSzuyyY4Luu00h4.jpg" width="25"/>{{data["name"]}}
+            <img src="{{data["avatar"]}}" width="25"/>{{data["name"]}}
         </h2>
     </div>
     <div class="divbottommenu">
@@ -444,7 +444,9 @@
     <div class="view2">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox" id="previewImage">
-                <img src="http://tp-dl3.xcx2.top/images/25/2018/10/mUW00H2yHszUU2huSzuyyY4Luu00h4.jpg">
+                {%for i in data["imgse"] %}
+                <img src="{{i}}">
+                {% end %}
             </div>
         </div>
         <br/><br/><br/><br/>

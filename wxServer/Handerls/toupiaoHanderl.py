@@ -24,10 +24,15 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 data["name"]=usercoures["name"]
                 data["index"]=usercoures["index"]
                 data["votenum"]=usercoures["votenum"]
+                data["avatar"]=usercoures["avatar"]
                 data["userid"]=userid
                 data["uuid"]=uuid
                 data["description"]=usercoures["description"]
-
+                imgs=[]
+                for i in ["images1" ,"images2","images3","images4","images5"]:
+                    if usercoures[i]!="":
+                        imgs.append(usercoures[i])
+                data["imgse"]=imgs
                 shares = {}
                 shares["sharetitle"] = coures["sharetitle"]
                 shares["shareimgV"] = coures["shareimgV"]
