@@ -10,8 +10,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
     def get(self):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
-        code = self.get_argument("code", None)
-        print(code)
+        code = self.get_argument("code",None)
         if code:
             openid = self.get_cookie("openid")
             if not openid:
