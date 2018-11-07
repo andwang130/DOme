@@ -10,8 +10,8 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         code = self.get_argument("code",None)
+        print("sdsdsdsdssdsd" * 2)
         if code!=None:
-            print("sdsdsdsdssdsd" * 2)
             openid = self.get_cookie("openid")
             if not openid:
                 newopenid = self.get_openid1(code)
@@ -58,11 +58,11 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
 
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-
                 self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
+
         else:
             self.auto()
-            return 
+
     def post(self):
         openid = self.get_cookie("openid")
         userid= self.get_argument("userid", None)
