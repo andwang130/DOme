@@ -6,18 +6,19 @@ import tornado
 import pojcetm
 import uuid
 class toupiaoHanderl(Basehanderl.Basehandelr):
+    @tornado.gen.coroutine
     def get(self):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         code = self.get_argument("code",None)
-        print("sdsdsdsdssdsd" * 2)
-        if code!=None:
+        if code:
             openid = self.get_cookie("openid")
             if not openid:
-                newopenid = self.get_openid1(code)
+                newopenid = yield tornado.gen.Task(self.get_openid,code)
                 self.set_secure_cookie("openid", newopenid)
             if userid and uuid:
                 self.db_linck()
+                print("sdsdsdsdssdsd"*2)
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
                 usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
                 coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum":1 }).sort([("votenum",-1)])
@@ -58,11 +59,11 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
 
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-                self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
 
+                self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()
-
+            raise tornado.gen.Return()
     def post(self):
         openid = self.get_cookie("openid")
         userid= self.get_argument("userid", None)
