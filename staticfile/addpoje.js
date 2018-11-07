@@ -2,9 +2,7 @@
 var t_in_click=undefined
 var action=""
 var uuid=""
-$(document).ready(
-    function () {
-
+$(document).ready(function (){
     $("#topimg").change(upload_img)
     $("#shareimg").change(upload_img)
     $("#himg").change(upload_img)
