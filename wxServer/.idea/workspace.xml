@@ -22,91 +22,52 @@
       <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="659">
               <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
+      <file leaf-file-name="Basehandelr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../dome_server/handel/Basehandelr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="363" column="38" lean-forward="true" selection-start-line="363" selection-start-column="38" selection-end-line="363" selection-end-column="38" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaomingHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1116">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="e#1#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="321" column="32" lean-forward="true" selection-start-line="321" selection-start-column="32" selection-end-line="321" selection-end-column="99" />
-              <folding>
-                <marker date="1541555087101" expanded="true" signature="11837:11847" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sort.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding>
-                <marker date="1541555087228" expanded="true" signature="12683:12714" ph="..." />
-                <marker date="1541555087228" expanded="true" signature="12759:12765" ph=" " />
-                <marker date="1541555087228" expanded="true" signature="12765:12771" ph=" " />
-                <marker date="1541555087228" expanded="true" signature="12859:12874" ph="..." />
-                <marker date="1541555087228" expanded="true" signature="12904:12910" ph=" " />
-                <marker date="1541555087228" expanded="true" signature="12910:12916" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="450" column="14" lean-forward="true" selection-start-line="450" selection-start-column="14" selection-end-line="450" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="371">
+              <caret line="608" column="47" lean-forward="false" selection-start-line="608" selection-start-column="44" selection-end-line="608" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="253">
+              <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toushu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/toushu.html">
+      <file leaf-file-name="Userhanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../dome_server/handel/Userhanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="22" column="91" lean-forward="false" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="91" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,8 +76,8 @@
       <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="71" column="17" lean-forward="true" selection-start-line="67" selection-start-column="3" selection-end-line="71" selection-end-column="17" />
+            <state relative-caret-position="184">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="125" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -124,11 +85,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SortHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
+      <file leaf-file-name="orderHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../dome_server/handel/orderHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="48" column="70" lean-forward="true" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../dome_server/handel/Poject.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="128" column="51" lean-forward="true" selection-start-line="128" selection-start-column="51" selection-end-line="128" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toushuHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Handerls/toushuHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -145,12 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>drop_confirm</find>
-      <find>share</find>
-      <find>userid</find>
-      <find>返回</find>
-      <find>送转身</find>
-      <find>投诉</find>
       <find>投</find>
       <find>data</find>
       <find>auto</find>
@@ -168,13 +153,19 @@
       <find>topimg</find>
       <find>upload_img</find>
       <find>img_on_cliek</find>
-      <find>chooseImages</find>
       <find>file</find>
       <find>images</find>
       <find>follow</find>
-      <find>error</find>
       <find>picturearr</find>
       <find>http://tp-dl3.xcx2.top/images/25/2018/10/mUW00H2yHszUU2huSzuyyY4Luu00h4.jp</find>
+      <find>error</find>
+      <find>投票</find>
+      <find>mpanell-shade</find>
+      <find>btn_bg_green</find>
+      <find>chooseImages</find>
+      <find>mpanel1</find>
+      <find>mytoupiao</find>
+      <find>wrapper</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -198,11 +189,11 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/jp.html" />
         <option value="$PROJECT_DIR$/templates/paly.html" />
-        <option value="$PROJECT_DIR$/templates/sort.html" />
         <option value="$PROJECT_DIR$/Handerls/BaomingHanderl.py" />
         <option value="$PROJECT_DIR$/templates/Baoming.html" />
-        <option value="$PROJECT_DIR$/Handerls/toupiaoHanderl.py" />
+        <option value="$PROJECT_DIR$/templates/sort.html" />
         <option value="$PROJECT_DIR$/templates/toupiao.html" />
+        <option value="$PROJECT_DIR$/Handerls/toupiaoHanderl.py" />
       </list>
     </option>
   </component>
@@ -429,13 +420,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Imgae_serever/logs.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="751" column="0" lean-forward="false" selection-start-line="751" selection-start-column="0" selection-end-line="751" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Imgae_serever/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -450,27 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/orderHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Poject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -482,6 +445,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,6 +453,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -532,42 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Userhanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/bucktoknehandelr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Blacklist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Basehandelr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#62#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -604,14 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/toushuHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -751,6 +672,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1116">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#1#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="7001" column="0" lean-forward="false" selection-start-line="7001" selection-start-column="0" selection-end-line="7001" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="225" column="37" lean-forward="false" selection-start-line="225" selection-start-column="24" selection-end-line="225" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="317" column="38" lean-forward="false" selection-start-line="317" selection-start-column="38" selection-end-line="317" selection-end-column="38" />
+          <folding>
+            <marker date="1541555087101" expanded="true" signature="11837:11847" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/jp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -769,15 +736,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sort.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="-1070">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <marker date="1541555087228" expanded="true" signature="12683:12714" ph="..." />
-            <marker date="1541555087228" expanded="true" signature="12759:12765" ph=" " />
-            <marker date="1541555087228" expanded="true" signature="12765:12771" ph=" " />
-            <marker date="1541555087228" expanded="true" signature="12859:12874" ph="..." />
-            <marker date="1541555087228" expanded="true" signature="12904:12910" ph=" " />
-            <marker date="1541555087228" expanded="true" signature="12910:12916" ph=" " />
+            <marker date="1541562577879" expanded="true" signature="12059:12090" ph="..." />
+            <marker date="1541562577879" expanded="true" signature="12135:12141" ph=" " />
+            <marker date="1541562577879" expanded="true" signature="12141:12147" ph=" " />
+            <marker date="1541562577879" expanded="true" signature="12235:12250" ph="..." />
+            <marker date="1541562577879" expanded="true" signature="12280:12286" ph=" " />
+            <marker date="1541562577879" expanded="true" signature="12286:12292" ph=" " />
           </folding>
         </state>
       </provider>
@@ -790,75 +757,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/bucktoknehandelr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="321" column="32" lean-forward="true" selection-start-line="321" selection-start-column="32" selection-end-line="321" selection-end-column="99" />
-          <folding>
-            <marker date="1541555087101" expanded="true" signature="11837:11847" ph="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Blacklist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1116">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
+    <entry file="file://$PROJECT_DIR$/Handerls/toushuHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="363" column="38" lean-forward="true" selection-start-line="363" selection-start-column="38" selection-end-line="363" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="46">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="71" column="17" lean-forward="true" selection-start-line="67" selection-start-column="3" selection-end-line="71" selection-end-column="17" />
+        <state relative-caret-position="184">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="125" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Userhanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="128" column="51" lean-forward="true" selection-start-line="128" selection-start-column="51" selection-end-line="128" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/orderHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="48" column="70" lean-forward="true" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="659">
           <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Basehandelr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="23">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Poject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="450" column="14" lean-forward="true" selection-start-line="450" selection-start-column="14" selection-end-line="450" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="371">
+          <caret line="608" column="47" lean-forward="false" selection-start-line="608" selection-start-column="44" selection-end-line="608" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

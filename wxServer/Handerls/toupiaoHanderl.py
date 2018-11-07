@@ -3,6 +3,7 @@ import json
 import time
 import tornado
 import pojcetm
+import uuid
 class toupiaoHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
@@ -46,4 +47,20 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             self.auto()
 
     def post(self):
-        pass
+        openid = self.get_cookie("openid")
+        userid= self.get_argument("userid", None)
+        if userid and openid:
+            try:
+                self.db_linck()
+                couers=self.Mongodb["tpUser"].find_one({"userid":userid})
+
+                order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
+                         "username":couers["name"],"money":0, "liwu":0 ,"num":0,
+                         "votenum":3, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
+                self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 3}});
+                self.Mongodb["Ordel"].insert_one(order)
+                self.write(json.dumps({"status": 1, "msg": "成功"}))
+            except Exception as e:
+                self.write(json.dumps({"status": 500, "msg": "数据库错误"}))
+        else:
+            self.write(json.dumps({"status": 0, "msg": "没有openid"}))

@@ -40,7 +40,7 @@
 <div class="container container-fill" style="padding-top:36px;">
     <div class="notice">
         <marquee style="WIDTH: 100%; HEIGHT: 18px" scrollamount="6" Align="Middle" hspace="0" direction="Left">
-            2018年度广西东兴市C &quot;放心食品商户&quot;评选活动大赛，这是一个商家联合宣传推广的活动，这是一个微友们点评心中诚信商家的活动，这是商家与商家、商家与客户的互动
+            {{data["titile"]}}}
         </marquee>
     </div>
     <div id="carousel-container" class="carousel slide">
@@ -513,11 +513,11 @@
         亲，再给我加加油！
     </p>
 
-    <a href="./index.php?i=25&c=entry&rid=5198&id=419063&do=gift&m=tyzm_diamondvote" class="success-btn green">
+    <a href="/wx/paly?uuid={{data["uuid"]}}&userid={{data["userid"]}}"" class="success-btn green">
         送钻石
     </a>
 
-    <a href="./index.php?i=25&c=entry&rid=5198&do=index&m=tyzm_diamondvote" class="success-btn">
+    <a href="/wx/wxindex?uuid={{data["uuid"]}}}" class="success-btn">
         返回首页
     </a>
     <!-- <div class="success-other">
@@ -570,7 +570,7 @@
             if (!$(e.target).parents('#mpanel1').length) $(this).hide();
         });
         $("#mytoupiao").click(function () {
-            $('.mpanell-shade').show();
+          submitFn()
         });
 
         $('#carousel-example-generic').find('img').css('cursor', 'pointer');
@@ -594,9 +594,9 @@
                 $.ajax({
                     type: "POST",
                     url: "/toupiao?userid={{data["userid"]}}",
-                    data: {"latitude": latitude, "longitude": longitude, "verify": verify},
                     success: function (str) {
                         hidemod("loadingToast");
+                        str=JSON.parse(str)
                         if (str != null && str != '') {
                             if (str.status == 1) {
                                 $(".votenum").html(Number($(".votenum").html()) + 1);
