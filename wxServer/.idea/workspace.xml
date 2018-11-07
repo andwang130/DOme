@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+            <state relative-caret-position="250">
+              <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="23" />
               <folding>
                 <marker date="1541617973919" expanded="true" signature="771:777" ph=" " />
                 <marker date="1541617973919" expanded="true" signature="777:783" ph=" " />
@@ -112,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="38" />
+            <state relative-caret-position="307">
+              <caret line="136" column="2" lean-forward="true" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -161,8 +161,8 @@
       <find>v</find>
       <find>thumbnail</find>
       <find>img_on_cliek</find>
-      <find>btn-default</find>
       <find>keyword</find>
+      <find>btn-default</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -201,9 +201,9 @@
         <option value="$PROJECT_DIR$/../staticfile/addTpuser.html" />
         <option value="$PROJECT_DIR$/../staticfile/addTpuser.js" />
         <option value="$PROJECT_DIR$/../staticfile/upload.js" />
-        <option value="$PROJECT_DIR$/../staticfile/index.html" />
         <option value="$PROJECT_DIR$/../dome_server/handel/Poject.py" />
         <option value="$PROJECT_DIR$/../staticfile/index.js" />
+        <option value="$PROJECT_DIR$/../staticfile/index.html" />
       </list>
     </option>
   </component>
@@ -847,22 +847,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="66" column="8" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        <state relative-caret-position="250">
+          <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="23" />
           <folding>
             <marker date="1541617973919" expanded="true" signature="771:777" ph=" " />
             <marker date="1541617973919" expanded="true" signature="777:783" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="136" column="2" lean-forward="true" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
