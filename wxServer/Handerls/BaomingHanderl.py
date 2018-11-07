@@ -71,7 +71,6 @@ class baoming(Basehanderl.Basehandelr):
         if uuid_:
             for i in pojcetm.Tpuser:
                 data[i] = self.get_argument(i, "")
-        print(self.get_argument("picturearr"))
         data["uuid"] = uuid_
         data["liwu"] = 0
         data["createtime"] = time.time()
