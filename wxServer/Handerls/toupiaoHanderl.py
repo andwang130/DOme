@@ -21,7 +21,19 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.db_linck()
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
                 usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
-                data={}
+                coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum": 1 }).sort([("votenum",-1)])
+                data = {}
+                i=0
+                for i in coureslist:
+                    if i["userid"]==userid:
+                        if i!=0:
+                            data["index"]=i+1
+                            data["subvotenum"]=coureslist[i-1]["votenum"]-usercoures["votenum"]
+                        else:
+                            data["index"] = 1
+                            data["subvotenum"] =0
+                        break;
+                    i+=1
                 data["titile"] = coures["titile"]
                 data["name"]=usercoures["name"]
                 data["index"]=usercoures["index"]
@@ -57,8 +69,8 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
 
                 order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
                          "username":couers["name"],"money":0, "liwu":0 ,"num":0,
-                         "votenum":3, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
-                self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 3}});
+                         "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
+                self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                 self.Mongodb["Ordel"].insert_one(order)
                 self.write(json.dumps({"status": 1, "msg": "成功"}))
             except Exception as e:

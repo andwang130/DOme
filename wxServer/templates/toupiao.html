@@ -496,11 +496,11 @@
 
         <div class="divitem">
             <span><i class="glyphicon glyphicon-user"></i> 当前排名</span>
-            <span>1</span>
+            <span>{{data["index"]}}}</span>
         </div>
         <div class="divitem">
             <span><i class="glyphicon glyphicon-thumbs-up"></i> 票数</span>
-            <span class="votenum">352</span>
+            <span class="votenum">{{data["votenum"]}}</span>
         </div>
 
         <!--<div class="divitem"> -->
@@ -509,7 +509,7 @@
         <!-- </div>-->
     </div>
     <p class="success-hint">
-        距离上一名只有 <span>0</span>票</br>
+        距离上一名只有 <span>{{data["subvotenum"]}}</span>票</br>
         亲，再给我加加油！
     </p>
 
