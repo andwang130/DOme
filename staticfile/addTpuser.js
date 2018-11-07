@@ -61,10 +61,23 @@ function  get_info(uuid,userid) {
 }
 function sudbit_click() {
     var name=$("#name").val()
+    if(!name)
+    {
+        alert("姓名必填")
+    }
     var votenum=$("#votenum").val()
     var phone=$("#phone").val()
+    if(!phone)
+    {
+         alert("手机必填")
+    }
     var description=$("#description").val()
     var vheat=$("#vheat").val()
+    if(!vheat)
+    {
+        alert("至少一张图片")
+    }
+
     var avatar=$("#avatar").attr("src")
     var images1=$("#images1").attr("src")
     var images2=$("#images2").attr("src")
