@@ -45,6 +45,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                     self.render("index.html",data=data,aseedata=aseedata,share=shares)
         else:
             self.auto()
+            raise tornado.gen.Return()
     def on_callback(self):
         pass
 class Getlist(Basehanderl.Basehandelr):
