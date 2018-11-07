@@ -4,9 +4,7 @@ var action=""
 var uuid=""
 $(document).ready(
     function () {
-          KindEditor.ready(function(K) {
-                window.editor = K.create('#customized');
-        });
+
     $("#topimg").change(upload_img)
     $("#shareimg").change(upload_img)
     $("#himg").change(upload_img)
