@@ -59,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="17" />
+            <state relative-caret-position="199">
+              <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="389" column="43" lean-forward="false" selection-start-line="389" selection-start-column="43" selection-end-line="389" selection-end-column="43" />
+            <state relative-caret-position="275">
+              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -88,16 +88,16 @@
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#em#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#34486#34492#0" expanded="true" />
-                <element signature="e#34492#34498#0" expanded="true" />
-                <element signature="e#34543#34549#0" expanded="true" />
-                <element signature="e#34549#34555#0" expanded="true" />
-                <marker date="1541577203872" expanded="true" signature="24511:24529" ph="..." />
-                <marker date="1541577203872" expanded="true" signature="24561:24579" ph="..." />
-                <marker date="1541577203872" expanded="true" signature="25929:25939" ph="..." />
-                <marker date="1541577203872" expanded="true" signature="26118:26129" ph="..." />
-                <marker date="1541577203872" expanded="true" signature="26308:26322" ph="..." />
-                <marker date="1541577203872" expanded="true" signature="32032:32065" ph="..." />
+                <element signature="e#31496#31502#0" expanded="true" />
+                <element signature="e#31502#31508#0" expanded="true" />
+                <element signature="e#31553#31559#0" expanded="true" />
+                <element signature="e#31559#31565#0" expanded="true" />
+                <marker date="1541577462362" expanded="true" signature="21521:21539" ph="..." />
+                <marker date="1541577462362" expanded="true" signature="21571:21589" ph="..." />
+                <marker date="1541577462362" expanded="true" signature="22939:22949" ph="..." />
+                <marker date="1541577462362" expanded="true" signature="23128:23139" ph="..." />
+                <marker date="1541577462362" expanded="true" signature="23318:23332" ph="..." />
+                <marker date="1541577462362" expanded="true" signature="29042:29075" ph="..." />
               </folding>
             </state>
           </provider>
@@ -156,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>follow</find>
-      <find>picturearr</find>
       <find>http://tp-dl3.xcx2.top/images/25/2018/10/mUW00H2yHszUU2huSzuyyY4Luu00h4.jp</find>
       <find>error</find>
       <find>mpanell-shade</find>
@@ -186,6 +184,8 @@
       <find>tiemstatr</find>
       <find>timestart</find>
       <find>strt</find>
+      <find>钻石投票</find>
+      <find>nav navbar-nav navbar-right</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -383,12 +383,12 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.3304721" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.3304721" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33154505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33154505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.6695279" order="1" side_tool="false" content_ui="tabs" />
@@ -862,10 +862,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="94" column="27" lean-forward="true" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="389" column="43" lean-forward="false" selection-start-line="389" selection-start-column="43" selection-end-line="389" selection-end-column="43" />
+        <state relative-caret-position="275">
+          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -880,25 +888,17 @@
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#em#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34486#34492#0" expanded="true" />
-            <element signature="e#34492#34498#0" expanded="true" />
-            <element signature="e#34543#34549#0" expanded="true" />
-            <element signature="e#34549#34555#0" expanded="true" />
-            <marker date="1541577203872" expanded="true" signature="24511:24529" ph="..." />
-            <marker date="1541577203872" expanded="true" signature="24561:24579" ph="..." />
-            <marker date="1541577203872" expanded="true" signature="25929:25939" ph="..." />
-            <marker date="1541577203872" expanded="true" signature="26118:26129" ph="..." />
-            <marker date="1541577203872" expanded="true" signature="26308:26322" ph="..." />
-            <marker date="1541577203872" expanded="true" signature="32032:32065" ph="..." />
+            <element signature="e#31496#31502#0" expanded="true" />
+            <element signature="e#31502#31508#0" expanded="true" />
+            <element signature="e#31553#31559#0" expanded="true" />
+            <element signature="e#31559#31565#0" expanded="true" />
+            <marker date="1541577462362" expanded="true" signature="21521:21539" ph="..." />
+            <marker date="1541577462362" expanded="true" signature="21571:21589" ph="..." />
+            <marker date="1541577462362" expanded="true" signature="22939:22949" ph="..." />
+            <marker date="1541577462362" expanded="true" signature="23128:23139" ph="..." />
+            <marker date="1541577462362" expanded="true" signature="23318:23332" ph="..." />
+            <marker date="1541577462362" expanded="true" signature="29042:29075" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
