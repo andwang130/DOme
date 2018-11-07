@@ -40,7 +40,7 @@
 <div class="container container-fill" style="padding-top:36px;">
     <div class="notice">
         <marquee style="WIDTH: 100%; HEIGHT: 18px" scrollamount="6" Align="Middle" hspace="0" direction="Left">
-            {{data["titile"]}}}
+            {{data["titile"]}}
         </marquee>
     </div>
     <div id="carousel-container" class="carousel slide">
@@ -593,7 +593,7 @@
                 loadingToast("投票中");
                 $.ajax({
                     type: "POST",
-                    url: "/toupiao?userid={{data["userid"]}}",
+                    url: "/wx/toupiao?userid={{data["userid"]}}",
                     success: function (str) {
                         hidemod("loadingToast");
                         str=JSON.parse(str)
