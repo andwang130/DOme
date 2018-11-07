@@ -65,13 +65,7 @@ function create_list(data) {
              success: function (arg) {
                  arg = JSON.parse(arg)
 
-                 if (arg["code"] == "0") {
-                     var namelist=JSON.parse(data["namelist"])
-                    for(var i=0;i<namelist.length;i++)
-                    {
-
-                    }
-                 }
+                     window.href="/TPUser.html?uuid="+uuid.uuid
              }
          }
      )

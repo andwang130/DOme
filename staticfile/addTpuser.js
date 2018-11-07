@@ -107,7 +107,7 @@ function sudbit_click() {
 
                      window.href="/TPUser.html?uuid="+uuid.uuid
 
-                 
+
              }
          }
      )
