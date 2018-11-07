@@ -33,7 +33,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                             data["index"] = 1
                             data["subvotenum"] =0
                         break;
-                    i+=1
+                    x+=1
                 data["titile"] = coures["titile"]
                 data["name"]=usercoures["name"]
                 data["index"]=usercoures["index"]
