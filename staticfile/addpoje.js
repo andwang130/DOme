@@ -58,7 +58,7 @@ function get_info(uuid) {
     var sharetitle=$("#sharetitle").val(data["sharetitle"]) //
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]) //
     var sharedesc=$("#sharedesc").val(data["sharedesc"]);//
-    $(":radio[name='rstatus'][value="+data['rstatus']+"]").attr("checked","checked");
+    // $(":radio[name='rstatus'][value="+data['rstatus']+"]").attr("checked","checked");
 
 
 
