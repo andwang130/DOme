@@ -15,7 +15,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         if code:
             openid = self.get_cookie("openid")
             if not openid:
-                newopenid = yield self.get_openid(code)
+                newopenid = yield tornado.gen.Task(self.get_openid,code)
                 self.set_secure_cookie("openid", newopenid)
             if userid and uuid:
                 self.db_linck()
@@ -27,7 +27,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 next_couresl=None
                 for i in coureslist:
                     if i["userid"]==userid:
-
                         if x!=0:
                             print(x)
                             print(userid)
