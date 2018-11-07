@@ -370,8 +370,7 @@ function files_oninpit() {
 
                  data=JSON.parse(str)
 				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+data["useruuid"]
-                }
-            },
+                },
             error: function (err) {
                 hidemod("loadingToast");
                 dialog2("发生错误，请刷新后重试！");
