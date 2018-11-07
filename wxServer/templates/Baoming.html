@@ -221,46 +221,48 @@
     console.log($('input[type="file"]'));
   	$('input[type="file"]')[0].click();
   },10000);
- $(document).ready(function(){
-      $("#files").change(files_oninpit)
-   $('.mpanell-shade').height($(window).height()).hide().click(function(e){ 
-     if(!$(e.target).parents('#mpanel1').length) $(this).hide();
-   });
-   $('body').on('click','input[type="file"]',null,function(){
-   	$('.mpanell-shade').show();
-     return false;
-   })
-   	$('#mpanel1').slideVerify({
-        		type : 1,		//类型
-        		vOffset : 5,	//误差量，根据需求自行调整
-		        barSize : {
-		        	width : '80%',
-		        	height : '40px',
-		        },
-		        ready : function() {
-		    	},
-		        success : function() {
- 
-                  $('.mpanell-shade').remove();
-                  $('body').off('click','input[type="file"]');
-		        	//......后续操作
-		        },
-		        error : function() {
+ $(document).ready(function()
+ {
+     $("#files").change(files_oninpit)
+     $('.mpanell-shade').height($(window).height()).hide().click(function (e) {
+         if (!$(e.target).parents('#mpanel1').length) $(this).hide();
+     });
+     $('body').on('click', 'input[type="file"]', null, function () {
+         $('.mpanell-shade').show();
+         return false;
+     })
+     $('#mpanel1').slideVerify({
+         type: 1,		//类型
+         vOffset: 5,	//误差量，根据需求自行调整
+         barSize: {
+             width: '80%',
+             height: '40px',
+         },
+         ready: function () {
+         },
+         success: function () {
+
+             $('.mpanell-shade').remove();
+             $('body').off('click', 'input[type="file"]');
+             //......后续操作
+         },
+         error: function () {
 //		        	alert('验证失败！');
-		        }
-		        
-		    });
-	  var images = {
-	       localId: [],
-	       serverId: []
-	     };
-		 
-	    $("#chooseImages").click(function(){
+         }
+
+     });
+     var images = {
+         localId: [],
+         serverId: []
+     };
+       $("#chooseImages").click(function(){
 
 	        $("#files").click()
 
 
 		})
+ }
+
 function files_oninpit() {
         var fiels= $("#files").prop('files');
         console.log(fiels)
