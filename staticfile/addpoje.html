@@ -9,8 +9,9 @@
 	<meta name="description" content="" />
 	<link rel="shortcut icon" href="./resource/images/favicon.ico" />
 	<link href="./resource/css/bootstrap.min.css?v=20170426" rel="stylesheet">
+		<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
+
 	<link href="./resource/css/common.css?v=20170426" rel="stylesheet">
-	<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/umit.js"></script>
 	<script type="text/javascript">
 	if(navigator.appName == 'Microsoft Internet Explorer'){
@@ -41,8 +42,8 @@
 		<!--<link rel="stylesheet" href="./css/trumbowyg.css">-->
 	<!--<script type="text/javascript" src="jquery-1.4.4.min.js"></script>-->
 <!--<script type="text/javascript" src="xheditor-1.1.14-zh-cn.min.js"></script>-->
-
-
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
 
 
 </head>
@@ -766,5 +767,9 @@ var gqrt = 0;
 			</div>
 		</div>
 	</body>
-
+<script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#customized');
+        });
+</script>
 </html>
