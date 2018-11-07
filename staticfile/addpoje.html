@@ -44,7 +44,7 @@
 <!--<script type="text/javascript" src="xheditor-1.1.14-zh-cn.min.js"></script>-->
 	<script charset="utf-8" src="/editor/kindeditor.js"></script>
 <script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
-
+<link rel="stylesheet" href="/editor/themes/default/default.css">
 
 </head>
 <body>
@@ -780,8 +780,8 @@ var gqrt = 0;
 		</style>
 <script>
         KindEditor.ready(function(K) {
-                K.create('#customized');
-                K.create("#buttonpane");
+                K.create('#customized',{urlType : 'relative'});
+                K.create("#buttonpane",{urlType : 'absolute'});
         });
 </script>
 </html>
