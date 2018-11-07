@@ -30,11 +30,11 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                         if x!=0:
                             print(type(usercoures["votenum"]))
                             data["index"]=x+1
-                            data["subvotenum"]=next_couresl["votenum"]-usercoures["votenum"]
+                            data["subvotenum"]=(next_couresl["votenum"]-usercoures["votenum"])
                         else:
                             data["index"] = 1
-                            data["subvotenum"] =0
-                        break;
+                            data["subvotenum"]=0
+                    break;
                     next_couresl=i
                     x+=1
                 data["titile"] = coures["titile"]
