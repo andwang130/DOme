@@ -32,8 +32,7 @@ function get_info(uuid) {
         success: function (arg)
         {
             arg=JSON.parse(arg)
-
-            if(arg["code"]=="0")
+    if(arg["code"]=="0")
     {
     var data=arg["data"]
         var titile=$("#titile").val(data["titile"]);
@@ -68,21 +67,7 @@ function get_info(uuid) {
         console.log(liwus)
     for(var i=0;i<liwus.length;i++)
     {
-       html="<tr name='liwus'>\n" +
-        "\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入名称\" value=\""+liwus[i]["gifttitle"]+"\" class=\"form-control\" name=\"gifttitle\"></td>\n" +
-        "\t\t<td><div class=\"adimgbo\"><a  href=\"#\" class=\"tttt\"><img src=\"/"+liwus[i]["gifimg"]+"\"  height=\"30\"><input type=\"hidden\" value=\"/images/diamond.png\" name=\"gifticon\"></a></div></td>\n" +
-        "\t\t<td class=\"text-left\" ><div class=\"input-group\">\n" +
-        "          <input type=\"text\" placeholder=\"输入支付价格\" value=\""+liwus[i]["giftprice"]+"\" class=\"form-control\" name=\"giftprice\">\n" +
-        "\t\t  <span class=\"input-group-addon\">元</span>\n" +
-        "        </div></td>\n" +
-        "\t\t<td class=\"text-left\" >\n" +
-        "\t\t<div class=\"input-group\">\n" +
-        "          <input type=\"text\" placeholder=\"输入礼物奖励的票数\" value=\""+liwus[i]["giftvote"]+"\" class=\"form-control\" name=\"giftvote\">\n" +
-        "        </div>\n" +
-        "\t\t</td>\n" +
-        "\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
-        "\t</tr>"
-        $("#js-table-2").append(html);
+     liwu_init(liwus[i]["gifttitle"],liwus[i]["gifimg"],liwus[i]["giftprice"],liwus[i]["giftvote"])
     }
 
 
