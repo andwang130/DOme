@@ -11,13 +11,13 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code",None)
         if code:
+            print("sdsdsdsdssdsd" * 2)
             openid = self.get_cookie("openid")
             if not openid:
                 newopenid = self.get_openid1(code)
                 self.set_secure_cookie("openid", newopenid)
             if userid and uuid:
                 self.db_linck()
-                print("sdsdsdsdssdsd"*2)
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
                 usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
                 coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum":1 }).sort([("votenum",-1)])
