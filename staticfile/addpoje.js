@@ -146,11 +146,8 @@ function submi_send() {
         success: function (arg)
         {
             arg=JSON.parse(arg)
+            window.href="/index.html"
 
-            if(arg["code"]==0)
-            {
-                window.href="/index.html"
-            }
         }
     })
 }
