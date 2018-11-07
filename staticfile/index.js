@@ -61,7 +61,7 @@ $(document).ready(
     function () {
 
         get_list(1)
-        $(".btn-default").click()
+        $(".btn-default").click(set_key)
     }
 )
 var key;
