@@ -359,7 +359,7 @@ function files_oninpit() {
                 "picturearr": upimages}
       	for(var i=0;i<length;i++)
 		{
-			data["images"+i+1]=bmimg[i].attr("src")
+			data["images"+(i+1).toString()]=bmimg[i].attr("src")
 		}
         $.ajax({
             type: "POST",
