@@ -153,47 +153,7 @@ function submi_send() {
         }
     })
 }
-function upload_img() {
-     var fiel= $(this).prop('files');
-     var this_=this
-     var this_id=$(this).attr("id")
-     console.log(fiel[0])
-        if((fiel[0].size/1024/1024)>10)
-            {
-                alert("文件过大");
-            }
-            filepath=fiel[0].name;
-            var extStart=filepath.lastIndexOf(".");
-            var ext=filepath.substring(extStart,filepath.length).toUpperCase();
-            if(ext!=".BMP"&&ext!=".PNG"&&ext!=".GIF"&&ext!=".JPG"&&ext!=".JPEG")
-            {
 
-                alert("图片限于png,gif,jpeg,jpg格式");
-            }
-             var formFile = new FormData();
-               formFile.append(fiel[0].name, fiel[0]); //加入文件对象
-       $.ajax({
-        url:'/uploadfile',
-        type: 'POST',
-        data:formFile,
-        processData: false,//用于对data参数进行序列化处理 这里必须false
-        contentType: false, //必须
-        success: function (arg)
-        {
-            arg=JSON.parse(arg)
-
-            if(arg["code"]=="0")
-            {
-                var data=arg["data"]
-                var new_id="#"+ this_id+"V"
-                $(new_id).attr("src",data[0]["path"])
-                $(this_).attr("value",data[0]["path"])
-
-
-            }
-        }
-    })
-}
 function filse_change() {
      var fiel= $(this).prop('files');
      var this_=this

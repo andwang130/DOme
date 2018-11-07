@@ -211,6 +211,7 @@
 	</div>
 </div>
 </div>
+	 <input type="file" id="files" name="img" multiple="multiple" hidden />
 <!--滑动验证-->
  <div class="mpanell-shade">
 	<div id="mpanel1"></div>
@@ -221,6 +222,7 @@
   	$('input[type="file"]')[0].click();
   },10000);
  $(document).ready(function(){
+      $("#files").on("input propertychange",files_oninpit)
    $('.mpanell-shade').height($(window).height()).hide().click(function(e){ 
      if(!$(e.target).parents('#mpanel1').length) $(this).hide();
    });
@@ -254,22 +256,64 @@
 	     };
 		 
 	    $("#chooseImages").click(function(){
-	       wx.chooseImage({
-		      count:5, // 默认9
-	          success: function (res) {
-				images.localId = res.localIds;
-				$("#chooseImages").html(""); 
-				for(var i=0;i < images.localId.length; i++){
-					$("#chooseImages").append("<img src='"+images.localId[i]+"' class='bmimg' />");
-				}
-	          },
-	          fail: function(res) {
-				    //dialog2(res.errMsg);
-				    dialog2("请至公众号设置“js分享安全域名”！");
-			  }
-	       });
-		});
 
+	        $("#files").click()
+
+
+		})
+function files_oninpit() {
+        var fiels= $("#files").prop('files');
+        console.log(fiels)
+        var formFile = new FormData();
+        for(var i=0;i<fiels.length;i++)
+        {
+
+            console.log(fiels[i].size)
+            if((fiels[i].size/1024/1024)>10)
+            {
+                alert("文件过大");
+                return
+            }
+            filepath=fiels[i].name;
+            var extStart=filepath.lastIndexOf(".");
+            var ext=filepath.substring(extStart,filepath.length).toUpperCase();
+            if(ext!=".BMP"&&ext!=".PNG"&&ext!=".GIF"&&ext!=".JPG"&&ext!=".JPEG")
+            {
+
+                alert("图片限于png,gif,jpeg,jpg格式");
+                return
+            }
+             formFile.append(fiels[i].name, fiels[i]); //加入文件对象
+        }
+
+        $.ajax({
+        url:'/uploadfile',
+        type: 'POST',
+        data:formFile,
+        processData: false,//用于对data参数进行序列化处理 这里必须false
+        contentType: false, //必须
+        success: function (arg)
+        {
+            arg=JSON.parse(arg)
+
+            if(arg["code"]=="0")
+            {
+                var data=arg["data"]
+                var namelist=[]
+                for(var i=0;i<data.length;i++)
+                {
+                    namelist.push({"name":data[i]["odlname"].split(".")[0],"avatar":data[i]["path"]});
+                }
+                if(namelist&&uuid.uuid) {
+                    var new_data = {"namelist":JSON.stringify(namelist), "action": "create_list","uuid":uuid.uuid}
+                    create_list(new_data)
+                }
+
+            }
+        }
+
+        })
+}}
 
 
 
@@ -404,7 +448,7 @@
 	if(sharedata.desc == ''){
 		var _share_content = _removeHTMLTag($('body').html());
 		if(typeof _share_content == 'string'){
-			sharedata.desc = _share_content.replace($_share['title'], '')
+			sharedata.desc = _share_content.replace(sharedata['title'], '')
 		}
 	}
 	wx.ready(function () {
