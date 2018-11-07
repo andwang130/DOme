@@ -31,7 +31,7 @@
 	}
 
 	// jssdk config 对象
-	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
+   jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};	// 是否启用调试
 	jssdkconfig.debug = false;
 	jssdkconfig.jsApiList = [
 		'checkJsApi',
@@ -413,6 +413,9 @@
 		wx.onMenuShareQQ(sharedata);
 		wx.onMenuShareWeibo(sharedata);
 	});
+	wx.error(function(res){
+	    alert(res)
+});
 	sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
