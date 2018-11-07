@@ -104,12 +104,10 @@ function sudbit_click() {
              type: 'POST',
              data: data,
              success: function (arg) {
-                 arg = JSON.parse(arg)
 
-                 if (arg["code"] == "0") {
                      window.href="/TPUser.html?uuid="+uuid.uuid
 
-                 }
+                 
              }
          }
      )
