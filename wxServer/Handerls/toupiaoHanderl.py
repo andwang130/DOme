@@ -8,10 +8,10 @@ import uuid
 class toupiaoHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
-
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         code = self.get_argument("code", None)
+        print(code)
         if code:
             openid = self.get_cookie("openid")
             if not openid:
