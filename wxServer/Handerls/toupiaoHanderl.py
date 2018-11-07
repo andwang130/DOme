@@ -6,7 +6,6 @@ import tornado
 import pojcetm
 import uuid
 class toupiaoHanderl(Basehanderl.Basehandelr):
-    @tornado.gen.coroutine
     def get(self):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
@@ -14,7 +13,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         if code:
             openid = self.get_cookie("openid")
             if not openid:
-                newopenid = yield tornado.gen.Task(self.get_openid,code)
+                newopenid = self.get_openid1(code)
                 self.set_secure_cookie("openid", newopenid)
             if userid and uuid:
                 self.db_linck()
@@ -36,7 +35,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                         else:
                             data["index"] = 1
                             data["subvotenum"]=0
-                        break;
+                        break
                     next_couresl=i
                     x+=1
                 data["titile"] = coures["titile"]
@@ -63,7 +62,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()
-
+            raise tornado.gen.Return()
     def post(self):
         openid = self.get_cookie("openid")
         userid= self.get_argument("userid", None)

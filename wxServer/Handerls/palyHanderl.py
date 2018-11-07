@@ -48,3 +48,4 @@ class palyHanderl(Basehanderl.Basehandelr):
                 self.render("paly.html", data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()
+            raise tornado.gen.Return()

@@ -67,3 +67,4 @@ class SortHanderl(Basehanderl.Basehandelr):
         else:
             self.auto()
 
+            raise tornado.gen.Return()

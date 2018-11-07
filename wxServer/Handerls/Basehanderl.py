@@ -6,6 +6,7 @@ import urllib
 from Handerls.pojcetm  import wxcongif,www
 import pojcetm
 import json
+import requests
 class Basehandelr(RequestHandler):
     def set_default_headers(self):  # 设置headers
         pass
@@ -32,3 +33,10 @@ class Basehandelr(RequestHandler):
         rq_json = json.loads(req.body)
         openid = rq_json["openid"]
         raise tornado.gen.Return(openid)
+
+    def get_openid1(self, code):
+        url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
+            pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
+        rq_json=requests.get(url).json()
+        openid = rq_json["openid"]
+        return openid
