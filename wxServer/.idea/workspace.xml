@@ -49,21 +49,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="190">
+              <caret line="230" column="64" lean-forward="true" selection-start-line="230" selection-start-column="64" selection-end-line="230" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="776" column="16" lean-forward="false" selection-start-line="776" selection-start-column="16" selection-end-line="776" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="774" column="18" lean-forward="true" selection-start-line="774" selection-start-column="18" selection-end-line="774" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -156,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mpanell-shade</find>
-      <find>btn_bg_green</find>
       <find>chooseImages</find>
       <find>mpanel1</find>
       <find>mytoupiao</find>
@@ -184,8 +182,10 @@
       <find>strt</find>
       <find>钻石投票</find>
       <find>nav navbar-nav navbar-right</find>
-      <find>text</find>
       <find>buttonpane</find>
+      <find>text</find>
+      <find>filse</find>
+      <find>filse_change</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -223,8 +223,8 @@
         <option value="$PROJECT_DIR$/../staticfile/usorder.html" />
         <option value="$PROJECT_DIR$/../staticfile/votedata.html" />
         <option value="$PROJECT_DIR$/../staticfile/upload.js" />
-        <option value="$PROJECT_DIR$/../staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
+        <option value="$PROJECT_DIR$/../staticfile/addpoje.js" />
       </list>
     </option>
   </component>
@@ -838,14 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/addTpuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/addTpuser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -862,18 +854,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="776" column="16" lean-forward="false" selection-start-line="776" selection-start-column="16" selection-end-line="776" selection-end-column="16" />
+        <state relative-caret-position="144">
+          <caret line="774" column="18" lean-forward="true" selection-start-line="774" selection-start-column="18" selection-end-line="774" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -899,6 +883,22 @@
             <marker date="1541581198558" expanded="true" signature="23824:23838" ph="..." />
             <marker date="1541581198558" expanded="true" signature="29548:29581" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addTpuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="230" column="64" lean-forward="true" selection-start-line="230" selection-start-column="64" selection-end-line="230" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

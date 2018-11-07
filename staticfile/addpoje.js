@@ -221,12 +221,12 @@ function tttt_click() {
 
 }
 function btn_add_liwu() {
-        liwu_init("钻石","images/diamond.png",1,3)
+        liwu_init("钻石","/images/diamond.png",1,3)
 }
 function liwu_init (gifttitle,gifimg,giftprice,giftvote) {
      html="<tr name='liwus'>\n" +
         "\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入名称\" value=\""+gifttitle+"\" class=\"form-control\" name=\"gifttitle\"></td>\n" +
-        "\t\t<td><div class=\"adimgbo\"><a  href=\"#\" class=\"tttt\"><img src=\"/"+gifimg+"\"  height=\"30\"><input type=\"hidden\" value=\"/images/diamond.png\" name=\"gifticon\"></a></div></td>\n" +
+        "\t\t<td><div class=\"adimgbo\"><a  href=\"#\" class=\"tttt\"><img src=\""+gifimg+"\"  height=\"30\"><input type=\"hidden\" value=\"/images/diamond.png\" name=\"gifticon\"></a></div></td>\n" +
         "\t\t<td class=\"text-left\" ><div class=\"input-group\">\n" +
         "          <input type=\"text\" placeholder=\"输入支付价格\" value=\""+giftprice+"\" class=\"form-control\" name=\"giftprice\">\n" +
         "\t\t  <span class=\"input-group-addon\">元</span>\n" +
