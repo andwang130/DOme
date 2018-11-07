@@ -9,39 +9,44 @@ class baoming(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
         uuid=self.get_argument("uuid","")
-
         code = self.get_argument("code", None)
+        openid = self.get_secure_cookie("openid")
+        if openid:
+            self.rq(uuid)
+            raise tornado.gen.Return()
         if code:
-            openid = self.get_cookie("openid")
             if not openid:
                 newopenid = yield self.get_openid(code)
                 self.set_secure_cookie("openid", newopenid)
-            if uuid:
-                self.db_linck()
-                coures=self.Mongodb["poject"].find_one({"uuid":uuid})
-                data={}
-                data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
-                data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
-                data["aptimestart"] = coures["aptimestart"]
-                data["aptimeend"] = coures["aptimeend"]
-                data["notice"] = coures["titile"]
-                data["volume"] = coures["volume"]
-                data["votes"] = coures["votes"]
-                data["titile"] = coures["titile"]
-                data["uuid"] = coures["uuid"]
-                data["topimgV"] = coures["topimgV"]
-                data["customized"] = coures["customized"]
-
-                shares = {}
-                shares["sharetitle"] = coures["sharetitle"]
-                shares["shareimgV"] = coures["shareimgV"]
-                shares["sharedesc"] = coures["sharedesc"]
-                shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
-
-                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-                self.render("Baoming.html", data=data,aseedata=aseedata,share=shares)
+            self.rq(uuid)
+            raise tornado.gen.Return()
         else:
             self.auto()
+    def rq(self,uuid):
+        if uuid:
+            self.db_linck()
+            coures = self.Mongodb["poject"].find_one({"uuid": uuid})
+            data = {}
+            data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimestart"] = coures["aptimestart"]
+            data["aptimeend"] = coures["aptimeend"]
+            data["notice"] = coures["titile"]
+            data["volume"] = coures["volume"]
+            data["votes"] = coures["votes"]
+            data["titile"] = coures["titile"]
+            data["uuid"] = coures["uuid"]
+            data["topimgV"] = coures["topimgV"]
+            data["customized"] = coures["customized"]
+
+            shares = {}
+            shares["sharetitle"] = coures["sharetitle"]
+            shares["shareimgV"] = coures["shareimgV"]
+            shares["sharedesc"] = coures["sharedesc"]
+            shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
+            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            self.render("Baoming.html", data=data, aseedata=aseedata, share=shares)
     def post(self):
 
         data = {}

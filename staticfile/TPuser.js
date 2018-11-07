@@ -39,7 +39,7 @@ function  get_user(page) {
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">"+data[i]["vheat"]+"</span></td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">0.00</span></td>\n" +
-                                "\t\t\t\t\t<td class=\"text-left vertical-middle\">"+data[i]["createtime"]+"</td>\n" +
+                                "\t\t\t\t\t<td class=\"text-left vertical-middle\">"+getLocalTime(data[i]["createtime"])+"</td>\n" +
                                 "                    <td class=\"text-left vertical-middle\">\n" +
                                 "                    <p>\n" +
                                 "                    <span class=\"label label-success audit\" data-id=\"262592\" data-s=\"0\">已审核</span>\t\t\t\t\t<span class=\"label label-success lock\" data-id=\"262592\" data-s=\"0\"title=\"点击锁定\">非锁定</span>\t\t\t\t\t<span class=\"label label-danger clearposter\" data-id=\"262592\" title=\"点击清除个人海报\"title=\"点击锁定\">清除海报</span></p></td>\n" +

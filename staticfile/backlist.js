@@ -47,7 +47,7 @@ function backlit_init(data) {
         var id_td = "<td>" + data[i]["blackid"] + "</td>";
         var value_td="<td>" + data[i]["value"] + "</td>";
         var start_td="<td>" + data[i]["start"] + "</td>";
-        var times_td="<td>" + data[i]["times"] + "</td>";
+        var times_td="<td>" +getLocalTime(data[i]["times"]) + "</td>";
         var HTML='<tr>'+id_td+value_td+times_td+start_td+'</tr>'
         $("#body").append(HTML)
     }

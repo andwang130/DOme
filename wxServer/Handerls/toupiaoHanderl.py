@@ -11,58 +11,65 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         code = self.get_argument("code",None)
-        if code:
-            openid = self.get_cookie("openid")
+        openid = self.get_secure_cookie("openid")
+        if openid:
+            self.rq(uuid,userid)
+            raise tornado.gen.Return()
+        elif code:
             if not openid:
                 newopenid = yield tornado.gen.Task(self.get_openid,code)
                 self.set_secure_cookie("openid", newopenid)
-            if userid and uuid:
-                self.db_linck()
-                coures=self.Mongodb["poject"].find_one({"uuid":uuid})
-                usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
-                coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum":1 }).sort([("votenum",-1)])
-                data = {}
-                x=0
-                next_couresl=None
-                for i in coureslist:
-                    if i["userid"]==userid:
-                        if x!=0:
-                            print(x)
-                            print(userid)
-                            print(type(usercoures["votenum"]))
-                            data["index"]=x+1
-                            data["subvotenum"]=int(next_couresl["votenum"])-int(usercoures["votenum"])
-                        else:
-                            data["index"] = 1
-                            data["subvotenum"]=0
-                        break
-                    next_couresl=i
-                    x+=1
-                data["titile"] = coures["titile"]
-                data["name"]=usercoures["name"]
-                data["index"]=usercoures["index"]
-                data["votenum"]=usercoures["votenum"]
-                data["avatar"]=usercoures["avatar"]
-                data["userid"]=userid
-                data["uuid"]=uuid
-                data["description"]=usercoures["description"]
-                imgs=[]
-                for i in ["images1" ,"images2","images3","images4","images5"]:
-                    if usercoures[i]!="":
-                        imgs.append(usercoures[i])
-                data["imgse"]=imgs
-                shares = {}
-                shares["sharetitle"] = coures["sharetitle"]
-                shares["shareimgV"] = coures["shareimgV"]
-                shares["sharedesc"] = coures["sharedesc"]
-                shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
-
-                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-
-                self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
+            self.rq(uuid, userid)
+            raise tornado.gen.Return()
         else:
             self.auto()
             raise tornado.gen.Return()
+    def rq(self,uuid,userid):
+        if userid and uuid:
+            self.db_linck()
+            coures = self.Mongodb["poject"].find_one({"uuid": uuid})
+            usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
+            coureslist = self.Mongodb["tpUser"].find({"uuid": uuid}, {"userid": 1, "votenum": 1}).sort(
+                [("votenum", -1)])
+            data = {}
+            x = 0
+            next_couresl = None
+            for i in coureslist:
+                if i["userid"] == userid:
+                    if x != 0:
+                        print(x)
+                        print(userid)
+                        print(type(usercoures["votenum"]))
+                        data["index"] = x + 1
+                        data["subvotenum"] = int(next_couresl["votenum"]) - int(usercoures["votenum"])
+                    else:
+                        data["index"] = 1
+                        data["subvotenum"] = 0
+                    break
+                next_couresl = i
+                x += 1
+            data["titile"] = coures["titile"]
+            data["name"] = usercoures["name"]
+            data["index"] = usercoures["index"]
+            data["votenum"] = usercoures["votenum"]
+            data["avatar"] = usercoures["avatar"]
+            data["userid"] = userid
+            data["uuid"] = uuid
+            data["description"] = usercoures["description"]
+            imgs = []
+            for i in ["images1", "images2", "images3", "images4", "images5"]:
+                if usercoures[i] != "":
+                    imgs.append(usercoures[i])
+            data["imgse"] = imgs
+            shares = {}
+            shares["sharetitle"] = coures["sharetitle"]
+            shares["shareimgV"] = coures["shareimgV"]
+            shares["sharedesc"] = coures["sharedesc"]
+            shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
+            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+
+            self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
     def post(self):
         openid = self.get_cookie("openid")
         userid= self.get_argument("userid", None)
