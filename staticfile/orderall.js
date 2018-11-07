@@ -55,7 +55,7 @@ function body_init(data) {
         var id_td='<td class="text-left vertical-middle">'+data[i]["orderid"]+'</td>'
         var name_td='<td class="text-left vertical-middle">'+data[i]["username"]+'</td>'
         var num_td='<td class="text-left vertical-middle"><p><span class="label label-primary">'+data[i]["money"]+'</span>/<span class="label label-info">'+data[i]["num"]+'</span>/<span class="label label-warning">'+data[i]["votenum"]+'</span></p></td>'
-        var ip_time_td='<td class="text-left vertical-middle">'+data[i]["times"]+'<p>'+data[i]["ip"]+'</p></td>'
+        var ip_time_td='<td class="text-left vertical-middle">'+getLocalTime(data[i]["times"])+'<p>'+data[i]["ip"]+'</p></td>'
         var start_td;
         var money_td;
         if(data[i]["start"]==1)
