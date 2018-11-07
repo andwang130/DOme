@@ -41,7 +41,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                     shares["sharetitle"]=coures["sharetitle"]
                     shares["shareimgV"]=coures["shareimgV"]
                     shares["sharedesc"]=coures["sharedesc"]
-                    shares["url"]=pojcetm.www+"wx/wxindex?uuid="+coures["uuid"]
+                    shares["url"]=pojcetm.www+pojcetm.www+self.request.uri
 
                     aseedata=pojcetm.get_wxcongif(pojcetm.www+self.request.uri)
                     print(aseedata)

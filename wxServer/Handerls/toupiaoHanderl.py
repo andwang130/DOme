@@ -2,6 +2,7 @@ import Basehanderl
 import json
 import time
 import tornado
+import pojcetm
 class toupiaoHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
@@ -26,7 +27,14 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 data["userid"]=userid
                 data["uuid"]=uuid
                 data["description"]=usercoures["description"]
-                self.render("toupiao.html",data=data)
+
+                shares = {}
+                shares["sharetitle"] = coures["sharetitle"]
+                shares["shareimgV"] = coures["shareimgV"]
+                shares["sharedesc"] = coures["sharedesc"]
+                shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
+                self.render("toupiao.html",data=data,shares=shares)
         else:
             self.auto()
 

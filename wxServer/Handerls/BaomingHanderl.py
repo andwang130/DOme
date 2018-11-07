@@ -29,8 +29,15 @@ class baoming(Basehanderl.Basehandelr):
                 data["uuid"] = coures["uuid"]
                 data["topimgV"] = coures["topimgV"]
                 data["customized"] = coures["customized"]
+
+                shares = {}
+                shares["sharetitle"] = coures["sharetitle"]
+                shares["shareimgV"] = coures["shareimgV"]
+                shares["sharedesc"] = coures["sharedesc"]
+                shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-                self.render("Baoming.html", data=data,aseedata=aseedata)
+                self.render("Baoming.html", data=data,aseedata=aseedata,shares=shares)
         else:
             self.auto()
     def post(self):

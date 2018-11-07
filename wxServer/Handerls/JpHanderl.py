@@ -1,6 +1,7 @@
 import Basehanderl
 import time
 import tornado
+import pojcetm
 class jphanderl(Basehanderl.Basehandelr):
     def post(self):
         pass
@@ -28,6 +29,13 @@ class jphanderl(Basehanderl.Basehandelr):
                     data["uuid"]=coures["uuid"]
                     data["topimgV"]=coures["topimgV"]
                     data["titile"]=coures["titile"]
-                    self.render("jp.html", data=data)
+
+                    shares = {}
+                    shares["sharetitle"] = coures["sharetitle"]
+                    shares["shareimgV"] = coures["shareimgV"]
+                    shares["sharedesc"] = coures["sharedesc"]
+                    shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
+                    self.render("jp.html", data=data,shares=shares)
         else:
             self.auto()

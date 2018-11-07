@@ -411,39 +411,13 @@ $container.masonry('reload');
 	<script type="text/javascript">
 
 
-$.getJSON("./index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote", function(result) {
-	});
-	wx.config(jssdkconfig);
-	
-	var $_share = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
-	
-	if(typeof sharedata == 'undefined'){
-		sharedata = $_share;
-	} else {
-		sharedata['title'] = sharedata['title'] || $_share['title'];
-		sharedata['desc'] = sharedata['desc'] || $_share['desc'];
-		sharedata['link'] = sharedata['link'] || $_share['link'];
-		sharedata['imgUrl'] = sharedata['imgUrl'] || $_share['imgUrl'];
-	}
-
-	function tomedia(src) {
-		if(typeof src != 'string')
-			return '';
-		if(src.indexOf('http://') == 0 || src.indexOf('https://') == 0) {
-			return src;
-		} else if(src.indexOf('../addons') == 0 || src.indexOf('../attachment') == 0) {
-			src=src.substr(3);
-			return window.sysinfo.siteroot + src;
-		} else if(src.indexOf('./resource') == 0) {
-			src=src.substr(2);
-			return window.sysinfo.siteroot + 'app/' + src;
-		} else if(src.indexOf('images/') == 0) {
-			return window.sysinfo.attachurl+ src;
-		}
-	} 
-	
 
 	
+	var sharedata = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
+	
+
+
+
 	if(sharedata.desc == ''){
 		var _share_content = _removeHTMLTag($('body').html());
 		if(typeof _share_content == 'string'){
@@ -457,8 +431,8 @@ $.getJSON("./index.php?i=25&c=entry&ty=pv&rid=3319&do=Count&m=tyzm_diamondvote",
 		wx.onMenuShareWeibo(sharedata);
 	});
 	sharedata.success = function(){
-			var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
-			$.post(url, function(dat){});
+			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
+			// $.post(url, function(dat){});
 	}
 	$(function(){
 		if($('.js-quickmenu')!=null && $('.js-quickmenu')!=''){

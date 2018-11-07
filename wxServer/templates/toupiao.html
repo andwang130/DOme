@@ -725,60 +725,27 @@
 <script type="text/javascript">
 
 
-    $.getJSON("./index.php?i=25&c=entry&ty=pv&rid=5198&id=419063&do=Count&m=tyzm_diamondvote", function (result) {
-    });
-    wx.config(jssdkconfig);
-
-    var $_share = {
-        "title": "2018\u5e74\u5ea6\u5e7f\u897f\u4e1c\u5174\u5e02C &quot;\u653e\u5fc3\u98df\u54c1\u5546\u6237&quot;\u8bc4\u9009\u6d3b\u52a8\u6d3b\u52a8\u3002",
-        "imgUrl": "http:\/\/tp-dl3.xcx2.top\/images\/25\/2018\/10\/mUW00H2yHszUU2huSzuyyY4Luu00h4.jpg",
-        "desc": "\u514d\u8d39\u62a5\u540d\uff0c\u514d\u8d39\u5ba3\u4f20\uff0c\u514d\u8d39\u63a8\u5e7f\uff0c\u6240\u6709\u672c\u5730\u7684\u5546\u5bb6\u5747\u53ef\u53c2\u52a0\uff0c\u70b9\u51fb\u53c2\u4e0e\uff01",
-        "link": "http:\/\/jadl8.zhaojingl.com\/app\/.\/index.php?i=25&c=entry&id=419063&rid=5198&do=view&m=tyzm_diamondvote"
-    };
-
-    if (typeof sharedata == 'undefined') {
-        sharedata = $_share;
-    } else {
-        sharedata['title'] = sharedata['title'] || $_share['title'];
-        sharedata['desc'] = sharedata['desc'] || $_share['desc'];
-        sharedata['link'] = sharedata['link'] || $_share['link'];
-        sharedata['imgUrl'] = sharedata['imgUrl'] || $_share['imgUrl'];
-    }
-
-    function tomedia(src) {
-        if (typeof src != 'string')
-            return '';
-        if (src.indexOf('http://') == 0 || src.indexOf('https://') == 0) {
-            return src;
-        } else if (src.indexOf('../addons') == 0 || src.indexOf('../attachment') == 0) {
-            src = src.substr(3);
-            return window.sysinfo.siteroot + src;
-        } else if (src.indexOf('./resource') == 0) {
-            src = src.substr(2);
-            return window.sysinfo.siteroot + 'app/' + src;
-        } else if (src.indexOf('images/') == 0) {
-            return window.sysinfo.attachurl + src;
-        }
-    }
+  	var sharedata = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
 
 
-    if (sharedata.desc == '') {
-        var _share_content = _removeHTMLTag($('body').html());
-        if (typeof _share_content == 'string') {
-            sharedata.desc = _share_content.replace($_share['title'], '')
-        }
-    }
-    wx.ready(function () {
-        wx.onMenuShareAppMessage(sharedata);
-        wx.onMenuShareTimeline(sharedata);
-        wx.onMenuShareQQ(sharedata);
-        wx.onMenuShareWeibo(sharedata);
-    });
-    sharedata.success = function () {
-        var url = "./index.php?i=25&c=entry&ty=share&rid=5198&id=419063&do=Count&m=tyzm_diamondvote";
-        $.post(url, function (dat) {
-        });
-    }
+
+
+	if(sharedata.desc == ''){
+		var _share_content = _removeHTMLTag($('body').html());
+		if(typeof _share_content == 'string'){
+			sharedata.desc = _share_content.replace($_share['title'], '')
+		}
+	}
+	wx.ready(function () {
+		wx.onMenuShareAppMessage(sharedata);
+		wx.onMenuShareTimeline(sharedata);
+		wx.onMenuShareQQ(sharedata);
+		wx.onMenuShareWeibo(sharedata);
+	});
+	sharedata.success = function(){
+			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
+			// $.post(url, function(dat){});
+	}
     $(function () {
         if ($('.js-quickmenu') != null && $('.js-quickmenu') != '') {
             var h = $('.js-quickmenu').height() + 'px';

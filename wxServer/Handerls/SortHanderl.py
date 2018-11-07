@@ -2,6 +2,7 @@ import Basehanderl
 import json
 import time
 import tornado
+import pojcetm
 class SortHanderl(Basehanderl.Basehandelr):
     def post(self):
         uuid=self.get_argument("uuid")
@@ -54,7 +55,14 @@ class SortHanderl(Basehanderl.Basehandelr):
                     data["description"] = coures["description"]
                     data["uuid"] = coures["uuid"]
                     data["topimgV"]=coures["topimgV"]
-                    self.render("sort.html", data=data)
+
+                    shares = {}
+                    shares["sharetitle"] = coures["sharetitle"]
+                    shares["shareimgV"] = coures["shareimgV"]
+                    shares["sharedesc"] = coures["sharedesc"]
+                    shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
+                    self.render("sort.html", data=data,shares=shares)
         else:
             self.auto()
 

@@ -1,5 +1,6 @@
 import Basehanderl
 import tornado
+import pojcetm
 class palyHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
@@ -35,6 +36,13 @@ class palyHanderl(Basehanderl.Basehandelr):
                 data["userid"] = userid
                 data["uuid"] = uuid
                 data["description"] = usercoures["description"]
-                self.render("paly.html", data=data)
+
+                shares = {}
+                shares["sharetitle"] = coures["sharetitle"]
+                shares["shareimgV"] = coures["shareimgV"]
+                shares["sharedesc"] = coures["sharedesc"]
+                shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+
+                self.render("paly.html", data=data,shares=shares)
         else:
             self.auto()
