@@ -65,7 +65,7 @@ function create_list(data) {
              success: function (arg) {
                  arg = JSON.parse(arg)
 
-                     window.href="/TPUser.html?uuid="+uuid.uuid
+                     location.href="/TPUser.html?uuid="+uuid.uuid
              }
          }
      )

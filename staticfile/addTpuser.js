@@ -105,7 +105,7 @@ function sudbit_click() {
              data: data,
              success: function (arg) {
 
-                     window.href="/TPUser.html?uuid="+uuid.uuid
+                     location.href="/TPUser.html?uuid="+uuid.uuid
 
 
              }

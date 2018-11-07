@@ -130,7 +130,7 @@ function submi_send() {
         success: function (arg)
         {
             arg=JSON.parse(arg)
-            window.href="/index.html"
+            location.href="/index.html"
 
         }
     })

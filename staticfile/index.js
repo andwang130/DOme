@@ -30,12 +30,10 @@ var tr="  <tr>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <p class=\"color-gray\">参与人数：<span class=\"label label-primary\">{参与人数}</span></p>\n" +
     "            <p class=\"color-gray\">投票数量：<span class=\"label label-default\">{投票数量}</span></p>\n" +
-    "            <p class=\"color-gray\">总投票数量：<span class=\"label label-info\">{总投票}</span></p>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <p class=\"color-gray\">礼物数量：<span class=\"label label-danger \">{礼物数量}元</span></p>\n" +
     "            <p class=\"color-gray\">浏 览 量：<span class=\"label label-success\">{浏览量}</span></p>\n" +
-    "            <p class=\"color-gray\">分 享 量：<span class=\"label label-warning\">{分享量}</span></p>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <a href=\"./TPUser.html?uuid={uuid}\"\n" +

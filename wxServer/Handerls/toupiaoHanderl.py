@@ -31,6 +31,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
             coureslist = self.Mongodb["tpUser"].find({"uuid": uuid}, {"userid": 1, "votenum": 1}).sort(
                 [("votenum", -1)])
+            self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"vheat": 1}});
             data = {}
             x = 0
             next_couresl = None
@@ -68,7 +69,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
 
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-
             self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
     def post(self):
         openid = self.get_cookie("openid")
@@ -82,6 +82,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                          "username":couers["name"],"money":0, "liwu":0 ,"num":0,
                          "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
                 self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
+                self.Mongodb["poject"].update_one({"uuid": couers["uuid"]}, {"$inc": {"votes": 1}});
                 self.Mongodb["Ordel"].insert_one(order)
                 self.write(json.dumps({"status": 1, "msg": "成功"}))
             except Exception as e:
