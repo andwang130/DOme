@@ -229,12 +229,12 @@ function liwu_init (gifttitle,gifimg,giftprice,giftvote) {
         "\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入名称\" value=\""+gifttitle+"\" class=\"form-control\" name=\"gifttitle\"></td>\n" +
         "\t\t<td><div class=\"adimgbo\"><a  href=\"#\" class=\"tttt\"><img src=\"/"+gifimg+"\"  height=\"30\"><input type=\"hidden\" value=\"/images/diamond.png\" name=\"gifticon\"></a></div></td>\n" +
         "\t\t<td class=\"text-left\" ><div class=\"input-group\">\n" +
-        "          <input type=\"text\" placeholder=\"输入支付价格\" value=\""+giftprice+"\" class=\"form-control\" name=\"giftprice\">\n" +
+        "          <input type=\"number\" placeholder=\"输入支付价格\" value=\""+giftprice+"\" class=\"form-control\" name=\"giftprice\">\n" +
         "\t\t  <span class=\"input-group-addon\">元</span>\n" +
         "        </div></td>\n" +
         "\t\t<td class=\"text-left\" >\n" +
         "\t\t<div class=\"input-group\">\n" +
-        "          <input type=\"text\" placeholder=\"输入礼物奖励的票数\" value=\""+giftvote+"\" class=\"form-control\" name=\"giftvote\">\n" +
+        "          <input type=\"number\" placeholder=\"输入礼物奖励的票数\" value=\""+giftvote+"\" class=\"form-control\" name=\"giftvote\">\n" +
         "        </div>\n" +
         "\t\t</td>\n" +
         "\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
