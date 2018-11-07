@@ -85,8 +85,8 @@ function submi_send() {
     var votestart=$("#votestart").val();
     var voteend=$("#voteend").val();
     var topimgV=$("#topimgV").attr("src");
-    var customized=$("#customized").html();
-    var buttonpane=$("#buttonpane").html();
+    var customized=$("#customized").val();
+    var buttonpane=$("#buttonpane").val();
     var sharetitle=$("#sharetitle").val()
     var shareimgV=$("#shareimgV").attr("src")
     var sharedesc=$("#sharedesc").val();
