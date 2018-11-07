@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import Basehanderl
 import json
 import time
