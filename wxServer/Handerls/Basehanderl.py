@@ -22,7 +22,7 @@ class Basehandelr(RequestHandler):
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
             wxcongif["appId"], link)
         self.redirect(url)
-        print("vredirect")
+
 
     @tornado.gen.coroutine
     def get_openid(self,code):

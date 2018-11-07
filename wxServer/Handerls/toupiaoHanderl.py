@@ -10,7 +10,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         code = self.get_argument("code",None)
-        if code:
+        if code!=None:
             print("sdsdsdsdssdsd" * 2)
             openid = self.get_cookie("openid")
             if not openid:
@@ -62,7 +62,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()
-            raise tornado.gen.Return()
+            return 
     def post(self):
         openid = self.get_cookie("openid")
         userid= self.get_argument("userid", None)
