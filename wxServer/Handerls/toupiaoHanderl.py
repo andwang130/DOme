@@ -18,7 +18,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.set_secure_cookie("openid", newopenid)
             if userid and uuid:
                 self.db_linck()
-                print("sdsdsdsdssdsd"*2)
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
                 usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
                 coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum":1 }).sort([("votenum",-1)])
@@ -28,11 +27,11 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 for i in coureslist:
                     if i["userid"]==userid:
                         if x!=0:
-                            # print(x)
-                            # print(userid)
-                            # print(type(usercoures["votenum"]))
+                            print(x)
+                            print(userid)
+                            print(type(usercoures["votenum"]))
                             data["index"]=x+1
-                            data["subvotenum"]=(next_couresl["votenum"]-usercoures["votenum"])
+                            data["subvotenum"]=int(next_couresl["votenum"])-int(usercoures["votenum"])
                         else:
                             data["index"] = 1
                             data["subvotenum"]=0
