@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="250" column="10" lean-forward="true" selection-start-line="250" selection-start-column="10" selection-end-line="250" selection-end-column="10" />
+            <state relative-caret-position="1073">
+              <caret line="388" column="6" lean-forward="false" selection-start-line="388" selection-start-column="6" selection-end-line="388" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaomingHanderl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaomingHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
+            <state relative-caret-position="322">
               <caret line="33" column="83" lean-forward="false" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="83" />
               <folding />
             </state>
@@ -199,8 +199,8 @@
         <option value="$PROJECT_DIR$/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.js" />
-        <option value="$PROJECT_DIR$/templates/Baoming.html" />
         <option value="$PROJECT_DIR$/Handerls/BaomingHanderl.py" />
+        <option value="$PROJECT_DIR$/templates/Baoming.html" />
       </list>
     </option>
   </component>
@@ -846,21 +846,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
+    <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="250" column="10" lean-forward="true" selection-start-line="250" selection-start-column="10" selection-end-line="250" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="322">
+          <caret line="33" column="83" lean-forward="false" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
+    <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="33" column="83" lean-forward="false" selection-start-line="33" selection-start-column="83" selection-end-line="33" selection-end-column="83" />
-          <folding />
+        <state relative-caret-position="1073">
+          <caret line="388" column="6" lean-forward="false" selection-start-line="388" selection-start-column="6" selection-end-line="388" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
