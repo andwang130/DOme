@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>钻石</title>
+	<title>自动回复 - 众联科技微信营销系统</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link rel="shortcut icon" href="./resource/images/favicon.ico" />
@@ -17,7 +17,16 @@
 			alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
 		}
 	}
-
+	window.sysinfo = {
+		'uniacid': '4',		'acid': '4',				'uid': '1',		'isfounder': 1,
+		'family': 'x',
+		'siteroot': '',
+		'attachurl_local': '',
+		'module' : {'url' : '', 'name' : 'tyzm_diamondvote'},
+		'cookie' : {'pre': 'b127_'},
+		'account' : {"acid":"4","uniacid":"4","token":"FJ07ZQ5U57cwU7B8m0PP0I50HQbVUU28","encodingaeskey":"t0W1HyZhmY0Qb7Hi29Jv8mi57v0jcqhh9Wjm89M8jU5","level":"4","name":"\u662d\u91d1\u4f01\u4e1a","account":"2432351558@qq.com","original":"gh_6991a15d4028","signature":"","country":"","province":"","city":"","username":"","password":"","lastupdate":"0","key":"wx65f2147fd97b0b73","secret":"21dde8c14cd170e3166c0bd98b9ead70","styleid":"0","subscribeurl":"","auth_refresh_token":"","access_token":"","encrypt_key":"wx65f2147fd97b0b73","type":"1","isconnect":"1","isdeleted":"0","endtime":"0","uid":"1","starttime":"0","groups":{"3":{"groupid":"3","uniacid":"4","title":"\u9ed8\u8ba4\u4f1a\u5458\u7ec4","credit":"0","isdefault":"1","orderlist":"0"}},"setting":{"uniacid":"4","passport":"","oauth":{"account":"4","host":""},"jsauth_acid":"0","uc":"","notify":"","creditnames":{"credit1":{"title":"\u79ef\u5206","enabled":1},"credit2":{"title":"\u4f59\u989d","enabled":1}},"creditbehaviors":{"activity":"credit1","currency":"credit2"},"welcome":"","default":"","default_message":"","payment":{"wechat":{"recharge_switch":false,"pay_switch":false,"switch":"1","has_config":"false","recharge_set":"true","support_set":"true","version":"2","mchid":"1511298441","apikey":"jk2fitsuvll3gneanvnkas1gf4qjukxq","account":"4","signkey":"jk2fitsuvll3gneanvnkas1gf4qjukxq"}},"stat":"","default_site":"3","sync":"0","recharge":"","tplnotice":"","grouplevel":"0","mcplugin":"","exchange_enable":"0","coupon_type":"0","menuset":"","statistics":"","bind_domain":"","shortcuts":"","comment_status":"0","reply_setting":"0"},"grouplevel":"0","logo":"http:\/\/www.zenglianghao.com\/attachment\/headimg_4.jpg?time=1538188483","qrcode":"http:\/\/www.zenglianghao.com\/attachment\/qrcode_4.jpg?time=1538188483","switchurl":".\/index.php?c=account&a=display&do=switch&uniacid=4","sms":0,"setmeal":{"uid":-1,"username":"\u521b\u59cb\u4eba","timelimit":"\u672a\u8bbe\u7f6e","groupid":"-1","groupname":"\u6240\u6709\u670d\u52a1"}},
+		'server' : {'php' : '5.4.45'},
+	};
 	</script>
 	<script>var require = { urlArgs: 'v=20170426' };</script>
 	<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
@@ -43,18 +52,29 @@
 		<div class="container ">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="http://www.zenglianghao.com/">
-
+					<img src="./resource/images/logo/logo.png" class="pull-left" width="110px" height="35px">
 				</a>
 			</div>
-						
+						<div class="collapse navbar-collapse">
 
 				<ul class="nav navbar-nav navbar-left">
 																																																																																																																																																																																																						
 											<li >
-							<a href="/index.html" >
+							<a href="#" >
 								平台							</a>
 						</li>
-
+											<li >
+							<a href="#" >
+								应用							</a>
+						</li>
+											<li >
+							<a href="#" >
+								系统							</a>
+						</li>
+											<li >
+							<a href="#" >
+								站点							</a>
+						</li>
 					
 					<ul class="other nav navbar-nav navbar-left">
 											</ul>
@@ -63,14 +83,33 @@
 				<ul class="nav navbar-nav navbar-right">
 					
 																																			<li>
-
-
+						<a href="#" data-toggle="tooltip"  data-placement="bottom" title="工单">
+							<i class="wi wi-system-work color-gray" ></i>
 						</a>
 					</li>
 					
-							<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">admin <span class="caret"></span></a>
+					<li class="dropdown msg header-notice">
+    <a href="javascript:;" class="dropdown-toogle" data-toggle="dropdown"><span class="wi wi-bell"><span class="badge"></span></span></a>
+    <div class="dropdown-menu">
+        <div class="clearfix top">消息<a href="#" class="pull-right">查看更多</a></div>
+    </div>
+</li>					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="wi wi-user color-gray"></i>admin <span class="caret"></span></a>
+						<ul class="dropdown-menu color-gray" role="menu">
+							<li>
+								<a href="./index.php?c=user&a=profile&" target="_blank"><i class="wi wi-account color-gray"></i> 我的账号</a>
+							</li>
+							<li class="divider"></li>
 
+														<li><a href="./index.php?c=cloud&a=upgrade&" target="_blank"><i class="wi wi-update color-gray"></i> 自动更新</a></li>
+							
+														<li><a href="./index.php?c=system&a=updatecache&" target="_blank"><i class="wi wi-cache color-gray"></i> 更新缓存</a></li>
+							<li class="divider"></li>
+							
+							<li>
+								<a href="./index.php?c=user&a=logout&"><i class="fa fa-sign-out color-gray"></i> 退出系统</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -81,75 +120,75 @@
 <div class="container">
 		<div class="panel panel-content main-panel-content ">
 	<div class="panel-body clearfix main-panel-body ">
-		<!--<div class="left-menu">-->
-						<!--<div class="left-menu-content">-->
-				<!--<div class="left-menu-top skin-black">-->
-											<!--<div class="account-info-name">-->
-	<!--<a href="./index.php?c=home&a=welcome&do=account&"><i class="wi wi-back-circle"></i></a>-->
-	<!--<span class="account-name"><a href="./index.php?c=home&a=welcome&do=account&">昭金企业</a></span>-->
-<!--</div>-->
-<!--<div class="module-info-name">-->
-			<!--<img src="http://www.zenglianghao.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo" onerror="this.src='./resource/images/gw-wx.gif'">-->
-		<!--<span class="name">钻石投票</span>-->
-<!--</div>-->
+		<div class="left-menu">
+						<div class="left-menu-content">
+				<div class="left-menu-top skin-black">
+											<div class="account-info-name">
+	<a href="./index.php?c=home&a=welcome&do=account&"><i class="wi wi-back-circle"></i></a>
+	<span class="account-name"><a href="./index.php?c=home&a=welcome&do=account&">昭金企业</a></span>
+</div>
+<div class="module-info-name">
+			<img src="http://www.zenglianghao.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo" onerror="this.src='./resource/images/gw-wx.gif'">
+		<span class="name">钻石投票</span>
+</div>
 
-<!--<div class="related-info hidden">-->
-	<!--<div class="drop-menu-right">-->
-		<!--切换版本-->
-		<!--<span class="wi wi-right-sign-s pull-right"></span>-->
-	<!--</div>-->
-	<!--<div class="top-view">-->
-		<!--<a href="#" target="_blank">-->
-			<!--<i class="wi wi-wechat"></i>这是app-->
-		<!--</a>-->
-		<!--<a href="#" target="_blank">-->
-			<!--<i class="wi wi-wechat"></i>公众号公众号-->
-		<!--</a>-->
-		<!--<a href="#" target="_blank">-->
-			<!--<i class="wi wi-wxapp"></i>小程序小程序-->
-		<!--</a>-->
-	<!--</div>-->
-<!--</div>-->
+<div class="related-info hidden">
+	<div class="drop-menu-right">
+		切换版本
+		<span class="wi wi-right-sign-s pull-right"></span>
+	</div>
+	<div class="top-view">
+		<a href="#" target="_blank">
+			<i class="wi wi-wechat"></i>这是app
+		</a>
+		<a href="#" target="_blank">
+			<i class="wi wi-wechat"></i>公众号公众号
+		</a>
+		<a href="#" target="_blank">
+			<i class="wi wi-wxapp"></i>小程序小程序
+		</a>
+	</div>
+</div>
 
-<!--&lt;!&ndash; 兼容历史性问题：模块内获取不到模块信息$module的问题-start &ndash;&gt;-->
-<!--&lt;!&ndash; end &ndash;&gt;									</div>-->
-												<!--<div class="panel panel-menu">-->
-										<!--<ul class="list-group collapse in" id="frame-platform_module_common">-->
-																										<!--<li class="list-group-item ">-->
-								<!--<a href="./index.php?c=platform&a=reply&m=tyzm_diamondvote&version_id=0" class="text-over" >-->
-																<!--<i class='wi wi-reply'></i> 应用入口								</a>-->
-							<!--</li>-->
-																																							<!--<li class="list-group-item ">-->
-								<!--<a href="./index.php?c=module&a=manage-account&do=setting&m=tyzm_diamondvote&version_id=0" class="text-over" >-->
-																<!--<i class='fa fa-cog'></i> 参数设置								</a>-->
-							<!--</li>-->
-																																							<!--<li class="list-group-item ">-->
-								<!--<a href="./index.php?c=module&a=permission&m=tyzm_diamondvote&version_id=0" class="text-over" >-->
-																<!--<i class='fa fa-cog'></i> 权限设置								</a>-->
-							<!--</li>-->
-																																							<!--<li class="list-group-item ">-->
-								<!--<a href="./index.php?c=module&a=default-entry&m=tyzm_diamondvote&version_id=0" class="text-over" >-->
-																<!--<i class='fa fa-cog'></i> 默认入口								</a>-->
-							<!--</li>-->
-																								<!--</ul>-->
-				<!--</div>-->
-																<!--<div class="panel panel-menu">-->
-										<!--<div class="panel-heading">-->
-						<!--<span class="" data-toggle="collapse" data-target="#frame-platform_module_menu" onclick="util.cookie.set('menu_fold_tag:platform_module_menu', util.cookie.get('menu_fold_tag:platform_module_menu') == 1 ? 0 : 1)">业务菜单<i class="wi wi-down-sign-s pull-right"></i></span>-->
-					<!--</div>-->
-										<!--<ul class="list-group collapse " id="frame-platform_module_menu">-->
-																										<!--<li class="list-group-item ">-->
-								<!--<a href="./index.php?c=site&a=entry&eid=101&version_id=0" class="text-over" >-->
-																<!--<i class='wi wi-appsetting'></i> 活动管理								</a>-->
-							<!--</li>-->
-																																							<!--<li class="list-group-item ">-->
-								<!--<a href="./index.php?c=site&a=entry&eid=102&version_id=0" class="text-over" >-->
-																<!--<i class='wi wi-appsetting'></i> 黑名单								</a>-->
-							<!--</li>-->
-																								<!--</ul>-->
-				<!--</div>-->
-											<!--</div>-->
-					<!--</div>-->
+<!-- 兼容历史性问题：模块内获取不到模块信息$module的问题-start -->
+<!-- end -->									</div>
+												<div class="panel panel-menu">
+										<ul class="list-group collapse in" id="frame-platform_module_common">
+																										<li class="list-group-item ">
+								<a href="./index.php?c=platform&a=reply&m=tyzm_diamondvote&version_id=0" class="text-over" >
+																<i class='wi wi-reply'></i> 应用入口								</a>
+							</li>
+																																							<li class="list-group-item ">
+								<a href="./index.php?c=module&a=manage-account&do=setting&m=tyzm_diamondvote&version_id=0" class="text-over" >
+																<i class='fa fa-cog'></i> 参数设置								</a>
+							</li>
+																																							<li class="list-group-item ">
+								<a href="./index.php?c=module&a=permission&m=tyzm_diamondvote&version_id=0" class="text-over" >
+																<i class='fa fa-cog'></i> 权限设置								</a>
+							</li>
+																																							<li class="list-group-item ">
+								<a href="./index.php?c=module&a=default-entry&m=tyzm_diamondvote&version_id=0" class="text-over" >
+																<i class='fa fa-cog'></i> 默认入口								</a>
+							</li>
+																								</ul>
+				</div>
+																<div class="panel panel-menu">
+										<div class="panel-heading">
+						<span class="" data-toggle="collapse" data-target="#frame-platform_module_menu" onclick="util.cookie.set('menu_fold_tag:platform_module_menu', util.cookie.get('menu_fold_tag:platform_module_menu') == 1 ? 0 : 1)">业务菜单<i class="wi wi-down-sign-s pull-right"></i></span>
+					</div>
+										<ul class="list-group collapse " id="frame-platform_module_menu">
+																										<li class="list-group-item ">
+								<a href="./index.php?c=site&a=entry&eid=101&version_id=0" class="text-over" >
+																<i class='wi wi-appsetting'></i> 活动管理								</a>
+							</li>
+																																							<li class="list-group-item ">
+								<a href="./index.php?c=site&a=entry&eid=102&version_id=0" class="text-over" >
+																<i class='wi wi-appsetting'></i> 黑名单								</a>
+							</li>
+																								</ul>
+				</div>
+											</div>
+					</div>
 		<div class="right-content">
 			<div class="content">
 				<!--系统提示-->
