@@ -24,16 +24,17 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum":1 }).sort([("votenum",-1)])
                 data = {}
                 x=0
+                next_couresl=None
                 for i in coureslist:
                     if i["userid"]==userid:
                         if x!=0:
                             data["index"]=x+1
-                            print(coureslist[x-1])
-                            data["subvotenum"]=coureslist[x-1]["votenum"]-usercoures["votenum"]
+                            data["subvotenum"]=next_couresl["votenum"]-usercoures["votenum"]
                         else:
                             data["index"] = 1
                             data["subvotenum"] =0
                         break;
+                    next_couresl=i
                     x+=1
                 data["titile"] = coures["titile"]
                 data["name"]=usercoures["name"]
