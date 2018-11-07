@@ -29,7 +29,8 @@ class baoming(Basehanderl.Basehandelr):
                 data["uuid"] = coures["uuid"]
                 data["topimgV"] = coures["topimgV"]
                 data["customized"] = coures["customized"]
-                self.render("Baoming.html", data=data)
+                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+                self.render("Baoming.html", data=data,aseedata=aseedata)
         else:
             self.auto()
     def post(self):
