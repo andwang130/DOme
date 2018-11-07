@@ -43,7 +43,7 @@ class Tpuuser(Basehandelr):
             coures=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(25).skip(25*(page-1)).sort([(sort_type,-1)])
             for i in coures:
                 data={"name":i.get("name"),"phone":i.get("phone"),"avatar":i.get("avatar"),"createtime":i.get("createtime"),
-                      "userid":i.get("userid"),"index":i.get("index"),"liwu":i.get("liwu"),"votenum":i.get("votenum")}
+                      "userid":i.get("userid"),"index":i.get("index"),"liwu":i.get("liwu"),"votenum":i.get("votenum"),"vheat":i.get("vheat")}
 
                 req_data.append(data)
             count=coures.count()
@@ -59,6 +59,7 @@ class Tpuuser(Basehandelr):
         data["uuid"]=uuid_
         data["liwu"]=0
         data["votenum"]=0
+        data["vheat"]=0
         data["createtime"]=time.time()
         data["userid"]=str(uuid.uuid1()).replace("-", "")
         data["index"]=self.Mongodb["poject"].find_one({"uuid": uuid_})["participants"]+1;
@@ -82,7 +83,6 @@ class Tpuuser(Basehandelr):
                 data["avatar"]=i.get("avatar")
                 data["uuid"]=uuid_poject
                 data["createtime"] = time.time()
-
                 data["userid"] = str(uuid.uuid1()).replace("-", "")
                 data["index"]=num
                 data_list.append(data)

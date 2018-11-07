@@ -36,9 +36,8 @@ function  get_user(page) {
                                 "                \t<input type=\"hidden\"  value=\"262592\" >\n" +
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"</td>\n" +
-                                "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">0</span></td>\n" +
-                                "                    <td  class=\"text-left vertical-middle\"><span class=\"label label-warning\">0</span></td>\n" +
-                                "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">0</span></td><!-- 移入移出事件  -->\n" +
+                                "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">+data[i][\"index\"]+</span></td>\n" +
+                                "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">0.00</span></td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\">"+data[i]["createtime"]+"</td>\n" +
                                 "                    <td class=\"text-left vertical-middle\">\n" +
