@@ -361,6 +361,7 @@ function files_oninpit() {
 		{
 			data["images"+i.toString()]=$(bmimg[i]).attr("src")
 		}
+		data["avatar"]=data["images1"]
         $.ajax({
             type: "POST",
             url: "/wx/Baoming?uuid={{data["uuid"]}}",
