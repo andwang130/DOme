@@ -28,9 +28,9 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 for i in coureslist:
                     if i["userid"]==userid:
                         if x!=0:
-                            print(i["votenum"])
+                            print(type(i["votenum"]))
                             data["index"]=x+1
-                            data["subvotenum"]=int(next_couresl["votenum"])-int(usercoures["votenum"])
+                            data["subvotenum"]=next_couresl["votenum"]-usercoures["votenum"]
                         else:
                             data["index"] = 1
                             data["subvotenum"] =0
