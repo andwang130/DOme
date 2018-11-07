@@ -539,50 +539,7 @@ $("#reply-form .we7-form:first").remove();
 
 });
 //清除海报
-require(['jquery', 'util'], function($, util){
-  $(function(){
-	  //广告幻灯片
-	  $('#btn_add_adtr').bind('click', function(){
-		 var content='<tr><td class="text-left" ><input type="text" placeholder="广告名称" value="" class="form-control" name="adtitle[]"></td><td><div class="adimgbox"><a href="javascript:;" class="thumbadimg"><img src="../attachment//images/global/nopic.jpg"  height="30"><input type="hidden" value="" name="adimg[]"></a></div></td><td class="text-left" ><input type="text" value="" placeholder="请输入广告url，带http://" class="form-control" name="adurl[]"></td><td><button type="button" class="btn btn-danger btn_del_ad btn-xs">删除</button></td></tr>';
-		 $("#js-table-3 tr:last").after(content);
-	  });
-	  //引导设置
-	  $('#btn_add_nav_12').bind('click', function(){
-		 var content='<tr><td class="text-left" ><input type="checkbox" checked class="form-control" onclick="checkboxVal(this)"><input type="hidden" value="on" name="isopenlinkpage[]"></td><td><div class="adimgbox"><a href="javascript:;" class="thumbadimg"><img src="../attachment//images/global/nopic.jpg"  height="30"><input type="hidden" value="" name="linkpageimg[]"></a></div></td><td class="text-left" ><input type="text" value="" placeholder="请输入广告url，带http://" class="form-control" name="linkpageurl[]"></td><td><button type="button" class="btn btn-danger btn_del_ad btn-xs">删除</button></td></tr>';
-		 $("#js-table-nav_12 tr:last").after(content);
-	  });
-	  // 报名字段设置
-		$('.btn_add_join').bind('click', function(){
-				var content = '';
-			content += '<div style="margin-left:-15px;"><div class="col-sm-10" style="margin-bottom:10px"><div class="input-group"><input type="text" class="form-control" name="infoname[]" value="" placeholder="请输入表单名称"><span class="input-group-addon"></span><select class="form-control" name="infotype[]"><option value="">请选择输入类型</option><option value="realname">真实姓名</option><option value="mobile">手机号码</option><option value="email">电子邮箱</option><option value="sex">性别</option><option value="qq">QQ号</option><option value="birthyear">出生生日</option><option value="telephone">固定电话</option><option value="idcard">证件号码</option><option value="address">邮寄地址</option><option value="zipcode">邮编</option><option value="nationality">国籍</option><option value="resideprovince">居住地址</option><option value="graduateschool">毕业学校</option><option value="company">公司</option><option value="education">学历</option><option value="occupation">职业</option><option value="position">职位</option><option value="revenue">年收入</option><option value="affectivestatus">情感状态</option><option value="lookingfor"> 交友目的</option><option value="bloodtype">血型</option><option value="height">身高</option><option value="weight">体重</option><option value="alipay">支付宝帐号</option><option value="taobao">阿里旺旺</option><option value="vqqcom">腾讯视频</option><option value="site">主页</option><option value="bio">自我介绍</option><option value="interest">兴趣爱好</option></select> <div class="input-group-btn" style="width:95px"><select class="form-control" name="notnull[]"><option value="1" selected="selected">必填</option><option value="0">非必填</option></select> </div><div class="input-group-btn" style="width:130px"><select  class="form-control" name="isshow[]"><option value="0"  >前台不显示</option><option value="1"  >前台显示</option></select></div></div></div><div class="col-sm-1 del_box" style="margin-top:5px"><a href="javascript:;"><i class="fa fa-times-circle"></i></a></div></div>';
-			$('.join_insert_flag').before(content);
-		});
-		//清除弹出广告
-		$('.add_gifturl span').click(function(){
-			$("#voteadurl").val($(this).attr('data-url'));
 
-		});
-		//礼物设置
-		$('#btn_add_gift').bind('click', function(){
-			 var content='<tr>\n' +
-                 '\t\t<td class="text-left" ><input type="text" placeholder="输入名称" value="生气" class="form-control" name="gifttitle"></td>\n' +
-                 '\t\t<td><div  class="adimgbo"><a  href="#" class="tttt"><img src="http://www.zenglianghao.com/addons/tyzm_diamondvote/template/static/images/smiley_angry.png"  height="30"><input type="hidden" value="http://www.zenglianghao.com//addons/tyzm_diamondvote/template/static/images/smiley_angry.png" name="gifticon[]"></input></input></td>\n' +
-                 '\t\t<td class="text-left" ><div class="input-group">\n' +
-                 '          <input type="text" placeholder="输入支付价格" value="1" class="form-control" name="giftprice">\n' +
-                 '\t\t  <span class="input-group-addon">元</span>\n' +
-                 '        </div></td>\n' +
-                 '\t\t<td class="text-left" >\n' +
-                 '\t\t<div class="input-group">\n' +
-                 '          <input type="text" placeholder="输入礼物奖励的票数" value="-2" class="form-control" name="giftvote">\n' +
-                 '        </div>\n' +
-                 '\t\t</td>\n' +
-                 '\t\t<td><button type="button" class="btn btn-danger btn_del_ad btn-xs">删除</button></td>\n' +
-                 '\t</tr>';
-			 $("#js-table-2 tr:last").after(content);
-			$(".tttt").click(tttt_click)
-		  });
-  });
-});
 
   $('.btn_clear_ad').click(function(){
 	$("input[name='voteadimg']").val("");
