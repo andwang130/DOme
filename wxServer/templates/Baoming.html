@@ -363,7 +363,7 @@ function files_oninpit() {
 		}
         $.ajax({
             type: "POST",
-            url: "/wx/Baoming",
+            url: "/wx/Baoming?uuid={{data["uuid"]}",
             data: data,
             success: function (str) {
                 hidemod("loadingToast");
