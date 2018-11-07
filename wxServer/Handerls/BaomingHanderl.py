@@ -69,6 +69,7 @@ class baoming(Basehanderl.Basehandelr):
         data = {}
         uuid_ = self.get_argument("uuid", "")
         if uuid_:
+            self.db_linck()
             for i in pojcetm.Tpuser:
                 data[i] = self.get_argument(i, "")
         data["uuid"] = uuid_
