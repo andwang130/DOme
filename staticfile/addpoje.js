@@ -65,6 +65,7 @@ function get_info(uuid) {
 
 
     var liwus=data["liwulist"]
+        console.log(liwus)
     for(var i=0;i<liwus.length;i++)
     {
        html="<tr name='liwus'>\n" +
@@ -81,7 +82,7 @@ function get_info(uuid) {
         "\t\t</td>\n" +
         "\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
         "\t</tr>"
-    $("#js-table-2").append(html);
+        $("#js-table-2").append(html);
     }
 
 
