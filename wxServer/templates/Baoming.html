@@ -211,7 +211,7 @@
 	</div>
 </div>
 </div>
-	 <input type="file" id="files" name="img" multiple="multiple" hidden />
+	 <input type="file" id="files" name="img" multiple="multiple" style="display:none" />
 <!--滑动验证-->
  <div class="mpanell-shade">
 	<div id="mpanel1"></div>
@@ -222,7 +222,7 @@
   	$('input[type="file"]')[0].click();
   },10000);
  $(document).ready(function(){
-      $("#files").on("input propertychange",files_oninpit)
+      $("#files").change(files_oninpit)
    $('.mpanell-shade').height($(window).height()).hide().click(function(e){ 
      if(!$(e.target).parents('#mpanel1').length) $(this).hide();
    });
