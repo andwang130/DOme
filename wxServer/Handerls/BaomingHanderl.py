@@ -83,4 +83,4 @@ class baoming(Basehanderl.Basehandelr):
             self.write(json.dumps({"code": 0, "useruuid": str(coures.inserted_id)}))
         except Exception as e:
             self.write(json.dumps({"code": -1, "eeor": "db"}))
-            print(e)
+

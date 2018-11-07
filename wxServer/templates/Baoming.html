@@ -262,13 +262,16 @@ function files_oninpit() {
         var fiels= $("#files").prop('files');
         console.log(fiels)
         var formFile = new FormData();
+        if (fiels.length>5)
+		{
+		    dialog2("图片不能超过5张");
+		}
         for(var i=0;i<fiels.length;i++)
         {
 
             console.log(fiels[i].size)
             if((fiels[i].size/1024/1024)>10)
             {
-                alert("文件过大");
                 return
             }
             filepath=fiels[i].name;
@@ -277,7 +280,7 @@ function files_oninpit() {
             if(ext!=".BMP"&&ext!=".PNG"&&ext!=".GIF"&&ext!=".JPG"&&ext!=".JPEG")
             {
 
-                alert("图片限于png,gif,jpeg,jpg格式");
+                dialog2("图片限于png,gif,jpeg,jpg格式");
                 return
             }
              formFile.append(fiels[i].name, fiels[i]); //加入文件对象
@@ -300,11 +303,10 @@ function files_oninpit() {
                 for(var i=0;i<data.length;i++)
                 {
                     namelist.push({"name":data[i]["odlname"].split(".")[0],"avatar":data[i]["path"]});
-                }
-                if(namelist&&uuid.uuid) {
-                    var new_data = {"namelist":JSON.stringify(namelist), "action": "create_list","uuid":uuid.uuid}
-                    create_list(new_data)
-                }
+					$("#chooseImages").append("<img src='"+data[i]["path"]+"' class='bmimg' />");
+				}
+
+
 
             }
         }
@@ -313,80 +315,74 @@ function files_oninpit() {
 }
 
 
-	$(".btn_bg_green").click(function(){
-            var upimages=[];
-			var name=$("input[name='name']").val();
-			if(name==''){dialog2("请输入姓名");return false;}
-			var introduction=$("textarea[name='introduction']").val();
-			if(introduction==''){dialog2("参赛宣言不能为空！");return false;}
-		    
-			var mobile=$("*[name='mobile']").val();	
-			if(mobile==""){dialog2("请输入手机");return false;}
-					if(!(/^1[3|4|5|6|7|8|9][0-9]\d{8}$/.test(mobile))){dialog2("请输入正确的手机号码！");return false; } 
-			var affectivestatus=$("*[name='affectivestatus']").val();	
-			if(affectivestatus==""){dialog2("请输入简介");return false;}		     
-				var i = 0, length = images.localId.length;
-				if(length < 1 || length > 5){
-				   images.localId = [];
-				   var upimgtip="请上传1-5张图片";
-				   dialog2(upimgtip);return false;//1-5张照片
-				}
-			images.serverId = [];
-			function upload() {
-			  wx.uploadImage({
-				 localId: images.localId[i],
-				 isShowProgressTips:2,
-				 success: function (res) {
-				   i++; 
-				   images.serverId.push(res.serverId);
-				   if (i < length) {
-					  upload(); 
-				   } else {
-                      upimages=images.serverId;
+	$(".btn_bg_green").click(function() {
+        var upimages = [];
+        var name = $("input[name='name']").val();
+        if (name == '') {
+            dialog2("请输入姓名");
+            return false;
+        }
+        var introduction = $("textarea[name='introduction']").val();
+        if (introduction == '') {
+            dialog2("参赛宣言不能为空！");
+            return false;
+        }
+
+        var mobile = $("*[name='mobile']").val();
+        if (mobile == "") {
+            dialog2("请输入手机");
+            return false;
+        }
+        if (!(/^1[3|4|5|6|7|8|9][0-9]\d{8}$/.test(mobile))) {
+            dialog2("请输入正确的手机号码！");
+            return false;
+        }
+        var affectivestatus = $("*[name='affectivestatus']").val();
+        if (affectivestatus == "") {
+            dialog2("请输入简介");
+            return false;
+        }
+        var i = 0,
+            bmimg = $(".bmimg")
+        length = bmimg.length
+        if (length < 1 || length > 5) {
+
+            var upimgtip = "请上传1-5张图片";
+            dialog2(upimgtip);
+            return false;//1-5张照片
+        }
+       var data={
+                "name": name,
+                "introduction": introduction,
+                "phone": mobile,
+                "description": affectivestatus,
+                "picturearr": upimages}
+      	for(var i=0;i<length;i++)
+		{
+			data["images"+i+1]=bmimg[i].attr("src")
+		}
+        $.ajax({
+            type: "POST",
+            url: "/Baoming",
+            data: data,
+            success: function (str) {
+                hidemod("loadingToast");
+
+                 data=JSON.parse(str)
+				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+data["useruuid"]
+                }
+            },
+            error: function (err) {
+                hidemod("loadingToast");
+                dialog2("发生错误，请刷新后重试！");
+            }
+        });
 
 
-                      //提交信息
-			            loadingToast("正在提交...");
-						$(this).unbind();
-						//提交报名
-						$.ajax({
-							type: "POST",
-							url: "./index.php?i=25&c=&rid=3048&do=join&m=tyzm_diamondvote",
-							data: {"name":name,"introduction":introduction,"phone":mobile,"description":affectivestatus, "picturearr":upimages},
+    })
 
-							success: function(str) {
-								hidemod("loadingToast");
-								if(str!=null && str!=''){
-									if(str.status == 1){
-										location.href="./index.php?i=25&c=entry&rid=3048&do=view&m=tyzm_diamondvote&id="+str.id;
-									}else if(str.status == 500){
-										$("#follow").show();
-									}else{
-										dialog2(str.msg);
-									}
-								}
-							},
-							error: function(err) {
-								hidemod("loadingToast");
-								dialog2("发生错误，请刷新后重试！");
-							}
-						});
-
-			//提交报名
-                      //
-                      //
-
-	               }
-				 },
-				 fail: function (res) {
-					hidemod("loadingToast");
-					dialog2("发现错误，请重试");return false;
-				 }
-			  });
-			}
-		   upload();
 				   
-	});
+
 
 </script>
 
