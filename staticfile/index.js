@@ -61,8 +61,15 @@ $(document).ready(
     function () {
 
         get_list(1)
+        $(".btn-default").click()
     }
 )
+var key;
+function set_key() {
+
+    key=$("#keyword").val()
+    get_list(1)
+}
 function drop_confirm(mages,url)
 {
 
@@ -74,6 +81,10 @@ function drop_confirm(mages,url)
 function get_list(page) {
     now_page=page;
     data={"action":"get_list","page":page}
+    if(key)
+    {
+        data["key"]=key
+    }
      $.ajax({
         url:'/poject',
         type: 'POST',

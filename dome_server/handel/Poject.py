@@ -74,9 +74,13 @@ class Poject(Basehandelr):
                 print(e)
     def get_list(self):
         page = int(self.get_argument("page"))
+        key=self.get_argument("key",None)
         data_list=[]
         try:
-            coures=self.cooliect.find({}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+            if key:
+                coures = self.cooliect.find({"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
+            else:
+                coures=self.cooliect.find({}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}
