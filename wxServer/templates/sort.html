@@ -42,12 +42,8 @@
             'cookie': {'pre': 'd193_'}
         };
         // jssdk config 对象
-        jssdkconfig = {
-            "appId": "wxbe44dd7a1101e9c8",
-            "nonceStr": "zPY40nrtXtZ0qpTp",
-            "timestamp": "1538223009",
-            "signature": "bb3eca202d61db1f86317f0554dd898b0eaf63b8"
-        } || {};
+       	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
+
         // 是否启用调试
         jssdkconfig.debug = false;
         jssdkconfig.jsApiList = [

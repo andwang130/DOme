@@ -34,7 +34,9 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
 
-                self.render("toupiao.html",data=data,shares=shares)
+                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+
+                self.render("toupiao.html",data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()
 

@@ -32,24 +32,8 @@
             alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
         }
     }
-    window.sysinfo = {
-        'uniacid': '25',
-        'acid': '25',
-        'openid': 'oiPqq0Xn1BxjHI9QUQ08VXS_NNls',
-        'siteroot': 'http://jadl8.zhaojingl.com/',
-        'siteurl': 'http://jadl8.zhaojingl.com/app/index.php?i=25&c=entry&rid=5082&id=409253&do=gift&m=tyzm_diamondvote',
-        'attachurl': 'http://tp-dl3.xcx2.top/',
-        'attachurl_local': 'http://jadl8.zhaojingl.com/attachment/',
-        'attachurl_remote': 'http://tp-dl3.xcx2.top/',
-        'MODULE_URL': 'http://jadl8.zhaojingl.com/addons/tyzm_diamondvote/',
-        'cookie': {'pre': 'd193_'}
-    };
-    jssdkconfig = {
-        "appId": "wxbe44dd7a1101e9c8",
-        "nonceStr": "He3nAn4NZPPtVSSF",
-        "timestamp": "1541384269",
-        "signature": "fb30f21cf0ad5b15553218518a8bb53b053506ab"
-    } || {};
+
+   	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
     jssdkconfig.debug = false;
     jssdkconfig.jsApiList = ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems', 'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage', 'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay', 'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
     ];</script>

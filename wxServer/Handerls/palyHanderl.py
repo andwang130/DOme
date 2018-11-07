@@ -43,6 +43,8 @@ class palyHanderl(Basehanderl.Basehandelr):
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
 
-                self.render("paly.html", data=data,shares=shares)
+                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+
+                self.render("paly.html", data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()

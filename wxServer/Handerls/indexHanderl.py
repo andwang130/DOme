@@ -44,7 +44,6 @@ class indexHanderl(Basehanderl.Basehandelr):
                     shares["url"]=pojcetm.www+pojcetm.www+self.request.uri
 
                     aseedata=pojcetm.get_wxcongif(pojcetm.www+self.request.uri)
-                    print(aseedata)
                     self.render("index.html",data=data,aseedata=aseedata,share=shares)
         else:
             self.auto()

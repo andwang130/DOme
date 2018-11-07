@@ -61,8 +61,9 @@ class SortHanderl(Basehanderl.Basehandelr):
                     shares["shareimgV"] = coures["shareimgV"]
                     shares["sharedesc"] = coures["sharedesc"]
                     shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+                    aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
 
-                    self.render("sort.html", data=data,shares=shares)
+                    self.render("sort.html", data=data,share=shares,aseedata=aseedata)
         else:
             self.auto()
 

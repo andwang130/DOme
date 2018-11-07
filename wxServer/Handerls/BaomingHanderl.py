@@ -37,7 +37,7 @@ class baoming(Basehanderl.Basehandelr):
                 shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
 
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-                self.render("Baoming.html", data=data,aseedata=aseedata,shares=shares)
+                self.render("Baoming.html", data=data,aseedata=aseedata,share=shares)
         else:
             self.auto()
     def post(self):
