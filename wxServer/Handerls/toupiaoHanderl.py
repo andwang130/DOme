@@ -21,13 +21,14 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.db_linck()
                 coures=self.Mongodb["poject"].find_one({"uuid":uuid})
                 usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
-                coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum": 1 }).sort([("votenum",-1)])
+                coureslist= self.Mongodb["tpUser"].find({"uuid": uuid},{ "userid": 1, "votenum":1 }).sort([("votenum",-1)])
                 data = {}
                 x=0
                 for i in coureslist:
                     if i["userid"]==userid:
                         if x!=0:
                             data["index"]=x+1
+                            print(coureslist[x-1])
                             data["subvotenum"]=coureslist[x-1]["votenum"]-usercoures["votenum"]
                         else:
                             data["index"] = 1
