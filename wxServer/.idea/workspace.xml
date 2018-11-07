@@ -22,8 +22,8 @@
       <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="223" column="30" lean-forward="true" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+            <state relative-caret-position="199">
+              <caret line="189" column="18" lean-forward="true" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -166,13 +166,13 @@
       <find>re</find>
       <find>ready</find>
       <find>files</find>
-      <find>chooseImages</find>
       <find>filse</find>
       <find>filse_change</find>
       <find>shareimg</find>
       <find>topimg</find>
       <find>upload_img</find>
       <find>img_on_cliek</find>
+      <find>chooseImages</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -858,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="223" column="30" lean-forward="true" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+        <state relative-caret-position="199">
+          <caret line="189" column="18" lean-forward="true" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
