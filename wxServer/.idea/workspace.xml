@@ -59,18 +59,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sort.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sort.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="430" column="8" lean-forward="true" selection-start-line="430" selection-start-column="8" selection-end-line="430" selection-end-column="8" />
+              <caret line="430" column="0" lean-forward="true" selection-start-line="430" selection-start-column="0" selection-end-line="430" selection-end-column="0" />
               <folding>
-                <marker date="1541717534144" expanded="true" signature="12156:12187" ph="..." />
-                <marker date="1541717534144" expanded="true" signature="12232:12238" ph=" " />
-                <marker date="1541717534144" expanded="true" signature="12238:12244" ph=" " />
-                <marker date="1541717534144" expanded="true" signature="12332:12347" ph="..." />
-                <marker date="1541717534144" expanded="true" signature="12377:12383" ph=" " />
-                <marker date="1541717534144" expanded="true" signature="12383:12389" ph=" " />
+                <marker date="1541717729905" expanded="true" signature="12156:12187" ph="..." />
+                <marker date="1541717729905" expanded="true" signature="12232:12238" ph=" " />
+                <marker date="1541717729905" expanded="true" signature="12238:12244" ph=" " />
+                <marker date="1541717729905" expanded="true" signature="12332:12347" ph="..." />
+                <marker date="1541717729905" expanded="true" signature="12377:12383" ph=" " />
+                <marker date="1541717729905" expanded="true" signature="12383:12389" ph=" " />
               </folding>
             </state>
           </provider>
@@ -99,8 +99,8 @@
       <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="233">
+              <caret line="88" column="59" lean-forward="false" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
               <folding>
                 <marker date="1541716808675" expanded="false" signature="3478:3512" ph="..." />
               </folding>
@@ -118,13 +118,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="204" column="7" lean-forward="true" selection-start-line="204" selection-start-column="7" selection-end-line="204" selection-end-column="7" />
+            <state relative-caret-position="292">
+              <caret line="404" column="27" lean-forward="true" selection-start-line="404" selection-start-column="27" selection-end-line="404" selection-end-column="27" />
               <folding>
-                <marker date="1541717534053" expanded="true" signature="11776:11786" ph="..." />
+                <marker date="1541717984250" expanded="true" signature="11776:11786" ph="..." />
               </folding>
             </state>
           </provider>
@@ -216,8 +216,8 @@
         <option value="$PROJECT_DIR$/templates/Baoming.html" />
         <option value="$PROJECT_DIR$/Handerls/SortHanderl.py" />
         <option value="$PROJECT_DIR$/templates/toupiao.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/sort.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -826,26 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="204" column="7" lean-forward="true" selection-start-line="204" selection-start-column="7" selection-end-line="204" selection-end-column="7" />
-          <folding>
-            <marker date="1541717534053" expanded="true" signature="11776:11786" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-          <folding>
-            <marker date="1541716808675" expanded="false" signature="3478:3512" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/jp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -865,14 +845,34 @@
     <entry file="file://$PROJECT_DIR$/templates/sort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="430" column="8" lean-forward="true" selection-start-line="430" selection-start-column="8" selection-end-line="430" selection-end-column="8" />
+          <caret line="430" column="0" lean-forward="true" selection-start-line="430" selection-start-column="0" selection-end-line="430" selection-end-column="0" />
           <folding>
-            <marker date="1541717534144" expanded="true" signature="12156:12187" ph="..." />
-            <marker date="1541717534144" expanded="true" signature="12232:12238" ph=" " />
-            <marker date="1541717534144" expanded="true" signature="12238:12244" ph=" " />
-            <marker date="1541717534144" expanded="true" signature="12332:12347" ph="..." />
-            <marker date="1541717534144" expanded="true" signature="12377:12383" ph=" " />
-            <marker date="1541717534144" expanded="true" signature="12383:12389" ph=" " />
+            <marker date="1541717729905" expanded="true" signature="12156:12187" ph="..." />
+            <marker date="1541717729905" expanded="true" signature="12232:12238" ph=" " />
+            <marker date="1541717729905" expanded="true" signature="12238:12244" ph=" " />
+            <marker date="1541717729905" expanded="true" signature="12332:12347" ph="..." />
+            <marker date="1541717729905" expanded="true" signature="12377:12383" ph=" " />
+            <marker date="1541717729905" expanded="true" signature="12383:12389" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="88" column="59" lean-forward="false" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
+          <folding>
+            <marker date="1541716808675" expanded="false" signature="3478:3512" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="404" column="27" lean-forward="true" selection-start-line="404" selection-start-column="27" selection-end-line="404" selection-end-column="27" />
+          <folding>
+            <marker date="1541717984250" expanded="true" signature="11776:11786" ph="..." />
           </folding>
         </state>
       </provider>
