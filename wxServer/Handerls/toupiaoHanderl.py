@@ -86,6 +86,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.Mongodb["Ordel"].insert_one(order)
                 self.write(json.dumps({"status": 1, "msg": "成功"}))
             except Exception as e:
+                print(e)
                 self.write(json.dumps({"status": 500, "msg": "数据库错误"}))
         else:
             self.write(json.dumps({"status": 0, "msg": "没有openid"}))
