@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 import Basehanderl
+import redis
 import json
 import time
 import tornado
@@ -75,16 +76,21 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         userid= self.get_argument("userid", None)
         if userid and openid:
             try:
-                self.db_linck()
-                couers=self.Mongodb["tpUser"].find_one({"userid":userid})
+                myreids = redis.StrictRedis(**pojcetm.conf_redis)
+                if not myreids.get(openid):
+                    self.db_linck()
+                    couers=self.Mongodb["tpUser"].find_one({"userid":userid})
 
-                order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
-                         "username":couers["name"],"money":0, "liwu":0 ,"num":0,
-                         "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
-                self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
-                self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
-                self.Mongodb["Ordel"].insert_one(order)
-                self.write(json.dumps({"status": 1, "msg": "成功"}))
+                    order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
+                             "username":couers["name"],"money":0, "liwu":0 ,"num":0,
+                             "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
+                    self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
+                    self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
+                    self.Mongodb["Ordel"].insert_one(order)
+                    myreids.set(openid,userid)
+                    self.write(json.dumps({"status": 1, "msg": "成功"}))
+                else:
+                    self.write(json.dumps({"status": 0, "msg": "每4个小时可投票一次，你已经投过票了"}))
             except Exception as e:
                 print(e)
                 self.write(json.dumps({"status": 500, "msg": "数据库错误"}))
