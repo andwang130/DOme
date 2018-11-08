@@ -49,11 +49,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="91" column="40" lean-forward="false" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+            <state relative-caret-position="773">
+              <caret line="94" column="6" lean-forward="false" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+              <folding>
+                <marker date="1541620400559" expanded="true" signature="771:777" ph=" " />
+                <marker date="1541620400559" expanded="true" signature="777:783" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,26 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TPUser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../staticfile/TPUser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="142" column="102" lean-forward="false" selection-start-line="142" selection-start-column="102" selection-end-line="142" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../staticfile/TPuser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1343">
-              <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="upload.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/upload.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -142,8 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>liwulist</find>
-      <find>js-table-2</find>
       <find>dropdown</find>
       <find>票数</find>
       <find>number</find>
@@ -172,6 +173,8 @@
       <find>btn-default</find>
       <find>votes</find>
       <find>投票数量</find>
+      <find>qr_code(this)</find>
+      <find>qr_code</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -199,7 +202,6 @@
         <option value="$PROJECT_DIR$/../staticfile/TPUser.html" />
         <option value="$PROJECT_DIR$/../staticfile/addTpuser.html" />
         <option value="$PROJECT_DIR$/../dome_server/handel/Poject.py" />
-        <option value="$PROJECT_DIR$/../staticfile/index.html" />
         <option value="$PROJECT_DIR$/../staticfile/js/umit.js" />
         <option value="$PROJECT_DIR$/../staticfile/orderlist.js" />
         <option value="$PROJECT_DIR$/../staticfile/orderall.js" />
@@ -217,6 +219,7 @@
         <option value="$PROJECT_DIR$/../staticfile/upload.js" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.js" />
+        <option value="$PROJECT_DIR$/../staticfile/index.html" />
       </list>
     </option>
   </component>
@@ -226,7 +229,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -381,7 +384,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -691,25 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="143" column="0" lean-forward="true" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
-          <folding>
-            <marker date="1541620400559" expanded="true" signature="771:777" ph=" " />
-            <marker date="1541620400559" expanded="true" signature="777:783" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -870,8 +854,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="91" column="40" lean-forward="false" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+        <state relative-caret-position="773">
+          <caret line="94" column="6" lean-forward="false" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <marker date="1541620400559" expanded="true" signature="771:777" ph=" " />
+            <marker date="1541620400559" expanded="true" signature="777:783" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
