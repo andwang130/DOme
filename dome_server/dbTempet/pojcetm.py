@@ -53,6 +53,7 @@ Tpuser=[
     "conten",#详情
     "status",#审核
     "liwu",
+    "index",
 ]
 Tpuser_temptle={
     "name":"",
