@@ -100,7 +100,22 @@ class Tpuuser(Basehandelr):
         if userid:
             data={}
             for i in pojcetm.Tpuser:
-                data[i]=self.get_argument(i,"")
+               if i=="votenum":
+                    votenum=self.get_argument(i,"")
+                    if votenum=="":
+                        votenum=0
+                    else:
+                        votenum=int(votenum)
+                    data[i]=votenum
+               elif i=="vheat":
+                   vheat = self.get_argument(i,"")
+                   if vheat == "":
+                       vheat = 0
+                   else:
+                       vheat = int(votenum)
+                   data[i] = vheat
+               else:
+                   data=self.get_argument(i,"")
             print(data)
             self.Mongodb["tpUser"].update_one({"userid":userid},{"$set":data})
             self.write(json.dumps({"code": 0}))
