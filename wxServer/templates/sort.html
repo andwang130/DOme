@@ -344,7 +344,7 @@
                         $(".paihang2").append(list);
                         for (var i = 0; i < list.length; i++) {
                             content = '<div class="datalist" ' + list[i]['color'] + '>'
-                                + '<a href="/wx/toupiao?userid=' +list[i]["userid"] + '">'
+                                + '<a href="/wx/toupiao?uuid={{data["uuid"]}}&userid=' +list[i]["userid"] + '">'
                                 + '<div class="tops">'
                                 + '<div class="itemhg"><img src="/images/' + list[i]['hp'] + '"></div>'
                                 + '<div class="item1"><img src="' + list[i]['avatar'] + '"></div>'
