@@ -153,7 +153,7 @@
 					<label class="control-label col-sm-2 control-label">虚拟热度</label>
 		<div class="col-sm-4">
             <div class="input-group">
-              <input class="form-control" type="number"  id="vheat" value=""name="vheat">
+              <input class="form-control" type="number"  id="vheat" value="0" name="vheat">
               <span class="help-block">用户热度=真实热度+虚拟热度</span>
             </div>
           </div>
@@ -162,37 +162,37 @@
 				  <label class="control-label col-sm-2 control-label">头像</label>
 				  <div class="col-sm-9">
 
-		<script type="text/javascript">
-			function showImageDialog(elm, opts, options) {
-				require(["util"], function(util){
-					var btn = $(elm);
-					var ipt = btn.parent().prev();
-					var val = ipt.val();
-					var img = ipt.parent().next().children();
-					options = {'width':80,'height':80,'global':false,'class_extra':'','direct':true,'multiple':false,'fileSizeLimit':5120000};
-					util.image(val, function(url){
-						if(url.url){
-							if(img.length > 0){
-								img.get(0).src = url.url;
-							}
-							ipt.val(url.attachment);
-							ipt.attr("filename",url.filename);
-							ipt.attr("url",url.url);
-						}
-						if(url.media_id){
-							if(img.length > 0){
-								img.get(0).src = "";
-							}
-							ipt.val(url.media_id);
-						}
-					}, options);
-				});
-			}
-			function deleteImage(elm){
-				$(elm).prev().attr("src", "./resource/images/nopic.jpg");
-				$(elm).parent().prev().find("input").val("");
-			}
-		</script>
+		<!--<script type="text/javascript">-->
+			<!--function showImageDialog(elm, opts, options) {-->
+				<!--require(["util"], function(util){-->
+					<!--var btn = $(elm);-->
+					<!--var ipt = btn.parent().prev();-->
+					<!--var val = ipt.val();-->
+					<!--var img = ipt.parent().next().children();-->
+					<!--options = {'width':80,'height':80,'global':false,'class_extra':'','direct':true,'multiple':false,'fileSizeLimit':5120000};-->
+					<!--util.image(val, function(url){-->
+						<!--if(url.url){-->
+							<!--if(img.length > 0){-->
+								<!--img.get(0).src = url.url;-->
+							<!--}-->
+							<!--ipt.val(url.attachment);-->
+							<!--ipt.attr("filename",url.filename);-->
+							<!--ipt.attr("url",url.url);-->
+						<!--}-->
+						<!--if(url.media_id){-->
+							<!--if(img.length > 0){-->
+								<!--img.get(0).src = "";-->
+							<!--}-->
+							<!--ipt.val(url.media_id);-->
+						<!--}-->
+					<!--}, options);-->
+				<!--});-->
+			<!--}-->
+			<!--function deleteImage(elm){-->
+				<!--$(elm).prev().attr("src", "./resource/images/nopic.jpg");-->
+				<!--$(elm).parent().prev().find("input").val("");-->
+			<!--}-->
+		<!--</script>-->
 
 		<div class="input-group " style="margin-top:.5em;">
 			<a href="javascript:;"  class="thumbnail imgbox0">
