@@ -48,7 +48,6 @@ class baoming(Basehanderl.Basehandelr):
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
             self.render("Baoming.html", data=data, aseedata=aseedata, share=shares)
     def post(self):
-
         data = {}
         uuid_ = self.get_argument("uuid", "")
         if uuid_:

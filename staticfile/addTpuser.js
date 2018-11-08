@@ -38,6 +38,7 @@ function  get_info(uuid,userid) {
                  var data=arg["data"]
                  if (arg["code"] == 0) {
                      console.log(arg)
+                     $("#index").val(data["index"])
                      $("#name").val(data["name"])
                      $("#votenum").val(data["votenum"])
                      $("#phone").val(data["phone"])
@@ -77,7 +78,7 @@ function sudbit_click() {
     {
         alert("至少一张图片")
     }
-
+    var index=$("#index").val()
     var avatar=$("#avatar").attr("src")
     var images1=$("#images1").attr("src")
     var images2=$("#images2").attr("src")
@@ -89,7 +90,7 @@ function sudbit_click() {
     var status=$('input[name="status"]:checked').val();
     data={"name":name,"votenum":votenum,"phone":phone,"description":description,"vheat":vheat,
         "avatar":avatar,"images1":images1,"images2":images2,"images3":images3,"images4":images4,"images5":images5,
-        "introduction":introduction,"conten":conten,"status":status
+        "introduction":introduction,"conten":conten,"status":status,"index":index
     }
 
     data["action"]=action.action

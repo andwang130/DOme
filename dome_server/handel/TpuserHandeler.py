@@ -55,14 +55,21 @@ class Tpuuser(Basehandelr):
         uuid_=self.get_argument("uuid","")
         if uuid_:
             for i in pojcetm.Tpuser:
-                data[i]=self.get_argument(i,"")
+                if i == "votenum":
+                    votenum = int(self.get_argument(i, 0).decode("utf-8"))
+                    data[i] = votenum
+                elif i == "vheat":
+                    vheat = int(self.get_argument(i, 0).decode("utf-8"))
+                    data[i] = vheat
+                elif i=="index":
+                    index = int(self.get_argument(i, 0).decode("utf-8"))
+                    data[i] = index
+                else:
+                    data[i]=self.get_argument(i,"")
         data["uuid"]=uuid_
         data["liwu"]=0
-        data["votenum"]=0
-        data["vheat"]=0
         data["createtime"]=time.time()
         data["userid"]=str(uuid.uuid1()).replace("-", "")
-        data["index"]=self.Mongodb["poject"].find_one({"uuid": uuid_})["participants"]+1;
         try:
             coures=self.Mongodb["tpUser"].insert_one(data)
             self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"participants": 1}});
@@ -102,18 +109,19 @@ class Tpuuser(Basehandelr):
             for i in pojcetm.Tpuser:
                if i=="votenum":
                     votenum=int(self.get_argument(i,0).decode("utf-8"))
-
                     data[i]=votenum
                elif i=="vheat":
                    vheat = int(self.get_argument(i,0).decode("utf-8"))
                    data[i] = vheat
+               elif i == "index":
+                   index = int(self.get_argument(i, 0).decode("utf-8"))
+                   data[i] = index
                else:
                    data[i]=self.get_argument(i,"")
             self.Mongodb["tpUser"].update_one({"userid":userid},{"$set":data})
             self.write(json.dumps({"code": 0}))
     def delete(self):
         userid = self.get_argument("userid")
-
         if userid:
             pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})["uuid"]
             coures = self.Mongodb["tpUser"].delete_one({"userid": userid})
