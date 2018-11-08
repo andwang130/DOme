@@ -63,7 +63,7 @@ Tpuser_temptle={
     "liwu":0,
     "phone":"",
     "description":"",
-    "vheat":"",
+    "vheat":0,
     "avatar":"",
     "images1":"",
     "images2":"",
