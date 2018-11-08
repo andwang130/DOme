@@ -51,8 +51,9 @@ function get_info(uuid) {
 
 
     var topimgV=$("#topimgV").attr("src",data["topimgV"]);//
-    var customized=$("#customized").html(data["customized"]); //
-    var buttonpane=$("#buttonpane").html(data["buttonpane"]); //
+
+    var customized=editor1.html(data["customized"]); //
+    var buttonpane=editor2.html(data["buttonpane"]); //
 
     var sharetitle=$("#sharetitle").val(data["sharetitle"]) //
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]) //
