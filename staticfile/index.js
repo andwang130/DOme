@@ -13,7 +13,7 @@ var tr="  <tr>\n" +
     "                                        <div class=\"switch ng-scope switchOn\"\n" +
     "                         onclick=\"drop_confirm('您确定要暂停活动吗？', './index.php?c=site&a=entry&ty=setstatus&rid=3294&status=0&do=otherset&m=tyzm_diamondvote');\"></div>\n" +
     "                                    </label><span>&nbsp;&nbsp;</span>\n" +
-    "                                <span class=\"label label-warning\">未开始</span>\n" +
+    "                                {是否开始}\n" +
     "                            </div>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
@@ -100,6 +100,18 @@ function get_list(page) {
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
                        .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"])
                        .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://carzy.wang/wx/auoth?uuid="+datalist[i]["uuid"])
+                   var nowtime=getNowTimes()
+                   if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
+                   {
+                       new_tr = new_tr.replace(/{是否开始}/,'<span class="label label-success">开始</span>')
+                   }
+                   else if(nowtime>getTimes(datalist[i]["timeend"]))
+                   {
+                        new_tr = new_tr.replace(/{是否开始}/,'<span class="label label-default">已结束</span>')
+                   }
+                   else {
+                          new_tr = new_tr.replace(/{是否开始}/,'<span class="label label-warning">未开始</span>')
+                   }
                    $("#pojectlist").append(new_tr)
 
                }

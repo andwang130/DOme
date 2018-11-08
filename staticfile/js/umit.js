@@ -20,3 +20,15 @@ function GetRequest() {
 }
 function getLocalTime(nS) {
     return new Date(parseInt(nS) * 1000).toLocaleString().substr(0,17)}
+function getTimes (strtime) {
+
+
+    var date = new Date(strtime.replace(/-/g, '/'));
+
+
+    return time1 = date.getTime();
+}
+function getNowTimes() {
+    var timestamp =Date.parse(new Date())
+    return timestamp
+}
