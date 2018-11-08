@@ -62,11 +62,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="114" column="12" lean-forward="true" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
+            <state relative-caret-position="437">
+              <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
               <folding>
-                <marker date="1541664182721" expanded="true" signature="771:777" ph=" " />
-                <marker date="1541664182721" expanded="true" signature="777:783" ph=" " />
+                <marker date="1541664414339" expanded="true" signature="771:777" ph=" " />
+                <marker date="1541664414339" expanded="true" signature="777:783" ph=" " />
               </folding>
             </state>
           </provider>
@@ -870,11 +870,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="114" column="12" lean-forward="true" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
+        <state relative-caret-position="437">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
           <folding>
-            <marker date="1541664182721" expanded="true" signature="771:777" ph=" " />
-            <marker date="1541664182721" expanded="true" signature="777:783" ph=" " />
+            <marker date="1541664414339" expanded="true" signature="771:777" ph=" " />
+            <marker date="1541664414339" expanded="true" signature="777:783" ph=" " />
           </folding>
         </state>
       </provider>

@@ -17,8 +17,8 @@ var tr="  <tr>\n" +
     "                            </div>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
-    "            <a href=\"javascript:;\" class=\"js-clip color-default\"\n" +
-    "               data-url=\"{复制活动链接}\">复制活动链接</a><br/>\n" +
+    "            <a href=\"javascript:;\" data-clipboard-action='copy' class=\"js-clip color-default\"\n" +
+    "               data-clipboard-text=\"{复制活动链接}\">复制活动链接</a><br/>\n" +
     "            <a href=\"javascript:;\"  onclick=\"qr_code(this)\" class=\"color-default\" data-url=\"http://jadl8.zhaojingl.com/app/./index.php?i=25&c=entry&rid=3294&do=index&m=tyzm_diamondvote\" data-toggle=\"modal\" data-target=\"#myModal\" target=\"myFrameName\">活动二维码</a>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
@@ -104,10 +104,7 @@ function get_list(page) {
                    $("#pojectlist").append(new_tr)
 
                }
-             var clipboard=new Clipboard('.js-clip', {
-                     text:function () {
-                         return $(this).attr("data-url")
-                     }})
+             var clipboard=new Clipboard('.js-clip');
                clipboard.on("success",function (e) {
                    alert("复制成功")
                })
