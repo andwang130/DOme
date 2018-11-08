@@ -166,7 +166,6 @@ function  on_a_cliek()
 function setClipboard() {
 
         var t = $(this).attr("data-url")
-    console.log(t);
-        window.clipboardData.setData("Text",t);
+        window.clipboardData.setData("Text",t.toString());
         alert("成功复制")
     }

@@ -62,11 +62,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="171" column="5" lean-forward="true" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+            <state relative-caret-position="596">
+              <caret line="170" column="5" lean-forward="true" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
               <folding>
-                <marker date="1541663136437" expanded="true" signature="771:777" ph=" " />
-                <marker date="1541663136437" expanded="true" signature="777:783" ph=" " />
+                <marker date="1541663211144" expanded="true" signature="771:777" ph=" " />
+                <marker date="1541663211144" expanded="true" signature="777:783" ph=" " />
               </folding>
             </state>
           </provider>
@@ -870,11 +870,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="171" column="5" lean-forward="true" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+        <state relative-caret-position="596">
+          <caret line="170" column="5" lean-forward="true" selection-start-line="170" selection-start-column="5" selection-end-line="170" selection-end-column="5" />
           <folding>
-            <marker date="1541663136437" expanded="true" signature="771:777" ph=" " />
-            <marker date="1541663136437" expanded="true" signature="777:783" ph=" " />
+            <marker date="1541663211144" expanded="true" signature="771:777" ph=" " />
+            <marker date="1541663211144" expanded="true" signature="777:783" ph=" " />
           </folding>
         </state>
       </provider>
