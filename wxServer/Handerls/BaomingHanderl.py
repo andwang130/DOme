@@ -43,7 +43,7 @@ class baoming(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.www + pojcetm.www + self.request.uri
+            shares["url"] = pojcetm.www + self.request.uri
 
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
             self.render("Baoming.html", data=data, aseedata=aseedata, share=shares)
