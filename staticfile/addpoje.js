@@ -75,6 +75,7 @@ function get_info(uuid) {
     })
 }
 function submi_send() {
+    editor.sync();
     var titile=$("#titile").val();
     var himgV=$("#himgV").attr("src");
     var description=$("#description").val();
