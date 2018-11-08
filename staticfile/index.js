@@ -104,7 +104,13 @@ function get_list(page) {
                    $("#pojectlist").append(new_tr)
 
                }
-               $(".js-clip").click(setClipboard)
+             new Clipboard('.js-clip', {
+                     text:function () {
+                         return $(this).attr("data-url")
+                     }})
+               clipboard.on("success",function () {
+                   alert("复制成功")
+               })
                page_math(data["count"])
            }
         }
@@ -163,9 +169,9 @@ function  on_a_cliek()
     console.log(page_id);
 }
 
-function setClipboard() {
-        var t=""
-         t = $(this).attr("data-url")
-        window.clipboardData.setData("Text",t);
-        alert("成功复制")
-    }
+// function setClipboard() {
+//         var t=""
+//          t = $(this).attr("data-url")
+//         window.clipboardData.setData("Text",t);
+//         alert("成功复制")
+//     }
