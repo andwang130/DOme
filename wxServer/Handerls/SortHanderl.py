@@ -53,7 +53,7 @@ class SortHanderl(Basehanderl.Basehandelr):
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             if coures:
                 data = {}
-                data["endtimes"] = time.mktime(time.strptime(coures["votestart"], '%Y-%m-%d %H:%M')) - time.time()
+                data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimestart"] = coures["aptimestart"]
                 data["aptimeend"] = coures["aptimeend"]
