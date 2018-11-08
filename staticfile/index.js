@@ -100,7 +100,7 @@ function get_list(page) {
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
                        .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"])
                        .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://carzy.wang/wx/auoth?uuid="+datalist[i]["uuid"])
-                   var nowtime=getNowTimes()
+                   var nowtime=Date.parse(new Date())
                    if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
                    {
                        new_tr = new_tr.replace(/{是否开始}/,'<span class="label label-success">开始</span>')
