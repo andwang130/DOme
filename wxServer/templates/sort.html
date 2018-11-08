@@ -344,7 +344,7 @@
                         $(".paihang2").append(list);
                         for (var i = 0; i < list.length; i++) {
                             content = '<div class="datalist" ' + list[i]['color'] + '>'
-                                + '<a href="' + list[i]['url'] + '">'
+                                + '<a href="/wx/toupiao?userid=' +list[i]["userid"] + '">'
                                 + '<div class="tops">'
                                 + '<div class="itemhg"><img src="/images/' + list[i]['hp'] + '"></div>'
                                 + '<div class="item1"><img src="' + list[i]['avatar'] + '"></div>'
@@ -538,17 +538,17 @@
         s.parentNode.insertBefore(hm, s)
     })();</script>
 
-<script>var imgs = document.getElementsByTagName('img');
-for (var i = 0, len = imgs.length; i < len; i++) {
-    imgs[i].onerror = function () {
-        if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {
-            this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');
-            this.setAttribute('check-src', true);
-        }
-    }
-}
-;</script>
-<script type="text/javascript"
-        src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script>
+<!--<script>var imgs = document.getElementsByTagName('img');-->
+<!--for (var i = 0, len = imgs.length; i < len; i++) {-->
+    <!--imgs[i].onerror = function () {-->
+        <!--if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {-->
+            <!--this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');-->
+            <!--this.setAttribute('check-src', true);-->
+        <!--}-->
+    <!--}-->
+<!--}-->
+<!--;</script>-->
+<!--<script type="text/javascript"-->
+        <!--src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script>-->
 </body>
 </html>
