@@ -81,7 +81,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     couers=self.Mongodb["tpUser"].find_one({"userid":userid})
 
                     if couers:
-                        pojectcoures = self.self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
+                        pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                         if time.mktime(time.strptime(pojectcoures["votestart"],'%Y-%m-%d %H:%M')) - time.time()>0:
                             self.write(json.dumps({"status": 0, "msg": "投票未开始"}))
                             return
