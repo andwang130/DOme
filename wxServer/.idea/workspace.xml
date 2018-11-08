@@ -19,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BaomingHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/BaomingHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../dome_server/handel/Poject.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,11 +29,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="756">
+              <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="499" column="14" lean-forward="true" selection-start-line="499" selection-start-column="14" selection-end-line="499" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -101,26 +121,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="74" column="11" lean-forward="false" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -132,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>month</find>
       <find>tiemstatr</find>
       <find>timestart</find>
       <find>strt</find>
@@ -162,6 +161,7 @@
       <find>follow</find>
       <find>Tpuser</find>
       <find>votenum</find>
+      <find>当前</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -171,7 +171,6 @@
         <option value="$PROJECT_DIR$/Handerls/toushuHanderl.py" />
         <option value="$PROJECT_DIR$/templates/paly.html" />
         <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/templates/toupiao.html" />
         <option value="$PROJECT_DIR$/Handerls/auoth.py" />
         <option value="$PROJECT_DIR$/Handerls/Basehanderl.py" />
         <option value="$PROJECT_DIR$/../dome_server/dbTempet/pojcetm.py" />
@@ -189,7 +188,6 @@
         <option value="$PROJECT_DIR$/../staticfile/orderall.js" />
         <option value="$PROJECT_DIR$/../staticfile/TPuser.js" />
         <option value="$PROJECT_DIR$/../staticfile/backlist.js" />
-        <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
         <option value="$PROJECT_DIR$/../staticfile/addTpuser.js" />
         <option value="$PROJECT_DIR$/../staticfile/upload.js" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
@@ -207,6 +205,8 @@
         <option value="$PROJECT_DIR$/templates/Baoming.html" />
         <option value="$PROJECT_DIR$/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/Handerls/BaomingHanderl.py" />
+        <option value="$PROJECT_DIR$/templates/toupiao.html" />
+        <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
       </list>
     </option>
   </component>
@@ -740,14 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -776,22 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="608" column="47" lean-forward="false" selection-start-line="608" selection-start-column="44" selection-end-line="608" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -864,8 +840,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="25" />
+        <state relative-caret-position="756">
+          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="499" column="14" lean-forward="true" selection-start-line="499" selection-start-column="14" selection-end-line="499" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding />
         </state>
       </provider>

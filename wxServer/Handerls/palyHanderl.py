@@ -9,7 +9,7 @@ class palyHanderl(Basehanderl.Basehandelr):
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
         if openid:
-            self.rq(uuid)
+            self.rq(uuid,userid)
             raise tornado.gen.Return()
         elif code:
             if not openid:
