@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
-              <caret line="103" column="59" lean-forward="false" selection-start-line="103" selection-start-column="59" selection-end-line="103" selection-end-column="59" />
+              <caret line="103" column="27" lean-forward="true" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
               <folding>
                 <marker date="1541665682269" expanded="true" signature="771:777" ph=" " />
                 <marker date="1541665682269" expanded="true" signature="777:783" ph=" " />
@@ -65,8 +65,8 @@
       <file leaf-file-name="umit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/js/umit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="400">
+              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -82,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="437">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,8 +173,8 @@
       <find>投票数量</find>
       <find>qr_code(this)</find>
       <find>&lt;span class=\&quot;label label-warning\&quot;&gt;未开始&lt;/span&gt;\n&quot; +</find>
-      <find>getNowTimes</find>
       <find>qr_code</find>
+      <find>getNowTimes</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -218,8 +218,8 @@
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/../staticfile/js/umit.js" />
-        <option value="$PROJECT_DIR$/../staticfile/index.html" />
         <option value="$PROJECT_DIR$/../staticfile/index.js" />
+        <option value="$PROJECT_DIR$/../staticfile/index.html" />
       </list>
     </option>
   </component>
@@ -836,22 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/js/umit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/addTpuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -868,14 +852,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/js/umit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
-          <caret line="103" column="59" lean-forward="false" selection-start-line="103" selection-start-column="59" selection-end-line="103" selection-end-column="59" />
+          <caret line="103" column="27" lean-forward="true" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
           <folding>
             <marker date="1541665682269" expanded="true" signature="771:777" ph=" " />
             <marker date="1541665682269" expanded="true" signature="777:783" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
