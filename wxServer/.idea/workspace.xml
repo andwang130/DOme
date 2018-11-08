@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="80" selection-end-column="16" />
+            <state relative-caret-position="164">
+              <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sort.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sort.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
@@ -141,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>keyword</find>
       <find>btn-default</find>
       <find>votes</find>
       <find>投票数量</find>
@@ -171,6 +170,7 @@
       <find>resource</find>
       <find>m3Z3q16sz2stOCTSQ10suTc32TPo32.jpg</find>
       <find>bootstrap</find>
+      <find>OxZOY2RB444bDRLtV0rbbF64YAdBZP.jpg</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -214,10 +214,10 @@
         <option value="$PROJECT_DIR$/templates/paly.html" />
         <option value="$PROJECT_DIR$/templates/jp.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/toupiao.html" />
         <option value="$PROJECT_DIR$/templates/Baoming.html" />
         <option value="$PROJECT_DIR$/Handerls/SortHanderl.py" />
         <option value="$PROJECT_DIR$/templates/sort.html" />
+        <option value="$PROJECT_DIR$/templates/toupiao.html" />
       </list>
     </option>
   </component>
@@ -854,14 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="80" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/sort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -874,6 +866,14 @@
             <marker date="1541717241352" expanded="true" signature="12377:12383" ph=" " />
             <marker date="1541717241352" expanded="true" signature="12383:12389" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
