@@ -82,7 +82,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                          "username":couers["name"],"money":0, "liwu":0 ,"num":0,
                          "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
                 self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
-                self.Mongodb["poject"].update_one({"uuid": couers["uuid"]}, {"$inc": {"votes": 1}});
+                self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
                 self.Mongodb["Ordel"].insert_one(order)
                 self.write(json.dumps({"status": 1, "msg": "成功"}))
             except Exception as e:
