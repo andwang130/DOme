@@ -109,7 +109,7 @@ def get_ticket():
         mredis.set("ticket", ticket, ex=7000)
     return ticket
 def get_signature(data):
-    sort_dict=sorted(data.items(), key=lambda x: x[1], reverse=True)
+    sort_dict=sorted(data.items(), key=lambda x: x[0], reverse=True)
     singstr=""
     for i in sort_dict:
         singstr+=i[0]+"="+i[1]+"&"
