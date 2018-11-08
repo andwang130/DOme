@@ -428,8 +428,7 @@ function files_oninpit() {
 
 	wx.config(jssdkconfig);
 
-		var sharedata = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
-
+  	var sharedata = {"title":"{% raw share["sharetitle"] %}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{% raw share["url"] %}"};
 
 
 
