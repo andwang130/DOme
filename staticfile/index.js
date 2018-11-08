@@ -19,7 +19,6 @@ var tr="  <tr>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <a href=\"javascript:;\" data-clipboard-action='copy' class=\"js-clip color-default\"\n" +
     "               data-clipboard-text=\"{复制活动链接}\">复制活动链接</a><br/>\n" +
-    "            <a href=\"javascript:;\"  onclick=\"qr_code(this)\" class=\"color-default\" data-url=\"http://jadl8.zhaojingl.com/app/./index.php?i=25&c=entry&rid=3294&do=index&m=tyzm_diamondvote\" data-toggle=\"modal\" data-target=\"#myModal\" target=\"myFrameName\">活动二维码</a>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <div class=\"\">\n" +
