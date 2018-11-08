@@ -30,7 +30,7 @@
         }
 
         // jssdk config 对象
-       	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
+       	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["noncestr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
 
         // 是否启用调试
         jssdkconfig.debug = false;
@@ -470,7 +470,7 @@
 
 <script type="text/javascript">
 
-
+wx.config(jssdkconfig);
     	var sharedata = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
 
 

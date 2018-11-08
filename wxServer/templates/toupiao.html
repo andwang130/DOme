@@ -30,7 +30,7 @@
         }
     }
 
- 	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
+ 	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["noncestr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
 
     jssdkconfig.debug = false;
     jssdkconfig.jsApiList = ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems', 'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage', 'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay', 'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
@@ -704,7 +704,8 @@
 <!-- 提示弹窗start -->
 
 <script type="text/javascript">
-
+    
+    wx.config(jssdkconfig);
 
   	var sharedata = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
 

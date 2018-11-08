@@ -30,7 +30,7 @@
         }
     }
 
-   	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["nonceStr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
+   	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["noncestr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
     jssdkconfig.debug = false;
     jssdkconfig.jsApiList = ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems', 'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage', 'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay', 'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
     ];</script>
@@ -334,8 +334,9 @@
         <p class="weui-toast__content" style="color:#fff">数据加载中</p>
     </div>
 </div>
-<script type="text/javascript">$.getJSON("./index.php?i=25&c=entry&ty=pv&rid=5082&id=409253&do=Count&m=tyzm_diamondvote", function (result) {
-});
+<script type="text/javascript">
+
+    wx.config(jssdkconfig);
 	var sharedata = {"title":"{{share["sharetitle"]}}","imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{{share["url"]}}"};
 
 
