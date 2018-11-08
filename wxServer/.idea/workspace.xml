@@ -59,24 +59,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="596">
+              <caret line="169" column="19" lean-forward="false" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
               <folding>
-                <marker date="1541620400559" expanded="true" signature="771:777" ph=" " />
-                <marker date="1541620400559" expanded="true" signature="777:783" ph=" " />
+                <marker date="1541662831468" expanded="true" signature="771:777" ph=" " />
+                <marker date="1541662831468" expanded="true" signature="777:783" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -212,7 +212,6 @@
         <option value="$PROJECT_DIR$/Handerls/JpHanderl.py" />
         <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
         <option value="$PROJECT_DIR$/Handerls/SortHanderl.py" />
-        <option value="$PROJECT_DIR$/../staticfile/index.js" />
         <option value="$PROJECT_DIR$/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/../staticfile/addTpuser.js" />
@@ -220,6 +219,7 @@
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/../staticfile/index.html" />
+        <option value="$PROJECT_DIR$/../staticfile/index.js" />
       </list>
     </option>
   </component>
@@ -860,22 +860,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <marker date="1541620400559" expanded="true" signature="771:777" ph=" " />
-            <marker date="1541620400559" expanded="true" signature="777:783" ph=" " />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="596">
+          <caret line="169" column="19" lean-forward="false" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
+          <folding>
+            <marker date="1541662831468" expanded="true" signature="771:777" ph=" " />
+            <marker date="1541662831468" expanded="true" signature="777:783" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>

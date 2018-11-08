@@ -18,7 +18,7 @@ var tr="  <tr>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <a href=\"javascript:;\" class=\"js-clip color-default\"\n" +
-    "               data-url=\"http://jadl8.zhaojingl.com/app/./index.php?i=25&c=entry&rid=3294&do=index&m=tyzm_diamondvote\">复制活动链接</a><br/>\n" +
+    "               data-url=\"{复制活动链接}\">复制活动链接</a><br/>\n" +
     "            <a href=\"javascript:;\"  onclick=\"qr_code(this)\" class=\"color-default\" data-url=\"http://jadl8.zhaojingl.com/app/./index.php?i=25&c=entry&rid=3294&do=index&m=tyzm_diamondvote\" data-toggle=\"modal\" data-target=\"#myModal\" target=\"myFrameName\">活动二维码</a>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
@@ -99,10 +99,12 @@ function get_list(page) {
 
                    var new_tr=tr.replace(/{编号}/,i).replace(/{TITLE}/,datalist[i]["titile"]).replace(/{开始时间}/,datalist[i]["tiemstatr"])
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
-                       .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"]).replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"])
+                       .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"])
+                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace("/{复制活动链接}/","http://carzy.wang/wx/auoth?uuid="+datalist[i]["uuid"])
                    $("#pojectlist").append(new_tr)
 
                }
+               $(".js-clip").click(setClipboard)
                page_math(data["count"])
            }
         }
@@ -160,3 +162,10 @@ function  on_a_cliek()
     var page_id=$(this).attr("page_id")
     console.log(page_id);
 }
+
+function setClipboard() {
+
+        var t = $(this).attr("data-url")
+        window.clipboardData.setData('text', t)
+        alert("成功复制")
+    }
