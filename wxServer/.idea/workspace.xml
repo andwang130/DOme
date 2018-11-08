@@ -23,13 +23,23 @@
         <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
-              <caret line="709" column="0" lean-forward="false" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="160" />
+              <caret line="709" column="60" lean-forward="false" selection-start-line="709" selection-start-column="60" selection-end-line="709" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toushu.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="906">
+              <caret line="90" column="55" lean-forward="false" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toushu.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/toushu.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -43,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/templates/paly.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
-              <caret line="339" column="160" lean-forward="false" selection-start-line="339" selection-start-column="160" selection-end-line="339" selection-end-column="160" />
+              <caret line="339" column="60" lean-forward="false" selection-start-line="339" selection-start-column="60" selection-end-line="339" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -53,15 +63,25 @@
         <entry file="file://$PROJECT_DIR$/templates/sort.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
-              <caret line="473" column="160" lean-forward="false" selection-start-line="473" selection-start-column="160" selection-end-line="473" selection-end-column="160" />
+              <caret line="473" column="60" lean-forward="false" selection-start-line="473" selection-start-column="60" selection-end-line="473" selection-end-column="60" />
               <folding>
-                <marker date="1541719472083" expanded="true" signature="12156:12187" ph="..." />
-                <marker date="1541719472083" expanded="true" signature="12232:12238" ph=" " />
-                <marker date="1541719472083" expanded="true" signature="12238:12244" ph=" " />
-                <marker date="1541719472083" expanded="true" signature="12332:12347" ph="..." />
-                <marker date="1541719472083" expanded="true" signature="12377:12383" ph=" " />
-                <marker date="1541719472083" expanded="true" signature="12383:12389" ph=" " />
+                <marker date="1541719746617" expanded="true" signature="12156:12187" ph="..." />
+                <marker date="1541719746617" expanded="true" signature="12232:12238" ph=" " />
+                <marker date="1541719746617" expanded="true" signature="12238:12244" ph=" " />
+                <marker date="1541719746617" expanded="true" signature="12332:12347" ph="..." />
+                <marker date="1541719746617" expanded="true" signature="12377:12383" ph=" " />
+                <marker date="1541719746617" expanded="true" signature="12383:12389" ph=" " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,9 +90,9 @@
         <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="226">
-              <caret line="430" column="160" lean-forward="false" selection-start-line="430" selection-start-column="160" selection-end-line="430" selection-end-column="160" />
+              <caret line="430" column="30" lean-forward="false" selection-start-line="430" selection-start-column="30" selection-end-line="430" selection-end-column="30" />
               <folding>
-                <marker date="1541719472014" expanded="false" signature="3478:3512" ph="..." />
+                <marker date="1541719746489" expanded="false" signature="3478:3512" ph="..." />
               </folding>
             </state>
           </provider>
@@ -82,19 +102,19 @@
         <entry file="file://$PROJECT_DIR$/templates/jp.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="228" column="160" lean-forward="false" selection-start-line="228" selection-start-column="160" selection-end-line="228" selection-end-column="160" />
+              <caret line="228" column="30" lean-forward="false" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="409" column="0" lean-forward="true" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="408" column="0" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
               <folding>
-                <marker date="1541719471840" expanded="true" signature="11776:11786" ph="..." />
+                <marker date="1541719746399" expanded="true" signature="11776:11786" ph="..." />
               </folding>
             </state>
           </provider>
@@ -105,26 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
               <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Basehanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handerls/Basehanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -212,12 +212,12 @@
         <option value="$PROJECT_DIR$/templates/toushu.html" />
         <option value="$PROJECT_DIR$/Handerls/SortHanderl.py" />
         <option value="$PROJECT_DIR$/Handerls/pojcetm.py" />
-        <option value="$PROJECT_DIR$/templates/toupiao.html" />
-        <option value="$PROJECT_DIR$/templates/sort.html" />
-        <option value="$PROJECT_DIR$/templates/paly.html" />
-        <option value="$PROJECT_DIR$/templates/jp.html" />
         <option value="$PROJECT_DIR$/templates/Baoming.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/jp.html" />
+        <option value="$PROJECT_DIR$/templates/paly.html" />
+        <option value="$PROJECT_DIR$/templates/sort.html" />
+        <option value="$PROJECT_DIR$/templates/toupiao.html" />
       </list>
     </option>
   </component>
@@ -227,7 +227,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -377,7 +377,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -740,22 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="90" column="55" lean-forward="false" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../dome_server/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -812,49 +796,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/toushu.html">
+    <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="96">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
+    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="709" column="0" lean-forward="false" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="160" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="473" column="160" lean-forward="false" selection-start-line="473" selection-start-column="160" selection-end-line="473" selection-end-column="160" />
-          <folding>
-            <marker date="1541719472083" expanded="true" signature="12156:12187" ph="..." />
-            <marker date="1541719472083" expanded="true" signature="12232:12238" ph=" " />
-            <marker date="1541719472083" expanded="true" signature="12238:12244" ph=" " />
-            <marker date="1541719472083" expanded="true" signature="12332:12347" ph="..." />
-            <marker date="1541719472083" expanded="true" signature="12377:12383" ph=" " />
-            <marker date="1541719472083" expanded="true" signature="12383:12389" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="339" column="160" lean-forward="false" selection-start-line="339" selection-start-column="160" selection-end-line="339" selection-end-column="160" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/jp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="228" column="160" lean-forward="false" selection-start-line="228" selection-start-column="160" selection-end-line="228" selection-end-column="160" />
+        <state relative-caret-position="906">
+          <caret line="90" column="55" lean-forward="false" selection-start-line="90" selection-start-column="55" selection-end-line="90" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -862,20 +815,67 @@
     <entry file="file://$PROJECT_DIR$/templates/Baoming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="430" column="160" lean-forward="false" selection-start-line="430" selection-start-column="160" selection-end-line="430" selection-end-column="160" />
+          <caret line="430" column="30" lean-forward="false" selection-start-line="430" selection-start-column="30" selection-end-line="430" selection-end-column="30" />
           <folding>
-            <marker date="1541719472014" expanded="false" signature="3478:3512" ph="..." />
+            <marker date="1541719746489" expanded="false" signature="3478:3512" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="409" column="0" lean-forward="true" selection-start-line="409" selection-start-column="0" selection-end-line="409" selection-end-column="0" />
+        <state relative-caret-position="298">
+          <caret line="408" column="0" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
           <folding>
-            <marker date="1541719471840" expanded="true" signature="11776:11786" ph="..." />
+            <marker date="1541719746399" expanded="true" signature="11776:11786" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="228" column="30" lean-forward="false" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/paly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="339" column="60" lean-forward="false" selection-start-line="339" selection-start-column="60" selection-end-line="339" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="473" column="60" lean-forward="false" selection-start-line="473" selection-start-column="60" selection-end-line="473" selection-end-column="60" />
+          <folding>
+            <marker date="1541719746617" expanded="true" signature="12156:12187" ph="..." />
+            <marker date="1541719746617" expanded="true" signature="12232:12238" ph=" " />
+            <marker date="1541719746617" expanded="true" signature="12238:12244" ph=" " />
+            <marker date="1541719746617" expanded="true" signature="12332:12347" ph="..." />
+            <marker date="1541719746617" expanded="true" signature="12377:12383" ph=" " />
+            <marker date="1541719746617" expanded="true" signature="12383:12389" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="709" column="60" lean-forward="false" selection-start-line="709" selection-start-column="60" selection-end-line="709" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/toushu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
