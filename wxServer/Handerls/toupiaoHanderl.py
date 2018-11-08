@@ -87,7 +87,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                     self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
                     self.Mongodb["Ordel"].insert_one(order)
-                    myreids.set(openid,userid)
+                    myreids.set(openid,userid,ex=14400)
                     self.write(json.dumps({"status": 1, "msg": "成功"}))
                 else:
                     self.write(json.dumps({"status": 0, "msg": "每4个小时可投票一次，你已经投过票了"}))
