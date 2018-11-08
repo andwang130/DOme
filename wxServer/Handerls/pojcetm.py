@@ -99,15 +99,15 @@ def get_ticket():
         if not access_token:
             url="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}".format(wxcongif["appId"],wxcongif["secret"])
             req=requests.get(url).json()
-            access_token=req["access_token"]
+            access_token=req["access_token"].decode("utf-8")
             mredis = redis.StrictRedis(**conf_redis)
             mredis.set("access_token",access_token,ex=7000)
-        tickurl="https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token={}&type=jsapi".format(access_token.decode("utf-8"))
+        tickurl="https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token={}&type=jsapi".format(access_token)
         req = requests.get(tickurl).json()
 
-        ticket=req["ticket"]
+        ticket=req["ticket"].decode("utf-8")
         mredis.set("ticket", ticket, ex=7000)
-    return ticket.decode("utf-8")
+    return ticket
 def get_signature(data):
     sort_dict=sorted(data.items(), key=lambda x: x[1], reverse=True)
     singstr=""
