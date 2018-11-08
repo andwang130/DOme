@@ -78,16 +78,28 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 myreids = redis.StrictRedis(**pojcetm.conf_redis)
                 if not myreids.get(openid):
                     self.db_linck()
+
+
+
+
                     couers=self.Mongodb["tpUser"].find_one({"userid":userid})
 
-                    order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
-                             "username":couers["name"],"money":0, "liwu":0 ,"num":0,
-                             "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
-                    self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
-                    self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
-                    self.Mongodb["Ordel"].insert_one(order)
-                    myreids.set(openid,userid,ex=14400)
-                    self.write(json.dumps({"status": 1, "msg": "成功"}))
+                    if couers:
+                        pojectcoures = self.self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
+                        if time.mktime(time.strptime(pojectcoures["votestart"],'%Y-%m-%d %H:%M')) - time.time()>0:
+                            self.write(json.dumps({"status": 0, "msg": "投票未开始"}))
+                            return
+                        if  time.mktime(time.strptime(pojectcoures["voteend"],'%Y-%m-%d %H:%M')) - time.time()<0:
+                            self.write(json.dumps({"status": 0, "msg": "投票已结束"}))
+                            return 
+                        order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
+                                 "username":couers["name"],"money":0, "liwu":0 ,"num":0,
+                                 "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
+                        self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
+                        self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
+                        self.Mongodb["Ordel"].insert_one(order)
+                        myreids.set(openid,userid,ex=14400)
+                        self.write(json.dumps({"status": 1, "msg": "成功"}))
                 else:
                     self.write(json.dumps({"status": 0, "msg": "每4个小时可投票一次，你已经投过票了"}))
             except Exception as e:
