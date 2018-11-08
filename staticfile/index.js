@@ -104,11 +104,11 @@ function get_list(page) {
                    $("#pojectlist").append(new_tr)
 
                }
-             new Clipboard('.js-clip', {
+             var clipboard=new Clipboard('.js-clip', {
                      text:function () {
                          return $(this).attr("data-url")
                      }})
-               clipboard.on("success",function () {
+               clipboard.on("success",function (e) {
                    alert("复制成功")
                })
                page_math(data["count"])
