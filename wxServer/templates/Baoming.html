@@ -369,8 +369,8 @@ function files_oninpit() {
             success: function (str) {
                 hidemod("loadingToast");
 
-                 data=JSON.parse(str)
-				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+data["useruuid"]
+                 var rqdata=JSON.parse(str)
+				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+rqdata["useruuid"]
                 },
             error: function (err) {
                 hidemod("loadingToast");

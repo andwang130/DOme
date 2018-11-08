@@ -64,7 +64,7 @@ class baoming(Basehanderl.Basehandelr):
         try:
             coures = self.Mongodb["tpUser"].insert_one(data)
             self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"participants": 1}});
-            self.write(json.dumps({"code": 0, "useruuid": str(coures.inserted_id)}))
+            self.write(json.dumps({"code": 0, "useruuid": data["userid"]}))
         except Exception as e:
             self.write(json.dumps({"code": -1, "eeor": "db"}))
 
