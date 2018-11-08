@@ -78,10 +78,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 myreids = redis.StrictRedis(**pojcetm.conf_redis)
                 if not myreids.get(openid):
                     self.db_linck()
-
-
-
-
                     couers=self.Mongodb["tpUser"].find_one({"userid":userid})
 
                     if couers:
@@ -91,7 +87,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                             return
                         if  time.mktime(time.strptime(pojectcoures["voteend"],'%Y-%m-%d %H:%M')) - time.time()<0:
                             self.write(json.dumps({"status": 0, "msg": "投票已结束"}))
-                            return 
+                            return
                         order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
                                  "username":couers["name"],"money":0, "liwu":0 ,"num":0,
                                  "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
