@@ -122,7 +122,7 @@ def get_wxcongif(url):
     data={}
     data["jsapi_ticket"]=get_ticket()
     data["timestamp"]=str(int(time.time()))
-    data["nonceStr"]="ASFgsesdsaw"
+    data["noncestr"]="ASFgsesdsaw"
     data["url"]=url
     # if ticket["times"]==0 or time.time()-ticket["times"]>7000:
     #     get_ticket()

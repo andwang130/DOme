@@ -68,23 +68,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="404" column="27" lean-forward="true" selection-start-line="404" selection-start-column="27" selection-end-line="404" selection-end-column="27" />
+            <state relative-caret-position="460">
+              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding>
-                <marker date="1541717984250" expanded="true" signature="11776:11786" ph="..." />
+                <marker date="1541718795082" expanded="true" signature="11776:11786" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="111" column="68" lean-forward="false" selection-start-line="111" selection-start-column="68" selection-end-line="111" selection-end-column="68" />
+            <state relative-caret-position="177">
+              <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -141,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>votes</find>
       <find>投票数量</find>
       <find>qr_code(this)</find>
       <find>&lt;span class=\&quot;label label-warning\&quot;&gt;未开始&lt;/span&gt;\n&quot; +</find>
@@ -171,6 +170,7 @@
       <find>bootstrap</find>
       <find>OxZOY2RB444bDRLtV0rbbF64YAdBZP.jpg</find>
       <find>get_ap</find>
+      <find>get_wxcongif</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -216,8 +216,8 @@
         <option value="$PROJECT_DIR$/Handerls/SortHanderl.py" />
         <option value="$PROJECT_DIR$/templates/toupiao.html" />
         <option value="$PROJECT_DIR$/templates/sort.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/Handerls/pojcetm.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -829,16 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="404" column="27" lean-forward="true" selection-start-line="404" selection-start-column="27" selection-end-line="404" selection-end-column="27" />
-          <folding>
-            <marker date="1541717984250" expanded="true" signature="11776:11786" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/Handle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -873,9 +863,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="111" column="68" lean-forward="false" selection-start-line="111" selection-start-column="68" selection-end-line="111" selection-end-column="68" />
+        <state relative-caret-position="177">
+          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <marker date="1541718795082" expanded="true" signature="11776:11786" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
