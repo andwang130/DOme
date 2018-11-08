@@ -101,18 +101,10 @@ class Tpuuser(Basehandelr):
             data={}
             for i in pojcetm.Tpuser:
                if i=="votenum":
-                    votenum=self.get_argument(i,"")
-                    if votenum=="":
-                        votenum=0
-                    else:
-                        votenum=int(votenum)
+                    votenum=int(self.get_argument(i,0))
                     data[i]=votenum
                elif i=="vheat":
-                   vheat = self.get_argument(i,"")
-                   if vheat == "":
-                       vheat = 0
-                   else:
-                       vheat = int(votenum)
+                   vheat = int(self.get_argument(i,0))
                    data[i] = vheat
                else:
                    data=self.get_argument(i,"")
