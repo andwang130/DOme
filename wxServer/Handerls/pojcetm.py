@@ -114,9 +114,11 @@ def get_signature(data):
     for i in sort_dict:
         singstr+=i[0]+"="+i[1]+"&"
     singstr=singstr.rstrip("&")
+    print(singstr)
     newsingstr=hashlib.sha1(singstr.encode("utf-8")).hexdigest()
     return newsingstr
 def get_wxcongif(url):
+    print(url)
     data={}
     data["jsapi_ticket"]=get_ticket()
     data["timestamp"]=str(int(time.time()))
