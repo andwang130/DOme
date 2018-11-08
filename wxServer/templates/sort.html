@@ -111,28 +111,28 @@
             </div>
         </div>
     </div>
-    <script>
-        function v_play(e) {
-            var e = e || '#carousel-example-generic';
-            $(e).carousel('pause');
-        }
+    <!--<script>-->
+        <!--function v_play(e) {-->
+            <!--var e = e || '#carousel-example-generic';-->
+            <!--$(e).carousel('pause');-->
+        <!--}-->
 
-        function v_pause(e) {
-            var e = e || '#carousel-example-generic';
-            $(e).carousel('cycle');
-        }
+        <!--function v_pause(e) {-->
+            <!--var e = e || '#carousel-example-generic';-->
+            <!--$(e).carousel('cycle');-->
+        <!--}-->
 
-        require(['bootstrap', 'hammer'], function ($, Hammer) {
-            $('#carousel-container').carousel();
-            var mc = new Hammer($('#carousel-container').get(0));
-            mc.on("panleft", function (ev) {
-                $('#carousel-container').carousel('next');
-            });
-            mc.on("panright", function (ev) {
-                $('#carousel-container').carousel('prev');
-            });
-        });
-    </script>
+        <!--require(['bootstrap', 'hammer'], function ($, Hammer) {-->
+            <!--$('#carousel-container').carousel();-->
+            <!--var mc = new Hammer($('#carousel-container').get(0));-->
+            <!--mc.on("panleft", function (ev) {-->
+                <!--$('#carousel-container').carousel('next');-->
+            <!--});-->
+            <!--mc.on("panright", function (ev) {-->
+                <!--$('#carousel-container').carousel('prev');-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
     <style>
         .slide {
             position: relative;
