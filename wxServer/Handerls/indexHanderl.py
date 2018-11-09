@@ -42,11 +42,11 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data["aptimestart"] = coures["aptimestart"]
                 data["aptimeend"] = coures["aptimeend"]
                 data["notice"] = coures["titile"]
-                volume=0
+                votenum=0
                 for i in usercoures:
-                    volume+=int(i["votenum"])
-                data["volume"] = volume
-                data["votes"] = coures["votes"]
+                    votenum+=int(i["votenum"])
+                data["volume"] =coures["volume"]
+                data["votes"] =votenum
                 data["titile"] = coures["titile"]
                 data["uuid"] = coures["uuid"]
                 data["topimgV"] = coures["topimgV"]
