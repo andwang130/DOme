@@ -33,16 +33,19 @@ class indexHanderl(Basehanderl.Basehandelr):
             self.db_linck()
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             self.Mongodb["poject"].update_one({"uuid": uuid}, {"$inc": {"volume": 1}})
-            count = self.Mongodb["tpUser"].find({"uuid": uuid}).count()
+            usercoures = self.Mongodb["tpUser"].find({"uuid": uuid})
             if coures:
                 data = {}
-                data["count"] = count
+                data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimestart"] = coures["aptimestart"]
                 data["aptimeend"] = coures["aptimeend"]
                 data["notice"] = coures["titile"]
-                data["volume"] = coures["volume"]
+                volume=0
+                for i in usercoures:
+                    volume+=int(i["votenum"])
+                data["volume"] = volume
                 data["votes"] = coures["votes"]
                 data["titile"] = coures["titile"]
                 data["uuid"] = coures["uuid"]

@@ -86,6 +86,11 @@ class Poject(Basehandelr):
                 data={}
                 for x in pojcetm.get_listTeptle:
                     data[x]=i.get(x,"")
+                usercoures = self.Mongodb["tpUser"].find({"uuid": i["uuid"]})
+                votenum=0
+                for x in usercoures:
+                    votenum += int(x["votenum"])
+                data["votes"]=votenum
                 data["participants"]=self.Mongodb["tpUser"].find({"uuid":i["uuid"]}).count()
                 data_list.append(data)
             self.write(json.dumps({"code":0,"data":data_list,"count":count}))
