@@ -166,7 +166,7 @@ def get_playapImch(price,ip,openid):
         "device_info":"WEB",
         "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
          "sign_type":"MD5",
-        "body":"钻石充值".encode("utf-8"),
+        "body":"钻石充值".decode("utf-8"),
         "out_trade_no":str(int(time.time())),
         "total_fee":price*100,
         "spbill_create_ip":ip,
