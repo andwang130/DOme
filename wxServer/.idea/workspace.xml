@@ -79,14 +79,14 @@
       <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="465" column="13" lean-forward="true" selection-start-line="465" selection-start-column="13" selection-end-line="465" selection-end-column="69" />
+            <state relative-caret-position="325">
+              <caret line="468" column="24" lean-forward="true" selection-start-line="468" selection-start-column="24" selection-end-line="468" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/playcallbackurl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
@@ -115,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paly.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="paly.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="289" column="64" lean-forward="false" selection-start-line="289" selection-start-column="60" selection-end-line="289" selection-end-column="64" />
+            <state relative-caret-position="325">
+              <caret line="291" column="57" lean-forward="true" selection-start-line="291" selection-start-column="57" selection-end-line="291" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -130,8 +130,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="408" column="0" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
+            <state relative-caret-position="164">
+              <caret line="320" column="39" lean-forward="false" selection-start-line="320" selection-start-column="39" selection-end-line="320" selection-end-column="99" />
               <folding>
                 <marker date="1541719746399" expanded="true" signature="11776:11786" ph="..." />
               </folding>
@@ -160,7 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/resource/js/app/common.js?v=20160906</find>
       <find>images</find>
       <find>imageswechat</find>
       <find>resource</find>
@@ -187,9 +186,10 @@
       <find>votenum</find>
       <find>participants</find>
       <find>liwunum</find>
-      <find>送</find>
-      <find>userid</find>
       <find>couers</find>
+      <find>userid</find>
+      <find>投票</find>
+      <find>送</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -237,8 +237,8 @@
         <option value="$PROJECT_DIR$/../dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/../staticfile/index.js" />
         <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
-        <option value="$PROJECT_DIR$/templates/paly.html" />
         <option value="$PROJECT_DIR$/Handerls/playcallbackurl.py" />
+        <option value="$PROJECT_DIR$/templates/paly.html" />
       </list>
     </option>
   </component>
@@ -812,54 +812,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="473" column="60" lean-forward="false" selection-start-line="473" selection-start-column="60" selection-end-line="473" selection-end-column="60" />
-          <folding>
-            <marker date="1541719746617" expanded="true" signature="12156:12187" ph="..." />
-            <marker date="1541719746617" expanded="true" signature="12232:12238" ph=" " />
-            <marker date="1541719746617" expanded="true" signature="12238:12244" ph=" " />
-            <marker date="1541719746617" expanded="true" signature="12332:12347" ph="..." />
-            <marker date="1541719746617" expanded="true" signature="12377:12383" ph=" " />
-            <marker date="1541719746617" expanded="true" signature="12383:12389" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="408" column="0" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
-          <folding>
-            <marker date="1541719746399" expanded="true" signature="11776:11786" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/jp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="228" column="30" lean-forward="false" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="465" column="13" lean-forward="true" selection-start-line="465" selection-start-column="13" selection-end-line="465" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="289" column="64" lean-forward="false" selection-start-line="289" selection-start-column="60" selection-end-line="289" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,6 +862,49 @@
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="320" column="39" lean-forward="false" selection-start-line="320" selection-start-column="39" selection-end-line="320" selection-end-column="99" />
+          <folding>
+            <marker date="1541719746399" expanded="true" signature="11776:11786" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="468" column="24" lean-forward="true" selection-start-line="468" selection-start-column="24" selection-end-line="468" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="473" column="60" lean-forward="false" selection-start-line="473" selection-start-column="60" selection-end-line="473" selection-end-column="60" />
+          <folding>
+            <marker date="1541719746617" expanded="true" signature="12156:12187" ph="..." />
+            <marker date="1541719746617" expanded="true" signature="12232:12238" ph=" " />
+            <marker date="1541719746617" expanded="true" signature="12238:12244" ph=" " />
+            <marker date="1541719746617" expanded="true" signature="12332:12347" ph="..." />
+            <marker date="1541719746617" expanded="true" signature="12377:12383" ph=" " />
+            <marker date="1541719746617" expanded="true" signature="12383:12389" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/paly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="291" column="57" lean-forward="true" selection-start-line="291" selection-start-column="57" selection-end-line="291" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

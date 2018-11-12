@@ -287,7 +287,7 @@
                                 }, function (res) {
                                     if (res.err_msg == "get_brand_wcpay_request:ok") {
                                         toast("支付成功");
-                                        setTimeout(location.href = "/wx/paly?uuid={{data["uuid"]}}&userid={{data["userid"]}}", 3000);
+                                        setTimeout(location.href = "/wx/toupiao?uuid={{data["uuid"]}}&userid={{data["userid"]}}", 3000);
                                     } else if (res.err_msg == "get_brand_wcpay_request:cancel") {
                                         dialog2("已取消支付");
                                         return false;
