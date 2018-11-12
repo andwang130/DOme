@@ -165,7 +165,7 @@ def get_playapImch(price,ip,openid):
         "mch_id":"1518708631",
         "device_info":"WEB",
         "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
-        "body":"永丰县快宣广告传媒-钻石充值",
+        "body":"test",
         "out_trade_no":str(int(time.time())),
         "total_fee":price*100,
         "spbill_create_ip":ip,
