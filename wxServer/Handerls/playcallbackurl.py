@@ -6,7 +6,7 @@ class playcallbackurl(Basehanderl.Basehandelr):
     def get(self):
         self.post()
     def post(self):
-        orderid=self.self.get_argument("orderid","")
+        orderid=self.get_argument("orderid","")
         if orderid:
             print(orderid)
             print("收到回调")
