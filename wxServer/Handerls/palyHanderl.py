@@ -123,7 +123,7 @@ class palyHanderl(Basehanderl.Basehandelr):
 
     @tornado.gen.coroutine
     def get_playapImch(sele,out_trade_no,price, ip, openid,orderid):
-        callbackurl = pojcetm.www + "/wx/playcallbackurl?orderid={}".format(orderid)
+        callbackurl = pojcetm.www + "/wx/playcallbackurl"
         data = {
             "appid": pojcetm.wxcongif["appId"],
             "mch_id": "1518708631",
@@ -136,6 +136,8 @@ class palyHanderl(Basehanderl.Basehandelr):
             "notify_url": callbackurl,
             "trade_type": "JSAPI",
             "openid": openid,
+            "time_start":time.strftime("yyyyMMddHHmmss",time.time()),
+            "time_expire":time.strftime("yyyyMMddHHmmss",time.time()+300),
         }
         data["sign"] = pojcetm.get_sign(data)
         elem = pojcetm.dict_to_xml("xml", data)
