@@ -84,10 +84,10 @@ class palyHanderl(Basehanderl.Basehandelr):
                 pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                 if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:
                     self.write(json.dumps({"status": -1, "msg": "投票未开始"}))
-                    return
+                    raise tornado.gen.Return()
                 if time.mktime(time.strptime(pojectcoures["voteend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
                     self.write(json.dumps({"error": -1, "msg": "投票已结束"}))
-                    return
+                    raise tornado.gen.Return()
             pirce_now=None
             if pirce:
                 pirce_now=pirce
@@ -97,7 +97,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                 orderid=str(uuid.uuid1()).replace("-", "")
                 order = {"orderid": orderid, "userid": userid, "openid": openid,
                          "headimg": "",
-                         "operate": "", "uuid": couers["uuid"],
+                         "operate": "","uuid": couers["uuid"],
                          "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
                          "votenum": idepirce * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
                          "start": 0}
@@ -105,7 +105,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                 rq =yield self.get_playapImch(idepirce, ip, openid,orderid)
             else:
                 self.write(json.dumps({"error": -1, "msg": "参数错误"}))
-                return
+                raise tornado.gen.Return()
             data={"appId":rq["appid"],"timeStamp":int(time.time()),
                   "package":"prepay_id={}".format(rq["prepay_id"]),
                   "signType":"MD5",
