@@ -8,7 +8,7 @@ import string
 import uuid
 from xml.etree.ElementTree import Element
 from xml.etree.ElementTree import tostring
-from xml.etree.ElementTree import parse
+import re
 import sys
 defaultencoding = 'utf-8'
 if sys.getdefaultencoding() != defaultencoding:
@@ -192,8 +192,7 @@ def get_playapImch(price,ip,openid):
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
     rq_xml=rq.content.decode("utf-8")
-    root=parse(rq_xml).getroot()
-    prepay_id=root.find("prepay_id")
+    prepay_id=re.findall("<prepay_id><![CDATA[(.*?)]]></prepay_id>")[0]
     print(prepay_id)
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
