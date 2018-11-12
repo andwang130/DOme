@@ -91,7 +91,7 @@ wxcongif={
 
 }
 play_Key="A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
-www="http://www.carzy.wang"
+www="http://www.77tp.cn/"
 
 conf_redis={
     'host':'127.0.0.1',
