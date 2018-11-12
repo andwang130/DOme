@@ -110,7 +110,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             else:
                 self.write(json.dumps({"error": 1, "msg": "参数错误"}))
                 raise tornado.gen.Return()
-            data={"appId":rq["appid"],"timeStamp":int(time.time()),
+            data={"appId":rq["appid"],"timeStamp":str(int(time.time())),
                   "package":"prepay_id={}".format(rq["prepay_id"]),
                   "signType":"MD5",
                   "nonceStr":''.join(random.sample(string.ascii_letters + string.digits, 16))
