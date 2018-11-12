@@ -270,6 +270,7 @@
                         hidemod("loadingToast");
                         if (str != null && str != '' && str.error != 1) {
                             payment = str.data;
+                            console.log(payment)
                             WeixinJSBridge.invoke("getBrandWCPayRequest", {
                                     appId: payment.appId,
                                     timeStamp: payment.timeStamp,
