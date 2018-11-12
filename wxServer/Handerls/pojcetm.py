@@ -8,6 +8,7 @@ import string
 import uuid
 from xml.etree.ElementTree import Element
 from xml.etree.ElementTree import tostring
+from xml.etree.ElementTree import parse
 import sys
 defaultencoding = 'utf-8'
 if sys.getdefaultencoding() != defaultencoding:
@@ -157,6 +158,17 @@ def dict_to_xml(tag, d):
         child.text = str(val)
         elem.append(child)
     return elem
+def creat_dict(root):
+    dict_new = {}
+    for key, valu in enumerate(root):
+        dict_init = {}
+        list_init = []
+        for item in valu:
+            list_init.append([item.tag, item.text])
+            for lists in list_init:
+                dict_init[lists[0]] = lists[1]
+        dict_new[key] = dict_init
+    return dict_new
 def get_playapImch(price,ip,openid):
 
     callbackurl=www+"/playcallbackurl"
@@ -179,7 +191,10 @@ def get_playapImch(price,ip,openid):
     mxl_str=tostring(elem,encoding="utf-8")
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
-    print(rq.content.decode("utf-8"))
+    rq_xml=rq.content.decode("utf-8")
+    root=parse(rq_xml).getroot()
+    prepay_id=root.find("prepay_id")
+    print(prepay_id)
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
     str="appid=wx9ea23fdc52965768&body=快宣广告传媒-钻石充值&device_info=WEB&mch_id=1518708631&nonce_str=CSx5Te1jlR7ciJoy&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
