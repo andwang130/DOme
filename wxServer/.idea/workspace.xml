@@ -42,13 +42,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2277">
-              <caret line="99" column="59" lean-forward="false" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="59" />
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#24#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/playcallbackurl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <state relative-caret-position="230">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -228,11 +228,11 @@
         <option value="$PROJECT_DIR$/Handerls/indexHanderl.py" />
         <option value="$PROJECT_DIR$/Handerls/pojcetm.py" />
         <option value="$PROJECT_DIR$/templates/paly.html" />
-        <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
         <option value="$PROJECT_DIR$/../dome_server/handel/Poject.py" />
         <option value="$PROJECT_DIR$/../dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/../staticfile/index.js" />
         <option value="$PROJECT_DIR$/Handerls/playcallbackurl.py" />
+        <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
       </list>
     </option>
   </component>
@@ -863,16 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2277">
-          <caret line="99" column="59" lean-forward="false" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -894,6 +884,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/playcallbackurl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
