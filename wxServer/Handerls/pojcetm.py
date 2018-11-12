@@ -191,9 +191,11 @@ def get_playapImch(price,ip,openid):
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
     rq_xml=rq.content.decode("utf-8")
-    xml_data=creat_dict(fromstring(rq_xml))
+    xml_data=creat_dict(fromstring(xml_str).getiterator("xml"))[0]
     print(xml_data)
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
-    str="appid=wx9ea23fdc52965768&body=快宣广告传媒-钻石充值&device_info=WEB&mch_id=1518708631&nonce_str=CSx5Te1jlR7ciJoy&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
-    print(hashlib.md5(str.encode("utf-8")).hexdigest())
+    # str="appid=wx9ea23fdc52965768&body=快宣广告传媒-钻石充值&device_info=WEB&mch_id=1518708631&nonce_str=CSx5Te1jlR7ciJoy&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
+    # print(hashlib.md5(str.encode("utf-8")).hexdigest())
+    xml_str="<xml><return_code><![CDATA[SUCCESS]]></return_code>\n<return_msg><![CDATA[OK]]></return_msg>\n<appid><![CDATA[wx9ea23fdc52965768]]></appid>\n<mch_id><![CDATA[1518708631]]></mch_id>\n<device_info><![CDATA[WEB]]></device_info>\n<nonce_str><![CDATA[fYCb76JiJMLUNVq4]]></nonce_str>\n<sign><![CDATA[C68026271D409A93D2447D4DE9B4FCD2]]></sign>\n<result_code><![CDATA[SUCCESS]]></result_code>\n<prepay_id><![CDATA[wx121327397830258066ec33ea3616693288]]></prepay_id>\n<trade_type><![CDATA[JSAPI]]></trade_type>\n</xml>"
+    print(creat_dict(fromstring(xml_str).getiterator("xml")))
