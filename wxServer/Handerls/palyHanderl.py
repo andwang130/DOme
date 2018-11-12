@@ -4,6 +4,7 @@ import pojcetm
 import time
 import random
 import string
+import json
 from xml.etree.ElementTree import Element
 from xml.etree.ElementTree import tostring
 from xml.etree.ElementTree import fromstring
@@ -72,15 +73,24 @@ class palyHanderl(Basehanderl.Basehandelr):
         pirce = int(self.get_argument("giftid", 0))
         idepirce = int(self.get_argument("count", 0))
         ip = self.request.headers.get("X-Real-IP")
-        print(ip)
         openid = self.get_secure_cookie("openid")
-        print(openid)
         if openid:
             if pirce:
                 rq = yield self.get_playapImch(pirce, ip, openid)
             elif idepirce:
                 rq =yield self.get_playapImch(idepirce, ip, openid)
-            print(rq)
+                '''appId: payment.appId,
+                                    timeStamp: payment.timeStamp,
+                                    nonceStr: payment.nonceStr,
+                                    "package": payment["package"],
+                                    signType: payment.signType,
+                                    paySign: payment.paySign'''
+            data={"appId":rq["appid"],"timeStamp":int(time.time()),
+                  "package":"prepay_id={}".format(rq["prepay_id"]),
+                  "signType":"MD5",
+                }
+            data["paySign"]=pojcetm.get_sign(data)
+            self.write(json.dumps(data))
         else:
             pass
 
