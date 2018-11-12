@@ -149,7 +149,7 @@ def get_sign(data):
     singstr = singstr+"key="+play_Key
     print(singstr)
     newsingstr = hashlib.md5(singstr).hexdigest()
-    return newsingstr
+    return str.upper(newsingstr)
 def dict_to_xml(tag, d):
     elem = Element(tag)
     for key, val in d.items():
@@ -182,4 +182,6 @@ def get_playapImch(price,ip,openid):
     rq=requests.post(url,data=mxl_str)
     print(rq.content.decode("utf-8"))
 if __name__ == '__main__':
-    print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
+    # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
+    str="appid=wxd930ea5d5a258f4f&body=test&device_info=1000&mch_id=10000100&nonce_str=ibuaiVcKdpRxkhJA"+"&key=192006250b4c09247ec02edce69f6a2d"
+    print(hashlib.md5(str.encode("utf-8")).hexdigest())
