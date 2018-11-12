@@ -1,6 +1,17 @@
 import Basehanderl
 import tornado
 import pojcetm
+import time
+import random
+import string
+from xml.etree.ElementTree import Element
+from xml.etree.ElementTree import tostring
+from xml.etree.ElementTree import fromstring
+import sys
+defaultencoding = 'utf-8'
+if sys.getdefaultencoding() != defaultencoding:
+    reload(sys)
+    sys.setdefaultencoding(defaultencoding)
 class palyHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
@@ -55,19 +66,46 @@ class palyHanderl(Basehanderl.Basehandelr):
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
 
             self.render("paly.html", data=data, share=shares, aseedata=aseedata)
+
+    @tornado.gen.coroutine
     def post(self):
-        self.get_PlayKey()
-    def get_PlayKey(self):
-        pirce=int(self.get_argument("giftid",0))
-        idepirce=int(self.get_argument("count",0))
-        ip=self.request.headers.get("X-Real-IP")
+        pirce = int(self.get_argument("giftid", 0))
+        idepirce = int(self.get_argument("count", 0))
+        ip = self.request.headers.get("X-Real-IP")
         print(ip)
         openid = self.get_secure_cookie("openid")
         print(openid)
         if openid:
             if pirce:
-                rq=pojcetm.get_playapImch(pirce,ip,openid)
+                rq = yield self.get_playapImch(pirce, ip, openid)
             elif idepirce:
-                rq=pojcetm.get_playapImch(idepirce,ip,openid)
+                rq =yield self.get_playapImch(idepirce, ip, openid)
+            print(rq)
         else:
             pass
+
+    @tornado.gen.coroutine
+    def get_playapImch(sele,price, ip, openid):
+        callbackurl = pojcetm.www + "/playcallbackurl"
+        data = {
+            "appid": pojcetm.wxcongif["appId"],
+            "mch_id": "1518708631",
+            "device_info": "WEB",
+            "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
+            "body": "test",
+            "out_trade_no": str(int(time.time())),
+            "total_fee": price * 100,
+            "spbill_create_ip": ip,
+            "notify_url": callbackurl,
+            "trade_type": "JSAPI",
+            "openid": openid,
+        }
+        data["sign"] = pojcetm.get_sign(data)
+        elem = pojcetm.dict_to_xml("xml", data)
+        mxl_str = tostring(elem, encoding="utf-8")
+        url = "https://api.mch.weixin.qq.com/pay/unifiedorder"
+        http_client = tornado.httpclient.AsyncHTTPClient()
+        req = yield http_client.fetch(url,method="POST",body=mxl_str)
+        rq_xml = req.body.decode("utf-8")
+        xml_data = pojcetm.creat_dict(fromstring(rq_xml).getiterator("xml"))[0]
+        raise tornado.gen.Return(xml_data)

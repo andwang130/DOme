@@ -6,14 +6,7 @@ import redis
 import random
 import string
 import uuid
-from xml.etree.ElementTree import Element
-from xml.etree.ElementTree import tostring
-from xml.etree.ElementTree import fromstring
-import sys
-defaultencoding = 'utf-8'
-if sys.getdefaultencoding() != defaultencoding:
-    reload(sys)
-    sys.setdefaultencoding(defaultencoding)
+
 pojectarg = ["titile",#标题
              "himgV", #回复图片
              "description",#描述
@@ -169,31 +162,6 @@ def creat_dict(root):
                 dict_init[lists[0]] = lists[1]
         dict_new[key] = dict_init
     return dict_new
-def get_playapImch(price,ip,openid):
-
-    callbackurl=www+"/playcallbackurl"
-    data={
-        "appid":wxcongif["appId"],
-        "mch_id":"1518708631",
-        "device_info":"WEB",
-        "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
-        "body":"test",
-        "out_trade_no":str(int(time.time())),
-        "total_fee":price*100,
-        "spbill_create_ip":ip,
-        "notify_url":callbackurl,
-        "trade_type":"JSAPI",
-        "openid":openid,
-    }
-    data["sign"]=get_sign(data)
-    elem = dict_to_xml("xml",data)
-    mxl_str=tostring(elem,encoding="utf-8")
-    url="https://api.mch.weixin.qq.com/pay/unifiedorder"
-    rq=requests.post(url,data=mxl_str)
-    rq_xml=rq.content.decode("utf-8")
-    xml_data=creat_dict(fromstring(rq_xml).getiterator("xml"))
-    print(xml_data)
-    print(xml_data[0])
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
     # str="appid=wx9ea23fdc52965768&body=快宣广告传媒-钻石充值&device_info=WEB&mch_id=1518708631&nonce_str=CSx5Te1jlR7ciJoy&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
