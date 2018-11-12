@@ -264,9 +264,8 @@
                 loadingToast("奋力加载");
                 $.ajax({
                     type: "POST",
-                    url: "./index.php?i=25&c=entry&rid=5082&id=409253&ty=1&type=1&do=pay&m=tyzm_diamondvote",
+                    url: "/wx/paly",
                     data: {giftid: giftid, count: count},
-                    dataType: "json",
                     success: function (str) {
                         hidemod("loadingToast");
                         if (str != null && str != '' && str.error != 1) {
