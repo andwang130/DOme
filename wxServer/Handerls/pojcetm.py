@@ -167,7 +167,7 @@ def get_playapImch(price,ip,openid):
         "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
          "sign_type":"MD5",
         "body":"钻石充值",
-        "out_trade_no":str(uuid.uuid1).replace("-","")[0:30],
+        "out_trade_no":str(int(time.time())),
         "total_fee":price*100,
         "spbill_create_ip":ip,
         "notify_url":callbackurl,
