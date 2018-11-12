@@ -9,7 +9,6 @@ class playcallbackurl(Basehanderl.Basehandelr):
     def post(self):
         rq_xml =self.request.body.decode("utf-8")
         xml_data = pojcetm.creat_dict(fromstring(rq_xml).getiterator("xml"))[0]
-        print(xml_data)
         if xml_data["return_code"]=="SUCCESS":
             orderid=xml_data["out_trade_no"]
             self.db_linck()

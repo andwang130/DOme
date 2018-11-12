@@ -5,12 +5,13 @@ class Userhanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
         super(Userhanderl,self).__init__(*args,**kwargs)
     def post(self):
+        if not self.authen():
+            return
         usname=self.get_argument("usname")
         pswd=self.get_argument("pswd")
-        print(usname)
-        print(pswd)
-        if usname=="admin" and pswd=="123456789":
+        if usname=="WWW777" and pswd=="WWW888":
             data={"code":0,"data":""}
+            self.set_secure_cookie("token", "WWWWWSSSSSSFFFFFFF")
             self.write(json.dumps(data))
             return
         else:

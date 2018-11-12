@@ -6,6 +6,8 @@ class Blacklist(Basehandelr.Basehandelr):
     def get(self):
         self.post()
     def post(self):
+        if not self.authen():
+            return
         action=self.get_argument("action")
 
         if action:
