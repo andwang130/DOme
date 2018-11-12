@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+            <state relative-caret-position="-288">
+              <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/playcallbackurl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="377">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -187,9 +187,9 @@
       <find>votenum</find>
       <find>participants</find>
       <find>liwunum</find>
-      <find>couers</find>
       <find>送</find>
       <find>userid</find>
+      <find>couers</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -237,8 +237,8 @@
         <option value="$PROJECT_DIR$/../dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/../staticfile/index.js" />
         <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
-        <option value="$PROJECT_DIR$/Handerls/playcallbackurl.py" />
         <option value="$PROJECT_DIR$/templates/paly.html" />
+        <option value="$PROJECT_DIR$/Handerls/playcallbackurl.py" />
       </list>
     </option>
   </component>
@@ -812,42 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#1991#2795#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="97" column="74" lean-forward="true" selection-start-line="97" selection-start-column="74" selection-end-line="97" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handerls/playcallbackurl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/sort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -899,10 +863,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/toupiaoHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="97" column="74" lean-forward="true" selection-start-line="97" selection-start-column="74" selection-end-line="97" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#1991#2795#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/SortHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+        <state relative-caret-position="-288">
+          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Handerls/playcallbackurl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
           </folding>

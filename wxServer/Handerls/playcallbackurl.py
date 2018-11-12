@@ -17,5 +17,5 @@ class playcallbackurl(Basehanderl.Basehandelr):
                 self.Mongodb["Ordel"].update({"orderid":orderid},{"$set":{"start":1}})
                 self.Mongodb["tpUser"].update_one({"userid": orderidcoures["userid"]}, {"$inc": {"votenum": orderidcoures["votenum"],"liwu":orderidcoures["money"]}});
                 self.Mongodb["poject"].update_one({"uuid": orderidcoures["uuid"]}, {"$inc": {"votes": orderidcoures["votenum"]},"liwunum":orderidcoures["money"]});
-        rq_xml="<xml> <return_code><![CDATA[SUCCESS]]></return_code> <return_msg><![CDATA[OK]]></return_msg></xml>"
+        rq_xml="<xml>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<return_msg><![CDATA[OK]]></return_msg>\n</xml>"
         self.write(rq_xml)
