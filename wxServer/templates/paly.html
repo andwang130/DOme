@@ -264,7 +264,7 @@
                 loadingToast("奋力加载");
                 $.ajax({
                     type: "POST",
-                    url: "/wx/paly?userid={{data["userid"]}",
+                    url: "/wx/paly?userid={{data["userid"]}}",
                     data: {giftid: giftid, count: count},
                     success: function (str) {
                         hidemod("loadingToast");
