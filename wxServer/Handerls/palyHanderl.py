@@ -98,14 +98,15 @@ class palyHanderl(Basehanderl.Basehandelr):
                 pirce_now=pirce
             if pirce_now:
                 orderid=str(uuid.uuid1()).replace("-", "")
-                order = {"orderid": orderid, "userid": userid, "openid": openid,
+                out_trade_no=str(uuid.uuid1()).replace("-", "")
+                order = {"orderid": out_trade_no, "userid": userid, "openid": openid,
                          "headimg": "",
                          "operate": "","uuid": couers["uuid"],
                          "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
                          "votenum": idepirce * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
                          "start": 0}
                 self.Mongodb["Ordel"].insert_one(order)
-                rq =yield self.get_playapImch(idepirce, ip, openid,orderid)
+                rq =yield self.get_playapImch(out_trade_no,idepirce, ip, openid,orderid)
             else:
                 self.write(json.dumps({"error": 1, "msg": "参数错误"}))
                 raise tornado.gen.Return()
@@ -121,7 +122,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             pass
 
     @tornado.gen.coroutine
-    def get_playapImch(sele,price, ip, openid,orderid):
+    def get_playapImch(sele,out_trade_no,price, ip, openid,orderid):
         callbackurl = pojcetm.www + "/wx/playcallbackurl?orderid={}".format(orderid)
         data = {
             "appid": pojcetm.wxcongif["appId"],
@@ -129,7 +130,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             "device_info": "WEB",
             "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
             "body": "test",
-            "out_trade_no": str(int(time.time())),
+            "out_trade_no":out_trade_no,
             "total_fee": price * 100,
             "spbill_create_ip": ip,
             "notify_url": callbackurl,
