@@ -175,7 +175,6 @@ def get_playapImch(price,ip,openid):
         "openid":openid,
     }
     data["sign"]=get_sign({"appid":data["appid"],"mch_id":data["mch_id"],"device_info":data["device_info"],"nonce_str":data["nonce_str"],"body":data["body"]})
-    p
     elem = dict_to_xml("xml",data)
     mxl_str=tostring(elem)
     print(mxl_str)
