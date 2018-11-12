@@ -56,7 +56,7 @@ class palyHanderl(Basehanderl.Basehandelr):
 
             self.render("paly.html", data=data, share=shares, aseedata=aseedata)
     def post(self):
-        pass
+        self.get_PlayKey()
     def get_PlayKey(self):
         pirce=int(self.get_argument("giftid",0))
         idepirce=int(self.get_argument("count",0))
