@@ -90,7 +90,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                   "signType":"MD5",
                 }
             data["paySign"]=pojcetm.get_sign(data)
-            self.write(json.dumps(data))
+            self.write(json.dumps({"data":data,"error":200}))
         else:
             pass
 

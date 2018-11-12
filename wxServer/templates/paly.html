@@ -269,7 +269,7 @@
                     success: function (str) {
                         hidemod("loadingToast");
                         if (str != null && str != '' && str.error != 1) {
-                            payment = str.message.message;
+                            payment = str.data;
                             WeixinJSBridge.invoke("getBrandWCPayRequest", {
                                     appId: payment.appId,
                                     timeStamp: payment.timeStamp,
