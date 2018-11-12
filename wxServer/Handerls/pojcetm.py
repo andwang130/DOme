@@ -173,7 +173,7 @@ def get_playapImch(price,ip,openid):
         "trade_type":"JSAPI",
         "openid":openid,
     }
-    data["sign"]=get_sign({"spbill_create_ip":data["spbill_create_ip"],"out_trade_no":data["out_trade_no"],"appid":data["appid"],"mch_id":data["mch_id"],"device_info":data["device_info"],"nonce_str":data["nonce_str"],"body":data["body"]})
+    data["sign"]=get_sign({"total_fee":data["total_fee"],"spbill_create_ip":data["spbill_create_ip"],"out_trade_no":data["out_trade_no"],"appid":data["appid"],"mch_id":data["mch_id"],"device_info":data["device_info"],"nonce_str":data["nonce_str"],"body":data["body"]})
     print(data)
     elem = dict_to_xml("xml",data)
     mxl_str=tostring(elem,encoding="utf-8")
