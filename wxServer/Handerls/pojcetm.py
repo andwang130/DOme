@@ -166,7 +166,7 @@ def get_playapImch(price,ip,openid):
         "mch_id":"1518708631",
         "device_info":"WEB",
         "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
-        "body":"zhuanshi",
+        "body":"快宣广告传媒-钻石充值",
         "out_trade_no":str(int(time.time())),
         "total_fee":price*100,
         "spbill_create_ip":ip,
@@ -183,5 +183,5 @@ def get_playapImch(price,ip,openid):
     print(rq.content.decode("utf-8"))
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
-    str="appid=wxd930ea5d5a258f4f&body=test&device_info=1000&mch_id=10000100&nonce_str=ibuaiVcKdpRxkhJA"+"&key=192006250b4c09247ec02edce69f6a2d"
+    str="appid=wx9ea23fdc52965768&body=zhuanshi&device_info=WEB&mch_id=1518708631&nonce_str=oUCmLA0r4leWYnV3&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
     print(hashlib.md5(str.encode("utf-8")).hexdigest())
