@@ -6,7 +6,7 @@ import redis
 import random
 import string
 import uuid
-
+from xml.etree.ElementTree import Element
 pojectarg = ["titile",#标题
              "himgV", #回复图片
              "description",#描述
