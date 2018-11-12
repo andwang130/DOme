@@ -186,13 +186,12 @@ def get_playapImch(price,ip,openid):
         "openid":openid,
     }
     data["sign"]=get_sign(data)
-    print(data)
     elem = dict_to_xml("xml",data)
     mxl_str=tostring(elem,encoding="utf-8")
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
     rq_xml=rq.content.decode("utf-8")
-    prepay_id=re.findall("<prepay_id><![CDATA[(.*?)]]></prepay_id>",rq_xml,re.S)[0]
+    prepay_id=re.findall("<prepay_id><![CDATA[(\S+)]]></prepay_id>",rq_xml)[0]
     print(prepay_id)
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
