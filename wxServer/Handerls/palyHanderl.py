@@ -88,6 +88,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             data={"appId":rq["appid"],"timeStamp":int(time.time()),
                   "package":"prepay_id={}".format(rq["prepay_id"]),
                   "signType":"MD5",
+                  "nonceStr":''.join(random.sample(string.ascii_letters + string.digits, 16))
                 }
             data["paySign"]=pojcetm.get_sign(data)
             self.write(json.dumps({"data":data,"error":200}))
