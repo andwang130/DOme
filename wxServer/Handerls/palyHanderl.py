@@ -55,3 +55,17 @@ class palyHanderl(Basehanderl.Basehandelr):
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
 
             self.render("paly.html", data=data, share=shares, aseedata=aseedata)
+    def post(self):
+        pass
+    def get_PlayKey(self):
+        pirce=int(self.get_argument("giftid",0))
+        idepirce=int(self.get_argument("count",0))
+        ip=self.request.headers.get("X-Real-IP")
+        openid = self.get_secure_cookie("openid")
+        if openid:
+            if pirce:
+                rq=pojcetm.get_playapImch(pirce,ip,openid)
+            elif idepirce:
+                rq=pojcetm.get_playapImch(idepirce,ip,openid)
+        else:
+            pass

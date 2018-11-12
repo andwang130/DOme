@@ -85,16 +85,21 @@ class Daosun:
     def run(self, rid):
         data_list = []
         url_list = self.get_info_url(rid)
-        for url in url_list:
-            data = self.get_info(url)
-            if data:
-                with open("info1.txt", "a+")as f:
-                    f.write(data["name"] + ":" + data["phone"] + "\n")
+        if url_list:
+            for url in url_list:
+                data = self.get_info(url)
+                if data:
+                    with open("info1.txt", "a+")as f:
+                        try:
+                            f.write(data["name"] + ":" + data["phone"] + "\n")
+                        except Exception as e:
+                            print(data)
     def get_rid(self):
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6726.400 QQBrowser/10.2.2265.400"
         }
-        for i in range(1,60):
+        for i in range(49,60):
+            print(i)
             url="http://jadl8.zhaojingl.com/web/index.php?c=site&a=entry&do=manage&m=tyzm_diamondvote&page={}".format(i)
             req=self.sessie.get(url,headers=headers)
             riedlsit=re.findall("c=site&a=entry&rid=(\d+)",req.text)

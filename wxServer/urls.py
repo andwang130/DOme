@@ -1,4 +1,4 @@
-from Handerls import indexHanderl,Basehanderl,JpHanderl,SortHanderl,toupiaoHanderl,Handle,palyHanderl,toushuHanderl,auoth,BaomingHanderl
+from Handerls import indexHanderl,Basehanderl,JpHanderl,SortHanderl,toupiaoHanderl,Handle,palyHanderl,toushuHanderl,auoth,BaomingHanderl,playcallbackurl
 path=[
       ("/wx/wxindex",indexHanderl.indexHanderl),
     ("/wx/Baoming",BaomingHanderl.baoming),
@@ -10,4 +10,5 @@ path=[
     ("/wx",Handle.Handle),
     ("/wx/toushu",toushuHanderl.toushuHanderl),
     ("/wx/auoth",auoth.auoth),
+    ("/wx/playcallbackurl",playcallbackurl.playcallbackurl)
       ]

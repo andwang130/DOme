@@ -3,6 +3,11 @@ import time
 import hashlib
 import requests
 import redis
+import random
+import string
+import uuid
+from xml.etree.ElementTree import Element
+from xml.etree.ElementTree import tostring
 pojectarg = ["titile",#标题
              "himgV", #回复图片
              "description",#描述
@@ -85,6 +90,7 @@ wxcongif={
     "secret":"d56808daf6c09985629def889ea3b8c3"
 
 }
+play_Key="A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
 www="http://www.carzy.wang"
 
 conf_redis={
@@ -114,7 +120,6 @@ def get_signature(data):
     for i in sort_dict:
         singstr+=i[0]+"="+i[1]+"&"
     singstr=singstr.rstrip("&")
-    print(singstr)
     newsingstr=hashlib.sha1(singstr.encode("utf-8")).hexdigest()
     return newsingstr
 def get_wxcongif(url):
@@ -131,5 +136,47 @@ def get_wxcongif(url):
     data["appId"] = wxcongif["appId"]
     return  data
 
+
+def get_sign(data):
+    sort_dict = sorted(data.items(), key=lambda x: x[0], reverse=False)
+    singstr = ""
+    for i in sort_dict:
+        singstr += i[0] + "=" + i[1] + "&"
+    singstr = singstr.rstrip("&")+play_Key
+    newsingstr = hashlib.md5(singstr.encode("utf-8")).hexdigest()
+    return newsingstr
+def dict_to_xml(tag, d):
+    elem = Element(tag)
+    for key, val in d.items():
+        child = Element(key)
+        child.text = str(val)
+        elem.append(child)
+    return elem
+def get_playapImch(price,ip,openid):
+
+    callbackurl=www+"/playcallbackurl"
+    data={
+        "appid":wxcongif["appId"],
+        "mch_id":"1518708631",
+        "device_info":"WEB",
+        "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
+         "sign_type":"MD5",
+        "body":"钻石充值",
+        "out_trade_no":str(uuid.uuid1).replace("-",""),
+        "total_fee":price*100,
+        "spbill_create_ip":ip,
+        "notify_url":callbackurl,
+        "trade_type":"JSAPI",
+        "openid":openid,
+    }
+    data["sign"]=get_sign({"appid":data["appid"],"mch_id":data["mch_id"],"device_info":data["device_info"],"nonce_str":data["nonce_str"],"body":data["body"]})
+    print(data["sign"])
+    elem = dict_to_xml("xml",data)
+    mxl_str=tostring(elem).decode("utf-8")
+    url="https://api.mch.weixin.qq.com/pay/unifiedorder"
+    rq=requests.post(url,data=mxl_str)
+    print(rq.content.decode("utf-8"))
+
+
 if __name__ == '__main__':
-    print(get_ticket())
+    print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
