@@ -73,7 +73,7 @@ class palyHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def post(self):
         pirce = int(self.get_argument("giftid", 0))
-        userid=self.self.get_argument("userid", 0)
+        userid=self.get_argument("userid", 0)
         idepirce = int(self.get_argument("count", 0))
         ip = self.request.headers.get("X-Real-IP")
         openid = self.get_secure_cookie("openid")
