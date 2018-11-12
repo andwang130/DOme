@@ -2,6 +2,7 @@
 import Basehanderl
 import pojcetm
 from xml.etree.ElementTree import fromstring
+from xml.etree.ElementTree import tostring
 class playcallbackurl(Basehanderl.Basehandelr):
     def get(self):
         self.post()
@@ -13,9 +14,9 @@ class playcallbackurl(Basehanderl.Basehandelr):
             orderid=xml_data["out_trade_no"]
             self.db_linck()
             orderidcoures= self.Mongodb["Ordel"].find_one({"orderid":orderid})
-            if orderidcoures:
+            if orderidcoures["start"]==0:
                 self.Mongodb["Ordel"].update({"orderid":orderid},{"$set":{"start":1}})
                 self.Mongodb["tpUser"].update_one({"userid": orderidcoures["userid"]}, {"$inc": {"votenum": orderidcoures["votenum"],"liwu":orderidcoures["money"]}});
                 self.Mongodb["poject"].update_one({"uuid": orderidcoures["uuid"]}, {"$inc": {"votes": orderidcoures["votenum"]},"liwunum":orderidcoures["money"]});
-        rq_xml="<xml>\n<return_code><![CDATA[SUCCESS]]></return_code>\n<return_msg><![CDATA[OK]]></return_msg>\n</xml>"
-        self.write(rq_xml)
+        data = {"return_code": "<![CDATA[FAIL]]>", "return_msg": "<![CDATA[OK]]>"}
+        self.write(tostring(pojcetm.dict_to_xml("xml", data)).decode("utf-8"))
