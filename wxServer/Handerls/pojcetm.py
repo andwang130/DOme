@@ -147,6 +147,7 @@ def get_sign(data):
     for i in sort_dict:
         singstr += i[0] + "=" + i[1] + "&"
     singstr = singstr.rstrip("&")+play_Key
+    print(singstr)
     newsingstr = hashlib.md5(singstr).hexdigest()
     return newsingstr
 def dict_to_xml(tag, d):
@@ -165,7 +166,6 @@ def get_playapImch(price,ip,openid):
         "mch_id":"1518708631",
         "device_info":"WEB",
         "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
-         "sign_type":"MD5",
         "body":"zhuanshi",
         "out_trade_no":str(int(time.time())),
         "total_fee":price*100,
