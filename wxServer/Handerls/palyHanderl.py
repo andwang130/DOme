@@ -73,13 +73,15 @@ class palyHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def post(self):
         pirce = int(self.get_argument("giftid", 0))
-        userid=self.get_argument("userid", 0)
+        userid=self.get_argument("userid")
         idepirce = int(self.get_argument("count", 0))
         ip = self.request.headers.get("X-Real-IP")
         openid = self.get_secure_cookie("openid")
         if openid:
             self.db_linck()
+            print(userid)
             couers = self.Mongodb["tpUser"].find_one({"userid": userid})
+            print(couers)
             if couers:
                 pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                 if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:
@@ -88,6 +90,8 @@ class palyHanderl(Basehanderl.Basehandelr):
                 if time.mktime(time.strptime(pojectcoures["voteend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
                     self.write(json.dumps({"error": -1, "msg": "投票已结束"}))
                     raise tornado.gen.Return()
+            else:
+                raise tornado.gen.Return()
             pirce_now=None
             if pirce:
                 pirce_now=pirce
