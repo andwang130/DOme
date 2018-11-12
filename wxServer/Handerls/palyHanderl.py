@@ -122,7 +122,7 @@ class palyHanderl(Basehanderl.Basehandelr):
 
     @tornado.gen.coroutine
     def get_playapImch(sele,price, ip, openid,orderid):
-        callbackurl = pojcetm.www + "/playcallbackurl?orderid={}".format(orderid)
+        callbackurl = pojcetm.www + "/wx/playcallbackurl?orderid={}".format(orderid)
         data = {
             "appid": pojcetm.wxcongif["appId"],
             "mch_id": "1518708631",
