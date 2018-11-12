@@ -5,6 +5,7 @@ import time
 import random
 import string
 import json
+import uuid
 from xml.etree.ElementTree import Element
 from xml.etree.ElementTree import tostring
 from xml.etree.ElementTree import fromstring
@@ -71,33 +72,53 @@ class palyHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def post(self):
         pirce = int(self.get_argument("giftid", 0))
+        userid=self.self.get_argument("userid", 0)
         idepirce = int(self.get_argument("count", 0))
         ip = self.request.headers.get("X-Real-IP")
         openid = self.get_secure_cookie("openid")
         if openid:
+            self.db_linck()
+            couers = self.Mongodb["tpUser"].find_one({"userid": userid})
+            if couers:
+                pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
+                if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:
+                    self.write(json.dumps({"status": -1, "msg": "投票未开始"}))
+                    return
+                if time.mktime(time.strptime(pojectcoures["voteend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
+                    self.write(json.dumps({"error": -1, "msg": "投票已结束"}))
+                    return
+            pirce_now=None
             if pirce:
-                rq = yield self.get_playapImch(pirce, ip, openid)
+                pirce_now=pirce
             elif idepirce:
-                rq =yield self.get_playapImch(idepirce, ip, openid)
-                '''appId: payment.appId,
-                                    timeStamp: payment.timeStamp,
-                                    nonceStr: payment.nonceStr,
-                                    "package": payment["package"],
-                                    signType: payment.signType,
-                                    paySign: payment.paySign'''
+                pirce_now=pirce
+            if pirce_now:
+                orderid=str(uuid.uuid1()).replace("-", "")
+                order = {"orderid": orderid, "userid": userid, "openid": openid,
+                         "headimg": "",
+                         "operate": "", "uuid": couers["uuid"],
+                         "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
+                         "votenum": idepirce * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
+                         "start": 0}
+                self.Mongodb["Ordel"].insert_one(order)
+                rq =yield self.get_playapImch(idepirce, ip, openid,orderid)
+            else:
+                self.write(json.dumps({"error": -1, "msg": "参数错误"}))
+                return
             data={"appId":rq["appid"],"timeStamp":int(time.time()),
                   "package":"prepay_id={}".format(rq["prepay_id"]),
                   "signType":"MD5",
                   "nonceStr":''.join(random.sample(string.ascii_letters + string.digits, 16))
                 }
-            data["paySign"]=pojcetm.get_sign(data)
+
+            data["paySign"] = pojcetm.get_sign(data)
             self.write(json.dumps({"data":data,"error":200}))
         else:
             pass
 
     @tornado.gen.coroutine
-    def get_playapImch(sele,price, ip, openid):
-        callbackurl = pojcetm.www + "/playcallbackurl"
+    def get_playapImch(sele,price, ip, openid,orderid):
+        callbackurl = pojcetm.www + "/playcallbackurl?orderid={}".format(orderid)
         data = {
             "appid": pojcetm.wxcongif["appId"],
             "mch_id": "1518708631",

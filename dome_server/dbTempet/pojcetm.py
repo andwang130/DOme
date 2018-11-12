@@ -23,6 +23,7 @@ pojiceTeptle = [
                 "volume",  # 浏览量
                 "Share",  # 分享量
                 "participants",
+                "liwunum",#礼物数
                 ]
 # 参与人数]
 get_listTeptle = [
@@ -32,6 +33,7 @@ get_listTeptle = [
     "Share",  # 分享量
     "titile",
     "uuid",
+    "liwunum",
     "tiemstatr",
     "timeend",
 

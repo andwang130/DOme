@@ -104,6 +104,8 @@ class Poject(Basehandelr):
             coures=self.cooliect.find_one({"uuid":uuid_})
             for i in pojcetm.pojectarg:
                 data[i]=coures[i]
+            for i in pojcetm.pojiceTeptle:
+                data[i] = 0
             data["createtime"]=time.time()
             data["titile"]=data["titile"]+"copy"
             self.create(data)

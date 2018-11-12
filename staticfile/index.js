@@ -99,7 +99,7 @@ function get_list(page) {
                    var new_tr=tr.replace(/{编号}/,i).replace(/{TITLE}/,datalist[i]["titile"]).replace(/{开始时间}/,datalist[i]["tiemstatr"])
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
                        .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"])
-                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://carzy.wang/wx/auoth?uuid="+datalist[i]["uuid"])
+                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://carzy.wang/wx/auoth?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"])
                    var nowtime=Date.parse(new Date())
                    if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
                    {
