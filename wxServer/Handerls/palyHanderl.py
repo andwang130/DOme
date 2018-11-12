@@ -85,10 +85,10 @@ class palyHanderl(Basehanderl.Basehandelr):
             if couers:
                 pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                 if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:
-                    self.write(json.dumps({"status": -1, "msg": "投票未开始"}))
+                    self.write(json.dumps({"status": 1, "msg": "投票未开始"}))
                     raise tornado.gen.Return()
                 if time.mktime(time.strptime(pojectcoures["voteend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
-                    self.write(json.dumps({"error": -1, "msg": "投票已结束"}))
+                    self.write(json.dumps({"error": 1, "msg": "投票已结束"}))
                     raise tornado.gen.Return()
             else:
                 raise tornado.gen.Return()
@@ -108,7 +108,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                 self.Mongodb["Ordel"].insert_one(order)
                 rq =yield self.get_playapImch(idepirce, ip, openid,orderid)
             else:
-                self.write(json.dumps({"error": -1, "msg": "参数错误"}))
+                self.write(json.dumps({"error": 1, "msg": "参数错误"}))
                 raise tornado.gen.Return()
             data={"appId":rq["appid"],"timeStamp":int(time.time()),
                   "package":"prepay_id={}".format(rq["prepay_id"]),
