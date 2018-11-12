@@ -271,7 +271,12 @@
                         var str=JSON.parse(str)
                         if (str != null && str != '' && str.error != 1) {
                             payment = str.data
-                            console.log(payment)
+                            console.log(payment.appId)
+                            console.log(payment.timeStamp)
+                            console.log(payment["package"])
+                            console.log(payment.paySign)
+                            console.log(payment.paySign)
+                            
                             WeixinJSBridge.invoke("getBrandWCPayRequest", {
                                     appId: payment.appId,
                                     timeStamp: payment.timeStamp,
