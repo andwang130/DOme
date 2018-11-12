@@ -136,8 +136,8 @@ class palyHanderl(Basehanderl.Basehandelr):
             "notify_url": callbackurl,
             "trade_type": "JSAPI",
             "openid": openid,
-            "time_start":time.strftime("yyyyMMddHHmmss",time.time()),
-            "time_expire":time.strftime("yyyyMMddHHmmss",time.time()+300),
+            "time_start":time.strftime("%Y%m%d%H%M%S",time.localtime(time.time())),
+            "time_expire":time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()+300)),
         }
         data["sign"] = pojcetm.get_sign(data)
         elem = pojcetm.dict_to_xml("xml", data)

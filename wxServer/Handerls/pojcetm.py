@@ -165,6 +165,5 @@ def creat_dict(root):
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
     # str="appid=wx9ea23fdc52965768&body=快宣广告传媒-钻石充值&device_info=WEB&mch_id=1518708631&nonce_str=CSx5Te1jlR7ciJoy&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
-    # print(hashlib.md5(str.encode("utf-8")).hexdigest())
-    data = {"return_code": "<![CDATA[FAIL]]>", "return_msg": "<![CDATA[OK]]>"}
-    print(tostring(dict_to_xml("xml",data)).decode("utf-8"))
+    # print(hashlib.md5(str.encode("utf-8")).hexdigest())\
+    print(time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()+300)))

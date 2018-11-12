@@ -12,7 +12,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wxServer$auoth.coverage" NAME="auoth Coverage Results" MODIFIED="1541488266625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Handerls" />
-    <SUITE FILE_PATH="coverage/wxServer$pojcetm.coverage" NAME="pojcetm Coverage Results" MODIFIED="1542008469683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Handerls" />
+    <SUITE FILE_PATH="coverage/wxServer$pojcetm.coverage" NAME="pojcetm Coverage Results" MODIFIED="1542011944809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Handerls" />
     <SUITE FILE_PATH="coverage/wxServer$dwonload1.coverage" NAME="dwonload1 Coverage Results" MODIFIED="1541820877498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
   </component>
   <component name="DatabaseView">
@@ -55,8 +55,8 @@
       <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="168" column="3" lean-forward="true" selection-start-line="168" selection-start-column="3" selection-end-line="169" selection-end-column="60" />
+            <state relative-caret-position="395">
+              <caret line="168" column="70" lean-forward="false" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="70" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
                 <element signature="e#2034#2838#0" expanded="false" />
@@ -68,8 +68,8 @@
       <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+            <state relative-caret-position="333">
+              <caret line="139" column="80" lean-forward="false" selection-start-line="139" selection-start-column="80" selection-end-line="139" selection-end-column="80" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -189,8 +189,8 @@
       <find>liwunum</find>
       <find>投票</find>
       <find>送</find>
-      <find>couers</find>
       <find>userid</find>
+      <find>couers</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -237,8 +237,8 @@
         <option value="$PROJECT_DIR$/../dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/../staticfile/index.js" />
         <option value="$PROJECT_DIR$/templates/paly.html" />
-        <option value="$PROJECT_DIR$/Handerls/pojcetm.py" />
         <option value="$PROJECT_DIR$/Handerls/playcallbackurl.py" />
+        <option value="$PROJECT_DIR$/Handerls/pojcetm.py" />
         <option value="$PROJECT_DIR$/Handerls/palyHanderl.py" />
       </list>
     </option>
@@ -870,10 +870,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/paly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="281" column="64" lean-forward="false" selection-start-line="281" selection-start-column="55" selection-end-line="281" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="168" column="3" lean-forward="true" selection-start-line="168" selection-start-column="3" selection-end-line="169" selection-end-column="60" />
+        <state relative-caret-position="395">
+          <caret line="168" column="70" lean-forward="false" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="70" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
             <element signature="e#2034#2838#0" expanded="false" />
@@ -891,20 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/paly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="281" column="64" lean-forward="false" selection-start-line="281" selection-start-column="55" selection-end-line="281" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/palyHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+        <state relative-caret-position="333">
+          <caret line="139" column="80" lean-forward="false" selection-start-line="139" selection-start-column="80" selection-end-line="139" selection-end-column="80" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
           </folding>
