@@ -192,6 +192,7 @@ def get_playapImch(price,ip,openid):
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
     rq_xml=rq.content.decode("utf-8")
+    print(rq_xml)
     prepay_id=re.findall("<prepay_id><![CDATA[(.*?)]]></prepay_id>",rq_xml)[0]
     print(prepay_id)
 if __name__ == '__main__':
