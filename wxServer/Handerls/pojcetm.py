@@ -146,7 +146,7 @@ def get_sign(data):
     singstr = ""
     for i in sort_dict:
         singstr += i[0] + "=" + i[1] + "&"
-    singstr = singstr.rstrip("&")+"key="+play_Key
+    singstr = singstr+"key="+play_Key
     print(singstr)
     newsingstr = hashlib.md5(singstr).hexdigest()
     return newsingstr
