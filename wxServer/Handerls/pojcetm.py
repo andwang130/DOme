@@ -191,7 +191,7 @@ def get_playapImch(price,ip,openid):
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
     rq_xml=rq.content.decode("utf-8")
-    xml_data=creat_dict(fromstring(rq_xml).getroot())
+    xml_data=creat_dict(fromstring(rq_xml))
     print(xml_data)
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
