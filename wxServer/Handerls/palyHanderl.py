@@ -61,7 +61,9 @@ class palyHanderl(Basehanderl.Basehandelr):
         pirce=int(self.get_argument("giftid",0))
         idepirce=int(self.get_argument("count",0))
         ip=self.request.headers.get("X-Real-IP")
+        print(ip)
         openid = self.get_secure_cookie("openid")
+        print(openid)
         if openid:
             if pirce:
                 rq=pojcetm.get_playapImch(pirce,ip,openid)

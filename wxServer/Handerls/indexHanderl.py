@@ -61,7 +61,6 @@ class indexHanderl(Basehanderl.Basehandelr):
 class Getlist(Basehanderl.Basehandelr):
     def post(self):
         key=self.get_argument("keyword")
-        print(key)
         uuid=self.get_argument("uuid")
         page=int(self.get_argument("page",1))
         try:
