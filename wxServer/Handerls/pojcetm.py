@@ -8,6 +8,11 @@ import string
 import uuid
 from xml.etree.ElementTree import Element
 from xml.etree.ElementTree import tostring
+import sys
+defaultencoding = 'utf-8'
+if sys.getdefaultencoding() != defaultencoding:
+    reload(sys)
+    sys.setdefaultencoding(defaultencoding)
 pojectarg = ["titile",#标题
              "himgV", #回复图片
              "description",#描述
@@ -148,6 +153,7 @@ def dict_to_xml(tag, d):
     elem = Element(tag)
     for key, val in d.items():
         child = Element(key)
+
         child.text = str(val)
         elem.append(child)
     return elem
@@ -175,7 +181,5 @@ def get_playapImch(price,ip,openid):
     url="https://api.mch.weixin.qq.com/pay/unifiedorder"
     rq=requests.post(url,data=mxl_str)
     print(rq.content.decode("utf-8"))
-
-
 if __name__ == '__main__':
     print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
