@@ -79,11 +79,11 @@
       <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="193" column="75" lean-forward="true" selection-start-line="193" selection-start-column="75" selection-end-line="193" selection-end-column="75" />
+            <state relative-caret-position="265">
+              <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
-                <element signature="e#2189#2993#0" expanded="false" />
+                <element signature="e#2219#3023#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -102,8 +102,8 @@
       <file leaf-file-name="ElementTree.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Python27/Lib/xml/etree/ElementTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="1113" column="30" lean-forward="false" selection-start-line="1113" selection-start-column="22" selection-end-line="1113" selection-end-column="30" />
+            <state relative-caret-position="177">
+              <caret line="1173" column="4" lean-forward="false" selection-start-line="1173" selection-start-column="4" selection-end-line="1173" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -843,14 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python27/Lib/xml/etree/ElementTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="1113" column="30" lean-forward="false" selection-start-line="1113" selection-start-column="22" selection-end-line="1113" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python27/Lib/re.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -859,13 +851,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Python27/Lib/xml/etree/ElementTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="1173" column="4" lean-forward="false" selection-start-line="1173" selection-start-column="4" selection-end-line="1173" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="193" column="75" lean-forward="true" selection-start-line="193" selection-start-column="75" selection-end-line="193" selection-end-column="75" />
+        <state relative-caret-position="265">
+          <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
-            <element signature="e#2189#2993#0" expanded="false" />
+            <element signature="e#2219#3023#0" expanded="false" />
           </folding>
         </state>
       </provider>
