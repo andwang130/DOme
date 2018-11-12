@@ -142,7 +142,7 @@ def get_sign(data):
     for i in sort_dict:
         singstr += i[0] + "=" + i[1] + "&"
     singstr = singstr.rstrip("&")+play_Key
-    newsingstr = hashlib.md5(singstr.encode("utf-8")).hexdigest()
+    newsingstr = hashlib.md5(singstr).hexdigest()
     return newsingstr
 def dict_to_xml(tag, d):
     elem = Element(tag)
