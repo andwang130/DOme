@@ -94,6 +94,7 @@ class Tpuuser(Basehandelr):
                 data["createtime"] = time.time()
                 data["userid"] = str(uuid.uuid1()).replace("-", "")
                 data["index"]=num
+                data["liwu"]=0
                 data_list.append(data)
                 num += 1
             try:
@@ -120,6 +121,7 @@ class Tpuuser(Basehandelr):
                    data[i] = index
                else:
                    data[i]=self.get_argument(i,"")
+               del data["liwu"]
             self.Mongodb["tpUser"].update_one({"userid":userid},{"$set":data})
             self.write(json.dumps({"code": 0}))
     def delete(self):

@@ -5,8 +5,6 @@ class Userhanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
         super(Userhanderl,self).__init__(*args,**kwargs)
     def post(self):
-        if not self.authen():
-            return
         usname=self.get_argument("usname")
         pswd=self.get_argument("pswd")
         if usname=="WWW777" and pswd=="WWW888":

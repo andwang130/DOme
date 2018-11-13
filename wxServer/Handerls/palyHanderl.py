@@ -51,6 +51,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                 if x % 3 == 0:
                     liwulist.append(row_list)
                     row_list = []
+                x+=1
             liwulist.append(row_list)
             data["liwulist"] = liwulist
             data["name"] = usercoures["name"]
@@ -95,7 +96,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             if pirce:
                 pirce_now=pirce
             elif idepirce:
-                pirce_now=pirce
+                pirce_now=idepirce
             if pirce_now:
                 orderid=str(uuid.uuid1()).replace("-", "")
                 out_trade_no=str(uuid.uuid1()).replace("-", "")
@@ -103,10 +104,10 @@ class palyHanderl(Basehanderl.Basehandelr):
                          "headimg": "",
                          "operate": "","uuid": couers["uuid"],
                          "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
-                         "votenum": idepirce * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
+                         "votenum": pirce_now * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
                          "start": 0}
                 self.Mongodb["Ordel"].insert_one(order)
-                rq =yield self.get_playapImch(out_trade_no,idepirce, ip, openid,orderid)
+                rq =yield self.get_playapImch(out_trade_no,pirce_now, ip, openid,orderid)
             else:
                 self.write(json.dumps({"error": 1, "msg": "参数错误"}))
                 raise tornado.gen.Return()

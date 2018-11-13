@@ -65,18 +65,21 @@ function sudbit_click() {
     if(!name)
     {
         alert("姓名必填")
+        return
     }
     var votenum=$("#votenum").val()
     var phone=$("#phone").val()
     if(!phone)
     {
          alert("手机必填")
+        return
     }
     var description=$("#description").val()
     var vheat=$("#vheat").val()
     if(!vheat)
     {
         alert("至少一张图片")
+        return
     }
     var index=$("#index").val()
     var avatar=$("#avatar").attr("src")
