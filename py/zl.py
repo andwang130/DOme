@@ -294,7 +294,7 @@ if __name__ == '__main__':
         if get_code():
 
             print("读取配置文件完成")
-            auto=Auto("admin","MfKj1562")
+            auto=Auto("admin","XI1993an")
             auto.login()
             while(True):
                 rid=input("输入rid:")
