@@ -163,10 +163,10 @@ def get_info():
 if __name__ == '__main__':
     data=get_info()
     cookie="_lxsdk_cuid=1663defbb7ec8-09103551b51f8f-3c7f0257-13c680-1663defbb7ec8; uuid=661df5282d544216953d.1539673656.1.0.0; _lx_utm=utm_source%3DBaidu%26utm_medium%3Dorganic; ci=294; rvct=294%2C610%2C1189%2C328%2C327%2C475%2C473%2C119%2C493%2C548%2C754; __mta=151811974.1539673708682.1539673708682.1539673708682.1; client-id=bf541514-633c-4100-9e27-e73ef2aa92e7; _lxsdk=1663defbb7ec8-09103551b51f8f-3c7f0257-13c680-1663defbb7ec8; _lxsdk_s=1667bb395a4-b56-73b-ead%7C%7C20"
-    Origi="https://luxi.meituan.com/meishi/"
+    Origi="https://nb.meituan.com/meishi/"
     url=Origi+"api/poi/getPoiList?"
-    token="eJx1j19vqjAYxr9Lr4mlpTAx2YUCKgqCzD/osgsEJlChrpQxXfbd1yU7OTkXJ3mT5+nzPvnl7SfgbgZGSFVNVVXAe87BCKCBOjCAAkQrNzpBRDUw1jQNKSD9NyMYK+DEdzYYPSNkqsqQ6C8/SSSDZyKReEhelL8OEzk/DVcWQCHEtR1BeOk+ykGdl6JLmkHKaih9W5RQ3vDfCpCUeiMpUumvJr8q/rx9+RsJactzI12+6C/VVnTjyllHAbR62oXhxvedqxs7Ty39cIkdzA82P/Qw4XmVutt04bbpee0XFZtNtF1wjUVsOaIUK5WRGxzPdP89n1S2pj3Ak7kzSTWZMoo5tfHxbX50bgejuNB7f/Air7DyYHJsVvW9jrMsDs11RMddxli8vmZE82abOnrIC350eLZiUCz0VXPzd1Pm7+c6bh3t7iLPrZJy2pwzxHje+bOwDZebbPh6McYnZL2ipdHtWWRuQ6ovkuUb3dt3z3oK+kfw9Q0Uw5X4"
-    name="芦溪"
+    token="eJx1j0tzozAQhP+LrlCWUECAbw5sbDmV8Cayt3JAmJjH4oARJmZr//sqtc4hhz11zzddXTO/wZkewFJDyEZIBZfiDJZAW6AFASoQg9wYOka2hmzbMHQV5N8ZMWwV8HPqguVPzbgjqmag108SSvCPWER/VW8WS4t19VMApzICSiG6YQnhiS/aohJjdlrk7y2UfigrKG/4TwDIhjaWDVKbm2Y3FV/zk/xFVgzV8SRdsZ1+1bHmreYfQTgq0dQzJsrHTcho2CVbh8T1au+ihto7uH636oTR1G1cty1W+dqrCr/GNp+8J+vecZNgoPDob8nURGWv+EKB/uEj6fZKWJO08Wg95WnWBWTUdvSYnR3hPVild9GjLsIQIYM/e9EzLQl5aTLmmKgPerYxbae61uvHee57/TjrLG63p+x69Yv8/i53GhFcis0bK6wkgLE5TP5UzakymiPfK/kLZwe+x7tZMTHGbTUrwQN/Q7kB/vwFnEKRrg=="
+    name="宁波"
     uuid="066de692-5bf3-4854-be60-481fc84bddb1"
     page_start=1
     

@@ -316,7 +316,7 @@ function get_list(ty){
 						for(var i=0; i<list.length; i++){
 							content += '<li class="picCon"><div>'
 							+'<i class="number">'+list[i]['index']+'号，'+list[i]['name'].replace(/~~.*/,"")+'</i>'
-							+'<a href="'+list[i]['avatar']+'" class="img"><img height="272" width="388" src="'+list[i]['avatar']+'"></a>'
+							+'<a href="'+list[i]['avatar']+'" class="img"><img  src="'+list[i]['avatar']+'"></a>'
 							+'<div class="clearfix" ><p style="color:red;">'+list[i]['votenum']+'票</p>'
 							+'<a href="/wx/toupiao?uuid={{data["uuid"]}}&userid='+list[i]['userid']+'" class="vote">投票</a></div>'
 							+'</div></li>';
