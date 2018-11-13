@@ -15,7 +15,7 @@
     <SUITE FILE_PATH="coverage/wxServer$pojcetm.coverage" NAME="pojcetm Coverage Results" MODIFIED="1542011944809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Handerls" />
     <SUITE FILE_PATH="coverage/wxServer$meituan.coverage" NAME="meituan Coverage Results" MODIFIED="1542091118983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
     <SUITE FILE_PATH="coverage/wxServer$zl.coverage" NAME="zl Coverage Results" MODIFIED="1542094477267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
-    <SUITE FILE_PATH="coverage/wxServer$myde.coverage" NAME="myde Coverage Results" MODIFIED="1542093770743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
+    <SUITE FILE_PATH="coverage/wxServer$myde.coverage" NAME="myde Coverage Results" MODIFIED="1542101079960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
     <SUITE FILE_PATH="coverage/wxServer$dwonload1.coverage" NAME="dwonload1 Coverage Results" MODIFIED="1541820877498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
   </component>
   <component name="DatabaseView">
@@ -65,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexHanderl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            <state relative-caret-position="377">
+              <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myde.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../py/myde.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -95,41 +105,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="93" column="44" lean-forward="false" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+            <state relative-caret-position="230">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TPUser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../staticfile/TPUser.html">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../staticfile/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="148" column="39" lean-forward="false" selection-start-line="148" selection-start-column="39" selection-end-line="148" selection-end-column="39" />
+            <state relative-caret-position="247">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dome_server/handel/Poject.py">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../staticfile/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orderHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dome_server/handel/orderHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="164">
+              <caret line="49" column="86" lean-forward="true" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -146,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>weui-media-box__desc</find>
       <find>volume</find>
       <find>giftid</find>
       <find>count</find>
@@ -176,13 +175,12 @@
       <find>已审核</find>
       <find>状态</find>
       <find>编号</find>
+      <find>logo-version</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../staticfile/orderlist.js" />
-        <option value="$PROJECT_DIR$/../staticfile/orderall.js" />
         <option value="$PROJECT_DIR$/../staticfile/backlist.js" />
         <option value="$PROJECT_DIR$/../staticfile/upload.js" />
         <option value="$PROJECT_DIR$/../staticfile/addpoje.html" />
@@ -225,13 +223,15 @@
         <option value="$PROJECT_DIR$/../py/meituan.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/../dome_server/handel/TpuserHandeler.py" />
-        <option value="$PROJECT_DIR$/../py/myde.py" />
         <option value="$PROJECT_DIR$/../py/zl.py" />
         <option value="$PROJECT_DIR$/../staticfile/TPuser.js" />
         <option value="$PROJECT_DIR$/../staticfile/TPUser.html" />
         <option value="$PROJECT_DIR$/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/templates/toupiao.html" />
         <option value="$PROJECT_DIR$/Handerls/indexHanderl.py" />
+        <option value="$PROJECT_DIR$/../py/myde.py" />
+        <option value="$PROJECT_DIR$/../staticfile/login.js" />
+        <option value="$PROJECT_DIR$/../staticfile/login.html" />
       </list>
     </option>
   </component>
@@ -299,7 +299,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../py/myde.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -314,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zl">
+  <component name="RunManager" selected="Python.myde">
     <configuration name="dwonload1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -419,8 +419,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.zl" />
-        <item index="1" class="java.lang.String" itemvalue="Python.myde" />
+        <item index="0" class="java.lang.String" itemvalue="Python.myde" />
+        <item index="1" class="java.lang.String" itemvalue="Python.zl" />
         <item index="2" class="java.lang.String" itemvalue="Python.meituan" />
         <item index="3" class="java.lang.String" itemvalue="Python.pojcetm" />
         <item index="4" class="java.lang.String" itemvalue="Python.dwonload1" />
@@ -520,20 +520,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/orderall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -632,14 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="228" column="30" lean-forward="false" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,16 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../py/myde.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../py/meituan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -922,8 +890,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        <state relative-caret-position="377">
+          <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py/myde.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="49" column="86" lean-forward="true" selection-start-line="49" selection-start-column="86" selection-end-line="49" selection-end-column="86" />
           <folding />
         </state>
       </provider>

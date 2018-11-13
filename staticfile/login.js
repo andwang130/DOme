@@ -31,7 +31,7 @@ function login_ajax(name,pswd)
         success: function (arg) {
             json_data=JSON.parse(arg)
             if (json_data["code"] == 0) {
-              window.location.href='/admin/index.html'
+              window.location.href='/index.html'
             }
         }
     })
