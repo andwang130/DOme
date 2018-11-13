@@ -39,9 +39,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             for i in coureslist:
                 if i["userid"] == userid:
                     if x != 0:
-                        print(x)
-                        print(userid)
-                        print(type(usercoures["votenum"]))
+
                         data["index"] = x + 1
                         data["subvotenum"] = int(next_couresl["votenum"]) - int(usercoures["votenum"])
                     else:
@@ -71,7 +69,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
             self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
     def post(self):
-        openid = self.get_cookie("openid")
+        openid = self.get_secure_cookie("openid")
         userid= self.get_argument("userid", None)
         if userid and openid:
             try:
