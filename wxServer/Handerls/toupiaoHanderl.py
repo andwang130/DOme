@@ -54,6 +54,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             data["avatar"] = usercoures["avatar"]
             data["userid"] = userid
             data["uuid"] = uuid
+            data["index_"]=usercoures["index"]
             data["description"] = usercoures["description"]
             imgs = []
             for i in ["images1", "images2", "images3", "images4", "images5"]:
