@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 import os
 settings={
-    'debug':False,
+    'debug':True,
     'static_path':os.path.join(os.path.dirname(__file__),'static'),#静态文件件模板路径配置
     'template_path':os.path.join(os.path.dirname(__file__),'templates'), #HTML文件路径
     'cookie_secret':'61oETzKXQ241sfshdhgfhfhfg',#安全cookie的加密值
