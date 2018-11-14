@@ -24,35 +24,17 @@
     <link href="/resource/css/index.css?a=11" rel="stylesheet">
     <link href="/resource/css/verify.css" rel="stylesheet">
     <script type="text/javascript">
-        <
-        script
-        type = "text/javascript" >
+        <scripttype = "text/javascript" >
         if (navigator.appName == 'Microsoft Internet Explorer') {
             if (navigator.userAgent.indexOf("MSIE 5.0") > 0 || navigator.userAgent.indexOf("MSIE 6.0") > 0 || navigator.userAgent.indexOf("MSIE 7.0") > 0) {
                 alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
             }
         }
-        window.sysinfo = {
-            'uniacid': '25',
-            'acid': '25',
-            'openid': 'oiPqq0Xn1BxjHI9QUQ08VXS_NNls',
-            'siteroot': 'http://l5m3kj.jia.zenglianghao.com/',
-            'siteurl': 'http://l5m3kj.jia.zenglianghao.com/app/index.php?i=25&c=entry&rid=5444&do=report&m=tyzm_diamondvote',
-            'attachurl': 'http://tp-dl3.xcx2.top/',
-            'attachurl_local': 'http://l5m3kj.jia.zenglianghao.com/attachment/',
-            'attachurl_remote': 'http://tp-dl3.xcx2.top/',
-            'MODULE_URL': 'http://l5m3kj.jia.zenglianghao.com/addons/tyzm_diamondvote/',
-            'cookie': {'pre': 'd193_'}
-        };
-        jssdkconfig = {
-            "appId": "wxbe44dd7a1101e9c8",
-            "nonceStr": "bQT07s8U77sFl7Me",
-            "timestamp": "1541473293",
-            "signature": "4b6d5de838c58b34148a38c838e81810f71385e9"
-        } || {};
-        jssdkconfig.debug = false;
-        jssdkconfig.jsApiList = ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems', 'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage', 'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay', 'openProductSpecificView', 'addCard', 'chooseCard', 'openCard'
-        ];</script>
+         	jssdkconfig = {"appId":"{{aseedata["appId"]}}","nonceStr":"{{aseedata["noncestr"]}}","timestamp":"{{aseedata["timestamp"]}}","signature":"{{aseedata["signature"]}}"} || {};
+
+    jssdkconfig.debug = false;
+    jssdkconfig.jsApiList = ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'hideMenuItems', 'showMenuItems', 'hideAllNonBaseMenuItem', 'showAllNonBaseMenuItem', 'translateVoice', 'startRecord', 'stopRecord', 'onRecordEnd', 'playVoice', 'pauseVoice', 'stopVoice', 'uploadVoice', 'downloadVoice', 'chooseImage', 'previewImage', 'uploadImage', 'downloadImage', 'getNetworkType', 'openLocation', 'getLocation', 'hideOptionMenu', 'showOptionMenu', 'closeWindow', 'scanQRCode', 'chooseWXPay', 'openProductSpecificView', 'addCard', 'chooseCard', 'openCard']
+    </script>
 </head>
 <body>
 <div class="container container-fill">
@@ -244,7 +226,7 @@
         </a>
     </div>
     <script language="javascript">
-// 这个脚本是 ie6和ie7 通用的脚本
+wx.config(jssdkconfig);
 function custom_close(){
     $.ajax({
         url:'/wx/toushu',
@@ -253,9 +235,7 @@ function custom_close(){
         {
 
         }})
-        window.opener=null;
-        window.open('','_self');
-        window.close();
+       WeixinJSBridge.call('closeWindow');
 
 
 }
