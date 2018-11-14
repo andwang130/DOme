@@ -6,6 +6,7 @@ import urllib
 from Handerls.pojcetm  import wxcongif,www
 import pojcetm
 import json
+import time
 import requests
 class Basehandelr(RequestHandler):
     def set_default_headers(self):  # 设置headers
@@ -22,10 +23,20 @@ class Basehandelr(RequestHandler):
         self.redirect(url,permanent=True)
 
     def Verification(self,openid,ip):
-        if self.Mongodb["Blacklist"].find_one({"value":openid}):
-            return False
-        elif self.Mongodb["Blacklist"].find_one({"value":ip}):
-            return False
+        openidors=self.Mongodb["Blacklist"].find_one({"value":openid})
+        ipors=self.Mongodb["Blacklist"].find_one({"value": ip})
+        now_tiem=time.time()
+        if openidors:
+            if now_tiem-openidors["times"]>=600:
+                return False
+            else:
+                return True
+
+        elif ipors:
+            if now_tiem - ipors["times"] >= 600:
+                return False
+            else:
+                return True
         else:
             return True
     @tornado.gen.coroutine
