@@ -228,13 +228,7 @@
     <script language="javascript">
 wx.config(jssdkconfig);
 function custom_close(){
-    $.ajax({
-        url:'/wx/toushu',
-        type: 'POST',
-        success: function (arg)
-        {
 
-        }})
        WeixinJSBridge.call('closeWindow');
 
 
@@ -253,6 +247,13 @@ function custom_close(){
     }
 
     function success() {
+         $.ajax({
+        url:'/wx/toushu',
+        type: 'POST',
+        success: function (arg)
+        {
+
+        }})
         var detail = document.getElementById("detail").style.display = "none";
         var success = document.getElementById("success").style.display = "block";
     }
