@@ -8,6 +8,7 @@ import json
 class baoming(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
+        self.db_linck()
         uuid=self.get_argument("uuid","")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
@@ -24,7 +25,6 @@ class baoming(Basehanderl.Basehandelr):
             self.auto()
     def rq(self,uuid):
         if uuid:
-            self.db_linck()
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             data = {}
             data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()

@@ -8,6 +8,7 @@ class jphanderl(Basehanderl.Basehandelr):
 
     @tornado.gen.coroutine
     def get(self):
+        self.db_linck()
         uuid=self.get_argument("uuid")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
@@ -28,7 +29,6 @@ class jphanderl(Basehanderl.Basehandelr):
             raise tornado.gen.Return()
     def rq(self,uuid):
         if uuid:
-            self.db_linck()
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             if coures:
                 data = {}

@@ -9,6 +9,7 @@ import json
 class indexHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
+        self.db_linck()
         uuid=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
         openid = self.get_secure_cookie("openid")
@@ -33,7 +34,6 @@ class indexHanderl(Basehanderl.Basehandelr):
 
     def rq(self,uuid):
         if uuid:
-            self.db_linck()
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             self.Mongodb["poject"].update_one({"uuid": uuid}, {"$inc": {"volume": 1}})
             usercoures = self.Mongodb["tpUser"].find({"uuid": uuid})

@@ -9,6 +9,7 @@ import uuid
 class toupiaoHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
+        self.db_linck()
         userid=self.get_argument("userid")
         uuid=self.get_argument("uuid")
         code = self.get_argument("code",None)
@@ -30,7 +31,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             raise tornado.gen.Return()
     def rq(self,uuid,userid):
         if userid and uuid:
-            self.db_linck()
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
             coureslist = self.Mongodb["tpUser"].find({"uuid": uuid}, {"userid": 1, "votenum": 1}).sort(
