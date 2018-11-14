@@ -85,7 +85,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             if couers:
                 pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                 if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:
-                    self.write(json.dumps({"status": 1, "msg": "投票未开始"}))
+                    self.write(json.dumps({"error": 1, "msg": "投票未开始"}))
                     raise tornado.gen.Return()
                 if time.mktime(time.strptime(pojectcoures["voteend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
                     self.write(json.dumps({"error": 1, "msg": "投票已结束"}))
