@@ -35,6 +35,9 @@ class SortHanderl(Basehanderl.Basehandelr):
         uuid=self.get_argument("uuid")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
+        if not self.Verification(openid, self.request.headers.get("X-Real-IP")):
+            self.render("404.html")
+            raise tornado.gen.Return()
         if openid:
             self.rq(uuid)
             raise tornado.gen.Return()

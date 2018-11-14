@@ -13,9 +13,7 @@ class Basehandelr(RequestHandler):
     def db_linck(self):
         self.Mongodb = MongoClient()["Toup"]
 
-
     def auto(self):
-
         values = www + self.request.uri
         link = urllib.quote(values)
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
@@ -23,7 +21,13 @@ class Basehandelr(RequestHandler):
             wxcongif["appId"], link)
         self.redirect(url,permanent=True)
 
-
+    def Verification(self,openid,ip):
+        if self.Mongodb["Blacklist"].find_one({"value":openid}):
+            return False
+        elif self.Mongodb["Blacklist"].find_one({"value":ip}):
+            return False
+        else:
+            return True
     @tornado.gen.coroutine
     def get_openid(self,code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
