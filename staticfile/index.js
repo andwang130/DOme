@@ -174,7 +174,8 @@ function  on_a_cliek()
 {
 
     var page_id=$(this).attr("page_id")
-    console.log(page_id);
+     now_page=Number(page_id)
+    get_list(now_page)
 }
 
 // function setClipboard() {
