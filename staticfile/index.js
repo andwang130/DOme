@@ -168,7 +168,7 @@ function page_math(count) {
    }
     THML+="<li><a page_id='{pageid}' href='#'>下一页</a></li>".replace(/{pageid}/,now_page+1);
     $("#page_active").html(THML);
-    $("#page_active li a").click()
+    $("#page_active li a").click(on_a_cliek)
 }
 function  on_a_cliek()
 {
