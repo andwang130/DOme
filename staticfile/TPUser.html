@@ -118,7 +118,6 @@ word-break: normal;
 	<li><a href="" id="add">添加投票用户</a></li>
     </ul>
     <div class="we7-padding-bottom clearfix">
-        <form action="./index.php" method="get" role="form" >
             <div class="input-group pull-left col-sm-4">
             <input type="hidden" name="c" value="site" />
 			<input type="hidden" name="a" value="entry" />
@@ -127,9 +126,8 @@ word-break: normal;
 			<input type="hidden" name="rid" value="3319" />
 
             <input type="text" name="keyword" id="keyword" value="" class="form-control" placeholder="输入姓名，手机号或ID"/>
-            <span class="input-group-btn"><button class="btn btn-default"><i id="fa-search" class="fa fa-search"></i></button></span>
+            <span class="input-group-btn"><button id="fa-search"  class="btn btn-default"><i class="fa fa-search"></i></button></span>
             </div>
-        </form>
         <div class="pull-right">
         <a href="./addTuouselist.html?action=create_list&uuid=" id="addthlist" class="btn btn-primary  we7-margin-left">+批量导入用户</a>
             <a href="./addTpuser.html?action=create&uuid="  id="addbth" class="btn btn-primary  we7-margin-left">+添加投票用户</a>
