@@ -15,6 +15,7 @@ function url_init() {
       $("#order").attr("href","/orderlist.html?uuid="+uuid.uuid)
         $("#add").attr("href","/addTpuser.html?action=create&uuid="+uuid.uuid)
         $("#tpindex").attr("href","/TPUser.html?uuid="+uuid.uuid)
+        $("#getcsv").attr("href",'/tpuserscv?uuid='+uuid.uuid)
 }
 function  get_user(page) {
     if(uuid.uuid) {
