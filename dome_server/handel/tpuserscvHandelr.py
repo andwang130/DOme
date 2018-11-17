@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from Basehandelr import Basehandelr
 import csv
 class tpuserscvHandelr(Basehandelr):
