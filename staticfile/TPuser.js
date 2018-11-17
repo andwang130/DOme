@@ -1,15 +1,21 @@
 
 var uuid=""
 var sort_type="createtime"
+var key=""
 $(document).ready(
     function () {
         uuid=GetRequest("uuid")
         $("#addbth").attr("href",$("#addbth").attr("href")+uuid.uuid)
         $("#addthlist").attr("href",$("#addthlist").attr("href")+uuid.uuid)
+        $("#fa-search").click(set_Key)
         url_init()
         get_user(1)
     }
 )
+function set_Key() {
+    key=$("keyword").val()
+    get_user(1)
+}
 function url_init() {
 
       $("#order").attr("href","/orderlist.html?uuid="+uuid.uuid)
@@ -20,7 +26,10 @@ function url_init() {
 function  get_user(page) {
     if(uuid.uuid) {
         data = {"action": "get_list", "uuid": uuid.uuid,"page":page,"sorttype":sort_type}
-         console.log(data);
+       if(key)
+       {
+           data["key"]=key
+       }
         $.ajax({
                 url: '/Tpuser',
                 type: 'POST',

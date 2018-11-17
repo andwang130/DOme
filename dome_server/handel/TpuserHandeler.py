@@ -41,8 +41,12 @@ class Tpuuser(Basehandelr):
         page=int(self.get_argument("page",1))
         req_data=[]
         sort_type = self.get_argument("sorttype")
+        key = self.get_argument("key", None)
         if uuid_:
-            coures=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(25).skip(25*(page-1)).sort([(sort_type,-1)])
+            if key:
+                coures = self.Mongodb["tpUser"].find({"uuid": uuid_,"$or":[{"name":{"$regex":key}},{"phone":{"$regex":key}}]}).limit(25).skip(25 * (page - 1)).sort([(sort_type, -1)])
+            else:
+                coures=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(25).skip(25*(page-1)).sort([(sort_type,-1)])
             for i in coures:
                 data={"name":i.get("name"),"phone":i.get("phone"),"avatar":i.get("avatar"),"createtime":i.get("createtime"),
                       "userid":i.get("userid"),"index":i.get("index"),"liwu":i.get("liwu"),"votenum":i.get("votenum"),"vheat":i.get("vheat")}

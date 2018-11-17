@@ -8,7 +8,7 @@ class tpuserscvHandelr(Basehandelr):
         uuid_=self.get_argument("uuid","")
         if uuid_:
             self.db_linck()
-            coures = self.Mongodb["tpUser"].find({"uuid": uuid_}).sort([("index", -1)])
+            coures = self.Mongodb["tpUser"].find({"uuid": uuid_}).sort([("index", 1)])
             fs=["编号","商家名","号码"]
             self.set_header("Content-Type", "text/csv")
             self.set_header('Content-Disposition', 'attachment; filename=%s' %uuid_+".csv" )
