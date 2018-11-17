@@ -15,6 +15,6 @@ class tpuserscvHandelr(Basehandelr):
             self.write(",".join(fs))
             self.write('\r\n')  # 换行
             for i in coures:
-                vs=[i["index"],i["name"],i["phone"]]
+                vs=[str(i["index"]),i["name"],i["phone"]]
                 self.write(','.join(vs))
                 self.write('\r\n')
