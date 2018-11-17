@@ -13,7 +13,7 @@ $(document).ready(
     }
 )
 function set_Key() {
-    key=$("keyword").val()
+    key=$("#keyword").val()
     get_user(1)
 }
 function url_init() {
