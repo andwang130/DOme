@@ -14,7 +14,7 @@
     <SUITE FILE_PATH="coverage/wxServer$auoth.coverage" NAME="auoth Coverage Results" MODIFIED="1541488266625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Handerls" />
     <SUITE FILE_PATH="coverage/wxServer$pojcetm.coverage" NAME="pojcetm Coverage Results" MODIFIED="1542011944809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Handerls" />
     <SUITE FILE_PATH="coverage/wxServer$meituan.coverage" NAME="meituan Coverage Results" MODIFIED="1542091118983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
-    <SUITE FILE_PATH="coverage/wxServer$auto_click.coverage" NAME="auto_click Coverage Results" MODIFIED="1542545964833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../autoDome" />
+    <SUITE FILE_PATH="coverage/wxServer$auto_click.coverage" NAME="auto_click Coverage Results" MODIFIED="1542546209375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../autoDome" />
     <SUITE FILE_PATH="coverage/wxServer$zl.coverage" NAME="zl Coverage Results" MODIFIED="1542183952433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
     <SUITE FILE_PATH="coverage/wxServer$myde.coverage" NAME="myde Coverage Results" MODIFIED="1542101079960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
     <SUITE FILE_PATH="coverage/wxServer$dwonload1.coverage" NAME="dwonload1 Coverage Results" MODIFIED="1541820877498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="auto_click.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../autoDome/auto_click.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+            <state relative-caret-position="460">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -884,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../autoDome/auto_click.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        <state relative-caret-position="460">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>

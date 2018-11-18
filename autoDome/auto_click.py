@@ -37,8 +37,7 @@ class auto_click():
             updatelist.append(updatedata)
         self.update(updatelist)
 if __name__ == '__main__':
-    print({"uuid": "uuid",{"$inc":{"volume":random.randint(10,11)}}})
-    # while True:
-    #     time.sleep(1)
-    #     auto=auto_click()
-    #     auto.run()
+    while True:
+        time.sleep(1)
+        auto=auto_click()
+        auto.run()
