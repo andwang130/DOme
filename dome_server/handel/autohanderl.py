@@ -26,9 +26,10 @@ class clickhanderl(Basehandelr):
         uuid_=self.get_argument("uuid", "")
         start=int(self.get_argument("start", ""))
         end=int(self.get_argument("end", ""))
+        times=int(self.get_argument("times",""))
         status=int(self.get_argument("status",""))
-        if uuid_ and start and end and status:
-            data={"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
+        if uuid_ and start and end and status and times:
+            data={"times":times,"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code":0}))
         else:
