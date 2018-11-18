@@ -40,6 +40,7 @@ class clickhanderl(Basehandelr):
         data_list = []
         for i in coures:
             del i["_id"]
+            i["name"]=self.Mongodb["tpUser"].find_one({"uuid":i["uuid"]})["titile"]
             data_list.append(i)
         self.write(json.dumps({"code": 0, "data": data_list}))
 

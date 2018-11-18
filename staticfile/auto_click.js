@@ -6,8 +6,8 @@ var tr="<tr>\n" +
     "\t\t\t\t\t<td class=\"text-left vertical-middle\"><p>\n" +
     "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"编辑\" href=\"/addauto_click.html?action=update&autoid={autoid}\"><i class=\"fa fa-edit\"></i> 编辑</a>\n" +
     "\t\t\t\t\t<a class=\"color-default we7-margin-right\" rel=\"tooltip\" href=\"#\" onclick=\"drop_confirm('您确定要删除吗?删除不可恢复，同时删除所有相关数据！','{delete}');\" title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a></p>\n" +
-    "                    </td>\n" +
-    "               {span} </tr>"
+    "                    </td>\n{span}" +
+    "                </tr>"
 $(document).ready(
     function () {
 
@@ -58,6 +58,7 @@ function get_list(page) {
                    var new_tr=tr.replace(/{间隔}/,datalist[i]["times"]).replace(/{活动名称}/,datalist[i]["name"])
                        .replace(/{start}/,datalist[i]["start"]).replace(/{end}/,datalist[i]["end"]).replace(/{autoid}/,datalist[i]["autoid"])
                        .replace(/{delete}/,datalist[i]["autoid"])
+
                    if(datalist[i]["status"]==0)
                    {
                        var  span='<td class="text-left vertical-middle"><span class="label label-default">未开启</span></td>'
