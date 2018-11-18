@@ -40,7 +40,7 @@ class clickhanderl(Basehandelr):
         data_list = []
         for i in coures:
             del i["_id"]
-            pojcet=self.Mongodb["poject"].find_one({"uuid":i["uuid"]}).get("titile")
+            pojcet=self.Mongodb["poject"].find_one({"uuid":i["uuid"]})
             if pojcet:
                 i["name"] =pojcet.get("titile")
             else:
