@@ -61,12 +61,10 @@ function get_list(page) {
 
                    if(datalist[i]["status"]==0)
                    {
-                       var  span='<td class="text-left vertical-middle"><span class="label label-default">未开启</span></td>'
-                       new_tr.replace(/{span}/,span)
+                      new_tr= new_tr.replace(/{span}/,'<td class="text-left vertical-middle"><span class="label label-default">未开启</span></td>')
                    }
                    else {
-                        var span='<td class="text-left vertical-middle"><span class="label label-success">开启</span></td>'
-                       new_tr.replace(/{span}/,span)
+                       new_tr=new_tr.replace(/{span}/,'<td class="text-left vertical-middle"><span class="label label-success">开启</span></td>')
                    }
 
 
