@@ -47,8 +47,11 @@ class clickhanderl(Basehandelr):
         autoid=self.get_argument("autoid","")
         if autoid:
             coures = self.Mongodb["autoClick"].find_one({"autoid":autoid})
-            del coures["_id"]
-            self.write(json.dumps({"code": 0, "data": coures}))
+            if coures:
+                del coures["_id"]
+                self.write(json.dumps({"code": 0, "data": coures}))
+        else:
+            self.write(json.dumps({"code": -1}))
     def update(self):
         autoid = self.get_argument("autoid", "")
         uuid = self.get_argument("uuid", "")
