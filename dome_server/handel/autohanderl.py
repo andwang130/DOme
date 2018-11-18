@@ -40,7 +40,11 @@ class clickhanderl(Basehandelr):
         data_list = []
         for i in coures:
             del i["_id"]
-            i["name"]=self.Mongodb["poject"].find_one({"uuid":i["uuid"]}).get("titile")
+            pojcet=self.Mongodb["poject"].find_one({"uuid":i["uuid"]}).get("titile")
+            if pojcet:
+                i["name"] =pojcet.get("titile")
+            else:
+                i["name"]="活动不存在"
             data_list.append(i)
         self.write(json.dumps({"code": 0, "data": data_list}))
 
