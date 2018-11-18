@@ -2,6 +2,7 @@ from Basehandelr import Basehandelr
 from dbTempet import pojcetm
 import time
 import uuid
+import json
 class clickhanderl(Basehandelr):
     def get(self):
         self.post()
