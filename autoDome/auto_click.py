@@ -28,6 +28,7 @@ class auto_click():
         datalist=self.get_dbData()
         Velist=self.Verification(datalist)
         for i in Velist:
+            print(i)
             adddata={{"uuid": i["uuid"]},{"$inc": {"volume":random.randint(i["start"],i["end"])}}}
             addlist.append(adddata)
         self.add_click(addlist)
