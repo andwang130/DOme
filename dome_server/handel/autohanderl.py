@@ -44,7 +44,7 @@ class clickhanderl(Basehandelr):
             if pojcet:
                 i["name"] =pojcet.get("titile")
             else:
-                i["name"]="活动不存在"
+                i["name"]="null"
             data_list.append(i)
         self.write(json.dumps({"code": 0, "data": data_list}))
 
