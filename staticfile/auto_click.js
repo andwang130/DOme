@@ -33,7 +33,7 @@ function drop_confirm(mages,url)
         data:data,
         success: function (arg)
         {
-            window.location.href="/"
+            location.href="/auto_click.html"
         }
          })
     }
