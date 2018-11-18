@@ -18,10 +18,12 @@ class auto_click():
 
     def update(self,updatelist):
         if updatelist:
-            self.cooliect.update_many(updatelist)
+            for i in updatelist:
+                self.cooliect.update_many(*i)
     def add_click(self,addlist):
         if addlist:
-            self.Mongodb["poject"].update_many(addlist)
+            for i in addlist:
+                self.Mongodb["poject"].update_many(*i)
     def run(self):
         addlist=[]
         updatelist=[]
