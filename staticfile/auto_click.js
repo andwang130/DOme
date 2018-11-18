@@ -26,7 +26,16 @@ function drop_confirm(mages,url)
 
     if(confirm(mages))
     {
-        window.location=url
+        data={"action":"delete","autoid":url}
+         $.ajax({
+        url:'/auto_click',
+        type: 'POST',
+        data:data,
+        success: function (arg)
+        {
+            window.location.href="/"
+        }
+         })
     }
 }
 function get_list(page) {
@@ -49,6 +58,15 @@ function get_list(page) {
                    var new_tr=tr.replace(/{间隔}/,datalist[i]["times"]).replace(/{活动名称}/,datalist[i]["name"])
                        .replace(/{start}/,datalist[i]["start"]).replace(/{end}/,datalist[i]["end"]).replace(/{autoid}/,datalist[i]["autoid"])
                        .replace(/{delete}/,datalist[i]["autoid"])
+                   if(datalist[i]["status"]==0)
+                   {
+                        new_tr+='<td class="text-left vertical-middle"><span class="label label-default">未开启</span></td>'
+                   }
+                   else {
+                        new_tr+='<td class="text-left vertical-middle"><span class="label label-success">开启</span></td>'
+                   }
+
+
                    $("#pojectlist").append(new_tr)
                }
 

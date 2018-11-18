@@ -39,8 +39,8 @@
       <file leaf-file-name="auto_click.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/auto_click.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="184">
+              <caret line="185" column="10" lean-forward="true" selection-start-line="185" selection-start-column="10" selection-end-line="185" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autohanderl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autohanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../dome_server/handel/autohanderl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/../staticfile/addauto_click.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -98,6 +98,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addTuouselist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../staticfile/addTuouselist.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,21 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auto_click.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="auto_click.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../staticfile/auto_click.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="98" lean-forward="false" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orderHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../dome_server/handel/orderHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="28" column="63" lean-forward="false" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="63" />
+            <state relative-caret-position="291">
+              <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -150,8 +150,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>votenum</find>
-      <find>participants</find>
       <find>liwunum</find>
       <find>投票</find>
       <find>送</find>
@@ -180,6 +178,8 @@
       <find>uuid</find>
       <find>set</find>
       <find>+添加</find>
+      <find>drop_confirm</find>
+      <find>confirm</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -232,10 +232,10 @@
         <option value="$PROJECT_DIR$/../staticfile/TPUser.html" />
         <option value="$PROJECT_DIR$/../staticfile/usorder.html" />
         <option value="$PROJECT_DIR$/../staticfile/votedata.html" />
-        <option value="$PROJECT_DIR$/../staticfile/auto_click.html" />
-        <option value="$PROJECT_DIR$/../staticfile/auto_click.js" />
         <option value="$PROJECT_DIR$/../staticfile/addauto_click.js" />
         <option value="$PROJECT_DIR$/../dome_server/handel/autohanderl.py" />
+        <option value="$PROJECT_DIR$/../staticfile/auto_click.html" />
+        <option value="$PROJECT_DIR$/../staticfile/auto_click.js" />
       </list>
     </option>
   </component>
@@ -453,7 +453,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.4554721" order="7" side_tool="true" content_ui="tabs" />
@@ -461,7 +460,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5445279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5997854" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26502147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26502147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.040236052" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -693,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1328">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -862,10 +853,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/addTpuser.js">
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/autohanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="299">
+          <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Basehandelr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -878,26 +879,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addTpuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../staticfile/auto_click.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../staticfile/auto_click.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="98" lean-forward="false" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/Basehandelr.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="20" />
+          <caret line="185" column="10" lean-forward="true" selection-start-line="185" selection-start-column="10" selection-end-line="185" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -905,18 +906,16 @@
     <entry file="file://$PROJECT_DIR$/../staticfile/addauto_click.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../dome_server/handel/autohanderl.py">
+    <entry file="file://$PROJECT_DIR$/../staticfile/auto_click.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="291">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
