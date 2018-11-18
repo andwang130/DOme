@@ -1,6 +1,7 @@
 from Basehandelr import Basehandelr
 from dbTempet import pojcetm
 import time
+import uuid
 class clickhanderl(Basehandelr):
     def get(self):
         self.post()
@@ -21,12 +22,12 @@ class clickhanderl(Basehandelr):
             elif action=="delete":
                 self.delete()
     def add_auto_click(self):
-        uuid=self.get_argument("uuid", "")
+        uuid_=self.get_argument("uuid", "")
         start=int(self.get_argument("start", ""))
         end=int(self.get_argument("end", ""))
         status=int(self.get_argument("status",""))
-        if uuid and start and end and status:
-            data={"uuid":uuid,"start":start,"end":end,"status":status,"createdate":time.time()}
+        if uuid_ and start and end and status:
+            data={"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code": 0, "data": []}))
         else:
@@ -54,7 +55,7 @@ class clickhanderl(Basehandelr):
         status = int(self.get_argument("status", ""))
         if autoid and uuid and start and end and status:
             data = {"uuid": uuid, "start": start, "end": end, "status": status}
-            self.Mongodb["autoClick"].update_one({"autoid":autoid,{"$set":data}})
+            self.Mongodb["autoClick"].update_one({"autoid":autoid},{"$set":data})
             self.write(json.dumps({"code": 0}))
     def delete(self):
         autoid = self.get_argument("autoid", "")
