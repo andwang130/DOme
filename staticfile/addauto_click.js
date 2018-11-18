@@ -8,7 +8,7 @@ $(document).ready(
          autoid=GetRequest("autoid")
         if(action.action=="update"&&autoid.autoid)
         {
-            get_info(autoid.Userid);
+            get_info(autoid.action);
         }
     }
 )
