@@ -29,9 +29,9 @@ class clickhanderl(Basehandelr):
         if uuid_ and start and end and status:
             data={"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
-            self.write(json.dumps({"code": 0, "data": []}))
+            self.write(json.dumps({"code":0}))
         else:
-            self.write(json.dumps({"code": -1, "data": []}))
+            self.write(json.dumps({"code": -1}))
     def get_list(self):
         page=int(self.get_argument("page",0))
         coures=self.Mongodb["autoClick"].find({}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
