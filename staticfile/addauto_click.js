@@ -27,7 +27,7 @@ function  get_info(autoid) {
                  if (arg["code"] == 0) {
                      console.log(arg)
                      $("#uuid").val(data["uuid"])
-                     $("#tiems").val(data["tiems"])
+                     $("#tiems").val(data["times"])
                      $("#start").val(data["start"])
                      $("#end").val(data["end"])
                      $("input[name='status']:radio[value={value}]".replace(/{value}/,data['status'])).attr('checked','true');
