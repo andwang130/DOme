@@ -58,8 +58,9 @@ class clickhanderl(Basehandelr):
         start = int(self.get_argument("start", ""))
         end = int(self.get_argument("end", ""))
         status = int(self.get_argument("status", ""))
+        times=int(self.get_argument("times", ""))
         if autoid and uuid and start and end and status:
-            data = {"uuid": uuid, "start": start, "end": end, "status": status}
+            data = {"uuid": uuid, "start": start, "end": end, "status": status,"times":times}
             self.Mongodb["autoClick"].update_one({"autoid":autoid},{"$set":data})
             self.write(json.dumps({"code": 0}))
     def delete(self):
