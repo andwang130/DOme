@@ -28,16 +28,17 @@ class auto_click():
         datalist=self.get_dbData()
         Velist=self.Verification(datalist)
         for i in Velist:
-            adddata={{"uuid": i["uuid"]},{"$inc": {"volume":random.randint(i["start"],i["end"])}}}
+            adddata=({"uuid": i["uuid"]},{"$inc":{"volume":random.randint(i["start"],i["end"])}})
             print(adddata)
             addlist.append(adddata)
         self.add_click(addlist)
         for i in Velist:
-            updatedata = {{"_id": i["_id"]}, {"$set": {"createdate": time.time()}}}
+            updatedata = ({"_id": i["_id"]}, {"$set": {"createdate": time.time()}})
             updatelist.append(updatedata)
         self.update(updatelist)
 if __name__ == '__main__':
-    while True:
-        time.sleep(1)
-        auto=auto_click()
-        auto.run()
+    print({"uuid": "uuid",{"$inc":{"volume":random.randint(10,11)}}})
+    # while True:
+    #     time.sleep(1)
+    #     auto=auto_click()
+    #     auto.run()
