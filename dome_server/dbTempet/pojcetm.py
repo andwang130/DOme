@@ -79,3 +79,5 @@ Tpuser_temptle={
 
 
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start"]
+
+auto_click=["uuid","tiems","start","end","createdate","status"]

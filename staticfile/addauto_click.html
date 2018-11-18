@@ -8,23 +8,16 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link rel="shortcut icon" href="./resource/images/favicon.ico" />
-	<link href="./css/bootstrap.min.css?v=20170915" rel="stylesheet">
-<link href="./css/common.css?v=20170915" rel="stylesheet">
-	<script type="text/javascript">
-	if(navigator.appName == 'Microsoft Internet Explorer'){
-		if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
-			alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
-		}
-	}
-
-	</script>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/common.css" rel="stylesheet">
+	<script>var require = { urlArgs: 'v=20170915' };</script>
 	<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="./resource/js/lib/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./resource/js/app/util.js?v=20170915"></script>
 	<script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
 	<script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
-	<script type="text/javascript" src="js/umit.js"></script>
-	<script type="text/javascript" src="orderlist.js"></script>
+    <script type="text/javascript" src="js/umit.js"></script>
+	<script type="text/javascript" src="addauto_click.js"></script>
 </head>
 <body>
 	<div class="loader" style="display:none">
@@ -37,7 +30,7 @@
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container ">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="http://jadl8.zhaojingl.com/">
+				<a class="navbar-brand" href="http://jiadll8.zhaojingl.com/">
 					<span class="version hidden">1.6.2</span>
 				</a>
 			</div>
@@ -51,13 +44,13 @@
 					</div>
 	</nav>
 </div>
- 
+
 <div class="main">
 <div class="container">
 	<a href="javascript:;" class="js-big-main button-to-big color-gray" title="加宽">正常</a>
 		<div class="panel panel-content main-panel-content ">
 		<div class="content-head panel-heading main-panel-heading">
-							<img src="http://jadl8.zhaojingl.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo" onerror="this.src='./resource/images/gw-wx.gif'">
+							<img src="http://jiadll8.zhaojingl.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo" onerror="this.src='./resource/images/gw-wx.gif'">
 <span class="font-lg">钻石投票</span>
 
 <div class="pull-right related-info module-related-info">
@@ -76,7 +69,7 @@
 									</li>
 																																																														<li class="list-group-item ">
 										<a href="/auto_click.html" class="text-over" >
-																				<i class='fa fa-cog'></i> 参数设置										</a>
+																				<i class='fa fa-cog'></i> 自动点击										</a>
 									</li>
 																																			</ul>
 				</div>
@@ -86,7 +79,7 @@
 					</div>
 										<ul class="list-group">
 																																						<li class="list-group-item ">
-										<a href="./index.html" class="text-over" >
+										<a href="/index.html" class="text-over" >
 																				<i class='wi wi-appsetting'></i> 活动管理										</a>
 									</li>
 																																																														<li class="list-group-item ">
@@ -99,81 +92,89 @@
 					</div>
 		<div class="right-content">
 	<style>
-
-.setvotestatus{cursor:pointer;}
-.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
-white-space: normal;
-word-wrap: break-word;
+.thumbnail img{min-width: 20px;min-height: 20px;}
+.main_form .we7-form input[type=radio], .main_form .we7-form input[type=checkbox] {
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-downpic{
+}
+ .we7-form input[type=radio],  .we7-form input[type=checkbox] {
+    display: inline-block;
+    cursor: pointer;
 }
 </style>
-<div class="main1">
-  <div class="we7-page-title">投票管理</div>
-<div class="we7-page-title">活动标题： </div>
- <ul class="we7-page-tab">
- 		<li><a href="" id="tpindex">全部投票</a></li>
-
-	<li class="active"><a href="#" id="order">全部订单</a></li>
-	<li><a href="" id="add">添加投票用户</a></li>
-	
+<div class="we7-page-title">编辑／新增投票用户</div>
+<ul class="we7-page-tab">
+	<li class="active"><a href="#" id="add" >添加自动点击任务</a></li>
 </ul>
-    <div class="we7-padding-bottom clearfix">
-            <form action="./index.php" method="get" role="form" >
-            <div class="input-group pull-left col-sm-4">
-      			<input type="hidden" name="rid" value="4614" />
-			<input type="hidden" name="id" vpage_activealue="" />
-                          <input type="hidden" name="c" value="site" />
-			<input type="hidden" name="a" value="entry" />
-			<input type="hidden" name="m" value="tyzm_diamondvote" />
-			<input type="hidden" name="do" value="giftlist" />
-			<input type="hidden" name="is_pay" value="" />
-            <input class="form-control" name="keyword" id="" placeholder="输入商户ID查询" type="text" value="">
-            <span class="input-group-btn"><button class="btn btn-default"><i class="fa fa-search"></i></button></span>
-            </div>
-        </form>
-        <div class="pull-right">
-            <!--<button class="btn btn-de" type="button">  所有金额：  <span class="badge"></span></button>-->
-          <a class="btn btn-primary">已付款订单</a>
-            </div>
-    </div>
- 
+<div class="we7-form">
+	<form >
+		<div class="panel-body" id="step1">
 
-        <table class="table we7-table table-hover">
-            <thead class="navbar-inner">
-                <tr><th>商户ID</th>
-					<th>商户名</th>
-					<th>金额</th>
-                    <th>礼物/数量/票数</th>
-					<th width="180px">时间/ip</th>
-					<th>状态</th>
-                </tr>
-            </thead> 
-            <tbody id="body">
-
-
-
-
+			<div class="panel-body">
+  			<div class="form-group">
+					<label class="control-label col-sm-2 control-label"><span class="text-danger">*</span> 活动ID</label>
+					<div class="col-sm-8 col-xs-12">
+						<input type="text" class="form-control" name="name" id="uuid" value=""/>
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2 control-label"><span class="text-danger">*</span>间隔时间</label>
+					<div class="col-sm-4">
+						<input type="number" class="form-control" name="name" id="tiems" value=""/>
+						<span class="help-block">间隔执行的时间，每隔这个时间增加点击量</span>
+					</div>
+				</div>
+              <div class="form-group">
+					<label class="control-label col-sm-2 control-label">增加的点击数</label>
+					<div class="col-sm-4">
+			            <div class="input-group">
+			              <span class="input-group-addon">起始， +</span>
+			              <input class="form-control" type="number" value="0" id="start" name="addvotenum">
+			              <span class="input-group-addon">个</span>
+			            </div>
+					  <div class="input-group">
+			              <span class="input-group-addon">结束， +</span>
+			              <input class="form-control" type="number" value="0" id="end" name="addvotenum">
+			              <span class="input-group-addon">个</span>
+			            </div>
+			          </div>
+				</div>
 
 
+				<div class="form-group">
+					<label class="control-label col-sm-2 control-label">是否启动</label>
+					<div class="col-sm-8 col-xs-12">
+						<label class="radio-inline">
+						<input type="radio" name="status" value="0"  />否
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="status" value="1"   />是
+					</label>
+
+					</div>
+				</div>
+
+			</div>
+          </div>
 
 
 
-
-
-
-
-                            </tbody>
-        </table>
-      <div class="pull-right">
-        <div><ul class="pagination pagination-centered" id="page_active"></ul></div>    </div>
-
-
+		<div class="form-group col-sm-12">
+			<input  id="submit"  value="提交" class="btn btn-primary col-lg-1">
+			<input type="hidden" name="token" value="70b61464" />
+		</div>
+	</form>
+</div>
 
 			</div>
 		</div>
 	</div>
 </div>
 </div>
-	<div class="container-fluid footer text-center" role="footer">	
+	<div class="container-fluid footer text-center" role="footer">
 		<div class="friend-link">
 								</div>
 		<div class="copyright"></div>
@@ -181,4 +182,5 @@ word-wrap: break-word;
 
 		</div>
 </body>
+<input type="file" id="filse"  style="display:none">
 </html>

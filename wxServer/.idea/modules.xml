@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Imgae_serever/.idea/Imgae_serever.iml" filepath="$PROJECT_DIR$/../Imgae_serever/.idea/Imgae_serever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../autoDome/.idea/autoDome.iml" filepath="$PROJECT_DIR$/../autoDome/.idea/autoDome.iml" />
       <module fileurl="file://$PROJECT_DIR$/../dome_server/.idea/dome_server.iml" filepath="$PROJECT_DIR$/../dome_server/.idea/dome_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../py/.idea/py.iml" filepath="$PROJECT_DIR$/../py/.idea/py.iml" />
       <module fileurl="file://$PROJECT_DIR$/../staticfile/.idea/staticfile.iml" filepath="$PROJECT_DIR$/../staticfile/.idea/staticfile.iml" />

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>活动管理</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/common.css" rel="stylesheet">
+
+	<script type="text/javascript">if(navigator.appName =='Microsoft Internet Explorer'){if(navigator.userAgent.indexOf("MSIE 5.0")>0 ||navigator.userAgent.indexOf("MSIE 6.0")>0 ||navigator.userAgent.indexOf("MSIE 7.0")>0) {alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');}
+}
+window.sysinfo ={'uniacid':'25','acid':'25','uid':'26','isfounder':0,'family':'x','siteroot':'http://jadl8.zhaojingl.com/','siteurl':'http://jadl8.zhaojingl.com/web/index.php?c=site&a=entry&do=manage&m=tyzm_diamondvote','attachurl':'http://tp-dl3.xcx2.top/','attachurl_local':'http://jadl8.zhaojingl.com/attachment/','attachurl_remote':'http://tp-dl3.xcx2.top/','module' :{'url' :'http://jadl8.zhaojingl.com/addons/tyzm_diamondvote/','name' :'tyzm_diamondvote'},'cookie' :{'pre':'d193_'},'account' :{"acid":"25","uniacid":"25","token":"vbYk8B2TW2GbHBjbT9Zb2hBB28Ww8kmm","encodingaeskey":"PYAkEnrAK8mfwyWGAzfjAJATTzegR8rJSydff8FYKFa","level":"4","name":"\u53e3\u7891\u5bfb","account":"2653130379@qq.com","original":"","signature":"","country":"","province":"","city":"","username":"","password":"","lastupdate":"0","key":"wxbe44dd7a1101e9c8","secret":"d29651ce5d1571c0481980a9fe206eec","styleid":"0","subscribeurl":"","auth_refresh_token":"","type":"1","isconnect":"0","isdeleted":"0","endtime":null,"uid":null,"starttime":null,"groups":{"25":{"groupid":"25","uniacid":"25","title":"\u9ed8\u8ba4\u4f1a\u5458\u7ec4","credit":"0","isdefault":"1"}},"setting":{"uniacid":"25","passport":"","oauth":{"host":"http:\/\/jadl8.zhaojingl.com","account":"25"},"jsauth_acid":"0","uc":"","notify":"","creditnames":{"credit1":{"title":"\u79ef\u5206","enabled":1},"credit2":{"title":"\u4f59\u989d","enabled":1}},"creditbehaviors":{"activity":"credit1","currency":"credit2"},"welcome":"","default":"","default_message":"","payment":{"0":"A","wechat":{"switch":"1","version":"2","mchid":"1497469622","apikey":"DFGFCBCXZDDDGER543TGRFGHGNGJHDFG","account":"25","signkey":"DFGFCBCXZDDDGER543TGRFGHGNGJHDFG"}},"stat":"","default_site":"25","sync":"0","recharge":"","tplnotice":"","grouplevel":"0","mcplugin":"","exchange_enable":"0","coupon_type":"0","menuset":""},"grouplevel":"0","logo":"http:\/\/tp-dl3.xcx2.top\/headimg_25.jpg?time=1541660604","qrcode":"http:\/\/tp-dl3.xcx2.top\/qrcode_25.jpg?time=1541660604","switchurl":".\/index.php?c=account&a=display&do=switch&uniacid=25","sms":0,"setmeal":{"uid":-1,"username":"\u521b\u59cb\u4eba","timelimit":"\u672a\u8bbe\u7f6e","groupid":"-1","groupname":"\u6240\u6709\u670d\u52a1"}},'server' :{'php' :'7.2.8'},};</script>
+    	<script type="text/javascript" src="/resource/js/lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/resource/js/lib/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="/resource/js/app/util.js?v=20170915"></script>
+	<!--<script type="text/javascript" src="/resource/js/app/common.min.js?v=20170915"></script>-->
+
+	<script>var require = { urlArgs: 'v=20170915' };</script>
+		<!--<script type="text/javascript" src="/resource/js/require.js?v=20170915"></script>-->
+	<script type="text/javascript" src="js/umit.js"></script>
+		<script type="text/javascript" src="js/clipboard.min.js"></script>
+		<script type="text/javascript" src="js/mzp-packed-me.js"></script>
+
+	<script type="text/javascript">
+	if(navigator.appName == 'Microsoft Internet Explorer'){
+		if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
+			alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+		}
+	}
+
+	</script>
+
+<style>.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{white-space:normal;word-wrap:break-word;word-break:normal;}.we7-margin-right{margin-right:10px;}.we7-table>tbody>tr>td:last-child,.wechat-communication>tbody>tr>td:last-child{padding-right:10px;}.site-list .site-item-img img{width:94px;height:auto;}.flexs{margin-top:5px;display:flex;align-items:center;}</style>
+</head>
+<body>
+	<div class="loader" style="display:none">
+		<div class="la-ball-clip-rotate">
+			<div></div>
+		</div>
+	</div>
+<div data-skin="default" class="skin-default  main-lg-body ">
+<div class="head">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container ">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<span class="version hidden">1.6.2</span>
+				</a>
+			</div>
+						<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-left">
+															<li><a href="/index.html" >首页</a></li>
+
+									</ul>
+
+			</div>
+					</div>
+	</nav>
+</div>
+
+<div class="main">
+<div class="container">
+	<a href="javascript:;" class="js-big-main button-to-big color-gray" title="加宽">正常</a>
+		<div class="panel panel-content main-panel-content ">
+		<div class="content-head panel-heading main-panel-heading">
+							<img src="/images/icon.jpg" class="head-app-logo" onerror="this.src=''">
+<span class="font-lg">钻石投票</span>
+
+<div class="pull-right related-info module-related-info">
+</div>
+
+<!-- 兼容历史性问题：模块内获取不到模块信息$module的问题-start -->
+<!-- end -->					</div>
+	<div class="panel-body clearfix main-panel-body ">
+		<div class="left-menu">
+						<div class="left-menu-content">
+																<div class="panel panel-menu">
+										<ul class="list-group">
+																																						<li class="list-group-item ">
+										<a href="#" class="text-over" >
+																				<i class='wi wi-reply'></i> 应用入口										</a>
+									</li>
+																																																														<li class="list-group-item ">
+										<a href="/auto_click.html" class="text-over" >
+																				<i class='fa fa-cog'></i> 自动点击										</a>
+									</li>
+																																			</ul>
+				</div>
+																				<div class="panel panel-menu">
+										<div class="panel-heading">
+						<span class="no-collapse">业务菜单<i class="wi wi-appsetting pull-right setting"></i></span>
+					</div>
+										<ul class="list-group">
+																																						<li class="list-group-item ">
+										<a href="./index.html" class="text-over" >
+																				<i class='wi wi-appsetting'></i> 活动管理										</a>
+									</li>
+																																																														<li class="list-group-item ">
+										<a href="/backlist.html" class="text-over" >
+																				<i class='wi wi-appsetting'></i> 黑名单										</a>
+									</li>
+																																			</ul>
+				</div>
+											</div>
+					</div>
+		<div class="right-content">
+	<style>
+    .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: normal;
+    }
+    .we7-margin-right {
+        margin-right: 10px;
+    }
+    .we7-table > tbody > tr > td:last-child, .wechat-communication > tbody > tr > td:last-child {
+        padding-right: 10px;
+    }
+    .site-list .site-item-img img {
+        width: 94px;
+        height: auto;
+    }
+    .flexs {
+        margin-top: 5px;gb;
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<div class="we7-page-title">活动管理</div>
+<ul class="we7-page-tab">
+    <li class="active"><a href="/index.html">自动点击</a></li>
+</ul>
+<div class="we7-padding-bottom clearfix">
+
+        <div class="input-group pull-left col-sm-4">
+            <input type="hidden" name="c" value="site"/>
+            <input type="hidden" name="a" value="entry"/>
+            <input type="hidden" name="m" value="tyzm_diamondvote"/>
+            <input type="hidden" name="do" value="manage"/>
+            <input type="text" name="keyword"   id="keyword" value="" class="form-control" placeholder="请输入活动名称"/>
+            <span class="input-group-btn"><button class="btn btn-default"><i class="fa fa-search"></i></button></span>
+        </div>
+
+    <div class="pull-right">
+      <input class="btn btn-warning" name="deleteall" type="button" value="批量删除">
+<a href="./addpoje.html" class="btn btn-primary  we7-margin-left">+添加</a>
+    </div>
+</div>
+
+
+<div class="we7-padding-bottom clearfix">
+<table class="table we7-table table-hover site-list">
+    <thead>
+    <tr>
+        <th class="text-left"><input type="checkbox" name="uid[]" class="check_all">
+        </th>
+        <th class="text-left">间隔</th>
+        <th class="text-left">活动名称</th>
+        <th class="text-left">时间</th>
+        <th class="text-left">管理</th>
+        <th class="text-left">状态</th>
+    </tr>
+    </thead>
+    <tbody id="pojectlist">
+
+
+        </tbody>
+</table>
+<div class="pull-right">
+    <div><ul class="pagination pagination-centered" id="page_active"></ul></div></div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="height: 400px;">
+            <iframe id="myFrameName" name="myFrameName" scrolling="no" frameborder="0" style="width:100%; height:100%;"></iframe>
+        </div>
+    </div>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<div class="container-fluid footer text-center" role="footer">
+		<div class="friend-link">
+								</div>
+		<div class="copyright"></div>
+	</div>
+		</div>
+</body>
+</html>
