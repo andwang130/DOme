@@ -20,7 +20,7 @@ class jphanderl(Basehanderl.Basehandelr):
             raise tornado.gen.Return()
         elif code:
             if not openid:
-                newopenid = yield self.get_openid(code)
+                newopenid = yield tornado.gen.Task(self.get_openid, code)
                 self.set_secure_cookie("openid", newopenid)
             self.rq(uuid)
             raise tornado.gen.Return()
