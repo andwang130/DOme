@@ -68,9 +68,8 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.www + self.request.uri
-
-            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            shares["url"] = pojcetm.www + "/wx/toupiao"
+            aseedata = pojcetm.get_wxcongif(pojcetm.www +"/wx/toupiao")
             self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
     def post(self):
         openid = self.get_secure_cookie("openid")
