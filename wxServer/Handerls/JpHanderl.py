@@ -46,6 +46,6 @@ class jphanderl(Basehanderl.Basehandelr):
                 shares["sharetitle"] = coures["sharetitle"]
                 shares["shareimgV"] = coures["shareimgV"]
                 shares["sharedesc"] = coures["sharedesc"]
-                shares["url"] = pojcetm.www + "/wx/jp"
+                shares["url"] = pojcetm.www + "/wx/jp?uuid="+uuid
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
                 self.render("jp.html", data=data, share=shares, aseedata=aseedata)
