@@ -58,7 +58,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                 shares["shareimgV"] = coures["shareimgV"]
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = pojcetm.www + "/wx/wxindex"
-                aseedata = pojcetm.get_wxcongif(pojcetm.www + "/wx/wxindex")
+                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
                 self.render("index.html", data=data, aseedata=aseedata, share=shares)
 class Getlist(Basehanderl.Basehandelr):
     def post(self):
