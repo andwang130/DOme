@@ -1,0 +1,27 @@
+upstream my_http
+{
+        server 127.0.0.1:8080;
+       
+}
+
+    server
+   {
+        listen 80;
+        root /home/www;
+        index index.html;
+       location ~* ^.+\.(jpg|jpeg|gif|png|ico|css|js|pdf|txt|html){
+         root /home/www;
+      }
+
+
+        location /{
+            proxy_pass_header Server;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Scheme $scheme;
+            proxy_pass http://my_http;
+        }
+
+    }
+
+
