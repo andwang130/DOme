@@ -154,7 +154,7 @@
             margin-top: 0px;
         }</style>
         <div class="donate_bank_p">
-            <a id="weixin" href="javascript:;" class="weui-btn weui-btn_primary js-wechat-pay">去支付</a>
+            <a id="weixin" href="javascript:" class="weui-btn weui-btn_primary js-wechat-pay">去支付</a>
             <div class="float">
                 <a href="/wx/toushu">
                     投诉
@@ -209,7 +209,7 @@
             document.getElementById('weixin').style.backgroundColor = '#44b549';
             pay = true;
         }
-        document.getElementById("zval").innerHTML = "为{{data["index"]}}号 {{data["name"]}} 送 " + val + "钻=" + val * zuan_rate + "票";
+        document.getElementById("zval").innerHTML = "为{{data[";index;"]}}号 {{data[";name;"]}} 送 " + val + "钻=" + val * zuan_rate + "票";
     }
 
     function check(v) {
@@ -268,14 +268,14 @@
                     data: {giftid: giftid, count: count},
                     success: function (str) {
                         hidemod("loadingToast");
-                        var str=JSON.parse(str)
+                        var str=JSON.parse(str);
                         if (str != null && str != '' && str.error != 1) {
-                            payment = str.data
-                            console.log(payment.appId)
-                            console.log(payment.timeStamp)
-                            console.log(payment["package"])
-                            console.log(payment.paySign)
-                            console.log(payment.paySign)
+                            payment = str.data;
+                            console.log(payment.appId);
+                            console.log(payment.timeStamp);
+                            console.log(payment["package"]);
+                            console.log(payment.paySign);
+                            console.log(payment.paySign);
 
                             WeixinJSBridge.invoke("getBrandWCPayRequest", {
                                     appId: payment.appId,
@@ -287,7 +287,12 @@
                                 }, function (res) {
                                     if (res.err_msg == "get_brand_wcpay_request:ok") {
                                         toast("支付成功");
-                                        setTimeout(location.href = "/wx/toupiao?uuid={{data["uuid"]}}&userid={{data["userid"]}}", 3000);
+                                        setTimeout(location.href = "/wx/toupiao?uuid={{data[";
+                                        uuid;
+                                        "]}}&userid={{data[";
+                                        userid;
+                                        "]}}", 3000;
+                                    )
                                     } else if (res.err_msg == "get_brand_wcpay_request:cancel") {
                                         dialog2("已取消支付");
                                         return false;
@@ -359,7 +364,7 @@
 	sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
-	}
+	};
 $(function () {
     if ($('.js-quickmenu') != null && $('.js-quickmenu') != '') {
         var h = $('.js-quickmenu').height() + 'px';
@@ -408,7 +413,7 @@ for (var i = 0, len = imgs.length; i < len; i++) {
         }
     }
 }
-;</script>
+</script>
 <script type="text/javascript"
         src="http://a77efe.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script>
 </body>

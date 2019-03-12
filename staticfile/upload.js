@@ -1,17 +1,17 @@
-var uuid=""
+var uuid="";
 $(document).ready(function () {
-    uuid=GetRequest("uuid")
+    uuid=GetRequest("uuid");
     $("#files").on("input propertychange",files_oninpit)
-})
+});
 
 function files_oninpit() {
         var fiels= $("#files").prop('files');
-        console.log(fiels)
+        console.log(fiels);
         var formFile = new FormData();
         for(var i=0;i<fiels.length;i++)
         {
 
-            console.log(fiels[i].size)
+            console.log(fiels[i].size);
             if((fiels[i].size/1024/1024)>10)
             {
                 alert("文件过大");
@@ -37,18 +37,18 @@ function files_oninpit() {
         contentType: false, //必须
         success: function (arg)
         {
-            arg=JSON.parse(arg)
+            arg=JSON.parse(arg);
 
             if(arg["code"]=="0")
             {
-                var data=arg["data"]
-                var namelist=[]
+                var data=arg["data"];
+                var namelist=[];
                 for(var i=0;i<data.length;i++)
                 {
                     namelist.push({"name":data[i]["odlname"].split(".")[0],"avatar":data[i]["path"]});
                 }
                 if(namelist&&uuid.uuid) {
-                    var new_data = {"namelist":JSON.stringify(namelist), "action": "create_list","uuid":uuid.uuid}
+                    var new_data = {"namelist":JSON.stringify(namelist), "action": "create_list","uuid":uuid.uuid};
                     create_list(new_data)
                 }
 
@@ -63,7 +63,7 @@ function create_list(data) {
              type: 'POST',
              data: data,
              success: function (arg) {
-                 arg = JSON.parse(arg)
+                 arg = JSON.parse(arg);
 
                      location.href="/TPUser.html?uuid="+uuid.uuid
              }

@@ -53,18 +53,18 @@ var tr="  <tr>\n" +
     "               href=\"/poject?action=copy&uuid={copyuuid}\"\n" +
     "               title=\"复制活动\"><i class=\"fa fa-copy\"></i> 复制活动</a>\n" +
     "        </td>\n" +
-    "    </tr>"
+    "    </tr>";
 $(document).ready(
     function () {
 
-        get_list(1)
+        get_list(1);
         $(".btn-default").click(set_key)
     }
-)
+);
 var key;
 function set_key() {
 
-    key=$("#keyword").val()
+    key=$("#keyword").val();
     get_list(1)
 }
 function drop_confirm(mages,url)
@@ -77,7 +77,7 @@ function drop_confirm(mages,url)
 }
 function get_list(page) {
     now_page=page;
-    data={"action":"get_list","page":page}
+    data={"action":"get_list","page":page};
     if(key)
     {
         data["key"]=key
@@ -88,19 +88,19 @@ function get_list(page) {
         data:data,
         success: function (arg)
         {
-            var data=JSON.parse(arg)
-            $("#pojectlist").html("")
+            var data=JSON.parse(arg);
+            $("#pojectlist").html("");
            if(data["code"]==0)
            {
-                var datalist=data["data"]
+                var datalist=data["data"];
                for(var i=0;i<datalist.length;i++)
                {
 
                    var new_tr=tr.replace(/{编号}/,i).replace(/{TITLE}/,datalist[i]["titile"]).replace(/{开始时间}/,datalist[i]["tiemstatr"])
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
                        .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"])
-                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://www.77tp.cn/wx/auoth?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"])
-                   var nowtime=Date.parse(new Date())
+                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://www.77tp.cn/wx/auoth?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"]);
+                   var nowtime=Date.parse(new Date());
                    if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
                    {
                        new_tr = new_tr.replace(/{是否开始}/,'<span class="label label-success">开始</span>')
@@ -118,7 +118,7 @@ function get_list(page) {
              var clipboard=new Clipboard('.js-clip');
                clipboard.on("success",function (e) {
                    alert("复制成功")
-               })
+               });
                page_math(data["count"])
            }
         }
@@ -129,12 +129,12 @@ var now_page=1;
 function page_math(count) {
    var page_end=Math.ceil(count/20);
 
-   var THML=""
+   var THML="";
    var page_html="<li><a href='javacript:get_list({PAGE})'>{PAGE}</a></li>";
 
    if(page_end>10)
    {
-       var new_page_end=page_end
+       var new_page_end=page_end;
        if(page_end-now_page>10)
        {
            new_page_end=now_page+10;
@@ -148,7 +148,7 @@ function page_math(count) {
            }
            else
            {
-               THML +="<li><a page_id='{pageid}' href='#'>{PAGE}</a></li>".replace(/{PAGE}/,i).replace(/{pageid}/,i);;
+               THML += "<li><a page_id='{pageid}' href='#'>{PAGE}</a></li>".replace(/{PAGE}/, i).replace(/{pageid}/, i);
            }
        }
    }
@@ -156,7 +156,7 @@ function page_math(count) {
    {
         for(var i=1;i<page_end+1;i++)
        {
-            console.log(page_end)
+            console.log(page_end);
            if(i==now_page) {
                THML +="<li class='active'><a href='#' >{PAGE}</a></li>".replace(/{PAGE}/,i)
            }
@@ -173,8 +173,8 @@ function page_math(count) {
 function  on_a_cliek()
 {
 
-    var page_id=$(this).attr("page_id")
-     now_page=Number(page_id)
+    var page_id=$(this).attr("page_id");
+     now_page=Number(page_id);
     get_list(now_page)
 }
 

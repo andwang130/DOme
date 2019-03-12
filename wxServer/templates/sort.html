@@ -89,7 +89,7 @@
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <a href="javascript:;">
+                <a href="javascript:">
 
                     <img src="{{data["topimgV"]}}" title="" style="width:100%; vertical-align:middle;">
 
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="item">
-                <a href="javascript:;">
+                <a href="javascript:">
 
                     <img src="http://tp-dl3.xcx2.top/images/25/2018/09/MeFEfc2f2eKpi6FeexFdD2K6Dloi6f.jpg" title=""
                          style="width:100%; vertical-align:middle;">
@@ -270,7 +270,11 @@
         }
     </style>
     <script type="text/javascript">
-        var intDiff = parseInt({{data["endtimes"]}});//倒计时总秒数量
+        var intDiff = parseInt({;
+        {
+            data["endtimes"]
+        }
+        })//倒计时总秒数量
         function timer(intDiff) {
             window.setInterval(function () {
                 var day = 0,
@@ -396,7 +400,7 @@
                     <p>首页</p></div>
                 </a></li>
 
-            <li><a href="javascript:;" onclick="get_ap();">
+            <li><a href="javascript:" onclick="get_ap();">
                 <div class='nav'>
                     <div class='ib ispr'></div>
                     <p>报名</p></div>
@@ -422,11 +426,16 @@
     <script type="text/javascript">
         function get_ap() {
             {% if data["aptimes"]>0 %}
-            dialog2("未开始报名！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}}");
+            dialog2("未开始报名！报名时间为：</br> {{data[";
+            aptimestart;
+            "]}} 至 {{data[";
+            aptimeend;
+            "]}}";
+        )
             return false;
             {%end %}
 
-            location.href = "/wx/Baoming?uuid={{data["uuid"]}}";
+            location.href = "/wx/Baoming?uuid={{data[";uuid;"]}}";
         }
 
     </script>
@@ -490,7 +499,7 @@ wx.config(jssdkconfig);
 	sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
-	}
+	};
     $(function () {
         if ($('.js-quickmenu') != null && $('.js-quickmenu') != '') {
             var h = $('.js-quickmenu').height() + 'px';

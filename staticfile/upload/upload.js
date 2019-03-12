@@ -2,27 +2,27 @@
 accessid = 'STS.ACCESSKEYID';
 accesskey = 'STS.ACCESSSECRET';
 host = 'http://fengimges.oss-cn-beijing.aliyuncs.com';
-var policyBase64=""
-var signature=""
-var g_dirname = ''
-$(document).ready(get_token)
+var policyBase64="";
+var signature="";
+var g_dirname = '';
+$(document).ready(get_token);
 function get_token()
 {
      $.ajax({
         url:'/GetbuckToken',
         type: 'POST',
         success: function (arg) {
-            json_data=JSON.parse(arg)
-            policyBase64=json_data["policy"]
-            signature=json_data["signature"]
-            accessid=json_data["accessid"]
+            json_data=JSON.parse(arg);
+            policyBase64=json_data["policy"];
+            signature=json_data["signature"];
+            accessid=json_data["accessid"];
             g_dirname=json_data["dir"]
         }
     })
 }
 
-g_object_name = ''
-g_object_name_type = ''
+g_object_name = '';
+g_object_name_type = '';
 now = timestamp = Date.parse(new Date()) / 1000;
 
 var policyText = {
@@ -67,8 +67,8 @@ function random_string(len) {
 }
 
 function get_suffix(filename) {
-    pos = filename.lastIndexOf('.')
-    suffix = ''
+    pos = filename.lastIndexOf('.');
+    suffix = '';
     if (pos != -1) {
         suffix = filename.substring(pos)
     }
@@ -83,7 +83,7 @@ function calculate_object_name(filename)
     }
     else if (g_object_name_type == 'random_name')
     {
-        suffix = get_suffix(filename)
+        suffix = get_suffix(filename);
         g_object_name = g_dirname + random_string(10) + suffix
     }
     return ''
@@ -93,7 +93,7 @@ function get_uploaded_object_name(filename)
 {
     if (g_object_name_type == 'local_name')
     {
-        tmp_name = g_object_name
+        tmp_name = g_object_name;
         tmp_name = tmp_name.replace("${filename}", filename);
         return tmp_name
     }
@@ -107,7 +107,7 @@ function set_upload_param(up, filename, ret)
 {
     g_object_name = g_dirname;
     if (filename != '') {
-        suffix = get_suffix(filename)
+        suffix = get_suffix(filename);
         calculate_object_name(filename)
     }
     new_multipart_params = {
@@ -162,7 +162,7 @@ var uploader = new plupload.Uploader({
 			var d = document.getElementById(file.id);
 			d.getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
             var prog = d.getElementsByTagName('div')[0];
-			var progBar = prog.getElementsByTagName('div')[0]
+			var progBar = prog.getElementsByTagName('div')[0];
 			progBar.style.width= 2*file.percent+'px';
 			progBar.setAttribute('aria-valuenow', file.percent);
 		},

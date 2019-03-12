@@ -8,7 +8,7 @@ function get_cookie(name) {
 }
 function GetRequest() {
     var url = location.search; //获取url中"?"符后的字串
-    var theRequest = new Object();
+    var theRequest = {};
     if (url.indexOf("?") != -1) {
         var str = url.substr(1);
         strs = str.split("&");
@@ -29,6 +29,6 @@ function getTimes (strtime) {
     return time1 = date.getTime();
 }
 function getNowTimes() {
-    var timestamp =Date.parse(new Date())
+    var timestamp =Date.parse(new Date());
     return timestamp
 }

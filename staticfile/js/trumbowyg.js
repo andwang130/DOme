@@ -272,7 +272,7 @@ $.trumbowyg = {
             this.o.btns = opts.btns;
 
         this.init();
-    }
+    };
 
     Trumbowyg.prototype = {
         init: function(){
@@ -1292,4 +1292,4 @@ $.trumbowyg.langs.zh_cn = {
     description:    "描述",
     title:          "标题",
     text:           "文字"
-}
+};

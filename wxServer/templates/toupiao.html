@@ -49,7 +49,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <a href="javascript:;">
+                <a href="javascript:">
 
                 </a>
                 <div class="carousel-caption">
@@ -596,7 +596,7 @@
                     url: "/wx/toupiao?userid={{data["userid"]}}",
                     success: function (str) {
                         hidemod("loadingToast");
-                        str=JSON.parse(str)
+                        str=JSON.parse(str);
                         if (str != null && str != '') {
                             if (str.status == 1) {
                                 $(".votenum").html(Number($(".votenum").html()) + 1);
@@ -727,7 +727,7 @@
 	sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
-	}
+	};
     $(function () {
         if ($('.js-quickmenu') != null && $('.js-quickmenu') != '') {
             var h = $('.js-quickmenu').height() + 'px';
@@ -783,7 +783,7 @@ for (var i = 0, len = imgs.length; i < len; i++) {
         }
     }
 }
-;</script>
+</script>
 <script type="text/javascript"
         src="http://a77efe.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script>
 </body>

@@ -84,7 +84,7 @@
 
 	<div class="carousel-inner" role="listbox">
 				<div class="item active">
-			<a href="javascript:;">
+			<a href="javascript:">
 			
 					<!--<img src="http://tp-dl3.xcx2.top/images/25/2018/09/m3Z3q16sz2stOCTSQ10suTc32TPo32.jpg" title="" style="width:100%; vertical-align:middle;">-->
 
@@ -94,7 +94,7 @@
 							</div>
 		</div>
 				<div class="item">
-			<a href="javascript:;">
+			<a href="javascript:">
 			
 					<img src="http://tp-dl3.xcx2.top/images/25/2018/09/MeFEfc2f2eKpi6FeexFdD2K6Dloi6f.jpg" title="" style="width:100%; vertical-align:middle;">
 
@@ -230,7 +230,7 @@
      $('body').on('click', 'input[type="file"]', null, function () {
          $('.mpanell-shade').show();
          return false;
-     })
+     });
      $('#mpanel1').slideVerify({
          type: 1,		//类型
          vOffset: 5,	//误差量，根据需求自行调整
@@ -256,11 +256,11 @@
          serverId: []
      };
        $("#chooseImages").click(function(){$("#files").click()})
- })
+ });
 
 function files_oninpit() {
         var fiels= $("#files").prop('files');
-        console.log(fiels)
+        console.log(fiels);
         var formFile = new FormData();
         if (fiels.length>5)
 		{
@@ -269,7 +269,7 @@ function files_oninpit() {
         for(var i=0;i<fiels.length;i++)
         {
 
-            console.log(fiels[i].size)
+            console.log(fiels[i].size);
             if((fiels[i].size/1024/1024)>15)
             {
                 return
@@ -294,12 +294,12 @@ function files_oninpit() {
         contentType: false, //必须
         success: function (arg)
         {
-            arg=JSON.parse(arg)
+            arg=JSON.parse(arg);
 
             if(arg["code"]=="0")
             {
-                var data=arg["data"]
-                var namelist=[]
+                var data=arg["data"];
+                var namelist=[];
                 for(var i=0;i<data.length;i++)
                 {
                     namelist.push({"name":data[i]["odlname"].split(".")[0],"avatar":data[i]["path"]});
@@ -343,8 +343,8 @@ function files_oninpit() {
             return false;
         }
         var i = 0,
-            bmimg = $(".bmimg")
-        length = bmimg.length
+            bmimg = $(".bmimg");
+        length = bmimg.length;
         if (length < 1 || length > 5) {
 
             var upimgtip = "请上传1-5张图片";
@@ -356,12 +356,12 @@ function files_oninpit() {
                 "introduction": introduction,
                 "phone": mobile,
                 "description": affectivestatus,
-                "picturearr": upimages}
+                "picturearr": upimages};
       	for(var i=1;i<length;i++)
 		{
 			data["images"+i.toString()]=$(bmimg[i]).attr("src")
 		}
-		data["avatar"]=data["images1"]
+		data["avatar"]=data["images1"];
         $.ajax({
             type: "POST",
             url: "/wx/Baoming?uuid={{data["uuid"]}}",
@@ -369,8 +369,8 @@ function files_oninpit() {
             success: function (str) {
                 hidemod("loadingToast");
 
-                 var rqdata=JSON.parse(str)
-				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+rqdata["useruuid"]
+                 var rqdata=JSON.parse(str);
+				location.href="/wx/toupiao?uuid={{data[";uuid;"]}}&userid="+rqdata["useruuid"]
                 },
             error: function (err) {
                 hidemod("loadingToast");
@@ -450,7 +450,7 @@ function files_oninpit() {
 	sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
-	}
+	};
 	$(function(){
 		if($('.js-quickmenu')!=null && $('.js-quickmenu')!=''){
 			var h = $('.js-quickmenu').height()+'px';
@@ -472,5 +472,17 @@ function files_oninpit() {
 <script>
 function dialog2(msg){$("#dialog2 .weui-dialog__bd").html(msg);$("#dialog2").show()}function hidemod(boxid){$("#"+boxid).hide()}function loadingToast(msg){$("#loadingToast .weui-toast__content").html(msg);$("#loadingToast").show()}function toast(msg){$("#toast .weui-toast__content").html(msg);$("#toast").show();setTimeout("hidemod('toast')",3000)}var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?08c6f5e17c0761a968c5658ccf6ff5ad";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
 
-<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script></body>
+
+<script>var imgs = document.getElementsByTagName('img');
+for (var i = 0, len = imgs.length; i < len; i++) {
+    imgs[i].onerror = function () {
+        if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {
+            this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');
+            this.setAttribute('check-src', true);
+        }
+    }
+}</script>
+<script type="text/javascript"
+        src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script>
+</body>
 </html>

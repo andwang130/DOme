@@ -85,7 +85,7 @@
 
 	<div class="carousel-inner" role="listbox">
 				<div class="item active">
-			<a href="javascript:;">
+			<a href="javascript:">
 			
 <img src="{{data["topimgV"]}}" title="" style="width:100%; vertical-align:middle;">
 			
@@ -94,7 +94,7 @@
 							</div>
 		</div>
 				<div class="item">
-			<a href="javascript:;">
+			<a href="javascript:">
 			
 
 			
@@ -164,8 +164,12 @@
 		<li><span class="text"> <i class="glyphicon glyphicon-thumbs-up"></i> 累计投票数量</span> <span>{{data["votes"]}}</span></li>
 		<li><span class="text"><i class="glyphicon glyphicon-eye-open"></i> 访问量</span> <span>{{data["volume"]}}</span></li>
 	<script type="text/javascript">
-var intDiff = parseInt({{data["endtimes"]}});//倒计时总秒数量
-function timer(intDiff){
+        var intDiff = parseInt({;
+        {
+            data["endtimes"]
+        }
+        })//倒计时总秒数量
+        function timer(intDiff){
 	window.setInterval(function(){
 	var day=0,
 		hour=0,
@@ -256,7 +260,7 @@ $(function(){
 
 <li><a href="/wx/wxindex?uuid={{data["uuid"]}}" class="on"><div class='nav'><div class='ih ispr'></div><p>首页</p></div></a></li>
 
-<li><a href="javascript:;"  onclick="get_ap();"><div class='nav'><div class='ib ispr'></div><p>报名</p></div></a></li>
+<li><a href="javascript:" onclick="get_ap();"><div class='nav'><div class='ib ispr'></div><p>报名</p></div></a></li>
 
 <li><a href="/wx/jp?uuid={{data["uuid"]}}" ><div class='nav'><div class='is ispr'></div><p>奖品</p></div></a></li>
 <li><a href="/wx/sort?uuid={{data["uuid"]}}"  ><div class='nav'><div class='if ispr'></div><p>榜单</p></div></a></li>
@@ -271,11 +275,16 @@ $(function(){
 function get_ap(){
 
 	{% if data["aptimes"]>0 %}
-	dialog2("未开始报名！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}} ");
-	  return false;
+    dialog2("未开始报名！报名时间为：</br> {{data[";
+    aptimestart;
+    "]}} 至 {{data[";
+    aptimeend;
+    "]}} ";
+)
+    return false;
 	{% end%}
 
-    location.href="/wx/Baoming?uuid={{data["uuid"]}}";
+    location.href="/wx/Baoming?uuid={{data[";uuid;"]}}";
 }
 </script>
 
@@ -290,7 +299,7 @@ function get_list(ty){
 
 
 	   }
-	 limit=1
+	 limit=1;
 	   $("#pageCon .list_box").html('');
 	}else{
 	   $("#list_more").html('<div class="am-text-secondary"><span class="am-icon-spinner am-icon-spin"></span> 卖命加载中...</div>');
@@ -307,7 +316,7 @@ function get_list(ty){
 	    },
         dataType : "json",		
 	    success : function(data) {
-	        console.log(data)
+	        console.log(data);
 	    	if(data.status==200){
 	    	   
 						var list = data.content;
@@ -424,7 +433,7 @@ $container.masonry('reload');
 	sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
-	}
+	};
 	$(function(){
 		if($('.js-quickmenu')!=null && $('.js-quickmenu')!=''){
 			var h = $('.js-quickmenu').height()+'px';
@@ -446,5 +455,17 @@ $container.masonry('reload');
 <script>
 function dialog2(msg){$("#dialog2 .weui-dialog__bd").html(msg);$("#dialog2").show()}function hidemod(boxid){$("#"+boxid).hide()}function loadingToast(msg){$("#loadingToast .weui-toast__content").html(msg);$("#loadingToast").show()}function toast(msg){$("#toast .weui-toast__content").html(msg);$("#toast").show();setTimeout("hidemod('toast')",3000)}var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?08c6f5e17c0761a968c5658ccf6ff5ad";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
 
-<script>var imgs = document.getElementsByTagName('img');for(var i=0, len=imgs.length; i < len; i++){imgs[i].onerror = function() {if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');this.setAttribute('check-src', true);}}};</script><script type="text/javascript" src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script></body>
+
+<script>var imgs = document.getElementsByTagName('img');
+for (var i = 0, len = imgs.length; i < len; i++) {
+    imgs[i].onerror = function () {
+        if (!this.getAttribute('check-src') && (this.src.indexOf('http://') > -1 || this.src.indexOf('https://') > -1)) {
+            this.src = this.src.indexOf('http://ie3iii.jia.zenglianghao.com/attachment/') == -1 ? this.src.replace('http://tp-dl3.xcx2.top/', 'http://ie3iii.jia.zenglianghao.com/attachment/') : this.src.replace('http://ie3iii.jia.zenglianghao.com/attachment/', 'http://tp-dl3.xcx2.top/');
+            this.setAttribute('check-src', true);
+        }
+    }
+}</script>
+<script type="text/javascript"
+        src="http://ie3iii.jia.zenglianghao.com/app/index.php?i=25&c=utility&a=visit&do=showjs&m=tyzm_diamondvote"></script>
+</body>
 </html>
