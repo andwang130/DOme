@@ -1,141 +1,163 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-<meta name="keywords" content="" >
-<meta name="description" content="" />
-<link rel="shortcut icon" href="./resource/images/favicon.ico" />
-<link href="./css/bootstrap.min.css?v=20170915" rel="stylesheet">
-<link href="./css/common.css?v=20170915" rel="stylesheet">
-<script type="text/javascript">if(navigator.appName =='Microsoft Internet Explorer'){if(navigator.userAgent.indexOf("MSIE 5.0")>0 ||navigator.userAgent.indexOf("MSIE 6.0")>0 ||navigator.userAgent.indexOf("MSIE 7.0")>0) {alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');}
-}
-</script>
-<script>var require ={urlArgs:'v=20170915' };</script>
-<script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="./resource/js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="./resource/js/app/util.js?v=20170915"></script>
-<script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
-<script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
-<script type="text/javascript" src="/js/umit.js"></script>
-<script type="text/javascript" src="orderall.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content=""/>
+    <link rel="shortcut icon" href="./resource/images/favicon.ico"/>
+    <link href="./css/bootstrap.min.css?v=20170915" rel="stylesheet">
+    <link href="./css/common.css?v=20170915" rel="stylesheet">
+    <script type="text/javascript">if (navigator.appName == 'Microsoft Internet Explorer') {
+        if (navigator.userAgent.indexOf("MSIE 5.0") > 0 || navigator.userAgent.indexOf("MSIE 6.0") > 0 || navigator.userAgent.indexOf("MSIE 7.0") > 0) {
+            alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+        }
+    }
+    </script>
+    <script>var require = {urlArgs: 'v=20170915'};</script>
+    <script type="text/javascript" src="./resource/js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./resource/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./resource/js/app/util.js?v=20170915"></script>
+    <script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
+    <script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
+    <script type="text/javascript" src="/js/umit.js"></script>
+    <script type="text/javascript" src="orderall.js"></script>
 </head>
 <body>
 <div class="loader" style="display:none">
-<div class="la-ball-clip-rotate">
-<div></div>
-</div>
+    <div class="la-ball-clip-rotate">
+        <div></div>
+    </div>
 </div>
 <div data-skin="default" class="skin-default  main-lg-body ">
-<div class="head">
-<nav class="navbar navbar-default" role="navigation">
-<div class="container ">
-<div class="navbar-header">
-<a class="navbar-brand" href="http://jadl8.zhaojingl.com/">
-<span class="version hidden">1.6.2</span>
-</a>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav navbar-left">
-<li><a href="/index.html">首页</a></li>
+    <div class="head">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container ">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://jadl8.zhaojingl.com/">
+                        <span class="version hidden">1.6.2</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="/index.html">首页</a></li>
 
-</ul>
-</div>
-</div>
-</nav>
-</div>
-<div class="main">
-<div class="container">
-<a href="javascript:" class="js-big-main button-to-big color-gray" title="加宽">正常</a>
-<div class="panel panel-content main-panel-content ">
-<div class="content-head panel-heading main-panel-heading">
-<img src="http://jadl8.zhaojingl.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo" onerror="this.src='./resource/images/gw-wx.gif'">
-<span class="font-lg">钻石投票</span>
-<div class="pull-right related-info module-related-info">
-</div>
-</div>
-<div class="panel-body clearfix main-panel-body ">
-<div class="left-menu">
-<div class="left-menu-content">
-<div class="panel panel-menu">
-<ul class="list-group">
-<li class="list-group-item ">
-<a href="#" class="text-over">
-<i class='wi wi-reply'></i> 应用入口 </a>
-</li>
-<li class="list-group-item ">
-<a href="/auto_click.html" class="text-over">
-<i class='fa fa-cog'></i> 自动点击 </a>
-</li>
-</ul>
-</div>
-<div class="panel panel-menu">
-<div class="panel-heading">
-<span class="no-collapse">业务菜单<i class="wi wi-appsetting pull-right setting"></i></span>
-</div>
-<ul class="list-group">
-<li class="list-group-item ">
-<a href="/index.html" class="text-over">
-<i class='wi wi-appsetting'></i> 活动管理 </a>
-</li>
-<li class="list-group-item ">
-<a href="/backlist.html" class="text-over">
-<i class='wi wi-appsetting'></i> 黑名单 </a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="right-content">
-<style>.setvotestatus{cursor:pointer;}.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{white-space:normal;word-wrap:break-word;}</style>
-<div class="main1">
-<div class="we7-padding-bottom clearfix">
-<form action="./index.php" method="get" role="form">
-<div class="input-group pull-left col-sm-4">
-<input type="hidden" name="mm" value="2" />
-<input type="hidden" name="c" value="site" />
-<input type="hidden" name="a" value="entry" />
-<input type="hidden" name="m" value="tyzm_diamondvote" />
-<input type="hidden" name="do" value="giftlist" />
-<input type="hidden" name="is_pay" value="" />
-<input class="form-control" name="keyword" id="" placeholder="输入商户ID查询" type="text" value="">
-<span class="input-group-btn"><button class="btn btn-default"><i class="fa fa-search"></i></button></span>
-</div>
-</form>
-<div class="pull-right">
-<a class="btn btn-primary"href="#">已付款订单</a>
-</div>
-</div>
-<table class="table we7-table table-hover">
-<thead class="navbar-inner">
-<tr><th>商户ID</th>
-<th>商户名</th>
-<th>金额</th>
-<th>礼物/数量/票数</th>
-<th width="180px">时间/ip</th>
-<th>状态</th>
-</tr>
-</thead>
-<tbody id="body">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="container">
+            <a href="javascript:" class="js-big-main button-to-big color-gray" title="加宽">正常</a>
+            <div class="panel panel-content main-panel-content ">
+                <div class="content-head panel-heading main-panel-heading">
+                    <img src="http://jadl8.zhaojingl.com/addons/tyzm_diamondvote/icon.jpg" class="head-app-logo"
+                         onerror="this.src='./resource/images/gw-wx.gif'">
+                    <span class="font-lg">钻石投票</span>
+                    <div class="pull-right related-info module-related-info">
+                    </div>
+                </div>
+                <div class="panel-body clearfix main-panel-body ">
+                    <div class="left-menu">
+                        <div class="left-menu-content">
+                            <div class="panel panel-menu">
+                                <ul class="list-group">
+                                    <li class="list-group-item ">
+                                        <a href="#" class="text-over">
+                                            <i class='wi wi-reply'></i> 应用入口 </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="/auto_click.html" class="text-over">
+                                            <i class='fa fa-cog'></i> 自动点击 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel panel-menu">
+                                <div class="panel-heading">
+                                    <span class="no-collapse">业务菜单<i
+                                            class="wi wi-appsetting pull-right setting"></i></span>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item ">
+                                        <a href="/index.html" class="text-over">
+                                            <i class='wi wi-appsetting'></i> 活动管理 </a>
+                                    </li>
+                                    <li class="list-group-item ">
+                                        <a href="/backlist.html" class="text-over">
+                                            <i class='wi wi-appsetting'></i> 黑名单 </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <style>.setvotestatus {
+                            cursor: pointer;
+                        }
 
-</tbody>
-</table>
-<div class="pull-right">
-<div><ul class="pagination pagination-centered" id="page_active"></ul></div> </div>
+                        .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+                            white-space: normal;
+                            word-wrap: break-word;
+                        }</style>
+                        <ul class="we7-page-tab">
+                            <li class="active"><a href="/index.html">活动管理</a></li>
+                            <li><a href="/orderall.html">所有礼物订单</a></li>
+                        </ul>
+                        <div class="main1">
+                            <div class="we7-padding-bottom clearfix">
+                                <form action="./index.php" method="get" role="form">
+                                    <div class="input-group pull-left col-sm-4">
+                                        <input type="hidden" name="mm" value="2"/>
+                                        <input type="hidden" name="c" value="site"/>
+                                        <input type="hidden" name="a" value="entry"/>
+                                        <input type="hidden" name="m" value="tyzm_diamondvote"/>
+                                        <input type="hidden" name="do" value="giftlist"/>
+                                        <input type="hidden" name="is_pay" value=""/>
+                                        <input class="form-control" name="keyword" id="" placeholder="输入商户ID查询"
+                                               type="text" value="">
+                                        <span class="input-group-btn"><button class="btn btn-default"><i
+                                                class="fa fa-search"></i></button></span>
+                                    </div>
+                                </form>
+                                <div class="pull-right">
+                                    <a class="btn btn-primary" href="#">已付款订单</a>
+                                </div>
+                            </div>
+                            <table class="table we7-table table-hover">
+                                <thead class="navbar-inner">
+                                <tr>
+                                    <th>商户ID</th>
+                                    <th>商户名</th>
+                                    <th>金额</th>
+                                    <th>礼物/数量/票数</th>
+                                    <th width="180px">时间/ip</th>
+                                    <th>状态</th>
+                                </tr>
+                                </thead>
+                                <tbody id="body">
 
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container-fluid footer text-center" role="footer">
-<div class="friend-link">
-</div>
-<div class="copyright"></div>
-</div>
+                                </tbody>
+                            </table>
+                            <div class="pull-right">
+                                <div>
+                                    <ul class="pagination pagination-centered" id="page_active"></ul>
+                                </div>
+                            </div>
 
-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer text-center" role="footer">
+            <div class="friend-link">
+            </div>
+            <div class="copyright"></div>
+        </div>
+
+    </div>
 </body>
 </html>
