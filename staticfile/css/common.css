@@ -3657,6 +3657,8 @@ select.we7-select, select {
     -webkit-appearance: none;
     background: url(../images/select-arrow.png) #fff no-repeat right !important;
 
+
+
 }
 
 select.we7-select:focus, select:focus {
