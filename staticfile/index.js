@@ -11,7 +11,7 @@ var tr="  <tr>\n" +
     "            <div class=\"flexs\">\n" +
     "                <label>\n" +
     "                                        <div class=\"switch ng-scope switchOn\"\n" +
-    "                         onclick=\"drop_confirm('您确定要暂停活动吗？', './index.php?c=site&a=entry&ty=setstatus&rid=3294&status=0&do=otherset&m=tyzm_diamondvote');\"></div>\n" +
+    "                         \"></div>\n" +
     "                                    </label><span>&nbsp;&nbsp;</span>\n" +
     "                                {是否开始}\n" +
     "                            </div>\n" +
