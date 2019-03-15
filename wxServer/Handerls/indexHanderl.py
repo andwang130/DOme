@@ -70,6 +70,11 @@ class Getlist(Basehanderl.Basehandelr):
         key=self.get_argument("keyword")
         uuid=self.get_argument("uuid")
         page=int(self.get_argument("page",1))
+        order=int(self.get_argument("order"))
+        if order==0:
+            sort="votenum"
+        elif order==1:
+            sort="index"
         try:
             key_int=int(key)
         except:
@@ -77,7 +82,7 @@ class Getlist(Basehanderl.Basehandelr):
         if uuid:
             self.db_linck()
             if key:
-                coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":{"$regex":key}}]}).limit(10).skip(10*(page-1)).sort([("index",1)])
+                coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":{"$regex":key}}]}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
             else:
                 coures=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(10).skip(10*(page-1)).sort([("index",1)])
             datalist=[]
