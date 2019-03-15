@@ -118,13 +118,13 @@
       <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="159" column="77" lean-forward="false" selection-start-line="159" selection-start-column="77" selection-end-line="159" selection-end-column="77" />
+            <state relative-caret-position="509">
+              <caret line="167" column="27" lean-forward="true" selection-start-line="167" selection-start-column="27" selection-end-line="167" selection-end-column="27" />
               <folding>
-                <marker date="1552659302129" expanded="true" signature="2275:2288" ph="..." />
-                <marker date="1552659302129" expanded="true" signature="2304:2315" ph="..." />
-                <marker date="1552659302129" expanded="true" signature="2317:2330" ph="..." />
-                <marker date="1552659302129" expanded="true" signature="2345:2433" ph="..." />
+                <marker date="1552659448091" expanded="true" signature="2275:2288" ph="..." />
+                <marker date="1552659448091" expanded="true" signature="2304:2315" ph="..." />
+                <marker date="1552659448091" expanded="true" signature="2317:2330" ph="..." />
+                <marker date="1552659448091" expanded="true" signature="2345:2433" ph="..." />
               </folding>
             </state>
           </provider>
@@ -529,13 +529,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="159" column="77" lean-forward="false" selection-start-line="159" selection-start-column="77" selection-end-line="159" selection-end-column="77" />
+        <state relative-caret-position="509">
+          <caret line="167" column="27" lean-forward="true" selection-start-line="167" selection-start-column="27" selection-end-line="167" selection-end-column="27" />
           <folding>
-            <marker date="1552659302129" expanded="true" signature="2275:2288" ph="..." />
-            <marker date="1552659302129" expanded="true" signature="2304:2315" ph="..." />
-            <marker date="1552659302129" expanded="true" signature="2317:2330" ph="..." />
-            <marker date="1552659302129" expanded="true" signature="2345:2433" ph="..." />
+            <marker date="1552659448091" expanded="true" signature="2275:2288" ph="..." />
+            <marker date="1552659448091" expanded="true" signature="2304:2315" ph="..." />
+            <marker date="1552659448091" expanded="true" signature="2317:2330" ph="..." />
+            <marker date="1552659448091" expanded="true" signature="2345:2433" ph="..." />
           </folding>
         </state>
       </provider>

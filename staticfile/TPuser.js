@@ -153,6 +153,12 @@ function add_votedate(e,userid) {
 
     $(e).next().css("display","block")
      $(e).next().find('input[name="votenum"]').focus()
+    $(e).next().find('input[name="votenum"]').keyup(function () {
+
+        if(event.keyCode == 13){
+              $(e).next().find('input[name="votenum"]').blur()
+        }
+    })
      $(e).next().find('input[name="votenum"]').on("blur",function () {
          var num= $(e).next().find('input[name="votenum"]').val()
          $(e).next().find('input[name="votenum"]').val("")
