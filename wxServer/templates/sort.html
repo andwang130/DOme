@@ -270,11 +270,7 @@
         }
     </style>
     <script type="text/javascript">
-        var intDiff = parseInt({;
-        {
-            data["endtimes"]
-        }
-        })//倒计时总秒数量
+        var intDiff = parseInt({{data["endtimes"]}})//倒计时总秒数量
         function timer(intDiff) {
             window.setInterval(function () {
                 var day = 0,
@@ -426,16 +422,11 @@
     <script type="text/javascript">
         function get_ap() {
             {% if data["aptimes"]>0 %}
-            dialog2("未开始报名！报名时间为：</br> {{data[";
-            aptimestart;
-            "]}} 至 {{data[";
-            aptimeend;
-            "]}}";
-        )
+            dialog2("未开始报名！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}}")
             return false;
             {%end %}
 
-            location.href = "/wx/Baoming?uuid={{data[";uuid;"]}}";
+            location.href = "/wx/Baoming?uuid={{data["uuid"]}}";
         }
 
     </script>
