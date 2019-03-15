@@ -47,7 +47,7 @@ function  get_user(page) {
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"</td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">"+data[i]["vheat"]+"</span></td>\n" +
-                                "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this)'>+</button><span style='display: none'><input style='width: 60px' type='number' name='votenum'><span></td><!-- 移入移出事件  -->\n" +
+                                "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this,'"+data[i["userid"]]+"')'>+</button><span style='display: none'><input style='width: 60px' type='number' name='votenum'><span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">"+data[i]["liwu"]+"</span></td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\">"+getLocalTime(data[i]["createtime"])+"</td>\n" +
                                 "                    <td class=\"text-left vertical-middle\">\n" +
@@ -149,16 +149,26 @@ function sort_func(type)
     sort_type=type;
     get_user(1)
 }
-function add_votedate(e) {
-    console.log(e)
-    // $(e).css("display","none")
+function add_votedate(e,userid) {
+
     $(e).next().css("display","block")
      $(e).next().find('input[name="votenum"]').focus()
      $(e).next().find('input[name="votenum"]').on("blur",function () {
          var num= $(e).next().find('input[name="votenum"]').val()
          $(e).next().find('input[name="votenum"]').val("")
-          // $(e).css("display","block")
            $(e).next().css("display","none")
-            console.log(num)
+             data = {"userid": userid, "action": "add_votedate"};
+         $.ajax({
+            url: '/Tpuser',
+            type: 'POST',
+            data: data,
+            success: function (arg) {
+                data = JSON.parse(arg);
+                if (data["code"] == 0) {
+                  get_user(now_page)
+                }
+            }
+        })
+
      })
 }
