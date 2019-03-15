@@ -153,9 +153,9 @@ function add_votedate(e) {
     console.log(e)
     $(e).css("display","none")
     $(e).next().css("display","block")
-     $(e).next().find("votenum").focus()
-     $(e).next().find("votenum").on("blur",function () {
-         var num= $(e).next().find("votenum").val()
+     $(e).next().find('input[name="votenum"]').focus()
+     $(e).next().find('input[name="votenum"]').on("blur",function () {
+         var num= $(e).next().find('input[name="votenum"]').val()
           $(e).css("display","block")
            $(e).next().css("display","none")
             console.log(num)
