@@ -82,9 +82,9 @@ class Getlist(Basehanderl.Basehandelr):
         if uuid:
             self.db_linck()
             if key:
-                coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":{"$regex":key}}]}).limit(10).skip(10*(page-1)).sort([(sort,1)])
+                coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":{"$regex":key}}]}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
             else:
-                coures=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(10).skip(10*(page-1)).sort([("index",1)])
+                coures=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
             datalist=[]
             for i in coures:
                 data={}
