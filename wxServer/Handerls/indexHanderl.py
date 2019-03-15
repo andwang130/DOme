@@ -64,7 +64,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                 if pojcetm.TempCode==1:
                     self.render("index.html", data=data, aseedata=aseedata, share=shares)
                 elif pojcetm.TempCode==2:
-                    self.render("/temp2/index.html")
+                    self.render("temp2/index.html")
 class Getlist(Basehanderl.Basehandelr):
     def post(self):
         key=self.get_argument("keyword")
