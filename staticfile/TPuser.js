@@ -156,7 +156,7 @@ function add_votedate(e) {
      $(e).next().find('input[name="votenum"]').focus()
      $(e).next().find('input[name="votenum"]').on("blur",function () {
          var num= $(e).next().find('input[name="votenum"]').val()
-         $(e).next().find('input[name="votenum"]').val("0")
+         $(e).next().find('input[name="votenum"]').val("")
           // $(e).css("display","block")
            $(e).next().css("display","none")
             console.log(num)
