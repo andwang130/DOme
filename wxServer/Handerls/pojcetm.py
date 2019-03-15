@@ -90,6 +90,7 @@ wxcongif={
     "secret":"xxx"
 
 }
+TempCode=2
 play_Key="PAwwbBkMSefwFz2YPbLwhxsZ35eaN4dy6dCgrbtKj3V"
 www="http://www.nkwwcj.com"
 
