@@ -90,7 +90,7 @@ wxcongif={
     "secret":"d56808daf6c09985629def889ea3b8c3"
 
 }
-play_Key="A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
+play_Key="PAwwbBkMSefwFz2YPbLwhxsZ35eaN4dy6dCgrbtKj3V"
 www="http://www.77tp.cn"
 
 conf_redis={
@@ -164,6 +164,4 @@ def creat_dict(root):
     return dict_new
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
-    # str="appid=wx9ea23fdc52965768&body=快宣广告传媒-钻石充值&device_info=WEB&mch_id=1518708631&nonce_str=CSx5Te1jlR7ciJoy&key=A6Xx27slTy5huwgW4IzaZFD1YPqOBrEi"
-    # print(hashlib.md5(str.encode("utf-8")).hexdigest())\
     print(time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()+300)))
