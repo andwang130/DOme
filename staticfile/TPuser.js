@@ -149,7 +149,7 @@ function sort_func(type)
     sort_type=type;
     get_user(1)
 }
-function add_votedate() {
-    $(this).css("visibility","hidden")
-    $(this).next().css("visibility","visible")
+function add_votedate(e) {
+    $(e).css("visibility","hidden")
+    $(e).next().css("visibility","visible")
 }
