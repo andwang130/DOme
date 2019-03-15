@@ -150,6 +150,6 @@ function sort_func(type)
     get_user(1)
 }
 function add_votedate() {
-    $(this).visibility("hidden")
-    $(this).next().visibility("visible")
+    $(this).css("visibility","hidden")
+    $(this).next().css("visibility","visible")
 }
