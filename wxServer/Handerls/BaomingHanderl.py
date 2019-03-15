@@ -12,6 +12,8 @@ class baoming(Basehanderl.Basehandelr):
         uuid=self.get_argument("uuid","")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
+
+        openid="sss"
         if openid:
             self.rq(uuid)
             raise tornado.gen.Return()

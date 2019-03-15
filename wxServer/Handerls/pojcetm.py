@@ -86,8 +86,8 @@ Tpuser_temptle={
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start"]
 
 wxcongif={
-    "appId":"wxb541521542a0ebba",
-    "secret":"85b82cab8ee132ab089fb796c83de017"
+    "appId":"xxx",
+    "secret":"xxx"
 
 }
 play_Key="PAwwbBkMSefwFz2YPbLwhxsZ35eaN4dy6dCgrbtKj3V"
