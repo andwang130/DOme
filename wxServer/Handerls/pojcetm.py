@@ -91,7 +91,7 @@ wxcongif={
 
 }
 play_Key="PAwwbBkMSefwFz2YPbLwhxsZ35eaN4dy6dCgrbtKj3V"
-www="http://www.77tp.cn"
+www="http://www.nkwwcj.com"
 
 conf_redis={
     'host':'127.0.0.1',
