@@ -157,7 +157,7 @@ function add_votedate(e,userid) {
          var num= $(e).next().find('input[name="votenum"]').val()
          $(e).next().find('input[name="votenum"]').val("")
            $(e).next().css("display","none")
-             data = {"userid": userid, "action": "add_votedate"};
+             data = {"userid": userid, "action": "add_votedate","votenum":num};
          $.ajax({
             url: '/Tpuser',
             type: 'POST',
