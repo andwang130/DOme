@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>2019年中华美食“舌尖上的旅行”之河南洛阳C</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<script src="/wxchat/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="/wxcss/swiper-3.3.1.min.css">
+	<script type="text/javascript" src="/wxchat/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/wxchat/swiper.js"></script>
+	<script type="text/javascript" src="/wxchat/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/wxchat/hammer.min.js"></script>
+	<script type="text/javascript" src="/wxchat/cookie.js"></script>
+
+
+
+	<script type="text/javascript" src="/wxchat/jquery.lazyload.js"  ></script>
+
+
+	<link href="/wxcss/weui1.0.1.min.css" rel="stylesheet">
+	<link href="/wxcss/bootstrap.min.css" rel="stylesheet">
+	<link href="/wxcss/index.css?34" rel="stylesheet">
+	<link href="/wxcss/main.css?2" rel="stylesheet">
+		<style>
+
+	 .tousu{
+	   position:fixed;
+	   background-color:rgba(102,102,102,0.7);
+	   width:34px;
+	   height:34px;
+	   font-size:14px;
+	   line-height:34px;
+	   text-align:center;
+	   color:#fff;
+	   right:17px;
+	    top:33px;
+       border-radius:18px;
+	   z-index:9999;
+	 }
+  </style>
+
+</head>
+<body>
+<div class="container container-fill">
+
+
+<link href="/wxcss/index2.css" rel="stylesheet">
+
+ <style>
+ .threebutton a{background-color:#6281FD;}
+ .divmain11 .divsub{background:#6281FD;}
+ .content .list_box li a.vote{background:#6281FD;}
+ .macol{background:#6281FD;}
+.footer li>a.on .nav{color:#6281FD}
+.footer li>a.on .nav p{color:#6281FD}
+.footer li>a.on .nav{color:#6281FD}
+.rankp{background:#6281FD;}
+.lapiao .l{background:#6281FD;}
+.lapiao .r{background:#6281FD;}
+.donate_bank_p .weui-btn_primary{background:#6281FD;color:#fff}
+.threebutton a:link{color:#fff}
+.threebutton a:visited{color:#fff}
+#mar{background-color:#666;}
+.content .list_box li>div .number{background-color:#6281FD;}
+.twobutton a.active{background-color:#6281FD}
+.twobutton a:nth-child(2).active{background-color:#6281FD}
+ </style>
+<!-- <div class="tousu"><p><a href="/jubao/jubao.html" style="color:#fff">投诉</a></p></div> -->
+<style>
+#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;top:12%;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
+#rdlist div{margin-top:-5px}
+#rdlist div img{width:30px;height:30px;border-radius:20px;margin-top:-2px}
+</style>
+<div id="rdlist">
+  <div ><img></img> <span></span></div>
+
+</div>
+
+<script>
+//每条弹幕发送间隔
+var looper_time=5*1000;
+//是否首次执行
+var run_once=true;
+do_barrager();
+
+function do_barrager(){
+  if(run_once){
+      //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+      looper=setInterval(do_barrager,looper_time);
+      run_once=false;
+  }
+  //获取
+  $.getJSON("/Wxhd/GiftVote/index_loadgift/user_id/11/id/550.so",function(data){
+      //是否有数据
+      if(data.info && data.img){
+           //$('.swiper-container').barrager(data);
+
+		   $('#rdlist div img').attr('src',data.img);
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){
+				 $("#rdlist").fadeOut(1000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
+
+				 },3000);
+			  });
+
+
+      }
+
+  });
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+<style>
+*{margin:0;padding:0;font-size:100%;color:inherit;background-size:100%}
+a{text-decoration:none}
+a:active{color:#fff}
+html{height:100%}
+body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:12px;min-height:100%}
+.donate_body{background:#F6F5F4}
+.donate_donate{padding-top:15px}
+.donate_avatar_p{position:relative;width:60px;height:60px;margin:0 auto}
+.donate_avatar{display:block;width:100%;height:100%;border-radius:50%}
+.donate_name{font-size:17px;text-align:center;margin-top:10px}
+.donate_money_p_p{height:auto;display:block;}
+.donate_money_choose_p{margin:23px 15px 0}
+.donate_money_choose{display:-webkit-box;display:-webkit-flex;display:flex}
+.donate_money_choose.donate_money_choose2{margin-top:6px}
+.donate_money{text-align:center;color:#F85959;height:48px;border:1px solid #E8E8E8;margin-left:6px;line-height:48px;-webkit-box-flex:1;-webkit-flex:1;flex:1;background-color:#fff}
+.donate_money.active{background:#F85959;border-color:#F85959;color:#fff}
+.donate_money:first-child{margin-left:0}
+.donate_money_num{font-family:arial;font-size:26px;font-style:italic}
+.donate_money_unit{font-size:12px;vertical-align:2px;margin-left:3px}
+.donate_money_edit{margin:22px 15px 0;}
+.donate_money_edit_text{color:#222;text-align:center;font-size:16px;}
+.donate_money_input{font-size:14px;margin-top:9px;padding-left:10px;border-style:solid;border-width:1px;border-color:#e8e8e8;border-radius:6px;background-color:#fff;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;line-height:40px}
+.donate_bank_p{margin:25px 15px 0;}
+.donate_bank{height:44px;border:0 solid #E8E8E8;position:relative;border-bottom-width:1px}
+.donate_bank_icon{display:inline-block;width:21px;height:21px;vertical-align:-5px;margin-right:10px}
+.donate_bank_alipay .donate_bank_icon{background-image:url(../images/alipay_d345896.png)}
+.donate_bank_weixin .donate_bank_icon{background-image:url(../images/weixin_c15bb4c.png)}
+.donate_bank_text{font-size:16px;line-height:44px}
+.donate_bank:first-child{border-top-width:1px}
+.donate_bank_status{position:absolute;width:16px;height:16px;right:0;top:14px;background-image:url(../images/check_38e644f.png)}
+.active .donate_bank_status{background-image:url(../images/checked_77f27ae.png)}
+.donate_submit{margin:30px 20px 0;border:1px solid #F85959;color:#F85959;border-radius:5px;line-height:38px;text-align:center;font-size:15px}
+.donate_success{padding-top:20px;}
+.donate_success_title{line-height:58px}
+.donate_success_title_icon{display:inline-block;width:14px;height:14px;margin-left:15px;vertical-align:-3px;background-image:url(../images/checked_77f27ae.png)}
+.donate_success_title_text{font-size:12px;margin-left:10px;color:#F85959}
+.donate_success_content{background:#fff;padding:20px 0 20px}
+.donate_success_money_text{font-size:17px;color:#505050;text-align:center}
+.donate_success_money{margin-top:12px;color:#505050;text-align:center;font-family:arial}
+.donate_success_money_unit{font-size:24px;vertical-align:1px}
+.donate_success_money_value{font-size:40px}
+
+.donate_alert{background:#fff;border-radius:5px;position:absolute;top:50%;left:50%;margin:-85px 0 0 -100px;width:200px}
+.donate_alert_mask{position:fixed;top:0;left:0;z-index:9999;display:none;height:100%;width:100%;background-color:rgba(136,136,136,.5)}
+.donate_alert_msg{text-align:center;padding:20px 10px;font-size:14px;}
+.donate_alert_btns{border-top:1px solid #e8e8e8;display:box}
+.donate_alert_btns *{padding:10px 0;text-align:center;box-flex:1;color:#007AFF;font-size:16px}
+.donate_alert_btns:first-child{border-right:1px solid #e8e8e8}
+
+.wxpaybutsub{width:94%; height: 42px; margin: 0 auto; background: #44B549; margin-top: 10px; line-height: 42px; color: #FFF; text-align: center; font-size: 16px; border-radius:5px; border:0}
+.alipaybutsub{width:94%; height: 42px; margin: 0 auto; background: #0397DE; margin-top: 10px; line-height: 42px; color: #FFF; text-align: center; font-size: 16px; border-radius:5px; border:0}
+.pay_wxpay
+        {
+            border: solid 1px #ddd;
+            margin: 20px 0px;
+        }
+
+ .donate_bank_p .weui-btn_primary{
+    background:#44b549;
+ }
+</style>
+
+<div class="donate_donate" style="padding-top:20px">
+
+<!--
+    <div class="weui-panel__bd user_info bg-purple2 bg-blue2">
+        <a href="/show_xs/11/550/80539.so?key=WcKglwdggd" class="weui-media-box weui-media-box_appmsg weui-cell_access">
+            <div class="weui-media-box__hd">
+                <img class="weui-media-box__thumb" src="http://hd.shasem001.cn/Uploads/images/5c8652f591074.png" alt="13" style="border-radius: 50%;
+    border: 1px solid #ffffff;">
+            </div>
+            <div class="weui-media-box__bd">
+                <h4 class="weui-media-box__title cl-white">13号 郑家鲜羊</h4>
+                <p class="weui-media-box__desc cl-white">给Ta赞助吧</p>
+            </div>
+            <span class="weui-cell__ft"></span>
+        </a>
+
+    </div>
+
+
+<div class="divbottommenu  bg-purple3 bg-blue3 clearfix pd-b-10 bg-bw" style="margin-top:10px;border-top: 1px dashed #d5d5d5;" >
+
+  <div class="divitem" >
+	  <span><i class="fa fa-user fa-fw"></i>编号</span>
+	  <span>13</span>
+  </div>
+  <div class="divitem">
+	  <span><i class="fa fa-ticket fa-fw"></i>票数</span>
+	  <span>2317</span>
+  </div>
+  <div class="divitem">
+	  <span><i class="fa fa-fire fa-fw"></i>热度</span>
+	  <span>2338</span>
+  </div>
+ <div class="divitem">
+	  <span><i class="glyphicon glyphicon-stats"></i> 排名</span>
+	  <span> 1</span>
+  </div>
+
+</div>
+
+
+<div class="donate_money_p_p" style="margin-bottom:30px">
+		<div class="donate_money_choose_p">
+
+
+
+		<div class="donate_money_choose donate_money_choose1">
+			    <div class="donate_money" dada-key="0" dada-tip="支付1元，赞助 郑家鲜羊 钻石，抵3票！">
+						<p class="donate_money_icon"><img src="http://p9jesxg2z.bkt.clouddn.com/Uploads/images/5b1e997b0db46.png" width="50%" /></p>
+						<span class="donate_money_title">钻石</span>
+						<span class="donate_money_num">1点</span>
+					</div><div class="donate_money" dada-key="1" dada-tip="支付10元，赞助 郑家鲜羊 钻石，抵30票！">
+						<p class="donate_money_icon"><img src="http://p9jesxg2z.bkt.clouddn.com/Uploads/images/5b1e997f5e1c5.png" width="50%" /></p>
+						<span class="donate_money_title">钻石</span>
+						<span class="donate_money_num">10点</span>
+					</div><div class="donate_money" dada-key="2" dada-tip="支付50元，赞助 郑家鲜羊 钻石，抵150票！">
+						<p class="donate_money_icon"><img src="http://p9jesxg2z.bkt.clouddn.com/Uploads/images/5b1e9994319d3.png" width="50%" /></p>
+						<span class="donate_money_title">钻石</span>
+						<span class="donate_money_num">50点</span>
+					</div>			</div><div class="donate_money_choose donate_money_choose1">
+			    <div class="donate_money" dada-key="3" dada-tip="支付100元，赞助 郑家鲜羊 钻石，抵300票！">
+						<p class="donate_money_icon"><img src="http://p9jesxg2z.bkt.clouddn.com/Uploads/images/5b1e9997ba609.png" width="50%" /></p>
+						<span class="donate_money_title">钻石</span>
+						<span class="donate_money_num">100点</span>
+					</div><div class="donate_money" dada-key="4" dada-tip="支付300元，赞助 郑家鲜羊 钻石，抵900票！">
+						<p class="donate_money_icon"><img src="http://p9jesxg2z.bkt.clouddn.com/Uploads/images/5b1e999975579.png" width="50%" /></p>
+						<span class="donate_money_title">钻石</span>
+						<span class="donate_money_num">300点</span>
+					</div>			</div>		</div>
+		<div class="donate_money_edit">
+			<div class="donate_money_edit_text" style="text-align:left"><span id="tsy">请选择以上赞助</span>
+
+
+			<span style="float:right">数量:
+			  <select name="pcount" id="pcount">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="520">520</option>
+                <option value="666">666</option>
+                <option value="1314">1314</option>
+
+			  </select>
+
+
+			</span>
+
+			</div>
+		</div>
+	</div>   -->
+
+
+<div class="donate_avatar_p"> <a href="/show_xs/11/550/80539.so?key=WcKglwdggd"><img class="donate_avatar" src="http://hd.shasem001.cn/Uploads/images/5c8652f591074.png" /></a></div>
+	<div class="donate_name">为13号 郑家鲜羊 送<span id="tip_zuan">5</span>钻 = <span id="tip_piao">15</span>票</div>
+	<div class="donate_money_p_p">
+		<div class="donate_money_choose_p">
+			<div class="donate_money_choose donate_money_choose1">
+				<div class="donate_money"><span class="donate_money_num">10</span><span class="donate_money_unit">钻</span></div>
+				<div class="donate_money active"><span class="donate_money_num">50</span><span class="donate_money_unit">钻</span></div>
+				<div class="donate_money"><span class="donate_money_num">100</span><span class="donate_money_unit">钻</span></div>
+			</div>
+			 <div class="donate_money_choose donate_money_choose2">
+				<div class="donate_money"><span class="donate_money_num">300</span><span class="donate_money_unit">钻</span></div>
+				<div class="donate_money"><span class="donate_money_num">500</span><span class="donate_money_unit">钻</span></div>
+				<div class="donate_money"><span class="donate_money_num" style="font-size:16px"><b>自定义</b></span></div>
+			</div>
+		</div>
+		<div class="donate_money_edit">
+			<div class="donate_money_edit_text"><b>注:</b> 1元打赏1钻，1钻等于3票</div>
+			<input name="ptiefen" type="number" style="display:none" class="donate_money_input" id="money" placeholder="请输入要购买的钻石数量" />
+		</div>
+	</div>
+
+
+  <div class="pay_wxpay">
+            <img width="100%" src="/Public/app/WeChat/GiftVote/img/zhong1.png">
+	</div>
+
+  <div class="donate_bank_p" style="">
+		<a href="javascript:;" id="weixin" class="weui-btn weui-btn_primary">打赏钻石</a>
+	</div>
+
+</div>
+
+
+<div id="qshuli" class="donate_alert_mask" onclick="document.getElementById('qshuli').style.display='none';"><div class="donate_alert"><div class="donate_alert_msg">请选择你要的赞助</div><div class="donate_alert_btns"><div class="donate_alert_btn ok">确定</div></div></div></div>
+<br></br>
+<script>
+$(document).ready(function(){
+$(document).attr("title","打赏钻石");
+   var num=5;
+	$(".donate_money_choose .donate_money").click(function(){
+
+		var tip_zuan = $(this).find('.donate_money_num').text();
+		if(tip_zuan=='自定义'){
+		     $("#tip_zuan").text(0);
+			 $('#tip_piao').text(0);
+			 $('#money').val('');
+	         $('#money').show();
+			 $('#weixin').css('background','rgb(221, 221, 221)');
+			 $('#money').focus();
+
+			 num=0;
+		}else{
+			$("#tip_zuan").text(tip_zuan);
+			num=tip_zuan;
+			var tip_piao=tip_zuan*3;
+			$('#tip_piao').text(tip_piao);
+			$('#money').hide();
+			$('#weixin').css('background','#44b549');
+		}
+
+
+		$(".donate_money_choose .donate_money").removeClass("active");
+		$(this).addClass("active");
+    });
+
+	//$(".donate_money_choose:first-child .donate_money:first-child").trigger('click');
+
+    $('#money').keyup(function(){
+	   var input=$('#money').val();
+	       if( isNaN(input) || input<=0 ){
+
+			 $('#money').val('');
+			 $('#weixin').css('background','rgb(221, 221, 221)');
+
+			 num=0;
+			 return false;
+		   }else{
+		     num=Math.round(input);
+			 $('#money').val(num);
+			 var tip_piao=num*3;
+			 $("#tip_zuan").text(num);
+			 $('#tip_piao').text(tip_piao);
+			  $('#weixin').css('background','#44b549');
+
+		   }
+	});
+	$("#weixin").click(function(){
+		if(num <=0){return false;}
+
+
+		$.ajax({
+			type : "post",
+			url : "/Wxhd/GiftVote/pay/user_id/11/id/550/iid/80539.so",
+			data : {
+				type : 2,
+				num : num,
+
+			},
+			dataType : "json",
+			beforeSend : function(XMLHttpRequest) {
+				loadingToast("跳转支付...");
+			},
+			success : function(res) {
+				if (res.status == 1) {
+									 var jsApiParameters = res.jsApiParameters;
+								var jsondata = {
+									appId:jsApiParameters.appId,
+									timeStamp:jsApiParameters.timeStamp,
+									nonceStr:jsApiParameters.nonceStr,
+									package:jsApiParameters.package,
+									signType:jsApiParameters.signType,
+									paySign:jsApiParameters.paySign
+								}
+								var orderid = res.orderid;
+								WeixinJSBridge.invoke("getBrandWCPayRequest",jsondata,function(res){
+									WeixinJSBridge.log(res.err_msg);
+									if(res.err_msg=="get_brand_wcpay_request:ok"){
+
+                                        hidemod("loadingToast");
+										dialog2('支付成功');
+										setTimeout(function(){window.location.href="/show_xs/11/550/80539.so?key=WcKglwdggd";},2000);
+
+									}else{
+										if(res.err_msg == "get_brand_wcpay_request:cancel"){
+											var err_msg = "您取消了支付";
+										}else if(res.err_msg == "get_brand_wcpay_request:fail"){
+											var err_msg = "支付失败\n错误信息："+res.err_desc;
+										}else{
+											var err_msg = res.err_msg +"\n"+res.err_desc;
+										}
+										hidemod("loadingToast");
+										dialog2(err_msg);
+
+									}
+								});
+
+
+				}else{
+					hidemod("loadingToast");
+					dialog2(res.msg);
+				}
+			},
+			error : function(res, type) {
+				hidemod("loadingToast");
+				dialog2(res.msg);
+			}
+
+
+
+		});
+
+  });
+});
+</script>
+<script type="text/javascript">
+ window.fxdata = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c8652f591074.png",
+	"Link":"http://hd.shasem001.cn",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C"
+}
+window.fxonly = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c8652f591074.png",
+	"Link":"http://hd.shasem001.cn",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C",
+	"content":"我是郑家鲜羊 编号13，我正在参加2019年中华美食“舌尖上的旅行”之河南洛阳C请为我加油！"
+}
+
+function share_success(){
+
+  $.post("/Wxhd/GiftVote/share_success/user_id/11/id/550/iid/80539.so",{},function(){});
+  var t=$("#sahrec").text();
+ $("#sahrec").text(parseInt(t)+1);
+}
+
+</script>
+
+
+
+	</div>
+	<!-- 提示弹窗start -->
+
+
+
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script>
+
+			//微信API验证
+			wx.config({
+				debug: false,
+				appId: 'wx0e628ec8b50f8fdb',
+				timestamp: 1552670407,
+				nonceStr: 'IDAJZIh8xCM7Wf9V',
+				signature: 'a9cc78e4c6f498eaeecfd1e0f7d808198e78e556',
+				jsApiList: [
+					'checkJsApi',
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+					'startRecord',
+					'stopRecord',
+					'onVoiceRecordEnd',
+					'playVoice',
+					'pauseVoice',
+					'stopVoice',
+					'onVoicePlayEnd',
+					'uploadVoice',
+					'downloadVoice',
+					'chooseImage',
+					'previewImage',
+					'uploadImage',
+					'downloadImage',
+					'translateVoice',
+					'getNetworkType',
+					'openLocation',
+					'getLocation',
+					'hideOptionMenu',
+					'showOptionMenu',
+					'hideMenuItems',
+					'showMenuItems',
+					'hideAllNonBaseMenuItem',
+					'showAllNonBaseMenuItem',
+					'closeWindow',
+					'scanQRCode',
+					'chooseWXPay',
+					'openProductSpecificView',
+					'addCard',
+					'chooseCard',
+					'openCard'
+				]
+			});
+
+			// 在这里调用 wxAPI
+			wx.ready(function () {
+				//显示右上角菜单
+				wx.showOptionMenu();
+
+				//获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareTimeline({
+					title: window.fxdata.title, // 分享标题
+					link: window.fxdata.Link, // 分享链接
+					imgUrl: window.fxdata.imgUrl, // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+				//获取“分享给朋友”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareAppMessage({
+					title: window.fxonly.title, // 分享标题
+					desc: window.fxonly.content, // 分享描述
+					link: window.fxonly.Link, // 分享链接
+					imgUrl: window.fxonly.imgUrl, // 分享图标
+					type: '', // 分享类型,music、video或link，不填默认为link
+					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+			});
+
+
+		</script>
+
+
+<div id="dialog2" style="opacity: 1;display:none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">返回错误！</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:hidemod('dialog2');" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+</div>
+
+<div id="toast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">已完成</p>
+        </div>
+</div>
+<div id="loadingToast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">数据加载中</p>
+        </div>
+</div>
+<!-- 提示弹窗start -->
+
+	<script type="text/javascript">
+
+	function dialog2(msg){
+	    $("#dialog2 .weui-dialog__bd").html(msg);
+	    $("#dialog2").show();
+	}
+	function hidemod(boxid){
+	    $("#"+boxid).hide();
+	}
+	function loadingToast(msg){
+	    $("#loadingToast .weui-toast__content").html(msg);
+	    $("#loadingToast").show();
+	}
+	function toast(msg){
+	    $("#toast .weui-toast__content").html(msg);
+	    $("#toast").show();
+		setTimeout("hidemod('toast')",2000);
+	}
+
+	wx.ready(function () {
+		wx.hideMenuItems({
+		  menuList:["menuItem:copyUrl","menuItem:originPage", "menuItem:share:email","menuItem:openWithQQBrowser","menuItem:openWithSafari","menuItem:share:brand"],
+
+		});
+
+	});
+
+	</script>
+
+</body>
+</html>

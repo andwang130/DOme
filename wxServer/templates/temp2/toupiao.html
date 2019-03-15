@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>2019年中华美食“舌尖上的旅行”之河南洛阳C</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<script src="/wxchat/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="/wxcss/swiper-3.3.1.min.css">
+	<script type="text/javascript" src="/wxchat/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/wxchat/swiper.js"></script>
+	<script type="text/javascript" src="/wxchat/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/wxchat/hammer.min.js"></script>
+	<script type="text/javascript" src="/wxchat/cookie.js"></script>
+
+
+
+	<script type="text/javascript" src="/wxchat/jquery.lazyload.js"  ></script>
+
+
+	<link href="/wxcss/weui1.0.1.min.css" rel="stylesheet">
+	<link href="/wxcss/bootstrap.min.css" rel="stylesheet">
+	<link href="/wxcss/index.css?34" rel="stylesheet">
+	<link href="/wxcss/main.css?2" rel="stylesheet">
+		<style>
+
+	 .tousu{
+	   position:fixed;
+	   background-color:rgba(102,102,102,0.7);
+	   width:34px;
+	   height:34px;
+	   font-size:14px;
+	   line-height:34px;
+	   text-align:center;
+	   color:#fff;
+	   right:17px;
+	    top:33px;
+       border-radius:18px;
+	   z-index:9999;
+	 }
+  </style>
+
+</head>
+<body>
+<div class="container container-fill">
+
+
+<link href="/wxcss/index2.css" rel="stylesheet">
+
+ <style>
+ .threebutton a{background-color:#6281FD;}
+ .divmain11 .divsub{background:#6281FD;}
+ .content .list_box li a.vote{background:#6281FD;}
+ .macol{background:#6281FD;}
+.footer li>a.on .nav{color:#6281FD}
+.footer li>a.on .nav p{color:#6281FD}
+.footer li>a.on .nav{color:#6281FD}
+.rankp{background:#6281FD;}
+.lapiao .l{background:#6281FD;}
+.lapiao .r{background:#6281FD;}
+.donate_bank_p .weui-btn_primary{background:#6281FD;color:#fff}
+.threebutton a:link{color:#fff}
+.threebutton a:visited{color:#fff}
+#mar{background-color:#666;}
+.content .list_box li>div .number{background-color:#6281FD;}
+.twobutton a.active{background-color:#6281FD}
+.twobutton a:nth-child(2).active{background-color:#6281FD}
+ </style>
+<!-- <div class="tousu"><p><a href="/jubao/jubao.html" style="color:#fff">投诉</a></p></div> -->
+<style>
+#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;top:12%;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
+#rdlist div{margin-top:-5px}
+#rdlist div img{width:30px;height:30px;border-radius:20px;margin-top:-2px}
+</style>
+<div id="rdlist">
+  <div ><img></img> <span></span></div>
+
+</div>
+
+<script>
+//每条弹幕发送间隔
+var looper_time=5*1000;
+//是否首次执行
+var run_once=true;
+do_barrager();
+
+function do_barrager(){
+  if(run_once){
+      //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+      looper=setInterval(do_barrager,looper_time);
+      run_once=false;
+  }
+  //获取
+  $.getJSON("/Wxhd/GiftVote/index_loadgift/user_id/11/id/550.so",function(data){
+      //是否有数据
+      if(data.info && data.img){
+           //$('.swiper-container').barrager(data);
+
+		   $('#rdlist div img').attr('src',data.img);
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){
+				 $("#rdlist").fadeOut(1000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
+
+				 },3000);
+			  });
+
+
+      }
+
+  });
+}
+
+</script>
+
+<style>
+
+  @font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1525488259092'); /* IE9*/
+  src: url('iconfont.eot?t=1525488259092') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAlwAAsAAAAADUQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZXQknWY21hcAAAAYAAAACiAAACGDci1JlnbHlmAAACJAAABQMAAAYkK7QboWhlYWQAAAcoAAAALwAAADYQamR6aGhlYQAAB1gAAAAdAAAAJAiTBEBobXR4AAAHeAAAABgAAAAoKJ4AAGxvY2EAAAeQAAAAFgAAABYIXgaSbWF4cAAAB6gAAAAdAAAAIAEaAGpuYW1lAAAHyAAAAUUAAAJtPlT+fXBvc3QAAAkQAAAAXwAAAIJNLV4seJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkEWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGBwYKp5fZm7438AQw9zIcAUozAiSAwDrJQyueJzFkcENgzAMRX+alEJViQpxYgYmYAcW6QQ5dI6eOhQSO3zGoD8xhyLuraMXyT+yY30DOAPwohcBcG84pHhJdVn3uGY94KG8wV3KCZGBNTsOHDkt87rqLdIftH041Tdov07SCvXzKFFpmkueojhU/izc/77exy3fzy2rRNzQiPSGvAODIRfB2kg7ZWfIWXAwUh+ORto9J0O+Y5kNhA9+ai6hAAB4nGVVW2wUVRg+/zk7Z7rb3dmd2bnsbruX2WFndtmypXuZ7cW2IKVAKY0CvQFNwIBVSGuAAg8WqQ81Bo01wXh50XqhhMQHo8EHJdgHYyQxPPlgShBEjfFFglGf2MEzS0mIzjnnn5n//N/kP99/GcQhdP8ncplEUBhlURvqQ08gBDQPaQHHQbfKBZwHRecUTRaIZVg6b6QLpBu0NJXVol02NcrTIAiQgJJetK0CtqBS7sFdUFTjANGm2C4p0yyR18EXsRLzzgD+AJSk0RzsWedsa+mVi6lwwym/JEUl6dUGynENGHuCAkxpqpfz+qjzEReMKZeTOZwEf9SKDY4HUk3SgZfL0/GM5gWYm4NwU0q40CvGRDZnY2pYivKhQEMkFjDWyHDql8ZI2B83f0bscs/a4kGkBTUiDTWhJDKY0kSWjaoq0igiAvAJ0HqgWgBSEg13WSXFwGjFuclxoK+sgM5xzs2VKzWOq125UvN4aj2Li7cWF786c+b7Rw0YgHz50IRJZ95ZhvsOLC8jRJkf+8kdfAuFUDNqQVW0FY0glEkXMGOumMCygB91BfS0Wan2kCpTqJRxzccZ2e6GkTarFbahMJ1SChfAYgDlARTvLo73ZzL94wcf3IqjM4TMjI7OYDwD0VpKigC/6djC0IVfAxBxXjh3LQT4Fviv1f65GFKB2vuO9R5/P7D0/PBRQo4O9+0F2Nv3h7llz8E9WzKZ+s2Eq/jk2PgJjE+Mj52893FMahw6e6QdPNcvijE4S5bP+TC8/Y1zQws1PHZ4Zx5yeGHKAxw+PjJyHGfxvs2b9wGLC1v351hc5lhcEOiiIeqKLpZE3YOcDXPOBlieg2V3rL65scR1zCWGocjHUCUvMABbhgddqp2vLV0i22u3796Fp3CidttJwLPOWy6OMNy75A45jExUQTZDMtLqvDFpCOCmMs8m5UVVYywW7SqjtAcyaaaRE1BkhmLZtMjv1M5HNqU6mlWhNdnR6uMbD+zoGuOCAKL9555crsEcyeTMewvxLEh6Rg9DNg6zVpfAiw273ikmdLLVUvT9LemNnoDsHFQD6XXgo9EvJlODH+aanb1hPcwmnI9bsHpWRF5k/FhudSKepStLWhOFQQ4CtWgrmGyWe8EuJqEuVPl/WTvp/EA7eZ+P7/DAJ5R2UpFegDVMdnBkbjVpH9o7rzlfe2kXjzHfydFPaYjvpPQitLuw0CqPr5C/yQzajnajCeZVhbGiCxAHAcuqVh/MC021q7Zl1kcBKqIuyqxh5F2WFUa3rLpdgyGNCqO5znUBODeJZY092N2sr2gCkB3rDcdvrF+/PZ832x4PNwclTzQRSnmZf1IkHGhMJOGvQ0ckiUoanBYjERGGXHm6PL7GTgxPY5i4dxUKGZptw7/RDKucNvztmNEK0GqM+TqHnx6Om1yrKYskInq9Qb8Q9gfCgaA12QlDzmeTSzIBTVoCzYhEDA3O0LV6aYCfGRl87nKuV1jMmv6NO8zce4HetfkNq9w8iFcTq+0+VtkGq8m02Q1GAcp2F6PKLqqaUiqqMnUbrWLUz+0WLzsuI4hJZlq1C2wXtHofINenQE4q0yFZDk0rSRmmQopS+25gfrJ9G156ycoDmZ2YmMUt5uBsbrT0ZjuY/UP9JuBd3d07Jdc49J8PfF59Zn7gjR/XpcZKDIdnJyqjyeihzZuGbmT7crm+bPeTAOxngP4FJCtDvQB4nGNgZGBgAOJbL9qr4vltvjJwszCAwDVvgQwE/V+HZStzI5DLwcAEEgUAMNQKGAB4nGNgZGBgbvjfwBDDspUBCIAkIwMq4AIAZiwD3QAAAHicY2FgYGB+ycDAwoCEt6LxgRgAML4BxgAAAAAAdgC6AUIBXAF4AdICHAKqAxIAAHicY2BkYGDgYohjYGMAASYwjwtI/gfzGQATEAGFAAAAeJxlj01OwzAQhV/6B6QSqqhgh+QFYgEo/RGrblhUavdddN+mTpsqiSPHrdQDcB6OwAk4AtyAO/BIJ5s2lsffvHljTwDc4Acejt8t95E9XDI7cg0XuBeuU38QbpBfhJto41W4Rf1N2MczpsJtdGF5g9e4YvaEd2EPHXwI13CNT+E69S/hBvlbuIk7/Aq30PHqwj7mXle4jUcv9sdWL5xeqeVBxaHJIpM5v4KZXu+Sha3S6pxrW8QmU4OgX0lTnWlb3VPs10PnIhVZk6oJqzpJjMqt2erQBRvn8lGvF4kehCblWGP+tsYCjnEFhSUOjDFCGGSIyujoO1Vm9K+xQ8Jee1Y9zed0WxTU/3OFAQL0z1xTurLSeTpPgT1fG1J1dCtuy56UNJFezUkSskJe1rZUQuoBNmVXjhF6XNGJPyhnSP8ACVpuyAAAAHicbcpLCoAwDEXRPH+tFdyLS4pQakSbChbE1Svq0Ds5k0sFvTn6z6FAiQo1GhhYtHDoCIdJLIfEYEbV9ZEf60lXP5hdcxJWe04+hi37fhaOId1D5riI/e6B6AIXJhryAA==') format('woff'),
+   url('iconfont.ttf?t=1525488259092') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1525488259092#iconfont') format('svg'); /* iOS 4.1- */
+
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paixing:before { content: "\e604"; }
+
+.icon-booming:before { content: "\e60f"; }
+
+
+
+.icon-home1:before { content: "\e64d"; }
+
+.icon-toupiao:before { content: "\e603"; }
+
+.icon-zhengque:before { content: "\e6d0"; }
+
+.icon-jiangpinguanli:before { content: "\e61a"; }
+
+.icon-baoming1:before { content: "\e63a"; }
+.contestant_page_header{
+        text-align: center;
+        padding: 20px;
+		background: #ffffff;
+    }
+
+  </style>
+
+ <div class="contestant_page_header">
+
+        <div>
+            <div><i class="iconfont icon-zhengque" style="color: #0bb20c;font-size: 50px"></i></div>
+            <h3 style="color:#414141;font-size:17px">恭喜！你已给13号 <span style="color: #0d8ddb">郑家鲜羊 </span>投票成功！</h3>
+        </div>
+                   <div style="color:#f90012">
+                         <div style="text-align: center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABQCAYAAADvCdDvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCOERGN0UxNEQzQjZFNzExODU0NUNERjQ4M0QzQzkwNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyNjE4QkYzNUI2RDMxMUU3OUM3REY1MjA5NDJDNkY3RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNjE4QkYzNEI2RDMxMUU3OUM3REY1MjA5NDJDNkY3RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkI4REY3RTE0RDNCNkU3MTE4NTQ1Q0RGNDgzRDNDOTA2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkI4REY3RTE0RDNCNkU3MTE4NTQ1Q0RGNDgzRDNDOTA2Ii8+IDwvcmRmOkRlc2NyaXB0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" alt="" width="60">
+                       </div>
+
+                   </div>
+                <div style="padding-top: 30px">
+                    <a href="http://hd.shasem001.cn/payzf/?user_id=11&id=550&iid=80539&key=WcKglwdggd" class="weui-btn weui-btn_primary" style="color:white">亲，再给我送个钻石呗！</a>
+                </div>
+		 </div>
+		   			   <div style="padding:20px">
+             <a href="/show_xs/11/550/80539.so?key=WcKglwdggd" class="weui-btn weui-btn_default">返回</a>
+           </div>
+<script type="text/javascript">
+window.fxdata = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
+	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C"
+}
+window.fxonly = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
+	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C",
+	"content":"我正在参加2019年中华美食“舌尖上的旅行”之河南洛阳C请为我加油！"
+}
+
+function share_success(){
+
+  $.post("/Wxhd/GiftVote/share_success/user_id/11/id/550.so",{},function(){});
+
+}
+
+</script>
+
+
+<style>
+  #zanzhu2{background:url('/Public/app/WeChat/GiftVote/img/ts.png') no-repeat;background-size:19px 19px;background-position:0px 4px}
+
+</style>
+
+<div style="height:50px;"></div>
+<div class="footer">
+<ul>
+
+<li><a href="/show/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
+
+<li><a href="/show_top/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
+
+<li><a href="/show_award/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
+
+
+
+<li><a href="javascript:;"   onclick="get_ap();"><div class='nav'><div class='ib ispr iconfont icon-baoming'></div><p>报名</p></div></a></li>
+<li><a href="/Wxhd/GiftVote/jubao/id/550/user_id/11/iid/80539/key/WcKglwdggd/action/success.so"  ><div class='nav'><div class='is ispr' id="zanzhu2"></div><p>投诉</p></div></a></li>
+
+</ul>
+</div>
+<script type="text/javascript">
+function get_ap(){
+    location.href="/show_sig/11/550.so?key=WcKglwdggd";
+}
+</script>
+
+
+
+
+	</div>
+	<!-- 提示弹窗start -->
+
+
+
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script>
+
+			//微信API验证
+			wx.config({
+				debug: false,
+				appId: 'wx0e628ec8b50f8fdb',
+				timestamp: 1552670089,
+				nonceStr: 'M0ybBTonh7AMKWO2',
+				signature: 'dd721bfafb1c2656cc7ce7eb6a5bd885350a9cea',
+				jsApiList: [
+					'checkJsApi',
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+					'startRecord',
+					'stopRecord',
+					'onVoiceRecordEnd',
+					'playVoice',
+					'pauseVoice',
+					'stopVoice',
+					'onVoicePlayEnd',
+					'uploadVoice',
+					'downloadVoice',
+					'chooseImage',
+					'previewImage',
+					'uploadImage',
+					'downloadImage',
+					'translateVoice',
+					'getNetworkType',
+					'openLocation',
+					'getLocation',
+					'hideOptionMenu',
+					'showOptionMenu',
+					'hideMenuItems',
+					'showMenuItems',
+					'hideAllNonBaseMenuItem',
+					'showAllNonBaseMenuItem',
+					'closeWindow',
+					'scanQRCode',
+					'chooseWXPay',
+					'openProductSpecificView',
+					'addCard',
+					'chooseCard',
+					'openCard'
+				]
+			});
+
+			// 在这里调用 wxAPI
+			wx.ready(function () {
+				//显示右上角菜单
+				wx.showOptionMenu();
+
+				//获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareTimeline({
+					title: window.fxdata.title, // 分享标题
+					link: window.fxdata.Link, // 分享链接
+					imgUrl: window.fxdata.imgUrl, // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+				//获取“分享给朋友”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareAppMessage({
+					title: window.fxonly.title, // 分享标题
+					desc: window.fxonly.content, // 分享描述
+					link: window.fxonly.Link, // 分享链接
+					imgUrl: window.fxonly.imgUrl, // 分享图标
+					type: '', // 分享类型,music、video或link，不填默认为link
+					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+			});
+
+
+		</script>
+
+
+<div id="dialog2" style="opacity: 1;display:none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">返回错误！</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:hidemod('dialog2');" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+</div>
+
+<div id="toast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">已完成</p>
+        </div>
+</div>
+<div id="loadingToast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">数据加载中</p>
+        </div>
+</div>
+<!-- 提示弹窗start -->
+
+	<script type="text/javascript">
+
+	function dialog2(msg){
+	    $("#dialog2 .weui-dialog__bd").html(msg);
+	    $("#dialog2").show();
+	}
+	function hidemod(boxid){
+	    $("#"+boxid).hide();
+	}
+	function loadingToast(msg){
+	    $("#loadingToast .weui-toast__content").html(msg);
+	    $("#loadingToast").show();
+	}
+	function toast(msg){
+	    $("#toast .weui-toast__content").html(msg);
+	    $("#toast").show();
+		setTimeout("hidemod('toast')",2000);
+	}
+
+	wx.ready(function () {
+		wx.hideMenuItems({
+		  menuList:["menuItem:copyUrl","menuItem:originPage", "menuItem:share:email","menuItem:openWithQQBrowser","menuItem:openWithSafari","menuItem:share:brand"],
+
+		});
+
+	});
+
+	</script>
+
+</body>
+</html>

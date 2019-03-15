@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>2019年中华美食“舌尖上的旅行”之河南洛阳C</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<script src="/wxchat/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="/wxcss/swiper-3.3.1.min.css">
+	<script type="text/javascript" src="/wxchat/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/wxchat/swiper.js"></script>
+	<script type="text/javascript" src="/wxchat/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/wxchat/hammer.min.js"></script>
+	<script type="text/javascript" src="/wxchat/cookie.js"></script>
+
+
+
+	<script type="text/javascript" src="/wxchat/jquery.lazyload.js"  ></script>
+
+
+	<link href="/wxcss/weui1.0.1.min.css" rel="stylesheet">
+	<link href="/wxcss/bootstrap.min.css" rel="stylesheet">
+	<link href="/wxcss/index.css?34" rel="stylesheet">
+	<link href="/wxcss/main.css?2" rel="stylesheet">
+		<style>
+
+	 .tousu{
+	   position:fixed;
+	   background-color:rgba(102,102,102,0.7);
+	   width:34px;
+	   height:34px;
+	   font-size:14px;
+	   line-height:34px;
+	   text-align:center;
+	   color:#fff;
+	   right:17px;
+	    top:33px;
+       border-radius:18px;
+	   z-index:9999;
+	 }
+  </style>
+
+</head>
+<body>
+<div class="container container-fill">
+
+
+<link href="/wxcss/index2.css" rel="stylesheet">
+
+ <style>
+ .threebutton a{background-color:#6281FD;}
+ .divmain11 .divsub{background:#6281FD;}
+ .content .list_box li a.vote{background:#6281FD;}
+ .macol{background:#6281FD;}
+.footer li>a.on .nav{color:#6281FD}
+.footer li>a.on .nav p{color:#6281FD}
+.footer li>a.on .nav{color:#6281FD}
+.rankp{background:#6281FD;}
+.lapiao .l{background:#6281FD;}
+.lapiao .r{background:#6281FD;}
+.donate_bank_p .weui-btn_primary{background:#6281FD;color:#fff}
+.threebutton a:link{color:#fff}
+.threebutton a:visited{color:#fff}
+#mar{background-color:#666;}
+.content .list_box li>div .number{background-color:#6281FD;}
+.twobutton a.active{background-color:#6281FD}
+.twobutton a:nth-child(2).active{background-color:#6281FD}
+ </style>
+<!-- <div class="tousu"><p><a href="/jubao/jubao.html" style="color:#fff">投诉</a></p></div> -->
+<style>
+#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;top:12%;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
+#rdlist div{margin-top:-5px}
+#rdlist div img{width:30px;height:30px;border-radius:20px;margin-top:-2px}
+</style>
+<div id="rdlist">
+  <div ><img></img> <span></span></div>
+
+</div>
+
+<script>
+//每条弹幕发送间隔
+var looper_time=5*1000;
+//是否首次执行
+var run_once=true;
+do_barrager();
+
+function do_barrager(){
+  if(run_once){
+      //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+      looper=setInterval(do_barrager,looper_time);
+      run_once=false;
+  }
+  //获取
+  $.getJSON("/Wxhd/GiftVote/index_loadgift/user_id/11/id/550.so",function(data){
+      //是否有数据
+      if(data.info && data.img){
+           //$('.swiper-container').barrager(data);
+
+		   $('#rdlist div img').attr('src',data.img);
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){
+				 $("#rdlist").fadeOut(1000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
+
+				 },3000);
+			  });
+
+
+      }
+
+  });
+}
+
+</script>
+
+
+
+
+<script type="text/javascript" src="/Public/app/WeChat/GiftVote/js/upbase64img/exif.js"></script>
+<script type="text/javascript" src="/Public/app/WeChat/GiftVote/js/upbase64img/binaryajax.js"></script>
+
+<script type="text/javascript" src="/Public/app/WeChat/GiftVote/js/upbase64img/localResizeIMG2.js"></script>
+<script type="text/javascript" src="/Public/app/WeChat/GiftVote/js/upbase64img/mobileBUGFix.mini.js"></script>
+
+
+<div style="height:10px;"></div>
+<div class="fee_feedback_wrapper">
+<div class="divbaoming4">
+<div class="dlist1">
+选择上传1-5张照片，第一张为封面图。
+</div>
+<div class="dlist2"></div>
+
+
+    <div class="upload_area">
+                    <ul id="imglist" class="post_imglist"></ul>
+                    <div class="upload_btn">
+                        <input type="file" id="upload_image" value="图片上传" accept="image/*" >
+                    </div>
+       </div>
+
+
+</div>
+
+<form id="formID">
+	<div>
+		<ul class="fd_list2">
+			<li>
+			<div class="tlt">姓名</div>
+			<div class="cont">
+				<input name="name"  type="text" placeholder="请输入姓名" class="tx"></div>
+			</li>
+
+			<li>
+			<div class="tlt">手机号码</div>
+			<div class="cont">
+				<input name="xs_tel"  type="text" placeholder="请输入手机号码" class="tx"></div>
+			</li>
+				<li>
+
+			<div class="tlt">参赛宣言</div>
+			<div class="cont">
+				<textarea name="introduction" class="ta" cols="" placeholder="请输入参赛宣言"></textarea></div>
+			</li> 				</ul>
+		<div class="btn_area">
+<div class="baomingtxt" style="width:95%;line-height:18px;height:auto;text-align:left;text-indent:8px;"><p><font color="">请如实填写报名信息，提交信息为唯一获奖凭证</font></p></div>
+ <div class="baomingtxt"><font color=""></font></div>
+<div class="btn_bg_green">提交报名</div>
+<div class="baomingtxt"><font color=""></font></div>
+	</div>
+
+	</div>
+	</form>
+</div>
+<div class="follow" id="follow" style="display:none">
+<div class="weui-mask"></div>
+<div id="guanzhubox" >
+	<div class="box1" onclick="hidemod('follow');">
+	<span class="span1">提示</span>
+	<span class="span2" >关闭</span></div>
+	<div class="divtxt">
+	<p>长按下方二维码，长按，识别二维码</p>
+	<p><img src="" width="80%" ></p>
+
+	</div>
+</div>
+</div>
+
+<script>
+
+ var zdy=new Array();
+ $(document).ready(function(){
+     var images = {
+       localId: [],
+       serverId: []
+     };
+
+
+    $("#chooseImages").click(function(){
+       wx.chooseImage({
+	      count:5, // 默认9
+          success: function (res) {
+			images.localId = res.localIds;
+			$("#chooseImages").html("");
+			for(var i=0;i < images.localId.length; i++){
+				$("#chooseImages").append("<img src='"+images.localId[i]+"' class='bmimg' />");
+			}
+          }
+       });
+	});
+
+	$(".btn_bg_green").click(function(){
+	 var upimg=new Array();
+       $("input[name^='fileup']").each(function(){
+
+	     upimg.push($(this).val());
+
+	   });
+
+	   $("input[name^='zdy']").each(function(){
+
+	     zdy.push($(this).val());
+
+	   });
+
+			var i = 0, length = upimg.length;
+			if(length < 1 || length > 5){
+
+			   var upimgtip="选择上传1-5张照片，第一张为封面图。";
+			   dialog2(upimgtip);return false;//1-5张照片
+			}
+			var name=$("input[name='name']").val();
+			var xs_tel=$("input[name='xs_tel']").val();
+			if(name==''){dialog2("请输入姓名");return false;}
+			if(xs_tel==''){dialog2("请输入手机号码");return false;}
+
+			var introduction=$("textarea[name='introduction']").val();
+			if(introduction==''){dialog2("请输入参赛宣言！");return false;}
+						loadingToast("正在提交...");
+						$(this).unbind();
+						$.ajax({
+							type: "POST",
+							url: "/Wxhd/GiftVote/signup/user_id/11/id/550.so",
+							data: {name:name,xs_tel:xs_tel,introduction:introduction,zdy:zdy,upimg:upimg},
+							dataType: "json",
+							success: function(str) {
+								hidemod("loadingToast");
+								if(str!=null && str!=''){
+									if(str.status == 1){
+										dialog2(str.msg);
+										setTimeout(function(){
+										location.href=str.url;
+										},1500);
+									}else if(str.status == -1){
+										$("#follow").show();
+									}else if(str.status==-2){
+										 dialog2(str.msg);
+										  setTimeout(function(){window.location.href=str.url;},1500);
+									}else{
+									dialog2(str.msg);
+									}
+								}
+							},
+							error: function(err) {
+								hidemod("loadingToast");
+								dialog2("发生错误，请刷新后重试！");
+							}
+						});
+
+			  });
+
+
+	});
+
+
+
+
+(function () {
+ var viewImg = $("#imglist");
+        var imgurl = '';
+        var imgcount = 0;
+
+        $('#upload_image').localResizeIMG({
+            width: 640,
+            quality: 0.8,
+            success: function (result) {
+                var status = true;
+                if (result.height > 1600) {
+                    status = false;
+                    alert("照片最大高度不超过1600像素");
+                }
+                if (viewImg.find("li").length > 4 ) {
+                    status = false;
+                    alert("最多上传5张照片");
+                }
+                if (status) {
+                    viewImg.append('<li><span class="pic_time"><span class="p_img"></span><em>50%</em></span></li>');
+                    viewImg.find("li:last-child").html('<span class="del"></span><img class="wh60" src="' + result.base64 + '"/><input type="hidden" id="file'
+                    + imgcount
+                    + '" name="fileup[]" value="'
+                    + result.clearBase64 + '">');
+
+
+                    $(".del").on("click",function(){
+                        $(this).parent('li').remove();
+                        $("#upload_image").show();
+                    });
+
+
+                    imgcount++;
+                }
+            }
+        });
+
+  })();
+
+</script>
+
+
+<script type="text/javascript">
+window.fxdata = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
+	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C"
+}
+window.fxonly = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
+	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C",
+	"content":"我正在参加2019年中华美食“舌尖上的旅行”之河南洛阳C请为我加油！"
+}
+
+
+
+</script>
+
+
+	</div>
+	<!-- 提示弹窗start -->
+
+
+
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script>
+
+			//微信API验证
+			wx.config({
+				debug: false,
+				appId: 'wx0e628ec8b50f8fdb',
+				timestamp: 1552670017,
+				nonceStr: 'j6L821cBDEhEPHrF',
+				signature: 'bd51561086e350ef3876b18f4804b5562525b20a',
+				jsApiList: [
+					'checkJsApi',
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+					'startRecord',
+					'stopRecord',
+					'onVoiceRecordEnd',
+					'playVoice',
+					'pauseVoice',
+					'stopVoice',
+					'onVoicePlayEnd',
+					'uploadVoice',
+					'downloadVoice',
+					'chooseImage',
+					'previewImage',
+					'uploadImage',
+					'downloadImage',
+					'translateVoice',
+					'getNetworkType',
+					'openLocation',
+					'getLocation',
+					'hideOptionMenu',
+					'showOptionMenu',
+					'hideMenuItems',
+					'showMenuItems',
+					'hideAllNonBaseMenuItem',
+					'showAllNonBaseMenuItem',
+					'closeWindow',
+					'scanQRCode',
+					'chooseWXPay',
+					'openProductSpecificView',
+					'addCard',
+					'chooseCard',
+					'openCard'
+				]
+			});
+
+			// 在这里调用 wxAPI
+			wx.ready(function () {
+				//显示右上角菜单
+				wx.showOptionMenu();
+
+				//获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareTimeline({
+					title: window.fxdata.title, // 分享标题
+					link: window.fxdata.Link, // 分享链接
+					imgUrl: window.fxdata.imgUrl, // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+				//获取“分享给朋友”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareAppMessage({
+					title: window.fxonly.title, // 分享标题
+					desc: window.fxonly.content, // 分享描述
+					link: window.fxonly.Link, // 分享链接
+					imgUrl: window.fxonly.imgUrl, // 分享图标
+					type: '', // 分享类型,music、video或link，不填默认为link
+					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+			});
+
+
+		</script>
+
+
+<div id="dialog2" style="opacity: 1;display:none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">返回错误！</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:hidemod('dialog2');" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+</div>
+
+<div id="toast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">已完成</p>
+        </div>
+</div>
+<div id="loadingToast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">数据加载中</p>
+        </div>
+</div>
+<!-- 提示弹窗start -->
+
+	<script type="text/javascript">
+
+	function dialog2(msg){
+	    $("#dialog2 .weui-dialog__bd").html(msg);
+	    $("#dialog2").show();
+	}
+	function hidemod(boxid){
+	    $("#"+boxid).hide();
+	}
+	function loadingToast(msg){
+	    $("#loadingToast .weui-toast__content").html(msg);
+	    $("#loadingToast").show();
+	}
+	function toast(msg){
+	    $("#toast .weui-toast__content").html(msg);
+	    $("#toast").show();
+		setTimeout("hidemod('toast')",2000);
+	}
+
+	wx.ready(function () {
+		wx.hideMenuItems({
+		  menuList:["menuItem:copyUrl","menuItem:originPage", "menuItem:share:email","menuItem:openWithQQBrowser","menuItem:openWithSafari","menuItem:share:brand"],
+
+		});
+
+	});
+
+	</script>
+
+</body>
+</html>

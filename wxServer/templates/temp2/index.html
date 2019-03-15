@@ -119,7 +119,7 @@ function do_barrager(){
 
 </script>
 
-<script type="text/javascript" src="/Public/app/WeChat/GiftVote/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="/wxchat/jquery.masonry.min.js"></script>
  
  
 
@@ -153,15 +153,15 @@ function do_barrager(){
 
 <div class="num_box">
 	<ul class="num_box_ul bg-purple2 bg-blue2">
-		<li><span class="text"><i class="glyphicon glyphicon-paperclip"></i> 参与选手</span> <span>157</span></li>
-		<li><span class="text"> <i class="glyphicon glyphicon-thumbs-up"></i> 累计投票</span> <span>18145</span></li>
+		<li><span class="text"><i class="glyphicon glyphicon-paperclip"></i> 参与选手</span> <span>{{data["count"]}}</span></li>
+		<li><span class="text"> <i class="glyphicon glyphicon-thumbs-up"></i> 累计投票</span> <span>{{data["votes"]}}</span></li>
 		<!-- <li><span class="text"><i class="glyphicon glyphicon-eye-open"></i> 分享量</span> <span id="sahrec">78</span></li> -->
-		<li><span class="text"><i class="glyphicon glyphicon-fire"></i> 访问量</span> <span>75987</span></li>
+		<li><span class="text"><i class="glyphicon glyphicon-fire"></i> 访问量</span> <span>{{data["volume"]}}</span></li>
 		
 	</ul>
 
 	<script type="text/javascript">
-var intDiff = parseInt("76521");//倒计时总秒数量
+var intDiff = parseInt({{data["endtimes"]}});//倒计时总秒数量
  intDiff*=10;
 function timer(intDiff){
 	window.setInterval(function(){
@@ -196,7 +196,7 @@ $(function(){
 </script>
 <div class="time-item5">
  <i class="glyphicon glyphicon-time"></i>
-	投票日期: 2019-03-13到2019-03-16 </div>
+	投票日期: {{data["aptimestart"]}}到{{data["aptimeend"]}} </div>
  <div class="time-item5">
  <i class="glyphicon glyphicon-time"></i>
 	活动剩余: <span id="day_show">0天</span>
@@ -215,10 +215,10 @@ $(function(){
 </div>
 
 <div class="threebutton">
- <a href="/show_award/11/550.so?key=WcKglwdggd"><span>规则/奖品</span></a>
- <a href="/show_top/11/550.so?key=WcKglwdggd"><span>比赛排名</span></a>
+ <a href="/wx/jp?uuid={{data["uuid"]}}"><span>规则/奖品</span></a>
+ <a href="/wx/sort?uuid={{data["uuid"]}}"><span>比赛排名</span></a>
  
- <a href="/show_sig/11/550.so?key=WcKglwdggd"> <span>我要报名</span></a>
+ <a href="javascript:" onclick="get_ap()";> <span>我要报名</span></a>
  
 
 </div>
@@ -428,13 +428,14 @@ $(function(){
 
 <div style="height:50px;"></div>
 <div class="footer">
+
 <ul>
 
-<li><a href="/show/11/550.so?key=WcKglwdggd"  class="on"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
+<li><a href="/wx/wxindex?uuid={{data["uuid"]}}"  class="on"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
 
-<li><a href="/show_top/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
+<li><a href="/wx/sort?uuid={{data["uuid"]}}"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
 
-<li><a href="/show_award/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
+<li><a href="/wx/jp?uuid={{data["uuid"]}}"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
 
 
 
@@ -445,7 +446,11 @@ $(function(){
 </div>
 <script type="text/javascript">
 function get_ap(){
-    location.href="/show_sig/11/550.so?key=WcKglwdggd";
+    {% if data["aptimes"]>0 %}
+    dialog2("未开始报名！报名时间为：</br> {{data[";aptimestart"]}} 至 {{data["aptimeend"]}}")
+    return false;
+	{% end%}
+    location.href="/wx/Baoming?uuid={{data["uuid"]}}";
 }
 </script>
 
@@ -470,11 +475,12 @@ function get_list(ty){
 	
 	$.ajax({
 	    type : "post",
-	    url : "/Wxhd/GiftVote/index_load/user_id/11/id/550.so",
+	    url : "/wx/getlist",
 	    data : {
-	    	limit:limit,
+	    	page:limit,
+            order:order,
 			keyword:keyword,
-			order:order
+			"uuid":"{{data["uuid"]}}"
 	    },
         dataType : "json",		
 	    success : function(data) {
@@ -483,9 +489,9 @@ function get_list(ty){
 						var content = '';
 						for(var i=0; i<list.length; i++){
 							content += '<li class="picCon" style="'+list[i]['effect']+'"><div>'
-							+'<i class="number">'+list[i]['noid']+'号</i>'
-							+'<a href="'+list[i]['url']+'" class="img"><img src="'+list[i]['img1']+'"></a>'
-							+'<div class="clearfix"><p style="overflow: hidden;text-overflow: ellipsis; white-space: nowrap;">'+list[i]['name']+'</p><p style="text-align:left;margin-top:10px"><a href="'+list[i]['url']+'" class="vote" style="display:inline-block;width:84px;border:1px solid #585656;color:#585656;background:#fff;">投票</a><span style="color:red;font-size:16px;float:right;margin-right:5px">'+list[i]['votenum']+'票</span></p></div>'
+							+'<i class="number">'+list[i]['index']+'号</i>'
+							+'<a href="/wx/toupiao?uuid={{data["uuid"]}}&userid='+list[i]['userid']+'" class="img"><img src="'+list[i]['avatar']+'"></a>'
+							+'<div class="clearfix"><p style="overflow: hidden;text-overflow: ellipsis; white-space: nowrap;">'+list[i]['name']+'</p><p style="text-align:left;margin-top:10px"><a href="/wx/toupiao?uuid={{data["uuid"]}}&userid='+list[i]['userid']+'" class="vote" style="display:inline-block;width:84px;border:1px solid #585656;color:#585656;background:#fff;">投票</a><span style="color:red;font-size:16px;float:right;margin-right:5px">'+list[i]['votenum']+'票</span></p></div>'
 							+'</div></li>';
 							
 						}
@@ -581,7 +587,7 @@ function share_success(){
 
 
 
-		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script src='/wxchat/jweixin-1.0.0.js'></script>
 		<script>
 			
 			//微信API验证
