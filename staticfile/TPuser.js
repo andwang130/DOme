@@ -151,12 +151,13 @@ function sort_func(type)
 }
 function add_votedate(e) {
     console.log(e)
-    $(e).css("display","none")
+    // $(e).css("display","none")
     $(e).next().css("display","block")
      $(e).next().find('input[name="votenum"]').focus()
      $(e).next().find('input[name="votenum"]').on("blur",function () {
          var num= $(e).next().find('input[name="votenum"]').val()
-          $(e).css("display","block")
+         $(e).next().find('input[name="votenum"]').val("0")
+          // $(e).css("display","block")
            $(e).next().css("display","none")
             console.log(num)
      })
