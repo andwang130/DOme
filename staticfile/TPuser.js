@@ -47,7 +47,7 @@ function  get_user(page) {
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"</td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">"+data[i]["vheat"]+"</span></td>\n" +
-                                "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this)'>+</button><span style='display: none'><input type='number' name='votenum'><span></td><!-- 移入移出事件  -->\n" +
+                                "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this)'>+</button><span style='display: none'><input style='width: 10px' type='number' name='votenum'> <a class='btn btn-primary  we7-margin-left'>提交</a><span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">"+data[i]["liwu"]+"</span></td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\">"+getLocalTime(data[i]["createtime"])+"</td>\n" +
                                 "                    <td class=\"text-left vertical-middle\">\n" +
