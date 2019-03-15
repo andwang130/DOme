@@ -26,6 +26,8 @@ class Tpuuser(Basehandelr):
                 self.create_list()
             elif action=="get_votedate":
                 self.get_votedate()
+            elif action=="add_votedate":
+                self.add_votedate()
         else:
             self.write(json.dumps({"code":-1,"eeor":"action"}))
             return
@@ -139,7 +141,6 @@ class Tpuuser(Basehandelr):
     def get_votedate(self):
         userid = self.get_argument("userid")
         page = int(self.get_argument("page", 1))
-
         data={}
         if userid:
             data_list=[]
@@ -157,5 +158,10 @@ class Tpuuser(Basehandelr):
                 data["data"]=data_list
                 data["info"]=info
                 self.write(json.dumps(data))
-
+    def add_votedate(self):
+        userid = self.get_argument("userid")
+        votenum=self.get_argument("votenum",0)
+        if userid:
+            self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc":{"votenum":int(votenum)}})
+            self.write(json.dumps({"code":0}))
 
