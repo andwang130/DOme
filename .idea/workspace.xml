@@ -118,8 +118,8 @@
       <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="152" column="17" lean-forward="false" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+            <state relative-caret-position="652">
+              <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -523,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="152" column="17" lean-forward="false" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="17" />
+        <state relative-caret-position="652">
+          <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
           <folding />
         </state>
       </provider>
