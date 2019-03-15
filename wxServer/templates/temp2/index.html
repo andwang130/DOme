@@ -484,7 +484,7 @@ function get_list(ty){
 	    },
         dataType : "json",		
 	    success : function(data) {
-	    	if(data.status==1){
+	    	if(data.status==200){
 						var list = data.content;
 						var content = '';
 						for(var i=0; i<list.length; i++){
