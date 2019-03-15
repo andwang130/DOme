@@ -124,8 +124,12 @@ def get_signature(data):
     return newsingstr
 def get_wxcongif(url):
     data={}
-    data["jsapi_ticket"]=get_ticket()
-    data["timestamp"]=str(int(time.time()))
+    # data["jsapi_ticket"]=get_ticket()
+    # data["timestamp"]=str(int(time.time()))
+
+    data["jsapi_ticket"] = "xxx"
+    data["timestamp"] = str(int(time.time()))
+
     data["noncestr"]="ASFgsesdsaw"
     data["url"]=url
     # if ticket["times"]==0 or time.time()-ticket["times"]>7000:
