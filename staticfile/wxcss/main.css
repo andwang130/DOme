@@ -1,0 +1,133 @@
+
+
+#imglist li img.wh60 {
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+.upload_area{overflow:hidden;padding-top:15px}
+.upload_area .post_imglist li {position: relative;float: left;padding: 0 10px 5px 0;line-height: 38px;}
+.upload_area .post_imglist li .del {position: absolute;right: 5px;top: -10px;background: url("../img/icon_del.png") no-repeat 15px 0;background-size: 23px auto;width: 40px;height: 40px;display: inline-block; }
+.upload_area .post_imglist li .p_img img {padding: 2px;border: 1px solid #DDD;height: 54px;width: 54px; }
+.upload_area .post_imglist li .pic_time {display: inline-block;width: 60px;height: 60px;position: relative; }
+.upload_area .post_imglist li .pic_time em {display: inline-block;width: 100%;height: 25%;line-height: 15px;font-size: 12px;color: #fff;background-color: #F1484A;position: absolute;top: 22px;left: 0; }
+.upload_area .upload_btn {background: url("../img/jia.gif") center no-repeat;background-size: 60px auto;float: left;overflow: hidden;position: relative;width: 60px;height: 60px; }
+.upload_area .upload_btn input {opacity: 0;position: absolute;left: 0;top: 0;z-index: 10;overflow: hidden;height: 60px;width: 60px; }
+
+
+.lapiao .add{box-sizing:border-box}
+.container-fill{width:auto;padding-left:0;padding-right:0;margin-right:auto;margin-left:auto;}
+.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1;padding-right:35px;}
+.alert{padding:15px;border:1px solid transparent;border-radius:4px;}
+.alert-dismissable .close, .alert-dismissible .close{position:relative;top:1px;right:-8px;color:inherit;}
+.close{float:right;font-size:21px;font-weight:700;line-height:1;text-shadow:0 1px 0 #fff;opacity:0.2;border:0px}
+.swiper-pagination-bullet { background: #fff; opacity: 1 }
+.swiper-pagination-bullet-active { background:#B9B4B4 }
+.swiper-container {margin-bottom:-6px }
+.swiper-container img { width: 100% }
+ swiper-slide-active { height:auto}
+ 
+#maa{
+font-size:16px;color:#fff;font-weight:700
+}
+
+#mab{
+position:fixed;right:3px;top:5px;background:url('../img/tgclose.png') no-repeat;height:20px;width:20px;z-index:99;opacity:0.6
+}
+
+#mar{
+position:fixed;
+left:0px;
+top:0px;
+width:100%;
+z-index:99;
+height:30px;
+background-color:orange;
+line-height:30px;
+opacity:0.9;
+padding-left:30px;
+background-image:url('../img/tongzhi.png');
+background-repeat:no-repeat;
+background-position:0px 4.5px;
+background-size:25px 21px;
+      
+}
+
+ /*“Ù¿÷Õº±Í*/
+            #audio_btn {
+                position: fixed;
+                right: 10px;
+                top: 28px;
+                z-index: 200;
+                display: none;
+                width: 50px;
+                height: 50px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            .loading_background {
+                background-image: url("../img/music_loading.gif");
+                background-size: 30px 30px;
+                opacity: 0.5;
+                background-position: center center;
+            }
+            .loading_yinfu {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 30px;
+                height: 30px;
+                background-image: url("../img/music_yinfu.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .play_yinfu {
+                background-image: url("../img/music.gif");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 60px 60px;
+            }
+            .rotate {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 30px;
+                height: 30px;
+                background-size: 100% 100%;
+                background-image: url("../img/music_off.png");
+                -webkit-animation: rotating 1.2s linear infinite;
+                -moz-animation: rotating 1.2s linear infinite;
+                -o-animation: rotating 1.2s linear infinite;
+                animation: rotating 1.2s linear infinite;
+            }
+            @-webkit-keyframes rotating {
+                from {
+                    -webkit-transform: rotate(0deg);
+                }
+                to {
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+            @keyframes rotating {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @-moz-keyframes rotating {
+                from {
+                    -moz-transform: rotate(0deg);
+                }
+                to {
+                    -moz-transform: rotate(360deg);
+                }
+            }
+            .off {
+                background-image: url("../img/music_no.png");
+                background-size: 30px 30px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }

@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>2019年中华美食“舌尖上的旅行”之河南洛阳C</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />  
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<script src="/wxchat/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="/Public/app/WeChat/GiftVote/css/swiper-3.3.1.min.css">
+	<script type="text/javascript" src="/wxchat/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/Pu/js/swiper.js"></script>
+	<script type="text/javascript" src="/wxchat/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/wxchat/hammer.min.js"></script>
+	<script type="text/javascript" src="/wxchat/cookie.js"></script>
+ 
+	 
+
+	<script type="text/javascript" src="/wxchat/jquery.lazyload.js"  ></script>
+ 
+
+	<link href="/wxcss/weui1.0.1.min.css" rel="stylesheet">
+	<link href="/wxcss/bootstrap.min.css" rel="stylesheet">
+	<link href="/wxcss/index.css?34" rel="stylesheet">
+	<link href="/wxcss/main.css?2" rel="stylesheet">
+		<style>
+
+	 .tousu{
+	   position:fixed;
+	   background-color:rgba(102,102,102,0.7);
+	   width:34px;
+	   height:34px;
+	   font-size:14px;
+	   line-height:34px;
+	   text-align:center;
+	   color:#fff;
+	   right:17px;
+	    top:33px;
+       border-radius:18px;
+	   z-index:9999;
+	 }
+  </style>
+
+</head>
+<body>
+<div class="container container-fill">
+
+
+<link href="/wxcss/index2.css" rel="stylesheet">
+
+ <style>
+ .threebutton a{background-color:#6281FD;}
+ .divmain11 .divsub{background:#6281FD;}
+ .content .list_box li a.vote{background:#6281FD;}
+ .macol{background:#6281FD;}
+.footer li>a.on .nav{color:#6281FD}
+.footer li>a.on .nav p{color:#6281FD}
+.footer li>a.on .nav{color:#6281FD}
+.rankp{background:#6281FD;}
+.lapiao .l{background:#6281FD;}
+.lapiao .r{background:#6281FD;}
+.donate_bank_p .weui-btn_primary{background:#6281FD;color:#fff}
+.threebutton a:link{color:#fff}
+.threebutton a:visited{color:#fff}
+#mar{background-color:#666;}
+.content .list_box li>div .number{background-color:#6281FD;}
+.twobutton a.active{background-color:#6281FD}
+.twobutton a:nth-child(2).active{background-color:#6281FD}
+ </style>
+<!-- <div class="tousu"><p><a href="/jubao/jubao.html" style="color:#fff">投诉</a></p></div> -->
+<style>
+#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;top:12%;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
+#rdlist div{margin-top:-5px}
+#rdlist div img{width:30px;height:30px;border-radius:20px;margin-top:-2px}
+</style>
+<div id="rdlist">
+  <div ><img></img> <span></span></div>
+
+</div>
+
+<script>
+//每条弹幕发送间隔
+var looper_time=5*1000;
+//是否首次执行
+var run_once=true;
+do_barrager();
+ 
+function do_barrager(){
+  if(run_once){
+      //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+      looper=setInterval(do_barrager,looper_time);                
+      run_once=false;
+  }
+  //获取
+  $.getJSON("/Wxhd/GiftVote/index_loadgift/user_id/11/id/550.so",function(data){
+      //是否有数据
+      if(data.info && data.img){
+           //$('.swiper-container').barrager(data);
+		   
+		   $('#rdlist div img').attr('src',data.img);
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){ 
+				 $("#rdlist").fadeOut(1000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
+				 
+				 },3000);
+			  });
+		   
+		   
+      }
+ 
+  });
+}
+
+</script>
+
+<script type="text/javascript" src="/Public/app/WeChat/GiftVote/js/jquery.masonry.min.js"></script>
+ 
+ 
+
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+       <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png"></a></div>      <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/giftvote/mrzx/mrzx_550.png?1552668279"></a></div>      <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/images/5c8387a212209.jpg"></a></div>                </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script>
+   
+    $(function(){
+     
+	 var mySwiper = new Swiper('.swiper-container', {
+		autoplay:2000,//可选选项，自动滑动
+		speed:500,
+		pagination : '.swiper-pagination',
+		autoHeight:true
+
+	});
+
+   
+   
+   }); 
+
+
+  </script>
+
+  
+
+<div class="num_box">
+	<ul class="num_box_ul bg-purple2 bg-blue2">
+		<li><span class="text"><i class="glyphicon glyphicon-paperclip"></i> 参与选手</span> <span>157</span></li>
+		<li><span class="text"> <i class="glyphicon glyphicon-thumbs-up"></i> 累计投票</span> <span>18145</span></li>
+		<!-- <li><span class="text"><i class="glyphicon glyphicon-eye-open"></i> 分享量</span> <span id="sahrec">78</span></li> -->
+		<li><span class="text"><i class="glyphicon glyphicon-fire"></i> 访问量</span> <span>75987</span></li>
+		
+	</ul>
+
+	<script type="text/javascript">
+var intDiff = parseInt("76521");//倒计时总秒数量
+ intDiff*=10;
+function timer(intDiff){
+	window.setInterval(function(){
+	var day=0,
+		hour=0,
+		minute=0,
+		second=0;//时间默认值	
+		mini=0;
+	if(intDiff > 0){
+		day = Math.floor(intDiff / (60 * 600 * 24));
+		hour = Math.floor(intDiff / (60 * 600)) - (day * 24);
+		minute = Math.floor(intDiff / 600) - (day * 24 * 60) - (hour * 60);
+		second = Math.floor(intDiff) - (day * 24 * 60 * 600) - (hour * 60 * 600) - (minute * 600);
+		second/=10; 
+		second=second.toFixed(1);
+		 
+	}
+	if (minute <= 9) minute = '0' + minute;
+	
+	$('#day_show').html(day+"天");
+	$('#hour_show').html('<s id="h"></s>'+hour+'时');
+	$('#minute_show').html('<s></s>'+minute+'分');
+	$('#second_show').html('<s></s>'+second+'秒');
+	 
+	intDiff--;
+	}, 100);
+} 
+
+$(function(){
+	timer(intDiff);
+});	
+</script>
+<div class="time-item5">
+ <i class="glyphicon glyphicon-time"></i>
+	投票日期: 2019-03-13到2019-03-16 </div>
+ <div class="time-item5">
+ <i class="glyphicon glyphicon-time"></i>
+	活动剩余: <span id="day_show">0天</span>
+	<span id="hour_show">0时</span>
+	<span id="minute_show">0分</span>
+	<span id="second_show">0秒</span>
+	 
+ </div>
+ 
+	
+<span>
+
+<div class="divmain11 clearfix bg-purple3 bg-blue3">
+  <input type="text" value="" name="sci" placeholder="请输入编号或姓名" class="inputtxt">
+  <div class="divsub" onclick="get_list(1);"><i class="glyphicon glyphicon-search"></i>&nbsp&nbsp搜索</div>
+</div>
+
+<div class="threebutton">
+ <a href="/show_award/11/550.so?key=WcKglwdggd"><span>规则/奖品</span></a>
+ <a href="/show_top/11/550.so?key=WcKglwdggd"><span>比赛排名</span></a>
+ 
+ <a href="/show_sig/11/550.so?key=WcKglwdggd"> <span>我要报名</span></a>
+ 
+
+</div>
+ 
+
+</span>
+
+</div>
+ <div class="twobutton"> 
+  <a href="javascript:;" class="active">
+	 人气选手 
+ </a>
+  <a href="javascript:;" data-order="new"> 
+	 最新参与 
+ </a>
+ 
+ </div>
+ 
+ 
+<section class="content bg-purple3 bg-blue3 bg-bw" id="toupiao">
+<div id="pageCon" style="padding-bottom: 10px">
+<ul class="list_box clearfix" id="list_box" style="position: relative;">
+</ul>
+<div id="list_more" class="box cl-white" style="margin-top: 16px; text-align: center;margin-bottom: 40px;"><span class="am-text-secondary" onclick="get_list(0);">查看更多</span></div>
+</div>
+</section>
+
+<div style="clear:both;"></div>
+
+<div class="divmain10 pd-10 bg-purple4 bg-blue4">
+
+  <div class="tabtitle macol bg-purple4 bg-blue4"  >
+      <div class="bg-purple5 bg-blue5 cl-yellow" style="width:40%; border-radius:20px; height:36px; line-height:36px;margin:0 auto; text-align:center;">活动规则</div>
+   </div>
+  <div class="divcon">
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#FFE500;font-size:18px;background-color:#000000;">特别提示:&nbsp;本次活动真实可靠、公平、公正、为餐厅免费报名，请各位放心参与！</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">活动说明:</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市的吃货们注意了！</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">作为专注于</span><span style="background-color:#00D5FF;color:#64451D;font-size:18px;">洛阳</span><span style="background-color:#00D5FF;color:#64451D;font-size:18px;">市</span><span style="background-color:#00D5FF;color:#64451D;font-size:18px;">推荐的吃货，</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">深知为大家提供美食的重要性，</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">毕竟在我<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市</span>，最重要的就是</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:32px;background-color:#E53333;">吃！吃！吃！</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">"舌尖上的旅行"最具人气餐厅评选投票大赛</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">&emsp;&emsp;报名投票正式开始啦！</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">我们向全城人发出邀请</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">让我们一起发现<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市</span>的更多美食</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">如果你是餐厅主人，</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">欢迎自荐；</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">如果你是吃货，</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">欢迎推荐餐厅，</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">参与票选。</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">欢迎更多优秀餐厅报名参加！</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">参与报名及投票</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;"><span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市</span>类平台拥有20万好友关注</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">为您提供展示的平台</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">用你最特色的美食征服<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市</span>的味蕾。</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">我们会让<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市</span>全城知道</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">有这么一家店</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">绝佳的曝光机会</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">绝好的宣传平台</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">&emsp;&emsp;你准备好了吗？</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">参与对象</span> 
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<br />
+</p>
+<p align="center" class="MsoNormal" style="text-align:center;margin-left:0cm;">
+	<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">只要你是<span style="color:#64451D;font-size:18px;background-color:#00D5FF;">洛阳市</span>的实体店，拥有特色美食，不管你是超级大酒店、还是小肠拌面店、海鲜牛排大排档、烤鱼火锅小酒店等各类餐厅，欢迎马上参加我们这次活动！</span> 
+</p>
+<div>
+	<br />
+</div>  
+  </div>
+</div>
+
+
+
+<style>
+  #zanzhu2{background:url('/Public/app/WeChat/GiftVote/img/ts.png') no-repeat;background-size:19px 19px;background-position:0px 4px}
+  
+</style>
+
+<div style="height:50px;"></div>
+<div class="footer">
+<ul>
+
+<li><a href="/show/11/550.so?key=WcKglwdggd"  class="on"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
+
+<li><a href="/show_top/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
+
+<li><a href="/show_award/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
+
+
+
+<li><a href="javascript:;"   onclick="get_ap();"><div class='nav'><div class='ib ispr iconfont icon-baoming'></div><p>报名</p></div></a></li>
+<li><a href="/Wxhd/GiftVote/jubao/id/550/user_id/11/key/WcKglwdggd/action/index.so"  ><div class='nav'><div class='is ispr' id="zanzhu2"></div><p>投诉</p></div></a></li>
+
+</ul>
+</div>
+<script type="text/javascript">
+function get_ap(){
+    location.href="/show_sig/11/550.so?key=WcKglwdggd";
+}
+</script>
+
+
+
+<script type="text/javascript">
+var limit = 1;
+var order=0;
+function get_list(ty){
+    
+    if(ty==1){
+	   var keyword=$("input[name='sci']").val();
+	   if(keyword==""){
+	      dialog2("请输入编号或姓名");
+		  return false;
+	   }
+	   $("#pageCon .list_box").html('');
+	}else{
+	   $("#list_more").html('<div class="am-text-secondary"><span class="am-icon-spinner am-icon-spin"></span> 卖命加载中...</div>');
+	   var keyword="";
+	}
+	
+	$.ajax({
+	    type : "post",
+	    url : "/Wxhd/GiftVote/index_load/user_id/11/id/550.so",
+	    data : {
+	    	limit:limit,
+			keyword:keyword,
+			order:order
+	    },
+        dataType : "json",		
+	    success : function(data) {
+	    	if(data.status==1){
+						var list = data.content;
+						var content = '';
+						for(var i=0; i<list.length; i++){
+							content += '<li class="picCon" style="'+list[i]['effect']+'"><div>'
+							+'<i class="number">'+list[i]['noid']+'号</i>'
+							+'<a href="'+list[i]['url']+'" class="img"><img src="'+list[i]['img1']+'"></a>'
+							+'<div class="clearfix"><p style="overflow: hidden;text-overflow: ellipsis; white-space: nowrap;">'+list[i]['name']+'</p><p style="text-align:left;margin-top:10px"><a href="'+list[i]['url']+'" class="vote" style="display:inline-block;width:84px;border:1px solid #585656;color:#585656;background:#fff;">投票</a><span style="color:red;font-size:16px;float:right;margin-right:5px">'+list[i]['votenum']+'票</span></p></div>'
+							+'</div></li>';
+							
+						}
+                        $("#pageCon .list_box").append(content);
+						if(list.length==10){
+							$("#list_more").html('<span class="am-text-secondary" onclick="get_list(0);">查看更多</span>');
+						}else{
+							$("#list_more").html('<span></span>');
+						}		
+	                    limit++;
+
+						
+
+ 
+		    }else if(data.status==-1){
+	    		$("#list_more").html('<span>没有更多记录！</span>');
+	    	}else if(data.status==-2){
+	    		$("#list_more").html('<span>没有搜索到内容！</span>');
+	    	}else{
+			    $("#list_more").html('<span>没有更多记录！</span>');
+			}    	
+	    },
+	    error : function(xhr, type) {
+
+	    }
+	});
+	    
+
+}
+get_list(0);
+
+$(".twobutton a").click(function(){
+  
+  $(".twobutton a").removeClass('active');
+  $(this).addClass('active');
+  if($(this).data('order')=="new"){
+	order='new';	
+  }else{
+  order=0;
+  } 
+  $("#pageCon .list_box").empty();
+	limit=1;
+	 
+	get_list(0);
+	
+	
+});
+//SetEffect();
+ var t=0;
+ var a=1;
+function SetEffect() { 
+           
+             setInterval(function(){
+			   if(a){t=4;}else{t=12;}
+			   $('.picCon').css('border-image-width',t+'px');
+			   
+			   a=!a;
+			 },300);
+               
+            }
+ 
+
+
+    
+</script>
+
+<script type="text/javascript">
+window.fxdata = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
+	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C"
+}
+window.fxonly = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
+	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C",
+	"content":"我正在参加2019年中华美食“舌尖上的旅行”之河南洛阳C请为我加油！"
+}
+
+function share_success(){
+ 
+  $.post("/Wxhd/GiftVote/share_success/user_id/11/id/550.so",{},function(){});
+ // var t=$("#sahrec").text();
+// $("#sahrec").text(parseInt(t)+1);
+}
+ 
+</script>
+
+
+		
+	</div>
+	<!-- 提示弹窗start -->
+
+
+
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script>
+			
+			//微信API验证
+			wx.config({
+				debug: false,
+				appId: 'wx0e628ec8b50f8fdb',
+				timestamp: 1552668279,
+				nonceStr: 'bPH9eTZbT4j05VbL',
+				signature: '1083d18fd388a1231a0bf5192475db40b3cc2771',
+				jsApiList: [
+					'checkJsApi',
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+					'startRecord',
+					'stopRecord',
+					'onVoiceRecordEnd',
+					'playVoice',
+					'pauseVoice',
+					'stopVoice',
+					'onVoicePlayEnd',
+					'uploadVoice',
+					'downloadVoice',
+					'chooseImage',
+					'previewImage',
+					'uploadImage',
+					'downloadImage',
+					'translateVoice',
+					'getNetworkType',
+					'openLocation',
+					'getLocation',
+					'hideOptionMenu',
+					'showOptionMenu',
+					'hideMenuItems',
+					'showMenuItems',
+					'hideAllNonBaseMenuItem',
+					'showAllNonBaseMenuItem',
+					'closeWindow',
+					'scanQRCode',
+					'chooseWXPay',
+					'openProductSpecificView',
+					'addCard',
+					'chooseCard',
+					'openCard'
+				]
+			});
+			
+			// 在这里调用 wxAPI
+			wx.ready(function () {
+				//显示右上角菜单
+				wx.showOptionMenu();
+				
+				//获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareTimeline({
+					title: window.fxdata.title, // 分享标题
+					link: window.fxdata.Link, // 分享链接
+					imgUrl: window.fxdata.imgUrl, // 分享图标
+					success: function () { 
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () { 
+						// 用户取消分享后执行的回调函数
+						
+					}
+				});
+				
+				//获取“分享给朋友”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareAppMessage({
+					title: window.fxonly.title, // 分享标题
+					desc: window.fxonly.content, // 分享描述
+					link: window.fxonly.Link, // 分享链接
+					imgUrl: window.fxonly.imgUrl, // 分享图标
+					type: '', // 分享类型,music、video或link，不填默认为link
+					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+					success: function () { 
+						// 用户确认分享后执行的回调函数
+						share_success();	
+					},
+					cancel: function () { 
+						// 用户取消分享后执行的回调函数
+						
+					}
+				});
+				
+			});
+			
+			 
+		</script>
+		
+
+<div id="dialog2" style="opacity: 1;display:none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">返回错误！</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:hidemod('dialog2');" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+</div> 
+
+<div id="toast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">已完成</p>
+        </div>
+</div>
+<div id="loadingToast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">数据加载中</p>
+        </div>
+</div>
+<!-- 提示弹窗start -->
+
+	<script type="text/javascript">
+
+	function dialog2(msg){
+	    $("#dialog2 .weui-dialog__bd").html(msg);
+	    $("#dialog2").show();
+	}
+	function hidemod(boxid){
+	    $("#"+boxid).hide();
+	}
+	function loadingToast(msg){
+	    $("#loadingToast .weui-toast__content").html(msg);
+	    $("#loadingToast").show();
+	}
+	function toast(msg){
+	    $("#toast .weui-toast__content").html(msg);
+	    $("#toast").show();
+		setTimeout("hidemod('toast')",2000); 
+	}
+
+	wx.ready(function () {
+		wx.hideMenuItems({ 
+		  menuList:["menuItem:copyUrl","menuItem:originPage", "menuItem:share:email","menuItem:openWithQQBrowser","menuItem:openWithSafari","menuItem:share:brand"],
+		
+		});
+
+	});
+
+	</script>
+	
+</body>
+</html>
