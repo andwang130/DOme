@@ -110,3 +110,13 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.write(json.dumps({"status": 500, "msg": "数据库错误"}))
         else:
             self.write(json.dumps({"status": 0, "msg": "没有openid"}))
+
+class toupiaoinfoHanderl(Basehanderl.Basehandelr):
+    def get(self):
+        self.db_linck()
+        userid = self.get_argument("userid")
+        usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
+        data={}
+        data["name"] = usercoures["name"]
+        data["index"] = usercoures["index"]
+        self.render("temp2/toupiao.html", data=data)

@@ -381,37 +381,41 @@ $(document).ready(function(){
 var latitude=0;
 var longitude=0;
 
+   function submitFn() {
+            var verify = 0;
+            if (verify == 0) {
+                loadingToast("投票中");
+                $.ajax({
+                    type: "POST",
+                    url: "/wx/toupiao?userid={{data["userid"]}}",
+                    success: function (str) {
+                        hidemod("loadingToast");
+                        str=JSON.parse(str);
+                        if (str != null && str != '') {
+                            if (str.status == 1) {
+                               location.href="/wx/tpinfo?userid={{ data["userid"] }}"
+
+                            } else if (str.status == 0) {
+                                dialog2(str.msg);
+                            } else if (str.status == 500) {
+                                $("#follow").show();
+                            } else {
+                                dialog2(str.msg);
+                            }
+                        }
+                    },
+                    error: function (err) {
+                        hidemod("loadingToast");
+                        dialog2("发生错误，请刷新后重试！");
+                    }
+                });
+            }
+        }
 $("#mytoupiao").click(function(){
 		loadingToast("投票中");
-   	$.ajax({
-		type: "POST",
-		url: "/Wxhd/GiftVote/vote/user_id/11/id/550/iid/80645.so",
-		data: {latitude:latitude,longitude:longitude},
-	    dataType: "json",
-	    success: function(str) {
-		    hidemod("loadingToast");
-			if(str!=null && str!=''){
-				if(str.status == 1){
-					$("#votenum2").text(Number($("#votenum2").text())+1);
-					$(".votets").html(str.msg);
-					window.location.href="/Wxhd/GiftVote/success/user_id/11/id/550/iid/80645/key/WcKglwdggd.so";					$("#succeed").show();
+   	submitFn;
+	});
 
-				}else if(str.status == 0){
-					$(".votets").html(str.msg);
-					  $("#succeed").show();
-									}else if(str.status == -1){
-					$("#follow").show();
-				}else{
-					dialog2(str.msg);
-				}
-			}
-	    },
-	    error: function(err) {
-		    hidemod("loadingToast");
-	    	dialog2("发生错误，请刷新后重试！");
-	    }
-	});
-	});
 	 $("#previewImage img").click(function(){
         var imgArray = [];
         var curImageSrc = $(this).attr('src');
@@ -444,16 +448,16 @@ $("#mytoupiao").click(function(){
 <div class="footer">
 <ul>
 
-<li><a href="/show/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
+<li><a href="/wx/wxindex?uuid={{data["uuid"]}}"  class="on"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
 
-<li><a href="/show_top/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
+<li><a href="/wx/sort?uuid={{data["uuid"]}}"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
 
-<li><a href="/show_award/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
-
-
+<li><a href="/wx/jp?uuid={{data["uuid"]}}"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
 
 
-<li><a href="/Wxhd/GiftVote/jubao/id/550/user_id/11/iid/80645/key/WcKglwdggd/action/detail.so"  ><div class='nav'><div class='is ispr' id="zanzhu2"></div><p>投诉</p></div></a></li>
+
+<li><a href="javascript:;"   onclick="get_ap();"><div class='nav'><div class='ib ispr iconfont icon-baoming'></div><p>报名</p></div></a></li>
+<li><a href="/Wxhd/GiftVote/jubao/id/550/user_id/11/key/WcKglwdggd/action/index.so"  ><div class='nav'><div class='is ispr' id="zanzhu2"></div><p>投诉</p></div></a></li>
 
 </ul>
 </div>
