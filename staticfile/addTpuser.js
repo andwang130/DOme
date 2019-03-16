@@ -93,7 +93,7 @@ function sudbit_click() {
     var conten=$("#conten").val();
     var status=$('input[name="status"]:checked').val();
     data={"name":name,"votenum":votenum,"phone":phone,"description":description,"vheat":vheat,
-        "avatar":avatar,"images1":images1,"images2":images2,"images3":images3,"images4":images4,"images5":images5,
+        "avatar":avatar,"images1":avatar,"images2":images2,"images3":images3,"images4":images4,"images5":images5,
         "introduction":introduction,"conten":conten,"status":status,"index":index
     };
 
