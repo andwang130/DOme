@@ -76,11 +76,6 @@ function sudbit_click() {
     }
     var description=$("#description").val();
     var vheat=$("#vheat").val();
-    if(!vheat)
-    {
-        alert("至少一张图片");
-        return
-    }
     var index=$("#index").val();
     var avatar=$("#avatar").attr("src");
     var images1=$("#images1").attr("src");
@@ -88,6 +83,12 @@ function sudbit_click() {
     var images3=$("#images3").attr("src");
     var images4=$("#images4").attr("src");
     var images5=$("#images5").attr("src");
+
+    if(!avatar)
+    {
+        alert("缺少头图");
+        return
+    }
     var introduction=$("#introduction").val();
     var conten=$("#conten").val();
     var status=$('input[name="status"]:checked').val();
