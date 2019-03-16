@@ -57,6 +57,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             data["name"] = usercoures["name"]
             data["votenum"] = usercoures["votenum"]
             data["avatar"] = usercoures["avatar"]
+            data["introduction"]=usercoures["introduction"]
             data["userid"] = userid
             data["uuid"] = uuid
             data["index_"]=usercoures["index"]
