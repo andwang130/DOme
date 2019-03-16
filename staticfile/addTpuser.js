@@ -84,7 +84,7 @@ function sudbit_click() {
     var images4=$("#images4").attr("src");
     var images5=$("#images5").attr("src");
 
-    if(!avatar)
+    if(!avatar||avatar=="./resource/images/nopic.jpg")
     {
         alert("缺少头图");
         return
