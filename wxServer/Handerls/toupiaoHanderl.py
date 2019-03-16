@@ -52,6 +52,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     break
                 next_couresl = i
                 x += 1
+            data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data["titile"] = coures["titile"]
             data["name"] = usercoures["name"]
             data["votenum"] = usercoures["votenum"]
@@ -74,7 +75,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             if pojcetm.TempCode == 1:
                 self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
             elif pojcetm.TempCode==2:
-                self.render("temp2/toupiao.html", data=data, aseedata=aseedata, share=shares)
+                self.render("temp2/tpuser.html", data=data, aseedata=aseedata, share=shares)
     def post(self):
         openid = self.get_secure_cookie("openid")
         userid= self.get_argument("userid", None)

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>2019年中华美食“舌尖上的旅行”之河南洛阳C</title>
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<script src="/wxchat/jweixin-1.0.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="/wxcss/swiper-3.3.1.min.css">
+	<script type="text/javascript" src="/wxchat/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/wxchat/swiper.js"></script>
+	<script type="text/javascript" src="/wxchat/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/wxchat/hammer.min.js"></script>
+	<script type="text/javascript" src="/wxchat/cookie.js"></script>
+
+
+
+	<script type="text/javascript" src="/wxchat/jquery.lazyload.js"  ></script>
+
+
+	<link href="/wxcss/weui1.0.1.min.css" rel="stylesheet">
+	<link href="/wxcss/bootstrap.min.css" rel="stylesheet">
+	<link href="/wxcss/index.css?34" rel="stylesheet">
+	<link href="/wxcss/main.css?2" rel="stylesheet">
+		<style>
+
+	 .tousu{
+	   position:fixed;
+	   background-color:rgba(102,102,102,0.7);
+	   width:34px;
+	   height:34px;
+	   font-size:14px;
+	   line-height:34px;
+	   text-align:center;
+	   color:#fff;
+	   right:17px;
+	    top:33px;
+       border-radius:18px;
+	   z-index:9999;
+	 }
+  </style>
+
+</head>
+<body>
+<div class="container container-fill">
+
+
+{% if data["endtimes"]<0 %}
+<div id="replystatus" >
+<div class="alert alert-danger alert-dismissible" style="text-align:center;position: fixed;top:40%;z-index: 2; width:80%;margin:0 5%;z-index:9000000" role="alert">
+  <button type="button" class="close"  onclick="hidemod('replystatus')" data-dismiss="alert"><span aria-hidden="true">x</span> </button>
+  <strong>活动已结束</strong>
+   {% endif %}
+</div>
+<div class="weui-mask"></div>
+</div>
+
+
+<link href="/wxcss/index2.css" rel="stylesheet">
+
+ <style>
+ .threebutton a{background-color:#6281FD;}
+ .divmain11 .divsub{background:#6281FD;}
+ .content .list_box li a.vote{background:#6281FD;}
+ .macol{background:#6281FD;}
+.footer li>a.on .nav{color:#6281FD}
+.footer li>a.on .nav p{color:#6281FD}
+.footer li>a.on .nav{color:#6281FD}
+.rankp{background:#6281FD;}
+.lapiao .l{background:#6281FD;}
+.lapiao .r{background:#6281FD;}
+.donate_bank_p .weui-btn_primary{background:#6281FD;color:#fff}
+.threebutton a:link{color:#fff}
+.threebutton a:visited{color:#fff}
+#mar{background-color:#666;}
+.content .list_box li>div .number{background-color:#6281FD;}
+.twobutton a.active{background-color:#6281FD}
+.twobutton a:nth-child(2).active{background-color:#6281FD}
+ </style>
+<!-- <div class="tousu"><p><a href="/jubao/jubao.html" style="color:#fff">投诉</a></p></div> -->
+<style>
+#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;top:12%;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
+#rdlist div{margin-top:-5px}
+#rdlist div img{width:30px;height:30px;border-radius:20px;margin-top:-2px}
+</style>
+<div id="rdlist">
+  <div ><img></img> <span></span></div>
+
+</div>
+
+<script>
+//每条弹幕发送间隔
+var looper_time=5*1000;
+//是否首次执行
+var run_once=true;
+do_barrager();
+
+function do_barrager(){
+  if(run_once){
+      //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+      looper=setInterval(do_barrager,looper_time);
+      run_once=false;
+  }
+  //获取
+  $.getJSON("/Wxhd/GiftVote/index_loadgift/user_id/11/id/550.so",function(data){
+      //是否有数据
+      if(data.info && data.img){
+           //$('.swiper-container').barrager(data);
+
+		   $('#rdlist div img').attr('src',data.img);
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){
+				 $("#rdlist").fadeOut(1000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
+
+				 },3000);
+			  });
+
+
+      }
+
+  });
+}
+
+</script>
+
+ <style>
+.img{margin:0px;padding:0px;width:95%;text-align:center;margin:0 auto;}
+.img img{width:98%;border-radius:5px;margin:0 auto;margin-top:2px;}
+ </style>
+
+
+ <div class="swiper-container">
+ <img src="http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png">
+ </div>
+
+
+
+
+
+
+
+<div id="focus" class="focus focus2" style="">
+	<div class="hd">
+		<ul>
+			<li class="on"></li>
+		</ul>
+	</div>
+	<div class="bd">
+		<ul>
+   		</ul>
+	</div>
+</div>
+
+
+<!-- <div class="divbotuser">
+      <h2 class="bg-purple2 bg-blue2 cl-white">
+
+	  <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg" width="25"/> 甲上甲火焰甲鱼（博物馆店）	  </h2>
+
+</div> -->
+
+<!-- <div class="divbottommenu bg-purple3 bg-blue3 clearfix pd-b-10 bg-bw">
+
+  <div class="divitem">
+	  <span><i class="glyphicon glyphicon-user"></i> 编号</span>
+	  <span>119</span>
+  </div>
+  <div class="divitem">
+	  <span><i class="glyphicon glyphicon-thumbs-up"></i> 票数</span>
+	  <span class="votenum">73</span>
+  </div>
+  <div class="divitem">
+	  <span><i class="glyphicon glyphicon-fire"></i> 热度</span>
+	  <span id="sahrec">191</span>
+  </div>
+
+  <div class="divitem">
+	  <span><i class="glyphicon glyphicon-stats"></i> 排名</span>
+	  <span> 22</span>
+  </div>
+
+</div> -->
+<style>
+
+ .lapiao{background-color:rgba(0, 0, 0, 0.6);border-top:none;height:65px}
+ .lapiao .add{width:80px;height:73px;top:12px;margin:-40px}
+  .add .i{color:#fff;font-weight:700;padding-top:63px;padding-left:15px}
+#jiandiv{width:100px; height:40px;  position:relative;top:-15px;left:40px; line-height:30px; font-size:16px; color:#2dcc70; text-align:center; font-weight:bold; background:#fff}
+#jiandiv2{width:100%;  margin-top:20px; border:1px #ccc solid; border-radius:10px; }
+
+ .zlb{
+	float:left;width:50%;line-height:30px;
+	border-right:solid 1px #ccc;
+	width: 27%;
+}
+#zlb{
+	border:solid 1px #ccc;
+	border-right:0px;
+	width:80%;
+	margin:10px 10%;
+}
+.lapiao .l,.lapiao .r{
+background:#fff;border-radius:3px;color:#000;font-weight:600;padding:5px 10px;
+width:100px;height:36px;background-repeat: no-repeat;background-size:20px;
+background-position:7px 11px;
+padding-left:30px;
+line-height:28px;
+}
+.lapiao .l{background-image:url('/Public/app/WeChat/GiftVote/img/zuan_01.png');margin-left:20px;}
+.lapiao .r{background-image:url('/Public/app/WeChat/GiftVote/img/zuan_05.png');background-position:7px 9px;margin-right:20px;}
+.rq{width:98%;padding:5px;text-align:center;margin:0px auto;margin-top:20px;margin-bottom:-10px}
+.rq ul{list-style:none;display:flex}
+.rq ul li{flex:1 20%}
+.rq ul li img{width:60px;height:60px;border-radius:30px}
+.rq p:first-child{font-size:18px;font-weight:600;color:red;}
+.rq ul li p:nth-child(2){margin-top:6px;height:35px}
+.rq ul li p:nth-child(3){margin-top:12px}
+.rq ul li{background:url('/Public/app/WeChat/GiftVote/img/hg1.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
+.rq ul li:nth-child(4){background:url('/Public/app/WeChat/GiftVote/img/hg2.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
+.rq ul li:nth-child(5){background:url('/Public/app/WeChat/GiftVote/img/hg2.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
+</style>
+<div style="width: 90%; margin: 0 auto;margin-top:20px;overflow:hidden;">
+                <div style="width: 100%; text-align: left; padding-bottom: 20px;">
+                    <div id="jiandiv2">
+                        <div id="jiandiv">
+                            选手介绍
+                        </div>
+                        <div style="padding: 0px 0px 10px 10px; margin-top: -10px;">
+                            <div style="width: 50%; float: left;">
+                                名称：{{ data["name"] }}</div>
+                            <div style="width: 40%; text-align: right; float: left;">
+                                编号：{{ data["index_"] }}</div>
+								<br>
+                            <p style="margin-top:5px">
+														   </p>
+
+						     <p style="margin-top:5px">
+
+							  参赛宣言：		{{ data["introduction"] }}					</p>
+						</div>
+                    </div>
+                    <!--主体 -->
+                    <div style="width: 100%; margin-left: 0px; text-align: center;" id="zlb">
+
+                        <div class="zlb">
+                            当前票数</div>
+                        <div class="zlb" style="margin-left: -1px; width: 38%;">
+                            距上一名差</div>
+                        <div class="zlb" style="margin-left: 1px; width: 35%;">
+                            票数榜</div>
+                        <div style="clear: both;">
+                        </div>
+                        <div style="margin-top: -10px;" class="zlb" id="pcount">
+                            <span id="votenum2">{{ data["votenum"] }}</span>票</div>
+                        <div class="zlb" style="margin-left: -1px; width: 38%; margin-top: -10px;" id="pcha">
+                            {{ data["subvotenum"] }}票</div>
+                        <div class="zlb" style="margin-left: 1px; width: 35%; margin-top: -10px;" id="pzcount">
+                            第{{ data["index"] }}名</div>
+                        <div style="clear: both;">
+                        </div>
+                    </div>
+ </div>
+</div>
+<!-- <div style="padding:10px 4% 0px"><i class="glyphicon glyphicon-hand-right" style="margin-right:5px"></i><span>与第一名差22613票</span>
+	  <span>与上一名差9票</span>  </div> -->
+<!-- <div class="divview2 bg-purple4 bg-blue4">
+<span><i class="glyphicon glyphicon-bullhorn"></i> 参赛宣言：</span>
+
+</div> -->
+
+<div class="view2 bg-purple3 bg-blue3 pd-b-15 bg-bw">
+ <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators" >
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>    <li data-target="#carousel-example-generic" data-slide-to="1"></li>    <li data-target="#carousel-example-generic" data-slide-to="2"></li>	<li data-target="#carousel-example-generic" data-slide-to="3"></li>	<li data-target="#carousel-example-generic" data-slide-to="4"></li>  </ol>
+
+
+  <div class="carousel-inner" role="listbox" id="previewImage">
+      <div class="item active">
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg">
+      <div class="carousel-caption">
+      </div>
+    </div>
+		    <div class="item">
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c3a5335.jpg">
+      <div class="carousel-caption">
+      </div>
+    </div>
+   		    <div class="item">
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c6f07b1.jpg">
+      <div class="carousel-caption">
+      </div>
+    	    </div>
+	    <div class="item">
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5ca5aa14.jpg">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    		    <div class="item">
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5cf62b58.jpg">
+      <div class="carousel-caption">
+      </div>
+    </div>
+     </div>
+
+
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+
+  </a>
+</div>  -->
+
+</div>
+</div>
+
+<div class="img">
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg">
+
+
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c3a5335.jpg">
+
+
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c6f07b1.jpg">
+
+
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5ca5aa14.jpg">
+
+
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5cf62b58.jpg">
+
+
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5d237342.jpg">
+
+
+
+      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5dadb310.jpg">
+
+
+
+
+
+
+
+
+  </div>
+
+<script>
+ $('.carousel').carousel({
+    interval: 4000
+});
+
+var mc = new Hammer($('#carousel-example-generic').get(0));
+		mc.on("panleft", function(ev) {
+			$('#carousel-example-generic').carousel('next');
+		});
+		mc.on("panright", function(ev) {
+			$('#carousel-example-generic').carousel('prev');
+		});
+
+
+</script>
+<!--  -->
+<div class="vsavz bg-purple4 bg-blue4 pd-b-10">
+
+
+
+</div>
+
+<div class="bg-purple3 bg-blue3 mg-t-40" style="height:90px;"></div>
+
+
+
+<div class="lapiao">
+<a href="javascript:;" class='l' id="mytoupiao" >给ta投票</a>
+
+
+ <a href="/show_sig/11/550.so?key=WcKglwdggd"  class='r' >我要报名</a>
+
+
+	<div class="add" >
+	<a href="http://hd.shasem001.cn/payzf/?user_id=11&id=550&iid=80645&key=WcKglwdggd">
+	<div class="i">送钻石</div>
+	</a>
+	</div></div>
+
+
+<!--  礼物end -->
+
+<div class="follow" id="follow" style="display:none">
+<div class="weui-mask"></div>
+<div id="guanzhubox" >
+	<div class="box1" onclick="hidemod('follow');">
+	<span class="span1">提示</span>
+	<span class="span2" >关闭</span></div>
+	<div class="divtxt">
+	<p>长按下方二维码，长按，识别二维码</p>
+	<p><img src="" width="80%" ></p>
+			</div>
+</div>
+</div>
+<div class="share" id="share" style="display:none">
+<img src="/Public/app/WeChat/GiftVote/img/share.png" style="position: absolute;top: 0;right:0;z-index: 2;" onclick="hidemod('share');" width="100%"  />
+<div class="weui-mask" onclick="hidemod('share');"></div>
+</div>
+<div class="succeed" id="succeed" style="display:none"onclick="hidemod('succeed');">
+   <div class="voteadd"><img src="/Public/app/WeChat/GiftVote/img/ico2.png"  class="adimg" width="100%"  />
+	   <p class="adtext"> </p>
+	   </div>
+
+	   <script>
+             $('.adimg').click(function(){
+			   window.location.href="http://hd.shasem001.cn/payzf/?user_id=11&id=550&iid=80645&key=WcKglwdggd";
+			 });
+		  </script>   <div class="votets "></div>
+<div class="weui-mask" onclick="hidemod('succeed');"></div>
+</div>
+
+
+
+<script>
+
+$(document).ready(function(){
+var latitude=0;
+var longitude=0;
+
+$("#mytoupiao").click(function(){
+		loadingToast("投票中");
+   	$.ajax({
+		type: "POST",
+		url: "/Wxhd/GiftVote/vote/user_id/11/id/550/iid/80645.so",
+		data: {latitude:latitude,longitude:longitude},
+	    dataType: "json",
+	    success: function(str) {
+		    hidemod("loadingToast");
+			if(str!=null && str!=''){
+				if(str.status == 1){
+					$("#votenum2").text(Number($("#votenum2").text())+1);
+					$(".votets").html(str.msg);
+					window.location.href="/Wxhd/GiftVote/success/user_id/11/id/550/iid/80645/key/WcKglwdggd.so";					$("#succeed").show();
+
+				}else if(str.status == 0){
+					$(".votets").html(str.msg);
+					  $("#succeed").show();
+									}else if(str.status == -1){
+					$("#follow").show();
+				}else{
+					dialog2(str.msg);
+				}
+			}
+	    },
+	    error: function(err) {
+		    hidemod("loadingToast");
+	    	dialog2("发生错误，请刷新后重试！");
+	    }
+	});
+	});
+	 $("#previewImage img").click(function(){
+        var imgArray = [];
+        var curImageSrc = $(this).attr('src');
+        var oParent = $(this).parent();
+        if (curImageSrc && !oParent.attr('href')) {
+            $('#previewImage img').each(function(index, el) {
+                var itemSrc = $(this).attr('src');
+                imgArray.push(itemSrc);
+            });
+            wx.previewImage({
+                current: curImageSrc,
+                urls: imgArray
+            });
+        }
+    });
+
+});
+
+
+
+
+</script>
+
+<style>
+  #zanzhu2{background:url('/Public/app/WeChat/GiftVote/img/ts.png') no-repeat;background-size:19px 19px;background-position:0px 4px}
+
+</style>
+
+<div style="height:50px;"></div>
+<div class="footer">
+<ul>
+
+<li><a href="/show/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
+
+<li><a href="/show_top/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
+
+<li><a href="/show_award/11/550.so?key=WcKglwdggd"  ><div class='nav'><div class='is ispr iconfont icon-jiangpin'></div><p>奖品</p></div></a></li>
+
+
+
+
+<li><a href="/Wxhd/GiftVote/jubao/id/550/user_id/11/iid/80645/key/WcKglwdggd/action/detail.so"  ><div class='nav'><div class='is ispr' id="zanzhu2"></div><p>投诉</p></div></a></li>
+
+</ul>
+</div>
+<script type="text/javascript">
+function get_ap(){
+    location.href="/show_sig/11/550.so?key=WcKglwdggd";
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+window.fxdata = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg",
+	"Link":"http://hd.shasem001.cn/show_xs/11/550/80645.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C"
+}
+window.fxonly = {
+	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg",
+	"Link":"http://hd.shasem001.cn/show_xs/11/550/80645.so?key=WcKglwdggd",
+	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C",
+	"content":"我是甲上甲火焰甲鱼（博物馆店） 编号119，我正在参加2019年中华美食“舌尖上的旅行”之河南洛阳C请为我加油！"
+}
+
+function share_success(){
+
+  $.post("/Wxhd/GiftVote/share_success/user_id/11/id/550/iid/80645.so",{},function(){});
+  var t=$("#sahrec").text();
+ $("#sahrec").text(parseInt(t)+1);
+}
+
+</script>
+
+
+
+	</div>
+	<!-- 提示弹窗start -->
+
+
+
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script>
+
+			//微信API验证
+			wx.config({
+				debug: false,
+				appId: 'wx0e628ec8b50f8fdb',
+				timestamp: 1552749494,
+				nonceStr: 'd3sEfGQ5dgxv5iQV',
+				signature: '728486fcc208fcd6196750986406a8da56a4adc8',
+				jsApiList: [
+					'checkJsApi',
+					'onMenuShareTimeline',
+					'onMenuShareAppMessage',
+					'onMenuShareQQ',
+					'onMenuShareWeibo',
+					'startRecord',
+					'stopRecord',
+					'onVoiceRecordEnd',
+					'playVoice',
+					'pauseVoice',
+					'stopVoice',
+					'onVoicePlayEnd',
+					'uploadVoice',
+					'downloadVoice',
+					'chooseImage',
+					'previewImage',
+					'uploadImage',
+					'downloadImage',
+					'translateVoice',
+					'getNetworkType',
+					'openLocation',
+					'getLocation',
+					'hideOptionMenu',
+					'showOptionMenu',
+					'hideMenuItems',
+					'showMenuItems',
+					'hideAllNonBaseMenuItem',
+					'showAllNonBaseMenuItem',
+					'closeWindow',
+					'scanQRCode',
+					'chooseWXPay',
+					'openProductSpecificView',
+					'addCard',
+					'chooseCard',
+					'openCard'
+				]
+			});
+
+			// 在这里调用 wxAPI
+			wx.ready(function () {
+				//显示右上角菜单
+				wx.showOptionMenu();
+
+				//获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareTimeline({
+					title: window.fxdata.title, // 分享标题
+					link: window.fxdata.Link, // 分享链接
+					imgUrl: window.fxdata.imgUrl, // 分享图标
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+				//获取“分享给朋友”按钮点击状态及自定义分享内容接口
+				wx.onMenuShareAppMessage({
+					title: window.fxonly.title, // 分享标题
+					desc: window.fxonly.content, // 分享描述
+					link: window.fxonly.Link, // 分享链接
+					imgUrl: window.fxonly.imgUrl, // 分享图标
+					type: '', // 分享类型,music、video或link，不填默认为link
+					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+					success: function () {
+						// 用户确认分享后执行的回调函数
+						share_success();
+					},
+					cancel: function () {
+						// 用户取消分享后执行的回调函数
+
+					}
+				});
+
+			});
+
+
+		</script>
+
+
+<div id="dialog2" style="opacity: 1;display:none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__bd">返回错误！</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:hidemod('dialog2');" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+</div>
+
+<div id="toast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">已完成</p>
+        </div>
+</div>
+<div id="loadingToast" style="opacity: 1; display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-loading weui-icon_toast"></i>
+            <p class="weui-toast__content" style="color:#fff">数据加载中</p>
+        </div>
+</div>
+<!-- 提示弹窗start -->
+
+	<script type="text/javascript">
+
+	function dialog2(msg){
+	    $("#dialog2 .weui-dialog__bd").html(msg);
+	    $("#dialog2").show();
+	}
+	function hidemod(boxid){
+	    $("#"+boxid).hide();
+	}
+	function loadingToast(msg){
+	    $("#loadingToast .weui-toast__content").html(msg);
+	    $("#loadingToast").show();
+	}
+	function toast(msg){
+	    $("#toast .weui-toast__content").html(msg);
+	    $("#toast").show();
+		setTimeout("hidemod('toast')",2000);
+	}
+
+	wx.ready(function () {
+		wx.hideMenuItems({
+		  menuList:["menuItem:copyUrl","menuItem:originPage", "menuItem:share:email","menuItem:openWithQQBrowser","menuItem:openWithSafari","menuItem:share:brand"],
+
+		});
+
+	});
+
+	</script>
+
+</body>
+</html>
