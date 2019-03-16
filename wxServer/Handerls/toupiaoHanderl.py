@@ -71,7 +71,10 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             shares["sharedesc"] = coures["sharedesc"]
             shares["url"] = pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(uuid,userid)
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-            self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
+            if pojcetm.TempCode == 1:
+                self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
+            elif pojcetm.TempCode==2:
+                self.render("temp2/toupiao.html", data=data, aseedata=aseedata, share=shares)
     def post(self):
         openid = self.get_secure_cookie("openid")
         userid= self.get_argument("userid", None)

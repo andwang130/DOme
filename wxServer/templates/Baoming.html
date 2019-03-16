@@ -185,7 +185,7 @@
 			<div class="divbaoming4">
 			<div class="dlist1">   选择上传1-5张照片，第一张为封面图。</div>
 
-            			<div class="dlist3" id="chooseImages"><img src="http://jadl8.zhaojingl.com/addons/tyzm_diamondvote//template/static/images/jia.gif" class="bmimg"></div>
+            			<div class="dlist3" id="images"><img  id="chooseImages" src="/images/jia.jpg" class="bmimg"></div>
             
             </div>
 		<div class="btn_area">
@@ -259,12 +259,19 @@
  });
 
 function files_oninpit() {
+         bmimg = $(".bmimg");
+        length = bmimg.length;
+        if (length>5){
+            dialog2("不能超过5张图片");
+            return
+        }
         var fiels= $("#files").prop('files');
-        console.log(fiels);
+
         var formFile = new FormData();
-        if (fiels.length>5)
+        if (fiels.length+length>5)
 		{
 		    dialog2("图片不能超过5张");
+		    return
 		}
         for(var i=0;i<fiels.length;i++)
         {
@@ -272,6 +279,7 @@ function files_oninpit() {
             console.log(fiels[i].size);
             if((fiels[i].size/1024/1024)>15)
             {
+                dialog2("大小不能超过15M");
                 return
             }
             filepath=fiels[i].name;
@@ -303,7 +311,7 @@ function files_oninpit() {
                 for(var i=0;i<data.length;i++)
                 {
                     namelist.push({"name":data[i]["odlname"].split(".")[0],"avatar":data[i]["path"]});
-					$("#chooseImages").append("<img src='"+data[i]["path"]+"' class='bmimg' />");
+					$("#images").append("<img src='"+data[i]["path"]+"' class='bmimg' />");
 				}
 
 
@@ -328,7 +336,7 @@ function files_oninpit() {
             return false;
         }
 
-        var mobile = $("*[name='mobile']").val();
+        var mobile = $("*[name='phone']").val();
         if (mobile == "") {
             dialog2("请输入手机");
             return false;
