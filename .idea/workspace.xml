@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
+      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="418" column="36" lean-forward="false" selection-start-line="418" selection-start-column="36" selection-end-line="418" selection-end-column="36" />
+            <state relative-caret-position="50">
+              <caret line="419" column="26" lean-forward="true" selection-start-line="419" selection-start-column="26" selection-end-line="419" selection-end-column="26" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -121,13 +120,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="171" column="8900" lean-forward="false" selection-start-line="171" selection-start-column="8900" selection-end-line="171" selection-end-column="8900" />
+            <state relative-caret-position="408">
+              <caret line="177" column="22" lean-forward="true" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,10 +193,10 @@
       <find>Public</find>
       <find>previewImage</find>
       <find>votets</find>
-      <find>wrapper</find>
       <find>resource/images/nopic-107.png</find>
       <find>mytoupiao</find>
       <find>首页</find>
+      <find>wrapper</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -235,7 +235,6 @@
         <option value="$PROJECT_DIR$/wxServer/Handerls/pojcetm.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/index.html" />
         <option value="$PROJECT_DIR$/http.conf" />
@@ -250,6 +249,7 @@
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/urls.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
       </list>
     </option>
   </component>
@@ -756,16 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="171" column="8900" lean-forward="false" selection-start-line="171" selection-start-column="8900" selection-end-line="171" selection-end-column="8900" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -814,8 +804,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="418" column="36" lean-forward="false" selection-start-line="418" selection-start-column="36" selection-end-line="418" selection-end-column="36" />
+        <state relative-caret-position="50">
+          <caret line="419" column="26" lean-forward="true" selection-start-line="419" selection-start-column="26" selection-end-line="419" selection-end-column="26" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -847,6 +837,17 @@
             <element signature="n#style#0;n#p#0;n#div#1;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="177" column="22" lean-forward="true" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
