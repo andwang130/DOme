@@ -138,7 +138,7 @@ function do_barrager(){
 
 
   <div class="divbaoming4">
-            			<div class="dlist3"><img id="chooseImages" src="/images/jia.jpg" class="bmimg"></div>
+            			<div class="dlist3" id="images"><img id="chooseImages" src="/images/jia.jpg" class="bmimg"></div>
 
             </div>
 
@@ -242,7 +242,7 @@ function files_oninpit() {
                 for(var i=0;i<data.length;i++)
                 {
                     namelist.push({"name":data[i]["odlname"].split(".")[0],"avatar":data[i]["path"]});
-					$("#chooseImages").append("<img src='"+data[i]["path"]+"' class='bmimg' />");
+					$("#images").append("<img src='"+data[i]["path"]+"' class='bmimg' />");
 				}
 
 
