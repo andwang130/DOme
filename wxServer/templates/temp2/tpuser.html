@@ -53,11 +53,11 @@
 <div class="alert alert-danger alert-dismissible" style="text-align:center;position: fixed;top:40%;z-index: 2; width:80%;margin:0 5%;z-index:9000000" role="alert">
   <button type="button" class="close"  onclick="hidemod('replystatus')" data-dismiss="alert"><span aria-hidden="true">x</span> </button>
   <strong>活动已结束</strong>
-   {% end %}
+
 </div>
 <div class="weui-mask"></div>
 </div>
-
+   {% end %}
 
 <link href="/wxcss/index2.css" rel="stylesheet">
 
@@ -213,8 +213,8 @@ background-position:7px 11px;
 padding-left:30px;
 line-height:28px;
 }
-.lapiao .l{background-image:url('/Public/app/WeChat/GiftVote/img/zuan_01.png');margin-left:20px;}
-.lapiao .r{background-image:url('/Public/app/WeChat/GiftVote/img/zuan_05.png');background-position:7px 9px;margin-right:20px;}
+.lapiao .l{background-image:url('/images/zuan_01.png');margin-left:20px;}
+.lapiao .r{background-image:url('/images/zuan_05.png');background-position:7px 9px;margin-right:20px;}
 .rq{width:98%;padding:5px;text-align:center;margin:0px auto;margin-top:20px;margin-bottom:-10px}
 .rq ul{list-style:none;display:flex}
 .rq ul li{flex:1 20%}
@@ -222,9 +222,9 @@ line-height:28px;
 .rq p:first-child{font-size:18px;font-weight:600;color:red;}
 .rq ul li p:nth-child(2){margin-top:6px;height:35px}
 .rq ul li p:nth-child(3){margin-top:12px}
-.rq ul li{background:url('/Public/app/WeChat/GiftVote/img/hg1.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
-.rq ul li:nth-child(4){background:url('/Public/app/WeChat/GiftVote/img/hg2.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
-.rq ul li:nth-child(5){background:url('/Public/app/WeChat/GiftVote/img/hg2.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
+.rq ul li{background:url('/images/hg1.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
+.rq ul li:nth-child(4){background:url('/images/hg2.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
+.rq ul li:nth-child(5){background:url('/images/hg2.gif') no-repeat;background-position:45% 7px;padding-top:30px;background-size:40px}
 </style>
 <div style="width: 90%; margin: 0 auto;margin-top:20px;overflow:hidden;">
                 <div style="width: 100%; text-align: left; padding-bottom: 20px;">
@@ -268,89 +268,30 @@ line-height:28px;
                     </div>
  </div>
 </div>
-<!-- <div style="padding:10px 4% 0px"><i class="glyphicon glyphicon-hand-right" style="margin-right:5px"></i><span>与第一名差22613票</span>
-	  <span>与上一名差9票</span>  </div> -->
-<!-- <div class="divview2 bg-purple4 bg-blue4">
-<span><i class="glyphicon glyphicon-bullhorn"></i> 参赛宣言：</span>
 
-</div> -->
 
 <div class="view2 bg-purple3 bg-blue3 pd-b-15 bg-bw">
- <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-  <ol class="carousel-indicators" >
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>    <li data-target="#carousel-example-generic" data-slide-to="1"></li>    <li data-target="#carousel-example-generic" data-slide-to="2"></li>	<li data-target="#carousel-example-generic" data-slide-to="3"></li>	<li data-target="#carousel-example-generic" data-slide-to="4"></li>  </ol>
-
-
-  <div class="carousel-inner" role="listbox" id="previewImage">
-      <div class="item active">
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg">
-      <div class="carousel-caption">
-      </div>
-    </div>
-		    <div class="item">
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c3a5335.jpg">
-      <div class="carousel-caption">
-      </div>
-    </div>
-   		    <div class="item">
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c6f07b1.jpg">
-      <div class="carousel-caption">
-      </div>
-    	    </div>
-	    <div class="item">
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5ca5aa14.jpg">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    		    <div class="item">
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5cf62b58.jpg">
-      <div class="carousel-caption">
-      </div>
-    </div>
-     </div>
-
-
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-
-  </a>
-</div>  -->
 
 </div>
 </div>
 
 <div class="img">
 
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c16039a.jpg">
+      {%for i in data["imgse"] %}
+                <img src="{{i}}">
+                {% end %}
 
 
 
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c3a5335.jpg">
 
 
 
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5c6f07b1.jpg">
 
 
 
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5ca5aa14.jpg">
 
 
-
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5cf62b58.jpg">
-
-
-
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5d237342.jpg">
-
-
-
-      <img src="http://hd.shasem001.cn/Uploads/images/5c88c5dadb310.jpg">
 
 
 
