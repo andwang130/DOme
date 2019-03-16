@@ -197,6 +197,7 @@ function files_oninpit() {
         length = bmimg.length;
         if (length>5){
             dialog2("不能超过5张图片");
+            return
         }
         var fiels= $("#files").prop('files');
 
@@ -204,6 +205,7 @@ function files_oninpit() {
         if (fiels.length+length>5)
 		{
 		    dialog2("图片不能超过5张");
+		    return
 		}
         for(var i=0;i<fiels.length;i++)
         {
@@ -212,6 +214,7 @@ function files_oninpit() {
             if((fiels[i].size/1024/1024)>15)
             {
                 dialog2("大小不能超过15M");
+                return
             }
             filepath=fiels[i].name;
             var extStart=filepath.lastIndexOf(".");
