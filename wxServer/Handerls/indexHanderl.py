@@ -45,6 +45,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimestart"] = coures["tiemstatr"]
                 data["aptimeend"] = coures["timeend"]
+
                 data["notice"] = coures["titile"]
                 votenum=0
                 for i in usercoures:
