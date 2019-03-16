@@ -42,9 +42,9 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data = {}
                 data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
-                data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
-                data["aptimestart"] = coures["aptimestart"]
-                data["aptimeend"] = coures["aptimeend"]
+                data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
+                data["aptimestart"] = coures["tiemstatr"]
+                data["aptimeend"] = coures["timeend"]
                 data["notice"] = coures["titile"]
                 votenum=0
                 for i in usercoures:
