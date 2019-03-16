@@ -110,7 +110,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     self.write(json.dumps({"status": 0, "msg": "每4个小时可投票一次，你已经投过票了"}))
             except Exception as e:
                 print(e)
-                self.write(json.dumps({"status": 500, "msg": "数据库错误"}))
+                self.write(json.dumps({"status": 0, "msg": "数据库错误"}))
         else:
             self.write(json.dumps({"status": 0, "msg": "没有openid"}))
 
