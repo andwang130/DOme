@@ -88,6 +88,7 @@ var run_once=true;
 do_barrager();
  $(document).ready(function(){
        $("#files").change(files_oninpit);
+        $("#chooseImages").click(function(){$("#files").click()})
  })
 function do_barrager(){
   if(run_once){
