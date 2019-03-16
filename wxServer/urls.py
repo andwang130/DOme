@@ -10,6 +10,6 @@ path=[
     ("/wx",Handle.Handle),
     ("/wx/toushu",toushuHanderl.toushuHanderl),
     ("/wx/auoth",auoth.auoth),
-    ("/wx/playcallbackurl",playcallbackurl.playcallbackurl)
+    ("/wx/playcallbackurl",playcallbackurl.playcallbackurl),
     ("/wx/tpinfo",toupiaoHanderl.toupiaoinfoHanderl)
       ]
