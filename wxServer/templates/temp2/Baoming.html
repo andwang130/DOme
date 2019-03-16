@@ -138,7 +138,7 @@ function do_barrager(){
 
 
   <div class="divbaoming4">
-            			<div class="dlist3" id="chooseImages"><img src="http://jadl8.zhaojingl.com/addons/tyzm_diamondvote//template/static/images/jia.gif" class="bmimg"></div>
+            			<div class="dlist3"><img id="chooseImages" src="/images/jia.jpg" class="bmimg"></div>
 
             </div>
 
@@ -193,10 +193,15 @@ function do_barrager(){
 
 
 function files_oninpit() {
+         bmimg = $(".bmimg");
+        length = bmimg.length;
+        if (length>5){
+            dialog2("不能超过5张图片");
+        }
         var fiels= $("#files").prop('files');
-        console.log(fiels);
+
         var formFile = new FormData();
-        if (fiels.length>5)
+        if (fiels.length+length>5)
 		{
 		    dialog2("图片不能超过5张");
 		}
