@@ -306,7 +306,8 @@ body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Ari
 	<div class="donate_name">为13号 郑家鲜羊 送<span id="tip_zuan">5</span>钻 = <span id="tip_piao">15</span>票</div>
 	<div class="donate_money_p_p">
 		<div class="donate_money_choose_p">
-			     {% for row in data["liwulist"] %}
+		
+               {% for row in data["liwulist"] %}
                   <div class="donate_money_choose donate_money_choose1">
                       {% for i in row %}
                     <div class="donate_money" dada-key={{i["giftprice"]}} dada-tip="为{{data["index"]}}号 {{data["name"]}} 送 {{i["giftprice"]}}钻={{i["giftvote"]}}票">
@@ -315,6 +316,7 @@ body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Ari
                 {% end %}
                  </div>
               {% end %}
+            <div class="donate_money"><span class="donate_money_num" style="font-size:16px"><b>自定义</b></span></div>
 		</div>
 		<div class="donate_money_edit">
 			<div class="donate_money_edit_text"><b>注:</b> 1元打赏1钻，1钻等于3票</div>
