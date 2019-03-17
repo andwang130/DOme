@@ -311,7 +311,7 @@ body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Ari
                {% for row in data["liwulist"] %}
                   <div class="donate_money_choose donate_money_choose1">
                       {% for i in row %}
-                    <div class="donate_money" dada-key={{i["giftprice"]}} dada-tip="为{{data["index"]}}号 {{data["name"]}} 送 {{i["giftprice"]}}钻={{i["giftvote"]}}票">
+                    <div class="donate_money" dada-key={{i["giftprice"]}} dada-tip="{{i["giftvote"]}}">
                         送<span class="donate_money_title" style="color:red;font-size:200%;font-style:italic">{{i["giftprice"]}}</span>钻
                     </div>
                 {% end %}
@@ -361,7 +361,7 @@ $(document).attr("title","打赏钻石");
 			$("#tip_zuan").text(tip_zuan);
 			num=tip_zuan;
 			var tip_piao=tip_zuan*3;
-			$('#tip_piao').text(tip_piao);
+			$('#tip_piao').text($(this).attr("dada-tip"));
 			$('#money').hide();
 			$('#weixin').css('background','#44b549');
 		}
