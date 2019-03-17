@@ -39,7 +39,8 @@ class Poject(Basehandelr):
                 self.poject_copy()
     def update(self,uuid_,data):
         try:
-            self.cooliect.update_one({"uuid":uuid_}, {'$set':data})
+            data["Adminid"] = self.get_secure_cookie("token")
+            self.cooliect.update_one({"uuid":uuid_,"Adminid":data["Adminid"]}, {'$set':data})
             self.write(json.dumps({"code": 0}))
         except Exception as e:
             print(e)
