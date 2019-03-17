@@ -1,3 +1,4 @@
 from Filehandelr import Filehandelr
-path=[("/uploadfile",Filehandelr)]
+path=[("/uploadfile",Filehandelr),
+      ("/uploadfile/editor")]
 

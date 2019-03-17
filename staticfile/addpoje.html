@@ -731,8 +731,15 @@ var gqrt = 0;
 <script>
 
         KindEditor.ready(function(K) {
-                editor1=K.create('#customized',{urlType : 'relative'});
-                editor2=K.create("#buttonpane",{urlType : 'absolute'});
+                editor1=K.create('#customized',{urlType : 'relative',
+                    uploadJson:"/uploadfile/editor",
+                    filePostName:"upload_img"
+                });
+
+                editor2=K.create("#buttonpane",{urlType : 'absolute',
+                  uploadJson:"/uploadfile/editor",
+                    filePostName:"upload_img"
+                });
         });
 </script>
 </html>
