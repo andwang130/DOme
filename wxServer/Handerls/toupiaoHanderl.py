@@ -80,7 +80,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
     def post(self):
         openid = self.get_secure_cookie("openid")
 
-        openid="123456"
 
         userid= self.get_argument("userid", None)
         if userid and openid:

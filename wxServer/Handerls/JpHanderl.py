@@ -50,4 +50,7 @@ class jphanderl(Basehanderl.Basehandelr):
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = pojcetm.www + "/wx/jp?uuid="+uuid
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-                self.render("jp.html", data=data, share=shares, aseedata=aseedata)
+                if pojcetm.TempCode == 1:
+                    self.render("jp.html", data=data, share=shares, aseedata=aseedata)
+                elif pojcetm.TempCode == 2:
+                    self.render("temp2/jp.html", data=data, aseedata=aseedata, share=shares)
