@@ -57,6 +57,10 @@ class palyHanderl(Basehanderl.Basehandelr):
                     row_list = []
                 x+=1
             liwulist.append(row_list)
+            data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimestart"] = coures["tiemstatr"]
+            data["aptimeend"] = coures["timeend"]
             data["liwulist"] = liwulist
             data["name"] = usercoures["name"]
             data["index"] = usercoures["index"]
