@@ -336,7 +336,7 @@ var mc = new Hammer($('#carousel-example-generic').get(0));
 
 
 	<div class="add" >
-	<a href="http://hd.shasem001.cn/payzf/?user_id=11&id=550&iid=80645&key=WcKglwdggd">
+	<a href="/wx/paly?uuid={{data["uuid"]}}&userid={{data["userid"]}}">
 	<div class="i">送钻石</div>
 	</a>
 	</div></div>
@@ -461,9 +461,14 @@ $("#mytoupiao").click(function(){
 
 </ul>
 </div>
-<script type="text/javascript">
-function get_ap(){
-    location.href="/show_sig/11/550.so?key=WcKglwdggd";
+<script type="text/javascript">function get_ap(){
+    {% if data["aptimes"]>0 %}
+    dialog2("未开始报名！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}}")
+    {% elif data["endtimes"]<0 %}
+ dialog2("活动已经结束！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}}")
+    return false;
+	{% end%}
+    location.href="/wx/Baoming?uuid={{data["uuid"]}}";
 }
 </script>
 

@@ -53,6 +53,9 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 next_couresl = i
                 x += 1
             data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimestart"] = coures["tiemstatr"]
+            data["aptimeend"] = coures["timeend"]
             data["titile"] = coures["titile"]
             data["name"] = usercoures["name"]
             data["votenum"] = usercoures["votenum"]
