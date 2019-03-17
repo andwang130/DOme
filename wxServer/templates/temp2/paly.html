@@ -348,7 +348,7 @@ $(document).attr("title","打赏钻石");
 	$(".donate_money_choose .donate_money").click(function(){
 
 		var tip_zuan =$(this).attr("dada-key");
-		if(tip_zuan=='自定义'){
+		if(!tip_zuan){
 		     $("#tip_zuan").text(0);
 			 $('#tip_piao').text(0);
 			 $('#money').val('');
