@@ -60,13 +60,11 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="377" column="26" lean-forward="false" selection-start-line="377" selection-start-column="26" selection-end-line="377" selection-end-column="26" />
+            <state relative-caret-position="49">
+              <caret line="397" column="34" lean-forward="false" selection-start-line="397" selection-start-column="34" selection-end-line="397" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#15700#18193#0#HTML" expanded="false" />
-                <element signature="e#15891#18177#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,11 +73,9 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="249" column="29" lean-forward="false" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="29" />
-              <folding>
-                <element signature="e#10770#13059#0#HTML" expanded="false" />
-              </folding>
+            <state relative-caret-position="992">
+              <caret line="285" column="39" lean-forward="false" selection-start-line="285" selection-start-column="39" selection-end-line="285" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -684,7 +680,7 @@
         <state relative-caret-position="164">
           <caret line="512" column="13" lean-forward="false" selection-start-line="512" selection-start-column="12" selection-end-line="512" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
@@ -768,23 +764,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="249" column="29" lean-forward="false" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="29" />
-          <folding>
-            <element signature="e#10770#13059#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="992">
+          <caret line="285" column="39" lean-forward="false" selection-start-line="285" selection-start-column="39" selection-end-line="285" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="377" column="26" lean-forward="false" selection-start-line="377" selection-start-column="26" selection-end-line="377" selection-end-column="26" />
+        <state relative-caret-position="49">
+          <caret line="397" column="34" lean-forward="false" selection-start-line="397" selection-start-column="34" selection-end-line="397" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#15700#18193#0#HTML" expanded="false" />
-            <element signature="e#15891#18177#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
