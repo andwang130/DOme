@@ -60,8 +60,8 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="332" column="10" lean-forward="true" selection-start-line="332" selection-start-column="10" selection-end-line="332" selection-end-column="10" />
+            <state relative-caret-position="233">
+              <caret line="330" column="38" lean-forward="true" selection-start-line="330" selection-start-column="38" selection-end-line="330" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -768,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="332" column="10" lean-forward="true" selection-start-line="332" selection-start-column="10" selection-end-line="332" selection-end-column="10" />
+        <state relative-caret-position="233">
+          <caret line="330" column="38" lean-forward="true" selection-start-line="330" selection-start-column="38" selection-end-line="330" selection-end-column="38" />
           <folding />
         </state>
       </provider>
