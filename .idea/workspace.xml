@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" afterPath="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addpoje.html" afterPath="$PROJECT_DIR$/staticfile/addpoje.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,6 +23,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="758" column="35" lean-forward="true" selection-start-line="758" selection-start-column="35" selection-end-line="758" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="editorupload.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Imgae_serever/editorupload.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -35,11 +45,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="-283">
               <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="275" column="8" lean-forward="true" selection-start-line="275" selection-start-column="8" selection-end-line="275" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="192" column="126" lean-forward="false" selection-start-line="192" selection-start-column="122" selection-end-line="192" selection-end-column="126" />
               <folding />
             </state>
           </provider>
@@ -75,41 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="40" column="12" lean-forward="true" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1077">
               <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="7916" column="4" lean-forward="false" selection-start-line="7916" selection-start-column="4" selection-end-line="7916" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="755" column="23" lean-forward="false" selection-start-line="755" selection-start-column="16" selection-end-line="755" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -128,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jsgb</find>
       <find>送砖石</find>
       <find>dada-tip</find>
       <find>donate_money</find>
@@ -158,6 +159,7 @@
       <find>topimage</find>
       <find>swiper</find>
       <find>swiper-container</find>
+      <find>活动规则</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -200,7 +202,6 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
         <option value="$PROJECT_DIR$/Imgae_serever/urls.py" />
-        <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/Poject.py" />
         <option value="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py" />
@@ -217,6 +218,7 @@
         <option value="$PROJECT_DIR$/Imgae_serever/setting.py" />
         <option value="$PROJECT_DIR$/Imgae_serever/editorupload.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
+        <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
       </list>
     </option>
   </component>
@@ -277,6 +279,11 @@
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
               <item name="Imgae_serever" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
@@ -714,17 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="135" column="1" lean-forward="false" selection-start-line="135" selection-start-column="1" selection-end-line="146" selection-end-column="8" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -763,22 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="128" column="17" lean-forward="true" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="755" column="23" lean-forward="false" selection-start-line="755" selection-start-column="16" selection-end-line="755" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -799,14 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1077">
           <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="129" column="42" lean-forward="true" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -847,8 +819,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="-283">
           <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="192" column="126" lean-forward="false" selection-start-line="192" selection-start-column="122" selection-end-line="192" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="275" column="8" lean-forward="true" selection-start-line="275" selection-start-column="8" selection-end-line="275" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="129" column="42" lean-forward="true" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="758" column="35" lean-forward="true" selection-start-line="758" selection-start-column="35" selection-end-line="758" selection-end-column="35" />
           <folding />
         </state>
       </provider>
