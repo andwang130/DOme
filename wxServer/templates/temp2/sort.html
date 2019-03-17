@@ -182,7 +182,7 @@ function get_list(){
 						var content = '';
 						$(".paihang2").append(list);
 						for(var i=0; i<list.length; i++){
-						  var rank=i+1;
+						   rank=i+1;
 						   content+='<a href="/wx/toupiao?uuid={{data["uuid"]}}&userid='+list[i]["userid"]+'"><li><span>'+rank+'</span>'
 						   +'<span><img src="'+list[i]['avatar']+'"><i>'+list[i]['name']+'</i></span>'
 						   +'<span>'+list[i]['votenum']+'</span></li></a>'
