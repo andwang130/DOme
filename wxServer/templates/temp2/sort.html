@@ -169,13 +169,14 @@ function get_list(){
 	$("#list_more").html('<div class="am-text-secondary"><span class="am-icon-spinner am-icon-spin"></span> 卖命加载中...</div>');
 	$.ajax({
 	    type : "post",
-	    url : "/Wxhd/GiftVote/ranklist/user_id/11/id/550.so",
+	    url : "/wx/sort",
 	    data : {
-	    	limit:limit,
+	        "uuid":"{{data["uuid"]}}",
+	    	"page":limit,
 	    },
         dataType : "json",
 	    success : function(data) {
-	    	if(data.status==1){
+	    	if(data.status==200){
 						var list = data.content;
 						var content = '';
 						$(".paihang2").append(list);
@@ -185,8 +186,8 @@ function get_list(){
 						 }else{
 						  var rank='';
 						 }
-						   content+='<a href="'+list[i]['url']+'"><li><span>'+rank+'</span>'
-						   +'<span><img src="'+list[i]['img1']+'"><i>'+list[i]['name']+'</i></span>'
+						   content+='<a href="/wx/toupiao?uuid={{data["uuid"]}}&userid='+list[i]["userid"]+'"><li><span>'+rank+'</span>'
+						   +'<span><img src="'+list[i]['avatar']+'"><i>'+list[i]['name']+'</i></span>'
 						   +'<span>'+list[i]['votenum']+'</span></li></a>'
 
 						}
