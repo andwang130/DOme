@@ -36,10 +36,12 @@ class indexHanderl(Basehanderl.Basehandelr):
     def rq(self,uuid):
         if uuid:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
+
             self.Mongodb["poject"].update_one({"uuid": uuid}, {"$inc": {"volume": 1}})
             usercoures = self.Mongodb["tpUser"].find({"uuid": uuid})
             if coures:
                 data = {}
+                data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
                 data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()

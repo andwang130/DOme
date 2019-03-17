@@ -38,6 +38,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 [("votenum", -1)])
             self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"vheat": 1}});
             data = {}
+            data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
             x = 0
             next_couresl = None
             for i in coureslist:
