@@ -17,5 +17,4 @@ class EditorUpload(RequestHandler):
             with open(editorPath+new_path,"wb") as f:
                f.write(body)
                data={'odlname':filename,"path":url+path+new_path}
-            fileurl.append(data)
-        self.write(json.dumps({"error":0,"url":fileurl}))
+        self.write(json.dumps({"error":0,"url":data["path"]}))
