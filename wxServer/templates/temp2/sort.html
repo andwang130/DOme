@@ -192,7 +192,7 @@ function get_list(){
 
 						}
 						 $(".paihang2 ul").append(content);
-						if(list.length=="20"){
+						if(list.length==10){
 							$("#list_more").html('<span class="am-text-secondary" onclick="get_list();">查看更多</span>');
 						}else{
 							$("#list_more").html('<span></span>');
@@ -200,7 +200,7 @@ function get_list(){
 
 						$("#list_more").html('<span></span>');
 						limit++;
-		    }else if(data.status==-1){
+		    }else if(data.status==301){
 	    		$("#list_more").html('<span>没有更多记录！</span>');
 	    	}else{
 			    $("#list_more").html('<span>没有更多记录！</span>');
