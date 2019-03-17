@@ -72,8 +72,10 @@ class palyHanderl(Basehanderl.Basehandelr):
             shares["url"] = pojcetm.www +"/wx/paly?uuid={}&userid={}".format(uuid,userid)
 
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-
-            self.render("paly.html", data=data, share=shares, aseedata=aseedata)
+            if pojcetm.TempCode == 1:
+                self.render("paly.html", data=data, share=shares, aseedata=aseedata)
+            elif pojcetm.TempCode==2:
+                self.render("temp2/paly.html", data=data, share=shares, aseedata=aseedata)
 
     @tornado.gen.coroutine
     def post(self):

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" afterPath="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" />
-      <change beforePath="$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py" afterPath="$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/index.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
+      <change beforePath="$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py" afterPath="$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,18 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-              <folding>
-                <element signature="e#24#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="jp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/jp.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,6 +66,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SortHanderl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SortHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -136,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>http://hd.shasem001.cn/Uploads/images/5c8387a212209.jpg</find>
       <find>active</find>
       <find>aptimestart</find>
       <find>投票</find>
@@ -166,6 +157,7 @@
       <find>resource/images/nopic-107.png</find>
       <find>conf_redis</find>
       <find>ul</find>
+      <find>get_playapImch</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -191,7 +183,6 @@
         <option value="$PROJECT_DIR$/staticfile/auto_tp.js" />
         <option value="$PROJECT_DIR$/staticfile/auto_tp.html" />
         <option value="$PROJECT_DIR$/staticfile/addauto_tp.html" />
-        <option value="$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/jp.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/paly.html" />
@@ -219,6 +210,7 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py" />
+        <option value="$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py" />
       </list>
     </option>
   </component>
@@ -671,14 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="138" column="37" lean-forward="true" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -724,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="337" column="82" lean-forward="false" selection-start-line="337" selection-start-column="80" selection-end-line="337" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/jp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -756,6 +732,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="337" column="82" lean-forward="false" selection-start-line="337" selection-start-column="80" selection-end-line="337" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -764,10 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+        <state relative-caret-position="233">
+          <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
           <folding />
         </state>
       </provider>
