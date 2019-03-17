@@ -4,6 +4,8 @@ var action="";
 var uuid="";
 $(document).ready(function (){
     $("#topimg").change(upload_img);
+     $("#topimg2").change(upload_img);
+      $("#topimg3").change(upload_img);
     $("#shareimg").change(upload_img);
     $("#himg").change(upload_img);
     $(".tttt").click(tttt_click);
