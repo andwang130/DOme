@@ -60,10 +60,9 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="307" column="43" lean-forward="true" selection-start-line="307" selection-start-column="43" selection-end-line="307" selection-end-column="43" />
+            <state relative-caret-position="210">
+              <caret line="352" column="36" lean-forward="true" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -74,11 +73,9 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="123" column="23" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="123" selection-end-column="23" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="226" column="22" lean-forward="true" selection-start-line="226" selection-start-column="22" selection-end-line="226" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,8 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>name</find>
-      <find>xs_tel</find>
       <find>files</find>
       <find>phone</find>
       <find>namelist</find>
@@ -165,6 +160,8 @@
       <find>送砖石</find>
       <find>zhong</find>
       <find>自定义</find>
+      <find>jsgb</find>
+      <find>donate_money</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -588,7 +585,7 @@
         <state relative-caret-position="142">
           <caret line="63" column="24" lean-forward="true" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#1#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -767,20 +764,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="123" column="23" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="123" selection-end-column="23" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="226" column="22" lean-forward="true" selection-start-line="226" selection-start-column="22" selection-end-line="226" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="307" column="43" lean-forward="true" selection-start-line="307" selection-start-column="43" selection-end-line="307" selection-end-column="43" />
+        <state relative-caret-position="210">
+          <caret line="352" column="36" lean-forward="true" selection-start-line="352" selection-start-column="36" selection-end-line="352" selection-end-column="36" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
