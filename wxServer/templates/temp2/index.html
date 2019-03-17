@@ -46,7 +46,16 @@
 </head>
 <body>
 <div class="container container-fill">
+{% if data["endtimes"]<0 %}
+<div id="replystatus" >
+<div class="alert alert-danger alert-dismissible" style="text-align:center;position: fixed;top:40%;z-index: 2; width:80%;margin:0 5%;z-index:9000000" role="alert">
+  <button type="button" class="close"  onclick="hidemod('replystatus')" data-dismiss="alert"><span aria-hidden="true">x</span> </button>
+  <strong>活动已结束</strong>
 
+</div>
+<div class="weui-mask"></div>
+</div>
+   {% end %}
 
 <link href="/wxcss/index2.css" rel="stylesheet">
 

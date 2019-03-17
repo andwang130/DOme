@@ -75,5 +75,7 @@ class SortHanderl(Basehanderl.Basehandelr):
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = pojcetm.www + "/wx/sort?uuid={}".format(uuid)
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-
-                self.render("sort.html", data=data, share=shares, aseedata=aseedata)
+                if pojcetm.TempCode == 1:
+                    self.render("sort.html", data=data, share=shares, aseedata=aseedata)
+                elif pojcetm.TempCode == 2:
+                    self.render("temp2/sort.html", data=data, share=shares, aseedata=aseedata)
