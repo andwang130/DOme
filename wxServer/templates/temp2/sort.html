@@ -165,7 +165,7 @@ function do_barrager(){
   <div id="list_more" class="box" style="margin-top: 16px; text-align: center;margin-bottom: 40px;"><span class="am-text-secondary" onclick="get_list();">点击加载数据</span></div>
   <script>
 var limit = 1;
-var rank=1
+var rank=0
 function get_list(){
 	$("#list_more").html('<div class="am-text-secondary"><span class="am-icon-spinner am-icon-spin"></span> 卖命加载中...</div>');
 	$.ajax({
@@ -182,7 +182,7 @@ function get_list(){
 						var content = '';
 						$(".paihang2").append(list);
 						for(var i=0; i<list.length; i++){
-						   rank=rank+i;
+						   rank++;
 						   content+='<a href="/wx/toupiao?uuid={{data["uuid"]}}&userid='+list[i]["userid"]+'"><li><span>'+rank+'</span>'
 						   +'<span><img src="'+list[i]['avatar']+'"><i>'+list[i]['name']+'</i></span>'
 						   +'<span>'+list[i]['votenum']+'</span></li></a>'
