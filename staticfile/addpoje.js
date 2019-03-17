@@ -103,7 +103,7 @@ function submi_send() {
         topimg2V=""
     }
     var topimg3V=$("#topimgV").attr("src");
-         if(topimg3V=="./resource/images/nopic.jpg")
+      if(topimg3V=="./resource/images/nopic.jpg")
     {
         topimg3V=""
     }
