@@ -121,9 +121,16 @@ function do_barrager(){
 
 
 
-  <div class="swiper-container">
+ <div class="swiper-container">
     <div class="swiper-wrapper">
-       <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png"></a></div>      <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/giftvote/mrzx/mrzx_550.png?1552669838"></a></div>      <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/images/5c8387a212209.jpg"></a></div>                </div>
+        {% for imageur in data["topimges"] %}
+        {% if imageur!="" %}
+       <div class="swiper-slide" ><a href=""><img src="{{ imageur }}"></a></div>
+        {% end %}
+        {% end %}
+{#        <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/giftvote/mrzx/mrzx_550.png?1552668279"></a></div> #}
+{#        <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/images/5c8387a212209.jpg"></a></div>            #}
+    </div>
     <div class="swiper-pagination"></div>
   </div>
 
