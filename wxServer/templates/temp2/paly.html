@@ -344,7 +344,7 @@ body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Ari
 <script>
 $(document).ready(function(){
 $(document).attr("title","打赏钻石");
-   var num=5;
+   var num=1;
 	$(".donate_money_choose .donate_money").click(function(){
 
 		var tip_zuan =$(this).attr("dada-key");
@@ -393,69 +393,59 @@ $(document).attr("title","打赏钻石");
 		   }
 	});
 	$("#weixin").click(function(){
-		if(num <=0){return false;}
 
+                if (num==0) {
+                    dialog2("请选择你要送钻的数量!");
+                    return false;
+                }
 
-		$.ajax({
-			type : "post",
-			url : "/Wxhd/GiftVote/pay/user_id/11/id/550/iid/80539.so",
-			data : {
-				type : 2,
-				num : num,
+                loadingToast("奋力加载");
+                $.ajax({
+                    type: "POST",
+                    url: "/wx/paly?userid={{data["userid"]}}",
+                    data: {giftid: num, count: count},
+                    success: function (str) {
+                        hidemod("loadingToast");
+                        var str=JSON.parse(str);
+                        if (str != null && str != '' && str.error != 1) {
+                            payment = str.data;
+                            console.log(payment.appId);
+                            console.log(payment.timeStamp);
+                            console.log(payment["package"]);
+                            console.log(payment.paySign);
+                            console.log(payment.paySign);
 
-			},
-			dataType : "json",
-			beforeSend : function(XMLHttpRequest) {
-				loadingToast("跳转支付...");
-			},
-			success : function(res) {
-				if (res.status == 1) {
-									 var jsApiParameters = res.jsApiParameters;
-								var jsondata = {
-									appId:jsApiParameters.appId,
-									timeStamp:jsApiParameters.timeStamp,
-									nonceStr:jsApiParameters.nonceStr,
-									package:jsApiParameters.package,
-									signType:jsApiParameters.signType,
-									paySign:jsApiParameters.paySign
-								}
-								var orderid = res.orderid;
-								WeixinJSBridge.invoke("getBrandWCPayRequest",jsondata,function(res){
-									WeixinJSBridge.log(res.err_msg);
-									if(res.err_msg=="get_brand_wcpay_request:ok"){
+                            WeixinJSBridge.invoke("getBrandWCPayRequest", {
+                                    appId: payment.appId,
+                                    timeStamp: payment.timeStamp,
+                                    nonceStr: payment.nonceStr,
+                                    "package": payment["package"],
+                                    signType: payment.signType,
+                                    paySign: payment.paySign
+                                }, function (res) {
+                                    if (res.err_msg == "get_brand_wcpay_request:ok") {
+                                        toast("支付成功");
+                                        setTimeout(location.href = "/wx/toupiao?uuid={{data["uuid"]}}&userid={{data["userid"]}}", 3000)
+                                    } else if (res.err_msg == "get_brand_wcpay_request:cancel") {
+                                        dialog2("已取消支付");
+                                        return false;
+                                    } else {
+                                        dialog2(res.err_msg);
+                                        return false;
+                                    }
+                                }
+                            );
+                        } else {
+                            dialog2(str.msg);
+                        }
+                    },
+                    error: function (err) {
+                        hidemod("loadingToast");
+                        dialog2("发生错误，请刷新后重试！(1)");
+                    }
+                });
+            });
 
-                                        hidemod("loadingToast");
-										dialog2('支付成功');
-										setTimeout(function(){window.location.href="/show_xs/11/550/80539.so?key=WcKglwdggd";},2000);
-
-									}else{
-										if(res.err_msg == "get_brand_wcpay_request:cancel"){
-											var err_msg = "您取消了支付";
-										}else if(res.err_msg == "get_brand_wcpay_request:fail"){
-											var err_msg = "支付失败\n错误信息："+res.err_desc;
-										}else{
-											var err_msg = res.err_msg +"\n"+res.err_desc;
-										}
-										hidemod("loadingToast");
-										dialog2(err_msg);
-
-									}
-								});
-
-
-				}else{
-					hidemod("loadingToast");
-					dialog2(res.msg);
-				}
-			},
-			error : function(res, type) {
-				hidemod("loadingToast");
-				dialog2(res.msg);
-			}
-
-
-
-		});
 
   });
 });

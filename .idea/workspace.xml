@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +61,8 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="350" column="22" lean-forward="true" selection-start-line="350" selection-start-column="22" selection-end-line="350" selection-end-column="22" />
+            <state relative-caret-position="-549">
+              <caret line="405" column="54" lean-forward="true" selection-start-line="405" selection-start-column="54" selection-end-line="405" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -73,9 +74,11 @@
       <file leaf-file-name="paly.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="243" column="21" lean-forward="false" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="164">
+              <caret line="249" column="29" lean-forward="false" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="29" />
+              <folding>
+                <element signature="e#10770#13059#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,8 +86,8 @@
       <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="164">
+              <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -132,11 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>phone</find>
-      <find>namelist</find>
-      <find>bmimg</find>
-      <find>chooseImages</find>
-      <find>introduction</find>
       <find>endif</find>
       <find>vheat</find>
       <find>avatar</find>
@@ -160,8 +158,13 @@
       <find>自定义</find>
       <find>jsgb</find>
       <find>送砖石</find>
-      <find>donate_money</find>
       <find>dada-tip</find>
+      <find>donate_money</find>
+      <find>zdy</find>
+      <find>count</find>
+      <find>zuan</find>
+      <find>num</find>
+      <find>pay</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -746,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -762,18 +757,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="243" column="21" lean-forward="false" selection-start-line="243" selection-start-column="21" selection-end-line="243" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="164">
+          <caret line="249" column="29" lean-forward="false" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="29" />
+          <folding>
+            <element signature="e#10770#13059#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="350" column="22" lean-forward="true" selection-start-line="350" selection-start-column="22" selection-end-line="350" selection-end-column="22" />
+        <state relative-caret-position="-549">
+          <caret line="405" column="54" lean-forward="true" selection-start-line="405" selection-start-column="54" selection-end-line="405" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
