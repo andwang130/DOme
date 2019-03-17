@@ -48,6 +48,7 @@ class Poject(Basehandelr):
         new_uuid=str(uuid.uuid1()).replace("-","")
         data["uuid"]=new_uuid
         data["createtime"]=time.time()
+        data["Adminid"]=self.get_secure_cookie("token")
         for i in pojcetm.pojiceTeptle:
             data[i]=0
         try:
@@ -75,14 +76,15 @@ class Poject(Basehandelr):
             except Exception as e:
                 print(e)
     def get_list(self):
+        Adminid=self.get_secure_cookie("token")
         page = int(self.get_argument("page"))
         key=self.get_argument("key",None)
         data_list=[]
         try:
             if key:
-                coures = self.cooliect.find({"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
+                coures = self.cooliect.find({"Adminid":Adminid,"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
-                coures=self.cooliect.find({}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+                coures=self.cooliect.find({"Adminid":Adminid}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}

@@ -10,6 +10,8 @@ pojectarg = ["titile",#标题
              "voteend",#rp结束事件
              "rstatus", #状态
              "topimgV",#头部图片
+            "topimg2V",
+             "topimg3V"
              "customized", #活动规则
              "buttonpane", #奖品
              "sharetitle",#分享标题
@@ -17,6 +19,7 @@ pojectarg = ["titile",#标题
              "sharedesc", #分享描述
              "rstatus",
              "liwulist",
+             "Adminid",
              ]
 pojiceTeptle = [
                 "votes",  # 投票数

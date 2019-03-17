@@ -52,8 +52,9 @@ function get_info(uuid) {
      $("#voteendtime").text(data["votestart"]+" 至 "+data["voteend"]);
 
 
-    var topimgV=$("#topimgV").attr("src",data["topimgV"]);//
-
+    var topimgV=$("#topimgV").attr("src",data["topimgV"]);
+    var topimg2V=$("#topimg2V").attr("src",data["topimg2V"]);
+ var topimg3V=$("#topimg3V").attr("src",data["topimg3V"]);
     var customized=editor1.html(data["customized"]); //
     var buttonpane=editor2.html(data["buttonpane"]); //
 
@@ -92,6 +93,20 @@ function submi_send() {
     var votestart=$("#votestart").val();
     var voteend=$("#voteend").val();
     var topimgV=$("#topimgV").attr("src");
+    if(topimgV=="./resource/images/nopic.jpg")
+    {
+        topimgV=""
+    }
+    var topimg2V=$("#topimgV").attr("src");
+      if(topimg2V=="./resource/images/nopic.jpg")
+    {
+        topimg2V=""
+    }
+    var topimg3V=$("#topimgV").attr("src");
+         if(topimg3V=="./resource/images/nopic.jpg")
+    {
+        topimg3V=""
+    }
     var customized=$("#customized").val();
     var buttonpane=$("#buttonpane").val();
     var sharetitle=$("#sharetitle").val();
