@@ -74,6 +74,10 @@ class Tpuuser(Basehandelr):
                     data[i] = index
                 else:
                     data[i]=self.get_argument(i,"")
+        if len(data.get("name")) > 32:
+            data["name"] = data.get("name")[0:32]
+        else:
+            data["name"] = data.get("name")
         data["uuid"]=uuid_
         data["liwu"]=0
         data["createtime"]=time.time()
@@ -94,7 +98,10 @@ class Tpuuser(Basehandelr):
         if uuid_poject and namelist:
             for  i in namelist:
                 data=pojcetm.Tpuser_temptle.copy()
-                data["name"]=i.get("name")
+                if len(i.get("name"))>32:
+                    data["name"]=i.get("name")[0:32]
+                else:
+                    data["name"] = i.get("name")
                 data["avatar"]=i.get("avatar")
                 data["uuid"]=uuid_poject
                 data["createtime"] = time.time()
