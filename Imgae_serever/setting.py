@@ -14,6 +14,7 @@ conf_redis={
 }
 url="http://www.nkwwcj.com"
 path="/Imgs/"
+edpath="/editorImages/"
 editorPath="/home/DOme/staticfile/editorImages/"
 IMAGE_PATH="/home/DOme/staticfile/Imgs/"
 SESSION_EXPIRES_SECONDS=86400             #Session的过期时间秒\

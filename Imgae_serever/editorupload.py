@@ -1,6 +1,6 @@
 from tornado.web import RequestHandler
 import uuid
-from setting import IMAGE_PATH,url,path,editorPath
+from setting import IMAGE_PATH,url,path,editorPath,edpath
 import json
 class EditorUpload(RequestHandler):
     def get(self):
@@ -16,5 +16,5 @@ class EditorUpload(RequestHandler):
             new_path=new_uuid+"."+content_type
             with open(editorPath+new_path,"wb") as f:
                f.write(body)
-               data={'odlname':filename,"path":url+editorPath+new_path}
+               data={'odlname':filename,"path":url+edpath+new_path}
         self.write(json.dumps({"error":0,"url":data["path"]}))
