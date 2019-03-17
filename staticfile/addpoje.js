@@ -97,12 +97,12 @@ function submi_send() {
     {
         topimgV=""
     }
-    var topimg2V=$("#topimgV").attr("src");
+    var topimg2V=$("#topimg2V").attr("src");
       if(topimg2V=="./resource/images/nopic.jpg")
     {
         topimg2V=""
     }
-    var topimg3V=$("#topimgV").attr("src");
+    var topimg3V=$("#topimg3V").attr("src");
       if(topimg3V=="./resource/images/nopic.jpg")
     {
         topimg3V=""

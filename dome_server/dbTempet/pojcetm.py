@@ -11,7 +11,7 @@ pojectarg = ["titile",#标题
              "rstatus", #状态
              "topimgV",#头部图片
             "topimg2V",
-             "topimg3V"
+             "topimg3V",
              "customized", #活动规则
              "buttonpane", #奖品
              "sharetitle",#分享标题
