@@ -131,7 +131,7 @@ function submi_send() {
     var data={"titile":titile,"himgV":himgV,"description":description,"votestart":votestart,"voteend":voteend,
        "tiemstatr":tiemstatr,"timeend":timeend,"topimgV":topimgV,"customized":customized,"buttonpane":buttonpane,
        "sharetitle":sharetitle,"shareimgV":shareimgV,"sharedesc":sharedesc,"aptimestart":aptimestart,"aptimeend":aptimeend,
-        "liwulist":list_str,"topimg2V":topimg2V,"topimgV":topimg3V
+        "liwulist":list_str,"topimg2V":topimg2V,"topimg3V":topimg3V
    };
    console.log(data);
    if(action.action) {
