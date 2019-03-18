@@ -27,7 +27,7 @@ class Roothanderl(Basehandelr.Basehandelr):
             self.write(json.dumps(data))
             return
         else:
-            data = {"code": -1, "data": ""}
+            data = {"code": -1, "data": "账号密码错误"}
             self.write(json.dumps(data))
             return
     def get(self):
