@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <!-- site css -->
+    <link rel="stylesheet" href="static/dist/css/site.min.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="static/dist/js/site.min.js"></script>
+</head>
+<body>
+<!--nav-->
+<nav role="navigation" class="navbar navbar-custom">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button data-target="#bs-content-row-navbar-collapse-5" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Admin</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="bs-content-row-navbar-collapse-5" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">前端首页</a></li>
+                <!-- <li class="disabled"><a href="#">Link</a></li> -->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Silverbux <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li class="dropdown-header">Setting</li>
+                        <li class="dropdown-header">登陆</li>
+                        <li class="disabled"><a href="#">注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--header-->
+<div class="container-fluid">
+    <!--面板栏-->
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+            <ul class="list-group panel">
+                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>面板栏</b></li>
+                <li class="list-group-item"><input type="text" class="form-control search-query" placeholder="Search Something"></li>
+                <li class="list-group-item"><a href="/admin"><i class="glyphicon glyphicon-home"></i>首页</a></li>
+                <li class="list-group-item"><a href="/qkshow"><i class="glyphicon glyphicon-certificate"></i>监控案例管理</a></li>
+                <li class="list-group-item"><a href="/shopMa"><i class=" glyphicon glyphicon-star"></i>商品管理</a></li>
+                <li class="list-group-item"><a href="/qkinsatll"><i class="glyphicon glyphicon-th-list"></i>监控安装管理</a></li>
+                <li class="list-group-item"><a href="/customer"><i class="glyphicon glyphicon-user"></i>客户管理</a></li>
+
+                <li class="list-group-item"><a href="/message"><i class="glyphicon glyphicon-user"></i>留言管理</a></li>
+                <li class="list-group-item"><a href="/groupsend"><i class="glyphicon glyphicon-user"></i>短信群发</a></li>
+                <li class="list-group-item"><a href="/activity"><i class="glyphicon glyphicon-user"></i>活动管理</a></li>
+
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-9 content">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><a href="javascript:void(0);" class="toggle-sidebar"><span class="fa fa-angle-double-left" data-toggle="offcanvas" title="Maximize Panel"></span></a>数据总览</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="content-row">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a  href="/customer/create" type="button" class="btn btn-primary btn-block">新增</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <table class="table table-hover">
+                                <thead>
+                                <th>账号</th>
+                                <th>密码</th>
+                                <th>手机号</th>
+                                <th>金额</th>
+                                <th>是否通过</th>
+                                <th>添加时间</th>
+                                <th>操作</th>
+                                </thead>
+                                <tbody>
+
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="page">
+                            <ul class="pagination" id="page_active">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div><!-- panel body -->
+            </div>
+        </div><!-- content -->
+    </div>
+</div>
+<script type="text/javascript">
+
+    var now_page=1;
+    $(document).ready(function () {
+
+
+    })
+
+    function getUser(page) {
+    now_page=page;
+    data = {"page":page}
+    $.ajax({
+        url: '/root',
+        type: 'POST',
+        data: data,
+        success: function (arg) {
+            arg = JSON.parse(arg);
+            data=arg["data"];
+            if (arg["code"] == "0") {
+                body_init(data);
+                page_math(arg["count"])
+            }
+        }
+    })
+    }
+
+function body_init(data) {
+
+
+    for(var i=0;i<data.length;i++)
+    {
+        html="  <tr>\n" +
+            "                                        <td></td>\n" +
+            "                                        <td> </td>\n" +
+            "                                        <td></td>\n" +
+            "                                        <td></td>\n" +
+            "                                        <td></td>\n" +
+            "                                        <td></td>\n"+
+        "                                        <td>\n"+
+        "                                            <a href=\"javascript:void(0);\"  onclick=empty(\""+data[i]["uuid"]+"\") ><i class=\"glyphicon glyphicon-pencil\">清空</i></a>\n"+
+        "                                            <a href=\"javascript:void(0);\"   onclick=adopt(\""+data[i]["uuid"]+"\") ><i class=\"glyphicon glyphicon-pencil\">通过</i></a>\n"+
+        "                                            <br>\n"+
+        "                                            <a href=\"javascript:void(0);\"  onclick=Mdelete(\""+data[i]["uuid"]+"\")><i class=\"glyphicon glyphicon-remove\">删除</i></a>\n"+
+        "                                            <br>\n"+
+        "                                        </td>\n"+
+        "                                    </tr>"
+    }
+
+}
+function page_math(count) {
+   var page_end=Math.ceil(count/25);
+
+   var THML="";
+   var page_html="<li><a href='javacript:get_list({PAGE})'>{PAGE}</a></li>";
+
+   if(page_end>10)
+   {
+       var new_page_end=page_end;
+       if(page_end-now_page>10)
+       {
+           new_page_end=now_page+10;
+       }
+
+       THML+="<li><a page_id='{pageid}' href='javascript:void(0)'>上一页</a></li>".replace(/{pageid}/,now_page-1);
+       for(var i=new_page_end-10;i<new_page_end+1;i++)
+       {
+           if(i==now_page) {
+               THML +="<li class='active'><a href='#'>{PAGE}</a></li>".replace(/{PAGE}/,i);
+           }
+           else
+           {
+               THML += "<li><a page_id='{pageid}' href='#'>{PAGE}</a></li>".replace(/{PAGE}/, i).replace(/{pageid}/, i);
+           }
+       }
+   }
+   else
+   {
+        for(var i=1;i<page_end+1;i++)
+       {
+
+           if(i==now_page) {
+               THML +="<li class='active'><a href='#' >{PAGE}</a></li>".replace(/{PAGE}/,i)
+           }
+           else
+           {
+               THML +="<li><a page_id='{pageid}' href='#' >{PAGE}</a></li>".replace(/{PAGE}/,i).replace(/{pageid}/,i);
+           }
+       }
+   }
+    THML+="<li><a page_id='{pageid}' href='#'>下一页</a></li>".replace(/{pageid}/,now_page+1);
+
+    $("#page_active").html(THML);
+    $("#page_active li a").click(on_a_cliek)
+}
+function  on_a_cliek()
+{
+
+    var page_id=$(this).attr("page_id");
+    now_page=Number(page_id);
+    getUser(Number(page_id));
+}
+function empty(uuid) {
+       sento(uuid,"empty")
+}
+function Mdelete(uuid) {
+     sento(uuid,"delete")
+}
+function adopt(uuid) {
+
+        sento(uuid,"adopt")
+}
+function sento(uuid,action) {
+
+         data = {"uuid":uuid,"action":action}
+    $.ajax({
+        url: '/root',
+        type: 'POST',
+        data: data,
+        success: function (arg) {
+            arg = JSON.parse(arg);
+            data=arg["data"];
+            if (arg["code"] == "0") {
+               getUser(now_page)
+            }
+        }
+    })
+}
+
+</script>
+<!--footer-->
+
+</body>
+</html>

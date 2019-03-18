@@ -80,6 +80,7 @@ Tpuser_temptle={
 
 }
 
+AdminUser={"usname":"","pswd":"","Adminid":"","money":"","createdate":"","uuid":""}
 
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start"]
 

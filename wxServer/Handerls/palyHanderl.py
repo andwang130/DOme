@@ -116,7 +116,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                          "operate": "","uuid": couers["uuid"],
                          "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
                          "votenum": pirce_now * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
-                         "start": 0}
+                         "start": 0,"Adminid":couers["Adminid"]}
                 self.Mongodb["Ordel"].insert_one(order)
                 rq =yield self.get_playapImch(out_trade_no,pirce_now, ip, openid,orderid)
             else:

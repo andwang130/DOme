@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootflat-Admin Template</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon_16.ico"/>
+    <link rel="bookmark" href="favicon_16.ico"/>
+    <!-- site css -->
+    <link rel="stylesheet" href="/dist/css/site.min.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/dist/js/site.min.js"></script>
+    <style>
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #303641;
+            color: #C1C3C6
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" id="form" method="post" role="form" action="/login" onsubmit="">
+        <h3 class="form-signin-heading">Please sign in</h3>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                </div>
+                <input type="text" class="form-control" name="name" id="username" placeholder="Username" autocomplete="off" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class=" glyphicon glyphicon-lock "></i>
+                </div>
+                <input type="password" class="form-control" name="pswd" id="password" placeholder="Password" autocomplete="off" />
+            </div>
+        </div>
+
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+</div>
+<div class="clearfix"></div>
+<script>
+    $("#form").submit(function(e){
+     var usname=$("#username").val()
+     var pswd=$("password").val()
+    if(usname==""||pswd==""){
+         alert("账号密码不可为空")
+        return false
+    }
+    data={"usname":usname,"pswd":pswd,"action":"login"}
+    $.ajax({
+        url: '/root',
+        type: 'POST',
+        data: data,
+        success: function (arg) {
+            arg = JSON.parse(arg);
+            data=arg["data"];
+            if (arg["code"] == "0") {
+                location.href="Rootindex.html"
+
+            }
+            else{
+                alert(data)
+            }
+        }
+    })
+});
+</script>
+<br><br>
+<!--footer-->
+</body>
+</html>

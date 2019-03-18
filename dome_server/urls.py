@@ -1,4 +1,4 @@
-from handel import Userhanderl,Poject,TpuserHandeler,orderHanderl,Blacklist,tpuserscvHandelr,autohanderl
+from handel import Userhanderl,Poject,TpuserHandeler,orderHanderl,Blacklist,tpuserscvHandelr,autohanderl,rootHandel
 path=[("/login",Userhanderl.Userhanderl),
       ("/poject",Poject.Poject),
       ("/Tpuser",TpuserHandeler.Tpuuser),
@@ -6,4 +6,5 @@ path=[("/login",Userhanderl.Userhanderl),
       ("/black",Blacklist.Blacklist),
       ("/tpuserscv",tpuserscvHandelr.tpuserscvHandelr),
        ("/auto_click",autohanderl.clickhanderl),
+      ("/root",rootHandel.Roothanderl)
       ]

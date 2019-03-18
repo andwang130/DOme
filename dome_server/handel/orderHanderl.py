@@ -59,9 +59,9 @@ class Ordel(Basehandelr):
 
         data_list=[]
         if start!=1:
-            coures=self.Mongodb["Ordel"].find({}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+            coures=self.Mongodb["Ordel"].find({"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
         else:
-            coures = self.Mongodb["Ordel"].find({"start":start}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+            coures = self.Mongodb["Ordel"].find({"start":start,"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
 
         for i in coures:
             del i["_id"]
