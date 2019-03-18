@@ -18,6 +18,8 @@ class Roothanderl(Basehandelr.Basehandelr):
             self.adopt()
         elif action=="login":
             self.login()
+        elif action=="getlist":
+            self.getlist()
     def login(self):
         usname = self.get_argument("usname")
         pswd = self.get_argument("pswd")
