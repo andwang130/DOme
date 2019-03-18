@@ -2,6 +2,7 @@
 import Basehandelr
 import json
 import time
+import uuid
 from dbTempet import pojcetm
 class Roothanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
@@ -41,28 +42,34 @@ class Roothanderl(Basehandelr.Basehandelr):
         req_data=[]
         for i in coures:
             del i["_id"]
+            if i["Adminid"]=="":
+                i["Adminid"]="未审核"
+            else:
+                i["Adminid"] = "已经审核"
             req_data.append(i)
         count = coures.count()
         return self.write(json.dumps({"code": 0, "data": req_data, "count": count}))
 
     def delete(self):
-        uuid=self.get_argument("uuid")
-        if uuid:
-            self.Mongodb["AdminUser"].delete_one({"uuid":uuid})
+        uuid_=self.get_argument("uuid")
+        if uuid_:
+            self.Mongodb["AdminUser"].delete_one({"uuid":uuid_})
             return self.write(json.dumps({"code": 0, "data":"删除成功"}))
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
     def empty(self):
-        uuid = self.get_argument("uuid")
-        if uuid:
-            self.Mongodb["AdminUser"].update_one({"uuid": uuid},{{'$set':{"money":0}}})
+        uuid_ = self.get_argument("uuid")
+        if uuid_:
+            self.Mongodb["AdminUser"].update_one({"uuid": uuid_},{{'$set':{"money":0}}})
             return self.write(json.dumps({"code": 0, "data": "清空成功"}))
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
     def adopt(self):
-        uuid = self.get_argument("uuid")
-        if uuid:
-            self.Mongodb["AdminUser"].update_one({"uuid": uuid}, {{'$set': {"Adminid": str(uuid.uuid1()).replace("-","")}}})
+        uuid_ = self.get_argument("uuid")
+        if self.Mongodb["AdminUser"].find_one({"uuid":uuid_}).get("Adminid")!="":
+            return self.write(json.dumps({"code": -1, "data": "该用户已经审核"}))
+        if uuid_:
+            self.Mongodb["AdminUser"].update_one({"uuid": uuid_}, {{'$set': {"Adminid": str(uuid.uuid1()).replace("-","")}}})
             return self.write(json.dumps({"code": 0, "data": "通过"}))
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
