@@ -29,14 +29,14 @@ class clickhanderl(Basehandelr):
         times=int(self.get_argument("times",""))
         status=int(self.get_argument("status",""))
         if uuid_ and start and end and status and times:
-            data={"times":times,"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
+            data={"Adminid":self.get_secure_cookie("token"),"times":times,"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code":0}))
         else:
             self.write(json.dumps({"code": -1}))
     def get_list(self):
         page=int(self.get_argument("page",0))
-        coures=self.Mongodb["autoClick"].find({}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+        coures=self.Mongodb["autoClick"].find({"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
         data_list = []
         for i in coures:
             del i["_id"]
@@ -66,12 +66,12 @@ class clickhanderl(Basehandelr):
         times=int(self.get_argument("times", ""))
         if autoid and uuid and start and end and status:
             data = {"uuid": uuid, "start": start, "end": end, "status": status,"times":times}
-            self.Mongodb["autoClick"].update_one({"autoid":autoid},{"$set":data})
+            self.Mongodb["autoClick"].update_one({"autoid":autoid,"Adminid":self.get_secure_cookie("token")},{"$set":data})
             self.write(json.dumps({"code": 0}))
     def delete(self):
         autoid = self.get_argument("autoid", "")
         if autoid:
-            self.Mongodb["autoClick"].delete_one({"autoid": autoid})
+            self.Mongodb["autoClick"].delete_one({"autoid": autoid,"Adminid":self.get_secure_cookie("token")})
             self.write(json.dumps({"code": 0}))
 class TPhanderl(Basehandelr):
     def get(self):

@@ -19,13 +19,20 @@ class Userhanderl(Basehandelr.Basehandelr):
         self.db_linck()
         usname = self.get_argument("usname")
         pswd = self.get_argument("pswd")
-        if usname == "WWW777" and pswd == "WWW888":
-            data = {"code": 0, "data": ""}
-            self.set_secure_cookie("token", "WWWWWSSSSSSFFFFFFF")
+        couser=self.Mongodb["AdminUser"].find_one({"usname":usname})
+        if couser:
+            if couser.get("pswd")!=pswd:
+                data = {"code": 0, "data": "密码错误"}
+                return  self.write(json.dumps(data))
+            if couser.get("Adminid")=="":
+                data = {"code": 0, "data": "该账号未审核"}
+                return self.write(json.dumps(data))
+            data = {"code": 0, "data": "成功"}
+            self.set_secure_cookie("token", couser["Adminid"])
             self.write(json.dumps(data))
             return
         else:
-            data = {"code": -1, "data": ""}
+            data = {"code": -1, "data": "账号不存在"}
             self.write(json.dumps(data))
             return
     def register(self):

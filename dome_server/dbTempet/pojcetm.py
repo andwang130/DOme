@@ -84,4 +84,4 @@ AdminUser={"usname":"","pswd":"","Adminid":"","money":"","createdate":"","uuid":
 
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start"]
 
-auto_click=["uuid","tiems","start","end","createdate","status"]
+auto_click=["uuid","tiems","start","end","createdate","status","Adminid"]
