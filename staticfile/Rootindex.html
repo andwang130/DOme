@@ -120,11 +120,11 @@ html=""
     for(var i=0;i<data.length;i++)
     {
         html+="  <tr>\n" +
-            "                                        <td>"+data["usname"]+"</td>\n" +
-            "                                        <td> "+data["pswd"]+"</td>\n" +
-            "                                        <td>"+data["money"]+"</td>\n" +
-            "                                        <td>"+data["Adminid"]+"</td>\n" +
-            "                                        <td>"+getLocalTime(data[i]["createtime"])+"</td>\n" +
+            "                                        <td>"+data[i]["usname"]+"</td>\n" +
+            "                                        <td> "+data[i]["pswd"]+"</td>\n" +
+            "                                        <td>"+data[i]["money"]+"</td>\n" +
+            "                                        <td>"+data[i]["Adminid"]+"</td>\n" +
+            "                                        <td>"+getLocalTime(data[i]["createdate"])+"</td>\n" +
             "                                        <td></td>\n"+
         "                                        <td>\n"+
         "                                            <a href=\"javascript:void(0);\"  onclick=empty(\""+data[i]["uuid"]+"\") ><i class=\"glyphicon glyphicon-pencil\">清空</i></a>\n"+
