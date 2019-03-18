@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/Rootindex.html" afterPath="$PROJECT_DIR$/staticfile/Rootindex.html" />
+      <change beforePath="$PROJECT_DIR$/dome_server/handel/rootHandel.py" afterPath="$PROJECT_DIR$/dome_server/handel/rootHandel.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,16 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="129" column="42" lean-forward="false" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,49 +36,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="51" column="84" lean-forward="true" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="120" />
-              <folding>
-                <marker date="1552659448091" expanded="true" signature="2275:2288" ph="..." />
-                <marker date="1552659448091" expanded="true" signature="2304:2315" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="umit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/js/umit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Userhanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rootindex.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rootindex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/Rootindex.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
@@ -109,11 +56,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rootHandel.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rootHandel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+            <state relative-caret-position="326">
+              <caret line="71" column="120" lean-forward="false" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
+              <folding>
+                <element signature="e#24#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playcallbackurl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="16" column="88" lean-forward="true" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -219,9 +178,9 @@
         <option value="$PROJECT_DIR$/staticfile/RootLogin.html" />
         <option value="$PROJECT_DIR$/staticfile/xheditor_skin/register.html" />
         <option value="$PROJECT_DIR$/staticfile/register.html" />
-        <option value="$PROJECT_DIR$/dome_server/handel/rootHandel.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/Rootindex.html" />
+        <option value="$PROJECT_DIR$/dome_server/handel/rootHandel.py" />
       </list>
     </option>
   </component>
@@ -286,6 +245,17 @@
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
               <item name="staticfile" type="462c0819:PsiDirectoryNode" />
               <item name="xheditor_skin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Handerls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -392,15 +362,15 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.49570817" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5064378" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.49356222" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26502147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -545,16 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -567,22 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="59" column="94" lean-forward="false" selection-start-line="59" selection-start-column="94" selection-end-line="59" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="109" column="59" lean-forward="true" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="119" column="55" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -719,14 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="57" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -778,10 +714,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="51" column="84" lean-forward="true" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="120" />
+          <folding>
+            <marker date="1552659448091" expanded="true" signature="2275:2288" ph="..." />
+            <marker date="1552659448091" expanded="true" signature="2304:2315" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/js/umit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="387">
           <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="57" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -794,37 +765,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="51" column="84" lean-forward="true" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="120" />
-          <folding>
-            <marker date="1552659448091" expanded="true" signature="2275:2288" ph="..." />
-            <marker date="1552659448091" expanded="true" signature="2304:2315" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="67" column="41" lean-forward="false" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        <state relative-caret-position="376">
+          <caret line="109" column="59" lean-forward="true" selection-start-line="109" selection-start-column="59" selection-end-line="109" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="61" />
+        <state relative-caret-position="-383">
+          <caret line="119" column="55" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="299">
+          <caret line="16" column="88" lean-forward="true" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
           <folding />
         </state>
       </provider>
@@ -834,6 +794,16 @@
         <state relative-caret-position="276">
           <caret line="123" column="87" lean-forward="true" selection-start-line="123" selection-start-column="87" selection-end-line="123" selection-end-column="87" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="71" column="120" lean-forward="false" selection-start-line="71" selection-start-column="120" selection-end-line="71" selection-end-column="120" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

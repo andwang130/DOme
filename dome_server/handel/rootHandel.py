@@ -60,7 +60,7 @@ class Roothanderl(Basehandelr.Basehandelr):
     def empty(self):
         uuid_ = self.get_argument("uuid")
         if uuid_:
-            self.Mongodb["AdminUser"].update_one({"uuid": uuid_},{{'$set':{"money":0}}})
+            self.Mongodb["AdminUser"].update_one({"uuid": uuid_},{'$set':{"money":0}})
             return self.write(json.dumps({"code": 0, "data": "清空成功"}))
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
@@ -69,7 +69,7 @@ class Roothanderl(Basehandelr.Basehandelr):
         if self.Mongodb["AdminUser"].find_one({"uuid":uuid_}).get("Adminid")!="":
             return self.write(json.dumps({"code": -1, "data": "该用户已经审核"}))
         if uuid_:
-            self.Mongodb["AdminUser"].update_one({"uuid": uuid_}, {{'$set': {"Adminid": str(uuid.uuid1()).replace("-","")}}})
+            self.Mongodb["AdminUser"].update_one({"uuid": uuid_},{'$set':{"Adminid": str(uuid.uuid1()).replace("-","")}})
             return self.write(json.dumps({"code": 0, "data": "通过"}))
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
