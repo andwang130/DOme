@@ -98,7 +98,7 @@
 
     function getUser(page) {
     now_page=page;
-    data = {"page":page}
+    data = {"page":page,"action":"getlist"}
     $.ajax({
         url: '/root',
         type: 'POST',
