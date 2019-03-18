@@ -41,6 +41,7 @@ class Userhanderl(Basehandelr.Basehandelr):
 
         AdminUser["usname"]=usname
         AdminUser["pswd"]=pswd
+        AdminUser["money"]=0
         AdminUser["createdate"]=time.time()
         AdminUser["uuid"]=str(uuid.uuid1()).replace("-","")
         try:
