@@ -10,6 +10,7 @@ class Roothanderl(Basehandelr.Basehandelr):
         action=self.get_argument("action")
         if action!="login" and self.get_secure_cookie("rootck")!="mfsuxcaswesdgaswesfawes":
             return
+        self.db_linck()
         if action=="delete":
             self.delete()
         elif action=="empty":
