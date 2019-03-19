@@ -38,11 +38,13 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="207">
+              <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7279#7356#0#HTML" expanded="false" />
+                <element signature="e#5388#5962#0#HTML" expanded="false" />
+                <element signature="e#6040#8217#0#HTML" expanded="false" />
+                <element signature="e#7283#7360#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,8 +53,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+            <state relative-caret-position="261">
+              <caret line="341" column="19" lean-forward="false" selection-start-line="341" selection-start-column="8" selection-end-line="341" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -131,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>num</find>
       <find>我要</find>
       <find>报名</find>
       <find>pay</find>
@@ -156,11 +157,12 @@
       <find>swiper-container</find>
       <find>活动规则</find>
       <find>uuid_</find>
-      <find>confirmWithCustom</find>
       <find>sendWarningToTop</find>
       <find>sendSuccessToTop</find>
       <find>发送警告的提示框（置顶）</find>
       <find>jquery.min.js</find>
+      <find>confirmWithCustom</find>
+      <find>sendConfirm</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -420,7 +422,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30690828" sideWeight="0.50858366" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30690828" sideWeight="0.50858366" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30690828" sideWeight="0.4914163" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -449,7 +451,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -830,19 +832,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="261">
+          <caret line="341" column="19" lean-forward="false" selection-start-line="341" selection-start-column="8" selection-end-line="341" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="207">
+          <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7279#7356#0#HTML" expanded="false" />
+            <element signature="e#5388#5962#0#HTML" expanded="false" />
+            <element signature="e#6040#8217#0#HTML" expanded="false" />
+            <element signature="e#7283#7360#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
