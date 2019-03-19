@@ -188,7 +188,9 @@
                $.sendWarningToTop('两次密码不一致', 3000, function() {
                    console.log('sendWarningToTop closed');
                })
-            }
+                return false
+         }
+            data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
             $.ajax({
                 url:"/user",
                   type: 'POST',
