@@ -38,12 +38,12 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="560">
+              <caret line="187" column="45" lean-forward="true" selection-start-line="187" selection-start-column="45" selection-end-line="187" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#5063#5637#0#HTML" expanded="false" />
-                <element signature="e#6958#7035#0#HTML" expanded="false" />
+                <element signature="e#6957#7034#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,8 +52,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7964">
-              <caret line="362" column="7" lean-forward="false" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
+            <state relative-caret-position="445">
+              <caret line="357" column="31" lean-forward="true" selection-start-line="357" selection-start-column="31" selection-end-line="357" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -831,20 +831,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7964">
-          <caret line="362" column="7" lean-forward="false" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
+        <state relative-caret-position="445">
+          <caret line="357" column="31" lean-forward="true" selection-start-line="357" selection-start-column="31" selection-end-line="357" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="560">
+          <caret line="187" column="45" lean-forward="true" selection-start-line="187" selection-start-column="45" selection-end-line="187" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#5063#5637#0#HTML" expanded="false" />
-            <element signature="e#6958#7035#0#HTML" expanded="false" />
+            <element signature="e#6957#7034#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

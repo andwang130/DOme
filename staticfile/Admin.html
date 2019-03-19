@@ -178,7 +178,7 @@
         width: 260,
         onBeforeConfirm: function() {
           // onBeforeConfirm返回false，将阻止onConfirm的执行
-          return false;
+          return true;
         },
         onConfirm: function() {
          var oldpswd=$("#oldpswd").val()
