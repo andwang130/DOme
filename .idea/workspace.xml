@@ -38,8 +38,8 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="197" column="10" lean-forward="true" selection-start-line="197" selection-start-column="10" selection-end-line="197" selection-end-column="10" />
+            <state relative-caret-position="215">
+              <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -130,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sorttype</find>
       <find>coures</find>
       <find>get_ap</find>
       <find>PAGE_NUM</find>
@@ -160,6 +159,7 @@
       <find>newpsdw1</find>
       <find>oldpswd</find>
       <find>onBeforeConfirm返回false</find>
+      <find>newpswd1</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -850,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="197" column="10" lean-forward="true" selection-start-line="197" selection-start-column="10" selection-end-line="197" selection-end-column="10" />
+        <state relative-caret-position="215">
+          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
