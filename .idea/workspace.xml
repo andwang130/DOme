@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/Admin.html" afterPath="$PROJECT_DIR$/staticfile/Admin.html" />
-    </list>
+    <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,12 +36,11 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="-475">
+              <caret line="174" column="20" lean-forward="true" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#5388#5962#0#HTML" expanded="false" />
-                <element signature="e#6040#8217#0#HTML" expanded="false" />
                 <element signature="e#7283#7360#0#HTML" expanded="false" />
               </folding>
             </state>
@@ -53,8 +50,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="341" column="19" lean-forward="false" selection-start-line="341" selection-start-column="8" selection-end-line="341" selection-end-column="19" />
+            <state relative-caret-position="629">
+              <caret line="362" column="7" lean-forward="false" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -161,8 +158,8 @@
       <find>sendSuccessToTop</find>
       <find>发送警告的提示框（置顶）</find>
       <find>jquery.min.js</find>
-      <find>confirmWithCustom</find>
       <find>sendConfirm</find>
+      <find>confirmWithCustom</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -832,20 +829,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="341" column="19" lean-forward="false" selection-start-line="341" selection-start-column="8" selection-end-line="341" selection-end-column="19" />
+        <state relative-caret-position="629">
+          <caret line="362" column="7" lean-forward="false" selection-start-line="362" selection-start-column="7" selection-end-line="362" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="-475">
+          <caret line="174" column="20" lean-forward="true" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#5388#5962#0#HTML" expanded="false" />
-            <element signature="e#6040#8217#0#HTML" expanded="false" />
             <element signature="e#7283#7360#0#HTML" expanded="false" />
           </folding>
         </state>
