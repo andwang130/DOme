@@ -187,13 +187,16 @@
              var oldpswd=$("#oldpswd").val()
         var newpsdw1=$("#newpswd1").val()
         var newpswd=$("#newpswd").val()
+
+              console.log(newpsdw1)
+              console.log(newpswd)
             if(newpsdw1!=newpswd){
                $.sendWarningToTop('两次密码不一致', 3000, function() {
                    console.log('sendWarningToTop closed');
                })
                 return false
          }
-         console.log(oldpswd)
+
             var data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
             $.ajax({
                 url:"/user",
