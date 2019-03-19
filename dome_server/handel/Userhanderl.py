@@ -14,6 +14,12 @@ class Userhanderl(Basehandelr.Basehandelr):
             self.login()
         elif action=="register":
             self.register()
+        elif action=="update_pswd":
+            self.update_pswd()
+        elif action=="get_info":
+            self.get_info()
+        elif action=="upload_video":
+            self.upload_video()
     def get(self):
         pass
     def login(self):

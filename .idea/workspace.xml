@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/Admin.html" afterPath="$PROJECT_DIR$/staticfile/Admin.html" />
+      <change beforePath="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" afterPath="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Userhanderl.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Userhanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="109" column="47" lean-forward="false" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+            <state relative-caret-position="483">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="192" column="75" lean-forward="false" selection-start-line="192" selection-start-column="75" selection-end-line="192" selection-end-column="75" />
+            <state relative-caret-position="169">
+              <caret line="192" column="75" lean-forward="false" selection-start-line="192" selection-start-column="64" selection-end-line="192" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#5063#5637#0#HTML" expanded="false" />
@@ -160,8 +160,8 @@
       <find>sendSuccessToTop</find>
       <find>发送警告的提示框（置顶）</find>
       <find>jquery.min.js</find>
-      <find>sendConfirm</find>
       <find>confirmWithCustom</find>
+      <find>sendConfirm</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -220,8 +220,8 @@
         <option value="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/staticfile/jquerytc/index.html" />
         <option value="$PROJECT_DIR$/dome_server/urls.py" />
-        <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/Admin.html" />
+        <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
       </list>
     </option>
   </component>
@@ -803,16 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="109" column="47" lean-forward="false" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
@@ -839,12 +829,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="192" column="75" lean-forward="false" selection-start-line="192" selection-start-column="75" selection-end-line="192" selection-end-column="75" />
+        <state relative-caret-position="169">
+          <caret line="192" column="75" lean-forward="false" selection-start-line="192" selection-start-column="64" selection-end-line="192" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#5063#5637#0#HTML" expanded="false" />
             <element signature="e#6957#7034#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
