@@ -183,11 +183,8 @@
         },
         width: 260,
         onBeforeConfirm: function() {
-          // onBeforeConfirm返回false，将阻止onConfirm的执行
-          return false;
-        },
-        onConfirm: function() {
-         var oldpswd=$("#oldpswd").val()
+
+             var oldpswd=$("#oldpswd").val()
         var newpsdw1=$("#newpswd1").val()
         var newpswd=$("#newpswd").val()
             if(newpsdw1!=newpswd){
@@ -221,6 +218,11 @@
                  }
                 }
             )
+          // onBeforeConfirm返回false，将阻止onConfirm的执行
+          return true;
+        },
+        onConfirm: function() {
+
 
         },
         onCancel: function() {
