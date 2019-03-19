@@ -38,11 +38,11 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="196" column="28" lean-forward="true" selection-start-line="196" selection-start-column="28" selection-end-line="196" selection-end-column="28" />
+            <state relative-caret-position="261">
+              <caret line="186" column="22" lean-forward="false" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7020#7097#0#HTML" expanded="false" />
+                <element signature="e#7021#7098#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,8 +61,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="357" column="31" lean-forward="false" selection-start-line="357" selection-start-column="31" selection-end-line="357" selection-end-column="31" />
+            <state relative-caret-position="422">
+              <caret line="351" column="22" lean-forward="false" selection-start-line="351" selection-start-column="17" selection-end-line="351" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -131,8 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>报名</find>
-      <find>pay</find>
       <find>sorttype</find>
       <find>coures</find>
       <find>get_ap</find>
@@ -161,6 +159,8 @@
       <find>confirmWithCustom</find>
       <find>sendConfirm</find>
       <find>newpsdw1</find>
+      <find>oldpswd</find>
+      <find>onBeforeConfirm返回false</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -823,14 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="357" column="31" lean-forward="false" selection-start-line="357" selection-start-column="31" selection-end-line="357" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -838,6 +830,14 @@
           <folding>
             <element signature="e#24#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="351" column="22" lean-forward="false" selection-start-line="351" selection-start-column="17" selection-end-line="351" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,11 +851,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="196" column="28" lean-forward="true" selection-start-line="196" selection-start-column="28" selection-end-line="196" selection-end-column="28" />
+        <state relative-caret-position="261">
+          <caret line="186" column="22" lean-forward="false" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7020#7097#0#HTML" expanded="false" />
+            <element signature="e#7021#7098#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
