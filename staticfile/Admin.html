@@ -147,8 +147,10 @@
 
      get_admininfp()
  })
+
+
     function get_admininfp() {
-        data={"action":'get_info'}
+        var data={"action":'get_info'}
          $.ajax({
              url: '/user',
              type: 'POST',
@@ -157,7 +159,7 @@
                  arg = JSON.parse(arg);
                 if (arg["code"]==0)
                 {
-                    data=arg["data"]
+                  var data=arg["data"]
                     $("#name").text("用户名："+data["name"])
                     $("#money").text("总金额："+data["money"])
                     $("#video").val(data["videoname"])
