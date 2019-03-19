@@ -143,6 +143,10 @@
 </body>
 
 <script>
+ $(document).ready(function () {
+
+     get_admininfp()
+ })
     function get_admininfp() {
         data={"action":'get_info'}
          $.ajax({
@@ -190,7 +194,7 @@
                })
                 return false
          }
-            data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
+            var data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
             $.ajax({
                 url:"/user",
                   type: 'POST',
