@@ -23,9 +23,9 @@ function  login() {
 }
 function login_ajax(name,pswd)
 {
-    var data={"usname":name,"pswd":pswd};
+    var data={"usname":name,"pswd":pswd,"action":"login"};
      $.ajax({
-        url:'/login',
+        url:'/user',
         type: 'POST',
         data:data,
         success: function (arg) {

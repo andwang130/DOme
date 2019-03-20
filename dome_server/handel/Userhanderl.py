@@ -35,6 +35,7 @@ class Userhanderl(Basehandelr.Basehandelr):
                 data = {"code": 0, "data": "该账号未审核"}
                 return self.write(json.dumps(data))
             data = {"code": 0, "data": "成功"}
+            self.set_secure_cookie("pswd",pswd)
             self.set_secure_cookie("token", couser["Adminid"])
             self.write(json.dumps(data))
             return
