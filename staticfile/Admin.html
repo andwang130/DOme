@@ -169,7 +169,13 @@
                   var data=arg["data"]
                     $("#name").text("用户名："+data["usname"])
                     $("#money").text("总金额："+data["money"])
-                    $("#videoname").val(data["videoname"])
+                    if(data["videoname"]=="")
+                    {
+                        $("#videoname").val("没有视频")
+                    }
+                    else {
+                        $("#videoname").val(data["videoname"])
+                    }
                      $("#videopath").attr("href",data["videourl"])
                 }
                 else{
