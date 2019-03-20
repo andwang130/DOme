@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/addTuouselist.html" afterPath="$PROJECT_DIR$/staticfile/addTuouselist.html" />
+      <change beforePath="$PROJECT_DIR$/staticfile/loading/load-min.js" afterPath="$PROJECT_DIR$/staticfile/loading/load-min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addTuouselist.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addTuouselist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="371">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -111,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load-min.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="load-min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/loading/load-min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="558" lean-forward="false" selection-start-line="5" selection-start-column="558" selection-end-line="5" selection-end-column="558" />
+              <caret line="5" column="979" lean-forward="false" selection-start-line="5" selection-start-column="979" selection-end-line="5" selection-end-column="979" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -164,8 +164,8 @@
       <find>test_mask_2</find>
       <find>数据加载s</find>
       <find>right-content</find>
-      <find>test_mask</find>
       <find>videopath</find>
+      <find>test_mask</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -223,9 +223,9 @@
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/Admin.html" />
-        <option value="$PROJECT_DIR$/staticfile/loading/load-min.js" />
         <option value="$PROJECT_DIR$/staticfile/upload.js" />
         <option value="$PROJECT_DIR$/staticfile/addTuouselist.html" />
+        <option value="$PROJECT_DIR$/staticfile/loading/load-min.js" />
       </list>
     </option>
   </component>
@@ -852,29 +852,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/loading/load.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/loading/load.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="66" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/loading/load-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="558" lean-forward="false" selection-start-line="5" selection-start-column="558" selection-end-line="5" selection-end-column="558" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,9 +880,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        <state relative-caret-position="371">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/loading/load.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/loading/load-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="979" lean-forward="false" selection-start-line="5" selection-start-column="979" selection-end-line="5" selection-end-column="979" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
