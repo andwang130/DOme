@@ -73,13 +73,14 @@ function drop_confirm(mages,url)
     {
          $.ajax({
         url:url,
-        type: 'GET',
+        type: 'POST',
         data:data,
         success: function (arg) {
             var data = JSON.parse(arg);
             $("#pojectlist").html("");
             if (data["code"] == 0)
             {
+                get_list(now_page)
                  $.sendSuccessToTop('删除成功', 3000, function() {
                  console.log('sendSuccessToTop closed');
              });
@@ -100,6 +101,7 @@ function copy(uuid) {
             $("#pojectlist").html("");
             if (data["code"] == 0)
             {
+                  get_list(now_page)
                  $.sendSuccessToTop('复制成功', 3000, function() {
                  console.log('sendSuccessToTop closed');
              });
