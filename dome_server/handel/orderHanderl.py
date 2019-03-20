@@ -12,8 +12,6 @@ class Ordel(Basehandelr):
 
     @verification
     def post(self):
-        if not self.authen():
-            return
         action=self.get_argument("action","")
         if action:
             self.db_linck()

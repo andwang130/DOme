@@ -12,8 +12,6 @@ class Poject(Basehandelr):
 
     @verification
     def post(self):
-        if not self.authen():
-            return
         action=self.get_argument("action",None)
         if not action in ["delete","update","create","get_info","get_list","copy"]:
             self.write(json.dumps({"code":-1,"eeor":"action"}))

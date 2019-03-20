@@ -11,8 +11,6 @@ class Tpuuser(Basehandelr):
 
     @verification
     def post(self):
-        if not self.authen():
-            return
         action=self.get_argument("action",None)
         if action:
             self.db_linck()
