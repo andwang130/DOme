@@ -38,12 +38,12 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+            <state relative-caret-position="397">
+              <caret line="74" column="16" lean-forward="true" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
               <folding>
-                <element signature="e#4408#4481#0" expanded="false" />
-                <marker date="1553097057901" expanded="true" signature="642:648" ph=" " />
-                <marker date="1553097057901" expanded="true" signature="648:654" ph=" " />
+                <element signature="e#4393#4466#0" expanded="false" />
+                <marker date="1553097173631" expanded="true" signature="642:648" ph=" " />
+                <marker date="1553097173631" expanded="true" signature="648:654" ph=" " />
               </folding>
             </state>
           </provider>
@@ -860,12 +860,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="103" column="36" lean-forward="false" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+        <state relative-caret-position="397">
+          <caret line="74" column="16" lean-forward="true" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
           <folding>
-            <element signature="e#4408#4481#0" expanded="false" />
-            <marker date="1553097057901" expanded="true" signature="642:648" ph=" " />
-            <marker date="1553097057901" expanded="true" signature="648:654" ph=" " />
+            <element signature="e#4393#4466#0" expanded="false" />
+            <marker date="1553097173631" expanded="true" signature="642:648" ph=" " />
+            <marker date="1553097173631" expanded="true" signature="648:654" ph=" " />
           </folding>
         </state>
       </provider>
