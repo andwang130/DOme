@@ -18,7 +18,7 @@ var tr="  <tr>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <a href=\"javascript:;\" data-clipboard-action='copy' class=\"js-clip color-default\"\n" +
-    "               data-clipboard-text=\"{复制活动链接}\">复制活动链接</a><br/>\n" +
+    "               data-clipboard-text=\"{复制活动链接}\">复制活动链接</a><br/>\n|<a href='#' class='js-clip' data-clipboard-text=\"{copyuuid}\"></a>" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <div class=\"\">\n" +
@@ -88,6 +88,10 @@ function drop_confirm(mages,url)
         }
     })
     }
+}
+function copyuuid() {
+
+
 }
 function copy(uuid) {
     var data={"action":"copy","uuid":uuid}
