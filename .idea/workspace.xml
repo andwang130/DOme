@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/staticfile/addTuouselist.html" afterPath="$PROJECT_DIR$/staticfile/addTuouselist.html" />
-      <change beforePath="$PROJECT_DIR$/staticfile/loading/load-min.js" afterPath="$PROJECT_DIR$/staticfile/loading/load-min.js" />
-      <change beforePath="$PROJECT_DIR$/staticfile/upload.js" afterPath="$PROJECT_DIR$/staticfile/upload.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +62,7 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="417">
               <caret line="291" column="42" lean-forward="true" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -73,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addTuouselist.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addTuouselist.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="928">
-              <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+            <state relative-caret-position="368">
+              <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -86,8 +84,8 @@
       <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+            <state relative-caret-position="1146">
+              <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -113,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load-min.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="load-min.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/loading/load-min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -138,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>swiper</find>
       <find>swiper-container</find>
       <find>活动规则</find>
       <find>uuid_</find>
@@ -167,6 +164,7 @@
       <find>mask_element_continuious</find>
       <find>test_mask_2</find>
       <find>right-content</find>
+      <find>数据加载s</find>
       <find>videopath</find>
     </findStrings>
   </component>
@@ -225,9 +223,9 @@
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/Admin.html" />
-        <option value="$PROJECT_DIR$/staticfile/addTuouselist.html" />
         <option value="$PROJECT_DIR$/staticfile/upload.js" />
         <option value="$PROJECT_DIR$/staticfile/loading/load-min.js" />
+        <option value="$PROJECT_DIR$/staticfile/addTuouselist.html" />
       </list>
     </option>
   </component>
@@ -854,32 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="291" column="42" lean-forward="true" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/loading/load.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -903,6 +875,32 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1146">
+          <caret line="53" column="28" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="291" column="42" lean-forward="true" selection-start-line="291" selection-start-column="15" selection-end-line="291" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="60" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
