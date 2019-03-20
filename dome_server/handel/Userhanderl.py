@@ -103,7 +103,7 @@ class Userhanderl(Basehandelr.Basehandelr):
                 self.Mongodb["Uservideo"].update_one({"Adminid":Adminid},{"$set":new_video})
             else:
                 self.Mongodb["Uservideo"].insert_one(new_video)
-            self.save_video(new_video["path"])
+            self.save_video(new_video["path"],body)
         data = {"code": 0, "data": "修改成功"}
         return self.write(json.dumps(data))
     def delete_video(self,path):
