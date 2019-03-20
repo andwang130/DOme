@@ -18,7 +18,7 @@ var tr="  <tr>\n" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <a href=\"javascript:;\" data-clipboard-action='copy' class=\"js-clip color-default\"\n" +
-    "               data-clipboard-text=\"{复制活动链接}\">复制链接</a><br/>\n|<a href='#' class='js-clip' data-clipboard-text=\"{copyuuid}\">复制ID</a>" +
+    "               data-clipboard-text=\"{复制活动链接}\">复制链接</a><br/><a href=\"javascript:;\" class='js-clip' data-clipboard-text=\"{copyuuid}\">复制ID</a>" +
     "        </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <div class=\"\">\n" +
