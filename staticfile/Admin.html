@@ -125,7 +125,7 @@
              <span id="videoname"></span>
                         <button  class="btn btn-primary" id="videoupdate">修改</button>
 						<a class="btn btn-primary" id="videopath">查看</a>
-                        <input hidden="hidden" id="files" type="file">
+                        <input hidden id="files" type="file">
 					</div>
 	</div>
 </div>
@@ -258,11 +258,12 @@
             {
 
                 alert("限于MP4格式");
+                return
             }
              var formFile = new FormData();
                formFile.append("video", fiel[0]); //加入文件对象
        $.ajax({
-        url:'/user?action="upload_video',
+        url:'/user?action=upload_video',
         type: 'POST',
         data:formFile,
         processData: false,//用于对data参数进行序列化处理 这里必须false

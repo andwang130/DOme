@@ -165,6 +165,7 @@ function upload_img() {
         if((fiel[0].size/1024/1024)>10)
             {
                 alert("文件过大");
+                return
             }
             filepath=fiel[0].name;
             var extStart=filepath.lastIndexOf(".");
@@ -173,6 +174,7 @@ function upload_img() {
             {
 
                 alert("图片限于png,gif,jpeg,jpg格式");
+                return
             }
              var formFile = new FormData();
                formFile.append(fiel[0].name, fiel[0]); //加入文件对象
@@ -205,6 +207,7 @@ function filse_change() {
         if((fiel[0].size/1024/1024)>10)
             {
                 alert("文件过大");
+                return
             }
             filepath=fiel[0].name;
             var extStart=filepath.lastIndexOf(".");
@@ -213,6 +216,7 @@ function filse_change() {
             {
 
                 alert("图片限于png,gif,jpeg,jpg格式");
+                return
             }
              var formFile = new FormData();
                formFile.append(fiel[0].name, fiel[0]); //加入文件对象
