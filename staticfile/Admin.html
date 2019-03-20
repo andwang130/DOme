@@ -121,7 +121,7 @@
 
      <div class="form-group">
 		<label class="control-label col-sm-2 control-label">视频文件</label>
-          <span class="control-label col-sm-2 control-label" id="videoname">没有视频</span>
+          <span class="control-label col-sm-1 control-label" id="videoname">没有视频</span>
          <div class="col-sm-8 col-xs-12">
                         <button  class="btn btn-primary" id="videoupdate">修改</button>
                         <a class="btn btn-primary" href="#" id="videopath">查看</a>
@@ -212,6 +212,11 @@
          }
 
             var data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
+$('#sendWarningToTop').on('click', function() {
+      $.sendWarningToTop('上传中，勿随意点击', 10000, function() {
+        console.log('sendWarningToTop closed');
+      });
+    });
             $.ajax({
                 url:"/user",
                   type: 'POST',
