@@ -28,7 +28,8 @@ function files_oninpit() {
             }
              formFile.append(fiels[i].name, fiels[i]); //加入文件对象
         }
-         $.mask_element('#test_mask');
+          $.mask_element('#test_mask');
+
         $.ajax({
         url:'/uploadfile',
         type: 'POST',
