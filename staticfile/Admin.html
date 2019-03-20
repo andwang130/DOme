@@ -213,10 +213,7 @@
 
             var data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
 
-      $.sendWarningToTop('上传中，勿随意点击', 10000, function() {
-        console.log('sendWarningToTop closed');
-      });
-  
+
             $.ajax({
                 url:"/user",
                   type: 'POST',
@@ -274,6 +271,10 @@
             }
              var formFile = new FormData();
                formFile.append("video", fiel[0]); //加入文件对象
+      $.sendWarningToTop('上传中，勿随意点击', 3000, function() {
+        console.log('sendWarningToTop closed');
+      });
+
        $.ajax({
         url:'/user?action=upload_video',
         type: 'POST',
