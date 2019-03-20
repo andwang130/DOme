@@ -29,10 +29,10 @@ class Userhanderl(Basehandelr.Basehandelr):
         couser=self.Mongodb["AdminUser"].find_one({"usname":usname})
         if couser:
             if couser.get("pswd")!=pswd:
-                data = {"code": 0, "data": "密码错误"}
+                data = {"code": -1, "data": "密码错误"}
                 return  self.write(json.dumps(data))
             if couser.get("Adminid")=="":
-                data = {"code": 0, "data": "该账号未审核"}
+                data = {"code": -1, "data": "该账号未审核"}
                 return self.write(json.dumps(data))
             data = {"code": 0, "data": "成功"}
             self.set_secure_cookie("pswd",pswd)
