@@ -28,7 +28,7 @@ function files_oninpit() {
             }
              formFile.append(fiels[i].name, fiels[i]); //加入文件对象
         }
-
+         $.mask_element('#test_mask');
         $.ajax({
         url:'/uploadfile',
         type: 'POST',
@@ -51,6 +51,7 @@ function files_oninpit() {
                     var new_data = {"namelist":JSON.stringify(namelist), "action": "create_list","uuid":uuid.uuid};
                     create_list(new_data)
                 }
+                $.mask_close("#test_mask");
 
             }
         }
