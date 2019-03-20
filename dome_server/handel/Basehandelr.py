@@ -20,7 +20,7 @@ def verification(func):
     def Internal(self):
         pswd=self.get_secure_cookie("pswd")
         self.db_linck()
-        if pswd and self.Mongodb["AdminUser"].find_one({"usname":pswd}):
+        if pswd and self.Mongodb["AdminUser"].find_one({"pswd":pswd}):
             func(self)
         else:
             data = {"code": -110, "data": "未登陆"}
