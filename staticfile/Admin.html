@@ -17,6 +17,8 @@
     <script type="text/javascript" src="js/umit.js"></script>
     <script src="jquerytc/js/jquery.min.js"></script>
     <script src="jquerytc/src/jquery.dialog.js"></script>
+    <link rel="stylesheet" href="loading/load.css">
+    <script src="loading/load.css"></script>
 </head>
 <body>
 	<div class="loader" style="display:none">
@@ -271,10 +273,8 @@
             }
              var formFile = new FormData();
                formFile.append("video", fiel[0]); //加入文件对象
-      $.sendWarningToTop('上传中，勿随意点击', 3000, function() {
-        console.log('sendWarningToTop closed');
-      });
 
+        $.mask_fullscreen()
        $.ajax({
         url:'/user?action=upload_video',
         type: 'POST',
@@ -289,6 +289,7 @@
             {
                get_admininfp()
                 var data=arg["data"];
+               $.mask_close();
                  $.sendSuccessToTop('修改成功', 3000, function() {
                  console.log('sendSuccessToTop closed');
              });
