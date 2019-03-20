@@ -212,11 +212,11 @@
          }
 
             var data={"oldpswd":oldpswd,"newpswd":newpswd,"action":"update_pswd"}
-$('#sendWarningToTop').on('click', function() {
+
       $.sendWarningToTop('上传中，勿随意点击', 10000, function() {
         console.log('sendWarningToTop closed');
       });
-    });
+  
             $.ajax({
                 url:"/user",
                   type: 'POST',
