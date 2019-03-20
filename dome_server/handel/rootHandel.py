@@ -4,6 +4,8 @@ import json
 import time
 import uuid
 from dbTempet import pojcetm
+from Basehandelr import verification
+
 class Roothanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
         super(Roothanderl,self).__init__(*args,**kwargs)

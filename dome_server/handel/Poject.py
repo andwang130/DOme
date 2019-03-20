@@ -4,9 +4,13 @@ from dbTempet import pojcetm
 import uuid
 import time
 import settings
+from Basehandelr import verification
+
 class Poject(Basehandelr):
     def get(self):
         self.post()
+
+    @verification
     def post(self):
         if not self.authen():
             return

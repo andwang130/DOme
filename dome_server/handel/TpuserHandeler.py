@@ -3,9 +3,13 @@ from dbTempet import pojcetm
 import time
 import json
 import uuid
+from Basehandelr import verification
+
 class Tpuuser(Basehandelr):
     def get(self):
         self.post()
+
+    @verification
     def post(self):
         if not self.authen():
             return

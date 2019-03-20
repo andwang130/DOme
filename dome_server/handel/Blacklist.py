@@ -2,9 +2,13 @@ import Basehandelr
 import time
 import uuid
 import json
+from Basehandelr import verification
+
 class Blacklist(Basehandelr.Basehandelr):
     def get(self):
         self.post()
+
+    @verification
     def post(self):
         if not self.authen():
             return

@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 from Basehandelr import Basehandelr
 import csv
+from Basehandelr import verification
+
 class tpuserscvHandelr(Basehandelr):
     def get(self):
         if not self.authen():

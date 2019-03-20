@@ -1,4 +1,6 @@
 from Basehandelr import Basehandelr
+from Basehandelr import verification
+
 from dbTempet import pojcetm
 import time
 import uuid
@@ -6,6 +8,7 @@ import json
 class clickhanderl(Basehandelr):
     def get(self):
         self.post()
+    @verification
     def post(self):
         if not self.authen():
             return

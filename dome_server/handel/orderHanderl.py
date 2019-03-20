@@ -4,9 +4,13 @@ import time
 import json
 import uuid
 import random
+from Basehandelr import verification
+
 class Ordel(Basehandelr):
     def get(self):
         self.post()
+
+    @verification
     def post(self):
         if not self.authen():
             return

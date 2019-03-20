@@ -1,10 +1,13 @@
 # -*- coding: UTF-8 -*-
 import Basehandelr
+from Basehandelr import verification
 import json
 import time
 import uuid
 from dbTempet import pojcetm
 import os
+
+
 class Userhanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
         super(Userhanderl,self).__init__(*args,**kwargs)
@@ -66,7 +69,7 @@ class Userhanderl(Basehandelr.Basehandelr):
         except:
             data = {"code": 0, "data": "数据库错误"}
             return self.write(json.dumps(data))
-
+    @verification
     def get_info(self):
         Adminid=self.get_secure_cookie("token")
         if Adminid:
@@ -82,6 +85,8 @@ class Userhanderl(Basehandelr.Basehandelr):
                 coures["videoname"]=""
             data = {"code": 0, "data":coures}
             return self.write(json.dumps(data))
+
+    @verification
     def upload_video(self):
         Adminid = self.get_secure_cookie("token")
         files=self.request.files["video"]
@@ -106,6 +111,8 @@ class Userhanderl(Basehandelr.Basehandelr):
     def save_video(self,path,body):
         with open(path, "wb") as f:
             f.write(body)
+
+    @verification
     def update_pswd(self):
         oldpswd=self.get_argument("oldpswd")
         newpswd=self.get_argument("newpswd")
