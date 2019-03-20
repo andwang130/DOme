@@ -73,6 +73,9 @@ function get_list(page) {
 
                page_math(data["count"])
            }
+              else if(data["code"]==-110){
+               location.href="/login.html"
+           }
         }
     })
 

@@ -32,6 +32,7 @@ function  get_info(autoid) {
                      $("#end").val(data["end"]);
                      $("input[name='status']:radio[value={value}]".replace(/{value}/,data['status'])).attr('checked','true');
                  }
+
              }
          }
      )

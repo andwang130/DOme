@@ -85,6 +85,9 @@ function drop_confirm(mages,userid) {
 
                     location.reload()
                 }
+                 else if(data["code"]==-110){
+               location.href="/login.html"
+           }
             }
         })
     }

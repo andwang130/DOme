@@ -23,6 +23,6 @@ def verification(func):
         if pswd and self.Mongodb["AdminUser"].find_one({"usname":pswd}):
             func(self)
         else:
-            data = {"code": -1, "data": "未登陆"}
+            data = {"code": -110, "data": "未登陆"}
             return self.write(json.dumps(data))
     return Internal

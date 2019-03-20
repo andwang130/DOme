@@ -42,6 +42,9 @@ function get_ordel(page)
                 body_init(data);
                 page_math(arg["count"])
             }
+             else if(arg["code"]==-110){
+               location.href="/login.html"
+           }
         }
     })
 }

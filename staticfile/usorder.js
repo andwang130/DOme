@@ -56,6 +56,9 @@ function get_ordel(userid,page)
                  $("#votenum").text(info["votenum"]);
                  $("#liwu").text(info["liwu"])
             }
+            else if(arg["code"]==-110){
+               location.href="/login.html"
+           }
         }
     })
 }

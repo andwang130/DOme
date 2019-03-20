@@ -42,12 +42,15 @@ function get_ordel(uuid,page)
         type: 'POST',
         data: data,
         success: function (arg) {
-            arg = JSON.parse(arg);
+           var arg = JSON.parse(arg);
             data=arg["data"];
             if (arg["code"] == "0") {
                 body_init(data);
                 page_math(arg["count"])
             }
+             else if(arg["code"]==-110){
+               location.href="/login.html"
+           }
         }
     })
 }

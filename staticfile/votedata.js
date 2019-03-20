@@ -35,6 +35,9 @@ function inti(page) {
                      body_inti(data);
                      page_math(arg["count"])
                  }
+                    else if(arg["code"]==-110){
+               location.href="/login.html"
+           }
              }
          }
      )

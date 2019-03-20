@@ -36,6 +36,9 @@ function get_backlist(page) {
              {
                  backlit_init(json_data["data"])
              }
+                else if(json_data["code"]==-110){
+               location.href="/login.html"
+           }
 
          }
      })
