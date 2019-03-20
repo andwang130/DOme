@@ -122,8 +122,10 @@
      <div class="form-group">
 		<label class="control-label col-sm-2 control-label">视频文件</label>
          <div class="col-sm-8 col-xs-12">
-						<input type="file" class="form-control" name="video" id="name" value="">
-						<a id="videopath">查看</a>
+             <span id="videoname"></span>
+                        <button  class="btn" id="videoupdate">修改</button>
+						<a class="btn" id="videopath">查看</a>
+
 					</div>
 	</div>
 </div>
@@ -160,9 +162,9 @@
                 if (arg["code"]==0)
                 {
                   var data=arg["data"]
-                    $("#name").text("用户名："+data["name"])
+                    $("#name").text("用户名："+data["usname"])
                     $("#money").text("总金额："+data["money"])
-                    $("#video").val(data["videoname"])
+                    $("#videoname").val(data["videoname"])
                      $("#videopath").attr("href",data["videourl"])
                 }
                 else{

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/index.html" afterPath="$PROJECT_DIR$/staticfile/index.html" />
+      <change beforePath="$PROJECT_DIR$/staticfile/Admin.html" afterPath="$PROJECT_DIR$/staticfile/Admin.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
@@ -113,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="18" selection-end-column="57" />
+            <state relative-caret-position="261">
+              <caret line="126" column="60" lean-forward="true" selection-start-line="126" selection-start-column="60" selection-end-line="126" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -164,8 +164,8 @@
       <find>复制活动</find>
       <find>data-clipboard-text=</find>
       <find>copy</find>
-      <find>sendSuccessToTop</find>
       <find>复制活动链接</find>
+      <find>sendSuccessToTop</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -202,7 +202,6 @@
         <option value="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/staticfile/jquerytc/index.html" />
         <option value="$PROJECT_DIR$/dome_server/urls.py" />
-        <option value="$PROJECT_DIR$/staticfile/Admin.html" />
         <option value="$PROJECT_DIR$/staticfile/register.html" />
         <option value="$PROJECT_DIR$/staticfile/login.js" />
         <option value="$PROJECT_DIR$/staticfile/login.html" />
@@ -226,6 +225,7 @@
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/index.js" />
         <option value="$PROJECT_DIR$/staticfile/index.html" />
+        <option value="$PROJECT_DIR$/staticfile/Admin.html" />
       </list>
     </option>
   </component>
@@ -838,14 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="18" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -875,6 +867,14 @@
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="126" column="60" lean-forward="true" selection-start-line="126" selection-start-column="60" selection-end-line="126" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
