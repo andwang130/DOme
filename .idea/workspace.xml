@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/index.html" afterPath="$PROJECT_DIR$/staticfile/index.html" />
       <change beforePath="$PROJECT_DIR$/staticfile/index.js" afterPath="$PROJECT_DIR$/staticfile/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,34 +35,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2001">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="489">
+              <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
               <folding>
-                <marker date="1553096694664" expanded="true" signature="642:648" ph=" " />
-                <marker date="1553096694664" expanded="true" signature="648:654" ph=" " />
+                <element signature="e#4046#4441#0" expanded="false" />
+                <element signature="e#4335#4408#0" expanded="false" />
+                <marker date="1553096930637" expanded="true" signature="642:648" ph=" " />
+                <marker date="1553096930637" expanded="true" signature="648:654" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3357">
-              <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="208">
+              <caret line="183" column="30" lean-forward="true" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rootHandel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+            <state relative-caret-position="330">
+              <caret line="91" column="9" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="91" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -151,7 +152,6 @@
       <find>活动规则</find>
       <find>uuid_</find>
       <find>sendWarningToTop</find>
-      <find>sendSuccessToTop</find>
       <find>发送警告的提示框（置顶）</find>
       <find>jquery.min.js</find>
       <find>confirmWithCustom</find>
@@ -162,6 +162,7 @@
       <find>newpswd1</find>
       <find>sendError</find>
       <find>复制活动</find>
+      <find>sendSuccessToTop</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -220,8 +221,8 @@
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
-        <option value="$PROJECT_DIR$/staticfile/index.js" />
         <option value="$PROJECT_DIR$/staticfile/index.html" />
+        <option value="$PROJECT_DIR$/staticfile/index.js" />
       </list>
     </option>
   </component>
@@ -443,7 +444,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -559,14 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="64" column="19" lean-forward="false" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="138" column="9" lean-forward="false" selection-start-line="136" selection-start-column="5" selection-end-line="138" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -824,17 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2001">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <marker date="1553096694664" expanded="true" signature="642:648" ph=" " />
-            <marker date="1553096694664" expanded="true" signature="648:654" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -863,9 +845,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3357">
-          <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        <state relative-caret-position="208">
+          <caret line="183" column="30" lean-forward="true" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="91" column="9" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="91" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding>
+            <element signature="e#4046#4441#0" expanded="false" />
+            <element signature="e#4335#4408#0" expanded="false" />
+            <marker date="1553096930637" expanded="true" signature="642:648" ph=" " />
+            <marker date="1553096930637" expanded="true" signature="648:654" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>

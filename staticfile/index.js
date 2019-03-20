@@ -71,7 +71,22 @@ function drop_confirm(mages,url)
 
     if(confirm(mages))
     {
-        window.location=url
+         $.ajax({
+        url:url,
+        type: 'GET',
+        data:data,
+        success: function (arg) {
+            var data = JSON.parse(arg);
+            $("#pojectlist").html("");
+            if (data["code"] == 0)
+            {
+                 $.sendSuccessToTop('删除成功', 3000, function() {
+                 console.log('sendSuccessToTop closed');
+             });
+            }
+
+        }
+    })
     }
 }
 function copy(uuid) {
@@ -85,7 +100,9 @@ function copy(uuid) {
             $("#pojectlist").html("");
             if (data["code"] == 0)
             {
-
+                 $.sendSuccessToTop('复制成功', 3000, function() {
+                 console.log('sendSuccessToTop closed');
+             });
             }
 
         }
