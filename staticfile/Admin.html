@@ -114,7 +114,7 @@
 <ul class="we7-page-tab">
 	<li class="active"><a href="#" id="add" >个人中心</a></li>
 </ul>
-<div class="we7-form">
+<div class="we7-form test_mask" id="test_mask">
 	<div class="form-group">
 		<label class="control-label col-sm-4 control-label" id="name">用户名:WWWW</label>
         	<label class="control-label col-sm-2 control-label" id="money">总额:WWWW</label>
@@ -274,7 +274,7 @@
              var formFile = new FormData();
                formFile.append("video", fiel[0]); //加入文件对象
 
-        $.mask_fullscreen()
+       $.mask_element('#test_mask');
        $.ajax({
         url:'/user?action=upload_video',
         type: 'POST',
@@ -289,7 +289,7 @@
             {
                get_admininfp()
                 var data=arg["data"];
-               $.mask_close();
+               $.mask_close("#test_mask");
                  $.sendSuccessToTop('修改成功', 3000, function() {
                  console.log('sendSuccessToTop closed');
              });
