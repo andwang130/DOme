@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/index.js" afterPath="$PROJECT_DIR$/staticfile/index.js" />
+      <change beforePath="$PROJECT_DIR$/staticfile/index.html" afterPath="$PROJECT_DIR$/staticfile/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="2599">
               <caret line="157" column="44" lean-forward="false" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
               <folding>
                 <element signature="e#3964#4037#0" expanded="false" />
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
-              <caret line="166" column="37" lean-forward="false" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="37" />
+            <state relative-caret-position="207">
+              <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -136,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ts.png</find>
       <find>投诉</find>
       <find>头图</find>
       <find>upload_json.php?dir=image</find>
@@ -166,6 +165,7 @@
       <find>data-clipboard-text=</find>
       <find>copy</find>
       <find>sendSuccessToTop</find>
+      <find>复制活动链接</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -224,8 +224,8 @@
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
-        <option value="$PROJECT_DIR$/staticfile/index.html" />
         <option value="$PROJECT_DIR$/staticfile/index.js" />
+        <option value="$PROJECT_DIR$/staticfile/index.html" />
       </list>
     </option>
   </component>
@@ -854,19 +854,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="166" column="37" lean-forward="false" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="2599">
           <caret line="157" column="44" lean-forward="false" selection-start-line="157" selection-start-column="44" selection-end-line="157" selection-end-column="44" />
           <folding>
             <element signature="e#3964#4037#0" expanded="false" />
@@ -874,6 +864,16 @@
             <element signature="e#6766#6839#0" expanded="false" />
             <marker date="1553098105946" expanded="true" signature="642:648" ph=" " />
             <marker date="1553098105946" expanded="true" signature="648:654" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
