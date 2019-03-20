@@ -155,7 +155,9 @@ function get_list(page) {
                }
              var clipboard=new Clipboard('.js-clip');
                clipboard.on("success",function (e) {
-                   alert("复制成功")
+                    $.sendSuccessToTop('复制成功', 3000, function() {
+                 console.log('sendSuccessToTop closed');
+             });
                });
                page_math(data["count"])
            }
