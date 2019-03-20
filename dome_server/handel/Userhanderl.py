@@ -107,7 +107,10 @@ class Userhanderl(Basehandelr.Basehandelr):
         data = {"code": 0, "data": "修改成功"}
         return self.write(json.dumps(data))
     def delete_video(self,path):
-        os.remove(path)
+        try:
+            os.remove(path)
+        except:
+            pass
     def save_video(self,path,body):
         with open(path, "wb") as f:
             f.write(body)
