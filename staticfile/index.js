@@ -49,7 +49,7 @@ var tr="  <tr>\n" +
     "               onclick=\"drop_confirm('您确定要删除吗?删除不可恢复。', '/poject?action=delete&uuid={delteuuid}');\"\n" +
     "               title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a>\n" +
     "            <br/>\n" +
-    "            <a class=\"color-default we7-margin-right\" href='#' rel=\"tooltip\" onclick=\"copy(\"{copyuuid}\")\"\n"  +
+    "            <a class=\"color-default we7-margin-right\" href='#' rel=\"tooltip\" onclick=\"copy('{copyuuid}')\"\n"  +
     "               title=\"复制活动\"><i class=\"fa fa-copy\"></i> 复制活动</a>\n" +
     "        </td>\n" +
     "    </tr>";
