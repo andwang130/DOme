@@ -123,9 +123,9 @@
 		<label class="control-label col-sm-2 control-label">视频文件</label>
          <div class="col-sm-8 col-xs-12">
              <span id="videoname"></span>
-                        <button  class="btn" id="videoupdate">修改</button>
-						<a class="btn" id="videopath">查看</a>
-
+                        <button  class="btn btn-primary" id="videoupdate">修改</button>
+						<a class="btn btn-primary" id="videopath">查看</a>
+                        <input hidden="hidden" id="files" type="file">
 					</div>
 	</div>
 </div>
@@ -148,6 +148,11 @@
  $(document).ready(function () {
 
      get_admininfp()
+     $("#videoupdate").click(function () {
+
+          $("#files").click()
+     })
+     $("#files").change(filse_change)
  })
 
 
@@ -238,5 +243,45 @@
         }
       });
     });
+ function filse_change() {
+     var fiel= $(this).prop('files');
+     var this_=this;
+     console.log(fiel[0]);
+        if((fiel[0].size/1024/1024)>500)
+            {
+                alert("文件过大");
+            }
+            filepath=fiel[0].name;
+            var extStart=filepath.lastIndexOf(".");
+            var ext=filepath.substring(extStart,filepath.length).toUpperCase();
+            if(ext!=".MP4")
+            {
+
+                alert("限于MP4格式");
+            }
+             var formFile = new FormData();
+               formFile.append("video", fiel[0]); //加入文件对象
+       $.ajax({
+        url:'/user?action="upload_video',
+        type: 'POST',
+        data:formFile,
+        processData: false,//用于对data参数进行序列化处理 这里必须false
+        contentType: false, //必须
+        success: function (arg)
+        {
+            arg=JSON.parse(arg);
+
+            if(arg["code"]=="0")
+            {
+               get_admininfp()
+                var data=arg["data"];
+                 $.sendSuccessToTop('修改成功', 3000, function() {
+                 console.log('sendSuccessToTop closed');
+             });
+            }
+        }
+    });
+
+}
 </script>
 </html>
