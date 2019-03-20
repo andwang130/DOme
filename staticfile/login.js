@@ -29,9 +29,13 @@ function login_ajax(name,pswd)
         type: 'POST',
         data:data,
         success: function (arg) {
-            json_data=JSON.parse(arg);
+            var json_data=JSON.parse(arg);
             if (json_data["code"] == 0) {
               window.location.href='/index.html'
+            }else {
+                 $.sendError(json_data["data"], 3000, function() {
+                    console.log('sendError closed');
+      });
             }
         }
     })
