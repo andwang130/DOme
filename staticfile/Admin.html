@@ -121,8 +121,8 @@
 
      <div class="form-group">
 		<label class="control-label col-sm-2 control-label">视频文件</label>
+          <span class="control-label col-sm-2 control-label" id="videoname">没有视频</span>
          <div class="col-sm-8 col-xs-12">
-             <span id="videoname">没有视频</span>
                         <button  class="btn btn-primary" id="videoupdate">修改</button>
                         <a class="btn btn-primary" href="#" id="videopath">查看</a>
 						<a class="btn btn-primary" href="#" id="videodelete">查看</a>
@@ -172,10 +172,10 @@
                     $("#money").text("总金额："+data["money"])
                     if(data["videoname"]=="")
                     {
-                        $("#videoname").val("没有视频")
+                        $("#videoname").text("没有视频")
                     }
                     else {
-                        $("#videoname").val(data["videoname"])
+                        $("#videoname").text(data["videoname"])
                     }
                      $("#videopath").attr("href",data["videourl"])
                 }
