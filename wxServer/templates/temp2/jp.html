@@ -158,7 +158,7 @@ function do_barrager(){
 <div class="divmain10 bg-purple4 bg-blue4 cl-white pd-b-15">
   <div class="divcon">
       {% if data["videourl"]!="" %}
-      <video id="my-video1"  class="video-js"  muted  autoplay="autoplay"  controls="controls"  controlsList="nodownload" width="100%" height="100%"
+      <video id="video"  class="video-js" poster=""  autoplay="autoplay"  controls="controls"  controlsList="nodownload" width="100%" height="100%"
                     data-setup="{}">
                 <source src="{{ data["videourl"] }}" type="video/mp4">
                 <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
@@ -383,6 +383,30 @@ function share_success(){
 	});
 
 	</script>
+ <script type="text/javascript">
+        (function() {
+            var video, output;
+            var scale = 0.8;
+            var initialize = function() {
+                output = document.getElementById("output");
+                video = document.getElementById("video");
+                video.addEventListener('loadeddata', captureImage);
+            };
+            var captureImage = function() {
+                var canvas = document.createElement("canvas");
+                canvas.width = video.videoWidth * scale;
+                canvas.height = video.videoHeight * scale;
+                canvas.getContext('2d').drawImage(video, 0, 0, canvas.width,
+                        canvas.height);
 
+                var img = document.createElement("img");
+                img.src = canvas.toDataURL("image/png");
+                img.width = 400;
+                img.height = 300;
+                output.appendChild(img);
+            };
+            initialize();
+        })();
+    </script>
 </body>
 </html>
