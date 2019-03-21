@@ -80,11 +80,9 @@ function get_info(uuid) {
         }
     })
 }
-var editor1;
-var  editor2;
+
 function submi_send() {
-    editor1.sync();
-    editor2.sync();
+   
     var titile=$("#titile").val();
     var himgV=$("#himgV").attr("src");
     var description=$("#description").val();
