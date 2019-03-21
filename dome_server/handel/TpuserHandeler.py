@@ -98,6 +98,7 @@ class Tpuuser(Basehandelr):
         namelist=json.loads(namelist)
         num=self.Mongodb["poject"].find_one({"uuid": uuid_poject})["participants"];
         if uuid_poject and namelist:
+            sum=0
             for  i in namelist:
                 data=pojcetm.Tpuser_temptle.copy()
                 if len(i.get("name"))>32:
@@ -112,9 +113,10 @@ class Tpuuser(Basehandelr):
                 data["liwu"]=0
                 data_list.append(data)
                 num += 1
+                sum+=1
             try:
                 self.Mongodb["tpUser"].insert_many(data_list)
-                self.Mongodb["poject"].update_one({"uuid":uuid_poject},{"$inc":{"participants":num}});
+                self.Mongodb["poject"].update_one({"uuid":uuid_poject},{"$inc":{"participants":sum}});
                 self.write(json.dumps({"code": 0, "data":""}))
             except Exception as e:
                 self.write(json.dumps({"code": -1, "eeor": "db"}))

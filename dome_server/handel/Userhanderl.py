@@ -99,14 +99,14 @@ class Userhanderl(Basehandelr.Basehandelr):
             coures=self.Mongodb["Uservideo"].find_one({"Adminid":Adminid})
             new_video={"path":VIDEO_PATH+Adminid+file_name,"name":file_name,"Adminid":Adminid,"videourl":VIDEO+Adminid+file_name}
             if coures:
-                self.delete_video(coures["path"])
+                self.delete_videofile(coures["path"])
                 self.Mongodb["Uservideo"].update_one({"Adminid":Adminid},{"$set":new_video})
             else:
                 self.Mongodb["Uservideo"].insert_one(new_video)
             self.save_video(new_video["path"],body)
         data = {"code": 0, "data": "修改成功"}
         return self.write(json.dumps(data))
-    def delete_video(self,path):
+    def delete_videofile(self,path):
         try:
             os.remove(path)
         except:
@@ -128,3 +128,16 @@ class Userhanderl(Basehandelr.Basehandelr):
         else:
             data = {"code": -1, "data": "密码错误"}
             return self.write(json.dumps(data))
+    def delete_video(self):
+        Adminid = self.get_secure_cookie("token")
+        self.db_linck()
+        coures = self.Mongodb["Uservideo"].find_one({"Adminid": Adminid})
+        new_video = {"path": "", "name": "", "Adminid": Adminid,
+                     "videourl":""}
+        if coures:
+            self.delete_videofile(coures["path"])
+            self.Mongodb["Uservideo"].update_one({"Adminid": Adminid}, {"$set": new_video})
+        else:
+            self.Mongodb["Uservideo"].insert_one(new_video)
+        data = {"code": 0, "data": "修改成功"}
+        return self.write(json.dumps(data))
