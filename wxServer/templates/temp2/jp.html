@@ -157,6 +157,13 @@ function do_barrager(){
  <div class="rankp">活动奖品</div>
 <div class="divmain10 bg-purple4 bg-blue4 cl-white pd-b-15">
   <div class="divcon">
+      {% if data["videourl"]!="" %}
+      <video id="my-video1"  class="video-js"   autoplay="autoplay"  controls="controls"  width="100%" height="100%"
+                    data-setup="{}">
+                <source src="{{ data["videourl"] }}" type="video/mp4">
+                <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+            </video>
+      {% end %}
    <p>
 	<br />
 </p>
