@@ -23,6 +23,8 @@ class Userhanderl(Basehandelr.Basehandelr):
             self.get_info()
         elif action=="upload_video":
             self.upload_video()
+        elif action=="delete_video":
+            self.delete_video()
     def get(self):
         pass
     def login(self):
