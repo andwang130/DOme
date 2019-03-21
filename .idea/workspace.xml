@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/auto_tp.html" afterPath="$PROJECT_DIR$/staticfile/auto_tp.html" />
+      <change beforePath="$PROJECT_DIR$/staticfile/index.js" afterPath="$PROJECT_DIR$/staticfile/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,16 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="addTpuser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,17 +34,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auto_tp.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auto_tp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="404">
-              <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+              <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
               <folding>
-                <element signature="n#table#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#thead#0;n#table#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="140" column="163" lean-forward="false" selection-start-line="140" selection-start-column="163" selection-end-line="140" selection-end-column="163" />
+              <folding>
+                <element signature="e#3964#4037#0" expanded="false" />
+                <element signature="e#4510#4583#0" expanded="false" />
+                <element signature="e#6848#6921#0" expanded="false" />
+                <marker date="1553187042076" expanded="true" signature="642:648" ph=" " />
+                <marker date="1553187042076" expanded="true" signature="648:654" ph=" " />
               </folding>
             </state>
           </provider>
@@ -145,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onBeforeConfirm返回false</find>
       <find>newpswd1</find>
       <find>sendError</find>
       <find>复制活动</find>
@@ -175,6 +177,7 @@
       <find>collapse navbar-collapse</find>
       <find>commt</find>
       <find>活动状态</find>
+      <find>we7-padding-bottom clearfix</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -211,7 +214,6 @@
         <option value="$PROJECT_DIR$/dome_server/handel/orderHanderl.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
-        <option value="$PROJECT_DIR$/staticfile/index.js" />
         <option value="$PROJECT_DIR$/staticfile/addTpuser.js" />
         <option value="$PROJECT_DIR$/staticfile/upload.js" />
         <option value="$PROJECT_DIR$/staticfile/loading/load-min.js" />
@@ -235,6 +237,7 @@
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/staticfile/auto_tp.html" />
+        <option value="$PROJECT_DIR$/staticfile/index.js" />
       </list>
     </option>
   </component>
@@ -541,20 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="159" column="16" lean-forward="false" selection-start-line="157" selection-start-column="19" selection-end-line="159" selection-end-column="16" />
-          <folding>
-            <element signature="e#3964#4037#0" expanded="false" />
-            <element signature="e#4510#4583#0" expanded="false" />
-            <element signature="e#6766#6839#0" expanded="false" />
-            <marker date="1553098105946" expanded="true" signature="642:648" ph=" " />
-            <marker date="1553098105946" expanded="true" signature="648:654" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,13 +870,24 @@
     <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
-          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding>
-            <element signature="n#table#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#thead#0;n#table#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#tr#0;n#thead#0;n#table#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="140" column="163" lean-forward="false" selection-start-line="140" selection-start-column="163" selection-end-line="140" selection-end-column="163" />
+          <folding>
+            <element signature="e#3964#4037#0" expanded="false" />
+            <element signature="e#4510#4583#0" expanded="false" />
+            <element signature="e#6848#6921#0" expanded="false" />
+            <marker date="1553187042076" expanded="true" signature="642:648" ph=" " />
+            <marker date="1553187042076" expanded="true" signature="648:654" ph=" " />
           </folding>
         </state>
       </provider>
