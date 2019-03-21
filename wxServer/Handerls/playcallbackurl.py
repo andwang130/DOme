@@ -15,7 +15,8 @@ class playcallbackurl(Basehanderl.Basehandelr):
             orderidcoures= self.Mongodb["Ordel"].find_one({"orderid":orderid})
             if orderidcoures["start"]==0:
                 self.Mongodb["Ordel"].update_one({"orderid":orderid},{"$set":{"start":1}})
-                self.Mongodb["tpUser"].update_one({"userid": orderidcoures["userid"]}, {"$inc": {"votenum": orderidcoures["votenum"],"liwu":orderidcoures["money"]}});
-                self.Mongodb["poject"].update_one({"uuid": orderidcoures["uuid"]}, {"$inc": {"votes": orderidcoures["votenum"],"liwunum":orderidcoures["money"]}});
+                self.Mongodb["tpUser"].update_one({"userid": orderidcoures["userid"]}, {"$inc": {"votenum": orderidcoures["votenum"],"liwu":orderidcoures["money"]}})
+                self.Mongodb["poject"].update_one({"uuid": orderidcoures["uuid"]}, {"$inc": {"votes": orderidcoures["votenum"],"liwunum":orderidcoures["money"]}})
+                self.Mongodb["AdminUser"].update_one({"Adminid":orderid["Adminid"]},{"$inc":{"money":orderidcoures["money"]}})
         data = {"return_code": "<![CDATA[FAIL]]>", "return_msg": "<![CDATA[OK]]>"}
         self.write("SUCCESS")
