@@ -3,6 +3,8 @@ var t_in_click=undefined;
 var action="";
 var uuid="";
 $(document).ready(function (){
+     ue1 = UM.getEditor('myEditor1');
+     ue2 = UM.getEditor('myEditor2');
     $("#topimg").change(upload_img);
      $("#topimg2").change(upload_img);
       $("#topimg3").change(upload_img);
@@ -55,8 +57,8 @@ function get_info(uuid) {
     var topimgV=$("#topimgV").attr("src",data["topimgV"]);
     var topimg2V=$("#topimg2V").attr("src",data["topimg2V"]);
  var topimg3V=$("#topimg3V").attr("src",data["topimg3V"]);
-    var customized=editor1.html(data["customized"]); //
-    var buttonpane=editor2.html(data["buttonpane"]); //
+    ue1.setContent(data["customized"]); //
+    ue2.setContent(data["buttonpane"]); //
 
     var sharetitle=$("#sharetitle").val(data["sharetitle"]); //
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]); //
@@ -107,8 +109,8 @@ function submi_send() {
     {
         topimg3V=""
     }
-    var customized=$("#customized").val();
-    var buttonpane=$("#buttonpane").val();
+    var customized=ue1.getContent()
+    var buttonpane=ue2.getContent()
     var sharetitle=$("#sharetitle").val();
     var shareimgV=$("#shareimgV").attr("src");
     var sharedesc=$("#sharedesc").val();
