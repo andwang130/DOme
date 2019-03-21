@@ -26,10 +26,10 @@
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="133" column="6" lean-forward="true" selection-start-line="133" selection-start-column="6" selection-end-line="133" selection-end-column="6" />
+            <state relative-caret-position="399">
+              <caret line="132" column="10" lean-forward="true" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
               <folding>
-                <element signature="e#10184#10762#0#HTML" expanded="false" />
+                <element signature="e#10183#10761#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -823,10 +823,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="133" column="6" lean-forward="true" selection-start-line="133" selection-start-column="6" selection-end-line="133" selection-end-column="6" />
+        <state relative-caret-position="399">
+          <caret line="132" column="10" lean-forward="true" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
           <folding>
-            <element signature="e#10184#10762#0#HTML" expanded="false" />
+            <element signature="e#10183#10761#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
