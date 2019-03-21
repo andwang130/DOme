@@ -82,7 +82,7 @@ function get_info(uuid) {
 }
 
 function submi_send() {
-   
+
     var titile=$("#titile").val();
     var himgV=$("#himgV").attr("src");
     var description=$("#description").val();
