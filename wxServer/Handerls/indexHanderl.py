@@ -43,6 +43,7 @@ class indexHanderl(Basehanderl.Basehandelr):
             if coures:
                 data = {}
                 data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
+                data["topimges"].append(self.get_frist(uuid))
                 data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()

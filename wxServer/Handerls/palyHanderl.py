@@ -45,6 +45,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
+            data["topimges"].append(self.get_frist(uuid))
             data["titile"] = coures["titile"]
             x = 1
             row_list = []

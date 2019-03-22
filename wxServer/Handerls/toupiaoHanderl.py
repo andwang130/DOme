@@ -39,6 +39,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"vheat": 1}});
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
+            data["topimges"].append(self.get_frist(uuid))
             x = 0
             next_couresl = None
             for i in coureslist:

@@ -30,6 +30,7 @@ class baoming(Basehanderl.Basehandelr):
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
+            data["topimges"].append(self.get_frist(uuid))
             data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimestart"] = coures["aptimestart"]
