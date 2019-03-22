@@ -86,12 +86,12 @@ class Poject(Basehandelr):
         key=self.get_argument("key",None)
         starttime=self.get_argument("start","")
         if starttime:
-            start=time.mktime(time.strptime(starttime, '%Y-%m-%d %H:%M:%S'))
+            start=time.mktime(time.strptime(starttime, '%Y-%m-%d'))
         else:
             start=0
         endtime=self.get_argument("end","")
         if endtime:
-            end=time.mktime(time.strptime(endtime, '%Y-%m-%d %H:%M:%S'))
+            end=time.mktime(time.strptime(endtime, '%Y-%m-%d'))
         else:
             end=1553268580000
         data_list=[]
@@ -99,7 +99,7 @@ class Poject(Basehandelr):
             if key:
                 coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
-                coures=self.cooliect.find({"Adminid":Adminid}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+                coures=self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}
