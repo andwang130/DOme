@@ -79,7 +79,52 @@
   <div ><img></img> <span></span></div>
 
 </div>
+<script>
+//每条弹幕发送间隔
+var imagetrue=false
+var looper_time=5*1000;
+//是否首次执行
+var run_once=true;
+do_barrager();
 
+function do_barrager() {
+    if (run_once) {
+        //如果是首次执行,则设置一个定时器,并且把首次执行置为false
+        looper = setInterval(do_barrager, looper_time);
+        run_once = false;
+    }
+    //获取
+
+    //是否有数据
+
+        //$('.swiper-container').barrager(data);
+$.getJSON("/wx/get_frist?uuid={{ data["uuid"]}}",function(data){
+      //是否有数据
+      if(data.info){
+           //$('.swiper-container').barrager(data);
+
+		   $('#rdlist div img').attr('src',"/images/77a31255d070a53fa92102405bde4220.png");
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){
+				 $("#rdlist").fadeOut(5000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
+
+				 },3000);
+			  });
+
+
+      }
+
+  });
+
+
+
+}
+
+</script>
 
 
 <style>
