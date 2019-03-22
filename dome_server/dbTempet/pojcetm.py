@@ -20,6 +20,7 @@ pojectarg = ["titile",#标题
              "rstatus",
              "liwulist",
              "Adminid",
+             "ratio", #比例
              ]
 pojiceTeptle = [
                 "votes",  # 投票数

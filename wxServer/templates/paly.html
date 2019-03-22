@@ -107,7 +107,7 @@
             <div class="donate_money_choose_p">
                 <div style="display:flex;justify-content:center;margin-bottom:20px">
                     <div id="zval" style="font-weight:500;font-size:130%;" class="donate_money_edit_text">为{{data["index"]}}号 {{data["name"]}}
-                        送 1钻=3票
+                        送 1钻={{ data["ratio"] }}票
                     </div>
                 </div>
 
@@ -179,7 +179,7 @@
     <script>var pay = true;
     var znum = 1;
     var zuan_max = 4000;
-    var zuan_rate = 3;
+    var zuan_rate = {{ data["ratio"] }};
     var zdy = 0;
 
     function jsgb() {

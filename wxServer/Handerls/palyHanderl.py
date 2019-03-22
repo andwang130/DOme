@@ -62,6 +62,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimestart"] = coures["tiemstatr"]
             data["aptimeend"] = coures["timeend"]
+            data["ratio"]=coures["ratio"]
             data["liwulist"] = liwulist
             data["name"] = usercoures["name"]
             data["index"] = usercoures["index"]

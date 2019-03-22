@@ -63,6 +63,7 @@ function get_info(uuid) {
     var sharetitle=$("#sharetitle").val(data["sharetitle"]); //
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]); //
     var sharedesc=$("#sharedesc").val(data["sharedesc"]);//
+                    $("#ratio").val(data["ratio"])
     // $(":radio[name='rstatus'][value="+data['rstatus']+"]").attr("checked","checked");
 
 
@@ -107,6 +108,7 @@ function submi_send() {
     {
         topimg3V=""
     }
+    var ratio=$("#ratio").val()
     var customized=ue1.getContent()
     var buttonpane=ue2.getContent()
     var sharetitle=$("#sharetitle").val();
@@ -131,7 +133,7 @@ function submi_send() {
     var data={"titile":titile,"himgV":himgV,"description":description,"votestart":votestart,"voteend":voteend,
        "tiemstatr":tiemstatr,"timeend":timeend,"topimgV":topimgV,"customized":customized,"buttonpane":buttonpane,
        "sharetitle":sharetitle,"shareimgV":shareimgV,"sharedesc":sharedesc,"aptimestart":aptimestart,"aptimeend":aptimeend,
-        "liwulist":list_str,"topimg2V":topimg2V,"topimg3V":topimg3V
+        "liwulist":list_str,"topimg2V":topimg2V,"topimg3V":topimg3V,"ratio":ratio
    };
    console.log(data);
    if(action.action) {
