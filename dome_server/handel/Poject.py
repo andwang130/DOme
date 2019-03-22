@@ -42,6 +42,7 @@ class Poject(Basehandelr):
     def update(self,uuid_,data):
         try:
             data["Adminid"] = self.get_secure_cookie("token")
+            data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M:%S'))
             self.cooliect.update_one({"uuid":uuid_,"Adminid":data["Adminid"]}, {'$set':data})
             self.write(json.dumps({"code": 0}))
         except Exception as e:
@@ -51,6 +52,7 @@ class Poject(Basehandelr):
         new_uuid=str(uuid.uuid1()).replace("-","")
         data["uuid"]=new_uuid
         data["createtime"]=time.time()
+        data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M:%S'))
         data["Adminid"]=self.get_secure_cookie("token")
         for i in pojcetm.pojiceTeptle:
             data[i]=0
@@ -82,12 +84,22 @@ class Poject(Basehandelr):
         Adminid=self.get_secure_cookie("token")
         page = int(self.get_argument("page"))
         key=self.get_argument("key",None)
+        starttime=self.get_argument("starttime")
+        if starttime:
+            start=time.mktime(time.strptime(starttime, '%Y-%m-%d %H:%M:%S'))
+        else:
+            start=0
+        endtime=self.get_argument("starttime")
+        if endtime:
+            end=time.mktime(time.strptime(endtime, '%Y-%m-%d %H:%M:%S'))
+        else:
+            end=1553268580000
         data_list=[]
         try:
             if key:
-                coures = self.cooliect.find({"Adminid":Adminid,"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
+                coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
-                coures=self.cooliect.find({"Adminid":Adminid}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+                coures=self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}

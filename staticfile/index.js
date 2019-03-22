@@ -61,9 +61,14 @@ $(document).ready(
     }
 );
 var key;
+var start
+var end=
 function set_key() {
 
     key=$("#keyword").val();
+    start=$("#start").val()
+    end=$("#end").val()
+
     get_list(1)
 }
 function drop_confirm(mages,url)
@@ -115,7 +120,7 @@ function copy(uuid) {
 }
 function get_list(page) {
     now_page=page;
-    data={"action":"get_list","page":page};
+    data={"action":"get_list","page":page,"start":start,"end":end};
     if(key)
     {
         data["key"]=key
