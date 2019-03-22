@@ -82,7 +82,7 @@
  </style>
 <!-- <div class="tousu"><p><a href="/jubao/jubao.html" style="color:#fff">投诉</a></p></div> -->
 <style>
-#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;top:12%;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
+#rdlist{display:none;margin-left:-100%;position:fixed;left:0px;z-index:999999;padding:5px 5px 5px 2px;background:rgba(0,0,0,0.5);border-top-right-radius:20px;border-bottom-right-radius:20px;color:#fff;overflow:hidden;height:35px;line-height:35px;font-size:12px}
 #rdlist div{margin-top:-5px}
 #rdlist div img{width:30px;height:30px;border-radius:20px;margin-top:-2px}
 </style>
@@ -109,18 +109,27 @@ function do_barrager() {
     //是否有数据
 
         //$('.swiper-container').barrager(data);
+$.getJSON("/wx/get_frist?uuid={{ data["uuid"]}}",function(data){
+      //是否有数据
+      if(data.info){
+           //$('.swiper-container').barrager(data);
 
-        $('#rdlist div img').attr('src' );
-        $('#rdlist div span').text("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        $("#rdlist").show();
-        $("#rdlist").animate({marginLeft: "0px"}, 500, 'swing', function () {
-            setTimeout(function () {
-                $("#rdlist").fadeOut(1000, function () {
-                    $("#rdlist").css('margin-left', "-100%");
-                });
+		   $('#rdlist div img').attr('src',"/images/77a31255d070a53fa92102405bde4220.png");
+		   $('#rdlist div span').text(data.info);
+		   $("#rdlist").show();
+			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
+				 setTimeout(function(){
+				 $("#rdlist").fadeOut(5000,function(){
+				   $("#rdlist").css('margin-left',"-100%");
+				 });
 
-            }, 3000);
-        });
+				 },3000);
+			  });
+
+
+      }
+
+  });
 
 
 

@@ -104,3 +104,13 @@ class Getlist(Basehanderl.Basehandelr):
 
     def get(self):
         pass
+class Get_frist(Basehanderl.Basehandelr):
+    def get(self):
+        pass
+    def post(self):
+        uuid=self.get_argument("uuid","")
+        if uuid:
+            couses=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(1).sort(["votenum",-1])
+            if couses:
+                data={"info":"恭喜{}获得第1名".format(couses[0]["name"])}
+                self.write(json.dumps(data))

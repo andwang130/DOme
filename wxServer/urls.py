@@ -12,4 +12,5 @@ path=[
     ("/wx/auoth",auoth.auoth),
     ("/wx/playcallbackurl",playcallbackurl.playcallbackurl),
     ("/wx/tpinfo",toupiaoHanderl.toupiaoinfoHanderl)
+    ("/wx/get_frist",indexHanderl.Get_frist)
       ]
