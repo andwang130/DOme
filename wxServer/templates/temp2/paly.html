@@ -303,7 +303,7 @@ body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Ari
 
 
 <div class="donate_avatar_p"> <a href="/show_xs/11/550/80539.so?key=WcKglwdggd"><img class="donate_avatar" src="http://hd.shasem001.cn/Uploads/images/5c8652f591074.png" /></a></div>
-	<div class="donate_name">为{{ data["index"] }}号 {{ data["name"] }} 送<span id="tip_zuan">1</span>钻 = <span id="tip_piao">3</span>票</div>
+	<div class="donate_name">为{{ data["index"] }}号 {{ data["name"] }} 送<span id="tip_zuan">1</span>钻 = <span id="tip_piao">{{ data["ratio"] }}</span>票</div>
 	<div class="donate_money_p_p">
 		<div class="donate_money_choose_p">
 
@@ -322,7 +322,7 @@ body{position:relative;font-family:"微软雅黑","Helvetica Neue",Helvetica,Ari
 			</div>
 		</div>
 		<div class="donate_money_edit">
-			<div class="donate_money_edit_text"><b>注:</b> 1元打赏1钻，1钻等于3票</div>
+			<div class="donate_money_edit_text"><b>注:</b> 1元打赏1钻，1钻等于{{ data["ratio"] }}票</div>
 			<input name="ptiefen" type="number" style="display:none" class="donate_money_input" id="money" placeholder="请输入要购买的钻石数量" />
 		</div>
 	</div>
@@ -385,7 +385,7 @@ $(document).attr("title","打赏钻石");
 		   }else{
 		     num=Math.round(input);
 			 $('#money').val(num);
-			 var tip_piao=num*3;
+			 var tip_piao=num*{{ data["ratio"] }};
 			 $("#tip_zuan").text(num);
 			 $('#tip_piao').text(tip_piao);
 			  $('#weixin').css('background','#44b549');
