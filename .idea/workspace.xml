@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py" afterPath="$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/index.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
       <change beforePath="$PROJECT_DIR$/wxServer/urls.py" afterPath="$PROJECT_DIR$/wxServer/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +90,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            <state relative-caret-position="322">
+              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -838,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="322">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding />
         </state>
       </provider>
