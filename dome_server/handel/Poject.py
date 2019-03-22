@@ -42,7 +42,7 @@ class Poject(Basehandelr):
     def update(self,uuid_,data):
         try:
             data["Adminid"] = self.get_secure_cookie("token")
-            data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M:%S'))
+            data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
             self.cooliect.update_one({"uuid":uuid_,"Adminid":data["Adminid"]}, {'$set':data})
             self.write(json.dumps({"code": 0}))
         except Exception as e:
@@ -52,7 +52,7 @@ class Poject(Basehandelr):
         new_uuid=str(uuid.uuid1()).replace("-","")
         data["uuid"]=new_uuid
         data["createtime"]=time.time()
-        data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M:%S'))
+        data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
         data["Adminid"]=self.get_secure_cookie("token")
         for i in pojcetm.pojiceTeptle:
             data[i]=0
@@ -99,7 +99,7 @@ class Poject(Basehandelr):
             if key:
                 coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
-                coures=self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+                coures=self.cooliect.find({"Adminid":Adminid}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}
