@@ -107,7 +107,7 @@ class Getlist(Basehanderl.Basehandelr):
         pass
 class Get_frist(Basehanderl.Basehandelr):
     def get(self):
-        pass
+        self.post()
     def post(self):
         uuid=self.get_argument("uuid","")
         if uuid:
