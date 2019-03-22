@@ -62,7 +62,7 @@ $(document).ready(
 );
 var key;
 var start
-var end=
+var end
 function set_key() {
 
     key=$("#keyword").val();
