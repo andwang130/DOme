@@ -114,7 +114,7 @@ $.getJSON("/wx/get_frist?uuid={{ data["uuid"]}}",function(data){
       if(data.info){
            //$('.swiper-container').barrager(data);
 
-		   $('#rdlist div img').attr('src',"/images/77a31255d070a53fa92102405bde4220.png");
+		   $('#rdlist div img').attr('src',data.image);
 		   $('#rdlist div span').text(data.info);
 		   $("#rdlist").show();
 			 $("#rdlist").animate({marginLeft:"0px"},500,'swing',function(){
