@@ -145,7 +145,7 @@ $.getJSON("/wx/get_frist?uuid={{ data["uuid"]}}",function(data){
     <div class="swiper-wrapper">
         {% for imageur in data["topimges"] %}
         {% if imageur!="" %}
-       <div class="swiper-slide" ><a href=""><img src="{{ imageur }}"></a></div>
+       <div class="swiper-slide" ><a href=""><img style="height: 340px" src="{{ imageur }}"></a></div>
         {% end %}
         {% end %}
 {#        <div class="swiper-slide" ><a href=""><img src="http://hd.shasem001.cn/Uploads/giftvote/mrzx/mrzx_550.png?1552668279"></a></div> #}
