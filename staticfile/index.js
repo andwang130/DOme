@@ -244,7 +244,7 @@ function  on_a_cliek()
 //         window.clipboardData.setData("Text",t);
 //         alert("成功复制")
 //     }
-function fun_date(aa){
+function fun_date(AddDayCount){
     var dd = new Date();
     dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
     var y = dd.getFullYear();
