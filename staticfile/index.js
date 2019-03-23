@@ -261,16 +261,16 @@ function times_get() {
     times=$(this).text()
     get_list(1)
 }
-function get_end() {
+function get_end(e) {
 
-    var text= $(this).text()
+    var text= $(e).text()
     if(text=="已经结束的"){
         findend="end"
-         $(this).text("全部")
+         $(e).text("全部")
     }
     else if(text=="全部"){
         findend=""
-        $(this).text("已经结束的")
+        $(e).text("已经结束的")
     }
   get_list(1)
 

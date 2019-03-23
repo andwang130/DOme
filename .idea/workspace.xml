@@ -16,11 +16,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="265" column="28" lean-forward="true" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
+            <state relative-caret-position="1171">
+              <caret line="267" column="21" lean-forward="true" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
               <folding>
-                <marker date="1553352794068" expanded="true" signature="642:648" ph=" " />
-                <marker date="1553352794068" expanded="true" signature="648:654" ph=" " />
+                <marker date="1553353072381" expanded="true" signature="642:648" ph=" " />
+                <marker date="1553353072381" expanded="true" signature="648:654" ph=" " />
               </folding>
             </state>
           </provider>
@@ -59,8 +59,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="174" column="10" lean-forward="true" selection-start-line="174" selection-start-column="10" selection-end-line="174" selection-end-column="10" />
+            <state relative-caret-position="353">
+              <caret line="181" column="40" lean-forward="false" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -160,9 +160,9 @@
       <find>value</find>
       <find>Tpuser_temptle</find>
       <find>Tpuser</find>
-      <find>添加获得</find>
       <find>primary_click</find>
       <find>已付款订单</find>
+      <find>添加获得</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -839,19 +839,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="265" column="28" lean-forward="true" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
+        <state relative-caret-position="1171">
+          <caret line="267" column="21" lean-forward="true" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
           <folding>
-            <marker date="1553352794068" expanded="true" signature="642:648" ph=" " />
-            <marker date="1553352794068" expanded="true" signature="648:654" ph=" " />
+            <marker date="1553353072381" expanded="true" signature="642:648" ph=" " />
+            <marker date="1553353072381" expanded="true" signature="648:654" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="174" column="10" lean-forward="true" selection-start-line="174" selection-start-column="10" selection-end-line="174" selection-end-column="10" />
+        <state relative-caret-position="353">
+          <caret line="181" column="40" lean-forward="false" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
           <folding />
         </state>
       </provider>
