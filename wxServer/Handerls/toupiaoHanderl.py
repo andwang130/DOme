@@ -139,4 +139,5 @@ class toupiaoinfoHanderl(Basehanderl.Basehandelr):
         data={}
         data["name"] = usercoures["name"]
         data["index"] = usercoures["index"]
+        data["uuid"]=usercoures["uuid"]
         self.render("temp2/toupiao.html", data=data)

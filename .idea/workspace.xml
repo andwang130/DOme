@@ -13,48 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3565">
-              <caret line="155" column="230" lean-forward="false" selection-start-line="155" selection-start-column="230" selection-end-line="155" selection-end-column="230" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="139" column="123" lean-forward="false" selection-start-line="139" selection-start-column="123" selection-end-line="139" selection-end-column="123" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/pojcetm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="60" column="61" lean-forward="false" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,9 +56,51 @@
       <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="112" column="59" lean-forward="false" selection-start-line="112" selection-start-column="59" selection-end-line="112" selection-end-column="59" />
+            <state relative-caret-position="668">
+              <caret line="141" column="37" lean-forward="false" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/toupiao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-483">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="100" column="45" lean-forward="false" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="155" column="8" lean-forward="false" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toushuHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -285,6 +285,19 @@
               <item name="wxServer" type="462c0819:PsiDirectoryNode" />
               <item name="Handerls" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="temp2" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -420,22 +433,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="63" column="24" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3197">
-          <caret line="139" column="123" lean-forward="false" selection-start-line="139" selection-start-column="123" selection-end-line="139" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/backlist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -518,6 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -553,6 +551,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,6 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" column="8" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1577">
@@ -623,13 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
           <caret line="135" column="9" lean-forward="false" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2945">
-          <caret line="155" column="8" lean-forward="false" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -781,10 +767,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="100" column="45" lean-forward="false" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="155" column="8" lean-forward="false" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="112" column="59" lean-forward="false" selection-start-line="112" selection-start-column="59" selection-end-line="112" selection-end-column="59" />
+        <state relative-caret-position="668">
+          <caret line="141" column="37" lean-forward="false" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
           <folding />
         </state>
       </provider>
