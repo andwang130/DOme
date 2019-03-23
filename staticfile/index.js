@@ -245,12 +245,12 @@ function  on_a_cliek()
 //         alert("成功复制")
 //     }
 function fun_date(aa){
-    var date1 = new Date(),
-        time1=date1.getFullYear()+"-"+(date1.getMonth()+1)+"-"+date1.getDate();//time1表示当前时间
-    var date2 = new Date(date1);
-    date2.setDate(date1.getDate()+aa);
-    var time2 = date2.getFullYear()+"-"+(date2.getMonth()+1)+"-"+date2.getDate();
-    return time2
+    var dd = new Date();
+    dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+    var y = dd.getFullYear();
+    var m = (dd.getMonth()+1)<10?"0"+(dd.getMonth()+1):(dd.getMonth()+1);//获取当前月份的日期，不足10补0
+    var d = dd.getDate()<10?"0"+dd.getDate():dd.getDate();//获取当前几号，不足10补0
+    return y+"-"+m+"-"+d;
 }
 function times_get() {
      key="";
