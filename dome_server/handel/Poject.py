@@ -123,7 +123,7 @@ class Poject(Basehandelr):
             data={}
             coures=self.cooliect.find_one({"uuid":uuid_})
             for i in pojcetm.pojectarg:
-                data[i]=coures[i]
+                data[i]=coures.get(i)
             for i in pojcetm.pojiceTeptle:
                 data[i] = 0
             data["createtime"]=time.time()
