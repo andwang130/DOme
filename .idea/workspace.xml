@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/dome_server/handel/Poject.py" beforeDir="false" afterPath="$PROJECT_DIR$/dome_server/handel/Poject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="253" column="1" lean-forward="true" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
+            <state relative-caret-position="211">
+              <caret line="155" column="230" lean-forward="true" selection-start-line="155" selection-start-column="230" selection-end-line="155" selection-end-column="230" />
               <folding>
                 <element signature="e#540#546#0" expanded="true" />
                 <element signature="e#546#552#0" expanded="true" />
@@ -69,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+            <state relative-caret-position="568">
+              <caret line="124" selection-start-line="124" selection-end-line="124" />
             </state>
           </provider>
         </entry>
@@ -150,9 +151,9 @@
       <find>carousel</find>
       <find>.we7-padding-bottom</find>
       <find>times</find>
-      <find>primary_click</find>
       <find>this</find>
       <find>pojectarg</find>
+      <find>primary_click</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -211,8 +212,8 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
         <option value="$PROJECT_DIR$/staticfile/css/common.css" />
         <option value="$PROJECT_DIR$/staticfile/index.html" />
-        <option value="$PROJECT_DIR$/staticfile/index.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Poject.py" />
+        <option value="$PROJECT_DIR$/staticfile/index.js" />
       </list>
     </option>
   </component>
@@ -736,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/orderlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -772,17 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="253" column="1" lean-forward="true" selection-start-line="253" selection-start-column="1" selection-end-line="253" selection-end-column="1" />
-          <folding>
-            <element signature="e#540#546#0" expanded="true" />
-            <element signature="e#546#552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -790,10 +773,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/orderlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="124" column="24" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+        <state relative-caret-position="568">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="155" column="230" lean-forward="true" selection-start-line="155" selection-start-column="230" selection-end-line="155" selection-end-column="230" />
+          <folding>
+            <element signature="e#540#546#0" expanded="true" />
+            <element signature="e#546#552#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
