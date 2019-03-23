@@ -66,7 +66,7 @@ class baoming(Basehanderl.Basehandelr):
         data["liwu"] = 0
         data["vheat"]=0
         data["votenum"]=0
-        data["status"]=0
+        data["status"]=1
         data["createtime"] = time.time()
         data["userid"] = str(uuid.uuid1()).replace("-", "")
         data["index"] = self.Mongodb["poject"].find_one({"uuid": uuid_})["participants"] + 1;

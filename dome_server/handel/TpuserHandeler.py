@@ -100,7 +100,7 @@ class Tpuuser(Basehandelr):
         uuid_poject = self.get_argument("uuid", "")
         namelist=self.get_argument("namelist")
         namelist=json.loads(namelist)
-        num=self.Mongodb["poject"].find_one({"uuid": uuid_poject})["participants"];
+        num=self.Mongodb["poject"].find_one({"uuid": uuid_poject})["participants"]+1;
         if uuid_poject and namelist:
             sum=0
             for  i in namelist:
