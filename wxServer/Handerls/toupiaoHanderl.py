@@ -113,7 +113,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                         self.write(json.dumps({"status": 1, "msg": "成功"}))
                     else:
                         if int(num)>=pojectcoures["rangenum"]:
-                            print(num,pojectcoures["rangenum"])
                             self.write(json.dumps({"status": 0, "msg": "每{}个小时可投票{}次，你已经投过票了".format(pojectcoures["rangetime"],pojectcoures["rangenum"])}))
                         else:
                             order = {"orderid": str(uuid.uuid1()).replace("-", ""), "userid": userid, "openid": openid,
