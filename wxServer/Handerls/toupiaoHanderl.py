@@ -109,7 +109,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                         self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                         self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
                         # self.Mongodb["Ordel"].insert_one(order)
-                        myreids.set(openid+couers["uuid"],1,ex=couers["rangetime"]*3600)
+                        myreids.set(openid+couers["uuid"],1,ex=pojectcoures["rangetime"]*3600)
                         self.write(json.dumps({"status": 1, "msg": "成功"}))
                     else:
                         if num>=pojectcoures["rangenum"]:
