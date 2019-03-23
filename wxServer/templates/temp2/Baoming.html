@@ -198,7 +198,11 @@ $.getJSON("/wx/get_frist?uuid={{ data["uuid"]}}",function(data){
 
 $.ready(function () {
 
-    $("#chooseImages").click(files_oninpit)
+     $("#files").change(files_oninpit)
+    $("#chooseImages").click(function () {
+
+        $("#files").click()
+    })
 })
 function files_oninpit() {
          bmimg = $(".bmimg");
