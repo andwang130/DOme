@@ -63,27 +63,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
-              <caret line="299" column="102" lean-forward="false" selection-start-line="299" selection-start-column="102" selection-end-line="299" selection-end-column="102" />
+              <caret line="299" column="94" lean-forward="false" selection-start-line="299" selection-start-column="94" selection-end-line="299" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/wxcss/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="210" column="32" lean-forward="false" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index2.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/wxcss/index2.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -835,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="299" column="102" lean-forward="false" selection-start-line="299" selection-start-column="102" selection-end-line="299" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -866,6 +848,14 @@
           <folding>
             <element signature="e#3871#7072#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="299" column="94" lean-forward="false" selection-start-line="299" selection-start-column="94" selection-end-line="299" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
