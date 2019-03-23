@@ -165,10 +165,7 @@ window.sysinfo ={'uniacid':'25','acid':'25','uid':'26','isfounder':0,'family':'x
     </div>
 </div>
 
-			<div class="we7-padding-bottom clearfix">
-				<div class="input-group pull-left col-sm-1">
-					<a class="btn btn-default">2018-10-31</a>
-				</div>
+			<div class="we7-padding-bottom clearfix" id="timelist">
 
 
 
@@ -220,5 +217,29 @@ window.sysinfo ={'uniacid':'25','acid':'25','uid':'26','isfounder':0,'family':'x
 		<div class="copyright"></div>
 	</div>
 		</div>
+
+<script>
+
+	$.ready(function () {
+		for(i=0;i<7;i++)
+		{
+			var newtimes=fun_date(i)
+			var html="<div class=\"input-group pull-left col-sm-1\">\n" +
+					"\t\t\t\t\t<a class=\"btn btn-default\">"+newtimes+"</a>\n" +
+					"\t\t\t\t</div>"
+			$("#timelist").append(html)
+		}
+	})
+	function fun_date(aa){
+		var date1 = new Date(),
+				time1=date1.getFullYear()+"-"+(date1.getMonth()+1)+"-"+date1.getDate();//time1表示当前时间
+		var date2 = new Date(date1);
+		date2.setDate(date1.getDate()+aa);
+		var time2 = date2.getFullYear()+"-"+(date2.getMonth()+1)+"-"+date2.getDate();
+		return time2
+	}
+
+
+</script>
 </body>
 </html>
