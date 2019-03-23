@@ -63,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-958">
@@ -108,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="303" column="76" lean-forward="false" selection-start-line="303" selection-start-column="76" selection-end-line="303" selection-end-column="76" />
+            <state relative-caret-position="261">
+              <caret line="299" column="106" lean-forward="false" selection-start-line="299" selection-start-column="106" selection-end-line="299" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -131,7 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ratio</find>
       <find>marquee</find>
       <find>container-fill</find>
       <find>top:12</find>
@@ -159,8 +158,9 @@
       <find>chooseImages</find>
       <find>files</find>
       <find>on</find>
-      <find>送</find>
       <find>class=&quot;on&quot;</find>
+      <find>送</find>
+      <find>icon-shouye</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -216,11 +216,11 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
       </list>
     </option>
   </component>
@@ -807,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="303" column="76" lean-forward="false" selection-start-line="303" selection-start-column="76" selection-end-line="303" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/jp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -856,6 +848,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-958">
           <caret line="457" column="0" lean-forward="true" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="299" column="106" lean-forward="false" selection-start-line="299" selection-start-column="106" selection-end-line="299" selection-end-column="106" />
           <folding />
         </state>
       </provider>
