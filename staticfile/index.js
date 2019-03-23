@@ -56,6 +56,16 @@ var tr="  <tr>\n" +
 $(document).ready(
     function () {
 
+        for(i=0;i<7;i++)
+        {
+            var newtimes=fun_date(i)
+            var html="<div class=\"input-group pull-left col-sm-1\">\n" +
+                "\t\t\t\t\t<a class=\"btn btn-default\">"+newtimes+"</a>\n" +
+                "\t\t\t\t</div>"
+            $("#timelist").append(html)
+        }
+
+        $(".btn-default").click()
         get_list(1);
         $(".btn-default").click(set_key)
     }
@@ -63,12 +73,13 @@ $(document).ready(
 var key;
 var start
 var end
+var times
 function set_key() {
 
     key=$("#keyword").val();
     start=$("#start").val()
     end=$("#end").val()
-
+    times=""
     get_list(1)
 }
 function drop_confirm(mages,url)
@@ -120,7 +131,7 @@ function copy(uuid) {
 }
 function get_list(page) {
     now_page=page;
-    data={"action":"get_list","page":page,"start":start,"end":end};
+    data={"action":"get_list","page":page,"start":start,"end":end,"times":times};
     if(key)
     {
         data["key"]=key
@@ -233,3 +244,18 @@ function  on_a_cliek()
 //         window.clipboardData.setData("Text",t);
 //         alert("成功复制")
 //     }
+function fun_date(aa){
+    var date1 = new Date(),
+        time1=date1.getFullYear()+"-"+(date1.getMonth()+1)+"-"+date1.getDate();//time1表示当前时间
+    var date2 = new Date(date1);
+    date2.setDate(date1.getDate()+aa);
+    var time2 = date2.getFullYear()+"-"+(date2.getMonth()+1)+"-"+date2.getDate();
+    return time2
+}
+function times_get() {
+     key="";
+     start=""
+     end=""
+    times=$(this).text()
+    get_list(1)
+}
