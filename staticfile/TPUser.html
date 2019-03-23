@@ -132,12 +132,16 @@ word-break: normal;
 
             <input type="text" name="keyword" id="keyword" value="" class="form-control" placeholder="输入姓名，手机号或ID"/>
             <span class="input-group-btn"><button id="fa-search"  class="btn btn-default"><i class="fa fa-search"></i></button></span>
+
             </div>
         <div class="pull-right">
         <a href="./addTuouselist.html?action=create_list&uuid=" id="addthlist" class="btn btn-primary  we7-margin-left">+批量导入用户</a>
             <a href="./addTpuser.html?action=create&uuid="  id="addbth" class="btn btn-primary  we7-margin-left">+添加投票用户</a>
             <a id="getcsv" href="#">导出用户数据</a>
         </div>
+    </div>
+    <div class="we7-padding-bottom clearfix">
+        <button onclick="get_Unaudited(this)">未审核</button>
     </div>
         <table class="table we7-table table-hover">
             <thead class="navbar-inner">

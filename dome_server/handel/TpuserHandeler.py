@@ -43,19 +43,21 @@ class Tpuuser(Basehandelr):
     def get_list(self):
         uuid_ = self.get_argument("uuid", "")
         page=int(self.get_argument("page",1))
+        unaudit=self.get_argument("status","")
         req_data=[]
         sort_type = self.get_argument("sorttype")
         key = self.get_argument("key", None)
         if uuid_:
+            nosql = {"uuid": uuid_}
             if key:
-                coures = self.Mongodb["tpUser"].find({"uuid": uuid_,"$or":[{"name":{"$regex":key}},{"phone":{"$regex":key}}]}).limit(25).skip(25 * (page - 1)).sort([(sort_type, -1)])
-            else:
-                coures=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(25).skip(25*(page-1)).sort([(sort_type,-1)])
+                nosql["$or"]=[{"name":{"$regex":key}},{"phone":{"$regex":key}}]
+            if unaudit:
+                nosql["status"]=1
+            coures=self.Mongodb["tpUser"].find(nosql).limit(25).skip(25*(page-1)).sort([(sort_type,-1)])
             for i in coures:
                 data={"name":i.get("name"),"phone":i.get("phone"),"avatar":i.get("avatar"),"createtime":i.get("createtime"),
                       "userid":i.get("userid"),"index":i.get("index"),"liwu":i.get("liwu"),"votenum":i.get("votenum"),"vheat":i.get("vheat"),
                       "status":i.get("status")}
-
                 req_data.append(data)
             count=coures.count()
             self.write(json.dumps({"code":0,"data":req_data,"count":count}))
@@ -99,6 +101,7 @@ class Tpuuser(Basehandelr):
         data_list=[]
         uuid_poject = self.get_argument("uuid", "")
         namelist=self.get_argument("namelist")
+
         namelist=json.loads(namelist)
         num=self.Mongodb["poject"].find_one({"uuid": uuid_poject})["participants"]+1;
         if uuid_poject and namelist:

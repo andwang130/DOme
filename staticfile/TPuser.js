@@ -2,6 +2,7 @@
 var uuid="";
 var sort_type="createtime";
 var key="";
+var status="";
 $(document).ready(
     function () {
         uuid=GetRequest("uuid");
@@ -25,7 +26,7 @@ function url_init() {
 }
 function  get_user(page) {
     if(uuid.uuid) {
-        data = {"action": "get_list", "uuid": uuid.uuid,"page":page,"sorttype":sort_type};
+        data = {"action": "get_list", "uuid": uuid.uuid,"page":page,"sorttype":sort_type,"status":status};
        if(key)
        {
            data["key"]=key
@@ -188,4 +189,15 @@ function add_votedate(e,userid) {
         })
 
      })
+}
+function get_Unaudited(e) {
+    var text= $(e).text()
+    if(text=="未审核"){
+        status="1"
+         $(e).text("全部")
+    }
+    else if(text=="全部"){
+        status=""
+        $(e).text("未审核")
+    }
 }
