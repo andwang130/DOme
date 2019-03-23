@@ -45,7 +45,7 @@ function  get_user(page) {
                             var tr=" <tr>\n" +
                                 "                \t<input type=\"hidden\"  value=\"262592\" >\n" +
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
-                                "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"</td>\n" +
+                                "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"<span class=\"label label-{success}\">{是否审核}</span></td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">"+data[i]["vheat"]+"</span></td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this,\""+data[i]["userid"]+"\")'>+</button><span style='display: none'><input style='width: 60px' type='number' name='votenum'><span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">"+data[i]["liwu"]+"</span></td>\n" +
@@ -60,6 +60,14 @@ function  get_user(page) {
                                 "\t\t\t\t\t<a class=\"color-default we7-margin-right\" rel=\"tooltip\" href=\"#\" onclick=\"drop_confirm('您确定要删除吗?删除不可恢复，同时删除所有相关数据！','"+data[i]["userid"]+"');\" title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a></p>\n" +
                                 "                    </td>\n" +
                                 "                </tr>";
+                            if(data[i]["status"]==0)
+                            {
+                            tr=tr.replace(/{success}/,"success").replace(/{是否审核}/,"已审核")
+                            }
+                            else if(data[i]["status"]==1)
+                            {
+                                tr=tr.replace(/{success}/,"default").replace(/{是否审核}/,"未审核")
+                            }
                             $("#userlist").append(tr)
 
                         }

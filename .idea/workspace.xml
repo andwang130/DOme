@@ -16,12 +16,22 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1171">
-              <caret line="267" column="21" lean-forward="true" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+            <state relative-caret-position="2758">
+              <caret line="267" column="21" lean-forward="false" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
               <folding>
                 <marker date="1553353072381" expanded="true" signature="642:648" ph=" " />
                 <marker date="1553353072381" expanded="true" signature="648:654" ph=" " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TPUser.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/TPUser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1081">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -36,6 +46,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="64" column="84" lean-forward="false" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
+              <folding>
+                <marker date="1553353587288" expanded="true" signature="2326:2339" ph="..." />
+                <marker date="1553353587288" expanded="true" signature="2355:2366" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="orderall.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/orderall.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="109" column="12" lean-forward="true" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
+            <state relative-caret-position="254">
+              <caret line="109" column="12" lean-forward="false" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -78,33 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jp.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/jp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="135" column="72" lean-forward="false" selection-start-line="135" selection-start-column="72" selection-end-line="135" selection-end-column="72" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paly.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="626" column="0" lean-forward="false" selection-start-line="626" selection-start-column="0" selection-end-line="626" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="437">
+              <caret line="61" column="11" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -172,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staticfile/auto_click.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Basehandelr.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/orderHanderl.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
@@ -223,6 +223,7 @@
         <option value="$PROJECT_DIR$/staticfile/index.js" />
         <option value="$PROJECT_DIR$/staticfile/index.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/Poject.py" />
+        <option value="$PROJECT_DIR$/staticfile/TPuser.js" />
       </list>
     </option>
   </component>
@@ -437,13 +438,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staticfile/dist/js/site.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="19" column="18497" lean-forward="false" selection-start-line="19" selection-start-column="18497" selection-end-line="19" selection-end-column="18497" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4347">
@@ -514,14 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53276">
           <caret line="2804" column="18" lean-forward="false" selection-start-line="2804" selection-start-column="18" selection-end-line="2804" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3289">
-          <caret line="143" column="22" lean-forward="false" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,7 +750,7 @@
         <state relative-caret-position="575">
           <caret line="152" column="10" lean-forward="false" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,7 +760,7 @@
         <state relative-caret-position="506">
           <caret line="135" column="72" lean-forward="false" selection-start-line="135" selection-start-column="72" selection-end-line="135" selection-end-column="72" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -783,14 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="626" column="0" lean-forward="false" selection-start-line="626" selection-start-column="0" selection-end-line="626" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -829,17 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1171">
-          <caret line="267" column="21" lean-forward="true" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
-          <folding>
-            <marker date="1553353072381" expanded="true" signature="642:648" ph=" " />
-            <marker date="1553353072381" expanded="true" signature="648:654" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -850,9 +817,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="109" column="12" lean-forward="true" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
+        <state relative-caret-position="254">
+          <caret line="109" column="12" lean-forward="false" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2758">
+          <caret line="267" column="21" lean-forward="false" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+          <folding>
+            <marker date="1553353072381" expanded="true" signature="642:648" ph=" " />
+            <marker date="1553353072381" expanded="true" signature="648:654" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/TPUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1081">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="61" column="11" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="64" column="84" lean-forward="false" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
+          <folding>
+            <marker date="1553353587288" expanded="true" signature="2326:2339" ph="..." />
+            <marker date="1553353587288" expanded="true" signature="2355:2366" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
