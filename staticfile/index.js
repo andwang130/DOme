@@ -60,12 +60,12 @@ $(document).ready(
         {
             var newtimes=fun_date(i)
             var html="<div class=\"input-group pull-left col-sm-1\">\n" +
-                "\t\t\t\t\t<a class=\"btn btn-default\">"+newtimes+"</a>\n" +
+                "\t\t\t\t\t<a class=\"btn btn-default timeget\">"+newtimes+"</a>\n" +
                 "\t\t\t\t</div>"
             $("#timelist").append(html)
         }
 
-        $(".btn-default").click(times_get)
+        $(".timeget").click(times_get)
         get_list(1);
         $(".btn-default").click(set_key)
     }

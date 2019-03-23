@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="268">
+              <caret line="254" column="19" lean-forward="true" selection-start-line="254" selection-start-column="19" selection-end-line="254" selection-end-column="19" />
               <folding>
                 <element signature="e#540#546#0" expanded="true" />
                 <element signature="e#546#552#0" expanded="true" />
@@ -212,8 +212,8 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
         <option value="$PROJECT_DIR$/staticfile/css/common.css" />
         <option value="$PROJECT_DIR$/staticfile/index.html" />
-        <option value="$PROJECT_DIR$/staticfile/index.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Poject.py" />
+        <option value="$PROJECT_DIR$/staticfile/index.js" />
       </list>
     </option>
   </component>
@@ -780,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        <state relative-caret-position="268">
+          <caret line="254" column="19" lean-forward="true" selection-start-line="254" selection-start-column="19" selection-end-line="254" selection-end-column="19" />
           <folding>
             <element signature="e#540#546#0" expanded="true" />
             <element signature="e#546#552#0" expanded="true" />
