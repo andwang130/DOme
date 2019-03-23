@@ -5,8 +5,6 @@ from Basehandelr import verification
 
 class tpuserscvHandelr(Basehandelr):
     def get(self):
-        if not self.authen():
-            return
         uuid_=self.get_argument("uuid","")
         if uuid_:
             self.db_linck()
