@@ -23,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4174">
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/wxcss/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="244" column="21" lean-forward="false" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="21" />
+            <state relative-caret-position="46">
+              <caret line="2" column="99" lean-forward="false" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dome_server/handel/Basehandelr.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/orderHanderl.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
@@ -221,6 +220,7 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
+        <option value="$PROJECT_DIR$/staticfile/wxcss/index.css" />
       </list>
     </option>
   </component>
@@ -800,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/wxcss/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="244" column="21" lean-forward="false" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -865,6 +857,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4174">
           <caret line="224" column="15" lean-forward="false" selection-start-line="224" selection-start-column="15" selection-end-line="224" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/wxcss/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="99" lean-forward="false" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
           <folding />
         </state>
       </provider>
