@@ -78,17 +78,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="354">
-              <caret line="299" column="92" lean-forward="false" selection-start-line="299" selection-start-column="92" selection-end-line="299" selection-end-column="92" />
+              <caret line="299" column="203" lean-forward="false" selection-start-line="299" selection-start-column="203" selection-end-line="299" selection-end-column="203" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/wxcss/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -131,7 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>#rdlist</find>
       <find>top:1</find>
       <find>swiper-wrapper</find>
       <find>carousel</find>
@@ -161,6 +160,7 @@
       <find>icon-shouy</find>
       <find>送</find>
       <find>class=&quot;on&quot;</find>
+      <find>microsoft yahei&quot;, &quot;Helvetica Neue&quot;,</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -215,12 +215,12 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
         <option value="$PROJECT_DIR$/staticfile/wxcss/index.css" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
       </list>
     </option>
   </component>
@@ -800,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="299" column="92" lean-forward="false" selection-start-line="299" selection-start-column="92" selection-end-line="299" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -865,6 +857,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="99" lean-forward="false" selection-start-line="2" selection-start-column="99" selection-end-line="2" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="299" column="203" lean-forward="false" selection-start-line="299" selection-start-column="203" selection-end-line="299" selection-end-column="203" />
           <folding />
         </state>
       </provider>
