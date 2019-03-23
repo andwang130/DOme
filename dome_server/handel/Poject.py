@@ -122,11 +122,9 @@ class Poject(Basehandelr):
         if uuid:
             data={}
             coures=self.cooliect.find_one({"uuid":uuid_})
+            print(coures)
             for i in pojcetm.pojectarg:
-            try:
                 data[i]=coures[i]
-            except:
-                data[i]=""
             for i in pojcetm.pojiceTeptle:
                 data[i] = 0
             data["createtime"]=time.time()
