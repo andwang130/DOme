@@ -351,7 +351,25 @@
 
 
     </div>
-		<div class="form-group" hidden="hidden">
+
+
+	  <div class="form-group">
+		  <label class="control-label col-sm-2">投票时间周期：</label>
+		  <div class="control-label col-sm-2">
+			  <label><input type="number" value="4" id="rangetime"></label>
+
+		  </div>
+		  <div class="help-block">限制投票的周期(小时)</div>
+	  </div>
+	  <div class="form-group">
+		  <label class="control-label col-sm-2">投票次数：</label>
+		  <div class="control-label col-sm-2">
+			  <label><input type="number" value="3" id="rangenum"></label>
+
+		  </div>
+		  <div class="help-block">限制一个周期内的个人投票上限</div>
+	  </div>
+	  <div class="form-group" hidden="hidden">
           <label class="control-label col-sm-2">活动状态</label>
           <div class="control-label col-sm-2">
              <label><input type="radio" value="1" name="rstatus" checked>正常</label>

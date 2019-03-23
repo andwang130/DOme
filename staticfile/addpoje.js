@@ -64,6 +64,8 @@ function get_info(uuid) {
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]); //
     var sharedesc=$("#sharedesc").val(data["sharedesc"]);//
                     $("#ratio").val(data["ratio"])
+    $("#rangetime").val(data["rangetime"])
+    $("#rangenum").val(data["rangenum"])
     // $(":radio[name='rstatus'][value="+data['rstatus']+"]").attr("checked","checked");
 
 
@@ -86,6 +88,8 @@ function submi_send() {
 
     var titile=$("#titile").val();
     var himgV=$("#himgV").attr("src");
+    var rangetime=$("#rangetime").val()
+    var rangenum=$("#rangenum").val()
     var description=$("#description").val();
     var tiemstatr=$("#tiemstatr").val();
     var timeend=$("#timeend").val();

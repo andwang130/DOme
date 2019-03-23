@@ -21,6 +21,8 @@ pojectarg = ["titile",#标题
              "liwulist",
              "Adminid",
              "ratio", #比例
+             "rangetime",
+             "rangenum",
              ]
 pojiceTeptle = [
                 "votes",  # 投票数
