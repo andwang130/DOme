@@ -41,6 +41,8 @@ class Poject(Basehandelr):
                 self.poject_copy()
     def update(self,uuid_,data):
         try:
+            data["rangetime"] = int(data["rangetime"])
+            data["rangenum"] = int(data["rangenum"])
             data["Adminid"] = self.get_secure_cookie("token")
             data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
             self.cooliect.update_one({"uuid":uuid_,"Adminid":data["Adminid"]}, {'$set':data})
@@ -50,6 +52,8 @@ class Poject(Basehandelr):
             self.write(json.dumps({"code": -1, "eeor": "db"}))
     def create(self,data):
         new_uuid=str(uuid.uuid1()).replace("-","")
+        data["rangetime"]=int(data["rangetime"])
+        data["rangenum"]=int(data["rangenum"])
         data["uuid"]=new_uuid
         data["createtime"]=time.time()
         data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
