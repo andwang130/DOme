@@ -53,7 +53,8 @@ class Tpuuser(Basehandelr):
                 coures=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(25).skip(25*(page-1)).sort([(sort_type,-1)])
             for i in coures:
                 data={"name":i.get("name"),"phone":i.get("phone"),"avatar":i.get("avatar"),"createtime":i.get("createtime"),
-                      "userid":i.get("userid"),"index":i.get("index"),"liwu":i.get("liwu"),"votenum":i.get("votenum"),"vheat":i.get("vheat")}
+                      "userid":i.get("userid"),"index":i.get("index"),"liwu":i.get("liwu"),"votenum":i.get("votenum"),"vheat":i.get("vheat")
+                      "status":i.get("status")}
 
                 req_data.append(data)
             count=coures.count()
@@ -74,6 +75,9 @@ class Tpuuser(Basehandelr):
                 elif i=="index":
                     index = int(self.get_argument(i, 0).decode("utf-8"))
                     data[i] = index
+                elif i=="status":
+                    status=int(self.get_argument(i, 0).decode("utf-8"))
+                    data[i]=status
                 else:
                     data[i]=self.get_argument(i,"")
         if len(data.get("name")) > 32:

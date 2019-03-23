@@ -67,7 +67,7 @@ function get_info(uuid) {
         ue2.ready(function () {
              ue2.setContent(data["buttonpane"]); //
         })
-    
+
 
     var sharetitle=$("#sharetitle").val(data["sharetitle"]); //
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]); //
