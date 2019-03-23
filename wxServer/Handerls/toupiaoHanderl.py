@@ -112,7 +112,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                         myreids.set(openid+couers["uuid"],1,ex=pojectcoures["rangetime"]*3600)
                         self.write(json.dumps({"status": 1, "msg": "成功"}))
                     else:
-                        if num>=pojectcoures["rangenum"]:
+                        if int(num)>=pojectcoures["rangenum"]:
                             print(num,pojectcoures["rangenum"])
                             self.write(json.dumps({"status": 0, "msg": "每{}个小时可投票{}次，你已经投过票了".format(pojectcoures["rangetime"],pojectcoures["rangenum"])}))
                         else:

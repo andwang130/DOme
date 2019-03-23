@@ -23,16 +23,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="palyHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="47" column="57" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pojcetm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,8 +46,8 @@
       <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="115" column="60" lean-forward="false" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+            <state relative-caret-position="297">
+              <caret line="111" column="44" lean-forward="false" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -108,8 +98,18 @@
       <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/client.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="672" column="33" lean-forward="false" selection-start-line="672" selection-start-column="33" selection-end-line="672" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/connection.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
-              <caret line="1005" column="29" lean-forward="true" selection-start-line="1005" selection-start-column="29" selection-end-line="1005" selection-end-column="29" />
+              <caret line="607" column="8" lean-forward="false" selection-start-line="607" selection-start-column="8" selection-end-line="607" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -128,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test_mask</find>
       <find>数据加</find>
       <find>participants</find>
       <find>videodelete</find>
@@ -158,6 +157,7 @@
       <find>this</find>
       <find>pojectarg</find>
       <find>primary_click</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -433,13 +433,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staticfile/backlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="64" column="79" lean-forward="false" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/auto_click.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -743,14 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="1005" column="29" lean-forward="true" selection-start-line="1005" selection-start-column="29" selection-end-line="1005" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -801,10 +786,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="672" column="33" lean-forward="false" selection-start-line="672" selection-start-column="33" selection-end-line="672" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="607" column="8" lean-forward="false" selection-start-line="607" selection-start-column="8" selection-end-line="607" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="115" column="60" lean-forward="false" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+        <state relative-caret-position="297">
+          <caret line="111" column="44" lean-forward="false" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
           <folding />
         </state>
       </provider>
