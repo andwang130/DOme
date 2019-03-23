@@ -65,7 +65,7 @@ $(document).ready(
             $("#timelist").append(html)
         }
 
-        $(".btn-default").click()
+        $(".btn-default").click(times_get)
         get_list(1);
         $(".btn-default").click(set_key)
     }
