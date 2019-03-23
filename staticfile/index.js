@@ -49,7 +49,7 @@ var tr="  <tr>\n" +
     "               onclick=\"drop_confirm('您确定要删除吗?删除不可恢复。', '/poject?action=delete&uuid={delteuuid}');\"\n" +
     "               title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a>\n" +
     "            <br/>\n" +
-    "            <a class=\"color-default we7-margin-right\" href='#' rel=\"tooltip\" onclick=\"copy('{copyuuid}')\"\n"  +
+    "            <a class=\"color-default we7-margin-right\" href='#' rel=\"tooltip\" onclick=\"copy('{copypoject}')\"\n"  +
     "               title=\"复制活动\"><i class=\"fa fa-copy\"></i> 复制活动</a>\n" +
     "        </td>\n" +
     "    </tr>";
@@ -153,7 +153,7 @@ function get_list(page) {
 
                    var new_tr=tr.replace(/{编号}/,i).replace(/{TITLE}/,datalist[i]["titile"]).replace(/{开始时间}/,datalist[i]["tiemstatr"])
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
-                       .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"])
+                       .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"]).replace("/{copypoject}/",datalist[i]["uuid"])
                        .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://www.nkwwcj.com/wx/wxindex?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"]);
                    var nowtime=Date.parse(new Date());
                    if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
