@@ -261,7 +261,7 @@ function times_get() {
     times=$(this).text()
     get_list(1)
 }
-function get_end(this) {
+function get_end() {
 
     var text= $(this).text()
     if(text=="已经结束的"){
