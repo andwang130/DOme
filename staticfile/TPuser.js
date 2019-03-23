@@ -200,4 +200,5 @@ function get_Unaudited(e) {
         status=""
         $(e).text("未审核")
     }
+    get_user(1)
 }
