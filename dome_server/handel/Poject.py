@@ -98,7 +98,7 @@ class Poject(Basehandelr):
         data_list=[]
         try:
             if key:
-                coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
+                coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
                 coures=self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
