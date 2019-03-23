@@ -45,6 +45,7 @@ class Poject(Basehandelr):
             data["rangenum"] = int(data["rangenum"])
             data["Adminid"] = self.get_secure_cookie("token")
             data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
+            data["findend"] = time.mktime(time.strptime(data["timeend"], '%Y-%m-%d %H:%M'))
             self.cooliect.update_one({"uuid":uuid_,"Adminid":data["Adminid"]}, {'$set':data})
             self.write(json.dumps({"code": 0}))
         except Exception as e:
@@ -57,6 +58,7 @@ class Poject(Basehandelr):
         data["uuid"]=new_uuid
         data["createtime"]=time.time()
         data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
+        data["findend"] = time.mktime(time.strptime(data["timeend"], '%Y-%m-%d %H:%M'))
         data["Adminid"]=self.get_secure_cookie("token")
         for i in pojcetm.pojiceTeptle:
             data[i]=0
@@ -90,6 +92,11 @@ class Poject(Basehandelr):
         key=self.get_argument("key",None)
         starttime=self.get_argument("start","")
         times=self.get_argument("times","")
+        findend=self.get_argument("findend","")
+        if findend:
+            findend=time.time()
+        else:
+            findend=155326858000000
         if starttime:
             start=time.mktime(time.strptime(starttime, '%Y-%m-%d'))
         else:
@@ -102,9 +109,9 @@ class Poject(Basehandelr):
         data_list=[]
         try:
             if key:
-                coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
+                coures = self.cooliect.find({"findend":{"$lt":findend},"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
-                coures=self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+                coures=self.cooliect.find({"findend":{"$lt":findend},"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}

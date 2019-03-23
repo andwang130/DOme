@@ -74,6 +74,7 @@ var key;
 var start
 var end
 var times
+var findend
 function set_key() {
 
     key=$("#keyword").val();
@@ -131,7 +132,7 @@ function copy(uuid) {
 }
 function get_list(page) {
     now_page=page;
-    data={"action":"get_list","page":page,"start":start,"end":end,"times":times};
+    data={"action":"get_list","page":page,"start":start,"end":end,"times":times,"findend":findend};
     if(key)
     {
         data["key"]=key
@@ -256,6 +257,22 @@ function times_get() {
      key="";
      start=""
      end=""
+    findend=""
     times=$(this).text()
     get_list(1)
+}
+function get_end(this) {
+
+    var text= $(this).text()
+    if(text=="已经结束的"){
+        findend="end"
+         $(this).text("全部")
+    }
+    else if(text=="全部"){
+        findend=""
+        $(this).text("已经结束的")
+    }
+  get_list(1)
+
+
 }
