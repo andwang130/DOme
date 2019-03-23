@@ -2,6 +2,8 @@
 var t_in_click=undefined;
 var action="";
 var uuid="";
+var ue1
+var ue2
 $(document).ready(function (){
      ue1 = UM.getEditor('myEditor1');
      ue2 = UM.getEditor('myEditor2');
@@ -57,8 +59,15 @@ function get_info(uuid) {
     var topimgV=$("#topimgV").attr("src",data["topimgV"]);
     var topimg2V=$("#topimg2V").attr("src",data["topimg2V"]);
  var topimg3V=$("#topimg3V").attr("src",data["topimg3V"]);
-    ue1.setContent(data["customized"]); //
-    ue2.setContent(data["buttonpane"]); //
+
+   ue1.ready(function () {
+        ue1.setContent(data["customized"]); //
+
+   })
+        ue2.ready(function () {
+             ue2.setContent(data["buttonpane"]); //
+        })
+    
 
     var sharetitle=$("#sharetitle").val(data["sharetitle"]); //
     var shareimgV=$("#shareimgV").attr("src",data["shareimgV"]); //
