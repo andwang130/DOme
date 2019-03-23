@@ -143,6 +143,9 @@ class Tpuuser(Basehandelr):
                elif i == "index":
                    index = int(self.get_argument(i, 0).decode("utf-8"))
                    data[i] = index
+               elif i == "status":
+                   status = int(self.get_argument(i, 0).decode("utf-8"))
+                   data[i] = status
                else:
                    data[i]=self.get_argument(i,"")
             del data["liwu"]
