@@ -295,9 +295,9 @@ $(function(){
 <div style="height:50px;"></div>
 <div class="footer">
 
-<ul style="margin:1">
+<ul>
 
-    <li><a href="/wx/wxindex?uuid={{data["uuid"]}}"  class="on" ><div class='nav'><div class=''></div><p>首页</p></div></a></li>
+    <li onclick="Refresh()"><a href="/wx/wxindex?uuid={{data["uuid"]}}"  class="on" ><div class='nav'><div class='ih ispr iconfont icon-shouye'></div><p>首页</p></div></a></li>
 
 <li><a href="/wx/sort?uuid={{data["uuid"]}}"  ><div class='nav'><div class='if ispr iconfont icon-hangyepaiming'></div><p>排名</p></div></a></li>
 
@@ -319,6 +319,9 @@ function get_ap(){
     return false;
 	{% end%}
     location.href="/wx/Baoming?uuid={{data["uuid"]}}";
+}
+function Refresh() {
+    location.reload()
 }
 </script>
 
