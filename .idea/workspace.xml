@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="158" column="10" lean-forward="true" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
+            <state relative-caret-position="185">
+              <caret line="154" column="14" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -745,13 +745,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -769,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="158" column="10" lean-forward="true" selection-start-line="158" selection-start-column="10" selection-end-line="158" selection-end-column="10" />
+        <state relative-caret-position="185">
+          <caret line="154" column="14" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="14" />
         </state>
       </provider>
     </entry>
