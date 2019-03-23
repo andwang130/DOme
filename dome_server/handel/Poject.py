@@ -107,11 +107,12 @@ class Poject(Basehandelr):
         else:
             end=1553268580000
         data_list=[]
+        #"findend":{"$lt":findend},
         try:
             if key:
-                coures = self.cooliect.find({"findend":{"$lt":findend},"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
+                coures = self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             else:
-                coures=self.cooliect.find({"findend":{"$lt":findend},"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+                coures=self.cooliect.find({"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
             count=coures.count()
             for i in coures:
                 data={}
