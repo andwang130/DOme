@@ -116,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="552">
-              <caret line="71" column="89" lean-forward="true" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+              <caret line="71" column="90" lean-forward="false" selection-start-line="71" selection-start-column="90" selection-end-line="71" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -864,7 +864,7 @@
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
-          <caret line="71" column="89" lean-forward="true" selection-start-line="71" selection-start-column="89" selection-end-line="71" selection-end-column="89" />
+          <caret line="71" column="90" lean-forward="false" selection-start-line="71" selection-start-column="90" selection-end-line="71" selection-end-column="90" />
           <folding />
         </state>
       </provider>

@@ -69,7 +69,7 @@ class baoming(Basehanderl.Basehandelr):
         data["status"]=1
         data["createtime"] = time.time()
         data["userid"] = str(uuid.uuid1()).replace("-", "")
-        data["index"] = self.Mongodb["poject"].find_one({"uuid": uuid_})["participants"] ;
+        data["index"] = self.Mongodb["poject"].find_one({"uuid": uuid_})["participants"]+1;
         try:
             coures = self.Mongodb["tpUser"].insert_one(data)
             self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"participants": 1}});
