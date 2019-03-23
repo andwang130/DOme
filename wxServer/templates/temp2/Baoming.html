@@ -334,44 +334,7 @@ function files_oninpit() {
 
 
 
-(function () {
- var viewImg = $("#imglist");
-        var imgurl = '';
-        var imgcount = 0;
 
-        $('#upload_image').localResizeIMG({
-            width: 640,
-            quality: 0.8,
-            success: function (result) {
-                var status = true;
-                if (result.height > 1600) {
-                    status = false;
-                    alert("照片最大高度不超过1600像素");
-                }
-                if (viewImg.find("li").length > 4 ) {
-                    status = false;
-                    alert("最多上传5张照片");
-                }
-                if (status) {
-                    viewImg.append('<li><span class="pic_time"><span class="p_img"></span><em>50%</em></span></li>');
-                    viewImg.find("li:last-child").html('<span class="del"></span><img class="wh60" src="' + result.base64 + '"/><input type="hidden" id="file'
-                    + imgcount
-                    + '" name="fileup[]" value="'
-                    + result.clearBase64 + '">');
-
-
-                    $(".del").on("click",function(){
-                        $(this).parent('li').remove();
-                        $("#upload_image").show();
-                    });
-
-
-                    imgcount++;
-                }
-            }
-        });
-
-  })();
 
 </script>
 
