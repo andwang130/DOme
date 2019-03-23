@@ -66,10 +66,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="307" column="146" lean-forward="false" selection-start-line="307" selection-start-column="146" selection-end-line="307" selection-end-column="146" />
+            <state relative-caret-position="1458">
+              <caret line="264" column="46" lean-forward="false" selection-start-line="264" selection-start-column="46" selection-end-line="264" selection-end-column="46" />
               <folding>
+                <element signature="n#style#0;n#ul#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -130,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>times</find>
       <find>this</find>
       <find>pojectarg</find>
       <find>value</find>
@@ -160,6 +162,7 @@
       <find>iconfont</find>
       <find>icon-shouy</find>
       <find>ispr</find>
+      <find>container</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -411,7 +414,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -865,10 +867,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="307" column="146" lean-forward="false" selection-start-line="307" selection-start-column="146" selection-end-line="307" selection-end-column="146" />
+        <state relative-caret-position="1458">
+          <caret line="264" column="46" lean-forward="false" selection-start-line="264" selection-start-column="46" selection-end-line="264" selection-end-column="46" />
           <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
