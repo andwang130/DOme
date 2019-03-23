@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dome_server/handel/Poject.py" beforeDir="false" afterPath="$PROJECT_DIR$/dome_server/handel/Poject.py" afterDir="false" />
-    </list>
+    <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="100" column="116" selection-start-line="100" selection-start-column="116" selection-end-line="100" selection-end-column="116" />
+            <state relative-caret-position="278">
+              <caret line="124" column="39" lean-forward="true" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -87,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="19">
+              <caret line="1" column="9" selection-start-line="1" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -123,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>videopath</find>
       <find>test_mask</find>
       <find>数据加</find>
       <find>participants</find>
@@ -153,6 +150,7 @@
       <find>times</find>
       <find>primary_click</find>
       <find>this</find>
+      <find>pojectarg</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -783,17 +781,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
+    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="100" column="116" selection-start-line="100" selection-start-column="116" selection-end-line="100" selection-end-column="116" />
+        <state relative-caret-position="19">
+          <caret line="1" column="9" selection-start-line="1" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="278">
+          <caret line="124" column="39" lean-forward="true" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
         </state>
       </provider>
     </entry>
