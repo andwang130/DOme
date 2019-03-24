@@ -64,7 +64,7 @@ function sudbit_click() {
                      location.href="/auto_click.html"
                  }
             else {
-                     $.sendError('复制成功', 3000, function() {
+                     $.sendError(arr["data"], 3000, function() {
                          console.log('sendSuccessToTop closed');
                      });
                  }
