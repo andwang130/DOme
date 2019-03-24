@@ -24,11 +24,14 @@ class clickhanderl(Basehandelr):
             elif action=="delete":
                 self.delete()
     def add_auto_click(self):
-        uuid_=self.get_argument("uuid", "")
-        start=int(self.get_argument("start", ""))
-        end=int(self.get_argument("end", ""))
-        times=int(self.get_argument("times",""))
-        status=int(self.get_argument("status",""))
+        try:
+            uuid_=self.get_argument("uuid", "")
+            start=int(self.get_argument("start", ""))
+            end=int(self.get_argument("end", ""))
+            times=int(self.get_argument("times",""))
+            status=int(self.get_argument("status",""))
+        except:
+            return self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
         if uuid_ and start and end and status and times:
             data={"Adminid":self.get_secure_cookie("token"),"times":times,"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
@@ -59,12 +62,15 @@ class clickhanderl(Basehandelr):
         else:
             self.write(json.dumps({"code": -1}))
     def update(self):
-        autoid = self.get_argument("autoid", "")
-        uuid = self.get_argument("uuid", "")
-        start = int(self.get_argument("start", ""))
-        end = int(self.get_argument("end", ""))
-        status = int(self.get_argument("status", ""))
-        times=int(self.get_argument("times", ""))
+        try:
+            autoid = self.get_argument("autoid", "")
+            uuid = self.get_argument("uuid", "")
+            start = int(self.get_argument("start", ""))
+            end = int(self.get_argument("end", ""))
+            status = int(self.get_argument("status", ""))
+            times=int(self.get_argument("times", ""))
+        except:
+            self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
         if autoid and uuid and start and end and status:
             data = {"uuid": uuid, "start": start, "end": end, "status": status,"times":times}
             self.Mongodb["autoClick"].update_one({"autoid":autoid,"Adminid":self.get_secure_cookie("token")},{"$set":data})
@@ -94,10 +100,15 @@ class TPhanderl(Basehandelr):
                 self.delete()
     def add_auto_click(self):
         reset={}
-        uuid_=self.get_argument("uuid", "")
-        times=int(self.get_argument("times",""))
-        status=int(self.get_argument("status",""))
-        sort=int(self.get_argument("sort",""))
+        try:
+            uuid_=self.get_argument("uuid", "")
+            times=int(self.get_argument("times",""))
+            status=int(self.get_argument("status",""))
+            sort=int(self.get_argument("sort",""))
+        except:
+            reset["code"]=-1
+            reset["data"]="数据类型错误"
+            return self.write(json.dumps(reset))
         if uuid_ and status and times and sort:
             tpusers=self.get_argument("tpusers","")
             if not tpusers:
@@ -149,11 +160,14 @@ class TPhanderl(Basehandelr):
             self.write(json.dumps({"code": -1}))
     def update(self):
         reset={}
-        autoid = self.get_argument("autoid", "")
-        uuid_=self.get_argument("uuid", "")
-        times=int(self.get_argument("times",""))
-        status=int(self.get_argument("status",""))
-        sort=int(self.get_argument("sort",""))
+        try:
+            autoid = self.get_argument("autoid", "")
+            uuid_=self.get_argument("uuid", "")
+            times=int(self.get_argument("times",""))
+            status=int(self.get_argument("status",""))
+            sort=int(self.get_argument("sort",""))
+        except:
+            self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
         if uuid_ and status and times and sort and autoid:
             tpusers=self.get_argument("tpusers","")
             if not tpusers:
