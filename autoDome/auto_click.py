@@ -59,6 +59,7 @@ class auto_tp:
             for i in addlist:
                 self.Mongodb["tpUser"].update_one(*i)
     def sort_add(self,data):
+        print(data)
         tpuserlist=[]
         for i in data["tpusers"]:
             tpuserlist.append(i["userid"])
