@@ -81,6 +81,14 @@ class auto_tp:
         #             return i["votenum"]
 
         return None
+    def get_info(self,uuid_,useridlist):
+        for userid in useridlist:
+            if not self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":userid}):
+                return False
+        return True
+    def update_autotp(self,autoid):
+        datalist = self.cooliect.find({"status": 0})
+
     def run(self):
         addlist = []
         updatelist = []
@@ -91,15 +99,18 @@ class auto_tp:
                 self.sort_add(i)
             lengt=len(i["tpusers"])
             userlist=[]
+
             for tpuser in i["tpusers"]:
                 userlist.append(tpuser["userid"])
+            if not self.get_info(i["uuid"],userlist):
+                self.update_autotp(i["autoid"])
+                continue
             votenum=self.get_last(len(i["tpusers"]),i["uuid"],userlist)
             if votenum==None:
                 continue
             sum=0
             for user in reversed(i["tpusers"]):
                 num=random.randint(user["start"],user["end"])
-
                 newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$set":{"votenum":votenum+num+sum}})
                 sum+=num
                 addlist.append(newdata)
