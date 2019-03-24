@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" beforeDir="false" afterPath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py" beforeDir="false" afterPath="$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" beforeDir="false" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +31,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/bucktoknehandelr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="151" column="17" lean-forward="true" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
+            <state>
+              <caret selection-end-column="23" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
               </folding>
@@ -51,31 +60,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-874">
-              <caret line="48" column="77" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="77" />
+            <state relative-caret-position="418">
+              <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="65" column="53" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="53" />
+            <state relative-caret-position="-1266">
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,9 +202,9 @@
         <option value="$PROJECT_DIR$/staticfile/addauto_click.js" />
         <option value="$PROJECT_DIR$/staticfile/auto_click.html" />
         <option value="$PROJECT_DIR$/staticfile/auto_tp.html" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
       </list>
     </option>
   </component>
@@ -533,15 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/bucktoknehandelr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -692,16 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="151" column="17" lean-forward="true" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -733,20 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="334" column="43" lean-forward="true" selection-start-line="334" selection-start-column="43" selection-end-line="334" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="65" column="53" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/Basehanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-615" />
@@ -757,8 +725,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-874">
-          <caret line="48" column="77" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="77" />
+        <state relative-caret-position="418">
+          <caret line="116" column="22" lean-forward="true" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="334" column="43" lean-forward="true" selection-start-line="334" selection-start-column="43" selection-end-line="334" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/bucktoknehandelr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1266">
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
