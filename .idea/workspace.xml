@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/autoDome/auto_click.py" afterPath="$PROJECT_DIR$/autoDome/auto_click.py" />
-      <change beforePath="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" afterPath="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
-      <change beforePath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" afterPath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
