@@ -315,8 +315,9 @@
 					type: 'POST',
 					data: data,
 					success: function (arg) {
-
-						location.href="/auto_tp.html"
+						if(arg.code==0) {
+							location.href = "/auto_tp.html"
+						}
 
 
 					}
