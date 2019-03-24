@@ -67,16 +67,15 @@ class auto_tp:
             data[i]["userid"]=tpuserlist[i]
     def nosort_add(self,data):
         pass
-    def get_last(self,rank,uuid_):
-        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(2).skip(rank-1).sort([("votenum",-1)])
-        print(cousers)
-        newlist=[]
-        for i in cousers:
-            print(i["votenum"])
-            newlist.append(i)
-        if len(newlist)>=2:
-            if newlist[0]["votenum"]<newlist[1]["votenum"]:
-                return newlist[1]["votenum"]
+    def get_last(self,rank,uuid_,userid):
+        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
+        usercouesr=self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":userid})
+        if usercouesr:
+            newlist=[]
+            for i in cousers:
+                if usercouesr["votenum"]<i["votenum"]:
+                    return i["votenum"]
+
         return None
     def run(self):
         addlist = []
@@ -86,7 +85,8 @@ class auto_tp:
         for i in Velist:
             if i["sort"]==1:
                 self.sort_add(i)
-            votenum=self.get_last(len(i["tpusers"]),i["uuid"])
+            userid=i["tpusers"][len(i["tpusers"])]["userid"]
+            votenum=self.get_last(len(i["tpusers"]),i["uuid"],userid)
             if votenum==None:
                 continue
             sum=0
