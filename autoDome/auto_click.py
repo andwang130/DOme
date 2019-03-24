@@ -88,7 +88,7 @@ class auto_tp:
             couser=self.Mongodb["tpUser"].find_one({"uuid": uuid_, "userid": userid})
             if not couser:
                 return False
-            votenumlist.append({"userid":couser["userid","votenum":couser["votenum"]]})
+            votenumlist.append({"userid":couser["userid"],"votenum":couser["votenum"]})
         return True
     def update_autotp(self,uuid_,autoid):
         datalist = self.cooliect.update_one({"uuid":uuid_,"autoid":autoid},{"$set":{"status":0}})
