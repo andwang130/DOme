@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from Basehandelr import Basehandelr
 from Basehandelr import verification
 
