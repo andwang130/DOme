@@ -70,6 +70,7 @@ class auto_tp:
     def get_last(self,rank,uuid_):
         cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
         if cousers:
+            print(cousers)
             return cousers[0]["votenum"]
     def run(self):
         addlist = []
