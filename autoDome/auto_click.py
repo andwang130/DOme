@@ -83,14 +83,19 @@ class auto_tp:
         #             return i["votenum"]
 
         return None
-    def get_info(self,uuid_,useridlist):
+    def get_info(self,uuid_,useridlist,votenumlist):
         for userid in useridlist:
-            if not self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":userid}):
+            couser=self.Mongodb["tpUser"].find_one({"uuid": uuid_, "userid": userid})
+            if not couser:
                 return False
+            votenumlist.append({"userid":couser["userid","votenum":couser["votenum"]]})
         return True
     def update_autotp(self,uuid_,autoid):
         datalist = self.cooliect.update_one({"uuid":uuid_,"autoid":autoid},{"$set":{"status":0}})
-
+    def get_votenum(self,userid,votenumlist):
+        for i in votenumlist:
+            if userid==i["userid"]:
+                return i["votenum"]
     def run(self):
         addlist = []
         updatelist = []
@@ -102,9 +107,10 @@ class auto_tp:
             lengt=len(i["tpusers"])
             userlist=[]
 
+            votenumlist=[]
             for tpuser in i["tpusers"]:
                 userlist.append(tpuser["userid"])
-            if not self.get_info(i["uuid"],userlist):
+            if not self.get_info(i["uuid"],userlist,votenumlist):
                 self.update_autotp(i["uuid"],i["autoid"])
                 continue
             votenum=self.get_last(len(i["tpusers"]),i["uuid"],userlist)
@@ -112,9 +118,14 @@ class auto_tp:
                 continue
             sum=0
             for user in reversed(i["tpusers"]):
-                num=random.randint(user["start"],user["end"])
-                newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$set":{"votenum":votenum+num+sum}})
-                sum+=num
+                uservotenum=self.get_votenum(user["userid"],votenumlist)
+                newvotenum=votenum-uservotenum
+                if newvotenum<0:
+                    votenum=uservotenum
+                    continue
+                num=random.randint(user["start"],user["end"])+newvotenum
+                newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$set":{"votenum":num}})
+                votenum=uservotenum+num
                 addlist.append(newdata)
         self.add_tp(addlist)
 if __name__ == '__main__':
