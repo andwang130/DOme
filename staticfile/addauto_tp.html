@@ -248,7 +248,7 @@
 							$("input[name='status']:radio[value={value}]".replace(/{value}/,data['status'])).attr('checked','true');
 							$("input[name='sort']:radio[value={value}]".replace(/{value}/,data['sort'])).attr('checked','true');
 							var tpusers=data["tpusers"]
-							for(i=0;i<tpusers.length();i++)
+							for(i=0;i<tpusers.length;i++)
 							{
 								liwu_init(tpusers[i]["userid"],"",tpusers[i]["start"],tpusers["end"])
 							}
