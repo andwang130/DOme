@@ -64,9 +64,9 @@ class auto_tp:
         for i in data["tpusers"]:
             tpuserlist.append(i["userid"])
         random.shuffle(tpuserlist)
-        if tpuserlist:
-            for i,v in enumerate(data["tpusers"]):
-                data[i]["userid"]=tpuserlist[i]
+
+        for i,v in enumerate(data["tpusers"]):
+            data[i]["userid"]=tpuserlist[i]
     def nosort_add(self,data):
         pass
     def get_last(self,rank,uuid_,useridlist):
@@ -97,7 +97,7 @@ class auto_tp:
         datalist = self.get_dbData()
         Velist = self.Verification(datalist)
         for i in Velist:
-            if i["sort"]==0:
+            if i["sort"]==1:
                 self.sort_add(i)
             lengt=len(i["tpusers"])
             userlist=[]
