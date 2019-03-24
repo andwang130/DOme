@@ -301,8 +301,8 @@
 			var userid=$(liwus[i]).find("td:nth-child(1) input[name='userid']").val();
 			var start=$(liwus[i]).find("td:nth-child(2) div input[name='start']").val();
 			var end=$(liwus[i]).find("td:nth-child(3) input[name='end']").val();
-			var data={"userid":userid,"start":start,"end":end,"rank":i};
-			liwulist[i]=data;
+			var newdata={"userid":userid,"start":start,"end":end,"rank":i};
+			liwulist[i]=newdata;
 
 		}
 		data["tpusers"]=JSON.stringify(liwulist);
