@@ -136,7 +136,12 @@ class toupiaoinfoHanderl(Basehanderl.Basehandelr):
         self.db_linck()
         userid = self.get_argument("userid")
         usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
+        coures = self.Mongodb["poject"].find_one({"uuid": usercoures["uuid"]})
         data={}
+        data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
+        data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
+        data["aptimestart"] = coures["tiemstatr"]
+        data["aptimeend"] = coures["timeend"]
         data["name"] = usercoures["name"]
         data["index"] = usercoures["index"]
         data["uuid"]=usercoures["uuid"]
