@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" beforeDir="false" afterPath="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" beforeDir="false" afterPath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staticfile/addauto_tp.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/addauto_tp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" beforeDir="false" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-763">
-              <caret line="174" column="52" lean-forward="true" selection-start-line="174" selection-start-column="52" selection-end-line="174" selection-end-column="52" />
+            <state relative-caret-position="173">
+              <caret line="222" column="22" lean-forward="true" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#html#0;n#!!top" expanded="true" />
@@ -794,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-763">
-          <caret line="174" column="52" lean-forward="true" selection-start-line="174" selection-start-column="52" selection-end-line="174" selection-end-column="52" />
+        <state relative-caret-position="173">
+          <caret line="222" column="22" lean-forward="true" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#html#0;n#!!top" expanded="true" />
