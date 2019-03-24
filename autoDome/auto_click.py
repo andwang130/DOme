@@ -124,7 +124,7 @@ class auto_tp:
                     votenum=uservotenum
                     continue
                 num=random.randint(user["start"],user["end"])+newvotenum
-                newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$set":{"votenum":num}})
+                newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$inc":{"votenum":num}})
                 votenum=uservotenum+num
                 addlist.append(newdata)
         self.add_tp(addlist)
