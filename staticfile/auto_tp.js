@@ -27,7 +27,7 @@ function drop_confirm(mages,url)
     {
         data={"action":"delete","autoid":url};
          $.ajax({
-        url:'/auto_click',
+        url:'/auto_tp',
         type: 'POST',
         data:data,
         success: function (arg)
