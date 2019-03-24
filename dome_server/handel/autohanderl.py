@@ -32,7 +32,7 @@ class clickhanderl(Basehandelr):
             status=int(self.get_argument("status",""))
         except:
             return self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
-        if uuid_ and start and end and status and times:
+        if uuid_!="" and start!="" and end!="" and status!="" and times!="":
             data={"Adminid":self.get_secure_cookie("token"),"times":times,"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code":0}))
@@ -71,7 +71,7 @@ class clickhanderl(Basehandelr):
             times=int(self.get_argument("times", ""))
         except:
             self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
-        if autoid and uuid and start and end and status:
+        if autoid!="" and uuid!="" and start!="" and end!="" and status!="":
             data = {"uuid": uuid, "start": start, "end": end, "status": status,"times":times}
             self.Mongodb["autoClick"].update_one({"autoid":autoid,"Adminid":self.get_secure_cookie("token")},{"$set":data})
             self.write(json.dumps({"code": 0}))
@@ -109,7 +109,7 @@ class TPhanderl(Basehandelr):
             reset["code"]=-1
             reset["data"]="数据类型错误"
             return self.write(json.dumps(reset))
-        if uuid_ and status and times and sort:
+        if uuid_!="" and status!="" and times!="" and sort!="":
             tpusers=self.get_argument("tpusers","")
             if not tpusers:
                 reset["code"]=-1
@@ -134,7 +134,7 @@ class TPhanderl(Basehandelr):
         else:
             reset["code"]=-1
             reset["data"]="缺少数据"
-            self.write(json.dumps({"code": -1}))
+            self.write(json.dumps(reset))
     def get_list(self):
         page=int(self.get_argument("page",0))
         coures=self.Mongodb["autoTP"].find({"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("createdate", -1)])
@@ -168,7 +168,7 @@ class TPhanderl(Basehandelr):
             sort=int(self.get_argument("sort",""))
         except:
             self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
-        if uuid_ and status and times and sort and autoid:
+        if uuid_!="" and status!="" and times!="" and sort!="" and autoid!="":
             tpusers=self.get_argument("tpusers","")
             if not tpusers:
                 reset["code"]=-1
