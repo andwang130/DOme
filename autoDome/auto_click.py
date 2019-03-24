@@ -105,7 +105,7 @@ class auto_tp:
             for tpuser in i["tpusers"]:
                 userlist.append(tpuser["userid"])
             if not self.get_info(i["uuid"],userlist):
-                self.update_autotp(i["autoid"])
+                self.update_autotp(i["uuid"],i["autoid"])
                 continue
             votenum=self.get_last(len(i["tpusers"]),i["uuid"],userlist)
             if votenum==None:
