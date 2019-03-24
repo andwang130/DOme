@@ -129,23 +129,31 @@
 					<label class="control-label col-sm-2 control-label"><span class="text-danger">*</span>间隔时间</label>
 					<div class="col-sm-4">
 						<input type="number" class="form-control" name="name" id="tiems" value=""/>
-						<span class="help-block">间隔执行的时间，每隔这个时间增加点击量</span>
+						<span class="help-block">间隔执行的时间</span>
 					</div>
 				</div>
-              <div class="form-group">
-					<label class="control-label col-sm-2 control-label">增加的点击数</label>
-					<div class="col-sm-4">
-			            <div class="input-group">
-			              <span class="input-group-addon">起始， +</span>
-			              <input class="form-control" type="number" value="0" id="start" name="addvotenum">
-			              <span class="input-group-addon">个</span>
-			            </div>
-					  <div class="input-group">
-			              <span class="input-group-addon">结束， +</span>
-			              <input class="form-control" type="number" value="0" id="end" name="addvotenum">
-			              <span class="input-group-addon">个</span>
-			            </div>
-			          </div>
+
+				<div class="form-group">
+					<div class="row">
+
+						<table class="table we7-table table-hover" id="js-table-2">
+							<tbody><tr><th colspan="5" class=""><strong>排名设置</strong>
+
+								<button id="btn_add_liwu" type="button" class="btn btn-xs btn-warning pull-right">
+									<span class="glyphicon glyphicon-plus"></span> 添加排名
+								</button></th>
+							</tr>
+							<tr>
+								<th class="text-left">名次</th>
+								<th>ID</th>
+								<th>开始范围</th>
+								<th>结束范围</th>
+								<th class="text-right" width="100">操作</th>
+							</tr>
+
+							</tbody></table>
+						<input type="file" id="filse" style="display:none">
+					</div>
 				</div>
 
 
@@ -153,11 +161,23 @@
 					<label class="control-label col-sm-2 control-label">是否启动</label>
 					<div class="col-sm-8 col-xs-12">
 						<label class="radio-inline">
-						<input type="radio" name="status" value="0"  />否
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="status" value="1" checked="checked"  />是
-					</label>
+							<input type="radio" name="status" value="0"  />否
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="status" value="1" checked="checked"  />是
+						</label>
+
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2 control-label">是否乱序(名次乱序，票数间隔不变)</label>
+					<div class="col-sm-8 col-xs-12">
+						<label class="radio-inline">
+							<input type="radio" name="sort" value="0"  />否
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="sort" value="1" checked="checked"  />是
+						</label>
 
 					</div>
 				</div>
@@ -188,4 +208,31 @@
 		</div>
 </body>
 <input type="file" id="filse"  style="display:none">
+
+<script>
+	$(document).ready(function () {
+
+		$("#btn_add_liwu").click(btn_add_liwu);
+	})
+	function btn_add_liwu() {
+		liwu_init("钻石","/images/diamond.png",1,3)
+	}
+	function liwu_init (gifttitle,gifimg,giftprice,giftvote) {
+		html="<tr name='liwus'>\n" +
+				"\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入名称\" value=\""+gifttitle+"\" class=\"form-control\" name=\"gifttitle\"></td>\n" +
+				"\t\t<td><div class=\"adimgbo\"><a  href=\"#\" class=\"tttt\"><img src=\""+gifimg+"\"  height=\"30\"><input type=\"hidden\" value=\"/images/diamond.png\" name=\"gifticon\"></a></div></td>\n" +
+				"\t\t<td class=\"text-left\" ><div class=\"input-group\">\n" +
+				"          <input type=\"text\" placeholder=\"输入支付价格\" value=\""+giftprice+"\" class=\"form-control\" name=\"giftprice\">\n" +
+				"\t\t  <span class=\"input-group-addon\">元</span>\n" +
+				"        </div></td>\n" +
+				"\t\t<td class=\"text-left\" >\n" +
+				"\t\t<div class=\"input-group\">\n" +
+				"          <input type=\"text\" placeholder=\"输入礼物奖励的票数\" value=\""+giftvote+"\" class=\"form-control\" name=\"giftvote\">\n" +
+				"        </div>\n" +
+				"\t\t</td>\n" +
+				"\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
+				"\t</tr>";
+		$("#js-table-2").append(html);
+	}
+</script>
 </html>
