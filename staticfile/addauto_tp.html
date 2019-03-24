@@ -161,10 +161,10 @@
 					<label class="control-label col-sm-2 control-label">是否启动</label>
 					<div class="col-sm-8 col-xs-12">
 						<label class="radio-inline">
-							<input type="radio" name="status" value="0"  />否
+							<input type="radio" name="status" value="0"  />是
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="status" value="1" checked="checked"  />是
+							<input type="radio" name="status" value="1" checked="checked"  />否
 						</label>
 
 					</div>
@@ -173,10 +173,10 @@
 					<label class="control-label col-sm-2 control-label">是否乱序(名次乱序，票数间隔不变)</label>
 					<div class="col-sm-8 col-xs-12">
 						<label class="radio-inline">
-							<input type="radio" name="sort" value="0"  />否
+							<input type="radio" name="sort" value="0"  />是
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="sort" value="1" checked="checked"  />是
+							<input type="radio" name="sort" value="1" checked="checked"  />否
 						</label>
 
 					</div>
@@ -219,7 +219,45 @@
 	$(document).ready(function () {
 
 		$("#btn_add_liwu").click(btn_add_liwu);
+		$("#submit").click(sudbit_click);
+		action=GetRequest("action");
+		autoid=GetRequest("autoid");
+		if(action.action=="update"&&autoid.autotp)
+		{
+			get_info(autoid.autotp);
+		}
+
 	})
+	function get_info(autotp) {
+
+		data={"autoid":autoid,"action":"info"};
+		$.ajax({
+					url: '/auto_tp',
+					type: 'POST',
+					data: data,
+					success: function (arg) {
+						arg = JSON.parse(arg);
+
+						var data=arg["data"];
+						if (arg["code"] == 0) {
+							console.log(arg);
+							$("#uuid").val(data["uuid"]);
+							$("#tiems").val(data["times"]);
+							$("input[name='status']:radio[value={value}]".replace(/{value}/,data['status'])).attr('checked','true');
+							$("input[name='sort']:radio[value={value}]".replace(/{value}/,data['sort'])).attr('checked','true');
+							var tpusers=data["tpusers"]
+							for(i=0;i<tpusers.length();i++)
+							{
+								liwu_init(tpusers[i]["userid"],"",tpusers[i]["start"],tpusers["end"])
+							}
+
+						}
+
+
+					}
+				}
+		)
+	}
 	function btn_add_liwu() {
 		liwu_init("","/images/diamond.png",10,20)
 	}
@@ -227,7 +265,7 @@
 
 
 		html="<tr name='liwus'>\n" +
-				"\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入名称\" value=\""+gifttitle+"\" class=\"form-control\" name=\"userid\"></td>\n" +
+				"\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入用户的id\" value=\""+gifttitle+"\" class=\"form-control\" name=\"userid\"></td>\n" +
 				"\t\t<td class=\"text-left\" ><div class=\"input-group\">\n" +
 				"          <input type=\"number\" placeholder=\"输入支付价格\" value=\""+giftprice+"\" class=\"form-control\" name=\"start\">\n" +
 
@@ -240,6 +278,51 @@
 				"\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
 				"\t</tr>";
 		$("#js-table-2").append(html);
+	}
+
+	function sudbit_click() {
+
+		var data={};
+		data["action"]=action.action;
+		if(data["action"]=="update")
+		{
+			data["autoid"]=autoid.autoid
+		}
+		data["uuid"]= $("#uuid").val();
+		data["times"]=$("#tiems").val();
+		data["status"]=$('input[name="status"]:checked').val();
+		data["sort"]=$('input[name="sort"]:checked').val();
+
+
+
+		var liwus=$("tr[name='liwus']");
+		var liwulist=[];
+		for(var i=0;i<liwus.length;i++)
+		{
+			var userid=$(liwus[i]).find("td:nth-child(1) input[name='userid']").val();
+			var start=$(liwus[i]).find("td:nth-child(2) div input[name='start']").val();
+			var end=$(liwus[i]).find("td:nth-child(3) input[name='end']").val();
+			var data={"userid":userid,"start":start,"end":end,"rank":i};
+			liwulist[i]=data;
+
+		}
+		data["tpusers"]=JSON.stringify(liwulist);
+
+
+
+		$.ajax({
+					url: '/auto_tp',
+					type: 'POST',
+					data: data,
+					success: function (arg) {
+
+						location.href="/auto_tp.html"
+
+
+					}
+				}
+		)
+
 	}
 </script>
 </html>

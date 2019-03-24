@@ -38,32 +38,6 @@ function  get_info(autoid) {
      )
 
 }
-function sudbit_click() {
 
-    var data={};
-    data["action"]=action.action;
-    if(data["action"]=="update")
-    {
-        data["autoid"]=autoid.autoid
-    }
-     data["uuid"]= $("#uuid").val();
-     data["times"]=$("#tiems").val();
-     data["start"]=$("#start").val();
-     data["end"]=$("#end").val();
-     data["status"]=$('input[name="status"]:checked').val();
-     $.ajax({
-             url: '/auto_click',
-             type: 'POST',
-             data: data,
-             success: function (arg) {
-
-                     location.href="/auto_click.html"
-
-
-             }
-         }
-     )
-
-}
 
 

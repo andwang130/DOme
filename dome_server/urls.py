@@ -6,5 +6,6 @@ path=[("/user",Userhanderl.Userhanderl),
       ("/black",Blacklist.Blacklist),
       ("/tpuserscv",tpuserscvHandelr.tpuserscvHandelr),
        ("/auto_click",autohanderl.clickhanderl),
+      ("/auto_tp",autohanderl.TPhanderl)
       ("/root",rootHandel.Roothanderl)
       ]
