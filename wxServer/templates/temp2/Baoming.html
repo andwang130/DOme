@@ -327,9 +327,7 @@ function files_oninpit() {
 
                  var rqdata=JSON.parse(str);
                  if(rqdata["status"]==0) {
-					 location.href = "/wx/toupiao?uuid={{data["
-					 uuid
-					 "]}}&userid=" + rqdata["useruuid"]
+					 location.href = "/wx/toupiao?uuid={{ data["uuid"] }}&userid=" + rqdata["useruuid"]
 				 }
                  else{
 					 dialog2(rqdata["msg"])
