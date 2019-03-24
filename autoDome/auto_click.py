@@ -67,15 +67,18 @@ class auto_tp:
             data[i]["userid"]=tpuserlist[i]
     def nosort_add(self,data):
         pass
-    def get_last(self,rank,uuid_,userid):
-        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
-        usercouesr=self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":userid})
-        if usercouesr:
-            newlist=[]
-            for i in cousers:
-                print(i["votenum"])
-                if usercouesr["votenum"]<i["votenum"]:
-                    return i["votenum"]
+    def get_last(self,rank,uuid_,useridlist):
+        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(rank).sort([("votenum",-1)])
+        newlist = []
+        for i in cousers:
+            if not i["userid"]  in useridlist:
+                return i["votenum"]
+        # if usercouesr:
+        #     newlist=[]
+        #     for i in cousers:
+        #         print(i["votenum"])
+        #         if usercouesr["votenum"]<i["votenum"]:
+        #             return i["votenum"]
 
         return None
     def run(self):
@@ -87,8 +90,10 @@ class auto_tp:
             if i["sort"]==1:
                 self.sort_add(i)
             lengt=len(i["tpusers"])
-            userid=i["tpusers"][lengt-1]["userid"]
-            votenum=self.get_last(len(i["tpusers"]),i["uuid"],userid)
+            userlist=[]
+            for i in i["tpusers"]:
+                userlist.append(i["userid"])
+            votenum=self.get_last(len(i["tpusers"]),i["uuid"],userlist)
             if votenum==None:
                 continue
             sum=0
