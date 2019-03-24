@@ -58,6 +58,13 @@ class baoming(Basehanderl.Basehandelr):
     def post(self):
         data = {}
         uuid_ = self.get_argument("uuid", "")
+        pojectcoures = self.Mongodb["poject"].find_one({"uuid": uuid_})
+        if time.mktime(time.strptime(pojectcoures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time() > 0:
+            self.write(json.dumps({"status": -1, "msg": "活动未开始"}))
+            return
+        if time.mktime(time.strptime(pojectcoures["timeend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
+            self.write(json.dumps({"status": -1, "msg": "活动已经结束"}))
+            return
         if uuid_:
             self.db_linck()
             for i in pojcetm.Tpuser:

@@ -111,6 +111,11 @@ class TPhanderl(Basehandelr):
             return self.write(json.dumps(reset))
         if uuid_!="" and status!="" and times!="" and sort!="":
             tpusers=self.get_argument("tpusers","")
+            couser=self.Mongodb["poject"].find_one({"uuid":uuid_})
+            if not couser:
+                reset["code"]=-1
+                reset["data"]="不存在该活动"
+                return self.write(json.dumps(reset))
             if not tpusers:
                 reset["code"]=-1
                 reset["data"]="没有添加用户"
@@ -170,6 +175,11 @@ class TPhanderl(Basehandelr):
             self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
         if uuid_!="" and status!="" and times!="" and sort!="" and autoid!="":
             tpusers=self.get_argument("tpusers","")
+            couser=self.Mongodb["poject"].find_one({"uuid":uuid_})
+            if not couser:
+                reset["code"]=-1
+                reset["data"]="不存在该活动"
+                return self.write(json.dumps(reset))
             if not tpusers:
                 reset["code"]=-1
                 reset["data"]="没有添加用户"

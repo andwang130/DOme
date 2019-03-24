@@ -326,7 +326,14 @@ function files_oninpit() {
                 hidemod("loadingToast");
 
                  var rqdata=JSON.parse(str);
-				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+rqdata["useruuid"]
+                 if(rqdata["status"]==0) {
+					 location.href = "/wx/toupiao?uuid={{data["
+					 uuid
+					 "]}}&userid=" + rqdata["useruuid"]
+				 }
+                 else{
+					 dialog2(rqdata["msg"])
+				 }
                 },
             error: function (err) {
                 hidemod("loadingToast");
