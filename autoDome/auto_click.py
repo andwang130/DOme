@@ -86,7 +86,7 @@ class auto_tp:
                 continue
             sum=0
             for user in reversed(i["tpusers"]):
-                num=random.randint(i["start"],i["end"])
+                num=random.randint(user["start"],user["end"])
                 newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$inc":{"votenum":votenum+num+sum}})
                 sum+=num
                 addlist.append(newdata)
