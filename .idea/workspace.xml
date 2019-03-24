@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" beforeDir="false" afterPath="$PROJECT_DIR$/dome_server/handel/autohanderl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addTpuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/addTpuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addTpuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/addTpuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addauto_click.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/addauto_click.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addauto_click.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/addauto_click.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addauto_tp.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/addauto_tp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staticfile/auto_tp.html" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/auto_tp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfile/auto_tp.js" beforeDir="false" afterPath="$PROJECT_DIR$/staticfile/auto_tp.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +18,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="144" column="17" lean-forward="true" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="42" />
+            <state relative-caret-position="-1330">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/addauto_click.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="177" column="16" lean-forward="true" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
+              <folding>
+                <element signature="e#540#546#0" expanded="true" />
+                <element signature="e#546#552#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3475">
+              <folding>
+                <element signature="n#style#0;n#span#1;n#td#3;n#tr#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#span#1;n#td#3;n#tr#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="136" column="17" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -26,75 +91,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/addauto_click.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="415">
+              <caret line="68" column="24" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="68" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/auto_click.js">
+        <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="249">
+              <caret line="319" column="45" lean-forward="true" selection-start-line="319" selection-start-column="45" selection-end-line="319" selection-end-column="45" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
+        <entry file="file://$PROJECT_DIR$/staticfile/TPUser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
-              <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/auto_click.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="92" column="37" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="168" column="37" lean-forward="true" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="6081" column="4" selection-start-line="6081" selection-start-column="4" selection-end-line="6081" selection-end-column="4" />
-            </state>
+            <state relative-caret-position="-2850" />
           </provider>
         </entry>
       </file>
@@ -111,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>添加获得</find>
       <find>已付款订单</find>
       <find>bmimg</find>
       <find>ready</find>
@@ -141,6 +159,7 @@
       <find>userid</find>
       <find>btn_del_ad</find>
       <find>+添加</find>
+      <find>sendError</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -150,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staticfile/upload.js" />
         <option value="$PROJECT_DIR$/staticfile/loading/load-min.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/Admin.html" />
@@ -161,7 +179,6 @@
         <option value="$PROJECT_DIR$/staticfile/backlist.html" />
         <option value="$PROJECT_DIR$/staticfile/auto_click.html" />
         <option value="$PROJECT_DIR$/staticfile/addTuouselist.html" />
-        <option value="$PROJECT_DIR$/staticfile/addauto_click.html" />
         <option value="$PROJECT_DIR$/staticfile/um/umeditor.config.js" />
         <option value="$PROJECT_DIR$/Imgae_serever/editorupload.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py" />
@@ -181,7 +198,6 @@
         <option value="$PROJECT_DIR$/dome_server/handel/Poject.py" />
         <option value="$PROJECT_DIR$/staticfile/TPUser.html" />
         <option value="$PROJECT_DIR$/staticfile/TPuser.js" />
-        <option value="$PROJECT_DIR$/staticfile/addTpuser.html" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
@@ -195,12 +211,15 @@
         <option value="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
-        <option value="$PROJECT_DIR$/staticfile/addauto_click.js" />
         <option value="$PROJECT_DIR$/dome_server/urls.py" />
-        <option value="$PROJECT_DIR$/staticfile/addauto_tp.html" />
-        <option value="$PROJECT_DIR$/staticfile/auto_tp.html" />
-        <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/auto_tp.js" />
+        <option value="$PROJECT_DIR$/staticfile/auto_tp.html" />
+        <option value="$PROJECT_DIR$/staticfile/addauto_click.html" />
+        <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
+        <option value="$PROJECT_DIR$/staticfile/addauto_click.js" />
+        <option value="$PROJECT_DIR$/staticfile/addauto_tp.html" />
+        <option value="$PROJECT_DIR$/staticfile/addTpuser.js" />
+        <option value="$PROJECT_DIR$/staticfile/addTpuser.html" />
       </list>
     </option>
   </component>
@@ -244,6 +263,12 @@
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
               <item name="staticfile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
+              <item name="jquerytc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
@@ -407,90 +432,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/Basehanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/jquery-1.4.4.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/orderall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="215" column="62" selection-start-line="215" selection-start-column="62" selection-end-line="215" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="265" column="4" selection-start-line="265" selection-start-column="4" selection-end-line="273" selection-end-column="5" />
-          <folding>
-            <marker date="1553353072381" expanded="true" signature="642:648" ph=" " />
-            <marker date="1553353072381" expanded="true" signature="648:654" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/orderall.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="132" column="77" selection-start-line="132" selection-start-column="72" selection-end-line="132" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="197" column="5" lean-forward="true" selection-start-line="197" selection-start-column="5" selection-end-line="197" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/TPUser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="143" column="49" selection-start-line="143" selection-start-column="46" selection-end-line="143" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="71" column="90" selection-start-line="71" selection-start-column="90" selection-end-line="71" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/wxcss/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/wxcss/swiper-3.3.1.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -671,38 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="301" column="21" selection-start-line="301" selection-start-column="16" selection-end-line="301" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/Basehandelr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="637" column="21" lean-forward="true" selection-start-line="637" selection-start-column="21" selection-end-line="637" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="306" column="28" selection-start-line="306" selection-start-column="28" selection-end-line="306" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -713,39 +626,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="144" column="17" lean-forward="true" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="42" />
-        </state>
+        <state relative-caret-position="-228" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addauto_click.js">
+    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="151" column="21" selection-start-line="151" selection-start-column="21" selection-end-line="151" selection-end-column="21" />
+        <state relative-caret-position="401">
+          <caret line="92" column="37" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/auto_click.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="168" column="37" lean-forward="true" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+        <state relative-caret-position="161">
+          <caret line="637" column="21" lean-forward="true" selection-start-line="637" selection-start-column="21" selection-end-line="637" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -756,17 +663,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
+    <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="92" column="37" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="37" />
+        <state relative-caret-position="301">
+          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="175" column="8" selection-start-line="175" selection-start-column="8" selection-end-line="175" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="148" column="52" lean-forward="true" selection-start-line="148" selection-start-column="52" selection-end-line="148" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/Rootindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="140" column="9" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/RootLogin.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/TPUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3475">
+          <folding>
+            <element signature="n#style#0;n#span#1;n#td#3;n#tr#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#span#1;n#td#3;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="136" column="17" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="319" column="45" lean-forward="true" selection-start-line="319" selection-start-column="45" selection-end-line="319" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="177" column="16" lean-forward="true" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="16" />
+          <folding>
+            <element signature="e#540#546#0" expanded="true" />
+            <element signature="e#546#552#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="496">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addauto_click.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="68" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addauto_click.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1330">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

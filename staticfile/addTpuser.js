@@ -109,8 +109,16 @@ function sudbit_click() {
              type: 'POST',
              data: data,
              success: function (arg) {
-
-                     location.href="/TPUser.html?uuid="+uuid.uuid
+                var arg=JSON.parse(arg)
+                 var data=arg["data"]
+                 if (arg["code"]==0) {
+                     location.href = "/TPUser.html?uuid=" + uuid.uuid
+                 }
+                else{
+                     $.sendError(arg["data"], 3000, function() {
+                         console.log('sendSuccessToTop closed');
+                     });
+                 }
 
 
              }

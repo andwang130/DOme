@@ -16,6 +16,10 @@
 	<script type="text/javascript" src="./resource/js/app/util.js?v=20170915"></script>
 	<script type="text/javascript" src="./resource/js/app/common.min.js?v=20170915"></script>
 	<script type="text/javascript" src="./resource/js/require.js?v=20170915"></script>
+	<link rel="stylesheet" href="jquerytc/css/demo.css">
+	<link rel="stylesheet" href="jquerytc/src/css/dialog.css">
+	<script src="jquerytc/js/jquery.min.js"></script>
+	<script src="jquerytc/src/jquery.dialog.js"></script>
     <script type="text/javascript" src="js/umit.js"></script>
 </head>
 <body>
@@ -314,8 +318,15 @@
 					type: 'POST',
 					data: data,
 					success: function (arg) {
+						var arg=JSON.parse(arg)
+						var data=arg["data"]
 						if(arg.code==0) {
 							location.href = "/auto_tp.html"
+						}
+						else {
+							$.sendError(data, 3000, function() {
+								console.log('sendSuccessToTop closed');
+							});
 						}
 
 

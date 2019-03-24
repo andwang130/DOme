@@ -35,7 +35,7 @@ class clickhanderl(Basehandelr):
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code":0}))
         else:
-            self.write(json.dumps({"code": -1}))
+            self.write(json.dumps({"code": -1,"data":"缺少数据"}))
     def get_list(self):
         page=int(self.get_argument("page",0))
         coures=self.Mongodb["autoClick"].find({"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
@@ -114,10 +114,9 @@ class TPhanderl(Basehandelr):
                 if i["userid"] in useridlist:
                     reset["code"]=-1
                     reset["data"]="重复的用户ID"
-                    self.write(json.dumps(reset))
+                    return self.write(json.dumps(reset))
                 useridlist.append(i["userid"])
                 new_tpusrs.append(i)
-            print(new_tpusrs)
             data={"autoid":str(uuid.uuid1()).replace("-",""),"Adminid":self.get_secure_cookie("token"),"times":times,"status":status,
                   "sort":sort,"tpusers":new_tpusrs,"createdate":time.time(),"uuid":uuid_}
             self.Mongodb["autoTP"].insert_one(data)
