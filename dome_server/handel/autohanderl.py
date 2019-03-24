@@ -99,7 +99,8 @@ class TPhanderl(Basehandelr):
         sort=int(self.get_argument("sort",""))
         if uuid_ and status and times:
             tpusers=self.get_argument("tpusers")
-            print(tpusers)
+            dict_tpusers=json.loads(tpusers)
+            print(dict_tpusers)
             return
             data={"autoid":str(uuid.uuid1()).replace("-",""),"Adminid":self.get_secure_cookie("token"),"times":times,"status":status,
                   "sort":sort}
