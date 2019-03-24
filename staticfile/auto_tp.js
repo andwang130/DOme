@@ -58,7 +58,7 @@ function get_list(page) {
                        .replace(/{autoid}/,datalist[i]["autoid"])
                        .replace(/{delete}/,datalist[i]["autoid"]);
 
-                   if(datalist[i]["status"]==0)
+                   if(datalist[i]["status"]==1)
                    {
                       new_tr= new_tr.replace(/{span}/,'<td class="text-left vertical-middle"><span class="label label-default">未开启</span></td>')
                    }
