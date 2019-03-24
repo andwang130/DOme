@@ -210,6 +210,12 @@
 <input type="file" id="filse"  style="display:none">
 
 <script>
+	$('body').delegate('.btn_del_ad','click', function() {
+		var obj = $(this).parent().parent();
+		obj.slideUp(300, function() {
+			obj.remove();
+		});
+	});
 	$(document).ready(function () {
 
 		$("#btn_add_liwu").click(btn_add_liwu);
