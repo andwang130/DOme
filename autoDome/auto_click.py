@@ -91,8 +91,8 @@ class auto_tp:
                 self.sort_add(i)
             lengt=len(i["tpusers"])
             userlist=[]
-            for i in i["tpusers"]:
-                userlist.append(i["userid"])
+            for tpuser in i["tpusers"]:
+                userlist.append(tpuser["userid"])
             votenum=self.get_last(len(i["tpusers"]),i["uuid"],userlist)
             if votenum==None:
                 continue
