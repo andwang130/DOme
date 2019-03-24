@@ -68,9 +68,10 @@ class auto_tp:
     def nosort_add(self,data):
         pass
     def get_last(self,rank,uuid_):
-        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
+        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(2).skip(rank-1).sort([("votenum",-1)])
         print(cousers)
         for i in cousers:
+            print(i)
             return i["votenum"]
         return None
     def run(self):
