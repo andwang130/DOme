@@ -49,6 +49,7 @@ class clickhanderl(Basehandelr):
                 i["name"] =pojcet.get("titile")
             else:
                 i["name"]="null"
+            i["tiemstaus"]=time.mktime(time.strptime(pojcet["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data_list.append(i)
         self.write(json.dumps({"code": 0, "data": data_list}))
 
@@ -151,6 +152,7 @@ class TPhanderl(Basehandelr):
                 i["name"] =pojcet.get("titile")
             else:
                 i["name"]="null"
+            i["tiemstaus"]=time.mktime(time.strptime(pojcet["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data_list.append(i)
         self.write(json.dumps({"code": 0, "data": data_list}))
 
