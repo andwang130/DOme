@@ -232,7 +232,7 @@
 	})
 	function get_info(autotp) {
 
-		data={"autoid":autotp,"action":"info"};
+		var data={"autoid":autotp,"action":"info"};
 		$.ajax({
 					url: '/auto_tp',
 					type: 'POST',
