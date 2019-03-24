@@ -226,13 +226,13 @@
 		autoid=GetRequest("autoid");
 		if(action.action=="update"&&autoid.autoid)
 		{
-			get_info(autoid.autotp);
+			get_info(autoid.autoid);
 		}
 
 	})
 	function get_info(autotp) {
 
-		data={"autoid":autoid,"action":"info"};
+		data={"autoid":autotp,"action":"info"};
 		$.ajax({
 					url: '/auto_tp',
 					type: 'POST',
