@@ -72,6 +72,7 @@ class auto_tp:
         print(cousers)
         newlist=[]
         for i in cousers:
+            print(i["votenum"])
             newlist.append(i)
         if len(newlist)>=2:
             if newlist[0]["votenum"]<newlist[1]["votenum"]:
