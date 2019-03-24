@@ -126,7 +126,7 @@ class Tpuuser(Basehandelr):
                 self.Mongodb["poject"].update_one({"uuid":uuid_poject},{"$inc":{"participants":sum}});
                 self.write(json.dumps({"code": 0, "data":""}))
             except Exception as e:
-                self.write(json.dumps({"code": -1, "eeor": "db"}))
+                self.write(json.dumps({"code": -1, "data": "数据库错误"}))
                 print(e)
 
     def update(self):
