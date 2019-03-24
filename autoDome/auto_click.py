@@ -88,8 +88,8 @@ class auto_tp:
             if not self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":userid}):
                 return False
         return True
-    def update_autotp(self,autoid):
-        datalist = self.cooliect.find({"status": 1})
+    def update_autotp(self,uuid_,autoid):
+        datalist = self.cooliect.update_one({"uuid":uuid_,"autoid":autoid},{"$set":{"status":0}})
 
     def run(self):
         addlist = []
