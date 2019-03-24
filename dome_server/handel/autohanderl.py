@@ -24,6 +24,7 @@ class clickhanderl(Basehandelr):
             elif action=="delete":
                 self.delete()
     def add_auto_click(self):
+        reset={}
         try:
             uuid_=self.get_argument("uuid", "")
             start=int(self.get_argument("start", ""))
@@ -33,6 +34,12 @@ class clickhanderl(Basehandelr):
         except:
             return self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
         if uuid_!="" and start!="" and end!="" and status!="" and times!="":
+
+            couser=self.Mongodb["poject"].find_one({"uuid":uuid_})
+            if not couser:
+                reset["code"]=-1
+                reset["data"]="不存在该活动"
+                return self.write(json.dumps(reset))
             data={"Adminid":self.get_secure_cookie("token"),"times":times,"uuid":uuid_,"start":start,"end":end,"status":status,"createdate":time.time(),"autoid":str(uuid.uuid1()).replace("-","")}
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code":0}))
@@ -49,7 +56,8 @@ class clickhanderl(Basehandelr):
                 i["name"] =pojcet.get("titile")
             else:
                 i["name"]="null"
-            i["tiemstaus"]=time.mktime(time.strptime(pojcet["timeend"], '%Y-%m-%d %H:%M')) - time.time()
+            if pojcet:
+                i["tiemstaus"]=time.mktime(time.strptime(pojcet["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data_list.append(i)
         self.write(json.dumps({"code": 0, "data": data_list}))
 
@@ -63,16 +71,23 @@ class clickhanderl(Basehandelr):
         else:
             self.write(json.dumps({"code": -1}))
     def update(self):
+        reset={}
         try:
             autoid = self.get_argument("autoid", "")
-            uuid = self.get_argument("uuid", "")
+            uuid_ = self.get_argument("uuid", "")
             start = int(self.get_argument("start", ""))
             end = int(self.get_argument("end", ""))
             status = int(self.get_argument("status", ""))
             times=int(self.get_argument("times", ""))
         except:
             self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
-        if autoid!="" and uuid!="" and start!="" and end!="" and status!="":
+        if autoid!="" and uuid_!="" and start!="" and end!="" and status!="":
+
+            couser=self.Mongodb["poject"].find_one({"uuid":uuid_})
+            if not couser:
+                reset["code"]=-1
+                reset["data"]="不存在该活动"
+                return self.write(json.dumps(reset))
             data = {"uuid": uuid, "start": start, "end": end, "status": status,"times":times}
             self.Mongodb["autoClick"].update_one({"autoid":autoid,"Adminid":self.get_secure_cookie("token")},{"$set":data})
             self.write(json.dumps({"code": 0}))
