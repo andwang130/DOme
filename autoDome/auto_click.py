@@ -70,8 +70,9 @@ class auto_tp:
     def get_last(self,rank,uuid_):
         cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
         print(cousers)
-        if cousers:
-            return cousers[0]["votenum"]
+        for i in cousers:
+            return i["votenum"]
+        return None
     def run(self):
         addlist = []
         updatelist = []
@@ -81,10 +82,12 @@ class auto_tp:
             if i["sort"]==1:
                 self.sort_add(i)
             votenum=self.get_last(len(i["tpusers"]),i["uuid"])
+            if votenum==None:
+                continue
             sum=0
-            for i in reversed(i["tpusers"]):
+            for user in reversed(i["tpusers"]):
                 num=random.randint(i["start"],i["end"])
-                newdata=({"uuid":i["uuid"],"userid":i["userid"]},{"$inc":{"votenum":votenum+num+sum}})
+                newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$inc":{"votenum":votenum+num+sum}})
                 sum+=num
                 addlist.append(newdata)
         self.add_tp(addlist)
