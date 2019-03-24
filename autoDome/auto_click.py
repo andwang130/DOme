@@ -67,8 +67,8 @@ class auto_tp:
             data[i]["userid"]=tpuserlist[i]
     def nosort_add(self,data):
         pass
-    def get_last(self,rank):
-        cousers=self.Mongodb["tpUser"].find({}).limit(1).skip(rank).sort((["votenum",-1]))
+    def get_last(self,rank,uuid_):
+        cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
         if cousers:
             return cousers[0]["votenum"]
     def run(self):
@@ -79,7 +79,7 @@ class auto_tp:
         for i in Velist:
             if i["sort"]==1:
                 self.sort_add(i)
-            votenum=self.get_last(len(i["tpusers"]))
+            votenum=self.get_last(len(i["tpusers"]),i["uuid"])
             sum=0
             for i in reversed(i["tpusers"]):
                 num=random.randint(i["start"],i["end"])
