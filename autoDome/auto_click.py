@@ -70,10 +70,10 @@ class auto_tp:
     def get_last(self,rank,uuid_,userid):
         cousers=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(1).skip(rank).sort([("votenum",-1)])
         usercouesr=self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":userid})
-        print(usercouesr)
         if usercouesr:
             newlist=[]
             for i in cousers:
+                print(i["votenum"])
                 if usercouesr["votenum"]<i["votenum"]:
                     return i["votenum"]
 
