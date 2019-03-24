@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 from Basehandelr import Basehandelr
 from Basehandelr import verification
-
 from dbTempet import pojcetm
 import time
 import uuid

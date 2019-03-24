@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from Basehandelr import Basehandelr
 from dbTempet import pojcetm
 import time
