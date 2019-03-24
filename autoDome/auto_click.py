@@ -87,7 +87,7 @@ class auto_tp:
                 return False
         return True
     def update_autotp(self,autoid):
-        datalist = self.cooliect.find({"status": 0})
+        datalist = self.cooliect.find({"status": 1})
 
     def run(self):
         addlist = []
@@ -95,7 +95,7 @@ class auto_tp:
         datalist = self.get_dbData()
         Velist = self.Verification(datalist)
         for i in Velist:
-            if i["sort"]==1:
+            if i["sort"]==0:
                 self.sort_add(i)
             lengt=len(i["tpusers"])
             userlist=[]
