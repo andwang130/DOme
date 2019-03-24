@@ -86,7 +86,7 @@ class auto_tp:
             if i["sort"]==1:
                 self.sort_add(i)
             lengt=len(i["tpusers"])
-            userid=i["tpusers"][lengt]["userid"]
+            userid=i["tpusers"][lengt-1]["userid"]
             votenum=self.get_last(len(i["tpusers"]),i["uuid"],userid)
             if votenum==None:
                 continue
