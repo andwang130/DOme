@@ -90,4 +90,4 @@ Uservideo={"path","Adminid","Name"}
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start"]
 
 auto_click=["uuid","tiems","start","end","createdate","status","Adminid"]
-auto_tp={"uuid":"","tiems":"","status":"","Adminid":"","tpusers":{"rank":1,"start":1,"end":10},"sort":0}
+auto_tp={"uuid":"","tiems":"","status":"","Adminid":"","tpusers":{"rank":1,"start":1,"end":10,"userid":""},"sort":0}

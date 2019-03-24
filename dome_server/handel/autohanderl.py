@@ -145,6 +145,10 @@ class TPhanderl(Basehandelr):
                     i["end"]=int(i["end"])
                 except:
                     self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
+                if not self.Mongodb["tpUser"].find_one({"uuid":uuid_,"userid":i["userid"]}):
+                    reset["code"]=-1
+                    reset["data"] = "{}不存在的商家".format(i["userid"])
+                    return self.write(json.dumps(reset))
                 if i["userid"] in useridlist:
                     reset["code"]=-1
                     reset["data"]="重复的用户ID"
@@ -200,6 +204,7 @@ class TPhanderl(Basehandelr):
                 reset["code"]=-1
                 reset["data"]="不存在该活动"
                 return self.write(json.dumps(reset))
+
             if not tpusers:
                 reset["code"]=-1
                 reset["data"]="没有添加用户"
@@ -213,6 +218,10 @@ class TPhanderl(Basehandelr):
                     i["end"]=int(i["end"])
                 except:
                     self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
+                if not self.Mongodb["tpUser"].find_one({"uuid": uuid_, "userid": i["userid"]}):
+                    reset["code"] = -1
+                    reset["data"] = "{}不存在的商家".format(i["userid"])
+                    return self.write(json.dumps(reset))
                 if i["userid"] in useridlist:
                     reset["code"]=-1
                     reset["data"]="重复的用户ID"
