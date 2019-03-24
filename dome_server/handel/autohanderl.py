@@ -93,14 +93,30 @@ class TPhanderl(Basehandelr):
             elif action=="delete":
                 self.delete()
     def add_auto_click(self):
+        reset={}
         uuid_=self.get_argument("uuid", "")
         times=int(self.get_argument("times",""))
         status=int(self.get_argument("status",""))
         sort=int(self.get_argument("sort",""))
-        if uuid_ and status and times:
-            tpusers=self.get_argument("tpusers")
+        if uuid_ and status and times and sort:
+            tpusers=self.get_argument("tpusers","")
+            if not tpusers:
+                reset["code"]=-1
+                reset["data"]="没有添加用户"
+                return self.write(json.dumps(reset))
             dict_tpusers=json.loads(tpusers)
-            print(dict_tpusers)
+            new_tpusrs=[]
+            useridlist=[]
+            for i in dict_tpusers:
+                i["start"]=int(i["start"])
+                i["end"]=int(i["end"])
+                if i["userid"] in useridlist:
+                    reset["code"]=-1
+                    reset["data"]="重复的用户ID"
+                    self.write(json.dumps(reset))
+                useridlist.append(i["userid"])
+                new_tpusrs.append(i)
+            print(new_tpusrs)
             return
             data={"autoid":str(uuid.uuid1()).replace("-",""),"Adminid":self.get_secure_cookie("token"),"times":times,"status":status,
                   "sort":sort}
@@ -108,6 +124,8 @@ class TPhanderl(Basehandelr):
             self.Mongodb["autoClick"].insert_one(data)
             self.write(json.dumps({"code":0}))
         else:
+            reset["code"]=-1
+            reset["data"]="缺少数据"
             self.write(json.dumps({"code": -1}))
     def get_list(self):
         page=int(self.get_argument("page",0))
