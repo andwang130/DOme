@@ -19,14 +19,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1665">
-              <caret line="146" column="72" selection-start-line="146" selection-start-column="72" selection-end-line="146" selection-end-column="72" />
-              <folding>
-                <element signature="e#24#59#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="331" column="22" lean-forward="true" selection-start-line="331" selection-start-column="22" selection-end-line="331" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -94,10 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5529">
+            <state relative-caret-position="304">
+              <caret line="307" column="1" selection-start-line="307" selection-start-column="1" selection-end-line="307" selection-end-column="1" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
@@ -191,7 +189,6 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
         <option value="$PROJECT_DIR$/staticfile/wxcss/index.css" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
         <option value="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
@@ -205,11 +202,12 @@
         <option value="$PROJECT_DIR$/staticfile/addauto_click.js" />
         <option value="$PROJECT_DIR$/staticfile/auto_click.html" />
         <option value="$PROJECT_DIR$/staticfile/auto_tp.html" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/addauto_tp.html" />
         <option value="$PROJECT_DIR$/staticfile/auto_tp.js" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
       </list>
     </option>
   </component>
@@ -392,7 +390,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
@@ -672,13 +670,6 @@
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/Handle.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="334" column="43" lean-forward="true" selection-start-line="334" selection-start-column="43" selection-end-line="334" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/bucktoknehandelr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -766,12 +757,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5529">
+        <state relative-caret-position="304">
+          <caret line="307" column="1" selection-start-line="307" selection-start-column="1" selection-end-line="307" selection-end-column="1" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#li#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="331" column="22" lean-forward="true" selection-start-line="331" selection-start-column="22" selection-end-line="331" selection-end-column="22" />
         </state>
       </provider>
     </entry>
