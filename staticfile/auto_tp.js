@@ -3,7 +3,7 @@ var tr="<tr>\n" +
     "                    <td class=\"text-left vertical-middle\">{间隔}</td>\n" +
     "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">{活动名称}</span></td>\n" +
     "\t\t\t\t\t<td class=\"text-left vertical-middle\"><p>\n" +
-    "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"编辑\" href=\"/addauto_click.html?action=update&autoid={autoid}\"><i class=\"fa fa-edit\"></i> 编辑</a>\n" +
+    "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"编辑\" href=\"/addauto_tp.html?action=update&autoid={autoid}\"><i class=\"fa fa-edit\"></i> 编辑</a>\n" +
     "\t\t\t\t\t<a class=\"color-default we7-margin-right\" rel=\"tooltip\" href=\"#\" onclick=\"drop_confirm('您确定要删除吗?删除不可恢复，同时删除所有相关数据！','{delete}');\" title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a></p>\n" +
     "                    </td>\n{span}" +
     "                </tr>";
