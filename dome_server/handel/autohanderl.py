@@ -140,8 +140,11 @@ class TPhanderl(Basehandelr):
             new_tpusrs=[]
             useridlist=[]
             for i in dict_tpusers:
-                i["start"]=int(i["start"])
-                i["end"]=int(i["end"])
+                try:
+                    i["start"]=int(i["start"])
+                    i["end"]=int(i["end"])
+                except:
+                    self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
                 if i["userid"] in useridlist:
                     reset["code"]=-1
                     reset["data"]="重复的用户ID"
@@ -205,8 +208,11 @@ class TPhanderl(Basehandelr):
             new_tpusrs=[]
             useridlist=[]
             for i in dict_tpusers:
-                i["start"]=int(i["start"])
-                i["end"]=int(i["end"])
+                try:
+                    i["start"]=int(i["start"])
+                    i["end"]=int(i["end"])
+                except:
+                    self.write(json.dumps({"code": -1,"data":"数据类型错误"}))
                 if i["userid"] in useridlist:
                     reset["code"]=-1
                     reset["data"]="重复的用户ID"
