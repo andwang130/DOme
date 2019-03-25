@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="417">
-              <caret line="122" column="87" lean-forward="false" selection-start-line="122" selection-start-column="87" selection-end-line="122" selection-end-column="87" />
+              <caret line="122" column="77" lean-forward="false" selection-start-line="122" selection-start-column="77" selection-end-line="122" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -812,7 +812,7 @@
     <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
-          <caret line="122" column="87" lean-forward="false" selection-start-line="122" selection-start-column="87" selection-end-line="122" selection-end-column="87" />
+          <caret line="122" column="77" lean-forward="false" selection-start-line="122" selection-start-column="77" selection-end-line="122" selection-end-column="77" />
           <folding />
         </state>
       </provider>
