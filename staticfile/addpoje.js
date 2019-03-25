@@ -60,7 +60,7 @@ function get_info(uuid) {
     var topimgV=$("#topimgV").attr("src",data["topimgV"]);
     var topimg2V=$("#topimg2V").attr("src",data["topimg2V"]);
  var topimg3V=$("#topimg3V").attr("src",data["topimg3V"]);
-    $("#videourl").attr("href",data["videoname"])
+    $("#videourl").attr("href",data["videourl"])
     $("#videourl").text(data["videoname"])
    ue1.ready(function () {
         ue1.setContent(data["customized"]); //
