@@ -62,20 +62,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.dialog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/src/jquery.dialog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="379" column="7" lean-forward="false" selection-start-line="379" selection-start-column="7" selection-end-line="379" selection-end-column="7" />
-              <folding>
-                <marker date="1553346336590" expanded="true" signature="3395:3399" ph="&lt;" />
-                <marker date="1553346336590" expanded="true" signature="3440:3444" ph="&gt;" />
-                <marker date="1553346336590" expanded="true" signature="3691:3705" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dome_server/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="414">
+              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
               <folding>
                 <element signature="e#24#45#0" expanded="true" />
               </folding>
@@ -108,11 +94,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="httpserver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/tornado/httpserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="152" column="48" lean-forward="true" selection-start-line="152" selection-start-column="48" selection-end-line="152" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="207">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -229,8 +225,8 @@
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
-        <option value="$PROJECT_DIR$/dome_server/server.py" />
         <option value="$PROJECT_DIR$/dome_server/settings.py" />
+        <option value="$PROJECT_DIR$/dome_server/server.py" />
       </list>
     </option>
   </component>
@@ -415,14 +411,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1266">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/auto_tp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3519">
@@ -826,21 +814,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/server.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/tornado/httpserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#24#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="559">
+          <caret line="152" column="48" lean-forward="true" selection-start-line="152" selection-start-column="48" selection-end-line="152" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#24#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

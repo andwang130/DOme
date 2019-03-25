@@ -16,6 +16,6 @@ if __name__ == '__main__':
     options.log_file_prefix=logg_file
     options.logging=log_level
     tornado.options.parse_command_line()
-    httpserver=tornado.httpserver.HTTPServer(app)#创建HTTP服务器
+    httpserver=tornado.httpserver.HTTPServer(app,max_buffer_size=504857600)#创建HTTP服务器
     httpserver.listen(options.port,address="127.0.0.1") #
     tornado.ioloop.IOLoop.current().start()#启动ellp轮询绑定80端口
