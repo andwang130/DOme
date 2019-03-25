@@ -348,5 +348,32 @@ var cache = {};
 	$.mask_close = function(ele_id){
 		$(".mask[ele="+ele_id+"]").remove();
 	}
+    $.sendSuccessToTop= function(msg, duration, callback) {
+      var content = '<div class="dialog-success-top">' + '    <i class="i-icon"></i>' + msg + '</div>';
 
+      $('body').append(content);
+
+      var $tipBox = $('.dialog-success-top'),
+          width = $tipBox.width();
+
+      $tipBox.css({
+        'margin-left': -(width / 2),
+        'margin-top': 20,
+        'opacity': 0
+      });
+
+      $tipBox.animate({
+        'opacity': 1,
+        'margin-top': 0
+      }, 400, function() {
+        // 自动隐藏
+        clearTimeout(window.cc_timerSendSuccessToTop);
+        window.cc_timerSendSuccessToTop = setTimeout(function() {
+          $tipBox.fadeOut(function() {
+            $tipBox.remove();
+            typeof callback === 'function' && callback();
+          })
+        }, duration || 3000);
+      });
+    },
 
