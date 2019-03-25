@@ -114,6 +114,7 @@ class Get_frist(Basehanderl.Basehandelr):
         if uuid:
             self.db_linck()
             couses=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(3).sort([("votenum",-1)])
-            if couses:
-                data={"info":"恭喜{}获得第1名".format(couses[0]["name"]),"image":couses[0].get("avatar")}
-                self.write(json.dumps(data))
+            for i in couses:
+                data={"info":"恭喜{}获得第1名".format(i["name"]),"image":i.get("avatar")}
+                return self.write(json.dumps(data))
+        return self.write(json.dumps({"info":"","image":""}))
