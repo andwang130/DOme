@@ -2,6 +2,7 @@ var t_in_click=undefined;
 var action;
 var  uuid;
 var  Userid;
+var page
 $(document).ready(
     function () {
          document.onkeydown = function (event) {
@@ -16,6 +17,7 @@ $(document).ready(
          action=GetRequest("action");
           uuid=GetRequest("uuid");
          Userid=GetRequest("Userid");
+         page=GetRequest("page")
         url_init();
         if(action.action=="update"&&Userid.Userid)
         {
@@ -118,7 +120,7 @@ function sudbit_click() {
                 var arg=JSON.parse(arg)
                  var data=arg["data"]
                  if (arg["code"]==0) {
-                     location.href = "/TPUser.html?uuid=" + uuid.uuid
+                     location.href = "/TPUser.html?uuid=" + uuid.uuid+"&page"+page.page
                  }
                 else{
                      $.sendError(arg["data"], 3000, function() {
