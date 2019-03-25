@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/loading/load.js" afterPath="$PROJECT_DIR$/staticfile/loading/load.js" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addpoje.js" afterPath="$PROJECT_DIR$/staticfile/addpoje.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,9 +16,11 @@
       <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="304" column="17" lean-forward="false" selection-start-line="304" selection-start-column="17" selection-end-line="304" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="325">
+              <caret line="309" column="24" lean-forward="false" selection-start-line="309" selection-start-column="24" selection-end-line="309" selection-end-column="24" />
+              <folding>
+                <element signature="e#10588#11163#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,21 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addauto_tp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,14 +57,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="load.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/loading/load.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-728">
-              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="302">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1342#1917#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib.dom.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="15086" column="17" lean-forward="false" selection-start-line="15086" selection-start-column="17" selection-end-line="15086" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,7 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>microsoft yahei&quot;, &quot;Helvetica Neue&quot;,</find>
       <find>ul li</find>
       <find>margin</find>
       <find>送</find>
@@ -161,9 +163,10 @@
       <find>require</find>
       <find>test_mask</find>
       <find>mask_fullscreen</find>
-      <find>mask_element</find>
-      <find>add</find>
       <find>define</find>
+      <find>add</find>
+      <find>$</find>
+      <find>mask_element</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -221,9 +224,9 @@
         <option value="$PROJECT_DIR$/staticfile/addTpuser.js" />
         <option value="$PROJECT_DIR$/staticfile/TPuser.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
+        <option value="$PROJECT_DIR$/staticfile/loading/load.js" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
-        <option value="$PROJECT_DIR$/staticfile/loading/load.js" />
       </list>
     </option>
   </component>
@@ -438,13 +441,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staticfile/backlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -802,11 +798,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+    <entry file="file://$PROJECT_DIR$/staticfile/loading/load-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="304" column="17" lean-forward="false" selection-start-line="304" selection-start-column="17" selection-end-line="304" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -818,12 +816,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/loading/load-min.js">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="274">
+          <caret line="15086" column="17" lean-forward="false" selection-start-line="15086" selection-start-column="17" selection-end-line="15086" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/loading/load.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1342#1917#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="309" column="24" lean-forward="false" selection-start-line="309" selection-start-column="24" selection-end-line="309" selection-end-column="24" />
+          <folding>
+            <element signature="e#10588#11163#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,18 +848,8 @@
     <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/loading/load.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
