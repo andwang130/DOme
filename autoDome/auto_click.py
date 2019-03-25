@@ -96,6 +96,9 @@ class auto_tp:
         for i in votenumlist:
             if userid==i["userid"]:
                 return i["votenum"]
+    def update_times(self,datalist):
+        for i in datalist:
+            self.Mongodb["tpUser"].update_one(i)
     def run(self):
         addlist = []
         updatelist = []
@@ -127,6 +130,7 @@ class auto_tp:
                 newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$inc":{"votenum":num}})
                 votenum=uservotenum+num
                 addlist.append(newdata)
+                updatelist .append(({"_id": i["_id"]}, {"$set": {"createdate": time.time()}}))
         self.add_tp(addlist)
 if __name__ == '__main__':
     while True:
