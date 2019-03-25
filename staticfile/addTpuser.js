@@ -4,6 +4,12 @@ var  uuid;
 var  Userid;
 $(document).ready(
     function () {
+         document.onkeydown = function (event) {
+        var e = event || window.event;
+        if (e && e.keyCode == 13) { //回车键的键值为13
+            $("#submit").click();
+        }
+    };
          $("#filse").change(filse_change);
         $("#submit").click(sudbit_click);
          $(".thumbnail").click(img_on_cliek);
@@ -69,11 +75,11 @@ function sudbit_click() {
     }
     var votenum=$("#votenum").val();
     var phone=$("#phone").val();
-    if(!phone)
-    {
-         alert("手机必填");
-        return
-    }
+    // if(!phone)
+    // {
+    //      alert("手机必填");
+    //     return
+    // }
     var description=$("#description").val();
     var vheat=$("#vheat").val();
     var index=$("#index").val();
