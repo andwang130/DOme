@@ -66,7 +66,7 @@ class auto_tp:
         random.shuffle(tpuserlist)
 
         for i,v in enumerate(tpuserlist):
-            data[i]["userid"]=tpuserlist[i]
+            data["tpusers"][i]["userid"]=tpuserlist[i]
     def nosort_add(self,data):
         pass
     def get_last(self,rank,uuid_,useridlist):
