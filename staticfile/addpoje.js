@@ -60,7 +60,8 @@ function get_info(uuid) {
     var topimgV=$("#topimgV").attr("src",data["topimgV"]);
     var topimg2V=$("#topimg2V").attr("src",data["topimg2V"]);
  var topimg3V=$("#topimg3V").attr("src",data["topimg3V"]);
-
+    $("#videourl").attr("href",data["videoname"])
+    $("#videourl").text(data["videoname"])
    ue1.ready(function () {
         ue1.setContent(data["customized"]); //
 
@@ -108,6 +109,8 @@ function submi_send() {
     var votestart=$("#votestart").val();
     var voteend=$("#voteend").val();
     var topimgV=$("#topimgV").attr("src");
+      var videourl=$("#videourl").attr("href")
+        var videoname=$("#videourl").text()
     if(topimgV=="./resource/images/nopic.jpg")
     {
         topimgV=""
@@ -147,7 +150,8 @@ function submi_send() {
     var data={"titile":titile,"himgV":himgV,"description":description,"votestart":votestart,"voteend":voteend,
        "tiemstatr":tiemstatr,"timeend":timeend,"topimgV":topimgV,"customized":customized,"buttonpane":buttonpane,
        "sharetitle":sharetitle,"shareimgV":shareimgV,"sharedesc":sharedesc,"aptimestart":aptimestart,"aptimeend":aptimeend,
-        "liwulist":list_str,"topimg2V":topimg2V,"topimg3V":topimg3V,"ratio":ratio,"rangetime":rangetime,"rangenum":rangenum
+        "liwulist":list_str,"topimg2V":topimg2V,"topimg3V":topimg3V,"ratio":ratio,"rangetime":rangetime,"rangenum":rangenum,
+        "videourl":videourl,"videoname":videoname
    };
    console.log(data);
    if(action.action) {

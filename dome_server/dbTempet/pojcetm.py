@@ -23,6 +23,8 @@ pojectarg = ["titile",#标题
              "ratio", #比例
              "rangetime",
              "rangenum",
+             "videourl",
+             "videoname",
              ]
 pojiceTeptle = [
                 "votes",  # 投票数
