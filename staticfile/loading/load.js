@@ -14,16 +14,16 @@
 		// Browser globals
 		factory(jQuery);
 	}
-}(function ($) {
+}(function (fo) {
 	//给窗口添加滚动事件，在滚动时遮罩跟着元素移动
-	$(window).bind("scroll",function() {
-		var masks = $(".mask");
+	fo(window).bind("scroll",function() {
+		var masks = fo(".mask");
 		for (var i = 0; i < masks.length; i++) {
-			var ele_id = $(masks[i]).attr("ele");
-			var eleTop= $(ele_id).offset().top;
-			var gun = $(document).scrollTop();
+			var ele_id = fo(masks[i]).attr("ele");
+			var eleTop= fo(ele_id).offset().top;
+			var gun = fo(document).scrollTop();
             var top = eleTop-gun;
-			$(masks[i]).css({
+			fo(masks[i]).css({
 				"top": top+'px'
 			});
 		}
