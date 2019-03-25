@@ -21,7 +21,7 @@ $(document).ready(
         var userid=GetRequest("userid")
         if(userid.userid)
         {
-            location.href="#"+userid.userid
+            location.hash=userid.userid
         }
     }
 );
