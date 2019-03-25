@@ -86,7 +86,7 @@ function  get_user(page) {
                          if(userid.userid)
                         {
 
-                            location.href=userid.userid
+                            location.href="#"+userid.userid
                         }
                     }
                 }
