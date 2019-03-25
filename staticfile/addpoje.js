@@ -348,5 +348,5 @@ var cache = {};
 	$.mask_close = function(ele_id){
 		$(".mask[ele="+ele_id+"]").remove();
 	}
-	
+
 
