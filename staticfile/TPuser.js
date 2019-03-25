@@ -49,7 +49,7 @@ function  get_user(page) {
                         for(var i=0;i<data.length;i++)
                         {
                             //var datatime=new Date(parseInt(data[i]["createtime"]+) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
-                            var tr=" <tr>\n" +
+                            var tr=" <tr name='"+data[i]["userid"]+"'>\n" +
                                 "                \t<input type=\"hidden\"  value=\"262592\" >\n" +
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"<span class=\"label label-{success}\">{是否审核}</span></td>\n" +
