@@ -4,9 +4,9 @@
  * Copyright 2017 Nick Han
  */
 (function (factory) {
-	if (typeof define === 'function' && define.amd) {
+	if (typeof definea === 'function' && definea.amd) {
 		// AMD
-		define(['jquery'], factory);
+		definea(['jquery'], factory);
 	} else if (typeof exports === 'object') {
 		// CommonJS
 		factory(require('jquery'));
