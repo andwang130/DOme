@@ -12,11 +12,17 @@ $(document).ready(
         {
             now_page=urlpage.page
         }
+
         $("#addbth").attr("href",$("#addbth").attr("href")+uuid.uuid);
         $("#addthlist").attr("href",$("#addthlist").attr("href")+uuid.uuid);
         $("#fa-search").click(set_Key);
         url_init();
         get_user(1)
+        var userid=GetRequest("userid")
+        if(userid.userid)
+        {
+            location.href="#"+userid.userid
+        }
     }
 );
 function set_Key() {
