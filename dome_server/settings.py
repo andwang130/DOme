@@ -6,7 +6,8 @@ settings={
     'template_path':os.path.join(os.path.dirname(__file__),'templates'), #HTML文件路径
     'cookie_secret':'61oETzKXQ241sfshdhgfhfhfg',#安全cookie的加密值
     'xsrf_cookies':False,#开启xsrfy验证
-    'login_url':'/login'  #为登陆时跳转的路由，
+    'login_url':'/login',  #为登陆时跳转的路由，
+    "max_buffer_size":504857600
 }
 conf_redis={
     'host':'127.0.0.1',
