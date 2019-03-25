@@ -3,9 +3,15 @@ var uuid="";
 var sort_type="createtime";
 var key="";
 var status="";
+var now_page=1;
 $(document).ready(
     function () {
         uuid=GetRequest("uuid");
+        var urlpage=GetRequest("page");
+        if(urlpage.page)
+        {
+            now_page=urlpage.page
+        }
         $("#addbth").attr("href",$("#addbth").attr("href")+uuid.uuid);
         $("#addthlist").attr("href",$("#addthlist").attr("href")+uuid.uuid);
         $("#fa-search").click(set_Key);
@@ -101,7 +107,6 @@ function drop_confirm(mages,userid) {
         })
     }
 }
-var now_page=1;
 function page_math(count) {
    var page_end=Math.ceil(count/25);
 
