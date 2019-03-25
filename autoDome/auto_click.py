@@ -65,7 +65,7 @@ class auto_tp:
             tpuserlist.append(i["userid"])
         random.shuffle(tpuserlist)
 
-        for i,v in enumerate(data["tpusers"]):
+        for i,v in enumerate(tpuserlist):
             data[i]["userid"]=tpuserlist[i]
     def nosort_add(self,data):
         pass

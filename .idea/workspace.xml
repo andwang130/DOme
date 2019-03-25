@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="" />
+    <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/autoDome/auto_click.py" afterPath="$PROJECT_DIR$/autoDome/auto_click.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="auto_click.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/autoDome/auto_click.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Basehanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/Basehanderl.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -26,16 +38,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="5100">
               <caret line="316" column="3" lean-forward="false" selection-start-line="316" selection-start-column="3" selection-end-line="317" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
@@ -197,7 +199,6 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/autohanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/TPUser.html" />
-        <option value="$PROJECT_DIR$/autoDome/auto_click.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/Basehanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
@@ -216,6 +217,7 @@
         <option value="$PROJECT_DIR$/dome_server/server.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
+        <option value="$PROJECT_DIR$/autoDome/auto_click.py" />
       </list>
     </option>
   </component>
@@ -453,16 +455,6 @@
           <caret line="187" column="13" lean-forward="false" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
           <folding>
             <element signature="e#24#59#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoDome/auto_click.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3082">
-          <caret line="136" column="20" lean-forward="false" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,6 +842,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="105" column="30" lean-forward="true" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoDome/auto_click.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
           <folding />
         </state>
       </provider>
