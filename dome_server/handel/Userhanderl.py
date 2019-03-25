@@ -25,6 +25,8 @@ class Userhanderl(Basehandelr.Basehandelr):
             self.upload_video()
         elif action=="delete_video":
             self.delete_video()
+        elif action=="new_upload_video":
+            self.new_upload_video()
     def get(self):
         pass
     def login(self):
@@ -107,6 +109,22 @@ class Userhanderl(Basehandelr.Basehandelr):
                 self.Mongodb["Uservideo"].insert_one(new_video)
             self.save_video(new_video["path"],body)
         data = {"code": 0, "data": "修改成功"}
+        return self.write(json.dumps(data))
+
+    @verification
+    def new_upload_video(self):
+        Adminid = self.get_secure_cookie("token")
+        files = self.request.files["video"]
+        VIDEO_PATH = "/home/DOme/staticfile/video/"
+        VIDEO = "/video/"
+        for i in files:
+            file_name = i["filename"]
+            body = i["body"]
+            new_video = {"path": VIDEO_PATH + Adminid + file_name, "name": file_name, "Adminid": Adminid,
+                         "videourl": VIDEO + Adminid + file_name}
+
+            self.save_video(new_video["path"], body)
+        data = {"code": 0, "data": {"url":new_video["videourl"],"filename":new_video["name"]}}
         return self.write(json.dumps(data))
     def delete_videofile(self,path):
         try:

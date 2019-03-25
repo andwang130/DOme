@@ -18,6 +18,7 @@ $(document).ready(function (){
     $("#customized").html("<p>活动规则介绍</p>");
     $("#buttonpane").html("<p>活动规则介绍</p>");
     $("#btn_add_liwu").click(btn_add_liwu);
+    $("#videofile").change(video_change)
     action=GetRequest("action");
     uuid=GetRequest("uuid");
     if(uuid.uuid)
@@ -280,4 +281,50 @@ function liwu_init (gifttitle,gifimg,giftprice,giftvote) {
         "\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
         "\t</tr>";
         $("#js-table-2").append(html);
+}
+ function video_change() {
+     var fiel= $(this).prop('files');
+     var this_=this;
+     console.log(fiel[0]);
+        if((fiel[0].size/1024/1024)>500)
+            {
+                alert("文件过大");
+            }
+            filepath=fiel[0].name;
+            var extStart=filepath.lastIndexOf(".");
+            var ext=filepath.substring(extStart,filepath.length).toUpperCase();
+            if(ext!=".MP4")
+            {
+
+                alert("限于MP4格式");
+                return
+            }
+             var formFile = new FormData();
+               formFile.append("video", fiel[0]); //加入文件对象
+
+       $.mask_element('#test_mask');
+       $.ajax({
+        url:'/user?action=new_upload_video',
+        type: 'POST',
+        data:formFile,
+        processData: false,//用于对data参数进行序列化处理 这里必须false
+        contentType: false, //必须
+        success: function (arg)
+        {
+            arg=JSON.parse(arg);
+
+            if(arg["code"]=="0")
+            {
+
+                var data=arg["data"];
+                $("#videourl").attr("href",data["url"])
+                  $("#videourl").text(data["filename"])
+               $.mask_close("#test_mask");
+                 $.sendSuccessToTop('上传成功', 3000, function() {
+                 console.log('sendSuccessToTop closed');
+             });
+            }
+        }
+    });
+
 }

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/TPuser.js" afterPath="$PROJECT_DIR$/staticfile/TPuser.js" />
+      <change beforePath="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" afterPath="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addpoje.html" afterPath="$PROJECT_DIR$/staticfile/addpoje.html" />
+      <change beforePath="$PROJECT_DIR$/staticfile/addpoje.js" afterPath="$PROJECT_DIR$/staticfile/addpoje.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,37 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="sort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="286" column="12" lean-forward="false" selection-start-line="286" selection-start-column="12" selection-end-line="286" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addTpuser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="115" column="28" lean-forward="true" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TPUser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/TPUser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="141" column="10" lean-forward="false" selection-start-line="141" selection-start-column="10" selection-end-line="141" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TPuser.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -56,61 +28,91 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/templates/toupiao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="124" column="68" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tpuserscvHandelr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/tpuserscvHandelr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2388">
+              <caret line="173" column="81" lean-forward="false" selection-start-line="173" selection-start-column="81" selection-end-line="173" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3404">
-              <caret line="148" column="52" lean-forward="false" selection-start-line="148" selection-start-column="52" selection-end-line="148" selection-end-column="52" />
+            <state relative-caret-position="261">
+              <caret line="304" column="21" lean-forward="false" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addauto_click.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addauto_click.js">
+      <file leaf-file-name="Userhanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="460">
+              <caret line="126" column="84" lean-forward="false" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addTpuser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.html">
+      <file leaf-file-name="addpoje.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3496">
-              <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+            <state relative-caret-position="284">
+              <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addTuouselist.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/addTuouselist.html">
+      <file leaf-file-name="Admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1035">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5474">
-              <caret line="239" column="16" lean-forward="false" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10718">
-              <caret line="467" column="16" lean-forward="false" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
+            <state relative-caret-position="261">
+              <caret line="98" column="58" lean-forward="false" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -129,11 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>files_oninpit</find>
-      <find>chooseImages</find>
-      <find>files</find>
-      <find>on</find>
-      <find>icon-shouye</find>
       <find>jiangpin</find>
       <find>if</find>
       <find>.if</find>
@@ -159,6 +156,11 @@
       <find>get_frist</find>
       <find>get_ap</find>
       <find>sudbit_click</find>
+      <find>upload_video</find>
+      <find>videofile</find>
+      <find>mask_element</find>
+      <find>files</find>
+      <find>test_mask</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -168,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/Admin.html" />
         <option value="$PROJECT_DIR$/staticfile/usorder.html" />
         <option value="$PROJECT_DIR$/staticfile/votedata.html" />
@@ -194,8 +195,6 @@
         <option value="$PROJECT_DIR$/dome_server/handel/Poject.py" />
         <option value="$PROJECT_DIR$/staticfile/wxcss/index.css" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
-        <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
-        <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
         <option value="$PROJECT_DIR$/dome_server/urls.py" />
         <option value="$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py" />
         <option value="$PROJECT_DIR$/staticfile/addTpuser.html" />
@@ -219,6 +218,9 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
         <option value="$PROJECT_DIR$/staticfile/addTpuser.js" />
         <option value="$PROJECT_DIR$/staticfile/TPuser.js" />
+        <option value="$PROJECT_DIR$/dome_server/handel/Userhanderl.py" />
+        <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
+        <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
       </list>
     </option>
   </component>
@@ -271,31 +273,13 @@
             <path>
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="dome_server" type="462c0819:PsiDirectoryNode" />
+              <item name="handel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
               <item name="staticfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
-              <item name="Handerls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="temp2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -432,14 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/indexHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="45" column="54" lean-forward="false" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/sort.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6555">
@@ -497,13 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/backlist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27">
@@ -556,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="102" column="30" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="102" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/auto_click.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -593,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14651">
-          <caret line="637" column="21" lean-forward="false" selection-start-line="637" selection-start-column="21" selection-end-line="637" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/addauto_tp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4646">
@@ -612,14 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1357">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,20 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/tpuserscvHandelr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="63" column="24" lean-forward="false" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1482">
@@ -666,13 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
           <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -782,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3404">
-          <caret line="148" column="52" lean-forward="false" selection-start-line="148" selection-start-column="52" selection-end-line="148" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/addTpuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -814,6 +732,78 @@
             <marker date="1553525019360" expanded="true" signature="2569:2582" ph="..." />
             <marker date="1553525019360" expanded="true" signature="2598:2609" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/toupiao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="124" column="68" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2388">
+          <caret line="173" column="81" lean-forward="false" selection-start-line="173" selection-start-column="81" selection-end-line="173" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/tpuserscvHandelr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="32" column="78" lean-forward="false" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Userhanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="126" column="84" lean-forward="false" selection-start-line="126" selection-start-column="75" selection-end-line="126" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="304" column="21" lean-forward="false" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/Admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="98" column="58" lean-forward="false" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
