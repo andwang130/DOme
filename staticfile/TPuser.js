@@ -4,6 +4,7 @@ var sort_type="createtime";
 var key="";
 var status="";
 var now_page=1;
+var userid
 $(document).ready(
     function () {
         uuid=GetRequest("uuid");
@@ -18,7 +19,7 @@ $(document).ready(
         $("#fa-search").click(set_Key);
         url_init();
         get_user(1)
-        var userid=GetRequest("userid")
+         userid=GetRequest("userid")
 
     }
 );
@@ -83,10 +84,10 @@ function  get_user(page) {
                         }
                          page_math(arg["count"]);
                          if(userid.userid)
-        {
+                        {
 
-            location.hash=userid.userid
-        }
+                            location.href=userid.userid
+                        }
                     }
                 }
             }
