@@ -228,6 +228,7 @@ function share_success(){
 <script type="text/javascript">function get_ap(){
     {% if data["aptimes"]>0 %}
     dialog2("未开始报名！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}}")
+    return false;
     {% elif data["endtimes"]<0 %}
  dialog2("活动已经结束！报名时间为：</br> {{data["aptimestart"]}} 至 {{data["aptimeend"]}}")
     return false;
