@@ -11,6 +11,7 @@ class application(Application):
     def __init__(self,*args,**kwargs):
         super(application,self).__init__(*args,**kwargs)
         self.redis=redis.StrictRedis(**conf_redis)
+        self.max_buffer_size=504857600 #文件大小
 if __name__ == '__main__':
     app=application(path,**settings)
     options.log_file_prefix=logg_file
