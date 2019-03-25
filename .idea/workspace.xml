@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/addpoje.html" afterPath="$PROJECT_DIR$/staticfile/addpoje.html" />
       <change beforePath="$PROJECT_DIR$/staticfile/addpoje.js" afterPath="$PROJECT_DIR$/staticfile/addpoje.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,9 +16,15 @@
       <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="374" column="12" lean-forward="true" selection-start-line="374" selection-start-column="12" selection-end-line="374" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="382">
+              <caret line="353" column="32" lean-forward="true" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
+              <folding>
+                <element signature="e#11555#11648#0" expanded="false" />
+                <element signature="e#11674#11729#0" expanded="false" />
+                <element signature="e#11747#12063#0" expanded="false" />
+                <element signature="e#11884#12035#0" expanded="false" />
+                <element signature="e#11923#12024#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -850,9 +855,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="374" column="12" lean-forward="true" selection-start-line="374" selection-start-column="12" selection-end-line="374" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="382">
+          <caret line="353" column="32" lean-forward="true" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
+          <folding>
+            <element signature="e#11555#11648#0" expanded="false" />
+            <element signature="e#11674#11729#0" expanded="false" />
+            <element signature="e#11747#12063#0" expanded="false" />
+            <element signature="e#11884#12035#0" expanded="false" />
+            <element signature="e#11923#12024#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
