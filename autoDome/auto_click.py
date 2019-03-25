@@ -132,6 +132,7 @@ class auto_tp:
                 addlist.append(newdata)
                 updatelist .append(({"_id": i["_id"]}, {"$set": {"createdate": time.time()}}))
         self.add_tp(addlist)
+        self.update_times(updatelist)
 if __name__ == '__main__':
     while True:
         time.sleep(1)
