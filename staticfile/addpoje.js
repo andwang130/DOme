@@ -328,6 +328,7 @@ function liwu_init (gifttitle,gifimg,giftprice,giftvote) {
     });
 
 }
+var cache = {};
 	$.mask_element = function(ele_id, timeout){
 		//判断当前元素是否已经添加遮罩，如果已添加，则直接返回
 		if($(".mask[ele="+ele_id+"]").length > 0){
