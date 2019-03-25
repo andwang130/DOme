@@ -63,7 +63,7 @@ function  get_user(page) {
                                 "\t\t\t\t\t<p>\n" +
                                 "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"投票数据\" href=\"/votedata.html?userid="+data[i]["userid"]+"&uuid="+uuid.uuid+"\" ><i class=\"fa fa-star-o\"></i> 投票数据</a>\n" +
                                 "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"钻石数据\" href=\"./usorder.html?userid="+data[i]["userid"]+"&uuid="+uuid.uuid+"\" ><i class=\"fa fa-codepen\"></i> 礼物订单</a>\n" +
-                                "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"编辑\" href=\"/addTpuser.html?action=update&uuid="+uuid.uuid+"&Userid="+data[i]["userid"]+"\" ><i class=\"fa fa-edit\"></i> 编辑</a>\n" +
+                                "\t\t\t\t\t<a class=\"color-default we7-margin-right\" title=\"编辑\" href=\"/addTpuser.html?action=update&uuid="+uuid.uuid+"&Userid="+data[i]["userid"]+"&page="+now_page+"\" ><i class=\"fa fa-edit\"></i> 编辑</a>\n" +
                                 "\t\t\t\t\t<a class=\"color-default we7-margin-right\" rel=\"tooltip\" href=\"#\" onclick=\"drop_confirm('您确定要删除吗?删除不可恢复，同时删除所有相关数据！','"+data[i]["userid"]+"');\" title=\"删除\"><i class=\"fa fa-times\"></i> 删除</a></p>\n" +
                                 "                    </td>\n" +
                                 "                </tr>";
