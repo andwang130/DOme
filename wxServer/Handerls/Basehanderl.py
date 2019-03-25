@@ -25,9 +25,10 @@ class Basehandelr(RequestHandler):
         if uuid:
             self.db_linck()
             couses = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(3).sort([("votenum", -1)])
-            if couses:
-                data = {"info": "恭喜{}获得第1名".format(couses[0]["name"]), "image": couses[0].get("avatar")}
-                return couses[0].get("avatar","")
+            for i in  couses:
+                data = {"info": "恭喜{}获得第1名".format(i["name"]), "image": i.get("avatar")}
+                return i.get("avatar","")
+        return ""
     def Verification(self,openid,ip):
         openidors=self.Mongodb["Blacklist"].find_one({"value":openid})
         ipors=self.Mongodb["Blacklist"].find_one({"value": ip})
