@@ -19,10 +19,7 @@ $(document).ready(
         url_init();
         get_user(1)
         var userid=GetRequest("userid")
-        if(userid.userid)
-        {
-            location.hash=userid.userid
-        }
+
     }
 );
 function set_Key() {
@@ -85,6 +82,11 @@ function  get_user(page) {
 
                         }
                          page_math(arg["count"]);
+                         if(userid.userid)
+        {
+
+            location.hash=userid.userid
+        }
                     }
                 }
             }
