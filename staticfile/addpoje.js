@@ -345,5 +345,8 @@ var cache = {};
 			cache[ele_id] = s;
 		}
 	}
-
+	$.mask_close = function(ele_id){
+		$(".mask[ele="+ele_id+"]").remove();
+	}
+	
 
