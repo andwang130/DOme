@@ -32,13 +32,9 @@ class jphanderl(Basehanderl.Basehandelr):
     def rq(self,uuid):
         if uuid:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid})
-            videocoures=self.Mongodb["Uservideo"].find_one({"Adminid":coures["Adminid"]})
             if coures:
                 data = {}
-                if videocoures:
-                    data["videourl"]=videocoures["videourl"]
-                else:
-                    data["videourl"]=""
+                data["videourl"]=coures.get("videourl","")
                 data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
                 data["topimges"].append(self.get_frist(uuid))
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()

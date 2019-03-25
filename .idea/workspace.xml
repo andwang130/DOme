@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/addpoje.js" afterPath="$PROJECT_DIR$/staticfile/addpoje.js" />
+      <change beforePath="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" afterPath="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addpoje.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="463">
@@ -24,6 +24,18 @@
                 <element signature="e#11980#12296#0" expanded="false" />
                 <element signature="e#12117#12268#0" expanded="false" />
                 <element signature="e#12156#12257#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JpHanderl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,16 +80,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="479">
               <caret line="314" column="28" lean-forward="false" selection-start-line="314" selection-start-column="28" selection-end-line="314" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dialog.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/jquerytc/src/css/dialog.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,7 +188,6 @@
         <option value="$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/paly.html" />
         <option value="$PROJECT_DIR$/wxServer/urls.py" />
-        <option value="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
@@ -226,6 +227,7 @@
         <option value="$PROJECT_DIR$/staticfile/addpoje.html" />
         <option value="$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py" />
         <option value="$PROJECT_DIR$/staticfile/addpoje.js" />
+        <option value="$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py" />
       </list>
     </option>
   </component>
@@ -290,26 +292,13 @@
             <path>
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
-              <item name="loading" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Handerls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -446,13 +435,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staticfile/RootLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -867,6 +849,16 @@
             <element signature="e#11980#12296#0" expanded="false" />
             <element signature="e#12117#12268#0" expanded="false" />
             <element signature="e#12156#12257#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/JpHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
