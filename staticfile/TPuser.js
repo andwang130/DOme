@@ -18,7 +18,7 @@ $(document).ready(
         $("#addthlist").attr("href",$("#addthlist").attr("href")+uuid.uuid);
         $("#fa-search").click(set_Key);
         url_init();
-        get_user(1)
+        get_user(now_page)
          userid=GetRequest("userid")
 
     }
