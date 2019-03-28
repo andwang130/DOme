@@ -48,7 +48,7 @@ function backlit_init(data) {
      $("#body").html("");
     for(var  i=0;i<data.length;i++)
     {
-        var delete_td = "<td><a class='btn btn-default' onclick='delete_back('"+data[i]["blackid"]+"')'>移除</a></td>";
+        var delete_td = "<td><a class='btn btn-default' onclick='delete_back(\""+data[i]["blackid"]+"\")'>移除</a></td>";
         var value_td="<td>" + data[i]["value"] + "</td>";
         var start_td="<td>" + data[i]["start"] + "</td>";
         var times_td="<td>" +getLocalTime(data[i]["times"]) + "</td>";
