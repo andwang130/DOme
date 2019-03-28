@@ -91,7 +91,7 @@ wxcongif={
 
 }
 TempCode=2
-play_Key="PAwwbBkMSefwFz2YPbLwhxsZ35eaN4dy6dCgrbtKj3V"
+play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWIkCBEQD0l9Lq"
 www="http://www.nkwwcj.com"
 
 conf_redis={

@@ -7,7 +7,7 @@ class Handle(Basehanderl.Basehandelr):
         timestamp = self.get_argument("timestamp")
         nonce = self.get_argument("nonce")
         echostr = self.get_argument("echostr")
-        token = "cl4Y4CKjO38"  # 请按照公众平台官网\基本配置中信息填写
+        token = "cl4Y4CKjO38FFSADAS"  # 请按照公众平台官网\基本配置中信息填写
         list = [token, timestamp, nonce]
         list.sort()
         sha1 = hashlib.sha1()
