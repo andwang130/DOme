@@ -112,7 +112,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                                  ,"type":"tp","Adminid":pojectcoures["Adminid"]}
                         self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                         self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
-                        # self.Mongodb["Ordel"].insert_one(order)
+                        self.Mongodb["Ordel"].insert_one(order)
                         myreids.set(openid+couers["uuid"],1,ex=pojectcoures["rangetime"]*3600)
                         self.write(json.dumps({"status": 1, "msg": "成功"}))
                     else:
@@ -126,7 +126,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                                      "start": 1,"type":"tp","Adminid":pojectcoures["Adminid"]}
                             self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                             self.Mongodb["poject"].update_one({"uuid": couers["uuid"]}, {"$inc": {"votes": 1}});
-                            # self.Mongodb["Ordel"].insert_one(order)
+                            self.Mongodb["Ordel"].insert_one(order)
                             myreids.incr(openid + couers["uuid"])
                             self.write(json.dumps({"status": 1, "msg": "成功"}))
             except Exception as e:
