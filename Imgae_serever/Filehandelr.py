@@ -16,6 +16,7 @@ class Filehandelr(RequestHandler):
         if not Adminid:
              myreids = redis.StrictRedis(**conf_redis)
              uploanum=myreids.get(self.request.headers.get("X-Real-IP"))
+             print(uploanum)
              if not uploanum:
                  myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
              else:
