@@ -20,7 +20,7 @@ class palyHanderl(Basehanderl.Basehandelr):
     def get(self):
         self.db_linck()
         userid=self.get_argument("userid")
-        uuid=self.get_argument("uuid")
+        uuid_=self.get_argument("uuid")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
 
@@ -28,24 +28,24 @@ class palyHanderl(Basehanderl.Basehandelr):
             self.render("404.html")
             raise tornado.gen.Return()
         if openid:
-            self.rq(uuid,userid)
+            self.rq(uuid_,userid)
             raise tornado.gen.Return()
         elif code:
             if not openid:
                 newopenid = yield tornado.gen.Task(self.get_openid, code)
                 self.set_secure_cookie("openid", newopenid)
-            self.rq(uuid,userid)
+            self.rq(uuid_,userid)
             raise tornado.gen.Return()
         else:
             self.auto()
             raise tornado.gen.Return()
-    def rq(self,uuid,userid):
-        if userid and uuid:
-            coures = self.Mongodb["poject"].find_one({"uuid": uuid})
+    def rq(self,uuid_,userid):
+        if userid and uuid_:
+            coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
-            data["topimges"].append(self.get_frist(uuid))
+            data["topimges"].append(self.get_frist(uuid_))
             data["titile"] = coures["titile"]
             x = 1
             row_list = []
@@ -69,14 +69,14 @@ class palyHanderl(Basehanderl.Basehandelr):
             data["index"] = usercoures["index"]
             data["votenum"] = usercoures["votenum"]
             data["userid"] = userid
-            data["uuid"] = uuid
+            data["uuid"] = uuid_
             data["description"] = usercoures["description"]
 
             shares = {}
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.www +"/wx/paly?uuid={}&userid={}".format(uuid,userid)
+            shares["url"] = pojcetm.www +"/wx/paly?uuid={}&userid={}".format(uuid_,userid)
 
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
             if pojcetm.TempCode == 1:

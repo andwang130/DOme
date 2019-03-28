@@ -11,7 +11,7 @@ class indexHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
         self.db_linck()
-        uuid=self.get_argument("uuid",None)
+        uuid_=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
         openid = self.get_secure_cookie("openid")
 
@@ -19,13 +19,13 @@ class indexHanderl(Basehanderl.Basehandelr):
             self.render("404.html")
             raise tornado.gen.Return()
         if openid:
-            self.rq(uuid)
+            self.rq(uuid_)
             raise tornado.gen.Return()
         elif code:
             if not openid:
                 newopenid = yield tornado.gen.Task(self.get_openid, code)
                 self.set_secure_cookie("openid",newopenid)
-            self.rq(uuid)
+            self.rq(uuid_)
             raise tornado.gen.Return()
         else:
             self.auto()
@@ -33,16 +33,16 @@ class indexHanderl(Basehanderl.Basehandelr):
     def on_callback(self):
         pass
 
-    def rq(self,uuid):
-        if uuid:
-            coures = self.Mongodb["poject"].find_one({"uuid": uuid})
+    def rq(self,uuid_):
+        if uuid_:
+            coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
 
             self.Mongodb["poject"].update_one({"uuid": uuid}, {"$inc": {"volume": 1}})
-            usercoures = self.Mongodb["tpUser"].find({"uuid": uuid})
+            usercoures = self.Mongodb["tpUser"].find({"uuid": uuid_})
             if coures:
                 data = {}
                 data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
-                data["topimges"].append(self.get_frist(uuid))
+                data["topimges"].append(self.get_frist(uuid_))
                 data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
@@ -63,7 +63,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                 shares["sharetitle"] = coures["sharetitle"]
                 shares["shareimgV"] = coures["shareimgV"]
                 shares["sharedesc"] = coures["sharedesc"]
-                shares["url"] = pojcetm.www + "/wx/wxindex?uuid="+uuid
+                shares["url"] = pojcetm.www + "/wx/wxindex?uuid="+uuid_
                 aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
                 if pojcetm.TempCode==1:
                     self.render("index.html", data=data, aseedata=aseedata, share=shares)
@@ -72,7 +72,7 @@ class indexHanderl(Basehanderl.Basehandelr):
 class Getlist(Basehanderl.Basehandelr):
     def post(self):
         key=self.get_argument("keyword")
-        uuid=self.get_argument("uuid")
+        uuid_=self.get_argument("uuid")
         page=int(self.get_argument("page",1))
         order=int(self.get_argument("order"))
         if order==0:
@@ -83,12 +83,12 @@ class Getlist(Basehanderl.Basehandelr):
             key_int=int(key)
         except:
             key_int=-1;
-        if uuid:
+        if uuid_:
             self.db_linck()
             if key:
-                coures=self.Mongodb["tpUser"].find({"uuid":uuid,"$or":[{"index":key_int},{"name":{"$regex":key}}],"status":0}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
+                coures=self.Mongodb["tpUser"].find({"uuid":uuid_,"$or":[{"index":key_int},{"name":{"$regex":key}}],"status":0}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
             else:
-                coures=self.Mongodb["tpUser"].find({"uuid":uuid,"status":0}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
+                coures=self.Mongodb["tpUser"].find({"uuid":uuid_,"status":0}).limit(10).skip(10*(page-1)).sort([(sort,-1)])
             datalist=[]
             for i in coures:
                 data={}
@@ -109,10 +109,10 @@ class Get_frist(Basehanderl.Basehandelr):
     def get(self):
         self.post()
     def post(self):
-        uuid=self.get_argument("uuid","")
-        if uuid:
+        uuid_=self.get_argument("uuid","")
+        if uuid_:
             self.db_linck()
-            couses=self.Mongodb["tpUser"].find({"uuid":uuid}).limit(3).sort([("votenum",-1)])
+            couses=self.Mongodb["tpUser"].find({"uuid":uuid_}).limit(3).sort([("votenum",-1)])
             for i in couses:
                 data={"info":"恭喜{}获得第1名".format(i["name"]),"image":i.get("avatar")}
                 return self.write(json.dumps(data))

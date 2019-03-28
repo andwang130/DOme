@@ -21,10 +21,10 @@ class Basehandelr(RequestHandler):
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
             wxcongif["appId"], link)
         self.redirect(url,permanent=True)
-    def get_frist(self,uuid):
-        if uuid:
+    def get_frist(self,uuid_):
+        if uuid_:
             self.db_linck()
-            couses = self.Mongodb["tpUser"].find({"uuid": uuid}).limit(3).sort([("votenum", -1)])
+            couses = self.Mongodb["tpUser"].find({"uuid": uuid_}).limit(3).sort([("votenum", -1)])
             for i in  couses:
                 data = {"info": "恭喜{}获得第1名".format(i["name"]), "image": i.get("avatar")}
                 return i.get("avatar","")

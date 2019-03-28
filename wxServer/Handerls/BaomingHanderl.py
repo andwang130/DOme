@@ -9,26 +9,26 @@ class baoming(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
         self.db_linck()
-        uuid=self.get_argument("uuid","")
+        uuid_=self.get_argument("uuid","")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
         if openid:
-            self.rq(uuid)
+            self.rq(uuid_)
             raise tornado.gen.Return()
         if code:
             if not openid:
                 newopenid = yield self.get_openid(code)
                 self.set_secure_cookie("openid", newopenid)
-            self.rq(uuid)
+            self.rq(uuid_)
             raise tornado.gen.Return()
         else:
             self.auto()
-    def rq(self,uuid):
-        if uuid:
-            coures = self.Mongodb["poject"].find_one({"uuid": uuid})
+    def rq(self,uuid_):
+        if uuid_:
+            coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
-            data["topimges"].append(self.get_frist(uuid))
+            data["topimges"].append(self.get_frist(uuid_))
             data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimestart"] = coures["aptimestart"]
@@ -45,7 +45,7 @@ class baoming(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.www + "/wx/Baoming?uuid="+uuid
+            shares["url"] = pojcetm.www + "/wx/Baoming?uuid="+uuid_
 
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
             if pojcetm.TempCode==1:
