@@ -84,7 +84,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 self.render("temp2/tpuser.html", data=data, aseedata=aseedata, share=shares)
     def post(self):
         openid = self.get_secure_cookie("openid")
-        openid="aaa"
+
 
         userid= self.get_argument("userid", None)
         if userid and openid:
