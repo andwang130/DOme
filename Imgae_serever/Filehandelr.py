@@ -18,7 +18,7 @@ class Filehandelr(RequestHandler):
              myreids = redis.StrictRedis(**conf_redis)
              uploanum=myreids.get(self.request.headers.get("X-Real-IP"))
              print("uoloadnum")
-             print(uploanum)
+             print(type(uploanum))
              if not uploanum:
                  myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
              else:
