@@ -182,17 +182,6 @@ $.getJSON("/wx/get_frist?uuid={{ data["uuid"]}}",function(data){
 </div>
 
 <script type="text/javascript">
-window.fxdata = {
-	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
-	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
-	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C"
-}
-window.fxonly = {
-	"imgUrl":"http://hd.shasem001.cn/Uploads/images/5c86589a1703f.png",
-	"Link":"http://hd.shasem001.cn/show/11/550.so?key=WcKglwdggd",
-	"title":"2019年中华美食“舌尖上的旅行”之河南洛阳C",
-	"content":"我正在参加2019年中华美食“舌尖上的旅行”之河南洛阳C请为我加油！"
-}
 
 function share_success(){
 
@@ -248,13 +237,12 @@ function share_success(){
 		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
 		<script>
 
-			//微信API验证
-			wx.config({
+		wx.config({
 				debug: false,
-				appId: 'wx0e628ec8b50f8fdb',
-				timestamp: 1552669935,
-				nonceStr: '4dfNst0fh2ys4Egf',
-				signature: 'bbc37a03a4daba4745ace29e02492b7ce56244e3',
+				appId: '{{aseedata["appId"]}}',
+				timestamp: '{{aseedata["timestamp"]}}',
+				nonceStr: '{{aseedata["noncestr"]}}',
+				signature: '{{aseedata["signature"]}}',
 				jsApiList: [
 					'checkJsApi',
 					'onMenuShareTimeline',
@@ -294,46 +282,30 @@ function share_success(){
 				]
 			});
 
+
+			  var sharedata = {"title":'{% raw share["sharetitle"] %}',"imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{% raw share["url"] %}"};
+                sharedata.success = function(){
+			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
+			// $.post(url, function(dat){});
+	};
+                if(sharedata.desc == ''){
+		var _share_content = _removeHTMLTag($('body').html());
+		if(typeof _share_content == 'string'){
+			sharedata.desc = _share_content.replace($_share['title'], '')
+		}
+	}
 			// 在这里调用 wxAPI
 			wx.ready(function () {
+
 				//显示右上角菜单
-				wx.showOptionMenu();
+                wx.showOptionMenu();
+                wx.onMenuShareAppMessage(sharedata);
+                wx.onMenuShareTimeline(sharedata);
+                wx.onMenuShareQQ(sharedata);
+                wx.onMenuShareWeibo(sharedata);
 
-				//获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
-				wx.onMenuShareTimeline({
-					title: window.fxdata.title, // 分享标题
-					link: window.fxdata.Link, // 分享链接
-					imgUrl: window.fxdata.imgUrl, // 分享图标
-					success: function () {
-						// 用户确认分享后执行的回调函数
-						share_success();
-					},
-					cancel: function () {
-						// 用户取消分享后执行的回调函数
-
-					}
-				});
-
-				//获取“分享给朋友”按钮点击状态及自定义分享内容接口
-				wx.onMenuShareAppMessage({
-					title: window.fxonly.title, // 分享标题
-					desc: window.fxonly.content, // 分享描述
-					link: window.fxonly.Link, // 分享链接
-					imgUrl: window.fxonly.imgUrl, // 分享图标
-					type: '', // 分享类型,music、video或link，不填默认为link
-					dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-					success: function () {
-						// 用户确认分享后执行的回调函数
-						share_success();
-					},
-					cancel: function () {
-						// 用户取消分享后执行的回调函数
-
-					}
-				});
 
 			});
-
 
 		</script>
 
