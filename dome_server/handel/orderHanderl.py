@@ -28,9 +28,9 @@ class Ordel(Basehandelr):
         if uuid_:
             data_list=[]
             if start!=1:
-                coures=self.Mongodb["Ordel"].find({"uuid": uuid_}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+                coures=self.Mongodb["Ordel"].find({"uuid": uuid_,"type":"shop"}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
             else:
-                coures=self.Mongodb["Ordel"].find({"uuid": uuid_,"start":start}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+                coures=self.Mongodb["Ordel"].find({"uuid": uuid_,"start":start,"type":"shop"}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
             data_userid_list=[]
             for i in coures:
                 del i["_id"]
@@ -61,9 +61,9 @@ class Ordel(Basehandelr):
 
         data_list=[]
         if start!=1:
-            coures=self.Mongodb["Ordel"].find({"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+            coures=self.Mongodb["Ordel"].find({"Adminid":self.get_secure_cookie("token"),"type":"shop"}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
         else:
-            coures = self.Mongodb["Ordel"].find({"start":start,"Adminid":self.get_secure_cookie("token")}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+            coures = self.Mongodb["Ordel"].find({"start":start,"Adminid":self.get_secure_cookie("token"),"type":"shop"}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
 
         for i in coures:
             del i["_id"]
@@ -83,9 +83,9 @@ class Ordel(Basehandelr):
             info = {"avatar": usercoures["avatar"], "votenum": usercoures["votenum"], "liwu": usercoures["liwu"],
                     "name": usercoures["name"]}
             if start!=1:
-                coures = self.Mongodb["Ordel"].find({"userid":userid}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+                coures = self.Mongodb["Ordel"].find({"userid":userid,"type":"shop"}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
             else:
-                coures = self.Mongodb["Ordel"].find({"userid":userid,"start":start}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
+                coures = self.Mongodb["Ordel"].find({"userid":userid,"start":start,"type":"shop"}).limit(25).skip(25 * (page - 1)).sort([("times", -1)])
 
             for i in coures:
                 del i["_id"]

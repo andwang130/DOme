@@ -108,7 +108,8 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                     if not num:
                         order = {"orderid":str(uuid.uuid1()).replace("-",""),"userid":userid,"openid":openid, "headimg":"", "operate":"" ,"uuid":couers["uuid"],
                                  "username":couers["name"],"money":0, "liwu":0 ,"num":0,
-                                 "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1}
+                                 "votenum":1, "times":time.time() ,"ip":self.request.headers.get("X-Real-IP") ,"start":1
+                                 ,"type":"tp","Adminid":pojectcoures["Adminid"]}
                         self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                         self.Mongodb["poject"].update_one({"uuid": couers["uuid"]},{"$inc": {"votes": 1}});
                         # self.Mongodb["Ordel"].insert_one(order)
@@ -122,7 +123,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                                      "headimg": "", "operate": "", "uuid": couers["uuid"],
                                      "username": couers["name"], "money": 0, "liwu": 0, "num": 0,
                                      "votenum": 1, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
-                                     "start": 1}
+                                     "start": 1,"type":"tp","Adminid":pojectcoures["Adminid"]}
                             self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"votenum": 1}});
                             self.Mongodb["poject"].update_one({"uuid": couers["uuid"]}, {"$inc": {"votes": 1}});
                             # self.Mongodb["Ordel"].insert_one(order)

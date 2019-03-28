@@ -169,7 +169,7 @@ class Tpuuser(Basehandelr):
             usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
             if usercoures:
                 info={"avatar":usercoures["avatar"],"votenum":usercoures["votenum"],"liwu":usercoures["liwu"],"name":usercoures["name"]}
-                wxcoures=self.Mongodb["Ordel"].find({"userid":userid}).limit(25).skip(25*(page-1)).sort([("times",-1)])
+                wxcoures=self.Mongodb["Ordel"].find({"userid":userid,"type":"tp"}).limit(25).skip(25*(page-1)).sort([("times",-1)])
                 for i in wxcoures:
                     data_new={"orderid":i.get("userid"),"openid":i.get("openid"),
                           "headimg":i.get("headimg"),"operate":i.get("operate"),

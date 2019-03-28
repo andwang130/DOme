@@ -94,9 +94,8 @@ class palyHanderl(Basehanderl.Basehandelr):
         if openid:
             self.db_linck()
             couers = self.Mongodb["tpUser"].find_one({"userid": userid})
-
+            pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
             if couers:
-                pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                 if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:
                     self.write(json.dumps({"error": 1, "msg": "投票未开始"}))
                     raise tornado.gen.Return()
@@ -118,7 +117,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                          "operate": "","uuid": couers["uuid"],
                          "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
                          "votenum": pirce_now * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
-                         "start": 0,"Adminid":couers["Adminid"]}
+                         "start": 0,"Adminid":pojectcoures["Adminid"],"type":"shop"}
                 self.Mongodb["Ordel"].insert_one(order)
                 rq =yield self.get_playapImch(out_trade_no,pirce_now, ip, openid,orderid)
             else:
