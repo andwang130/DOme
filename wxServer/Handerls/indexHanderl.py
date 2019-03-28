@@ -37,7 +37,7 @@ class indexHanderl(Basehanderl.Basehandelr):
         if uuid_:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
 
-            self.Mongodb["poject"].update_one({"uuid": uuid}, {"$inc": {"volume": 1}})
+            self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"volume": 1}})
             usercoures = self.Mongodb["tpUser"].find({"uuid": uuid_})
             if coures:
                 data = {}
