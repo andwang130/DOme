@@ -25,6 +25,7 @@ class Filehandelr(RequestHandler):
                  if uploanum>20:
                      return
                  else:
+                    print("incr")
                     myreids.incr(self.request.headers.get("X-Real-IP"))
         files=self.request.files
         fileurl=[]
