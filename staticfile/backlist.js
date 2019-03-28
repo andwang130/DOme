@@ -3,6 +3,7 @@ var start=0;
 $(document).ready(
     function () {
         $(".we7-page-tab li").click(li_click);
+
         get_backlist(1)
     }
 );
@@ -47,11 +48,11 @@ function backlit_init(data) {
      $("#body").html("");
     for(var  i=0;i<data.length;i++)
     {
-        var id_td = "<td>" + data[i]["blackid"] + "</td>";
+        var delete_td = "<td><a class='btn btn-default' onclick='delete_back('"+data["blackid"]+"')'>移除</a></td>";
         var value_td="<td>" + data[i]["value"] + "</td>";
         var start_td="<td>" + data[i]["start"] + "</td>";
         var times_td="<td>" +getLocalTime(data[i]["times"]) + "</td>";
-        var HTML='<tr>'+id_td+value_td+times_td+start_td+'</tr>';
+        var HTML='<tr>'+start_td+value_td+times_td+delete_td+'</tr>';
         $("#body").append(HTML)
     }
 }
@@ -107,4 +108,23 @@ function  on_a_cliek()
     now_page=page_id;
 
    get_backlist(now_page)
+}
+function delete_back(blackid) {
+
+    var data = {"action": "delete","blackid":blackid};
+    $.ajax({
+        url: '/black',
+        type: 'POST',
+        data: data,
+        success: function (arg) {
+            var json_data = JSON.parse(arg);
+            if (json_data["code"] == 0) {
+                get_backlist(now_page)
+            }
+            else if (json_data["code"] == -110) {
+                location.href = "/login.html"
+            }
+
+        }
+    })
 }
