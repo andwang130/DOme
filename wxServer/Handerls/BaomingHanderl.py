@@ -5,6 +5,7 @@ import uuid
 import pojcetm
 import tornado
 import json
+import redis
 class baoming(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
@@ -66,6 +67,15 @@ class baoming(Basehanderl.Basehandelr):
         if time.mktime(time.strptime(pojectcoures["timeend"], '%Y-%m-%d %H:%M')) - time.time() < 0:
             self.write(json.dumps({"status": -1, "msg": "活动已经结束"}))
             return
+        myreids = redis.StrictRedis(**pojcetm.conf_redis)
+        uploanum = myreids.get(self.request.headers.get("X-Real-IP")+"baoming")
+        if not uploanum:
+            myreids.set(self.request.headers.get("X-Real-IP")+"baoming", 1, ex=1800)
+        else:
+            if int(uploanum) > 5:
+                self.write(json.dumps({"code": -1, "eeor": "提交太频繁"}))
+            else:
+                myreids.incr(self.request.headers.get("X-Real-IP")+"baoming")
         if uuid_:
             self.db_linck()
             for i in pojcetm.Tpuser:

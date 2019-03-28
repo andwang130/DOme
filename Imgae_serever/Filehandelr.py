@@ -13,18 +13,16 @@ class Filehandelr(RequestHandler):
             'port': 6379
         }
         Adminid=self.get_secure_cookie("token")
-        print("adminid:",Adminid)
         if not Adminid:
              myreids = redis.StrictRedis(**conf_redis)
-             uploanum=myreids.get(self.request.headers.get("X-Real-IP"))
-             print(type(uploanum))
+             uploanum=myreids.get(self.request.headers.get("X-Real-IP")+"upfile")
              if not uploanum:
-                 myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
+                 myreids.set(self.request.headers.get("X-Real-IP")+"upfile",1,ex=1800)
              else:
-                 if int(uploanum)>20:
+                 if int(uploanum)>30:
                      return
                  else:
-                    myreids.incr(self.request.headers.get("X-Real-IP"))
+                    myreids.incr(self.request.headers.get("X-Real-IP")+"upfile")
         files=self.request.files
         fileurl=[]
         for i in files:
