@@ -154,7 +154,7 @@ class toupiaoinfoHanderl(Basehanderl.Basehandelr):
         shares["sharetitle"] = coures["sharetitle"]
         shares["shareimgV"] = coures["shareimgV"]
         shares["sharedesc"] = coures["sharedesc"]
-        shares["url"] = pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(uuid, userid)
+        shares["url"] = pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(data["uuid"], userid)
         aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
 
         self.render("temp2/toupiao.html", data=data,share=shares, aseedata=aseedata)
