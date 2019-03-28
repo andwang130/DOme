@@ -23,6 +23,7 @@ class Filehandelr(RequestHandler):
                  myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
              else:
                  if uploanum>20:
+                     print(">20")
                      return
                  else:
                     print("incr")
