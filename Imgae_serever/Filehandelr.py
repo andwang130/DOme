@@ -13,9 +13,11 @@ class Filehandelr(RequestHandler):
             'port': 6379
         }
         Adminid=self.get_secure_cookie("token")
+        print("adminid:",Adminid)
         if not Adminid:
              myreids = redis.StrictRedis(**conf_redis)
              uploanum=myreids.get(self.request.headers.get("X-Real-IP"))
+             print("uoloadnum")
              print(uploanum)
              if not uploanum:
                  myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
