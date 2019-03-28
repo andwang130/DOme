@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dome_server/handel/Blacklist.py" afterPath="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
-      <change beforePath="$PROJECT_DIR$/staticfile/backlist.html" afterPath="$PROJECT_DIR$/staticfile/backlist.html" />
       <change beforePath="$PROJECT_DIR$/staticfile/backlist.js" afterPath="$PROJECT_DIR$/staticfile/backlist.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backlist.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="backlist.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/staticfile/backlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="113" column="43" lean-forward="false" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="43" />
+            <state relative-caret-position="460">
+              <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -95,17 +93,17 @@
         <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="530">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Blacklist.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Blacklist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dome_server/handel/Blacklist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+            <state relative-caret-position="410">
+              <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -224,8 +222,8 @@
         <option value="$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py" />
         <option value="$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py" />
         <option value="$PROJECT_DIR$/staticfile/backlist.html" />
-        <option value="$PROJECT_DIR$/staticfile/backlist.js" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
+        <option value="$PROJECT_DIR$/staticfile/backlist.js" />
       </list>
     </option>
   </component>
@@ -810,7 +808,7 @@
     <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -825,21 +823,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/backlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="113" column="43" lean-forward="false" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/Blacklist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state relative-caret-position="410">
+          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/backlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
