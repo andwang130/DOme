@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfile/backlist.js" afterPath="$PROJECT_DIR$/staticfile/backlist.js" />
+      <change beforePath="$PROJECT_DIR$/Imgae_serever/Filehandelr.py" afterPath="$PROJECT_DIR$/Imgae_serever/Filehandelr.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,14 +13,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="auoth.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/auoth.py">
+      <file leaf-file-name="Filehandelr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Imgae_serever/Filehandelr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="387">
+              <caret line="24" column="71" lean-forward="true" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="660" column="8" lean-forward="false" selection-start-line="660" selection-start-column="8" selection-end-line="660" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toushuHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortHanderl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/tornado/web.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="643" column="8" lean-forward="false" selection-start-line="643" selection-start-column="8" selection-end-line="643" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -28,51 +68,11 @@
       <file leaf-file-name="toupiaoHanderl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="160" column="43" lean-forward="false" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
+            <state relative-caret-position="-4">
+              <caret line="90" column="23" lean-forward="false" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="23" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backlist.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/backlist.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auto_click.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/auto_click.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auto_click.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/auto_click.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="backlist.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/staticfile/backlist.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,33 +89,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderHanderl.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
+      <file leaf-file-name="Poject.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="261">
+              <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Blacklist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dome_server/handel/Blacklist.py">
+      <file leaf-file-name="rootHandel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="umit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/staticfile/js/umit.js">
+      <file leaf-file-name="TpuserHandeler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="1314">
+              <caret line="182" column="10" lean-forward="false" selection-start-line="182" selection-start-column="10" selection-end-line="182" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -134,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>userid</find>
       <find>btn_del_ad</find>
       <find>+添加</find>
       <find>sendError</find>
@@ -164,6 +161,7 @@
       <find>btn-default</find>
       <find>we7-page-tab</find>
       <find>start</find>
+      <find>Admin</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />
@@ -173,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/staticfile/css/common.css" />
         <option value="$PROJECT_DIR$/dome_server/handel/tpuserscvHandelr.py" />
         <option value="$PROJECT_DIR$/staticfile/orderall.js" />
         <option value="$PROJECT_DIR$/staticfile/index.js" />
@@ -224,6 +221,7 @@
         <option value="$PROJECT_DIR$/staticfile/backlist.html" />
         <option value="$PROJECT_DIR$/dome_server/handel/Blacklist.py" />
         <option value="$PROJECT_DIR$/staticfile/backlist.js" />
+        <option value="$PROJECT_DIR$/Imgae_serever/Filehandelr.py" />
       </list>
     </option>
   </component>
@@ -282,7 +280,18 @@
             <path>
               <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOme" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfile" type="462c0819:PsiDirectoryNode" />
+              <item name="Imgae_serever" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOme" type="462c0819:PsiDirectoryNode" />
+              <item name="wxServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Handerls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -421,97 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="15045" column="12" lean-forward="false" selection-start-line="15045" selection-start-column="12" selection-end-line="15045" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/addpoje.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/tornado/httpserver.py" />
-    <entry file="file://$PROJECT_DIR$/dome_server/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#45#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoDome/auto_click.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="109" column="35" lean-forward="false" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/TPuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="206" column="27" lean-forward="true" selection-start-line="206" selection-start-column="27" selection-end-line="206" selection-end-column="27" />
-          <folding>
-            <marker date="1553779687769" expanded="true" signature="2576:2589" ph="..." />
-            <marker date="1553779687769" expanded="true" signature="2605:2616" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/paly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="273" column="55" lean-forward="true" selection-start-line="273" selection-start-column="55" selection-end-line="273" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/jp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -524,30 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="179" column="38" lean-forward="true" selection-start-line="179" selection-start-column="38" selection-end-line="179" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="121" column="36" lean-forward="true" selection-start-line="121" selection-start-column="36" selection-end-line="121" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -669,14 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/pojcetm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="85" column="60" lean-forward="false" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/Handerls/playcallbackurl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -706,70 +592,6 @@
         <state relative-caret-position="1127">
           <caret line="52" column="66" lean-forward="false" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1613">
-          <caret line="78" column="82" lean-forward="false" selection-start-line="78" selection-start-column="82" selection-end-line="78" selection-end-column="82" />
-          <folding>
-            <element signature="e#24#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/Basehanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/auoth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="160" column="43" lean-forward="false" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,10 +627,146 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/staticfile/backlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dome_server/handel/orderHanderl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Blacklist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/auoth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/Basehanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/BaomingHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/palyHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="117" column="93" lean-forward="true" selection-start-line="117" selection-start-column="93" selection-end-line="117" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Imgae_serever/logs.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Imgae_serever/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Imgae_serever/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Imgae_serever/setting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/pojcetm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="99" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/buck_token/Token.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/dbTempet/pojcetm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/autohanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -823,21 +781,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dome_server/handel/Blacklist.py">
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/rootHandel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+        <state relative-caret-position="299">
+          <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/TpuserHandeler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="182" column="10" lean-forward="false" selection-start-line="182" selection-start-column="10" selection-end-line="182" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dome_server/handel/Poject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/tornado/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="643" column="8" lean-forward="false" selection-start-line="643" selection-start-column="8" selection-end-line="643" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toushuHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/SortHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/redis/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="660" column="8" lean-forward="false" selection-start-line="660" selection-start-column="8" selection-end-line="660" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/Handerls/toupiaoHanderl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="90" column="23" lean-forward="false" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="23" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#24#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfile/backlist.js">
+    <entry file="file://$PROJECT_DIR$/Imgae_serever/Filehandelr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="387">
+          <caret line="24" column="71" lean-forward="true" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

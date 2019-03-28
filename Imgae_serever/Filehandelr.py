@@ -2,10 +2,27 @@ from tornado.web import RequestHandler
 import uuid
 from setting import IMAGE_PATH,url,path
 import json
+import redis
+import time
 class Filehandelr(RequestHandler):
     def get(self):
         self.post()
     def post(self):
+        conf_redis = {
+            'host': '127.0.0.1',
+            'port': 6379
+        }
+        Adminid=self.get_secure_cookie("token")
+        if not Adminid:
+             myreids = redis.StrictRedis(**conf_redis)
+             uploanum=myreids.get(self.request.headers.get("X-Real-IP"))
+             if not uploanum:
+                 myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
+             else:
+                 if uploanum>20:
+                     return
+                 else:
+                    myreids.incr(self.request.headers.get("X-Real-IP"))
         files=self.request.files
         fileurl=[]
         for i in files:
