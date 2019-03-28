@@ -544,7 +544,7 @@ function share_success(){
 			});
 
 
-			  var sharedata = {"title":'我是{%  data["name"] %}在参加{{data["titile"]}}',"imgUrl":"{{data["avatar"]}}","desc":"当前排名第{{ data["index"] }}名，距上一名差{{data["subvotenum"]}}票，亲来为我投票吧","link":"{% raw share["url"] %}"};
+			  var sharedata = {"title":'我是{{data["name"]}}在参加{{data["titile"]}}',"imgUrl":"{{data["avatar"]}}","desc":"当前排名第{{ data["index"] }}名，距上一名差{{data["subvotenum"]}}票，亲来为我投票吧","link":"{% raw share["url"] %}"};
                 sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});
