@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>2019年中华美食“舌尖上的旅行”之河南洛阳C</title>
+	<title>{{data["titile"]}}</title>
 	<meta name="format-detection" content="telephone=no, address=no">
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-touch-fullscreen" content="yes"/>
@@ -544,7 +544,7 @@ function share_success(){
 			});
 
 
-			  var sharedata = {"title":'{% raw share["sharetitle"] %}',"imgUrl":"{{share["shareimgV"]}}","desc":"{{share["sharedesc"]}}","link":"{% raw share["url"] %}"};
+			  var sharedata = {"title":'我是{%  data["name"] %}在参加{{data["titile"]}}',"imgUrl":"{{data["avatar"]}}","desc":"当前排名第{{ data["index"] }}名，距上一名差{{data["subvotenum"]}}票，亲来为我投票吧","link":"{% raw share["url"] %}"};
                 sharedata.success = function(){
 			// var url = "./index.php?i=25&c=entry&ty=share&rid=3319&do=Count&m=tyzm_diamondvote";
 			// $.post(url, function(dat){});

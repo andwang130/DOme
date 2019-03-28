@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc6d39-907a-44f3-9eb8-ae8dec2394a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/index.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/jp.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
-      <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
       <change beforePath="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" afterPath="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="462" column="0" lean-forward="false" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+            <state relative-caret-position="115">
+              <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="29" />
               <folding>
                 <element signature="e#13120#14105#0#HTML" expanded="false" />
               </folding>
@@ -31,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Baoming.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -70,8 +64,8 @@
       <file leaf-file-name="toupiao.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="315" column="15" lean-forward="false" selection-start-line="315" selection-start-column="15" selection-end-line="315" selection-end-column="15" />
+            <state relative-caret-position="-3565">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#19426#20411#0#HTML" expanded="false" />
               </folding>
@@ -79,12 +73,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tpuser.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="566" column="0" lean-forward="true" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="6579">
+              <caret line="549" column="44" lean-forward="true" selection-start-line="549" selection-start-column="44" selection-end-line="549" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,9 +230,9 @@
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/paly.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/sort.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html" />
-        <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/index.html" />
         <option value="$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html" />
+        <option value="$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html" />
       </list>
     </option>
   </component>
@@ -739,7 +738,7 @@
         <state relative-caret-position="368">
           <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,22 +783,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/jp.html">
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="307" column="15" lean-forward="false" selection-start-line="307" selection-start-column="15" selection-end-line="307" selection-end-column="15" />
+        <state relative-caret-position="272">
+          <caret line="362" column="0" lean-forward="true" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
           <folding>
-            <element signature="e#6982#7967#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="550" column="15" lean-forward="false" selection-start-line="550" selection-start-column="15" selection-end-line="550" selection-end-column="15" />
-          <folding>
-            <element signature="e#18662#19647#0#HTML" expanded="false" />
+            <element signature="e#9463#10448#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -814,40 +803,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/paly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="550" column="15" lean-forward="false" selection-start-line="550" selection-start-column="15" selection-end-line="550" selection-end-column="15" />
+          <folding>
+            <element signature="e#18662#19647#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/toupiao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="315" column="15" lean-forward="false" selection-start-line="315" selection-start-column="15" selection-end-line="315" selection-end-column="15" />
+        <state relative-caret-position="-3565">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#19426#20411#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/jp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="566" column="0" lean-forward="true" selection-start-line="566" selection-start-column="0" selection-end-line="566" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="778">
+          <caret line="307" column="15" lean-forward="false" selection-start-line="307" selection-start-column="15" selection-end-line="307" selection-end-column="15" />
+          <folding>
+            <element signature="e#6982#7967#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="462" column="0" lean-forward="false" selection-start-line="462" selection-start-column="0" selection-end-line="462" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="29" />
           <folding>
             <element signature="e#13120#14105#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/Baoming.html">
+    <entry file="file://$PROJECT_DIR$/wxServer/templates/temp2/tpuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="362" column="0" lean-forward="true" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+        <state relative-caret-position="6579">
+          <caret line="549" column="44" lean-forward="true" selection-start-line="549" selection-start-column="44" selection-end-line="549" selection-end-column="44" />
           <folding>
-            <element signature="e#9463#10448#0#HTML" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
