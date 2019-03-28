@@ -17,16 +17,13 @@ class Filehandelr(RequestHandler):
         if not Adminid:
              myreids = redis.StrictRedis(**conf_redis)
              uploanum=myreids.get(self.request.headers.get("X-Real-IP"))
-             print("uoloadnum")
              print(type(uploanum))
              if not uploanum:
                  myreids.set(self.request.headers.get("X-Real-IP"),1,ex=86400)
              else:
-                 if uploanum>20:
-                     print(">20")
+                 if int(uploanum)>20:
                      return
                  else:
-                    print("incr")
                     myreids.incr(self.request.headers.get("X-Real-IP"))
         files=self.request.files
         fileurl=[]
