@@ -14,7 +14,6 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         uuid_=self.get_argument("uuid")
         code = self.get_argument("code",None)
         openid = self.get_secure_cookie("openid")
-        openid = "sss"
         if not self.Verification(openid, self.request.headers.get("X-Real-IP")):
             self.render("404.html")
             raise tornado.gen.Return()
@@ -137,24 +136,31 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
 
 class toupiaoinfoHanderl(Basehanderl.Basehandelr):
     def get(self):
-        self.db_linck()
-        userid = self.get_argument("userid")
-        usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
-        coures = self.Mongodb["poject"].find_one({"uuid": usercoures["uuid"]})
-        data={}
-        data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
-        data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
-        data["aptimestart"] = coures["tiemstatr"]
-        data["aptimeend"] = coures["timeend"]
-        data["name"] = usercoures["name"]
-        data["index"] = usercoures["index"]
-        data["uuid"]=usercoures["uuid"]
-        data["userid"]=userid
-        shares = {}
-        shares["sharetitle"] = coures["sharetitle"]
-        shares["shareimgV"] = coures["shareimgV"]
-        shares["sharedesc"] = coures["sharedesc"]
-        shares["url"] = pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(data["uuid"], userid)
-        aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
-
-        self.render("temp2/toupiao.html", data=data,share=shares, aseedata=aseedata)
+            openid = self.get_secure_cookie("openid")
+            self.db_linck()
+            userid = self.get_argument("userid")
+            usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
+            coures = self.Mongodb["poject"].find_one({"uuid": usercoures["uuid"]})
+            data={}
+            data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
+            data["aptimestart"] = coures["tiemstatr"]
+            data["aptimeend"] = coures["timeend"]
+            data["name"] = usercoures["name"]
+            data["index"] = usercoures["index"]
+            data["uuid"]=usercoures["uuid"]
+            data["userid"]=userid
+            shares = {}
+            shares["sharetitle"] = coures["sharetitle"]
+            shares["shareimgV"] = coures["shareimgV"]
+            shares["sharedesc"] = coures["sharedesc"]
+            shares["url"] = pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(data["uuid"], userid)
+            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            if openid:
+                if not self.Verification(openid, self.request.headers.get("X-Real-IP")):
+                    self.render("404.html")
+                    return
+                self.render("temp2/toupiao.html", data=data,share=shares, aseedata=aseedata)
+            else:
+                url= pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(data["uuid"], userid)
+                self.redirect(url)
