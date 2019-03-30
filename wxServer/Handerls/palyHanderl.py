@@ -172,4 +172,5 @@ class palyHanderl(Basehanderl.Basehandelr):
         req = yield http_client.fetch(url,method="POST",body=mxl_str)
         rq_xml = req.body.decode("utf-8")
         xml_data = pojcetm.creat_dict(fromstring(rq_xml).getiterator("xml"))[0]
+        print(rq_xml)
         raise tornado.gen.Return(xml_data)
