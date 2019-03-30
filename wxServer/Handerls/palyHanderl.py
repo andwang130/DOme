@@ -104,6 +104,14 @@ class palyHanderl(Basehanderl.Basehandelr):
                     raise tornado.gen.Return()
             else:
                 raise tornado.gen.Return()
+            liwulist=pojectcoures["liwulist"]
+            votenum=0
+            for i in liwulist:
+                if pirce==int(i["giftprice"]):
+                    votenum=i["giftvote"]
+                    break
+            if votenum==0:
+                votenum=pirce*pojectcoures["ratio"]
             pirce_now=None
             if pirce:
                 pirce_now=pirce
@@ -116,7 +124,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                          "headimg": "",
                          "operate": "","uuid": couers["uuid"],
                          "username": couers["name"], "money": pirce_now, "liwu": 1, "num": 1,
-                         "votenum": pirce_now * 3, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
+                         "votenum": votenum, "times": time.time(), "ip": self.request.headers.get("X-Real-IP"),
                          "start": 0,"Adminid":pojectcoures["Adminid"],"type":"shop"}
                 self.Mongodb["Ordel"].insert_one(order)
                 rq =yield self.get_playapImch(out_trade_no,pirce_now, ip, openid,orderid)
@@ -139,7 +147,7 @@ class palyHanderl(Basehanderl.Basehandelr):
         callbackurl = pojcetm.www + "/wx/playcallbackurl"
         data = {
             "appid": pojcetm.wxcongif["appId"],
-            "mch_id": "1518708631",
+            "mch_id": "1530541951",
             "device_info": "WEB",
             "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
             "body": "test",
