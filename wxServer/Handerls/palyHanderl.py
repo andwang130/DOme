@@ -164,7 +164,9 @@ class palyHanderl(Basehanderl.Basehandelr):
         }
         data["sign"] = pojcetm.get_sign(data)
         elem = pojcetm.dict_to_xml("xml", data)
+
         mxl_str = tostring(elem, encoding="utf-8")
+        print(mxl_str)
         url = "https://api.mch.weixin.qq.com/pay/unifiedorder"
         http_client = tornado.httpclient.AsyncHTTPClient()
         req = yield http_client.fetch(url,method="POST",body=mxl_str)
