@@ -108,10 +108,10 @@ class palyHanderl(Basehanderl.Basehandelr):
             votenum=0
             for i in liwulist:
                 if pirce==int(i["giftprice"]):
-                    votenum=i["giftvote"]
+                    votenum=int(i["giftvote"])
                     break
             if votenum==0:
-                votenum=pirce*pojectcoures["ratio"]
+                votenum=pirce*int(pojectcoures["ratio"])
             pirce_now=None
             if pirce:
                 pirce_now=pirce
