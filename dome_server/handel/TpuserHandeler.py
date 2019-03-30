@@ -31,6 +31,8 @@ class Tpuuser(Basehandelr):
                 self.get_votedate()
             elif action=="add_votedate":
                 self.add_votedate()
+            elif action=="get_name":
+                self.get_name()
         else:
             self.write(json.dumps({"code":-1,"eeor":"action"}))
             return
@@ -186,4 +188,14 @@ class Tpuuser(Basehandelr):
         if userid:
             self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc":{"votenum":int(votenum)}})
             self.write(json.dumps({"code":0}))
+    def get_name(self):
+        userid = self.get_argument("userid")
+        if userid:
+            couser=self.Mongodb["tpUser"].find_one({"userid":userid})
+            if couser:
+                resut={"code":0,"data":couser["name"]}
+                return self.write(json.dumps(resut))
+        else:
+            resut={"code":-1,"data":""}
+            return self.write(json.dumps(resut))
 

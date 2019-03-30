@@ -250,7 +250,7 @@
 							var tpusers=data["tpusers"]
 							for(i=0;i<tpusers.length;i++)
 							{
-								liwu_init(tpusers[i]["userid"],"",tpusers[i]["start"],tpusers[i]["end"])
+								liwu_init(tpusers[i]["userid"],"",tpusers[i]["start"],tpusers[i]["end"],tpusers[i]["username"])
 							}
 
 						}
@@ -261,13 +261,13 @@
 		)
 	}
 	function btn_add_liwu() {
-		liwu_init("","/images/diamond.png",10,20)
+		liwu_init("","/images/diamond.png",10,20,"NULL")
 	}
-	function liwu_init (gifttitle,gifimg,giftprice,giftvote) {
+	function liwu_init (gifttitle,gifimg,giftprice,giftvote,name) {
 
 
 		html="<tr name='liwus'>\n" +
-				"\t\t<td class=\"text-left\" ><input type=\"text\" placeholder=\"输入用户的id\" value=\""+gifttitle+"\" class=\"form-control\" name=\"userid\"></td>\n" +
+				"\t\t<td class=\"text-left\" ><input type=\"text\" class='input_user'  placeholder=\"输入用户的id\" value=\""+gifttitle+"\" class=\"form-control\" name=\"userid\"><span>"+name+"</span></td>\n" +
 				"\t\t<td class=\"text-left\" ><div class=\"input-group\">\n" +
 				"          <input type=\"number\" placeholder=\"输入支付价格\" value=\""+giftprice+"\" class=\"form-control\" name=\"start\">\n" +
 
@@ -280,8 +280,29 @@
 				"\t\t<td><button type=\"button\" class=\"btn btn-danger btn_del_ad btn-xs\">删除</button></td>\n" +
 				"\t</tr>";
 		$("#js-table-2").append(html);
+		$(".input_user").blur(get_name)
 	}
+function get_name() {
+	var data={"action":"get_name","userid":$("this").val()}
+	$.ajax({
+		url: '/Tpuser',
+		type: 'POST',
+		data: data,
+		success: function (arg) {
+			var arg=JSON.parse(arg)
 
+			if(arg.code==0) {
+				var name=arg["data"]
+			}
+			else {
+				var name="NULL"
+			}
+			$(this).next().text(name)
+
+
+		}
+	})
+}
 	function sudbit_click() {
 
 		var data={};
