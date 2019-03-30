@@ -56,7 +56,7 @@ function  get_user(page) {
                             var tr=" <tr id='"+data[i]["userid"]+"'>\n" +
                                 "                \t<input type=\"hidden\"  value=\"262592\" >\n" +
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
-                                "\t\t\t\t\t<td  class=\"text-left vertical-middle\">"+data[i]["name"]+"<span class=\"label label-{success}\">{是否审核}</span></td>\n" +
+                                "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><a href='javascript:;'  data-clipboard-text='"+data[i]["userid"]+"' class='js-clip'>"+data[i]["name"]+"</a><span class=\"label label-{success}\">{是否审核}</span></td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">"+data[i]["vheat"]+"</span></td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this,\""+data[i]["userid"]+"\")'>+</button><span style='display: none'><input style='width: 60px' type='number' name='votenum'><span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">"+data[i]["liwu"]+"</span></td>\n" +
@@ -80,6 +80,13 @@ function  get_user(page) {
                                 tr=tr.replace(/{success}/,"default").replace(/{是否审核}/,"未审核")
                             }
                             $("#userlist").append(tr)
+
+                            var clipboard=new Clipboard('.js-clip');
+                            clipboard.on("success",function (e) {
+                                $.sendSuccessToTop('复制成功', 3000, function() {
+                                    console.log('sendSuccessToTop closed');
+                                });
+                            });
 
                         }
                          page_math(arg["count"]);

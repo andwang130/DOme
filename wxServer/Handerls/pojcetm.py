@@ -84,14 +84,13 @@ Tpuser_temptle={
 
 
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start","type","Adminid"]
-
 wxcongif={
     "appId":"wx4f94937ea0e54f9b",
     "secret":"53cb46ab06dcd02546890969fb695b35"
 
 }
 TempCode=2
-play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWIkCBEQD0l9Lq"
+play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
 www="http://www.nkwwcj.com"
 
 conf_redis={
