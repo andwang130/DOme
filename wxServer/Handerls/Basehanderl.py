@@ -34,13 +34,13 @@ class Basehandelr(RequestHandler):
         ipors=self.Mongodb["Blacklist"].find_one({"value": ip})
         now_tiem=time.time()
         if openidors:
-            if now_tiem-openidors["times"]>=20:
+            if now_tiem-openidors["times"]>=3:
                 return False
             else:
                 return True
 
         elif ipors:
-            if now_tiem - ipors["times"] >= 20:
+            if now_tiem - ipors["times"] >= 3:
                 return False
             else:
                 return True
