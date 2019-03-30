@@ -128,6 +128,7 @@ class palyHanderl(Basehanderl.Basehandelr):
                          "start": 0,"Adminid":pojectcoures["Adminid"],"type":"shop"}
                 self.Mongodb["Ordel"].insert_one(order)
                 rq =yield self.get_playapImch(out_trade_no,pirce_now, ip, openid,orderid)
+                print(rq)
             else:
                 self.write(json.dumps({"error": 1, "msg": "参数错误"}))
                 raise tornado.gen.Return()
