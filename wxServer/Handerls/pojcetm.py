@@ -90,7 +90,7 @@ wxcongif={
 
 }
 TempCode=2
-play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWIkCBEQD0l9Lq"
+play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
 www="http://www.nkwwcj.com"
 
 conf_redis={
