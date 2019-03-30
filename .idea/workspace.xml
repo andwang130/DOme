@@ -130,8 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sendError</find>
-      <find>jquerytc</find>
       <find>keyword</find>
       <find>filter</find>
       <find>get_frist</find>
@@ -160,6 +158,8 @@
       <find>Admin</find>
       <find>uploadfile</find>
       <find>incr</find>
+      <find>color-dark</find>
+      <find>js-clip</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Go" />

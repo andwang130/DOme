@@ -56,7 +56,7 @@ function  get_user(page) {
                             var tr=" <tr id='"+data[i]["userid"]+"'>\n" +
                                 "                \t<input type=\"hidden\"  value=\"262592\" >\n" +
                                 "                    <td  class=\"text-left vertical-middle\">"+data[i]["index"]+"</td>\n" +
-                                "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><a href='javascript:;' class='js-clip'>"+data[i]["name"]+"</a>><span class=\"label label-{success}\">{是否审核}</span></td>\n" +
+                                "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><a href='javascript:;' class='js-clip'>"+data[i]["name"]+"</a><span class=\"label label-{success}\">{是否审核}</span></td>\n" +
                                 "\t\t\t\t\t<td class=\"text-left vertical-middle\"><span class=\"label label-info\">"+data[i]["vheat"]+"</span></td>\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle _ticket\"><span class=\"label label-primary _ticket_lable\">"+data[i]["votenum"]+"</span> <button onclick='add_votedate(this,\""+data[i]["userid"]+"\")'>+</button><span style='display: none'><input style='width: 60px' type='number' name='votenum'><span></td><!-- 移入移出事件  -->\n" +
                                 "\t\t\t\t\t<td  class=\"text-left vertical-middle\"><span class=\"label label-danger\">"+data[i]["liwu"]+"</span></td>\n" +
