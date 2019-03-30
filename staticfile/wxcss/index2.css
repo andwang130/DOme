@@ -52,7 +52,7 @@ a:focus {color:#999}
 .lapiao{bottom:50px;background-color:rgba(255, 255, 255, 0.5);height:60px}
 .lapiao .l{text-align:center;width:80px;display:inline-block;color:white;margin-top:16px;margin-left:35px;height:30px;line-height:30px;float:none;padding-left:0px}
 .lapiao .r{text-align:center;width:80px;display:inline-block;color:white;margin-top:14px;margin-left:39px;height:30px;line-height:30px;float:right;padding:0px;margin-right:35px}
-.lapiao .add{background:url('../images/zuanshi1.png') no-repeat;background-size:cover}
+.lapiao .add{background:url('/images/zuanshi1.png') no-repeat;background-size:cover}
 .add .i{border-radius:0px;color:white;background:none;-webkit-animation:none;border:none;color:#4e4848;padding-top:58px}
 
 
