@@ -195,6 +195,9 @@ class Tpuuser(Basehandelr):
             if couser:
                 resut={"code":0,"data":couser["name"]}
                 return self.write(json.dumps(resut))
+            else:
+                resut={"code":0,"data":couser["name"]}
+                return self.write(json.dumps(resut))
         else:
             resut={"code":-1,"data":""}
             return self.write(json.dumps(resut))
