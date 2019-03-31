@@ -49,7 +49,7 @@ function body_inti(data) {
        var img_td='<td style="text-align:center"><img src="'+data[i]["headimg"]+'" onerror="" width="48"></td>';
        var  openid_td='<td><br>'+data[i]["openid"]+'<span class="label label-danger" onclick="addblack('+'\''+data[i]["openid"]+'\''+',0);"\">加入黑名单</span></td>';
        var ip_td='<td>'+data[i]["ip"]+'<span class="label label-danger" onclick="addblack('+'\''+data[i]["ip"]+'\''+',1);">加入黑名单</span></td>';
-       var  times_id='<td>'+data[i]["times"]+'</td>';
+       var  times_id='<td>'+getLocalTime(data[i]["times"])+'</td>';
        var HTML='<tr>'+id_td+img_td+openid_td+ip_td+times_id+'</tr>';
         $("#body").append(HTML)
     }
