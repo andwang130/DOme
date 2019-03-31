@@ -575,7 +575,13 @@ function share_success(){
 		setTimeout("hidemod('toast')",2000); 
 	}
 
-	
+	wx.ready(function () {
+		wx.hideMenuItems({
+		  menuList:["menuItem:copyUrl","menuItem:originPage", "menuItem:share:email","menuItem:openWithQQBrowser","menuItem:openWithSafari","menuItem:share:brand"],
+
+		});
+
+	});
 
 	</script>
 	
