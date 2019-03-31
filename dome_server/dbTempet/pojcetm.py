@@ -25,6 +25,7 @@ pojectarg = ["titile",#标题
              "rangenum",
              "videourl",
              "videoname",
+             "videoimage",
              ]
 pojiceTeptle = [
                 "votes",  # 投票数
