@@ -165,8 +165,8 @@ class Poject(Basehandelr):
             params = []
             # params.append(cv.CV_IMWRITE_PXM_BINARY)
             params.append(1)
-            imgname="/home/DOme/staticfile/video/"+str(uuid.uuid1()).replace("-","")+".jpg"
-            cv2.imwrite(imgname, frame, params)
+            imgname=str(uuid.uuid1()).replace("-","")+".jpg"
+            cv2.imwrite("/home/DOme/staticfile/video/"+imgname, frame, params)
             break
         cap.release()
         return '/video/'+imgname
