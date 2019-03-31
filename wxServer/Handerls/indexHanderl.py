@@ -36,7 +36,6 @@ class indexHanderl(Basehanderl.Basehandelr):
     def rq(self,uuid_):
         if uuid_:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
-
             self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"volume": 1}})
             usercoures = self.Mongodb["tpUser"].find({"uuid": uuid_})
             if coures:
@@ -48,7 +47,6 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimestart"] = coures["tiemstatr"]
                 data["aptimeend"] = coures["timeend"]
-
                 data["notice"] = coures["titile"]
                 votenum=0
                 for i in usercoures:
