@@ -34,6 +34,7 @@ class jphanderl(Basehanderl.Basehandelr):
             if coures:
                 data = {}
                 data["videourl"]=coures.get("videourl","")
+                data["videoimage"]=coures.get("videoimage","")
                 data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
                 data["topimges"].append(self.get_frist(uuid_))
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()

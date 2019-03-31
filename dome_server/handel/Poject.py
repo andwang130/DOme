@@ -5,7 +5,7 @@ import uuid
 import time
 import settings
 from Basehandelr import verification
-
+import cv2
 class Poject(Basehandelr):
     def get(self):
         self.post()
@@ -41,6 +41,11 @@ class Poject(Basehandelr):
                 self.poject_copy()
     def update(self,uuid_,data):
         try:
+            if data.get("videourl"):
+                vodieimage = self.get_first_image(data["videourl"])
+                data["videoimage"] = vodieimage
+            else:
+                data["videoimage"] = ""
             data["rangetime"] = int(data["rangetime"])
             data["rangenum"] = int(data["rangenum"])
             data["Adminid"] = self.get_secure_cookie("token")
@@ -60,6 +65,11 @@ class Poject(Basehandelr):
         data["findtime"]=time.mktime(time.strptime(data["tiemstatr"], '%Y-%m-%d %H:%M'))
         data["findend"] = time.mktime(time.strptime(data["timeend"], '%Y-%m-%d %H:%M'))
         data["Adminid"]=self.get_secure_cookie("token")
+        if data.get("videourl"):
+            vodieimage = self.get_first_image(data["videourl"])
+            data["videoimage"] = vodieimage
+        else:
+            data["videoimage"] = ""
         for i in pojcetm.pojiceTeptle:
             data[i]=0
         try:
@@ -141,3 +151,22 @@ class Poject(Basehandelr):
             data["createtime"]=time.time()
             data["titile"]=data["titile"]+"copy"
             self.create(data)
+
+    def get_first_image(self,path):
+        VIDEO_PATH = "/home/DOme/staticfile"
+        video_full_path =VIDEO_PATH+ path
+        cap = cv2.VideoCapture(video_full_path)
+        imgname=""
+        cap.isOpened()
+        frame_count = 1
+        success = True
+        while (success):
+            success, frame = cap.read()
+            params = []
+            # params.append(cv.CV_IMWRITE_PXM_BINARY)
+            params.append(1)
+            imgname="/home/DOme/staticfile/video/"+str(uuid.uuid1()).replace("-","")+".jpg"
+            cv2.imwrite(imgname, frame, params)
+            break
+        cap.release()
+        return '/video/'+imgname
