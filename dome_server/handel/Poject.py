@@ -143,7 +143,6 @@ class Poject(Basehandelr):
         if uuid:
             data={}
             coures=self.cooliect.find_one({"uuid":uuid_})
-
             for i in pojcetm.pojectarg:
                 data[i]=coures[i]
             for i in pojcetm.pojiceTeptle:
