@@ -155,7 +155,7 @@ class Poject(Basehandelr):
     def get_first_image(self,path):
         VIDEO_PATH = "/home/DOme/staticfile"
         video_full_path =VIDEO_PATH+ path
-        cap = cv2.VideoCapture(video_full_path)
+        cap = cv2.VideoCapture(video_full_path.encode("utf-8"))
         imgname=""
         cap.isOpened()
         frame_count = 1
