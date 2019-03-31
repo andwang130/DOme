@@ -186,8 +186,11 @@ class Tpuuser(Basehandelr):
         userid = self.get_argument("userid")
         votenum=self.get_argument("votenum",0)
         if userid:
-            self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc":{"votenum":int(votenum)}})
-            self.write(json.dumps({"code":0}))
+            couseruser= self.Mongodb["tpUser"].find_one({"userid": userid})
+            if couseruser:
+                self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc":{"votenum":int(votenum)}})
+                self.cooliect.update_one({"uuid":couseruser["uuid"]},{"$inc":{"votes":int(votenum)}})
+                self.write(json.dumps({"code":0}))
     def get_name(self):
         userid = self.get_argument("userid")
         if userid:
