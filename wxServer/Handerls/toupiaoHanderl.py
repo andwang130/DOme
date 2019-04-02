@@ -89,7 +89,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
         if userid and openid:
             try:
                 myreids = redis.StrictRedis(**pojcetm.conf_redis)
-
+                
                 self.db_linck()
                 couers=self.Mongodb["tpUser"].find_one({"userid":userid})
                 if couers:

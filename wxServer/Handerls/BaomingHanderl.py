@@ -58,6 +58,7 @@ class baoming(Basehanderl.Basehandelr):
                 self.render("temp2/Baoming.html",data=data, aseedata=aseedata, share=shares)
 
     def post(self):
+        self.db_linck()
         data = {}
         uuid_ = self.get_argument("uuid", "")
         pojectcoures = self.Mongodb["poject"].find_one({"uuid": uuid_})
@@ -77,7 +78,6 @@ class baoming(Basehanderl.Basehandelr):
             else:
                 myreids.incr(self.request.headers.get("X-Real-IP")+"baoming")
         if uuid_:
-            self.db_linck()
             for i in pojcetm.Tpuser:
                 data[i] = self.get_argument(i, "")
         data["uuid"] = uuid_
