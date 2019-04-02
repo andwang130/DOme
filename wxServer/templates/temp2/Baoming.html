@@ -331,7 +331,7 @@ function files_oninpit() {
                 hidemod("loadingToast");
 
                  var rqdata=JSON.parse(str);
-                 if(rqdata["status"]==0) {
+                 if(rqdata["code"]==0) {
 					 location.href = "/wx/toupiao?uuid={{ data["uuid"] }}&userid=" + rqdata["useruuid"]
 				 }
                  else{
@@ -339,7 +339,6 @@ function files_oninpit() {
 				 }
                 },
             error: function (err) {
-                hidemod("loadingToast");
                 dialog2("发生错误，请刷新后重试！");
             }
         });
