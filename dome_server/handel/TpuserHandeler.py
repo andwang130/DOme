@@ -150,7 +150,7 @@ class Tpuuser(Basehandelr):
                    data[i]=self.get_argument(i,"")
             del data["liwu"]
             self.Mongodb["tpUser"].update_one({"userid":userid},{"$set":data})
-            self.cooliect.updata_one({"uuid":pojeuuid["uuid"]},{"$inc":{"votes":votes}})
+            self.cooliect.updata_one({"uuid":pojeuuid["uuid"]},{"$inc":{"votes":int(votes)}})
             self.write(json.dumps({"code": 0}))
     def delete(self):
         userid = self.get_argument("userid")
