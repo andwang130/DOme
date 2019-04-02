@@ -13,7 +13,7 @@ class baoming(Basehanderl.Basehandelr):
         uuid_=self.get_argument("uuid","")
         code = self.get_argument("code", None)
         openid = self.get_secure_cookie("openid")
-      
+
         if not self.Verification(openid, self.request.headers.get("X-Real-IP")):
             self.render("404.html")
             raise tornado.gen.Return()
@@ -75,7 +75,7 @@ class baoming(Basehanderl.Basehandelr):
             myreids.set(self.request.headers.get("X-Real-IP")+"baoming", 1, ex=1800)
         else:
             if int(uploanum) > 5:
-                self.write(json.dumps({"code": -1, "eeor": "提交太频繁"}))
+                self.write(json.dumps({"code": -1, "msg": "提交太频繁"}))
             else:
                 myreids.incr(self.request.headers.get("X-Real-IP")+"baoming")
         if uuid_:
@@ -94,5 +94,5 @@ class baoming(Basehanderl.Basehandelr):
             self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"participants": 1}});
             self.write(json.dumps({"code": 0, "useruuid": data["userid"]}))
         except Exception as e:
-            self.write(json.dumps({"code": -1, "eeor": "db"}))
+            self.write(json.dumps({"code": -1, "msg": "db"}))
 

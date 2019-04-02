@@ -375,10 +375,15 @@ function files_oninpit() {
             url: "/wx/Baoming?uuid={{data["uuid"]}}",
             data: data,
             success: function (str) {
-                hidemod("loadingToast");
-
                  var rqdata=JSON.parse(str);
-				location.href="/wx/toupiao?uuid={{data["uuid"]}}&userid="+rqdata["useruuid"]
+                 if(rqdata.code==0) {
+					 location.href = "/wx/toupiao?uuid={{data["uuid"]}}&userid=" + rqdata["useruuid"]
+				 }
+                 else
+				 {
+					 dialog2(rqdata.msg);
+				 }
+
                 },
             error: function (err) {
                 hidemod("loadingToast");
