@@ -130,7 +130,7 @@ class Tpuuser(Basehandelr):
     def update(self):
         userid = self.get_argument("userid")
         couseruser=self.Mongodb["tpUser"].find_one({"userid":userid})
-        votes=couseruser["votenum"]-int(self.get_argument(i,0).decode("utf-8"))
+        votes=couseruser["votenum"]-int(self.get_argument("votenum",0).decode("utf-8"))
         if userid:
             data={}
             for i in pojcetm.Tpuser:
