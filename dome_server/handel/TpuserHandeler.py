@@ -157,7 +157,7 @@ class Tpuuser(Basehandelr):
         if userid:
             pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})
             coures = self.Mongodb["tpUser"].delete_one({"userid": userid})
-            self.cooliect.update_one({"uuid":pojeuuid["uuid"]},{"$inc":{"participants":-1,"votes":pojeuuid["votenum"]}});
+            self.cooliect.update_one({"uuid":pojeuuid["uuid"]},{"$inc":{"participants":-1,"votes":-pojeuuid["votenum"]}});
 
             self.write(json.dumps({"code": 0}))
 
