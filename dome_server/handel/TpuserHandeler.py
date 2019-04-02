@@ -129,6 +129,8 @@ class Tpuuser(Basehandelr):
 
     def update(self):
         userid = self.get_argument("userid")
+        couseruser=self.Mongodb["tpUser"].find_one({"userid":userid})
+        votes=couseruser["votenum"]-int(self.get_argument(i,0).decode("utf-8"))
         if userid:
             data={}
             for i in pojcetm.Tpuser:
@@ -148,13 +150,15 @@ class Tpuuser(Basehandelr):
                    data[i]=self.get_argument(i,"")
             del data["liwu"]
             self.Mongodb["tpUser"].update_one({"userid":userid},{"$set":data})
+            self.Mongodb["poject"].updata_one({"uuid":couseruser["uuid"]},{"$inc":{"votes":votes}})
             self.write(json.dumps({"code": 0}))
     def delete(self):
         userid = self.get_argument("userid")
         if userid:
-            pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})["uuid"]
+            pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})
             coures = self.Mongodb["tpUser"].delete_one({"userid": userid})
-            self.Mongodb["poject"].update_one({"uuid":pojeuuid},{"$inc":{"participants":-1}});
+            self.Mongodb["poject"].update_one({"uuid":pojeuuid["uuid"]},{"$inc":{"participants":-1,"votes":pojeuuid["votenum"]}});
+
             self.write(json.dumps({"code": 0}))
 
     def get_votedate(self):
