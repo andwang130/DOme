@@ -9,7 +9,7 @@ class SortHanderl(Basehanderl.Basehandelr):
         page=int(self.get_argument("page",1))
         if uuid_:
             self.db_linck()
-            coures = self.Mongodb["tpUser"].find({"uuid": uuid_}).limit(10).skip(10 * (page - 1)).sort([("votenum",-1)])
+            coures = self.Mongodb["tpUser"].find({"uuid": uuid_,"status":0}).limit(10).skip(10 * (page - 1)).sort([("votenum",-1)])
             datalist = []
             x=0
             for i in coures:
