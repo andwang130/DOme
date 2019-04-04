@@ -76,12 +76,12 @@ $(document).ready(
             end=new_end.end
         }
         var new_times=GetRequest("times")
-        if(new_times)
+        if(new_times.times)
         {
             times=new_times.times
         }
         var new_findend=GetRequest("findend")
-        if(new_findend){
+        if(new_findend.findend){
             findend=new_findend.findend
         }
         for(i=0;i<7;i++)
