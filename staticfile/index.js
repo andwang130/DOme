@@ -181,7 +181,7 @@ function get_list(page) {
                        .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"]).replace(/{copypoject}/,datalist[i]["uuid"])
                        .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"])
                        .replace(/{复制活动链接}/,"http://www.nkwwcj.com/wx/wxindex?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"]).
-                   replace(/{key}/,key).replace("/{start}/",start).replace(/{end}/,end).replace(/{times}/,times).replace(/{findend}/,findend);
+                   replace(/{key}/,key).replace(/{start}/,start).replace(/{end}/,end).replace(/{times}/,times).replace(/{findend}/,findend);
                    var nowtime=Date.parse(new Date());
                    if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
                    {
