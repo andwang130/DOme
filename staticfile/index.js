@@ -54,11 +54,11 @@ var tr="  <tr>\n" +
     "        </td>\n" +
     "    </tr>";
 
-var key;
-var start
-var end
-var times
-var findend
+var key='';
+var start=''
+var end=''
+var times=''
+var findend=''
 $(document).ready(
     function () {
         var page=GetRequest("page")
