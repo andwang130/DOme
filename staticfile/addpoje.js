@@ -172,9 +172,7 @@ function submi_send() {
    }
     else
    {
-       action="create";
-
-    data["action"]=action
+    data["action"]="create"
         }
 
       $.ajax({
@@ -185,7 +183,7 @@ function submi_send() {
         {
 
             arg=JSON.parse(arg);
-            if (action=="update") {
+            if (action.action=="update") {
                 location.href = "/index.html?page=" + page + "&start=" + start + "&end=" + end + "&times=" + times + "&findend=" + findend
             }
             else{
