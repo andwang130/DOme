@@ -26,11 +26,11 @@ $(document).ready(function (){
     $("#videofile").change(video_change)
     action=GetRequest("action");
     uuid=GetRequest("uuid");
-    page=GetRequest("page");
-    start=GetRequest("start");
-    end=GetRequest("end");
-    times=GetRequest("times");
-    findend=GetRequest("findend");
+    page=GetRequest("page").page;
+    start=GetRequest("start").start;
+    end=GetRequest("end").end;
+    times=GetRequest("times").times;
+    findend=GetRequest("findend").findend;
 
     if(uuid.uuid)
     {
