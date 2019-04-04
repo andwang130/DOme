@@ -57,8 +57,8 @@ var tr="  <tr>\n" +
 var key='';
 var start='';
 var end='';
-var times='';
-var findend='';
+var times="";
+var findend="";
 $(document).ready(
     function () {
         var page=GetRequest("page")
