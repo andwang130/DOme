@@ -46,6 +46,8 @@ class Poject(Basehandelr):
                 data["videoimage"] = vodieimage
             else:
                 data["videoimage"] = ""
+
+            data["volume"]=int(self.get_argument("volume",0))
             data["rangetime"] = int(data["rangetime"])
             data["rangenum"] = int(data["rangenum"])
             data["Adminid"] = self.get_secure_cookie("token")
@@ -71,7 +73,10 @@ class Poject(Basehandelr):
         else:
             data["videoimage"] = ""
         for i in pojcetm.pojiceTeptle:
-            data[i]=0
+            if i=="volume":
+                data[i]=int(self.get_argument("volume",0))
+            else:
+                data[i]=0
         try:
             self.cooliect.insert_one(data)
             self.write(json.dumps({"code":0}))
@@ -93,6 +98,7 @@ class Poject(Basehandelr):
                 data = self.cooliect.find_one({"uuid": uuid_})
                 for i in pojcetm.pojectarg:
                     req_data[i]=data.get(i)
+                req_data["volume"]=data.get("volume",0)
                 self.write(json.dumps({"code":0,"data":req_data}))
             except Exception as e:
                 print(e)

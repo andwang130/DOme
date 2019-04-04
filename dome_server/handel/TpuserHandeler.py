@@ -85,10 +85,8 @@ class Tpuuser(Basehandelr):
                     data[i]=status
                 else:
                     data[i]=self.get_argument(i,"")
-        if len(data.get("name")) > 32:
-            data["name"] = data.get("name")[0:32]
-        else:
-            data["name"] = data.get("name")
+
+        data["name"] = data.get("name")
         data["uuid"]=uuid_
         data["liwu"]=0
         data["createtime"]=time.time()
@@ -111,10 +109,7 @@ class Tpuuser(Basehandelr):
             sum=0
             for  i in namelist:
                 data=pojcetm.Tpuser_temptle.copy()
-                if len(i.get("name"))>32:
-                    data["name"]=i.get("name")[0:32]
-                else:
-                    data["name"] = i.get("name")
+                data["name"] = i.get("name")
                 data["avatar"]=i.get("avatar")
                 data["uuid"]=uuid_poject
                 data["createtime"] = time.time()
@@ -134,6 +129,8 @@ class Tpuuser(Basehandelr):
 
     def update(self):
         userid = self.get_argument("userid")
+        pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})
+        votes=int(self.get_argument("votenum",0).decode("utf-8"))-pojeuuid["votenum"]
         if userid:
             data={}
             for i in pojcetm.Tpuser:
@@ -153,13 +150,15 @@ class Tpuuser(Basehandelr):
                    data[i]=self.get_argument(i,"")
             del data["liwu"]
             self.Mongodb["tpUser"].update_one({"userid":userid},{"$set":data})
+            self.cooliect.update_one({"uuid":pojeuuid["uuid"]},{"$inc":{"votes":int(votes)}})
             self.write(json.dumps({"code": 0}))
     def delete(self):
         userid = self.get_argument("userid")
         if userid:
-            pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})["uuid"]
+            pojeuuid=self.Mongodb["tpUser"].find_one({"userid":userid})
             coures = self.Mongodb["tpUser"].delete_one({"userid": userid})
-            self.Mongodb["poject"].update_one({"uuid":pojeuuid},{"$inc":{"participants":-1}});
+            self.cooliect.update_one({"uuid":pojeuuid["uuid"]},{"$inc":{"participants":-1,"votes":-pojeuuid["votenum"]}});
+
             self.write(json.dumps({"code": 0}))
 
     def get_votedate(self):

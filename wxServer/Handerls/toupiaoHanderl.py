@@ -91,7 +91,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
                 myreids = redis.StrictRedis(**pojcetm.conf_redis)
 
                 self.db_linck()
-                couers=self.Mongodb["tpUser"].find_one({"userid":userid})
+                couers=self.Mongodb["tpUser"].find_one({"userid":userid,"status":0})
                 if couers:
                     pojectcoures = self.Mongodb["poject"].find_one({"uuid": couers["uuid"]})
                     if time.mktime(time.strptime(pojectcoures["votestart"], '%Y-%m-%d %H:%M')) - time.time() > 0:

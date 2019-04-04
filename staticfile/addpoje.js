@@ -66,7 +66,7 @@ function get_info(uuid) {
         var aptimestart=$("#votestart").val(data["votestart"]);
     var aptimeend=$("#voteend").val(data["voteend"]);
      $("#voteendtime").text(data["votestart"]+" 至 "+data["voteend"]);
-
+     $("#volume").val(data["volume"])
 
     var topimgV=$("#topimgV").attr("src",data["topimgV"]);
     var topimg2V=$("#topimg2V").attr("src",data["topimg2V"]);
@@ -112,6 +112,7 @@ function submi_send() {
     var himgV=$("#himgV").attr("src");
     var rangetime=$("#rangetime").val()
     var rangenum=$("#rangenum").val()
+    var volume=$("#volume").val()
     var description=$("#description").val();
     var tiemstatr=$("#tiemstatr").val();
     var timeend=$("#timeend").val();
@@ -162,7 +163,7 @@ function submi_send() {
        "tiemstatr":tiemstatr,"timeend":timeend,"topimgV":topimgV,"customized":customized,"buttonpane":buttonpane,
        "sharetitle":sharetitle,"shareimgV":shareimgV,"sharedesc":sharedesc,"aptimestart":aptimestart,"aptimeend":aptimeend,
         "liwulist":list_str,"topimg2V":topimg2V,"topimg3V":topimg3V,"ratio":ratio,"rangetime":rangetime,"rangenum":rangenum,
-        "videourl":videourl,"videoname":videoname
+        "videourl":videourl,"videoname":videoname,"volume":volume
    };
    console.log(data);
    if(action.action) {
