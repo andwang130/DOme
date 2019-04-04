@@ -114,7 +114,7 @@ class Poject(Basehandelr):
             findend=time.time()
             sqldata["findend"]={"$lt": findend}
         elif findend=="start":
-            sqldata["findtime"]={"$gt": time.time()}
+            sqldata["findtime"]={"$lt": time.time()}
             sqldata["findend"]={"$gt":time.time()}
         if starttime:
             start=time.mktime(time.strptime(starttime, '%Y-%m-%d'))
