@@ -115,7 +115,7 @@ class Poject(Basehandelr):
             sqldata["findend"]={"$lt": findend}
         elif findend=="start":
             sqldata["findtime"]={"$gt": time.time()}
-            sqldata["findend"]={"$lt",time.time()}
+            sqldata["findend"]={"$lt":time.time()}
         if starttime:
             start=time.mktime(time.strptime(starttime, '%Y-%m-%d'))
         else:
@@ -125,7 +125,8 @@ class Poject(Basehandelr):
             end=time.mktime(time.strptime(endtime, '%Y-%m-%d'))
         else:
             end=1553268580000
-        sqldata["findtime"] = {"$gt": start, "$lt": end}
+        if endtime and starttime:
+            sqldata["findtime"] = {"$gt": start, "$lt": end}
         if times:
             sqldata["timeend"]={"$regex":times}
         if key:
