@@ -4,11 +4,11 @@ var action="";
 var uuid="";
 var ue1
 var ue2
-var page
-var start
-var end
-var times
-var findend
+var page=1
+var start=""
+var end=""
+var times=""
+var findend=""
 $(document).ready(function (){
      ue1 = UM.getEditor('myEditor1');
      ue2 = UM.getEditor('myEditor2');
