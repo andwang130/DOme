@@ -296,7 +296,7 @@ function get_end(e) {
     else if(text=="全部"){
         findend=""
     }
-    else if(text=="开始的"){
+    else if(text=="已经开始的"){
         findend="start"
     }
   get_list(1)
