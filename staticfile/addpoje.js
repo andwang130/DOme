@@ -185,7 +185,12 @@ function submi_send() {
         {
 
             arg=JSON.parse(arg);
-            location.href="/index.html?page="+page+"&start="+start+"&end="+end+"&times="+times+"&findend="+findend
+            if (action=="update") {
+                location.href = "/index.html?page=" + page + "&start=" + start + "&end=" + end + "&times=" + times + "&findend=" + findend
+            }
+            else{
+                location.href = "/index.html"
+            }
 
         }
     })
