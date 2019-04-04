@@ -43,7 +43,7 @@ var tr="  <tr>\n" +
     "                    </td>\n" +
     "        <td class=\"text-left vertical-middle\">\n" +
     "            <a class=\"color-default we7-margin-right\" rel=\"tooltip\"\n" +
-    "               href=\"./addpoje.html?action=update&uuid={setuuid}\"\n" +
+    "               href=\"./addpoje.html?action=update&uuid={setuuid}&key={key}&start={start}&end={end}&times={times}&findend={findend}\"\n" +
     "               title=\"编辑\"><i class=\"fa fa-edit\"></i> 编辑</a><br/>\n" +
     "            <a class=\"color-default we7-margin-right\" rel=\"tooltip\" href=\"#\"\n" +
     "               onclick=\"drop_confirm('您确定要删除吗?删除不可恢复。', '/poject?action=delete&uuid={delteuuid}');\"\n" +
@@ -53,9 +53,37 @@ var tr="  <tr>\n" +
     "               title=\"复制活动\"><i class=\"fa fa-copy\"></i> 复制活动</a>\n" +
     "        </td>\n" +
     "    </tr>";
+
+var key;
+var start
+var end
+var times
+var findend
 $(document).ready(
     function () {
-
+        var page=GetRequest("page")
+         if(page.page)
+         {
+             now_page=page.page
+         }
+       var  new_key=GetRequest("key")
+         if(new_key.key){
+             key=new_key.key
+         }
+        var new_end=GetRequest("end")
+        if(new_end.end)
+        {
+            end=new_end.end
+        }
+        var new_times=GetRequest("times")
+        if(new_times)
+        {
+            times=new_times.times
+        }
+        var new_findend=GetRequest("findend")
+        if(new_findend){
+            findend=new_findend.findend
+        }
         for(i=0;i<7;i++)
         {
             var newtimes=fun_date(i)
@@ -66,15 +94,11 @@ $(document).ready(
         }
 
         $(".timeget").click(times_get)
-        get_list(1);
+        get_list(now_page);
         $(".btn-default").click(set_key)
     }
 );
-var key;
-var start
-var end
-var times
-var findend
+
 function set_key() {
 
     key=$("#keyword").val();
@@ -155,7 +179,9 @@ function get_list(page) {
                    var new_tr=tr.replace(/{编号}/,i).replace(/{TITLE}/,datalist[i]["titile"]).replace(/{开始时间}/,datalist[i]["tiemstatr"])
                        .replace(/{结束时间}/,datalist[i]["timeend"]).replace(/{参与人数}/,datalist[i]["participants"]).replace(/{投票数量}/,datalist[i]["votes"])
                        .replace(/{浏览量}/,datalist[i]["volume"]).replace(/{分享量}/,datalist[i]["Share"]).replace(/{uuid}/,datalist[i]["uuid"]).replace(/{copyuuid}/,datalist[i]["uuid"]).replace(/{setuuid}/,datalist[i]["uuid"]).replace(/{copypoject}/,datalist[i]["uuid"])
-                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"]).replace(/{复制活动链接}/,"http://www.nkwwcj.com/wx/wxindex?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"]);
+                       .replace(/{ordel_uuid}/,datalist[i]["uuid"]).replace(/{delteuuid}/,datalist[i]["uuid"])
+                       .replace(/{复制活动链接}/,"http://www.nkwwcj.com/wx/wxindex?uuid="+datalist[i]["uuid"]).replace(/{礼物数量}/,datalist[i]["liwunum"]).
+                   replace(/{key}/,key).replace("/{start}/",start).replace(/{end}/,end).replace(/{times}/,times).replace(/{findend}/,findend);
                    var nowtime=Date.parse(new Date());
                    if(getTimes(datalist[i]["tiemstatr"])<nowtime&&getTimes(datalist[i]["timeend"])>nowtime)
                    {
@@ -266,11 +292,12 @@ function get_end(e) {
     var text= $(e).text()
     if(text=="已经结束的"){
         findend="end"
-         $(e).text("全部")
     }
     else if(text=="全部"){
         findend=""
-        $(e).text("已经结束的")
+    }
+    else if(text=="开始的"){
+        findend="start"
     }
   get_list(1)
 

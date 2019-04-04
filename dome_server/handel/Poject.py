@@ -103,10 +103,13 @@ class Poject(Basehandelr):
         starttime=self.get_argument("start","")
         times=self.get_argument("times","")
         findend=self.get_argument("findend","")
-        if findend:
+        sqldata={}
+        if findend=="end":
             findend=time.time()
-        else:
-            findend=155326858000000
+            sqldata["findend"]={"$lt": findend}
+        elif findend=="start":
+            sqldata["findtime"]={"$gt": time.time()}
+            sqldata["findend"]={"$lt",time.time()}
         if starttime:
             start=time.mktime(time.strptime(starttime, '%Y-%m-%d'))
         else:
@@ -116,12 +119,15 @@ class Poject(Basehandelr):
             end=time.mktime(time.strptime(endtime, '%Y-%m-%d'))
         else:
             end=1553268580000
+        sqldata["findtime"] = {"$gt": start, "$lt": end}
+        if times:
+            sqldata["timeend"]={"$regex":times}
+        if key:
+            sqldata["titile"]={"$regex":key}
+        sqldata["Adminid"]=Adminid
         data_list=[]
         try:
-            if key:
-                coures = self.cooliect.find({"findend":{"$lt":findend},"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times},"titile":{"$regex":key}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
-            else:
-                coures=self.cooliect.find({"findend":{"$lt":findend},"Adminid":Adminid,"findtime":{"$gt":start,"$lt":end},"timeend":{"$regex":times}}).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM*(page-1)).sort([("createtime",-1)])
+            coures = self.cooliect.find(sqldata).limit(settings.PAGE_NUM).skip(settings.PAGE_NUM * (page - 1)).sort([("createtime", -1)])
             count=coures.count()
             for i in coures:
                 data={}

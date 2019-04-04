@@ -4,6 +4,11 @@ var action="";
 var uuid="";
 var ue1
 var ue2
+var page
+var start
+var end
+var times
+var findend
 $(document).ready(function (){
      ue1 = UM.getEditor('myEditor1');
      ue2 = UM.getEditor('myEditor2');
@@ -21,6 +26,12 @@ $(document).ready(function (){
     $("#videofile").change(video_change)
     action=GetRequest("action");
     uuid=GetRequest("uuid");
+    page=GetRequest("page");
+    start=GetRequest("start");
+    end=GetRequest("end");
+    times=GetRequest("times");
+    findend=GetRequest("findend");
+
     if(uuid.uuid)
     {
      get_info(uuid.uuid)
@@ -171,8 +182,9 @@ function submi_send() {
         data:data,
         success: function (arg)
         {
+
             arg=JSON.parse(arg);
-            location.href="/index.html"
+            location.href="/index.html?page="+page+"&start="+start+"&end="+end+"&times="+times+"&findend="+findend
 
         }
     })
