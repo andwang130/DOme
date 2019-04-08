@@ -67,7 +67,7 @@ class Ordel(Basehandelr):
 
         for i in coures:
             del i["_id"]
-            i["pojcet"]=self.Mongodb["poject"].find_one({"uuid":coures["uuid"]})["titile"]
+            i["pojcet"]=self.Mongodb["poject"].find_one({"uuid":i["uuid"]})["titile"]
             data_list.append(i)
         data={"code":0,"data":data_list,"count":coures.count()}
         self.write(json.dumps(data))
