@@ -1,5 +1,7 @@
 from handel import Userhanderl,Poject,TpuserHandeler,orderHanderl,Blacklist,tpuserscvHandelr,autohanderl,rootHandel
-path=[("/user",Userhanderl.Userhanderl),
+path=[
+    ("/",Userhanderl.Userhanderl),
+     ("/user",Userhanderl.Userhanderl),
       ("/poject",Poject.Poject),
       ("/Tpuser",TpuserHandeler.Tpuuser),
       ("/order",orderHanderl.Ordel),
