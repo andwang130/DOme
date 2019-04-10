@@ -44,8 +44,8 @@ class indexHanderl(Basehanderl.Basehandelr):
                 data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
-                data["aptimestart"] = time.strftime(time.strptime(coures["tiemstatr"],'%Y-%m-%d %H:%M'),'%Y-%m-%d')
-                data["aptimeend"] = time.strftime(time.strptime(coures["timeend"],'%Y-%m-%d %H:%M'),'%Y-%m-%d')
+                data["aptimestart"] = time.strftime('%Y-%m-%d',time.strptime(coures["tiemstatr"],'%Y-%m-%d %H:%M'))
+                data["aptimeend"] = time.strftime('%Y-%m-%d',time.strptime(coures["timeend"],'%Y-%m-%d %H:%M'))
 
                 data["notice"] = coures["titile"]
                 votenum=0
