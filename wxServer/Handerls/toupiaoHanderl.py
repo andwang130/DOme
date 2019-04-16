@@ -146,6 +146,7 @@ class toupiaoinfoHanderl(Basehanderl.Basehandelr):
             data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimestart"] = coures["tiemstatr"]
             data["aptimeend"] = coures["timeend"]
+            data["titile"] = coures["titile"]
             data["name"] = usercoures["name"]
             data["index"] = usercoures["index"]
             data["uuid"]=usercoures["uuid"]
