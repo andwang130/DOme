@@ -15,7 +15,7 @@ class Basehandelr(RequestHandler):
         self.Mongodb = MongoClient()["Toup"]
 
     def auto(self):
-        values = chindwww + self.request.uri
+        values = www + self.request.uri
         link = urllib.quote(values)
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
