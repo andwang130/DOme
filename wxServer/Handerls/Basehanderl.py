@@ -3,7 +3,7 @@ from tornado.web import RequestHandler
 from pymongo import MongoClient
 import tornado
 import urllib
-from Handerls.pojcetm  import wxcongif,www
+from Handerls.pojcetm  import wxcongif,www,chindwww
 import pojcetm
 import json
 import time
@@ -15,7 +15,7 @@ class Basehandelr(RequestHandler):
         self.Mongodb = MongoClient()["Toup"]
 
     def auto(self):
-        values = www + self.request.uri
+        values = chindwww + self.request.uri
         link = urllib.quote(values)
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
