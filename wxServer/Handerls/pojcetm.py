@@ -92,7 +92,7 @@ wxcongif={
 TempCode=2
 play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
 www="http://www.nkwwcj.com"
-
+chindwww="http://wsfwfsw.nkwwcj.com"
 conf_redis={
     'host':'127.0.0.1',
     'port':6379

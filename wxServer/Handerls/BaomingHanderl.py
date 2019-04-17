@@ -49,7 +49,7 @@ class baoming(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.www + "/wx/Baoming?uuid="+uuid_
+            shares["url"] = pojcetm.chindwww + "/wx/Baoming?uuid="+uuid_
 
             aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
             if pojcetm.TempCode==1:
