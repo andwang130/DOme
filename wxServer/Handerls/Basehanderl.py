@@ -20,6 +20,7 @@ class Basehandelr(RequestHandler):
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
             wxcongif["appId"], link)
+        print(url)
         self.redirect(url,permanent=True)
     def get_frist(self,uuid_):
         if uuid_:
