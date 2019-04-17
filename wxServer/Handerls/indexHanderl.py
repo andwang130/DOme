@@ -10,6 +10,8 @@ import json
 class indexHanderl(Basehanderl.Basehandelr):
     @tornado.gen.coroutine
     def get(self):
+        subdomain = self.request.host.split(".")[0]
+        print(subdomain)
         self.db_linck()
         uuid_=self.get_argument("uuid",None)
         code = self.get_argument("code",None)
