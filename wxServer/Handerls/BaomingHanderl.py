@@ -51,7 +51,7 @@ class baoming(Basehanderl.Basehandelr):
             shares["sharedesc"] = coures["sharedesc"]
             shares["url"] = pojcetm.chindwww + "/wx/Baoming?uuid="+uuid_
 
-            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            aseedata = pojcetm.get_wxcongif(pojcetm.chindwww + self.request.uri)
             if pojcetm.TempCode==1:
                 self.render("Baoming.html", data=data, aseedata=aseedata, share=shares)
             elif pojcetm.TempCode==2:

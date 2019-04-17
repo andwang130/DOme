@@ -76,7 +76,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
             shares["url"] = pojcetm.chindwww + "/wx/toupiao?uuid={}&userid={}".format(uuid_,userid)
-            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            aseedata = pojcetm.get_wxcongif(pojcetm.chindwww + self.request.uri)
             if pojcetm.TempCode == 1:
                 self.render("toupiao.html", data=data, share=shares, aseedata=aseedata)
             elif pojcetm.TempCode==2:

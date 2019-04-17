@@ -78,7 +78,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             shares["sharedesc"] = coures["sharedesc"]
             shares["url"] = pojcetm.chindwww +"/wx/paly?uuid={}&userid={}".format(uuid_,userid)
 
-            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            aseedata = pojcetm.get_wxcongif(pojcetm.chindwww + self.request.uri)
             if pojcetm.TempCode == 1:
                 self.render("paly.html", data=data, share=shares, aseedata=aseedata)
             elif pojcetm.TempCode==2:
