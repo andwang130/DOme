@@ -63,9 +63,9 @@ class indexHanderl(Basehanderl.Basehandelr):
                 shares["sharetitle"] = coures["sharetitle"]
                 shares["shareimgV"] = coures["shareimgV"]
                 shares["sharedesc"] = coures["sharedesc"]
-                shares["url"] = pojcetm.www + "/wx/wxindex?uuid="+uuid_
+                shares["url"] = pojcetm.chindwww + "/wx/wxindex?uuid="+uuid_
                 print(shares)
-                aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+                aseedata = pojcetm.get_wxcongif(pojcetm.chindwww + self.request.uri)
                 if pojcetm.TempCode==1:
                     self.render("index.html", data=data, aseedata=aseedata, share=shares)
                 elif pojcetm.TempCode==2:
