@@ -18,4 +18,4 @@ CACHE_EXPIRES_SECONDS=3600              #缓存的过期时间
 
 PAGE_NUM=20
 logg_file=os.path.join(os.path.dirname(__file__),'logs.log')
-log_level = "debug"
+log_level = "error"
