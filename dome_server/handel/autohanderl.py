@@ -88,7 +88,7 @@ class clickhanderl(Basehandelr):
                 reset["code"]=-1
                 reset["data"]="不存在该活动"
                 return self.write(json.dumps(reset))
-            data = {"uuid": uuid, "start": start, "end": end, "status": status,"times":times}
+            data = {"uuid": uuid_, "start": start, "end": end, "status": status,"times":times}
             self.Mongodb["autoClick"].update_one({"autoid":autoid,"Adminid":self.get_secure_cookie("token")},{"$set":data})
             self.write(json.dumps({"code": 0}))
     def delete(self):
@@ -232,7 +232,7 @@ class TPhanderl(Basehandelr):
                     self.write(json.dumps(reset))
                 useridlist.append(i["userid"])
                 new_tpusrs.append(i)
-            print(new_tpusrs)
+
             data={"autoid":str(uuid.uuid1()).replace("-",""),"Adminid":self.get_secure_cookie("token"),"times":times,"status":status,
                   "sort":sort,"tpusers":new_tpusrs,"createdate":time.time(),"uuid":uuid_}
             self.Mongodb["autoTP"].update_one({"autoid": autoid,"Adminid":self.get_secure_cookie("token")},{"$set":data})
