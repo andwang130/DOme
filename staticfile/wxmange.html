@@ -51,7 +51,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
             <ul class="list-group panel">
                 <li class="list-group-item"><a href="/Rootindex.html"><i class="glyphicon glyphicon-home"></i>账号管理 </a></li>
-                <li class="list-group-item"><a href="forms.html"><i class="glyphicon glyphicon-list-alt"></i>微信接口</a></li>
+                <li class="list-group-item"><a href="/wxmange.html"><i class="glyphicon glyphicon-list-alt"></i>微信接口</a></li>
 
               </ul>
           </div>
@@ -63,32 +63,47 @@
                 <div class="panel-body">
                     <div class="content-row">
                         <div class="row">
+        <form novalidate="" role="form" class="form-horizontal">
 
+                            <div class="form-group">
+                              <label class="col-md-2 control-label">公众号(appid)</label>
+                              <div class="col-md-10">
+                                <input type="text" required="" placeholder="Title" id="title" class="form-control" name="title">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-md-2 control-label">公众号(secret)</label>
+                              <div class="col-md-10">
+                                <input type="text" required="" placeholder="Subject" id="subject" class="form-control" name="title">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-md-2 control-label" for="description">支付接口(Key)</label>
+                              <div class="col-md-10">
+                                <textarea required="" class="form-control" placeholder="Description" rows="10" cols="30" id="description" name="description"></textarea>
+                              </div>
+                            </div>
+               <div class="form-group">
+                              <label class="col-md-2 control-label">支付接口(域名)(格式：http://xxx.xxx.xxx)</label>
+                              <div class="col-md-10">
+                                <input type="text" required="" placeholder="Subject" id="subject" class="form-control" name="title">
+                              </div>
+                            </div>
+               <div class="form-group">
+                              <label class="col-md-2 control-label">公众号(域名)(格式：http://xxx.xxx.xxx)</label>
+                              <div class="col-md-10">
+                                <input type="text" required="" placeholder="Subject" id="subject" class="form-control" name="title">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-md-offset-2 col-md-10">
+                                <button class="btn btn-info" type="submit">Submit</button>
+                              </div>
+                            </div>
+                      </form>
                         </div>
 
-                        <div class="row">
-                            <table class="table table-hover">
-                                <thead>
-                                <th>账号</th>
-                                <th>密码</th>
-                                <th>金额</th>
-                                <th>是否通过</th>
-                                <th>添加时间</th>
-                                <th>操作</th>
-                                </thead>
-                                <tbody id="body">
 
-
-
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="page">
-                            <ul class="pagination" id="page_active">
-
-                            </ul>
-                        </div>
                     </div>
 
                 </div><!-- panel body -->
