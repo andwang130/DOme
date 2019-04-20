@@ -31,7 +31,7 @@ class auto_click():
         Velist=self.Verification(datalist)
         for i in Velist:
             adddata=({"uuid": i["uuid"]},{"$inc":{"volume":random.randint(i["start"],i["end"])}})
-            print(adddata)
+
             addlist.append(adddata)
         self.add_click(addlist)
         for i in Velist:
@@ -99,9 +99,13 @@ class auto_tp:
     def update_times(self,datalist):
         for i in datalist:
             self.Mongodb["tpUser"].update_one(i)
+    def update_poject(self,pojectdata):
+        for i in pojectdata:
+            self.Mongodb["poject"].update_one(i)
     def run(self):
         addlist = []
         updatelist = []
+        pojectdata=[]
         datalist = self.get_dbData()
         Velist = self.Verification(datalist)
         for i in Velist:
@@ -129,8 +133,11 @@ class auto_tp:
                 num=random.randint(user["start"],user["end"])+newvotenum
                 newdata=({"uuid":i["uuid"],"userid":user["userid"]},{"$inc":{"votenum":num}})
                 votenum=uservotenum+num
+                sum+=num
                 addlist.append(newdata)
                 updatelist .append(({"_id": i["_id"]}, {"$set": {"createdate": time.time()}}))
+            pojectdata.append(({"uuid":i["uuid"]},{"$inc":{"votenum":sum}}))
+        self.update_poject(pojectdata)
         self.add_tp(addlist)
         self.update_times(updatelist)
 if __name__ == '__main__':
