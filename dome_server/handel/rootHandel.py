@@ -12,7 +12,7 @@ class Roothanderl(Basehandelr.Basehandelr):
     def post(self):
         action=self.get_argument("action")
         if action!="login" and self.get_secure_cookie("rootck")!="mfsuxcaswesdgaswesfawes":
-            return
+            return   self.write(json.dumps({"code": -1, "data": "未登陆"}))
         self.db_linck()
         if action=="delete":
             self.delete()
