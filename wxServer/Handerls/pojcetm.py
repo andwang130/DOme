@@ -84,26 +84,26 @@ Tpuser_temptle={
 
 
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start","type","Adminid"]
-wxcongif={
-    "appId":"wx4f94937ea0e54f9b",
-    "secret":"53cb46ab06dcd02546890969fb695b35"
+#wxcongif={
+ #   "appId":"wx4f94937ea0e54f9b",
+  #  "secret":"53cb46ab06dcd02546890969fb695b35"
 
-}
+#}
 TempCode=2
-play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
-www="http://www.nkwwcj.com"
-chindwww="http://wsfwfsw.nkwwcj.com"
+#play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
+#www="http://www.nkwwcj.com"
+#chindwww="http://wsfwfsw.nkwwcj.com"
 conf_redis={
     'host':'127.0.0.1',
     'port':6379
 }
-def get_ticket():
+def get_ticket(appId,secret):
     mredis = redis.StrictRedis(**conf_redis)
     ticket=mredis.get("ticket")
     if not ticket:
         access_token=mredis.get("access_token")
         if not access_token:
-            url="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}".format(wxcongif["appId"],wxcongif["secret"])
+            url="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}".format(appId,secret)
             req=requests.get(url).json()
             access_token=req["access_token"].decode("utf-8")
             mredis = redis.StrictRedis(**conf_redis)
@@ -122,9 +122,9 @@ def get_signature(data):
     singstr=singstr.rstrip("&")
     newsingstr=hashlib.sha1(singstr.encode("utf-8")).hexdigest()
     return newsingstr
-def get_wxcongif(url):
+def get_wxcongif(url,config):
     data={}
-    data["jsapi_ticket"]=get_ticket()
+    data["jsapi_ticket"]=get_ticket(config.get("appid",""),config.get("secret",""))
     data["timestamp"]=str(int(time.time()))
     data["noncestr"]="".join(random.sample(['z','y','x','w','v','u','t','s','r','q','p','o'
                                                ,'n','m','l','k','j','i','h','g','f','e','d','c','b','a'], 12))
@@ -134,11 +134,11 @@ def get_wxcongif(url):
     #     get_ticket()
     signa=get_signature(data)
     data["signature"]=signa
-    data["appId"] = wxcongif["appId"]
+    data["appId"] = config.get("appid","")
     return  data
 
 
-def get_sign(data):
+def get_sign(data,play_Key):
     sort_dict = sorted(data.items(), key=lambda x: x[0], reverse=False)
     singstr = ""
     for i in sort_dict:

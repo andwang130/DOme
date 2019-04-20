@@ -76,9 +76,9 @@ class palyHanderl(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.chindwww +"/wx/paly?uuid={}&userid={}".format(uuid_,userid)
+            shares["url"] = self.chindwww + "/wx/Baoming?uuid=" + uuid_
 
-            aseedata = pojcetm.get_wxcongif(pojcetm.chindwww + self.request.uri)
+            aseedata = pojcetm.get_wxcongif(self.chindwww + self.request.uri, self.wxconfig)
             if pojcetm.TempCode == 1:
                 self.render("paly.html", data=data, share=shares, aseedata=aseedata)
             elif pojcetm.TempCode==2:
@@ -137,14 +137,14 @@ class palyHanderl(Basehanderl.Basehandelr):
                   "nonceStr":''.join(random.sample(string.ascii_letters + string.digits, 16))
                 }
 
-            data["paySign"] = pojcetm.get_sign(data)
+            data["paySign"] = pojcetm.get_sign(data,self.wxconfig.get("play_key",""))
             self.write(json.dumps({"data":data,"error":200}))
         else:
             pass
 
     @tornado.gen.coroutine
     def get_playapImch(sele,out_trade_no,price, ip, openid,orderid):
-        callbackurl = pojcetm.www + "/wx/playcallbackurl"
+        callbackurl = sele.wxconfig.get("www","")+ "/wx/playcallbackurl"
         data = {
             "appid": pojcetm.wxcongif["appId"],
             "mch_id": "1530541951",

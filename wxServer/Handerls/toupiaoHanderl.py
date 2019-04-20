@@ -155,8 +155,9 @@ class toupiaoinfoHanderl(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = pojcetm.www + "/wx/toupiao?uuid={}&userid={}".format(data["uuid"], userid)
-            aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+            shares["url"] = self.chindwww + "/wx/Baoming?uuid=" + uuid_
+
+            aseedata = pojcetm.get_wxcongif(self.chindwww + self.request.uri, self.wxconfig)
             if openid:
                 if not self.Verification(openid, self.request.headers.get("X-Real-IP")):
                     self.render("404.html")
