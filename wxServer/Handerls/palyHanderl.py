@@ -76,9 +76,9 @@ class palyHanderl(Basehanderl.Basehandelr):
             shares["sharetitle"] = coures["sharetitle"]
             shares["shareimgV"] = coures["shareimgV"]
             shares["sharedesc"] = coures["sharedesc"]
-            shares["url"] = self.chindwww + "/wx/Baoming?uuid=" + uuid_
+            shares["url"] = self.wxconfig.get("chindwww","")+"/wx/paly?uuid={}&userid={}".format(uuid_,userid)
 
-            aseedata = pojcetm.get_wxcongif(self.chindwww + self.request.uri, self.wxconfig)
+            aseedata = pojcetm.get_wxcongif(self.wxconfig.get("chindwww","") + self.request.uri,self.wxconfig)
             if pojcetm.TempCode == 1:
                 self.render("paly.html", data=data, share=shares, aseedata=aseedata)
             elif pojcetm.TempCode==2:
@@ -160,7 +160,7 @@ class palyHanderl(Basehanderl.Basehandelr):
             "time_start":time.strftime("%Y%m%d%H%M%S",time.localtime(time.time())),
             # "time_expire":time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()+300)),
         }
-        data["sign"] = pojcetm.get_sign(data)
+        data["sign"] = pojcetm.get_sign(data,sele.wxconfig.get("play_key",""))
         elem = pojcetm.dict_to_xml("xml", data)
 
         mxl_str = tostring(elem, encoding="utf-8")

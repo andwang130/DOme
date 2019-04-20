@@ -3,7 +3,6 @@ from tornado.web import RequestHandler
 from pymongo import MongoClient
 import tornado
 import urllib
-from Handerls.pojcetm  import wxcongif,www,chindwww
 import pojcetm
 import json
 import time
@@ -19,11 +18,11 @@ class Basehandelr(RequestHandler):
         self.Mongodb = MongoClient()["Toup"]
 
     def auto(self):
-        values = chindwww + self.request.uri
+        values = self.wxconfig("chindwww","") + self.request.uri
         link = urllib.quote(values)
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
-            wxcongif["appId"], link)
+            self.wxconfig("appid",""), link)
         self.redirect(url,permanent=True)
     def get_frist(self,uuid_):
         if uuid_:
@@ -53,7 +52,7 @@ class Basehandelr(RequestHandler):
     @tornado.gen.coroutine
     def get_openid(self,code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
-            pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
+            self.wxconfig("appid", ""), self.wxconfig("secret",""), code)
         http_client = tornado.httpclient.AsyncHTTPClient()
         req = yield http_client.fetch(url)
         rq_json = json.loads(req.body)
@@ -62,7 +61,7 @@ class Basehandelr(RequestHandler):
 
     def get_openid1(self, code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
-            pojcetm.wxcongif["appId"], pojcetm.wxcongif["secret"], code)
+            self.wxconfig("appid", ""), self.wxconfig("secret", ""), code)
         rq_json=requests.get(url).json()
         openid = rq_json["openid"]
         return openid

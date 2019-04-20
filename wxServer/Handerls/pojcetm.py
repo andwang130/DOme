@@ -84,15 +84,15 @@ Tpuser_temptle={
 
 
 order=["orderid","userid","openid","headimg","operate","uuid","username","money","liwu","num","votenum","times","ip","start","type","Adminid"]
-wxcongif={
-   "appId":"wx4f94937ea0e54f9b",
-   "secret":"53cb46ab06dcd02546890969fb695b35"
+#wxcongif={
+ #   "appId":"wx4f94937ea0e54f9b",
+  #  "secret":"53cb46ab06dcd02546890969fb695b35"
 
-}
+#}
 TempCode=2
-play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
-www="http://www.nkwwcj.com"
-chindwww="http://wsfwfsw.nkwwcj.com"
+#play_Key="6FqfwYfox3erYqZnuKFoETsU3UZHWWWF"
+#www="http://www.nkwwcj.com"
+#chindwww="http://wsfwfsw.nkwwcj.com"
 conf_redis={
     'host':'127.0.0.1',
     'port':6379
