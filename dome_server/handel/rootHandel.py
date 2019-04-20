@@ -5,6 +5,7 @@ import time
 import uuid
 from dbTempet import pojcetm
 from Basehandelr import verification
+import settings
 import redis
 class Roothanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
@@ -80,7 +81,8 @@ class Roothanderl(Basehandelr.Basehandelr):
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
     def setconfig(self):
-        mredis = redis.StrictRedis(**pojcetm.conf_redis)
+
+        mredis = redis.StrictRedis(**settings.conf_redis)
         appid=self.get_argument("appid")
         secret = self.get_argument("secret")
         play_key =self.get_argument("play_key")
