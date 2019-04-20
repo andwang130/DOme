@@ -18,11 +18,11 @@ class Basehandelr(RequestHandler):
         self.Mongodb = MongoClient()["Toup"]
 
     def auto(self):
-        values = self.wxconfig("chindwww","") + self.request.uri
+        values = self.wxconfig.get("chindwww","") + self.request.uri
         link = urllib.quote(values)
         # link = urljoin(data.scheme + "://" + data.netloc, data.path)
         url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={}&redirect_uri={}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect".format(
-            self.wxconfig("appid",""), link)
+            self.wxconfig.get("appid",""), link)
         self.redirect(url,permanent=True)
     def get_frist(self,uuid_):
         if uuid_:
@@ -52,7 +52,7 @@ class Basehandelr(RequestHandler):
     @tornado.gen.coroutine
     def get_openid(self,code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
-            self.wxconfig("appid", ""), self.wxconfig("secret",""), code)
+            self.wxconfig.get("appid", ""), self.wxconfig.get("secret",""), code)
         http_client = tornado.httpclient.AsyncHTTPClient()
         req = yield http_client.fetch(url)
         rq_json = json.loads(req.body)
@@ -61,7 +61,7 @@ class Basehandelr(RequestHandler):
 
     def get_openid1(self, code):
         url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid={}&secret={}&code={}&grant_type=authorization_code'.format(
-            self.wxconfig("appid", ""), self.wxconfig("secret", ""), code)
+            self.wxconfig.get("appid", ""), self.wxconfig.get("secret", ""), code)
         rq_json=requests.get(url).json()
         openid = rq_json["openid"]
         return openid
