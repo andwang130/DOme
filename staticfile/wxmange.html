@@ -142,8 +142,7 @@ function send_config() {
       var www= $("#www").val()
        var chindwww= $("#chindwww").val()
 
-    var data={"appid":appid,"secret":secret,"play_key":play_key,"www":www,"chindwww":chindwww,
-       "action":"setconfig" }
+    var data={"appid":appid,"secret":secret,"play_key":play_key,"www":www,"chindwww":chindwww,"action":"setconfig" }
         $.ajax({
         url: '/root',
         type: 'POST',
