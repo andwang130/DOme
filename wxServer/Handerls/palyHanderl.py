@@ -146,7 +146,7 @@ class palyHanderl(Basehanderl.Basehandelr):
     def get_playapImch(sele,out_trade_no,price, ip, openid,orderid):
         callbackurl = sele.wxconfig.get("www","")+ "/wx/playcallbackurl"
         data = {
-            "appid": sele.wxconfig("appid",""),
+            "appid": sele.wxconfig.get("appid",""),
             "mch_id": "1530541951",
             "device_info": "WEB",
             "nonce_str": ''.join(random.sample(string.ascii_letters + string.digits, 16)),
