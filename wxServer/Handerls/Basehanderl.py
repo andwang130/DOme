@@ -8,9 +8,17 @@ import pojcetm
 import json
 import time
 import requests
+import redis
 class Basehandelr(RequestHandler):
     def set_default_headers(self):  # 设置headers
-        pass
+        mredis = redis.StrictRedis(**pojcetm.conf_redis)
+        wxconfig = mredis.get({"name":"wxconfig"})
+        self.www=wxcongif.get("www")
+        self.chindwww=wxcongif.get("chindwww")
+        self.appId=wxcongif.get("appId")
+        self.secret=wxcongif.get("secret")
+        self.play_key=wxcongif.get("play_Key")
+
     def db_linck(self):
         self.Mongodb = MongoClient()["Toup"]
 

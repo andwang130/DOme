@@ -68,31 +68,31 @@
                             <div class="form-group">
                               <label class="col-md-2 control-label">公众号(appid)</label>
                               <div class="col-md-10">
-                                <input type="text" required="" placeholder="Title" id="appid" class="form-control" name="title">
+                                <input type="text" required="" placeholder="" id="appid" class="form-control" name="title">
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="col-md-2 control-label">公众号(secret)</label>
                               <div class="col-md-10">
-                                <input type="text" required="" placeholder="Subject" id="secret" class="form-control" name="title">
+                                <input type="text" required="" placeholder="" id="secret" class="form-control" name="title">
                               </div>
                             </div>
                             <div class="form-group">
                               <label class="col-md-2 control-label" for="description">支付接口(Key)</label>
                               <div class="col-md-10">
-                        <input type="text" required="" placeholder="Subject" id="play_key" class="form-control" name="title">
+                        <input type="text" required="" placeholder="" id="play_key" class="form-control" name="title">
                               </div>
                             </div>
                <div class="form-group">
                               <label class="col-md-2 control-label">支付接口(域名)(格式：http://xxx.xxx.xxx)</label>
                               <div class="col-md-10">
-                                <input type="text" required="" placeholder="Subject" id="www" class="form-control" name="title">
+                                <input type="text" required="" placeholder="" id="www" class="form-control" name="title">
                               </div>
                             </div>
                <div class="form-group">
                               <label class="col-md-2 control-label">公众号(域名)(格式：http://xxx.xxx.xxx)</label>
                               <div class="col-md-10">
-                                <input type="text" required="" placeholder="Subject" id="chindwww" class="form-control" name="title">
+                                <input type="text" required="" placeholder="" id="chindwww" class="form-control" name="title">
                               </div>
                             </div>
                             <div class="form-group">
@@ -113,133 +113,60 @@
 </div>
 <script type="text/javascript">
 
-    var now_page=1;
-    $(document).ready(function () {
-        getUser(now_page)
 
-    })
 
-    function getUser(page) {
-    now_page=page;
-    data = {"page":page,"action":"getlist"}
+    function getconfig() {
+
+    data = {"action":"getconfig"}
     $.ajax({
         url: '/root',
         type: 'POST',
         data: data,
         success: function (arg) {
             arg = JSON.parse(arg);
-            data=arg["data"];
+            var data=arg["data"];
             if (arg["code"] == "0") {
                 body_init(data);
-                page_math(arg["count"])
+
             }
         }
     })
-    }
-
-function body_init(data) {
-
-html=""
-    for(var i=0;i<data.length;i++)
-    {
-        html+="  <tr>\n" +
-            "                                        <td>"+data[i]["usname"]+"</td>\n" +
-            "                                        <td> "+data[i]["pswd"]+"</td>\n" +
-            "                                        <td>"+data[i]["money"]+"</td>\n" +
-            "                                        <td>"+data[i]["Adminid"]+"</td>\n" +
-            "                                        <td>"+getLocalTime(data[i]["createdate"])+"</td>\n" +
-            "                                        <td></td>\n"+
-        "                                        <td>\n"+
-        "                                            <a href=\"javascript:void(0);\"  onclick=empty(\""+data[i]["uuid"]+"\") ><i class=\"glyphicon glyphicon-pencil\">清空</i></a>\n"+
-        "                                            <a href=\"javascript:void(0);\"   onclick=adopt(\""+data[i]["uuid"]+"\") ><i class=\"glyphicon glyphicon-pencil\">通过</i></a>\n"+
-        "                                            <br>\n"+
-        "                                            <a href=\"javascript:void(0);\"  onclick=Mdelete(\""+data[i]["uuid"]+"\")><i class=\"glyphicon glyphicon-remove\">删除</i></a>\n"+
-        "                                            <br>\n"+
-        "                                        </td>\n"+
-        "                                    </tr>"
-    }
-    $("#body").html(html)
-
 }
-function page_math(count) {
-   var page_end=Math.ceil(count/25);
+function send_config() {
+        var appid=$("#appid").val()
+        var secret=$("#secret").val()
+        var play_key=$("#play_key").val()
+      var www= $("#www").val()
+       var chindwww= $("#chindwww").val()
 
-   var THML="";
-   var page_html="<li><a href='javacript:get_list({PAGE})'>{PAGE}</a></li>";
-
-   if(page_end>10)
-   {
-       var new_page_end=page_end;
-       if(page_end-now_page>10)
-       {
-           new_page_end=now_page+10;
-       }
-
-       THML+="<li><a page_id='{pageid}' href='javascript:void(0)'>上一页</a></li>".replace(/{pageid}/,now_page-1);
-       for(var i=new_page_end-10;i<new_page_end+1;i++)
-       {
-           if(i==now_page) {
-               THML +="<li class='active'><a href='#'>{PAGE}</a></li>".replace(/{PAGE}/,i);
-           }
-           else
-           {
-               THML += "<li><a page_id='{pageid}' href='#'>{PAGE}</a></li>".replace(/{PAGE}/, i).replace(/{pageid}/, i);
-           }
-       }
-   }
-   else
-   {
-        for(var i=1;i<page_end+1;i++)
-       {
-
-           if(i==now_page) {
-               THML +="<li class='active'><a href='#' >{PAGE}</a></li>".replace(/{PAGE}/,i)
-           }
-           else
-           {
-               THML +="<li><a page_id='{pageid}' href='#' >{PAGE}</a></li>".replace(/{PAGE}/,i).replace(/{pageid}/,i);
-           }
-       }
-   }
-    THML+="<li><a page_id='{pageid}' href='#'>下一页</a></li>".replace(/{pageid}/,now_page+1);
-
-    $("#page_active").html(THML);
-    $("#page_active li a").click(on_a_cliek)
-}
-function  on_a_cliek()
-{
-
-    var page_id=$(this).attr("page_id");
-    now_page=Number(page_id);
-    getUser(Number(page_id));
-}
-function empty(uuid) {
-       sento(uuid,"empty")
-}
-function Mdelete(uuid) {
-     sento(uuid,"delete")
-}
-function adopt(uuid) {
-
-        sento(uuid,"adopt")
-}
-function sento(uuid,action) {
-
-         data = {"uuid":uuid,"action":action}
-    $.ajax({
+    var data={"appid":appid,"secret":secret,"play_key":play_key,"www":www,"chindwww":chindwww
+       "action":"setconfig" }
+        $.ajax({
         url: '/root',
         type: 'POST',
         data: data,
         success: function (arg) {
             arg = JSON.parse(arg);
-            data=arg["data"];
+            var data=arg["data"];
             if (arg["code"] == "0") {
-               getUser(now_page)
+                alert("更新成功")
+
+            }
+            else{
+                alert("不可为空")
             }
         }
     })
 }
+function body_init(data) {
 
+        $("#appid").val(data["appid"])
+        $("#secret").val(data["secret"])
+        $("#play_key").val(data["play_key"])
+        $("#www").val(data["www"])
+        $("#chindwww").val(data["chindwww"])
+
+}
 </script>
 <!--footer-->
 

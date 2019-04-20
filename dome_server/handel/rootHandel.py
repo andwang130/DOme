@@ -5,7 +5,7 @@ import time
 import uuid
 from dbTempet import pojcetm
 from Basehandelr import verification
-
+import redis
 class Roothanderl(Basehandelr.Basehandelr):
     def __init__(self,*args,**kwargs):
         super(Roothanderl,self).__init__(*args,**kwargs)
@@ -24,6 +24,10 @@ class Roothanderl(Basehandelr.Basehandelr):
             self.login()
         elif action=="getlist":
             self.getlist()
+        elif action=="setconfig":
+            self.setconfig()
+        elif action=="getconfig":
+            self.getconfig()
     def login(self):
         usname = self.get_argument("usname")
         pswd = self.get_argument("pswd")
@@ -75,3 +79,27 @@ class Roothanderl(Basehandelr.Basehandelr):
             return self.write(json.dumps({"code": 0, "data": "通过"}))
         else:
             return self.write(json.dumps({"code": -1, "data": "缺少uuid"}))
+    def setconfig(self):
+        mredis = redis.StrictRedis(**pojcetm.conf_redis)
+        appid=self.get_argument("appid")
+        secret = self.get_argument("secret")
+        play_key =self.get_argument("play_key")
+        www =self.get_argument("www")
+        chindwww = self.get_argument("chindwww")
+        data={"appid":appid,"www":www,"secret":secret,"play_key":play_key,"chindwww":chindwww}
+        if appid and secret and play_key and www and chindwww:
+            if self.Mongodb["config"].find({"name":"config"}):
+                self.Mongodb["config"].update_one({"name":"config"},{"$set":data})
+            else:
+                self.Mongodb["config"].insert_one(data)
+            mredis.hmset("config", data)
+        else:
+            pass
+
+
+    def getconfig(self):
+        mredis = redis.StrictRedis(**pojcetm.conf_redis)
+        data=mredis.hgetall("config")
+        return self.write(json.dumps({"code": 0, "data": data})
+
+
