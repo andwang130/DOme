@@ -12,7 +12,7 @@ import redis
 class Basehandelr(RequestHandler):
     def set_default_headers(self):  # 设置headers
         mredis = redis.StrictRedis(**pojcetm.conf_redis)
-        wxconfig = mredis.get({"name":"wxconfig"})
+        wxconfig = mredis.hgetall("config")
         self.www=wxcongif.get("www")
         self.chindwww=wxcongif.get("chindwww")
         self.appId=wxcongif.get("appId")

@@ -4,6 +4,7 @@ from dbTempet import pojcetm
 import uuid
 import time
 import settings
+import redis
 from Basehandelr import verification
 import cv2
 class Poject(Basehandelr):
@@ -141,7 +142,9 @@ class Poject(Basehandelr):
                 for x in pojcetm.get_listTeptle:
                     data[x]=i.get(x,"")
                 data_list.append(data)
-            self.write(json.dumps({"code":0,"data":data_list,"count":count}))
+            mredis = redis.StrictRedis(**settings.conf_redis)
+            data = mredis.hgetall("config")
+            self.write(json.dumps({"code":0,"data":data_list,"count":count,"url":data.get("www")}))
         except Exception as e:
             print(e)
             self.write(json.dumps({"code": -1, "eeor": "db"}))
