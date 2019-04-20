@@ -14,7 +14,7 @@ def set_config():
         'host': '127.0.0.1',
         'port': 6379
     }
-    Mongodb = MongoClient()
+    Mongodb = MongoClient()["Toup"]
     data=Mongodb["config"].find_one({"name": "config"})
     if data:
         del data["_id"]
