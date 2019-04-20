@@ -15,7 +15,7 @@ def set_config():
         'port': 6379
     }
     Mongodb = MongoClient()
-    data=Mongodb["config"].find({"name": "config"})
+    data=Mongodb["config"].find_one({"name": "config"})
     if data:
         del data["_id"]
         mredis = redis.StrictRedis(**conf_redis)
