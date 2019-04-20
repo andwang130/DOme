@@ -6,7 +6,7 @@ from settings import settings,conf_redis,logg_file,log_level
 import redis
 from urls import path
 from tornado.options import options,define
-import MongoClient
+from pymongo import MongoClient
 import redis
 define("port", default=8088, type=int, help="run server on the given port")
 def set_config():
