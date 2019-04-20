@@ -95,8 +95,9 @@ class Roothanderl(Basehandelr.Basehandelr):
             else:
                 self.Mongodb["config"].insert_one(data)
             mredis.hmset("config", data)
+            return self.write(json.dumps({"code": 0, "data": "更新成功"}))
         else:
-            pass
+            return self.write(json.dumps({"code": 0, "data": "不可为空"}))
 
 
     def getconfig(self):
