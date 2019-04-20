@@ -18,7 +18,7 @@ class Basehandelr(RequestHandler):
         self.appId=wxcongif.get("appId")
         self.secret=wxcongif.get("secret")
         self.play_key=wxcongif.get("play_Key")
-
+        print(wxconfig)
     def db_linck(self):
         self.Mongodb = MongoClient()["Toup"]
 
