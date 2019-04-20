@@ -100,7 +100,7 @@ class Roothanderl(Basehandelr.Basehandelr):
 
 
     def getconfig(self):
-        mredis = redis.StrictRedis(**pojcetm.conf_redis)
+        mredis = redis.StrictRedis(**settings.conf_redis)
         data=mredis.hgetall("config")
         return self.write(json.dumps({"code": 0, "data": data}))
 
