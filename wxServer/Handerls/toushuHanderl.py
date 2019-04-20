@@ -4,7 +4,7 @@ import uuid
 import pojcetm
 class toushuHanderl(Basehanderl.Basehandelr):
     def get(self):
-        aseedata = pojcetm.get_wxcongif(pojcetm.www + self.request.uri)
+        aseedata = pojcetm.get_wxcongif(self.wxconfig.get("chindwww", "") + self.request.uri, self.wxconfig)
         self.render('toushu.html',aseedata=aseedata)
     def post(self):
         openid = self.get_secure_cookie("openid")
