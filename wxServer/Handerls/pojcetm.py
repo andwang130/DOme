@@ -173,8 +173,8 @@ def imgae_change(data):
                 print(data)
                 pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
                 mredis = redis.StrictRedis(**conf_redis)
-                data=mredis.hgetall("config")
-                data[i]=re.sub(pattern,data.get("www"),data[i])
+                reidisdata=mredis.hgetall("config")
+                data[i]=re.sub(pattern,reidisdata.get("www"),data[i])
                 print(data[i])
             except Exception, e:
                 print(e)
