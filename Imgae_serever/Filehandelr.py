@@ -13,8 +13,8 @@ class Filehandelr(RequestHandler):
             'port': 6379
         }
         Adminid=self.get_secure_cookie("token")
+        myreids = redis.StrictRedis(**conf_redis)
         if not Adminid:
-             myreids = redis.StrictRedis(**conf_redis)
              uploanum=myreids.get(self.request.headers.get("X-Real-IP")+"upfile")
              if not uploanum:
                  myreids.set(self.request.headers.get("X-Real-IP")+"upfile",1,ex=1800)
