@@ -98,10 +98,10 @@ class auto_tp:
                 return i["votenum"]
     def update_times(self,datalist):
         for i in datalist:
-            self.Mongodb["tpUser"].update_one(i)
+            self.Mongodb["tpUser"].update_one(*i)
     def update_poject(self,pojectdata):
         for i in pojectdata:
-            self.Mongodb["poject"].update_one(i)
+            self.Mongodb["poject"].update_one(*i)
     def run(self):
         addlist = []
         updatelist = []
