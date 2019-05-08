@@ -8,6 +8,7 @@ import string
 import uuid
 from xml.etree.ElementTree import tostring
 from xml.etree.ElementTree import Element
+import re
 pojectarg = ["titile",#标题
              "himgV", #回复图片
              "description",#描述
