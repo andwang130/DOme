@@ -175,7 +175,7 @@ def imgae_change(data):
                 data=mredis.hgetall("config")
                 data[i]=re.sub(pattern,data.get("www"),data[i])
                 print(data[i])
-            except:
+            except Exception as e:
                 continue
         else:
             continue
