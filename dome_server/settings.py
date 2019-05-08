@@ -19,11 +19,13 @@ def imgae_change(data):
     list=["himgV","shareimgV","topimgV","topimgV","topimg2V","topimg2V","topimg3V","avatar","images1","images2","images3","images4","images5"]
     for i in list:
         if data.get(i,None):
-
-            pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
-            mredis = redis.StrictRedis(conf_redis)
-            data=mredis.hgetall("config")
-            data[i]=re.sub(pattern,data.get("www"),data[i])
+            try:
+                pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
+                mredis = redis.StrictRedis(conf_redis)
+                data=mredis.hgetall("config")
+                data[i]=re.sub(pattern,data.get("www"),data[i])
+            except:
+                continue
         else:
             continue
 
