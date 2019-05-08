@@ -7,6 +7,7 @@ import settings
 import redis
 from Basehandelr import verification
 import cv2
+
 class Poject(Basehandelr):
     def get(self):
         self.post()
@@ -100,6 +101,7 @@ class Poject(Basehandelr):
                 for i in pojcetm.pojectarg:
                     req_data[i]=data.get(i)
                 req_data["volume"]=data.get("volume",0)
+                settings.imgae_change(req_data)
                 self.write(json.dumps({"code":0,"data":req_data}))
             except Exception as e:
                 print(e)

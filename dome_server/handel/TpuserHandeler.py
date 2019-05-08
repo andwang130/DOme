@@ -4,6 +4,7 @@ from dbTempet import pojcetm
 import time
 import json
 import uuid
+import settings
 from Basehandelr import verification
 
 class Tpuuser(Basehandelr):
@@ -42,6 +43,7 @@ class Tpuuser(Basehandelr):
         if coures:
             data = dict(coures)
             del data["_id"]
+            settings.imgae_change(data)
             self.write(json.dumps({"code": 0, "data": data}))
     def get_list(self):
         uuid_ = self.get_argument("uuid", "")

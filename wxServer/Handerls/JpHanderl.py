@@ -51,6 +51,8 @@ class jphanderl(Basehanderl.Basehandelr):
                 shares["shareimgV"] = coures["shareimgV"]
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = self.wxconfig.get("chindwww","")+ "/wx/jp?uuid="+uuid_
+                pojcetm.imgae_change(shares)
+                pojcetm.imgae_change((data))
                 aseedata = pojcetm.get_wxcongif(self.wxconfig.get("chindwww","") + self.request.uri,self.wxconfig)
                 if pojcetm.TempCode == 1:
                     self.render("jp.html", data=data, share=shares, aseedata=aseedata)

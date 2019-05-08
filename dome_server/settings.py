@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 import os
+import re
 settings={
     # 'debug':True,
     'static_path':os.path.join(os.path.dirname(__file__),'static'),#静态文件件模板路径配置
@@ -9,6 +10,16 @@ settings={
     'login_url':'/login',  #为登陆时跳转的路由，
 
 }
+def imgae_change(data):
+    list=["himgV","shareimgV","topimgV","topimgV","topimg2V","topimg2V","topimg3V","avatar","images1","images2","images3","images4","images5"]
+    for i in list:
+        if data.get(i):
+            pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
+            mredis = redis.StrictRedis(**settings.conf_redis)
+            data=mredis.hgetall("config")
+            data[i]=re.sub(pattern,data.get("www"),data[i])
+        else:
+            continue
 conf_redis={
     'host':'127.0.0.1',
     'port':6379

@@ -12,7 +12,8 @@ conf_redis={
     'host':'127.0.0.1',
     'port':6379
 }
-url="http://www.nkwwcj.com"
+url=""
+#url="http://www.nkwwcj.com"
 path="/Imgs/"
 edpath="/editorImages/"
 editorPath="/home/DOme/staticfile/editorImages/"

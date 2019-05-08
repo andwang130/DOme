@@ -164,6 +164,16 @@ def creat_dict(root):
                 dict_init[lists[0]] = lists[1]
         dict_new[key] = dict_init
     return dict_new
+def imgae_change(data):
+    list=["himgV","shareimgV","topimgV","topimgV","topimg2V","topimg2V","topimg3V","avatar","images1","images2","images3","images4","images5"]
+    for i in list:
+        if data.get(i):
+            pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
+            mredis = redis.StrictRedis(**settings.conf_redis)
+            data=mredis.hgetall("config")
+            data[i]=re.sub(pattern,data.get("www"),data[i])
+        else:
+            continue
 if __name__ == '__main__':
     # print(get_playapImch(100,"127.0.0.1","sdadfgaweqafasfaeaea"))
     print(time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()+300)))
