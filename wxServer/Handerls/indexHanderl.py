@@ -65,7 +65,7 @@ class indexHanderl(Basehanderl.Basehandelr):
                 shares["sharedesc"] = coures["sharedesc"]
                 shares["url"] = self.wxconfig.get("chindwww","") + "/wx/wxindex?uuid="+uuid_
                 pojcetm.imgae_change(shares)
-                pojcetm.imgae_change((data))
+                pojcetm.imgae_change(data)
                 aseedata = pojcetm.get_wxcongif(self.wxconfig.get("chindwww","") + self.request.uri,self.wxconfig)
                 if pojcetm.TempCode==1:
                     self.render("index.html", data=data, aseedata=aseedata, share=shares)
@@ -99,7 +99,9 @@ class Getlist(Basehanderl.Basehandelr):
                 data["votenum"]=i["votenum"]
                 data["avatar"]=i["avatar"]
                 data["index"]=i["index"]
+                pojcetm.imgae_change(data)
                 datalist.append(data)
+
             if datalist:
                 self.write(json.dumps({"status":200,"content":datalist}))
             else:
