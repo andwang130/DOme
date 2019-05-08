@@ -23,7 +23,7 @@ class Filehandelr(RequestHandler):
                      return
                  else:
                     myreids.incr(self.request.headers.get("X-Real-IP")+"upfile")
-        reidisdata=mredis.hgetall("config")
+        reidisdata=myreids.hgetall("config")
         url=reidisdata.get("www")
         files=self.request.files
         fileurl=[]
