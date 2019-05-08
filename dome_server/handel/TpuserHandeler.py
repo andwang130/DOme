@@ -170,6 +170,7 @@ class Tpuuser(Basehandelr):
         if userid:
             data_list=[]
             usercoures=self.Mongodb["tpUser"].find_one({"userid":userid})
+            settings.imgae_change(usercoures)
             if usercoures:
                 info={"avatar":usercoures["avatar"],"votenum":usercoures["votenum"],"liwu":usercoures["liwu"],"name":usercoures["name"]}
                 wxcoures=self.Mongodb["Ordel"].find({"userid":userid,"type":"tp"}).limit(25).skip(25*(page-1)).sort([("times",-1)])

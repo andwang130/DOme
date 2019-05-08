@@ -4,6 +4,7 @@ import time
 import json
 import uuid
 import random
+import settings
 from Basehandelr import verification
 
 class Ordel(Basehandelr):
@@ -82,6 +83,7 @@ class Ordel(Basehandelr):
 
         if userid:
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
+            settings.imgae_change(usercoures)
             if not usercoures:
                 return
             info = {"avatar": usercoures["avatar"], "votenum": usercoures["votenum"], "liwu": usercoures["liwu"],
