@@ -10,6 +10,9 @@ class SortHanderl(Basehanderl.Basehandelr):
         if uuid_:
             self.db_linck()
             coures = self.Mongodb["tpUser"].find({"uuid": uuid_,"status":0}).limit(10).skip(10 * (page - 1)).sort([("votenum",-1)])
+
+            pojcetm.imgae_change(coures)
+
             datalist = []
             x=0
             for i in coures:
