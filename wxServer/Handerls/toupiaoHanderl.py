@@ -39,6 +39,8 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
             data["topimges"].append(self.get_frist(uuid_))
+            for topimag in data["topimges"]:
+                pojcetm.imgae_change(topimag)
             x = 0
             next_couresl = None
             for i in coureslist:
