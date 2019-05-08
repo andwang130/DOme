@@ -42,12 +42,11 @@ class palyHanderl(Basehanderl.Basehandelr):
     def rq(self,uuid_,userid):
         if userid and uuid_:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
+            pojcetm.imgae_change(coures)
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
             data["topimges"].append(self.get_frist(uuid_))
-            for topimag in data["topimges"]:
-                pojcetm.imgae_change(topimag)
             data["titile"] = coures["titile"]
             x = 1
             row_list = []

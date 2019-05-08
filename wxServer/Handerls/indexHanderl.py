@@ -37,14 +37,13 @@ class indexHanderl(Basehanderl.Basehandelr):
     def rq(self,uuid_):
         if uuid_:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
+            pojcetm.imgae_change(coures)
             self.Mongodb["poject"].update_one({"uuid": uuid_}, {"$inc": {"volume": 1}})
             usercoures = self.Mongodb["tpUser"].find({"uuid": uuid_})
             if coures:
                 data = {}
                 data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
                 data["topimges"].append(self.get_frist(uuid_))
-                for topimag in data["topimges"]:
-                    pojcetm.imgae_change(topimag)
                 data["count"] = usercoures.count()
                 data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
                 data["aptimes"] = time.mktime(time.strptime(coures["tiemstatr"], '%Y-%m-%d %H:%M')) - time.time()

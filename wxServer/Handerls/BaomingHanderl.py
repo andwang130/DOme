@@ -30,11 +30,11 @@ class baoming(Basehanderl.Basehandelr):
     def rq(self,uuid_):
         if uuid_:
             coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
+            pojcetm.imgae_change(coures)
             data = {}
             data["topimges"] = [coures["topimgV"], coures["topimg2V"], coures["topimg3V"]]
             data["topimges"].append(self.get_frist(uuid_))
-            for topimag in data["topimges"]:
-                pojcetm.imgae_change(topimag)
+
             data["endtimes"] = time.mktime(time.strptime(coures["timeend"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimes"] = time.mktime(time.strptime(coures["aptimestart"], '%Y-%m-%d %H:%M')) - time.time()
             data["aptimestart"] = coures["aptimestart"]
