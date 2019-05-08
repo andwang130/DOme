@@ -34,6 +34,7 @@ class toupiaoHanderl(Basehanderl.Basehandelr):
             coures = self.Mongodb["poject"].find_one({"uuid": uuid_})
             pojcetm.imgae_change(coures)
             usercoures = self.Mongodb["tpUser"].find_one({"userid": userid})
+            pojcetm.imgae_change(usercoures)
             coureslist = self.Mongodb["tpUser"].find({"uuid": uuid_}, {"userid": 1, "votenum": 1}).sort(
                 [("votenum", -1)])
             self.Mongodb["tpUser"].update_one({"userid": userid}, {"$inc": {"vheat": 1}});
