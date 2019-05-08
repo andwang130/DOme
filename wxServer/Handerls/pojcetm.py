@@ -177,7 +177,6 @@ def imgae_change(data):
                 data[i]=re.sub(pattern,reidisdata.get("www")+'/',data[i])
                 print(data[i])
             except Exception, e:
-
                 continue
         else:
             continue

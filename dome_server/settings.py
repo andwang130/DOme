@@ -16,15 +16,17 @@ conf_redis={
     'port':6379
 }
 def imgae_change(data):
-    list=["himgV","shareimgV","topimgV","topimgV","topimg2V","topimg2V","topimg3V","avatar","images1","images2","images3","images4","images5"]
-    for i in list:
+    mylist=["himgV","shareimgV","topimgV","topimg2V","topimg2V","topimg3V","avatar","images1","images2","images3","images4","images5"]
+    for i in mylist:
         if data.get(i,None):
             try:
                 pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
-                mredis = redis.StrictRedis(conf_redis)
-                data=mredis.hgetall("config")
-                data[i]=re.sub(pattern,data.get("www"),data[i])
-            except:
+                mredis = redis.StrictRedis(**conf_redis)
+                reidisdata=mredis.hgetall("config")
+                print(data[i])
+                data[i]=re.sub(pattern,reidisdata.get("www")+'/',data[i])
+                print(data[i])
+            except Exception, e:
                 continue
         else:
             continue
