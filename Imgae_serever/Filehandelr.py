@@ -1,6 +1,6 @@
 from tornado.web import RequestHandler
 import uuid
-from setting import IMAGE_PATH,url,path
+from setting import IMAGE_PATH,path
 import json
 import redis
 import time
@@ -23,6 +23,8 @@ class Filehandelr(RequestHandler):
                      return
                  else:
                     myreids.incr(self.request.headers.get("X-Real-IP")+"upfile")
+        reidisdata=mredis.hgetall("config")
+        url=reidisdata.get("www")
         files=self.request.files
         fileurl=[]
         for i in files:
