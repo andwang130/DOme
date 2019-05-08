@@ -170,6 +170,7 @@ def imgae_change(data):
     for i in mylist:
         if data.get(i,None):
             try:
+                print(data)
                 pattern = re.compile('http://[a-zA-Z0-9]+\.[a-zA-Z0-9]+\.[a-zA-Z0-9]+/')    # 匹配模式
                 mredis = redis.StrictRedis(**conf_redis)
                 data=mredis.hgetall("config")
