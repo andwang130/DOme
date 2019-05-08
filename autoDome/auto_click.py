@@ -102,6 +102,7 @@ class auto_tp:
     def update_poject(self,pojectdata):
         for i in pojectdata:
             self.Mongodb["poject"].update_one(*i)
+            
     def run(self):
         addlist = []
         updatelist = []
